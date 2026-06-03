@@ -15,14 +15,14 @@ export default function Navbar({ onNavigate }) {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 shadow-2xl shadow-violet-500/10 border-b border-violet-500/20 backdrop-blur-xl">
+    <nav className="bg-gradient-to-r from-orange-950 via-amber-900 to-orange-950 shadow-2xl shadow-orange-500/10 border-b border-orange-500/20 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => onNavigate('course')}>
-            <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2.5 rounded-xl shadow-lg shadow-violet-500/30">
-              <Trophy className="h-6 w-6 text-white" />
+            <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-2.5 rounded-xl shadow-lg shadow-orange-500/30">
+              <span className="text-2xl">🐱</span>
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">Підготовка до НМТ</span>
+            <span className="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">КотоНМТ</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-2">
@@ -30,34 +30,34 @@ export default function Navbar({ onNavigate }) {
               <>
                 <button
                   onClick={() => onNavigate('course')}
-                  className="flex items-center space-x-2 text-slate-400 hover:text-violet-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-violet-500/10"
+                  className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
                 >
                   <BookOpen className="h-5 w-5" />
                   <span className="font-medium">Курс</span>
                 </button>
                 <button
                   onClick={() => onNavigate('statistics')}
-                  className="flex items-center space-x-2 text-slate-400 hover:text-violet-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-violet-500/10"
+                  className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
                 >
                   <BarChart3 className="h-5 w-5" />
                   <span className="font-medium">Статистика</span>
                 </button>
                 <button
                   onClick={() => onNavigate('achievements')}
-                  className="flex items-center space-x-2 text-slate-400 hover:text-violet-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-violet-500/10"
+                  className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
                 >
                   <Award className="h-5 w-5" />
                   <span className="font-medium">Досягнення</span>
                 </button>
                 <div className="w-px h-8 bg-slate-700 mx-2" />
-                <div className="flex items-center space-x-3 bg-gradient-to-r from-violet-500/10 to-fuchsia-500/10 px-5 py-2.5 rounded-full border border-violet-500/30 hover:border-violet-500/50 transition-all duration-300 backdrop-blur-sm cursor-pointer" onClick={() => onNavigate('profile')}>
+                <div className="flex items-center space-x-3 bg-gradient-to-r from-orange-500/10 to-amber-500/10 px-5 py-2.5 rounded-full border border-orange-500/30 hover:border-orange-500/50 transition-all duration-300 backdrop-blur-sm cursor-pointer" onClick={() => onNavigate('profile')}>
                   <img
                     src={user.photoURL || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user.displayName || 'User')}
                     alt={user.displayName}
-                    className="h-9 w-9 rounded-full ring-2 ring-violet-400"
+                    className="h-9 w-9 rounded-full ring-2 ring-orange-400"
                   />
                   <div className="flex items-center space-x-1.5 bg-gradient-to-r from-yellow-500/20 to-amber-500/20 px-3 py-1.5 rounded-full border border-yellow-500/30">
-                    <Trophy className="h-4 w-4 text-yellow-400" />
+                    <span className="text-lg">🐾</span>
                     <span className="text-yellow-400 font-bold">{user.total_points || 0}</span>
                   </div>
                 </div>
@@ -84,15 +84,15 @@ export default function Navbar({ onNavigate }) {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-slate-950/95 backdrop-blur-sm border-t border-violet-500/20">
+        <div className="md:hidden bg-orange-950/95 backdrop-blur-sm border-t border-orange-500/20">
           <div className="px-4 py-4 space-y-3">
             {user && (
               <>
-                <div className="flex items-center space-x-3 bg-gradient-to-r from-violet-500/10 to-fuchsia-500/10 px-4 py-3 rounded-xl border border-violet-500/30 cursor-pointer" onClick={() => onNavigate('profile')}>
+                <div className="flex items-center space-x-3 bg-gradient-to-r from-orange-500/10 to-amber-500/10 px-4 py-3 rounded-xl border border-orange-500/30 cursor-pointer" onClick={() => onNavigate('profile')}>
                   <img
                     src={user.photoURL || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user.displayName || 'User')}
                     alt={user.displayName}
-                    className="h-10 w-10 rounded-full ring-2 ring-violet-400"
+                    className="h-10 w-10 rounded-full ring-2 ring-orange-400"
                   />
                   <div>
                     <p className="text-white font-medium">{user.displayName}</p>
@@ -101,21 +101,21 @@ export default function Navbar({ onNavigate }) {
                 </div>
                 <button
                   onClick={() => onNavigate('course')}
-                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-violet-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-violet-500/10"
+                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-orange-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
                 >
                   <BookOpen className="h-5 w-5" />
                   <span className="font-medium">Курс</span>
                 </button>
                 <button
                   onClick={() => onNavigate('statistics')}
-                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-violet-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-violet-500/10"
+                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-orange-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
                 >
                   <BarChart3 className="h-5 w-5" />
                   <span className="font-medium">Статистика</span>
                 </button>
                 <button
                   onClick={() => onNavigate('achievements')}
-                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-violet-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-violet-500/10"
+                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-orange-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
                 >
                   <Award className="h-5 w-5" />
                   <span className="font-medium">Досягнення</span>
@@ -123,7 +123,7 @@ export default function Navbar({ onNavigate }) {
                 <div className="flex items-center justify-between bg-gradient-to-r from-yellow-500/10 to-amber-500/10 px-4 py-3 rounded-xl border border-yellow-500/30">
                   <span className="text-white font-medium">Загальні бали</span>
                   <div className="flex items-center space-x-1">
-                    <Trophy className="h-5 w-5 text-yellow-400" />
+                    <span className="text-xl">🐾</span>
                     <span className="text-yellow-400 font-bold text-lg">{user.total_points || 0}</span>
                   </div>
                 </div>

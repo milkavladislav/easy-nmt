@@ -73,13 +73,13 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
 
   if (completed) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center p-4">
         <div className="max-w-md w-full animate-fade-in">
-          <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-violet-500/20 overflow-hidden shadow-2xl shadow-violet-500/10">
-            <div className="bg-gradient-to-r from-violet-600 via-fuchsia-600 to-pink-600 p-8 text-center">
-              <Trophy className="h-16 w-16 text-yellow-400 mx-auto mb-4" />
+          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 overflow-hidden shadow-2xl shadow-orange-500/10">
+            <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-8 text-center">
+              <span className="text-5xl mb-4 block">🎉</span>
               <h2 className="text-3xl font-bold text-white mb-2">Тест завершено!</h2>
-              <p className="text-violet-200">Чудова робота! Ви пройшли практичний тест</p>
+              <p className="text-orange-200">Чудова робота! Ви пройшли практичний тест</p>
             </div>
             
             <div className="p-8">
@@ -118,7 +118,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
 
               <button
                 onClick={handleBackToTopic}
-                className="w-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-pink-500 hover:from-violet-600 hover:via-fuchsia-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-violet-500/25"
+                className="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:via-amber-600 hover:to-yellow-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25"
               >
                 Повернутися до теми
               </button>
@@ -131,9 +131,9 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
 
   if (!currentQuestion) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center">
         <div className="text-center animate-fade-in">
-          <Loader2 className="h-12 w-12 text-violet-400 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-orange-400 animate-spin mx-auto mb-4" />
           <p className="text-slate-300">Завантаження питання...</p>
         </div>
       </div>
@@ -141,27 +141,27 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <button
           onClick={() => onNavigate('topicDetails', topic)}
-          className="flex items-center space-x-2 text-slate-400 hover:text-violet-400 mb-6 transition-colors"
+          className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 mb-6 transition-colors"
         >
           <ArrowLeft className="h-5 w-5" />
           <span>Повернутися до теми</span>
         </button>
 
-        <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-violet-500/20 overflow-hidden mb-6 animate-slide-up shadow-2xl shadow-violet-500/10">
-          <div className="bg-gradient-to-r from-violet-600 via-fuchsia-600 to-pink-600 p-6">
+        <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 overflow-hidden mb-6 animate-slide-up shadow-2xl shadow-orange-500/10">
+          <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-6">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-violet-200 text-sm">Питання {currentQuestionIndex + 1} з {questions.length}</span>
-              <span className="bg-gradient-to-r from-violet-500/30 to-fuchsia-500/30 px-3 py-1 rounded-full text-white text-sm">
+              <span className="text-orange-200 text-sm">Питання {currentQuestionIndex + 1} з {questions.length}</span>
+              <span className="bg-gradient-to-r from-orange-500/30 to-amber-500/30 px-3 py-1 rounded-full text-white text-sm">
                 {currentQuestion.points_reward || 10} балів
               </span>
             </div>
-            <div className="w-full bg-violet-900/50 rounded-full h-2 mb-4">
+            <div className="w-full bg-orange-900/50 rounded-full h-2 mb-4">
               <div
-                className="bg-gradient-to-r from-violet-400 to-fuchsia-400 h-2 rounded-full transition-all duration-300"
+                className="bg-gradient-to-r from-orange-400 to-amber-400 h-2 rounded-full transition-all duration-300"
                 style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
               />
             </div>
@@ -190,8 +190,8 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
                         : showIncorrect
                         ? 'bg-red-500/20 border-red-500'
                         : isSelected
-                        ? 'bg-violet-500/20 border-violet-500'
-                        : 'bg-slate-700/50 border-slate-600 hover:border-violet-500/50'
+                        ? 'bg-orange-500/20 border-orange-500'
+                        : 'bg-slate-700/50 border-slate-600 hover:border-orange-500/50'
                     } ${showResult ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                   >
                     <div className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold ${
@@ -200,7 +200,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
                         : showIncorrect
                         ? 'bg-red-500 text-white'
                         : isSelected
-                        ? 'bg-violet-500 text-white'
+                        ? 'bg-orange-500 text-white'
                         : 'bg-slate-600 text-slate-300'
                     }`}>
                       {options[index]}
@@ -222,7 +222,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
         {showResult && (
           <button
             onClick={handleNextQuestion}
-            className="w-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-pink-500 hover:from-violet-600 hover:via-fuchsia-600 hover:to-pink-600 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-violet-500/25"
+            className="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:via-amber-600 hover:to-yellow-600 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25"
           >
             {currentQuestionIndex < questions.length - 1 ? 'Наступне питання' : 'Завершити тест'}
           </button>

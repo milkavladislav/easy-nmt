@@ -97,9 +97,9 @@ export default function Statistics({ onNavigate }) {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center">
         <div className="text-center animate-fade-in">
-          <Loader2 className="h-12 w-12 text-violet-400 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-orange-400 animate-spin mx-auto mb-4" />
           <p className="text-slate-300">Завантаження статистики...</p>
         </div>
       </div>
@@ -107,10 +107,10 @@ export default function Statistics({ onNavigate }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="animate-fade-in">
-          <h1 className="text-4xl font-bold text-white mb-8 bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold text-white mb-8 bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
             Статистика
           </h1>
 
@@ -135,26 +135,31 @@ export default function Statistics({ onNavigate }) {
           </div>
 
           {/* Progress Section */}
-          <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-violet-500/20 p-8 mb-8 animate-slide-up shadow-2xl shadow-violet-500/10" style={{ animationDelay: '0.5s' }}>
+          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-8 mb-8 animate-slide-up shadow-2xl shadow-orange-500/10" style={{ animationDelay: '0.5s' }}>
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-white">Прогрес</h2>
-              <div className="flex items-center space-x-2 bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 px-4 py-2 rounded-full border border-violet-500/30">
-                <Target className="h-5 w-5 text-violet-400" />
-                <span className="text-violet-400 font-semibold">Загальний прогрес</span>
+              <div className="flex items-center space-x-2 bg-gradient-to-r from-orange-500/20 to-amber-500/20 px-4 py-2 rounded-full border border-orange-500/30">
+                <Target className="h-5 w-5 text-orange-400" />
+                <span className="text-orange-400 font-semibold">Загальний прогрес</span>
               </div>
             </div>
 
             <div className="space-y-6">
               {modulesWithProgress.map((module) => {
                 const colorClasses = {
+                  orange: { text: 'text-orange-400', gradient: 'from-orange-500 to-amber-500' },
+                  amber: { text: 'text-amber-400', gradient: 'from-amber-500 to-yellow-500' },
+                  yellow: { text: 'text-yellow-400', gradient: 'from-yellow-500 to-orange-500' },
+                  cream: { text: 'text-orange-200', gradient: 'from-orange-200 to-amber-200' },
+                  black: { text: 'text-slate-300', gradient: 'from-slate-600 to-slate-700' },
+                  white: { text: 'text-white', gradient: 'from-white to-slate-200' },
                   violet: { text: 'text-violet-400', gradient: 'from-violet-500 to-fuchsia-500' },
                   fuchsia: { text: 'text-fuchsia-400', gradient: 'from-fuchsia-500 to-pink-500' },
                   blue: { text: 'text-blue-400', gradient: 'from-blue-500 to-cyan-500' },
                   emerald: { text: 'text-emerald-400', gradient: 'from-emerald-500 to-teal-500' },
-                  orange: { text: 'text-orange-400', gradient: 'from-orange-500 to-amber-500' },
                   rose: { text: 'text-rose-400', gradient: 'from-rose-500 to-pink-500' }
                 };
-                const colors = colorClasses[module.color] || colorClasses.violet;
+                const colors = colorClasses[module.color] || colorClasses.orange;
                 
                 return (
                   <div key={module.id}>
@@ -173,10 +178,10 @@ export default function Statistics({ onNavigate }) {
           </div>
 
           {/* Recent Activity */}
-          <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-violet-500/20 p-8 animate-slide-up shadow-2xl shadow-violet-500/10" style={{ animationDelay: '0.6s' }}>
+          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-8 animate-slide-up shadow-2xl shadow-orange-500/10" style={{ animationDelay: '0.6s' }}>
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-white">Остання активність</h2>
-              <Award className="h-6 w-6 text-violet-400" />
+              <span className="text-3xl">🐾</span>
             </div>
 
             <div className="space-y-4">
@@ -186,8 +191,8 @@ export default function Statistics({ onNavigate }) {
                   className="flex items-center justify-between p-4 bg-gradient-to-r from-slate-700/50 to-slate-800/50 rounded-xl border border-slate-600 hover:border-violet-500/50 transition-all duration-300"
                 >
                   <div className="flex items-center space-x-4">
-                    <div className="bg-violet-500/20 p-3 rounded-xl">
-                      <BookOpen className="h-5 w-5 text-violet-400" />
+                    <div className="bg-orange-500/20 p-3 rounded-xl">
+                      <span className="text-xl">🐾</span>
                     </div>
                     <div>
                       <p className="text-white font-semibold">{activity.name}</p>
@@ -195,7 +200,7 @@ export default function Statistics({ onNavigate }) {
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-violet-400 font-bold text-lg">{activity.score}</p>
+                    <p className="text-orange-400 font-bold text-lg">{activity.score}</p>
                     <p className="text-slate-400 text-sm">Результат</p>
                   </div>
                 </div>

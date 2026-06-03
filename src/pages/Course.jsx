@@ -58,9 +58,9 @@ export default function Course({ onNavigate }) {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center">
         <div className="text-center animate-fade-in">
-          <Loader2 className="h-12 w-12 text-violet-400 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-orange-400 animate-spin mx-auto mb-4" />
           <p className="text-slate-300">Завантаження модулів...</p>
         </div>
       </div>
@@ -84,19 +84,19 @@ export default function Course({ onNavigate }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="animate-fade-in">
           {/* Header */}
           <div className="mb-10">
-            <div className="bg-gradient-to-r from-violet-600/20 via-purple-600/20 to-fuchsia-600/20 backdrop-blur-xl rounded-3xl p-8 border border-violet-500/30 shadow-2xl shadow-violet-500/10">
+            <div className="bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl p-8 border border-orange-500/30 shadow-2xl shadow-orange-500/10">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 p-4 rounded-2xl shadow-lg">
-                  <BookOpen className="h-8 w-8 text-white" />
+                <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-4 rounded-2xl shadow-lg">
+                  <span className="text-4xl">🐱</span>
                 </div>
                 <div>
                   <h1 className="text-4xl font-bold text-white mb-2">
-                    Курс НМТ
+                    КотоНМТ
                   </h1>
                   <p className="text-slate-300 text-lg">
                     Оберіть модуль для початку навчання
@@ -131,9 +131,9 @@ export default function Course({ onNavigate }) {
               <span className="text-slate-400 text-sm">{modules.length} модулів</span>
             </div>
             {modulesWithTopics.length === 0 ? (
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-16 rounded-3xl border border-violet-500/20 text-center">
-                <div className="bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 border border-violet-500/30">
-                  <BookOpen className="h-12 w-12 text-violet-400" />
+              <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-sm p-16 rounded-3xl border border-orange-500/20 text-center">
+                <div className="bg-gradient-to-br from-orange-500/20 to-amber-500/20 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 border border-orange-500/30">
+                  <span className="text-5xl">🐱</span>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-3">Модулів ще немає</h3>
                 <p className="text-slate-400 mb-8 max-w-md mx-auto text-lg">

@@ -11,53 +11,53 @@ export default function Achievements({ onNavigate }) {
       title: 'Перший крок',
       description: 'Пройдіть свій перший тест',
       unlocked: (user?.completed_tests?.length || 0) >= 1,
-      color: 'violet',
-      gradient: 'from-violet-500 to-fuchsia-500'
+      color: 'orange',
+      gradient: 'from-orange-500 to-amber-500'
     },
     {
       id: 'five_tests',
       icon: Star,
-      title: 'Студент',
+      title: 'Котик-початківець',
       description: 'Пройдіть 5 тестів',
       unlocked: (user?.completed_tests?.length || 0) >= 5,
-      color: 'fuchsia',
-      gradient: 'from-fuchsia-500 to-pink-500'
+      color: 'amber',
+      gradient: 'from-amber-500 to-yellow-500'
     },
     {
       id: 'ten_tests',
       icon: Award,
-      title: 'Відмінник',
+      title: 'Досвідчений кіт',
       description: 'Пройдіть 10 тестів',
       unlocked: (user?.completed_tests?.length || 0) >= 10,
-      color: 'blue',
-      gradient: 'from-blue-500 to-cyan-500'
+      color: 'yellow',
+      gradient: 'from-yellow-500 to-orange-500'
     },
     {
       id: 'perfect_score',
       icon: Crown,
-      title: 'Ідеальний результат',
+      title: 'Ідеальний кіт',
       description: 'Отримайте 100% у тесті',
       unlocked: false,
-      color: 'yellow',
-      gradient: 'from-yellow-500 to-amber-500'
+      color: 'orange',
+      gradient: 'from-orange-500 to-amber-500'
     },
     {
       id: 'hundred_points',
       icon: Target,
-      title: 'Сотка',
+      title: 'Кот-мисливець',
       description: 'Заробіть 100 балів',
       unlocked: (user?.total_points || 0) >= 100,
-      color: 'emerald',
-      gradient: 'from-emerald-500 to-teal-500'
+      color: 'amber',
+      gradient: 'from-amber-500 to-yellow-500'
     },
     {
       id: 'five_hundred_points',
       icon: Zap,
-      title: 'Майстер',
+      title: 'Кот-герой',
       description: 'Заробіть 500 балів',
       unlocked: (user?.total_points || 0) >= 500,
-      color: 'orange',
-      gradient: 'from-orange-500 to-red-500'
+      color: 'yellow',
+      gradient: 'from-yellow-500 to-orange-500'
     },
     {
       id: 'module1_complete',
@@ -65,71 +65,71 @@ export default function Achievements({ onNavigate }) {
       title: 'Майстер чисел',
       description: 'Завершіть модуль "Базова математика"',
       unlocked: (user?.completed_modules || []).includes('module1'),
-      color: 'violet',
-      gradient: 'from-violet-500 to-purple-500'
-    },
-    {
-      id: 'module2_complete',
-      icon: BookOpen,
-      title: 'Функціональний гений',
-      description: 'Завершіть модуль "Рівняння та функції"',
-      unlocked: (user?.completed_modules || []).includes('module2'),
-      color: 'fuchsia',
-      gradient: 'from-fuchsia-500 to-pink-500'
-    },
-    {
-      id: 'module3_complete',
-      icon: BookOpen,
-      title: 'Аналітик',
-      description: 'Завершіть модуль "Розширена алгебра"',
-      unlocked: (user?.completed_modules || []).includes('module3'),
-      color: 'blue',
-      gradient: 'from-blue-500 to-cyan-500'
-    },
-    {
-      id: 'module4_complete',
-      icon: BookOpen,
-      title: 'Ймовірнісний експерт',
-      description: 'Завершіть модуль "Комбінаторика"',
-      unlocked: (user?.completed_modules || []).includes('module4'),
-      color: 'emerald',
-      gradient: 'from-emerald-500 to-teal-500'
-    },
-    {
-      id: 'module5_complete',
-      icon: BookOpen,
-      title: 'Геометр',
-      description: 'Завершіть модуль "Планіметрія"',
-      unlocked: (user?.completed_modules || []).includes('module5'),
       color: 'orange',
       gradient: 'from-orange-500 to-amber-500'
     },
     {
+      id: 'module2_complete',
+      icon: BookOpen,
+      title: 'Функціональний кіт',
+      description: 'Завершіть модуль "Рівняння та функції"',
+      unlocked: (user?.completed_modules || []).includes('module2'),
+      color: 'amber',
+      gradient: 'from-amber-500 to-yellow-500'
+    },
+    {
+      id: 'module3_complete',
+      icon: BookOpen,
+      title: 'Кіт-аналітик',
+      description: 'Завершіть модуль "Розширена алгебра"',
+      unlocked: (user?.completed_modules || []).includes('module3'),
+      color: 'yellow',
+      gradient: 'from-yellow-500 to-orange-500'
+    },
+    {
+      id: 'module4_complete',
+      icon: BookOpen,
+      title: 'Кіт-ймовірнісник',
+      description: 'Завершіть модуль "Комбінаторика"',
+      unlocked: (user?.completed_modules || []).includes('module4'),
+      color: 'orange',
+      gradient: 'from-orange-500 to-amber-500'
+    },
+    {
+      id: 'module5_complete',
+      icon: BookOpen,
+      title: 'Кіт-геометр',
+      description: 'Завершіть модуль "Планіметрія"',
+      unlocked: (user?.completed_modules || []).includes('module5'),
+      color: 'amber',
+      gradient: 'from-amber-500 to-yellow-500'
+    },
+    {
       id: 'module6_complete',
       icon: BookOpen,
-      title: 'Стереометр',
+      title: 'Кіт-стереометр',
       description: 'Завершіть модуль "Стереометрія"',
       unlocked: (user?.completed_modules || []).includes('module6'),
-      color: 'rose',
-      gradient: 'from-rose-500 to-pink-500'
+      color: 'yellow',
+      gradient: 'from-yellow-500 to-orange-500'
     },
     {
       id: 'all_modules_complete',
       icon: Crown,
-      title: 'Магістр НМТ',
+      title: 'Кот-Магістр НМТ',
       description: 'Завершіть усі 6 модулів',
       unlocked: (user?.completed_modules || []).length >= 6,
-      color: 'yellow',
-      gradient: 'from-yellow-500 to-amber-500'
+      color: 'orange',
+      gradient: 'from-orange-500 to-amber-500'
     },
     {
       id: 'streak',
       icon: Flame,
-      title: 'Серія',
+      title: 'Котяча серія',
       description: 'Пройдіть тести 7 днів поспіль',
       unlocked: false,
-      color: 'rose',
-      gradient: 'from-rose-500 to-pink-500'
+      color: 'amber',
+      gradient: 'from-amber-500 to-yellow-500'
     }
   ];
 
@@ -138,27 +138,27 @@ export default function Achievements({ onNavigate }) {
   const progress = Math.round((unlockedCount / totalCount) * 100);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="animate-fade-in">
-          <h1 className="text-4xl font-bold text-white mb-8 bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold text-white mb-8 bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
             Досягнення
           </h1>
 
           {/* Progress Overview */}
-          <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-violet-500/20 p-8 mb-8 animate-slide-up shadow-2xl shadow-violet-500/10">
+          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-8 mb-8 animate-slide-up shadow-2xl shadow-orange-500/10">
             <div className="flex items-center justify-between mb-6">
               <div>
                 <h2 className="text-2xl font-bold text-white mb-2">Ваш прогрес</h2>
                 <p className="text-slate-400">Розблоковано {unlockedCount} з {totalCount} досягнень</p>
               </div>
               <div className="text-right">
-                <p className="text-5xl font-bold text-violet-400">{progress}%</p>
+                <p className="text-5xl font-bold text-orange-400">{progress}%</p>
               </div>
             </div>
             <div className="w-full bg-slate-700 rounded-full h-4">
               <div 
-                className="bg-gradient-to-r from-violet-500 via-fuchsia-500 to-pink-500 h-4 rounded-full transition-all duration-500"
+                className="bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 h-4 rounded-full transition-all duration-500"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -202,11 +202,11 @@ export default function Achievements({ onNavigate }) {
           </div>
 
           {/* Motivation */}
-          <div className="mt-8 bg-gradient-to-r from-violet-600/20 via-fuchsia-600/20 to-pink-600/20 backdrop-blur-xl rounded-3xl border border-violet-500/30 p-8 text-center animate-slide-up" style={{ animationDelay: '1s' }}>
-            <Trophy className="h-12 w-12 text-yellow-400 mx-auto mb-4" />
+          <div className="mt-8 bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl border border-orange-500/30 p-8 text-center animate-slide-up" style={{ animationDelay: '1s' }}>
+            <span className="text-5xl mb-4 block">🐱</span>
             <h3 className="text-2xl font-bold text-white mb-2">Продовжуйте вчитися!</h3>
             <p className="text-slate-300">
-              Пройдіть більше тестів, щоб розблокувати нові досягнення та стати найкращим студентом НМТ!
+              Пройдіть більше тестів, щоб розблокувати нові досягнення та стати найкращим котом-студентом НМТ!
             </p>
           </div>
         </div>
