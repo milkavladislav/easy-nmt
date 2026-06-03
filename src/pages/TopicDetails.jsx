@@ -32,7 +32,7 @@ export default function TopicDetails({ topic, onNavigate }) {
   }, [topic.id]);
 
   const handleStartTest = (test) => {
-    onNavigate('quiz', { topic, test });
+    onNavigate('quiz', { topic, test, moduleId: topic.module_id });
   };
 
   if (loading) {
@@ -66,11 +66,11 @@ export default function TopicDetails({ topic, onNavigate }) {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <button
-          onClick={() => onNavigate('dashboard')}
+          onClick={() => onNavigate('course')}
           className="flex items-center space-x-2 text-slate-400 hover:text-violet-400 mb-6 transition-colors"
         >
           <ArrowLeft className="h-5 w-5" />
-          <span>Повернутися на головну</span>
+          <span>Повернутися до курсу</span>
         </button>
 
         <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-violet-500/20 overflow-hidden mb-8 animate-slide-up shadow-2xl shadow-violet-500/10">

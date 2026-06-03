@@ -1,8 +1,10 @@
 import { useAuth } from '../context/AuthContext';
 import { ArrowLeft, CheckCircle, XCircle, Trophy, Loader2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { db } from '../firebase/config';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 
-export default function QuizView({ topic, test, onNavigate }) {
+export default function QuizView({ topic, test, onNavigate, moduleId }) {
   const { user, addPoints } = useAuth();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -47,7 +49,15 @@ export default function QuizView({ topic, test, onNavigate }) {
       const totalPoints = questions.reduce((sum, q) => sum + (q.points_reward || 10), 0);
       const earnedPoints = score * (questions[0]?.points_reward || 10);
       
-      const awarded = await addPoints(earnedPoints, test.id);
+      // Fetch all topic IDs in the module for completion checking
+      let topicIds = [];
+      if (moduleId) {
+        const topicsQuery = query(collection(db, 'topics'), where('module_id', '==', moduleId));
+        const topicsSnapshot = await getDocs(topicsQuery);
+        topicIds = topicsSnapshot.docs.map(doc => doc.id);
+      }
+      
+      const awarded = await addPoints(earnedPoints, test.id, moduleId, topicIds);
       setPointsAwarded(awarded);
     } catch (err) {
       setError('Не вдалося нарахувати бали. Спробуйте ще раз.');
