@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import ModuleCard from '../components/ModuleCard';
 import { Loader2, BookOpen } from 'lucide-react';
 
-export default function Course({ onNavigate }) {
+export default function Course({ onNavigate, onOpenDovidnik }) {
   const { user } = useAuth();
   const [modules, setModules] = useState([]);
   const [modulesWithTopics, setModulesWithTopics] = useState([]);
@@ -89,37 +89,44 @@ export default function Course({ onNavigate }) {
         <div className="animate-fade-in">
           {/* Header */}
           <div className="mb-10">
-            <div className="bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl p-8 border border-orange-500/30 shadow-2xl shadow-orange-500/10">
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-4 rounded-2xl shadow-lg">
-                  <span className="text-4xl">🐱</span>
+            <div className="bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl p-4 sm:p-8 border border-orange-500/30 shadow-2xl shadow-orange-500/10">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start space-x-0 sm:space-x-4 mb-4">
+                <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-3 sm:p-4 rounded-2xl shadow-lg mb-4 sm:mb-0">
+                  <span className="text-3xl sm:text-4xl">🐱</span>
                 </div>
-                <div>
-                  <h1 className="text-4xl font-bold text-white mb-2">
+                <div className="text-center sm:text-left">
+                  <h1 className="text-2xl sm:text-4xl font-bold text-white mb-2">
                     КотоНМТ
                   </h1>
-                  <p className="text-slate-300 text-lg">
+                  <p className="text-slate-300 text-sm sm:text-lg">
                     Оберіть модуль для початку навчання
                   </p>
                 </div>
               </div>
-              <div className="flex gap-4 mt-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20">
-                  <p className="text-slate-300 text-sm mb-1">Всього модулів</p>
-                  <p className="text-3xl font-bold text-white">{modules.length}</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-3 sm:px-6 py-3 sm:py-4 border border-white/20">
+                  <p className="text-slate-300 text-xs sm:text-sm mb-1">Всього модулів</p>
+                  <p className="text-xl sm:text-3xl font-bold text-white">{modules.length}</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20">
-                  <p className="text-slate-300 text-sm mb-1">Всього тем</p>
-                  <p className="text-3xl font-bold text-white">{modulesWithTopics.reduce((sum, m) => sum + m.topics.length, 0)}</p>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-3 sm:px-6 py-3 sm:py-4 border border-white/20">
+                  <p className="text-slate-300 text-xs sm:text-sm mb-1">Всього тем</p>
+                  <p className="text-xl sm:text-3xl font-bold text-white">{modulesWithTopics.reduce((sum, m) => sum + m.topics.length, 0)}</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20">
-                  <p className="text-slate-300 text-sm mb-1">Пройдено тем</p>
-                  <p className="text-3xl font-bold text-white">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-3 sm:px-6 py-3 sm:py-4 border border-white/20">
+                  <p className="text-slate-300 text-xs sm:text-sm mb-1">Пройдено тем</p>
+                  <p className="text-xl sm:text-3xl font-bold text-white">
                     {modulesWithTopics.reduce((sum, m) => 
                       sum + m.topics.filter(t => user?.completed_tests?.some(testId => testId.startsWith(t.id))).length, 0
                     )}
                   </p>
                 </div>
+                <button
+                  onClick={onOpenDovidnik}
+                  className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-3 sm:px-6 py-3 sm:py-4 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25 flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-2"
+                >
+                  <BookOpen className="h-5 w-5 sm:h-6 sm:w-6" />
+                  <span className="text-xs sm:text-sm font-medium">Довідник</span>
+                </button>
               </div>
             </div>
           </div>

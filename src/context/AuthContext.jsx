@@ -1,12 +1,41 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { auth, db } from '../firebase/config';
-import { 
-  signInWithPopup, 
-  GoogleAuthProvider, 
-  signOut, 
-  onAuthStateChanged 
+import {
+  signInWithRedirect,
+  signInWithPopup,
+  getRedirectResult,
+  GoogleAuthProvider,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  updateProfile,
+  signOut,
+  onAuthStateChanged
 } from 'firebase/auth';
 import { doc, getDoc, setDoc, updateDoc, arrayUnion } from 'firebase/firestore';
+
+function formatError(err) {
+  const code = err?.code || '';
+  switch (code) {
+    case 'auth/email-already-in-use':
+      return 'Ця електронна пошта вже зареєстрована. Спробуйте увійти.';
+    case 'auth/invalid-email':
+      return 'Неправильний формат електронної пошти.';
+    case 'auth/invalid-credential':
+      return 'Неправильний email або пароль.';
+    case 'auth/weak-password':
+      return 'Пароль надто короткий. Використайте мінімум 6 символів.';
+    case 'auth/user-not-found':
+      return 'Користувача з таким email не знайдено.';
+    case 'auth/wrong-password':
+      return 'Неправильний пароль.';
+    case 'auth/popup-closed-by-user':
+      return 'Вікно авторизації закрите.';
+    case 'auth/cancelled-popup-request':
+      return 'Запит авторизації скасовано.';
+    default:
+      return err?.message || 'Сталася помилка. Спробуйте ще раз.';
+  }
+}
 
 const AuthContext = createContext();
 
@@ -20,18 +49,32 @@ export function AuthProvider({ children }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const handleRedirectResult = async () => {
+      try {
+        const result = await getRedirectResult(auth);
+        if (result) {
+          // Redirect result is handled by onAuthStateChanged
+        }
+      } catch (err) {
+        setError(formatError(err));
+      }
+    };
+
+    handleRedirectResult();
+
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser) {
         const userDocRef = doc(db, 'users', currentUser.uid);
         const userDoc = await getDoc(userDocRef);
-        
+
         if (userDoc.exists()) {
+          const userData = userDoc.data();
           setUser({
             uid: currentUser.uid,
             email: currentUser.email,
-            displayName: currentUser.displayName,
+            displayName: currentUser.displayName || userData.name || currentUser.email,
             photoURL: currentUser.photoURL,
-            ...userDoc.data()
+            ...userData
           });
         } else {
           await setDoc(userDocRef, {
@@ -44,7 +87,7 @@ export function AuthProvider({ children }) {
           setUser({
             uid: currentUser.uid,
             email: currentUser.email,
-            displayName: currentUser.displayName,
+            displayName: currentUser.displayName || currentUser.email,
             photoURL: currentUser.photoURL,
             total_points: 0,
             completed_tests: [],
@@ -64,10 +107,58 @@ export function AuthProvider({ children }) {
     try {
       setError(null);
       const provider = new GoogleAuthProvider();
-      const result = await signInWithPopup(auth, provider);
+      // Use popup for localhost, redirect for production
+      const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+      if (isProduction) {
+        await signInWithRedirect(auth, provider);
+      } else {
+        const result = await signInWithPopup(auth, provider);
+        return result.user;
+      }
+    } catch (err) {
+      setError(formatError(err));
+      throw err;
+    }
+  };
+
+  const signIn = async (email, password) => {
+    try {
+      setError(null);
+      const result = await signInWithEmailAndPassword(auth, email, password);
       return result.user;
     } catch (err) {
-      setError(err.message);
+      setError(formatError(err));
+      throw err;
+    }
+  };
+
+  const signUp = async (name, email, password) => {
+    try {
+      setError(null);
+      const result = await createUserWithEmailAndPassword(auth, email, password);
+      await updateProfile(result.user, { displayName: name });
+
+      const userDocRef = doc(db, 'users', result.user.uid);
+      const userData = {
+        name,
+        email,
+        total_points: 0,
+        completed_tests: [],
+        completed_modules: []
+      };
+      await setDoc(userDocRef, userData);
+
+      setUser({
+        uid: result.user.uid,
+        email,
+        displayName: name,
+        photoURL: result.user.photoURL,
+        ...userData
+      });
+
+      return result.user;
+    } catch (err) {
+      setError(formatError(err));
       throw err;
     }
   };
@@ -77,7 +168,7 @@ export function AuthProvider({ children }) {
       setError(null);
       await signOut(auth);
     } catch (err) {
-      setError(err.message);
+      setError(formatError(err));
       throw err;
     }
   };
@@ -121,7 +212,7 @@ export function AuthProvider({ children }) {
       }
       return false;
     } catch (err) {
-      setError(err.message);
+      setError(formatError(err));
       throw err;
     }
   };
@@ -158,7 +249,7 @@ export function AuthProvider({ children }) {
       }
       return false;
     } catch (err) {
-      setError(err.message);
+      setError(formatError(err));
       throw err;
     }
   };
@@ -168,6 +259,8 @@ export function AuthProvider({ children }) {
     loading,
     error,
     signInWithGoogle,
+    signIn,
+    signUp,
     logout,
     addPoints,
     checkModuleCompletion

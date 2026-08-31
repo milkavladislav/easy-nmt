@@ -108,43 +108,43 @@ export default function Statistics({ onNavigate }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="animate-fade-in">
-          <h1 className="text-4xl font-bold text-white mb-8 bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6 sm:mb-8 bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
             Статистика
           </h1>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-6 sm:mb-10">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`bg-gradient-to-br ${stat.gradient} backdrop-blur-xl rounded-2xl p-6 border border-${stat.color}-500/20 hover:border-${stat.color}-500/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-${stat.color}-500/10 animate-slide-up`}
+                className={`bg-gradient-to-br ${stat.gradient} backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-6 border border-${stat.color}-500/20 hover:border-${stat.color}-500/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-${stat.color}-500/10 animate-slide-up`}
                 style={{ animationDelay: `${(index + 1) * 0.1}s` }}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`bg-${stat.color}-500/20 p-3 rounded-xl`}>
-                    <stat.icon className={`h-6 w-6 text-${stat.color}-400`} />
+                <div className="flex items-center justify-between mb-2 sm:mb-4">
+                  <div className={`bg-${stat.color}-500/20 p-2 sm:p-3 rounded-lg sm:rounded-xl`}>
+                    <stat.icon className={`h-4 w-4 sm:h-6 sm:w-6 text-${stat.color}-400`} />
                   </div>
-                  <TrendingUp className={`h-5 w-5 text-${stat.color}-400`} />
+                  <TrendingUp className={`h-3 w-3 sm:h-5 sm:w-5 text-${stat.color}-400`} />
                 </div>
-                <p className="text-slate-400 text-sm mb-1">{stat.label}</p>
-                <p className="text-white font-bold text-2xl">{stat.value}</p>
+                <p className="text-slate-400 text-xs sm:text-sm mb-1">{stat.label}</p>
+                <p className="text-white font-bold text-lg sm:text-2xl">{stat.value}</p>
               </div>
             ))}
           </div>
 
           {/* Progress Section */}
-          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-8 mb-8 animate-slide-up shadow-2xl shadow-orange-500/10" style={{ animationDelay: '0.5s' }}>
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Прогрес</h2>
-              <div className="flex items-center space-x-2 bg-gradient-to-r from-orange-500/20 to-amber-500/20 px-4 py-2 rounded-full border border-orange-500/30">
-                <Target className="h-5 w-5 text-orange-400" />
-                <span className="text-orange-400 font-semibold">Загальний прогрес</span>
+          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-4 sm:p-8 mb-6 sm:mb-8 animate-slide-up shadow-2xl shadow-orange-500/10" style={{ animationDelay: '0.5s' }}>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 gap-2 sm:gap-0">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">Прогрес</h2>
+              <div className="flex items-center space-x-2 bg-gradient-to-r from-orange-500/20 to-amber-500/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-orange-500/30">
+                <Target className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400" />
+                <span className="text-orange-400 font-semibold text-sm sm:text-base">Загальний прогрес</span>
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {modulesWithProgress.map((module) => {
                 const colorClasses = {
                   orange: { text: 'text-orange-400', gradient: 'from-orange-500 to-amber-500' },
@@ -164,13 +164,13 @@ export default function Statistics({ onNavigate }) {
                 return (
                   <div key={module.id}>
                     <div className="flex justify-between mb-2">
-                      <span className="text-slate-300">{module.title}</span>
-                      <span className={colors.text} font-semibold>{module.progress}%</span>
+                      <span className="text-slate-300 text-sm sm:text-base">{module.title}</span>
+                      <span className={`${colors.text} font-semibold text-sm sm:text-base`}>{module.progress}%</span>
                     </div>
-                    <div className="w-full bg-slate-700 rounded-full h-3">
-                      <div className={`bg-gradient-to-r ${colors.gradient} h-3 rounded-full transition-all duration-500`} style={{ width: `${module.progress}%` }} />
+                    <div className="w-full bg-slate-700 rounded-full h-2 sm:h-3">
+                      <div className={`bg-gradient-to-r ${colors.gradient} h-2 sm:h-3 rounded-full transition-all duration-500`} style={{ width: `${module.progress}%` }} />
                     </div>
-                    <p className="text-slate-500 text-xs mt-1">{module.completedTopics}/{module.totalTopics} тем</p>
+                    <p className="text-slate-500 text-xs sm:text-sm mt-1">{module.completedTopics}/{module.totalTopics} тем</p>
                   </div>
                 );
               })}
@@ -178,30 +178,30 @@ export default function Statistics({ onNavigate }) {
           </div>
 
           {/* Recent Activity */}
-          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-8 animate-slide-up shadow-2xl shadow-orange-500/10" style={{ animationDelay: '0.6s' }}>
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-white">Остання активність</h2>
-              <span className="text-3xl">🐾</span>
+          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-4 sm:p-8 animate-slide-up shadow-2xl shadow-orange-500/10" style={{ animationDelay: '0.6s' }}>
+            <div className="flex items-center justify-between mb-4 sm:mb-6">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">Остання активність</h2>
+              <span className="text-2xl sm:text-3xl">🐾</span>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {recentActivity.map((activity, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-4 bg-gradient-to-r from-slate-700/50 to-slate-800/50 rounded-xl border border-slate-600 hover:border-violet-500/50 transition-all duration-300"
+                  className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-slate-700/50 to-slate-800/50 rounded-xl border border-slate-600 hover:border-violet-500/50 transition-all duration-300"
                 >
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-orange-500/20 p-3 rounded-xl">
-                      <span className="text-xl">🐾</span>
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="bg-orange-500/20 p-2 sm:p-3 rounded-lg sm:rounded-xl">
+                      <span className="text-lg sm:text-xl">🐾</span>
                     </div>
                     <div>
-                      <p className="text-white font-semibold">{activity.name}</p>
-                      <p className="text-slate-400 text-sm">{activity.date}</p>
+                      <p className="text-white font-semibold text-sm sm:text-base">{activity.name}</p>
+                      <p className="text-slate-400 text-xs sm:text-sm">{activity.date}</p>
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-orange-400 font-bold text-lg">{activity.score}</p>
-                    <p className="text-slate-400 text-sm">Результат</p>
+                    <p className="text-orange-400 font-bold text-base sm:text-lg">{activity.score}</p>
+                    <p className="text-slate-400 text-xs sm:text-sm">Результат</p>
                   </div>
                 </div>
               ))}

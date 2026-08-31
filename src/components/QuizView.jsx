@@ -1,10 +1,10 @@
 import { useAuth } from '../context/AuthContext';
-import { ArrowLeft, CheckCircle, XCircle, Trophy, Loader2 } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle, Trophy, Loader2, BookOpen } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { db } from '../firebase/config';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 
-export default function QuizView({ topic, test, onNavigate, moduleId }) {
+export default function QuizView({ topic, test, onNavigate, moduleId, onOpenDovidnik }) {
   const { user, addPoints } = useAuth();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -74,21 +74,21 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
   if (completed) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center p-4">
-        <div className="max-w-md w-full animate-fade-in">
+        <div className="max-w-md w-full animate-fade-in px-4">
           <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 overflow-hidden shadow-2xl shadow-orange-500/10">
-            <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-8 text-center">
-              <span className="text-5xl mb-4 block">🎉</span>
-              <h2 className="text-3xl font-bold text-white mb-2">Тест завершено!</h2>
-              <p className="text-orange-200">Чудова робота! Ви пройшли практичний тест</p>
+            <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-4 sm:p-8 text-center">
+              <span className="text-4xl sm:text-5xl mb-4 block">🎉</span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Тест завершено!</h2>
+              <p className="text-orange-200 text-sm sm:text-base">Чудова робота! Ви пройшли практичний тест</p>
             </div>
             
-            <div className="p-8">
+            <div className="p-4 sm:p-8">
               <div className="text-center mb-6">
-                <p className="text-slate-400 mb-2">Ваш результат</p>
-                <p className="text-5xl font-bold text-white mb-2">
+                <p className="text-slate-400 mb-2 text-sm sm:text-base">Ваш результат</p>
+                <p className="text-4xl sm:text-5xl font-bold text-white mb-2">
                   {score} / {questions.length}
                 </p>
-                <p className="text-indigo-400">
+                <p className="text-indigo-400 text-sm sm:text-base">
                   {Math.round((score / questions.length) * 100)}% правильних відповідей
                 </p>
               </div>
@@ -96,20 +96,20 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
               {loading ? (
                 <div className="text-center py-4">
                   <Loader2 className="h-8 w-8 text-violet-400 animate-spin mx-auto mb-2" />
-                  <p className="text-slate-400">Збереження прогресу...</p>
+                  <p className="text-slate-400 text-sm">Збереження прогресу...</p>
                 </div>
               ) : error ? (
-                <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4 mb-6">
+                <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3 sm:p-4 mb-6">
                   <p className="text-red-400 text-sm text-center">{error}</p>
                 </div>
               ) : pointsAwarded ? (
-                <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-6">
+                <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3 sm:p-4 mb-6">
                   <p className="text-green-400 text-sm text-center">
                     Ви заробили {score * (questions[0]?.points_reward || 10)} балів!
                   </p>
                 </div>
               ) : (
-                <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4 mb-6">
+                <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 sm:p-4 mb-6">
                   <p className="text-yellow-400 text-sm text-center">
                     Ви вже пройшли цей тест. Додаткові бали не нараховано.
                   </p>
@@ -118,7 +118,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
 
               <button
                 onClick={handleBackToTopic}
-                className="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:via-amber-600 hover:to-yellow-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25"
+                className="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 hover:from-orange-600 hover:via-amber-600 hover:to-yellow-600 text-white font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25 text-sm sm:text-base"
               >
                 Повернутися до теми
               </button>
@@ -142,37 +142,46 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <button
           onClick={() => onNavigate('topicDetails', topic)}
-          className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 mb-6 transition-colors"
+          className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 mb-4 sm:mb-6 transition-colors"
         >
-          <ArrowLeft className="h-5 w-5" />
-          <span>Повернутися до теми</span>
+          <ArrowLeft className="h-4 sm:h-5 w-4 sm:w-5" />
+          <span className="text-sm sm:text-base">Повернутися до теми</span>
         </button>
 
-        <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 overflow-hidden mb-6 animate-slide-up shadow-2xl shadow-orange-500/10">
-          <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-6">
+        <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 overflow-hidden mb-4 sm:mb-6 animate-slide-up shadow-2xl shadow-orange-500/10">
+          <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-4 sm:p-6">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-orange-200 text-sm">Питання {currentQuestionIndex + 1} з {questions.length}</span>
-              <span className="bg-gradient-to-r from-orange-500/30 to-amber-500/30 px-3 py-1 rounded-full text-white text-sm">
-                {currentQuestion.points_reward || 10} балів
-              </span>
+              <span className="text-orange-200 text-xs sm:text-sm">Питання {currentQuestionIndex + 1} з {questions.length}</span>
+              <div className="flex items-center space-x-2">
+                <span className="bg-gradient-to-r from-orange-500/30 to-amber-500/30 px-2 sm:px-3 py-1 rounded-full text-white text-xs sm:text-sm">
+                  {currentQuestion.points_reward || 10} балів
+                </span>
+                <button
+                  onClick={onOpenDovidnik}
+                  className="bg-white/20 hover:bg-white/30 p-2 rounded-xl transition-colors"
+                  title="Відкрити довідник"
+                >
+                  <BookOpen className="h-4 sm:h-5 w-4 sm:w-5 text-white" />
+                </button>
+              </div>
             </div>
-            <div className="w-full bg-orange-900/50 rounded-full h-2 mb-4">
+            <div className="w-full bg-orange-900/50 rounded-full h-1.5 sm:h-2 mb-2 sm:mb-4">
               <div
-                className="bg-gradient-to-r from-orange-400 to-amber-400 h-2 rounded-full transition-all duration-300"
+                className="bg-gradient-to-r from-orange-400 to-amber-400 h-1.5 sm:h-2 rounded-full transition-all duration-300"
                 style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
               />
             </div>
           </div>
 
-          <div className="p-8">
-            <h2 className="text-xl font-semibold text-white mb-6">
+          <div className="p-4 sm:p-8">
+            <h2 className="text-base sm:text-xl font-semibold text-white mb-4 sm:mb-6 leading-relaxed">
               {currentQuestion.question_text}
             </h2>
 
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3">
               {currentQuestion.options.map((option, index) => {
                 const isSelected = selectedOption === index;
                 const isCorrect = index === currentQuestion.correct_option;
@@ -184,7 +193,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
                     key={index}
                     onClick={() => handleOptionSelect(index)}
                     disabled={showResult}
-                    className={`w-full flex items-center space-x-4 p-4 rounded-xl border-2 transition-all duration-300 ${
+                    className={`w-full flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 rounded-xl border-2 transition-all duration-300 ${
                       showCorrect
                         ? 'bg-green-500/20 border-green-500'
                         : showIncorrect
@@ -194,7 +203,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
                         : 'bg-slate-700/50 border-slate-600 hover:border-orange-500/50'
                     } ${showResult ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                   >
-                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold ${
+                    <div className={`w-8 sm:w-10 h-8 sm:h-10 rounded-lg flex items-center justify-center font-bold text-sm sm:text-base ${
                       showCorrect
                         ? 'bg-green-500 text-white'
                         : showIncorrect
@@ -205,13 +214,13 @@ export default function QuizView({ topic, test, onNavigate, moduleId }) {
                     }`}>
                       {options[index]}
                     </div>
-                    <span className={`flex-1 text-left ${
+                    <span className={`flex-1 text-left text-sm sm:text-base ${
                       showCorrect ? 'text-green-400' : showIncorrect ? 'text-red-400' : 'text-white'
                     }`}>
                       {option}
                     </span>
-                    {showCorrect && <CheckCircle className="h-5 w-5 text-green-400" />}
-                    {showIncorrect && <XCircle className="h-5 w-5 text-red-400" />}
+                    {showCorrect && <CheckCircle className="h-4 sm:h-5 w-4 sm:w-5 text-green-400" />}
+                    {showIncorrect && <XCircle className="h-4 sm:h-5 w-4 sm:w-5 text-red-400" />}
                   </button>
                 );
               })}

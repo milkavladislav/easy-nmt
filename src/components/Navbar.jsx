@@ -1,8 +1,8 @@
 import { useAuth } from '../context/AuthContext';
-import { LogOut, Menu, X, Trophy, BookOpen, BarChart3, Award } from 'lucide-react';
+import { LogOut, Menu, X, Trophy, BookOpen, BarChart3, Award, BookOpen as BookIcon, FileText } from 'lucide-react';
 import { useState } from 'react';
 
-export default function Navbar({ onNavigate }) {
+export default function Navbar({ onNavigate, onOpenDovidnik }) {
   const { user, logout } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -48,6 +48,20 @@ export default function Navbar({ onNavigate }) {
                 >
                   <Award className="h-5 w-5" />
                   <span className="font-medium">Досягнення</span>
+                </button>
+                <button
+                  onClick={() => onNavigate('nmt')}
+                  className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
+                >
+                  <FileText className="h-5 w-5" />
+                  <span className="font-medium">НМТ</span>
+                </button>
+                <button
+                  onClick={onOpenDovidnik}
+                  className="flex items-center space-x-2 text-slate-400 hover:text-orange-400 px-4 py-2 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
+                >
+                  <BookIcon className="h-5 w-5" />
+                  <span className="font-medium">Довідник</span>
                 </button>
                 <div className="w-px h-8 bg-slate-700 mx-2" />
                 <div className="flex items-center space-x-3 bg-gradient-to-r from-orange-500/10 to-amber-500/10 px-5 py-2.5 rounded-full border border-orange-500/30 hover:border-orange-500/50 transition-all duration-300 backdrop-blur-sm cursor-pointer" onClick={() => onNavigate('profile')}>
@@ -119,6 +133,20 @@ export default function Navbar({ onNavigate }) {
                 >
                   <Award className="h-5 w-5" />
                   <span className="font-medium">Досягнення</span>
+                </button>
+                <button
+                  onClick={() => onNavigate('nmt')}
+                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-orange-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
+                >
+                  <FileText className="h-5 w-5" />
+                  <span className="font-medium">НМТ</span>
+                </button>
+                <button
+                  onClick={onOpenDovidnik}
+                  className="w-full flex items-center space-x-3 text-slate-400 hover:text-orange-400 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-orange-500/10"
+                >
+                  <BookIcon className="h-5 w-5" />
+                  <span className="font-medium">Довідник</span>
                 </button>
                 <div className="flex items-center justify-between bg-gradient-to-r from-yellow-500/10 to-amber-500/10 px-4 py-3 rounded-xl border border-yellow-500/30">
                   <span className="text-white font-medium">Загальні бали</span>

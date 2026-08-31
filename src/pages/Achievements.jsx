@@ -146,55 +146,55 @@ export default function Achievements({ onNavigate }) {
           </h1>
 
           {/* Progress Overview */}
-          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-8 mb-8 animate-slide-up shadow-2xl shadow-orange-500/10">
-            <div className="flex items-center justify-between mb-6">
+          <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 p-4 sm:p-8 mb-6 sm:mb-8 animate-slide-up shadow-2xl shadow-orange-500/10">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 gap-4 sm:gap-0">
               <div>
-                <h2 className="text-2xl font-bold text-white mb-2">Ваш прогрес</h2>
-                <p className="text-slate-400">Розблоковано {unlockedCount} з {totalCount} досягнень</p>
+                <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">Ваш прогрес</h2>
+                <p className="text-slate-400 text-sm sm:text-base">Розблоковано {unlockedCount} з {totalCount} досягнень</p>
               </div>
-              <div className="text-right">
-                <p className="text-5xl font-bold text-orange-400">{progress}%</p>
+              <div className="text-right w-full sm:w-auto">
+                <p className="text-4xl sm:text-5xl font-bold text-orange-400">{progress}%</p>
               </div>
             </div>
-            <div className="w-full bg-slate-700 rounded-full h-4">
-              <div 
-                className="bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 h-4 rounded-full transition-all duration-500"
+            <div className="w-full bg-slate-700 rounded-full h-2 sm:h-4">
+              <div
+                className="bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500 h-2 sm:h-4 rounded-full transition-all duration-500"
                 style={{ width: `${progress}%` }}
               />
             </div>
           </div>
 
           {/* Achievements Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {achievements.map((achievement, index) => (
               <div
                 key={achievement.id}
-                className={`bg-gradient-to-br ${achievement.unlocked ? 'from-slate-800/50 to-slate-900/50' : 'from-slate-900/30 to-slate-950/30'} backdrop-blur-xl rounded-3xl p-6 border ${achievement.unlocked ? `border-${achievement.color}-500/20 hover:border-${achievement.color}-500/40` : 'border-slate-700/50'} transition-all duration-300 hover:scale-105 hover:shadow-xl ${achievement.unlocked ? `hover:shadow-${achievement.color}-500/10` : ''} animate-slide-up`}
+                className={`bg-gradient-to-br ${achievement.unlocked ? 'from-slate-800/50 to-slate-900/50' : 'from-slate-900/30 to-slate-950/30'} backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border ${achievement.unlocked ? `border-${achievement.color}-500/20 hover:border-${achievement.color}-500/40` : 'border-slate-700/50'} transition-all duration-300 hover:scale-105 hover:shadow-xl ${achievement.unlocked ? `hover:shadow-${achievement.color}-500/10` : ''} animate-slide-up`}
                 style={{ animationDelay: `${(index + 1) * 0.1}s` }}
               >
-                <div className={`flex items-center justify-center mb-4 ${achievement.unlocked ? '' : 'opacity-30'}`}>
-                  <div className={`bg-gradient-to-r ${achievement.gradient} p-4 rounded-2xl shadow-lg`}>
-                    <achievement.icon className={`h-8 w-8 text-white`} />
+                <div className={`flex items-center justify-center mb-3 sm:mb-4 ${achievement.unlocked ? '' : 'opacity-30'}`}>
+                  <div className={`bg-gradient-to-r ${achievement.gradient} p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-lg`}>
+                    <achievement.icon className={`h-6 sm:h-8 w-6 sm:w-8 text-white`} />
                   </div>
                 </div>
-                
-                <h3 className={`text-lg font-bold text-white mb-2 ${achievement.unlocked ? '' : 'opacity-50'}`}>
+
+                <h3 className={`text-base sm:text-lg font-bold text-white mb-2 ${achievement.unlocked ? '' : 'opacity-50'}`}>
                   {achievement.title}
                 </h3>
-                
-                <p className={`text-sm mb-4 ${achievement.unlocked ? 'text-slate-400' : 'text-slate-500'}`}>
+
+                <p className={`text-xs sm:text-sm mb-3 sm:mb-4 ${achievement.unlocked ? 'text-slate-400' : 'text-slate-500'}`}>
                   {achievement.description}
                 </p>
 
                 {achievement.unlocked ? (
                   <div className="flex items-center space-x-2 text-green-400">
                     <Award className="h-4 w-4" />
-                    <span className="text-sm font-semibold">Розблоковано</span>
+                    <span className="text-xs sm:text-sm font-semibold">Розблоковано</span>
                   </div>
                 ) : (
                   <div className="flex items-center space-x-2 text-slate-500">
                     <Lock className="h-4 w-4" />
-                    <span className="text-sm">Заблоковано</span>
+                    <span className="text-xs sm:text-sm">Заблоковано</span>
                   </div>
                 )}
               </div>
@@ -202,10 +202,10 @@ export default function Achievements({ onNavigate }) {
           </div>
 
           {/* Motivation */}
-          <div className="mt-8 bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl border border-orange-500/30 p-8 text-center animate-slide-up" style={{ animationDelay: '1s' }}>
-            <span className="text-5xl mb-4 block">🐱</span>
-            <h3 className="text-2xl font-bold text-white mb-2">Продовжуйте вчитися!</h3>
-            <p className="text-slate-300">
+          <div className="mt-6 sm:mt-8 bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-orange-500/30 p-4 sm:p-8 text-center animate-slide-up" style={{ animationDelay: '1s' }}>
+            <span className="text-4xl sm:text-5xl mb-4 block">🐱</span>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Продовжуйте вчитися!</h3>
+            <p className="text-slate-300 text-sm sm:text-base">
               Пройдіть більше тестів, щоб розблокувати нові досягнення та стати найкращим котом-студентом НМТ!
             </p>
           </div>

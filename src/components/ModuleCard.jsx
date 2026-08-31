@@ -69,26 +69,26 @@ export default function ModuleCard({ module, topics, onTopicClick, completedTest
     <div className={`bg-gradient-to-br ${colors.bg} backdrop-blur-xl rounded-3xl border ${colors.border} ${colors.hover} transition-all duration-300 hover:scale-[1.01] hover:shadow-xl hover:shadow-${module.color}-500/10 animate-slide-up`}>
       {/* Module Header */}
       <div 
-        className="p-6 cursor-pointer"
+        className="p-4 sm:p-6 cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex items-center space-x-4">
-            <div className={`text-4xl`}>{module.icon || '🐱'}</div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 gap-3 sm:gap-0">
+          <div className="flex items-center space-x-3 sm:space-x-4">
+            <div className={`text-3xl sm:text-4xl`}>{module.icon || '🐱'}</div>
             <div>
-              <h3 className="text-xl font-bold text-white mb-1">{module.title}</h3>
-              <p className="text-slate-400 text-sm">{module.description}</p>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-1">{module.title}</h3>
+              <p className="text-slate-400 text-xs sm:text-sm">{module.description}</p>
             </div>
           </div>
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 sm:space-x-3 w-full sm:w-auto justify-between sm:justify-end">
             {isModuleCompleted && (
-              <div className="flex items-center space-x-1 bg-green-500/20 px-3 py-1.5 rounded-full border border-green-500/30">
-                <span className="text-lg">🎉</span>
-                <span className="text-green-400 text-xs font-semibold">Завершено</span>
+              <div className="flex items-center space-x-1 bg-green-500/20 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full border border-green-500/30">
+                <span className="text-sm sm:text-lg">🎉</span>
+                <span className="text-green-400 text-xs font-semibold hidden sm:inline">Завершено</span>
               </div>
             )}
             <div className={`p-2 rounded-lg ${colors.icon} ${colors.text} transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
-              {isExpanded ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+              {isExpanded ? <ChevronUp className="h-4 sm:h-5 w-4 sm:w-5" /> : <ChevronDown className="h-4 sm:h-5 w-4 sm:w-5" />}
             </div>
           </div>
         </div>

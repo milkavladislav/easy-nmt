@@ -18,3 +18,44 @@ body {
 #root {
   min-height: 100vh;
 }
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Improve touch targets on mobile */
+  button {
+    min-height: 44px;
+  }
+  
+  /* Reduce animations on mobile for better performance */
+  .animate-fade-in,
+  .animate-slide-up {
+    animation-duration: 0.3s;
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Better text wrapping on mobile */
+@media (max-width: 640px) {
+  h1, h2, h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Better spacing for touch interfaces */
+  .p-8 {
+    padding: 1.5rem;
+  }
+  
+  .p-6 {
+    padding: 1.25rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+}
