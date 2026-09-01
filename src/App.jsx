@@ -55,7 +55,7 @@ function AppContent() {
       case 'nmt':
         return <NMT onNavigate={handleNavigate} />;
       case 'nmtTest':
-        return <NMTTestRunner test={viewData} onNavigate={handleNavigate} />;
+        return <NMTTestRunner test={viewData} onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />;
       default:
         return <Course onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />;
     }

@@ -1,53 +1,52 @@
 import { useAuth } from '../context/AuthContext';
 import { Trophy, BookOpen, TrendingUp, Clock, Target, Award, Loader2 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, getDocs, query, orderBy } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, where, onSnapshot } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 
 export default function Statistics({ onNavigate }) {
   const { user } = useAuth();
   const [modules, setModules] = useState([]);
   const [modulesWithProgress, setModulesWithProgress] = useState([]);
+  const [nmtResults, setNmtResults] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const total200 = nmtResults.reduce((sum, r) => sum + (r.scale200 || 0), 0);
+  const completedCount = nmtResults.length;
+  const passedCount = nmtResults.filter((r) => r.passed).length;
+  const avg200 = completedCount > 0 ? Math.round(total200 / completedCount) : 0;
 
   const stats = [
     {
       icon: Trophy,
-      label: 'Загальні бали',
-      value: user?.total_points || 0,
+      label: 'Загальні бали (200)',
+      value: total200,
       color: 'violet',
       gradient: 'from-violet-500/10 to-purple-500/10'
     },
     {
       icon: BookOpen,
-      label: 'Завершені модулі',
-      value: user?.completed_modules?.length || 0,
+      label: 'Завершені НМТ-тести',
+      value: completedCount,
       color: 'fuchsia',
       gradient: 'from-fuchsia-500/10 to-pink-500/10'
     },
     {
       icon: TrendingUp,
-      label: 'Середній бал',
-      value: user?.total_points && user?.completed_tests?.length > 0 
-        ? Math.round(user.total_points / user.completed_tests.length) 
-        : 0,
+      label: 'Середній бал (200)',
+      value: avg200,
       color: 'blue',
       gradient: 'from-blue-500/10 to-cyan-500/10'
     },
     {
-      icon: Clock,
-      label: 'Час навчання',
-      value: '--',
+      icon: Award,
+      label: 'Успішно складено',
+      value: passedCount,
       color: 'emerald',
       gradient: 'from-emerald-500/10 to-teal-500/10'
     }
   ];
 
-  const recentActivity = [
-    { type: 'test', name: 'Тест з алгебри', score: '4/5', date: 'Сьогодні' },
-    { type: 'test', name: 'Тест з орфографії', score: '5/5', date: 'Вчора' },
-    { type: 'test', name: 'Тест з історії', score: '3/5', date: '2 дні тому' },
-  ];
 
   useEffect(() => {
     const fetchModules = async () => {
@@ -93,6 +92,25 @@ export default function Statistics({ onNavigate }) {
     };
 
     fetchModules();
+  }, [user]);
+
+  useEffect(() => {
+    if (!user) return;
+    const resultsQuery = query(
+      collection(db, 'nmt_results'),
+      where('userId', '==', user.uid),
+      orderBy('createdAt', 'desc')
+    );
+    const unsubscribe = onSnapshot(resultsQuery, (snapshot) => {
+      const data = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data()
+      }));
+      setNmtResults(data);
+    }, (err) => {
+      console.error('Error fetching NMT results:', err);
+    });
+    return () => unsubscribe();
   }, [user]);
 
   if (loading) {
@@ -185,26 +203,42 @@ export default function Statistics({ onNavigate }) {
             </div>
 
             <div className="space-y-3 sm:space-y-4">
-              {recentActivity.map((activity, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-slate-700/50 to-slate-800/50 rounded-xl border border-slate-600 hover:border-violet-500/50 transition-all duration-300"
-                >
-                  <div className="flex items-center space-x-3 sm:space-x-4">
-                    <div className="bg-orange-500/20 p-2 sm:p-3 rounded-lg sm:rounded-xl">
-                      <span className="text-lg sm:text-xl">🐾</span>
+              {nmtResults.length === 0 ? (
+                <p className="text-slate-400 text-center py-4">Ще немає пройдених НМТ-тестів</p>
+              ) : (
+                nmtResults.map((result) => {
+                  const date = result.createdAt?.toDate
+                    ? result.createdAt.toDate().toLocaleDateString('uk-UA')
+                    : '';
+                  return (
+                    <div
+                      key={result.id}
+                      className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-slate-700/50 to-slate-800/50 rounded-xl border border-slate-600 hover:border-violet-500/50 transition-all duration-300"
+                    >
+                      <div className="flex items-center space-x-3 sm:space-x-4 min-w-0">
+                        <div className="bg-orange-500/20 p-2 sm:p-3 rounded-lg sm:rounded-xl shrink-0">
+                          <span className="text-lg sm:text-xl">�</span>
+                        </div>
+                        <div className="min-w-0">
+                          <p className="text-white font-semibold text-sm sm:text-base truncate">{result.testTitle}</p>
+                          <p className="text-slate-400 text-xs sm:text-sm">{date}</p>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0 pl-3">
+                        <p
+                          className={`font-bold text-base sm:text-lg ${result.passed ? 'text-emerald-400' : 'text-red-400'}`}
+                        >
+                          {result.passed ? result.scale200 : 'Не склав'}
+                          {result.passed ? (
+                            <span className="text-sm font-normal text-slate-400">/200</span>
+                          ) : null}
+                        </p>
+                        <p className="text-slate-400 text-xs sm:text-sm">{result.earned}/{result.max} тестових</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-white font-semibold text-sm sm:text-base">{activity.name}</p>
-                      <p className="text-slate-400 text-xs sm:text-sm">{activity.date}</p>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-orange-400 font-bold text-base sm:text-lg">{activity.score}</p>
-                    <p className="text-slate-400 text-xs sm:text-sm">Результат</p>
-                  </div>
-                </div>
-              ))}
+                  );
+                })
+              )}
             </div>
           </div>
         </div>

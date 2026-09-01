@@ -11,7 +11,7 @@ import {
   signOut,
   onAuthStateChanged
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, arrayUnion, serverTimestamp } from 'firebase/firestore';
 
 function formatError(err) {
   const code = err?.code || '';
@@ -74,7 +74,8 @@ export function AuthProvider({ children }) {
             email: currentUser.email,
             displayName: currentUser.displayName || userData.name || currentUser.email,
             photoURL: currentUser.photoURL,
-            ...userData
+            ...userData,
+            metadata: currentUser.metadata
           });
         } else {
           await setDoc(userDocRef, {
@@ -82,7 +83,8 @@ export function AuthProvider({ children }) {
             email: currentUser.email,
             total_points: 0,
             completed_tests: [],
-            completed_modules: []
+            completed_modules: [],
+            createdAt: serverTimestamp()
           });
           setUser({
             uid: currentUser.uid,
@@ -91,7 +93,8 @@ export function AuthProvider({ children }) {
             photoURL: currentUser.photoURL,
             total_points: 0,
             completed_tests: [],
-            completed_modules: []
+            completed_modules: [],
+            metadata: currentUser.metadata
           });
         }
       } else {

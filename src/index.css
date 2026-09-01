@@ -19,10 +19,19 @@ body {
   min-height: 100vh;
 }
 
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Mobile-specific improvements */
 @media (max-width: 640px) {
   /* Improve touch targets on mobile */
-  button {
+  button:not(.compact-btn) {
     min-height: 44px;
   }
   
