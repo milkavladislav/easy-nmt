@@ -1,0 +1,117 @@
+import { useEffect, useState } from 'react';
+import { ArrowLeft, Presentation, FileText, ClipboardList, KeyRound, Play, Loader2, CheckCircle2 } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
+import { loadTopicTest, loadBestResults, testIdFor } from '../utils/course150';
+
+function Step({ n, icon, title, text, children }) {
+  return (
+    <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-orange-500/30 p-5 sm:p-6">
+      <div className="flex items-start gap-4">
+        <span className="shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-amber-500 text-white font-bold flex items-center justify-center">{n}</span>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-bold text-white flex items-center gap-2">{icon}{title}</h3>
+          <p className="text-slate-300 text-sm mt-1 mb-4">{text}</p>
+          <div className="flex flex-wrap gap-2">{children}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const PdfLink = ({ href, children, primary }) =>
+  href ? (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${
+        primary
+          ? 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white'
+          : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
+      }`}
+    >
+      {children}
+    </a>
+  ) : null;
+
+export default function Topic150({ topic, onNavigate }) {
+  const { user } = useAuth();
+  const [loadingTest, setLoadingTest] = useState(false);
+  const [error, setError] = useState(null);
+  const [best, setBest] = useState(null);
+  const f = topic.files || {};
+
+  useEffect(() => {
+    loadBestResults(user?.uid).then((all) => setBest(all[testIdFor(topic.number)] || null)).catch(() => {});
+  }, [user?.uid, topic.number]);
+
+  const startTest = async () => {
+    try {
+      setLoadingTest(true);
+      setError(null);
+      const test = await loadTopicTest(topic);
+      onNavigate('nmtTest', { test, practice: true, exit: { view: 'topic150', data: topic } });
+    } catch (err) {
+      console.error('course150 test load error:', err);
+      setError('Не вдалося завантажити тест. Спробуйте ще раз.');
+    } finally {
+      setLoadingTest(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
+        <button onClick={() => onNavigate('course')} className="inline-flex items-center gap-2 text-slate-300 hover:text-white mb-6">
+          <ArrowLeft className="h-5 w-5" />
+          До курсу
+        </button>
+
+        <div className="mb-6">
+          <p className="text-orange-300 text-sm font-semibold mb-1">НМТ 150+ · Тема {topic.number}</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white">{topic.title}</h1>
+        </div>
+
+        {f.lesson && (
+          <div className="hidden md:block rounded-3xl overflow-hidden border border-orange-500/30 mb-6 bg-black/20">
+            <iframe title={`Тема ${topic.number}`} src={`${f.lesson}#view=FitH`} className="w-full aspect-video" />
+          </div>
+        )}
+
+        <div className="space-y-4">
+          <Step n={1} icon={<Presentation className="h-5 w-5 text-orange-300" />} title="Заняття"
+            text="Коротка теорія, розібрані приклади й задачі з НМТ минулих років. Розв’язуй у зошиті, потім звіряйся з відповідями.">
+            <PdfLink href={f.lesson} primary>Відкрити заняття</PdfLink>
+            <PdfLink href={f.lessonAnswers}><KeyRound className="h-4 w-4" />Відповіді й розв’язання</PdfLink>
+          </Step>
+
+          <Step n={2} icon={<ClipboardList className="h-5 w-5 text-orange-300" />} title="Домашнє завдання"
+            text={`Аркуш ДЗ на ${topic.testQuestions || ''} завдань — розв’яжи на папері.`}>
+            <PdfLink href={f.homework} primary><FileText className="h-4 w-4" />Відкрити ДЗ</PdfLink>
+          </Step>
+
+          <Step n={3} icon={<Play className="h-5 w-5 text-orange-300" />} title="Тест з автоперевіркою"
+            text="Внеси відповіді з ДЗ у тест: бали як на НМТ, після завершення — правильні відповіді й розв’язання.">
+            {f.test && (
+              <button
+                onClick={startTest}
+                disabled={loadingTest}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white disabled:opacity-60"
+              >
+                {loadingTest ? <Loader2 className="h-4 w-4 animate-spin" /> : <Play className="h-4 w-4" />}
+                {best ? 'Пройти ще раз' : 'Почати тест'}
+              </button>
+            )}
+            <PdfLink href={f.homeworkAnswers}><KeyRound className="h-4 w-4" />Відповіді до ДЗ</PdfLink>
+            {best && (
+              <span className="inline-flex items-center gap-2 px-3 py-2 text-sm text-green-400">
+                <CheckCircle2 className="h-4 w-4" />Найкращий результат: {best.earned} / {best.max}
+              </span>
+            )}
+          </Step>
+          {error && <p className="text-red-400 text-sm">{error}</p>}
+        </div>
+      </div>
+    </div>
+  );
+}

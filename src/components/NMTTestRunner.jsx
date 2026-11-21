@@ -37,7 +37,9 @@ function formatTime(totalSeconds) {
   return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 }
 
-export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik }) {
+export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practice = false, exit = null }) {
+  // practice — тест ДЗ курсу 150+: без шкали 200 балів; exit — куди повертатися (за замовчуванням список НМТ-тестів)
+  const goBack = () => (exit ? onNavigate(exit.view, exit.data) : onNavigate('nmt'));
   const questions = useMemo(() => {
     const key = test.answers ?? test.correctAnswers ?? test.answerKey ?? [];
     return (test.questions || []).map((q, idx) => normalizeQuestion(q, idx, key[idx]));
@@ -445,7 +447,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik }) {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex items-center justify-between mb-10">
             <button
-              onClick={() => onNavigate('nmt')}
+              onClick={goBack}
               className="compact-btn w-9 h-9 rounded-lg flex items-center justify-center"
               style={{ backgroundColor: t.surface }}
             >
@@ -470,7 +472,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik }) {
               <p className="text-sm" style={{ color: t.muted }}>
                 {percent}% тестових балів · повністю правильних {score.ok} з {questions.length} · відповіді дано на {answeredCount}
               </p>
-              <p
+              {!practice && <p
                 className="text-2xl font-semibold mt-3"
                 style={{ color: passed ? t.correct : t.wrong }}
               >
@@ -478,7 +480,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik }) {
                 {passed ? (
                   <span className="text-base font-normal" style={{ color: t.muted }}> / 200</span>
                 ) : null}
-              </p>
+              </p>}
             </>
           ) : (
             <p className="text-sm" style={{ color: t.muted }}>
@@ -569,11 +571,11 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik }) {
               Пройти ще раз
             </button>
             <button
-              onClick={() => onNavigate('nmt')}
+              onClick={goBack}
               className="flex-1 px-6 py-3 rounded-xl text-sm transition-opacity hover:opacity-80"
               style={{ backgroundColor: t.activeBg, color: t.activeText }}
             >
-              Назад до списку тестів
+              {practice ? 'Назад до теми' : 'Назад до списку тестів'}
             </button>
           </div>
         </div>
@@ -589,7 +591,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik }) {
     <div className="fixed inset-0 z-50 flex flex-col" style={{ backgroundColor: t.bg, color: t.text }}>
       <header className="flex items-center gap-2 px-3 pt-3">
         <button
-          onClick={() => onNavigate('nmt')}
+          onClick={goBack}
           title="Вийти з тесту"
           className="compact-btn w-9 h-9 shrink-0 rounded-lg flex items-center justify-center transition-opacity hover:opacity-80"
           style={{ backgroundColor: t.surface }}
@@ -672,7 +674,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik }) {
                 Почати спочатку
               </button>
               <button
-                onClick={() => { setMenuOpen(false); onNavigate('nmt'); }}
+                onClick={() => { setMenuOpen(false); goBack(); }}
                 className="w-full text-left px-3 py-2 rounded-lg transition-opacity hover:opacity-70"
               >
                 Вийти з тесту

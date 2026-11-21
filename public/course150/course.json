@@ -1,0 +1,385 @@
+{
+ "title": "НМТ самопідготовка 150+",
+ "blocks": [
+  {
+   "number": 1,
+   "title": "Числа й вирази",
+   "topics": [
+    {
+     "number": 1,
+     "title": "Дійсні числа",
+     "free": true,
+     "ready": true,
+     "files": {
+      "lesson": "/course150/t01/lesson.pdf",
+      "lessonAnswers": "/course150/t01/lesson-answers.pdf",
+      "homework": "/course150/t01/homework.pdf",
+      "homeworkAnswers": "/course150/t01/homework-answers.pdf",
+      "test": "/course150/t01/test.json"
+     },
+     "testQuestions": 21
+    },
+    {
+     "number": 2,
+     "title": "Раціональні вирази",
+     "free": true,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 3,
+     "title": "Модуль",
+     "free": true,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 4,
+     "title": "Корені",
+     "free": true,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 5,
+     "title": "Степені",
+     "free": true,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 6,
+     "title": "Пропорції та відсотки (ч. 1)",
+     "free": true,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 7,
+     "title": "Пропорції та відсотки (ч. 2)",
+     "free": true,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "title": "Трикутники",
+   "topics": [
+    {
+     "number": 8,
+     "title": "Основні поняття",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 9,
+     "title": "Теореми синусів і косинусів",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 10,
+     "title": "Прямокутний трикутник",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 11,
+     "title": "Площі трикутників",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 12,
+     "title": "Вписане й описане коло",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "title": "Логарифми й тригонометрія",
+   "topics": [
+    {
+     "number": 13,
+     "title": "Логарифми",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 14,
+     "title": "Тригонометрія (ч. 1)",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 15,
+     "title": "Тригонометрія (ч. 2)",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "title": "Рівняння",
+   "topics": [
+    {
+     "number": 16,
+     "title": "Лінійні й квадратні",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 17,
+     "title": "З модулем, дробові, ірраціональні",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 18,
+     "title": "Тригонометричні",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 19,
+     "title": "Логарифмічні й показникові",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 20,
+     "title": "Системи рівнянь",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "title": "Нерівності",
+   "topics": [
+    {
+     "number": 21,
+     "title": "Нерівності",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "title": "Коло й чотирикутники",
+   "topics": [
+    {
+     "number": 22,
+     "title": "Коло і круг",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 23,
+     "title": "Паралелограм і прямокутник",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 24,
+     "title": "Ромб і квадрат",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 25,
+     "title": "Трапеція",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "title": "Прогресії",
+   "topics": [
+    {
+     "number": 26,
+     "title": "Прогресії",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "title": "Функції",
+   "topics": [
+    {
+     "number": 27,
+     "title": "Функціональна залежність і перетворення графіків",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 28,
+     "title": "Лінійна й квадратична функції",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 29,
+     "title": "Степенева, показникова, логарифмічна",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 30,
+     "title": "Тригонометричні функції",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 9,
+   "title": "Похідна та інтеграл",
+   "topics": [
+    {
+     "number": 31,
+     "title": "Похідна",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 32,
+     "title": "Застосування похідної",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 33,
+     "title": "Первісна, інтеграл, площі",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 10,
+   "title": "Вектори й координати",
+   "topics": [
+    {
+     "number": 34,
+     "title": "Вектори на площині",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 35,
+     "title": "Координати й вектори у просторі",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 11,
+   "title": "Ймовірність і статистика",
+   "topics": [
+    {
+     "number": 36,
+     "title": "Ймовірність",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 37,
+     "title": "Статистика",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 38,
+     "title": "Комбінаторика",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  },
+  {
+   "number": 12,
+   "title": "Стереометрія",
+   "topics": [
+    {
+     "number": 39,
+     "title": "Аксіоми стереометрії",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 40,
+     "title": "Призма, куб, паралелепіпед",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 41,
+     "title": "Піраміда",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 42,
+     "title": "Циліндр і конус",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 43,
+     "title": "Куля",
+     "free": false,
+     "ready": false,
+     "files": {}
+    }
+   ]
+  }
+ ]
+}
