@@ -110,15 +110,21 @@ export function AuthProvider({ children }) {
     try {
       setError(null);
       const provider = new GoogleAuthProvider();
-      // Use popup for localhost, redirect for production
-      const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
-      if (isProduction) {
-        await signInWithRedirect(auth, provider);
-      } else {
+      // Popup скрізь: redirect через easy-nmt.firebaseapp.com ламається в Chrome/Safari
+      // (розділене стороннє сховище) — користувач повертається неавторизованим.
+      // Redirect лишаємо лише як запасний варіант, коли браузер блокує спливне вікно.
+      try {
         const result = await signInWithPopup(auth, provider);
         return result.user;
+      } catch (popupErr) {
+        if (popupErr?.code === 'auth/popup-blocked' || popupErr?.code === 'auth/operation-not-supported-in-this-environment') {
+          await signInWithRedirect(auth, provider);
+          return null;
+        }
+        throw popupErr;
       }
     } catch (err) {
+      if (err?.code === 'auth/popup-closed-by-user' || err?.code === 'auth/cancelled-popup-request') return null;
       setError(formatError(err));
       throw err;
     }

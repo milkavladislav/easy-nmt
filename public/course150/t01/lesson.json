@@ -1,0 +1,1036 @@
+{
+ "number": 1,
+ "title": "Дійсні числа",
+ "intro": [
+  {
+   "title": "Множини чисел",
+   "text": "N, Z, Q, I, R; прості й складені"
+  },
+  {
+   "title": "Дроби",
+   "text": "звичайні, мішані, десяткові; округлення"
+  },
+  {
+   "title": "Проміжки",
+   "text": "скільки цілих чисел між a та b"
+  },
+  {
+   "title": "Задачі НМТ",
+   "text": "подільність, «у k разів більше», ціни"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "N Z Q R",
+   "text": "числові множини й прості числа"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{a}{b}\" data-type=\"inline-math\"></span>  0,5",
+   "text": "звичайні й десяткові дроби"
+  },
+  {
+   "big": "÷3",
+   "text": "подільність і текстові задачі"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Множини чисел",
+   "title": "Від натуральних до дійсних",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "N",
+     "title": "Натуральні",
+     "formula": "",
+     "text": "Числа для лічби: 1, 2, 3, … <b>0 — не натуральне.</b>"
+    },
+    {
+     "color": "mint",
+     "big": "Z",
+     "title": "Цілі",
+     "formula": "",
+     "text": "Натуральні, протилежні до них і нуль: …, −2, −1, 0, 1, 2, …"
+    },
+    {
+     "color": "coral",
+     "big": "Q",
+     "title": "Раціональні",
+     "formula": "",
+     "text": "Можна записати як <span data-latex=\"\\dfrac{m}{n}\" data-type=\"inline-math\"></span>: цілі, дроби, скінченні та періодичні десяткові: <span data-latex=\"0,(3) = \\dfrac{1}{3}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "violet",
+     "big": "I",
+     "title": "Ірраціональні",
+     "formula": "",
+     "text": "Нескінченні неперіодичні: <span data-latex=\"\\sqrt{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt{20}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\pi \" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "ink",
+     "big": "R",
+     "title": "Дійсні",
+     "formula": "",
+     "text": "Усі раціональні та ірраціональні разом: <span data-latex=\"N \\subset  Z \\subset  Q \\subset  R\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "white",
+     "big": "2, 3, 5, 7",
+     "title": "Прості й складені",
+     "formula": "",
+     "text": "Просте ділиться лише на 1 і на себе; складене має ще дільник. <b>1 — ні те, ні те.</b>"
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "connect",
+    "src": "ЗНО-2010",
+    "title": "Число та його множина",
+    "content": "Установіть відповідність між числом (1–4) та множиною, до якої воно належить (А–Д).",
+    "lh": "Число",
+    "rh": "Множина",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "23"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{16}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "1,7"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "множина парних натуральних чисел"
+     },
+     {
+      "id": 1,
+      "content": "множина цілих чисел, що не є натуральними числами"
+     },
+     {
+      "id": 2,
+      "content": "множина раціональних чисел, що не є цілими числами"
+     },
+     {
+      "id": 3,
+      "content": "множина ірраціональних чисел"
+     },
+     {
+      "id": 4,
+      "content": "множина простих чисел"
+     }
+    ],
+    "points": 4,
+    "solution": "<span data-latex=\"-8\" data-type=\"inline-math\"></span> — ціле, але не натуральне; 23 — просте; <span data-latex=\"\\sqrt{16} = 4\" data-type=\"inline-math\"></span> — парне натуральне; 1,7 — раціональне неціле."
+   },
+   "answer": "1 4 0 2"
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2011",
+    "title": "Знайди ірраціональне число",
+    "content": "Яке з наведених чисел є ірраціональним?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{0{,}64}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\sqrt{20}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\pi ^{0}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt[3]{8}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "2,7"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt{0{,}64} = 0{,}8\" data-type=\"inline-math\"></span>, <span data-latex=\"\\pi ^{0} = 1\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt[3]{8} = 2\" data-type=\"inline-math\"></span>, 2,7 — раціональні. <span data-latex=\"\\sqrt{20} = 2\\sqrt{5}\" data-type=\"inline-math\"></span> — корінь не добувається."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Звичайні дроби",
+   "title": "Чотири дії з дробами",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Додавання й віднімання",
+     "formula": "<span data-latex=\"\\dfrac{2}{3} + \\dfrac{4}{5} = \\dfrac{10 + 12}{15} = \\dfrac{22}{15}\" data-type=\"inline-math\"></span>",
+     "text": "Зводимо до спільного знаменника, далі — дії з чисельниками."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Множення",
+     "formula": "<span data-latex=\"\\dfrac{a}{b} \\cdot  \\dfrac{c}{d} = \\dfrac{ac}{bd}\" data-type=\"inline-math\"></span>",
+     "text": "Перед множенням скорочуємо навхрест: <span data-latex=\"\\dfrac{4}{9} \\cdot  \\dfrac{27}{36} = \\dfrac{1}{3}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Ділення",
+     "formula": "<span data-latex=\"\\dfrac{a}{b} : \\dfrac{c}{d} = \\dfrac{a}{b} \\cdot  \\dfrac{d}{c}\" data-type=\"inline-math\"></span>",
+     "text": "Множимо на обернений дріб."
+    },
+    {
+     "color": "white",
+     "big": "",
+     "title": "Мішані числа",
+     "formula": "<span data-latex=\"2\\dfrac{1}{3} = \\dfrac{2 \\cdot  3 + 1}{3} = \\dfrac{7}{3}\" data-type=\"inline-math\"></span>",
+     "text": "Множимо й ділимо <b>тільки</b> через неправильні дроби."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2016",
+    "title": "Додаємо мішане число",
+    "content": "<span data-latex=\"3\\dfrac{5}{12} + \\dfrac{7}{8} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"3\\dfrac{12}{20}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{17}{8}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{22}{20}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"3\\dfrac{7}{24}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"4\\dfrac{7}{24}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Цілу частину залишаємо, дроби — до знаменника 24: <span data-latex=\"\\dfrac{10}{24} + \\dfrac{21}{24} = \\dfrac{31}{24} = 1\\dfrac{7}{24}\" data-type=\"inline-math\"></span>. Разом <span data-latex=\"3 + 1\\dfrac{7}{24} = 4\\dfrac{7}{24}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026",
+    "title": "Ділимо мішані числа",
+    "content": "<span data-latex=\"5\\dfrac{1}{3} : 1\\dfrac{3}{5} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{3}{10}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{128}{15}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{5}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{15}{128}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{10}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{16}{3} : \\dfrac{8}{5} = \\dfrac{16}{3} \\cdot  \\dfrac{5}{8} = \\dfrac{10}{3}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Десяткові дроби",
+   "title": "Кома, ділення й округлення",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "× та : на 10, 100, 1000",
+     "formula": "",
+     "text": "Кома вправо (множення) або вліво (ділення) на стільки знаків, скільки нулів: <span data-latex=\"2{,}345 \\cdot  100 = 234{,}5\" data-type=\"inline-math\"></span>; <span data-latex=\"71{,}45 : 100 = 0{,}7145\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Ділення на десятковий дріб",
+     "formula": "",
+     "text": "Переносимо кому в обох числах, щоб дільник став цілим: <span data-latex=\"12{,}6 : 2{,}4 = 126 : 24 = 5{,}25\" data-type=\"inline-math\"></span>; <span data-latex=\"3 : 0{,}3 = 30 : 3 = 10\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Звичайний → десятковий",
+     "formula": "",
+     "text": "Ділимо чисельник на знаменник: <span data-latex=\"\\dfrac{3}{8} = 3 : 8 = 0{,}375\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "white",
+     "big": "",
+     "title": "Округлення",
+     "formula": "",
+     "text": "Дивимося на першу відкинуту цифру: <b>0–4</b> — не змінюємо, <b>5–9</b> — додаємо 1. <span data-latex=\"8{,}90032 \\approx  8{,}900\" data-type=\"inline-math\"></span> (до тисячних); <span data-latex=\"0{,}0652 \\approx  0{,}07\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2018",
+    "title": "Округлюємо до десятих",
+    "content": "Запишіть число <span data-latex=\"\\dfrac{8}{3}\" data-type=\"inline-math\"></span> у вигляді десяткового дробу, округливши його до десятих.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2,6"
+     },
+     {
+      "id": 1,
+      "content": "2,66"
+     },
+     {
+      "id": 2,
+      "content": "2,67"
+     },
+     {
+      "id": 3,
+      "content": "2,7"
+     },
+     {
+      "id": 4,
+      "content": "8,3"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"8 : 3 = 2{,}666\\ldots \" data-type=\"inline-math\"></span> Перша відкинута цифра 6 ≥ 5, тому <span data-latex=\"2{,}6 \\to  2{,}7\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Числові проміжки",
+   "title": "Скільки цілих чисел у проміжку",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "[−5; 3]",
+     "title": "Квадратні дужки",
+     "formula": "",
+     "text": "Кінці <b>входять</b>: −5, −4, …, 3."
+    },
+    {
+     "color": "mint",
+     "big": "(−5; 3)",
+     "title": "Круглі дужки",
+     "formula": "",
+     "text": "Кінці <b>не входять</b>: −4, −3, …, 2."
+    },
+    {
+     "color": "coral",
+     "big": "n − m + 1",
+     "title": "Рахуємо",
+     "formula": "",
+     "text": "Цілих чисел від <span data-latex=\"m\" data-type=\"inline-math\"></span> до <span data-latex=\"n\" data-type=\"inline-math\"></span> включно: <span data-latex=\"n - m + 1\" data-type=\"inline-math\"></span>. Корінь спершу оцінюємо: <span data-latex=\"3 &lt; \\sqrt{11} &lt; 4\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Проміжок з коренем",
+    "content": "Скільки всього цілих чисел містить проміжок <span data-latex=\"[-4; \\sqrt{11}]\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt{9} &lt; \\sqrt{11} &lt; \\sqrt{16}\" data-type=\"inline-math\"></span>, тобто <span data-latex=\"3 &lt; \\sqrt{11} &lt; 4\" data-type=\"inline-math\"></span>. Цілі: від −4 до 3 включно: <span data-latex=\"3 - (-4) + 1 = 8\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Подільність",
+   "title": "Ознаки подільності та «у k разів більше»",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "на 2, 5, 10",
+     "title": "",
+     "formula": "",
+     "text": "Остання цифра: парна — на 2; 0 або 5 — на 5; 0 — на 10."
+    },
+    {
+     "color": "mint",
+     "big": "на 3, 9",
+     "title": "",
+     "formula": "",
+     "text": "Сума цифр ділиться на 3 (на 9): <span data-latex=\"822 \\to  8 + 2 + 2 = 12\" data-type=\"inline-math\"></span> — ділиться на 3."
+    },
+    {
+     "color": "coral",
+     "big": "на 6",
+     "title": "",
+     "formula": "",
+     "text": "Ділиться і на 2, і на 3 одночасно."
+    },
+    {
+     "color": "violet",
+     "big": "k + 1",
+     "title": "«У k разів більше»",
+     "formula": "",
+     "text": "Одних <span data-latex=\"x\" data-type=\"inline-math\"></span>, інших <span data-latex=\"kx\" data-type=\"inline-math\"></span> — разом <span data-latex=\"(k + 1)x\" data-type=\"inline-math\"></span> частин: загальна кількість <b>кратна</b> <span data-latex=\"k + 1\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "white",
+     "big": "a : b",
+     "title": "Відношення",
+     "formula": "",
+     "text": "Якщо <span data-latex=\"a : b = 6 : 5\" data-type=\"inline-math\"></span>, то загальна кількість кратна <span data-latex=\"6 + 5 = 11\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "ink",
+     "big": "⌊ ⌋",
+     "title": "«Найбільша кількість»",
+     "formula": "",
+     "text": "Ділимо гроші на ціну й округлюємо <b>вниз</b>: <span data-latex=\"600 : 92{,}4 \\approx  6{,}5\" data-type=\"inline-math\"></span> → 6."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Тістечка",
+    "content": "У коробці лежать 30 тістечок двох видів: бісквіти та безе. Скільки всього бісквітних тістечок у цій коробці, якщо їх у 5 разів більше, ніж безе?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "15"
+     },
+     {
+      "id": 3,
+      "content": "24"
+     },
+     {
+      "id": 4,
+      "content": "25"
+     }
+    ],
+    "points": 1,
+    "solution": "Безе — <span data-latex=\"x\" data-type=\"inline-math\"></span>, бісквітів — <span data-latex=\"5x\" data-type=\"inline-math\"></span>: <span data-latex=\"6x = 30\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 5\" data-type=\"inline-math\"></span>. Бісквітів <span data-latex=\"5 \\cdot  5 = 25\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Обіди в їдальні",
+    "content": "У їдальні продається обід з першою стравою вартістю 92,4 грн. Яку найбільшу кількість таких обідів можна придбати на суму 600 грн?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "5"
+     },
+     {
+      "id": 2,
+      "content": "6"
+     },
+     {
+      "id": 3,
+      "content": "7"
+     },
+     {
+      "id": 4,
+      "content": "8"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"600 : 92{,}4 \\approx  6{,}49\" data-type=\"inline-math\"></span>. Сьомий обід уже не вистачить грошей: <span data-latex=\"7 \\cdot  92{,}4 = 646{,}8 &gt; 600\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024",
+    "title": "Дзвінки на гарячу лінію",
+    "content": "У першу годину роботи на телефон гарячої лінії надійшло 145 дзвінків, а за другу годину – на 17 дзвінків більше. Скільки всього дзвінків надійшло на телефон гарячої лінії за дві години роботи?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "307"
+     },
+     {
+      "id": 1,
+      "content": "290"
+     },
+     {
+      "id": 2,
+      "content": "287"
+     },
+     {
+      "id": 3,
+      "content": "273"
+     },
+     {
+      "id": 4,
+      "content": "162"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2024 (демо): <span data-latex=\"145 + (145 + 17) = 145 + 162 = 307\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023",
+    "title": "Акція на шоколадки",
+    "content": "У супермаркеті акція: купуєш три однакові шоколадки «Спокуса», а таку ж саму четверту супермаркет надає безкоштовно. Ціна кожної такої шоколадки – 35 грн. У покупця є 220 грн. Яку максимальну кількість шоколадок «Спокуса» він зможе отримати, узявши участь в акції?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2023 (демо): оплачуємо <span data-latex=\"220 : 35 \\approx  6{,}3\" data-type=\"inline-math\"></span> → 6 шоколадок, за кожні 3 — одна в подарунок: <span data-latex=\"6 + 2 = 8\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023",
+    "title": "Ручки поштучно й наборами",
+    "content": "У магазині канцтоварів ручка коштує 6 грн, а набір із двох ручок – 10 грн. Яку найбільшу кількість таких ручок можна купити в цьому магазині на суму до 58 грн?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "8"
+     },
+     {
+      "id": 1,
+      "content": "9"
+     },
+     {
+      "id": 2,
+      "content": "10"
+     },
+     {
+      "id": 3,
+      "content": "11"
+     },
+     {
+      "id": 4,
+      "content": "12"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2023: вигідніше наборами: 5 наборів (50 грн) + 1 ручка (6 грн) = 56 грн → <span data-latex=\"10 + 1 = 11\" data-type=\"inline-math\"></span> ручок"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024",
+    "title": "Фруктовий салат",
+    "content": "Микола частує свою родину фруктовим салатом із яблук, бананів й апельсинів. Для приготування однієї порції салату потрібно 1 банан, 2 апельсини та 3 яблука. Скільки апельсинів використав Микола, якщо він приготував за цим рецептом салат із 24 фруктів?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "5"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "12"
+     },
+     {
+      "id": 4,
+      "content": "18"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2024: у порції <span data-latex=\"1 + 2 + 3 = 6\" data-type=\"inline-math\"></span> фруктів, порцій <span data-latex=\"24 : 6 = 4\" data-type=\"inline-math\"></span>, апельсинів <span data-latex=\"4 \\cdot  2 = 8\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2022",
+    "title": "Бісквіти та безе",
+    "content": "У коробці лежать тістечка двох видів: бісквіти та безе. Яке з наведених чисел може бути кількістю тістечок у коробці, якщо бісквітів у 5 разів більше, ніж безе?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "27"
+     },
+     {
+      "id": 1,
+      "content": "44"
+     },
+     {
+      "id": 2,
+      "content": "50"
+     },
+     {
+      "id": 3,
+      "content": "61"
+     },
+     {
+      "id": 4,
+      "content": "72"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2022 (демо): <span data-latex=\"x + 5x = 6x\" data-type=\"inline-math\"></span> — кількість кратна 6: <span data-latex=\"72 = 6 \\cdot  12\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026",
+    "title": "Столи й стільці",
+    "content": "Кількість вироблених підприємством за рік столів відноситься до кількості виготовлених стільців як 3 : 4. Якою може бути сумарна кількість вироблених за рік підприємством столів і стільців?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "72"
+     },
+     {
+      "id": 1,
+      "content": "87"
+     },
+     {
+      "id": 2,
+      "content": "91"
+     },
+     {
+      "id": 3,
+      "content": "95"
+     },
+     {
+      "id": 4,
+      "content": "101"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2026 (демо): <span data-latex=\"3x + 4x = 7x\" data-type=\"inline-math\"></span> — кратна 7: <span data-latex=\"91 = 7 \\cdot  13\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2022",
+    "title": "Квартира № 31",
+    "content": "У під’їзді шістнадцятиповерхового будинку на першому поверсі розташовано 6 квартир, а на кожному з решти поверхів – по 8. На якому поверсі квартира № 31, якщо квартири від № 1 і далі пронумеровано послідовно від першого до останнього поверху?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3"
+     },
+     {
+      "id": 1,
+      "content": "4"
+     },
+     {
+      "id": 2,
+      "content": "5"
+     },
+     {
+      "id": 3,
+      "content": "6"
+     },
+     {
+      "id": 4,
+      "content": "7"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2022: на 1-му поверсі № 1–6, далі по 8: 2-й — № 7–14, 3-й — 15–22, 4-й — 23–30, 5-й — 31–38"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026",
+    "title": "Прискорене відео",
+    "content": "Вадим планує переглянути навчальний відеоролик тривалістю 60 хвилин. Перед переглядом він у налаштуваннях збільшив швидкість відтворення в 1,5 раза. Скільки хвилин тепер триватиме перегляд цього відеоролика?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "90"
+     },
+     {
+      "id": 1,
+      "content": "45"
+     },
+     {
+      "id": 2,
+      "content": "40"
+     },
+     {
+      "id": 3,
+      "content": "35"
+     },
+     {
+      "id": 4,
+      "content": "30"
+     }
+    ],
+    "points": 1,
+    "solution": "НМТ-2026: швидкість у 1,5 раза більша — час у 1,5 раза менший: <span data-latex=\"60 : 1{,}5 = 40\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "НМТ-2023",
+    "title": "Запитання про числа",
+    "content": "Доберіть до запитання (1–3) правильну відповідь на нього (А–Д).",
+    "lh": "Запитання",
+    "rh": "Відповідь на запитання",
+    "variants": [
+     {
+      "id": 0,
+      "content": "Яке число є дільником 8?"
+     },
+     {
+      "id": 1,
+      "content": "Яке число є простим?"
+     },
+     {
+      "id": 2,
+      "content": "Яке число є квадратом натурального числа?"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "8"
+     },
+     {
+      "id": 1,
+      "content": "16"
+     },
+     {
+      "id": 2,
+      "content": "17"
+     },
+     {
+      "id": 3,
+      "content": "27"
+     },
+     {
+      "id": 4,
+      "content": "56"
+     }
+    ],
+    "points": 3,
+    "solution": "НМТ-2023 (демо): дільник 8 — 8 (А); просте — 17 (В); квадрат — <span data-latex=\"16 = 4^{2}\" data-type=\"inline-math\"></span> (Б)"
+   },
+   "answer": "0 2 1"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2018",
+    "title": "Цукерки для дітей",
+    "content": "Цукерки, що лежать у коробці, можна порівну поділити між двома або трьома дітьми, але не можна поділити порівну між чотирма дітьми. Якому з наведених значень може дорівнювати кількість цукерок у цій коробці?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "36"
+     },
+     {
+      "id": 1,
+      "content": "40"
+     },
+     {
+      "id": 2,
+      "content": "42"
+     },
+     {
+      "id": 3,
+      "content": "48"
+     },
+     {
+      "id": 4,
+      "content": "50"
+     }
+    ],
+    "points": 1,
+    "solution": "ЗНО-2018: ділиться на 2 і на 3 (тобто на 6), але не на 4: 42"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2017",
+    "title": "Порядок дробів",
+    "content": "Розташуйте в порядку зростання числа <span data-latex=\"\\dfrac{5}{17}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\dfrac{5}{18}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\dfrac{6}{17}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{5}{17}; \\dfrac{5}{18}; \\dfrac{6}{17}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{5}{18}; \\dfrac{5}{17}; \\dfrac{6}{17}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{6}{17}; \\dfrac{5}{17}; \\dfrac{5}{18}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{5}{18}; \\dfrac{6}{17}; \\dfrac{5}{17}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{5}{17}; \\dfrac{6}{17}; \\dfrac{5}{18}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "ЗНО-2017: при однакових чисельниках більший той, у кого менший знаменник: <span data-latex=\"\\dfrac{5}{18} &lt; \\dfrac{5}{17}\" data-type=\"inline-math\"></span>; далі <span data-latex=\"\\dfrac{5}{17} &lt; \\dfrac{6}{17}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2008",
+    "title": "Дроби між дробами",
+    "content": "Визначте кількість усіх дробів із знаменником 28, які більші за <span data-latex=\"\\dfrac{4}{7}\" data-type=\"inline-math\"></span>, але менші від <span data-latex=\"\\dfrac{3}{4}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "шість"
+     },
+     {
+      "id": 1,
+      "content": "чотири"
+     },
+     {
+      "id": 2,
+      "content": "три"
+     },
+     {
+      "id": 3,
+      "content": "два"
+     },
+     {
+      "id": 4,
+      "content": "один"
+     }
+    ],
+    "points": 1,
+    "solution": "ЗНО-2008: <span data-latex=\"\\dfrac{4}{7} = \\dfrac{16}{28}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{3}{4} = \\dfrac{21}{28}\" data-type=\"inline-math\"></span>; між ними <span data-latex=\"\\dfrac{17}{28}, \\ldots , \\dfrac{20}{28}\" data-type=\"inline-math\"></span> — чотири"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2011",
+    "title": "Цифра замість зірочки",
+    "content": "Яку з наведених цифр потрібно поставити замість зірочки в записі числа 257*, щоб отримане число ділилося націло на 3?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "3"
+     },
+     {
+      "id": 2,
+      "content": "6"
+     },
+     {
+      "id": 3,
+      "content": "7"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "ЗНО-2011: сума цифр <span data-latex=\"2 + 5 + 7 + \\cdot  = 14 + \\cdot \" data-type=\"inline-math\"></span> має ділитися на 3 → * = 7 (2577, сума 21)"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2013",
+    "title": "Остача від ділення",
+    "content": "Остача від ділення натурального числа <span data-latex=\"k\" data-type=\"inline-math\"></span> на 5 дорівнює 2. Укажіть остачу від ділення на 5 числа <span data-latex=\"k + 21\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0"
+     },
+     {
+      "id": 1,
+      "content": "1"
+     },
+     {
+      "id": 2,
+      "content": "2"
+     },
+     {
+      "id": 3,
+      "content": "3"
+     },
+     {
+      "id": 4,
+      "content": "4"
+     }
+    ],
+    "points": 1,
+    "solution": "ЗНО-2013: <span data-latex=\"k = 5p + 2\" data-type=\"inline-math\"></span>, <span data-latex=\"k + 21 = 5p + 23 = 5(p + 4) + 3\" data-type=\"inline-math\"></span> → остача 3"
+   },
+   "answer": 3
+  }
+ ],
+ "summary": [
+  {
+   "big": "0 і 1",
+   "text": "0 — не натуральне; 1 — ні просте, ні складене."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{a}{b} : \\dfrac{c}{d}\" data-type=\"inline-math\"></span>",
+   "text": "Ділення — множення на обернений дріб; мішані — через неправильні."
+  },
+  {
+   "big": "[ ] ( )",
+   "text": "Квадратні дужки включають кінці; цілих від <span data-latex=\"m\" data-type=\"inline-math\"></span> до <span data-latex=\"n\" data-type=\"inline-math\"></span>: <span data-latex=\"n - m + 1\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "k + 1",
+   "text": "«У <span data-latex=\"k\" data-type=\"inline-math\"></span> разів більше» — загальна кількість кратна <span data-latex=\"k + 1\" data-type=\"inline-math\"></span>."
+  }
+ ]
+}

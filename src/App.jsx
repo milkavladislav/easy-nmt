@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Course150 from './pages/Course150';
 import Topic150 from './pages/Topic150';
+import Lesson150 from './pages/Lesson150';
 import Profile from './pages/Profile';
 import Statistics from './pages/Statistics';
 import Achievements from './pages/Achievements';
@@ -43,6 +44,8 @@ function AppContent() {
         return <Course150 onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />;
       case 'topic150':
         return <Topic150 topic={viewData} onNavigate={handleNavigate} />;
+      case 'lesson150':
+        return <Lesson150 topic={viewData} onNavigate={handleNavigate} />;
       case 'profile':
         return <Profile onNavigate={handleNavigate} />;
       case 'statistics':

@@ -12,6 +12,7 @@
      "ready": true,
      "files": {
       "lesson": "/course150/t01/lesson.pdf",
+      "lessonData": "/course150/t01/lesson.json",
       "lessonAnswers": "/course150/t01/lesson-answers.pdf",
       "homework": "/course150/t01/homework.pdf",
       "homeworkAnswers": "/course150/t01/homework-answers.pdf",

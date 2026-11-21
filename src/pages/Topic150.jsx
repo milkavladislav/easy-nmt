@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowLeft, Presentation, FileText, ClipboardList, KeyRound, Play, Loader2, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Presentation, FileText, ClipboardList, KeyRound, Play, Loader2, CheckCircle2, Download } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { loadTopicTest, loadBestResults, testIdFor } from '../utils/course150';
 
@@ -72,17 +72,21 @@ export default function Topic150({ topic, onNavigate }) {
           <h1 className="text-3xl sm:text-4xl font-bold text-white">{topic.title}</h1>
         </div>
 
-        {f.lesson && (
-          <div className="hidden md:block rounded-3xl overflow-hidden border border-orange-500/30 mb-6 bg-black/20">
-            <iframe title={`Тема ${topic.number}`} src={`${f.lesson}#view=FitH`} className="w-full aspect-video" />
-          </div>
-        )}
-
         <div className="space-y-4">
           <Step n={1} icon={<Presentation className="h-5 w-5 text-orange-300" />} title="Заняття"
-            text="Коротка теорія, розібрані приклади й задачі з НМТ минулих років. Розв’язуй у зошиті, потім звіряйся з відповідями.">
-            <PdfLink href={f.lesson} primary>Відкрити заняття</PdfLink>
-            <PdfLink href={f.lessonAnswers}><KeyRound className="h-4 w-4" />Відповіді й розв’язання</PdfLink>
+            text="Коротка теорія, розібрані приклади й задачі з НМТ минулих років — з перевіркою відповіді одразу.">
+            {f.lessonData ? (
+              <button
+                onClick={() => onNavigate('lesson150', topic)}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white"
+              >
+                <Play className="h-4 w-4" />Почати заняття
+              </button>
+            ) : (
+              <PdfLink href={f.lesson} primary>Відкрити заняття</PdfLink>
+            )}
+            {f.lessonData && <PdfLink href={f.lesson}><Download className="h-4 w-4" />Слайди PDF</PdfLink>}
+            <PdfLink href={f.lessonAnswers}><KeyRound className="h-4 w-4" />Відповіді PDF</PdfLink>
           </Step>
 
           <Step n={2} icon={<ClipboardList className="h-5 w-5 text-orange-300" />} title="Домашнє завдання"
