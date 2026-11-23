@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowLeft, Presentation, FileText, ClipboardList, KeyRound, Play, Loader2, CheckCircle2, Download } from 'lucide-react';
+import { ArrowLeft, Presentation, FileText, ClipboardList, Play, Loader2, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { loadTopicTest, loadBestResults, testIdFor } from '../utils/course150';
 
@@ -85,8 +85,6 @@ export default function Topic150({ topic, onNavigate }) {
             ) : (
               <PdfLink href={f.lesson} primary>Відкрити заняття</PdfLink>
             )}
-            {f.lessonData && <PdfLink href={f.lesson}><Download className="h-4 w-4" />Слайди PDF</PdfLink>}
-            <PdfLink href={f.lessonAnswers}><KeyRound className="h-4 w-4" />Відповіді PDF</PdfLink>
           </Step>
 
           <Step n={2} icon={<ClipboardList className="h-5 w-5 text-orange-300" />} title="Домашнє завдання"
@@ -106,7 +104,6 @@ export default function Topic150({ topic, onNavigate }) {
                 {best ? 'Пройти ще раз' : 'Почати тест'}
               </button>
             )}
-            <PdfLink href={f.homeworkAnswers}><KeyRound className="h-4 w-4" />Відповіді до ДЗ</PdfLink>
             {best && (
               <span className="inline-flex items-center gap-2 px-3 py-2 text-sm text-green-400">
                 <CheckCircle2 className="h-4 w-4" />Найкращий результат: {best.earned} / {best.max}
