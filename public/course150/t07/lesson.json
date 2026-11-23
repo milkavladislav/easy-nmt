@@ -1,0 +1,818 @@
+{
+ "number": 7,
+ "title": "Відсотки",
+ "intro": [
+  {
+   "title": "Відсоток від числа",
+   "text": "% → дріб і множимо"
+  },
+  {
+   "title": "Число за відсотком",
+   "text": "ділимо на дріб"
+  },
+  {
+   "title": "На скільки відсотків",
+   "text": "ділимо на <b>початкове</b>"
+  },
+  {
+   "title": "Більше / менше на %",
+   "text": "множник <span data-latex=\"1 \\pm  \\dfrac{p}{100}\" data-type=\"inline-math\"></span> і рівняння"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"1\\% = 0{,}01\" data-type=\"inline-math\"></span>",
+   "text": "сота частина числа"
+  },
+  {
+   "big": "<span data-latex=\"x \\cdot  0{,}85\" data-type=\"inline-math\"></span>",
+   "text": "на 15% менше"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{21}{140} \\cdot  100\\%\" data-type=\"inline-math\"></span>",
+   "text": "на скільки відсотків"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Відсоток від числа",
+   "title": "Ділимо на 100 і множимо",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "1% = 0,01",
+     "title": "Відсоток",
+     "formula": "",
+     "text": "Сота частина числа. % → дріб: ділимо на 100: <span data-latex=\"15\\% = 0{,}15\" data-type=\"inline-math\"></span>, <span data-latex=\"0{,}5\\% = 0{,}005\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "% від числа",
+     "formula": "",
+     "text": "Число <b>множимо</b> на дріб: 15% від 200 — <span data-latex=\"0{,}15 \\cdot  200 = 30\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Дріб → %",
+     "formula": "",
+     "text": "Множимо на 100%: <span data-latex=\"\\dfrac{1}{5} = 0{,}2 = 20\\%\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2015 (пробний)",
+    "title": "Дріб у відсотках",
+    "content": "Виразіть у відсотках число <span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2%"
+     },
+     {
+      "id": 1,
+      "content": "20%"
+     },
+     {
+      "id": 2,
+      "content": "50%"
+     },
+     {
+      "id": 3,
+      "content": "0,2%"
+     },
+     {
+      "id": 4,
+      "content": "1,5%"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{1}{5} = 0{,}2\" data-type=\"inline-math\"></span>; <span data-latex=\"0{,}2 \\cdot  100\\% = 20\\%\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2010",
+    "title": "Державне мито",
+    "content": "За видачу свідоцтва про право на спадщину стягується державне мито в розмірі 0,5% від вартості майна, що успадковується. Скільки державного мита повинен сплатити спадкоємець, якщо вартість майна, що успадковується, становить 32 000 грн?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "16 грн"
+     },
+     {
+      "id": 1,
+      "content": "64 грн"
+     },
+     {
+      "id": 2,
+      "content": "160 грн"
+     },
+     {
+      "id": 3,
+      "content": "320 грн"
+     },
+     {
+      "id": 4,
+      "content": "1600 грн"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"0{,}5\\% = 0{,}005\" data-type=\"inline-math\"></span>. <span data-latex=\"0{,}005 \\cdot  32 000 = 160\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Число за його відсотком",
+   "title": "Ділимо на дріб",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Знаємо частину — шукаємо ціле",
+     "formula": "",
+     "text": "Якщо <span data-latex=\"p\\%\" data-type=\"inline-math\"></span> числа дорівнює <span data-latex=\"A\" data-type=\"inline-math\"></span>, то число <span data-latex=\"A : \\dfrac{p}{100}\" data-type=\"inline-math\"></span>: 25% числа — це 50, тоді число <span data-latex=\"50 : 0{,}25 = 200\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Перевірка",
+     "formula": "",
+     "text": "Ціле завжди <b>більше</b> за свою частину (якщо <span data-latex=\"p &lt; 100\" data-type=\"inline-math\"></span>). <span data-latex=\"0{,}25 \\cdot  200 = 50\" data-type=\"inline-math\"></span> — ✓."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2022 (демо)",
+    "title": "Число за відсотком",
+    "content": "Визначте число, 25% якого дорівнює 50.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,5"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "12,5"
+     },
+     {
+      "id": 3,
+      "content": "100"
+     },
+     {
+      "id": 4,
+      "content": "200"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"50 : 0{,}25 = 200\" data-type=\"inline-math\"></span>. Перевірка: <span data-latex=\"0{,}25 \\cdot  200 = 50\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · На скільки відсотків",
+   "title": "Ділимо на те, з чим порівнюємо",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Зміна у відсотках",
+     "formula": "<span data-latex=\"\\dfrac{\\text{нове} - \\text{старе}}{\\text{старе}} \\cdot  100\\%\" data-type=\"inline-math\"></span>",
+     "text": "Різницю ділимо на <b>початкове</b> значення."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Яку частину становить",
+     "formula": "",
+     "text": "«Скільки відсотків <span data-latex=\"A\" data-type=\"inline-math\"></span> становить від <span data-latex=\"B\" data-type=\"inline-math\"></span>»: <span data-latex=\"\\dfrac{A}{B} \\cdot  100\\%\" data-type=\"inline-math\"></span> — ділимо на те, що після «від»."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023",
+    "title": "Підвищення плати",
+    "content": "Плату за користування комп’ютерною програмою підвищили зі 140 грн у 2021 р. до 161 грн у 2022 р. На скільки відсотків збільшили плату у 2022 р. порівняно із 2021 р.?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "10"
+     },
+     {
+      "id": 1,
+      "content": "15"
+     },
+     {
+      "id": 2,
+      "content": "21"
+     },
+     {
+      "id": 3,
+      "content": "85"
+     },
+     {
+      "id": 4,
+      "content": "115"
+     }
+    ],
+    "points": 1,
+    "solution": "Зросла на <span data-latex=\"161 - 140 = 21\" data-type=\"inline-math\"></span> грн. Ділимо на <b>початкову</b> плату: <span data-latex=\"\\dfrac{21}{140} \\cdot  100\\% = 15\\%\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · На p% більше чи менше",
+   "title": "Множник замість двох дій",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "На p% більше",
+     "formula": "<span data-latex=\"x \\cdot  (1 + \\dfrac{p}{100})\" data-type=\"inline-math\"></span>",
+     "text": "Ціна зросла на 20%: <span data-latex=\"x \\cdot  1{,}2\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "На p% менше",
+     "formula": "<span data-latex=\"x \\cdot  (1 - \\dfrac{p}{100})\" data-type=\"inline-math\"></span>",
+     "text": "Знижка 15%: платимо <span data-latex=\"x \\cdot  0{,}85\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Знайти початкову",
+     "formula": "",
+     "text": "Після знижки 70% заплатили 105 грн: <span data-latex=\"0{,}3x = 105\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 350\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2010",
+    "title": "Знижка на телевізор",
+    "content": "Перед Новим роком у магазині побутової техніки на всі товари було знижено ціни на 15%. Скільки коштуватиме після знижки телевізор вартістю 1800 грн?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1200 грн"
+     },
+     {
+      "id": 1,
+      "content": "1350 грн"
+     },
+     {
+      "id": 2,
+      "content": "1430 грн"
+     },
+     {
+      "id": 3,
+      "content": "1530 грн"
+     },
+     {
+      "id": 4,
+      "content": "1785 грн"
+     }
+    ],
+    "points": 1,
+    "solution": "Платимо <span data-latex=\"100\\% - 15\\% = 85\\%\" data-type=\"inline-math\"></span>: <span data-latex=\"1800 \\cdot  0{,}85 = 1530\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2025",
+    "title": "Чорна п’ятниця",
+    "content": "Чорної п’ятниці в магазині пропонують акцію: за кожен придбаний чорний гаманець покупець платить на 70% менше від його ціни. Покупець придбав чорний гаманець і заплатив за нього 105 грн, скориставшись цією акцією. Визначте ціну (грн) цього гаманця до Чорної п’ятниці.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "315"
+     },
+     {
+      "id": 1,
+      "content": "350"
+     },
+     {
+      "id": 2,
+      "content": "175"
+     },
+     {
+      "id": 3,
+      "content": "150"
+     },
+     {
+      "id": 4,
+      "content": "245"
+     }
+    ],
+    "points": 1,
+    "solution": "Заплатив <span data-latex=\"100\\% - 70\\% = 30\\%\" data-type=\"inline-math\"></span> ціни: <span data-latex=\"0{,}3x = 105\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 350\" data-type=\"inline-math\"></span> грн. (Не <span data-latex=\"105 \\cdot  3 = 315\" data-type=\"inline-math\"></span>!)"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 5 · Задачі з рівнянням",
+   "title": "Невідоме — через <span data-latex=\"x\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Складаємо рівняння",
+     "formula": "",
+     "text": "Початкову суму позначаємо <span data-latex=\"x\" data-type=\"inline-math\"></span>, кожну частину виражаємо через <span data-latex=\"x\" data-type=\"inline-math\"></span> у вигляді дробу."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Частина від частини",
+     "formula": "",
+     "text": "«На 20% менше, ніж однокімнатних» — рахуємо від <b>однокімнатних</b>, а не від усіх."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026 (демо)",
+    "title": "Гроші на картці",
+    "content": "Першого разу з банківської картки зняли 40% усіх грошей, а другого — 500 грн. Після цього на ній залишилася половина від початкової суми. Скільки гривень залишилося на картці?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2500"
+     },
+     {
+      "id": 1,
+      "content": "2000"
+     },
+     {
+      "id": 2,
+      "content": "5000"
+     },
+     {
+      "id": 3,
+      "content": "4000"
+     },
+     {
+      "id": 4,
+      "content": "1500"
+     }
+    ],
+    "points": 1,
+    "solution": "Було <span data-latex=\"x\" data-type=\"inline-math\"></span>. Залишилося <span data-latex=\"0{,}6x - 500 = 0{,}5x\" data-type=\"inline-math\"></span>, тож <span data-latex=\"0{,}1x = 500\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 5000\" data-type=\"inline-math\"></span>. Залишилось <span data-latex=\"0{,}5 \\cdot  5000 = 2500\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "short",
+    "src": "НМТ-2026",
+    "title": "Квартири в будинку",
+    "content": "У будинку 150 квартир: однокімнатні, двокімнатні та трикімнатні. Кількість однокімнатних квартир становить 40% від загальної кількості квартир, двокімнатних на 20% менше, ніж однокімнатних. Скільки трикімнатних квартир у будинку?",
+    "variants": [],
+    "points": 2,
+    "solution": "Однокімнатних <span data-latex=\"0{,}4 \\cdot  150 = 60\" data-type=\"inline-math\"></span>. Двокімнатних на 20% менше <b>від 60</b>: <span data-latex=\"0{,}8 \\cdot  60 = 48\" data-type=\"inline-math\"></span>. Трикімнатних <span data-latex=\"150 - 60 - 48 = 42\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "42"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2010 (пробний)",
+    "title": "Білки в молоці",
+    "content": "Молоко містить 3% білків. Скільки всього білків (у г) міститься в 600 г молока?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1,8 г"
+     },
+     {
+      "id": 1,
+      "content": "18 г"
+     },
+     {
+      "id": 2,
+      "content": "20 г"
+     },
+     {
+      "id": 3,
+      "content": "180 г"
+     },
+     {
+      "id": 4,
+      "content": "200 г"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"3\\% = 0{,}03\" data-type=\"inline-math\"></span>; <span data-latex=\"0{,}03 \\cdot  600 = 18\" data-type=\"inline-math\"></span> г."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2011",
+    "title": "Ціна журналу",
+    "content": "Журнал коштував 25 грн. Через два місяці цей самий журнал став коштувати 21 грн. На скільки відсотків знизилася ціна журналу?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4%"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{4}{21} \\cdot  100\\%\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{25}{21} \\cdot  100\\%\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "84%"
+     },
+     {
+      "id": 4,
+      "content": "16%"
+     }
+    ],
+    "points": 1,
+    "solution": "Знизилась на <span data-latex=\"25 - 21 = 4\" data-type=\"inline-math\"></span> грн. Ділимо на <b>початкову</b> ціну: <span data-latex=\"\\dfrac{4}{25} \\cdot  100\\% = 16\\%\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2025",
+    "title": "Миття рук",
+    "content": "Під час миття рук милом із крана витікає 25 л води, з них 60% марнують під час намилювання. Скільки літрів води можна зберегти, якщо закривати кран перед намилюванням рук?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "19"
+     },
+     {
+      "id": 1,
+      "content": "15"
+     },
+     {
+      "id": 2,
+      "content": "12"
+     },
+     {
+      "id": 3,
+      "content": "10"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"25 \\cdot  0{,}6 = 15\" data-type=\"inline-math\"></span> л."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2009",
+    "title": "Банківський переказ",
+    "content": "За переказ грошей клієнт повинен сплатити банку винагороду в розмірі 2% від суми переказу. Скільки всього грошей (у гривнях) йому потрібно сплатити в касу банку, якщо сума переказу становить 30 000 грн?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "36 000 грн"
+     },
+     {
+      "id": 1,
+      "content": "30 600 грн"
+     },
+     {
+      "id": 2,
+      "content": "30 060 грн"
+     },
+     {
+      "id": 3,
+      "content": "30 030 грн"
+     },
+     {
+      "id": 4,
+      "content": "30 006 грн"
+     }
+    ],
+    "points": 1,
+    "solution": "Платить суму переказу і ще 2%: <span data-latex=\"30 000 \\cdot  1{,}02 = 30 600\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2007",
+    "title": "Вклад у банку",
+    "content": "Банк сплачує своїм вкладникам 8% річних. Визначте, скільки грошей треба покласти на рахунок, щоб через рік отримати 60 грн прибутку.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1150"
+     },
+     {
+      "id": 1,
+      "content": "1050"
+     },
+     {
+      "id": 2,
+      "content": "950"
+     },
+     {
+      "id": 3,
+      "content": "850"
+     },
+     {
+      "id": 4,
+      "content": "750"
+     }
+    ],
+    "points": 1,
+    "solution": "8% суми — це 60 грн: <span data-latex=\"60 : 0{,}08 = 750\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2014 (пробний)",
+    "title": "Відсоток у буквах",
+    "content": "Якщо число <span data-latex=\"b\" data-type=\"inline-math\"></span> становить 47% від додатного числа <span data-latex=\"a\" data-type=\"inline-math\"></span>, то <span data-latex=\"b =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{47}{100 \\cdot  a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{100}{47 \\cdot  a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{a}{47 \\cdot  100}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{a}{47} \\cdot  100\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{a}{100} \\cdot  47\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "47% від <span data-latex=\"a\" data-type=\"inline-math\"></span> — це <span data-latex=\"a \\cdot  0{,}47 = \\dfrac{a}{100} \\cdot  47\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Заощадження",
+    "content": "Олександр мав заробітну плату в розмірі 15 000 грн, і кожен місяць він відкладав 10% від заробітної плати для того, щоб придбати смартфон на суму 12 000 грн. За скільки місяців Олександр назбирає гроші на смартфон?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "Щомісяця <span data-latex=\"0{,}1 \\cdot  15 000 = 1500\" data-type=\"inline-math\"></span> грн; <span data-latex=\"12 000 : 1500 = 8\" data-type=\"inline-math\"></span> місяців."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Частка у відсотках",
+    "content": "Протягом хокейного матчу команда господарів володіла шайбою <span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span> усього ігрового часу, а команда гостей — решту ігрового часу. Укажіть частку, протягом якої команда гостей володіла шайбою.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "75%"
+     },
+     {
+      "id": 1,
+      "content": "40%"
+     },
+     {
+      "id": 2,
+      "content": "60%"
+     },
+     {
+      "id": 3,
+      "content": "25%"
+     },
+     {
+      "id": 4,
+      "content": "20%"
+     }
+    ],
+    "points": 1,
+    "solution": "Гості — решта: <span data-latex=\"1 - \\dfrac{3}{5} = \\dfrac{2}{5} = 0{,}4 = 40\\%\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Початкова ціна акції",
+    "content": "Ціна акції компанії зросла на 600 грн, що становить 5% від її початкової ціни. Якою була початкова ціна акції?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "120 000 грн"
+     },
+     {
+      "id": 1,
+      "content": "12 000 грн"
+     },
+     {
+      "id": 2,
+      "content": "30 000 грн"
+     },
+     {
+      "id": 3,
+      "content": "1200 грн"
+     },
+     {
+      "id": 4,
+      "content": "3000 грн"
+     }
+    ],
+    "points": 1,
+    "solution": "5% ціни — це 600 грн: <span data-latex=\"600 : 0{,}05 = 12 000\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Друга футболка",
+    "content": "У магазині одягу всі футболки коштують 300 грн. У магазині діє акція: отримай знижку на одиницю другого товару. Скільки гривень має заплатити покупець за дві такі футболки разом, якщо за умовами акції за другу футболку він має заплатити на 40% менше?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "180 грн"
+     },
+     {
+      "id": 1,
+      "content": "450 грн"
+     },
+     {
+      "id": 2,
+      "content": "420 грн"
+     },
+     {
+      "id": 3,
+      "content": "120 грн"
+     },
+     {
+      "id": 4,
+      "content": "480 грн"
+     }
+    ],
+    "points": 1,
+    "solution": "Друга на 40% дешевша: <span data-latex=\"300 \\cdot  0{,}6 = 180\" data-type=\"inline-math\"></span>; разом <span data-latex=\"300 + 180 = 480\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ-2026",
+    "title": "Сплав на байдарці",
+    "content": "Сім’я з трьох осіб — батька, мами й сина — запланувала в день народження мами сплав на байдарці. Вартість сплаву становить 800 грн з особи. Мамі й сину надають знижки: 20% і 25% відповідно. Скільки гривень ця сім’я заплатить за сплав з урахуванням наданих знижок?",
+    "variants": [],
+    "points": 2,
+    "solution": "Тато <span data-latex=\"800\" data-type=\"inline-math\"></span>; мама <span data-latex=\"800 \\cdot  0{,}8 = 640\" data-type=\"inline-math\"></span>; син <span data-latex=\"800 \\cdot  0{,}75 = 600\" data-type=\"inline-math\"></span>. Разом <span data-latex=\"2040\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": "2040"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "ЗНО-2013",
+    "title": "Дві футболки",
+    "content": "У магазині молодіжного одягу діє акція: при покупці будь-яких двох однакових футболок за одну з них платять на 40% менше, ніж за іншу. За дві однакові футболки, придбані в цьому магазині під час акції, Микола заплатив 200 гривень. Скільки гривень заплатить Микола, якщо він купить лише одну таку футболку?",
+    "variants": [],
+    "points": 2,
+    "solution": "Одна — <span data-latex=\"x\" data-type=\"inline-math\"></span>, друга — <span data-latex=\"0{,}6x\" data-type=\"inline-math\"></span>. <span data-latex=\"1{,}6x = 200\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 125\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": "125"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "ЗНО-2013",
+    "title": "У 3,8 раза більше",
+    "content": "Додатне число <span data-latex=\"A\" data-type=\"inline-math\"></span> більше додатного числа <span data-latex=\"B\" data-type=\"inline-math\"></span> у 3,8 раза. На скільки відсотків число <span data-latex=\"A\" data-type=\"inline-math\"></span> більше за число <span data-latex=\"B\" data-type=\"inline-math\"></span>?",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"A = 3{,}8B\" data-type=\"inline-math\"></span> — це <span data-latex=\"380\\%\" data-type=\"inline-math\"></span> від <span data-latex=\"B\" data-type=\"inline-math\"></span>; більше на <span data-latex=\"380\\% - 100\\% = 280\\%\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "280"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Трав’яний чай",
+    "content": "Для приготування трав’яного чаю змішали м’яту й чебрець. Маса суміші становить 208 г, причому м’яти в суміші на 60% більше, ніж маса чебрецю. Скільки грамів м’яти в цій суміші?",
+    "variants": [],
+    "points": 2,
+    "solution": "Чебрець <span data-latex=\"x\" data-type=\"inline-math\"></span>, м’ята <span data-latex=\"1{,}6x\" data-type=\"inline-math\"></span>; <span data-latex=\"2{,}6x = 208\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 80\" data-type=\"inline-math\"></span>; м’яти <span data-latex=\"1{,}6 \\cdot  80 = 128\" data-type=\"inline-math\"></span> г."
+   },
+   "answer": "128"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"1\\% = 0{,}01\" data-type=\"inline-math\"></span>",
+   "text": "% → дріб: ділимо на 100; % від числа — множимо."
+  },
+  {
+   "big": "<span data-latex=\"A : 0{,}25\" data-type=\"inline-math\"></span>",
+   "text": "Число за відсотком — ділимо: <span data-latex=\"50 : 0{,}25 = 200\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{\\Delta }{\\text{старе}}\" data-type=\"inline-math\"></span>",
+   "text": "На скільки відсотків змінилось — ділимо на <b>початкове</b>."
+  },
+  {
+   "big": "<span data-latex=\"1 \\pm  \\dfrac{p}{100}\" data-type=\"inline-math\"></span>",
+   "text": "На 20% більше — <span data-latex=\"x \\cdot  1{,}2\" data-type=\"inline-math\"></span>; на 15% менше — <span data-latex=\"x \\cdot  0{,}85\" data-type=\"inline-math\"></span>."
+  }
+ ]
+}

@@ -1,0 +1,323 @@
+{
+ "title": "ДЗ 7. Відсотки (НМТ 150+)",
+ "lessonNumber": 7,
+ "source": "hw-sheet",
+ "hwKey": "150-7",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Знайдіть 32% від 150.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "24"
+    },
+    {
+     "id": 1,
+     "content": "32"
+    },
+    {
+     "id": 2,
+     "content": "40"
+    },
+    {
+     "id": 3,
+     "content": "48"
+    },
+    {
+     "id": 4,
+     "content": "69"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"0{,}32 \\cdot  150 = 48\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть число, 18% якого складає 45.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "210"
+    },
+    {
+     "id": 1,
+     "content": "226"
+    },
+    {
+     "id": 2,
+     "content": "250"
+    },
+    {
+     "id": 3,
+     "content": "275"
+    },
+    {
+     "id": 4,
+     "content": "300"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"45 : 0{,}18 = 250\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Скільки відсотків складає число 0,63 від 2?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "24,7%"
+    },
+    {
+     "id": 1,
+     "content": "31,5%"
+    },
+    {
+     "id": 2,
+     "content": "4,7%"
+    },
+    {
+     "id": 3,
+     "content": "8,3%"
+    },
+    {
+     "id": 4,
+     "content": "29,1%"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{0{,}63}{2} \\cdot  100\\% = 31{,}5\\%\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Ціна акції компанії зросла на 10% від її початкової ціни. Якою була початкова ціна (у грн) цієї акції, якщо її ціна тепер становить 990 грн?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "900"
+    },
+    {
+     "id": 1,
+     "content": "1089"
+    },
+    {
+     "id": 2,
+     "content": "891"
+    },
+    {
+     "id": 3,
+     "content": "1000"
+    },
+    {
+     "id": 4,
+     "content": "980"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"990 : 1{,}1 = 900\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "У травні заробітна плата працівника зросла на 2% порівняно з квітнем. Якою була заробітна плата цього працівника в квітні, якщо вона була меншою на 605 грн, ніж у травні?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "60 500 грн"
+    },
+    {
+     "id": 1,
+     "content": "1210 грн"
+    },
+    {
+     "id": 2,
+     "content": "121 000 грн"
+    },
+    {
+     "id": 3,
+     "content": "3250 грн"
+    },
+    {
+     "id": 4,
+     "content": "30 250 грн"
+    }
+   ],
+   "points": 1,
+   "solution": "2% квітневої зарплати — це 605 грн: <span data-latex=\"605 : 0{,}02 = 30\\,250\" data-type=\"inline-math\"></span> грн"
+  },
+  {
+   "type": "single",
+   "content": "Заробітна плата працівника становить 9000 грн. Із цієї суми він сплачує до державного бюджету 18% податку. Знайдіть суму податку, який буде вираховано з заробітної плати цього працівника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "162 грн"
+    },
+    {
+     "id": 1,
+     "content": "900 грн"
+    },
+    {
+     "id": 2,
+     "content": "1440 грн"
+    },
+    {
+     "id": 3,
+     "content": "1620 грн"
+    },
+    {
+     "id": 4,
+     "content": "500 грн"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"9000 \\cdot  0{,}18 = 1620\" data-type=\"inline-math\"></span> грн"
+  },
+  {
+   "type": "single",
+   "content": "На рисунку зображено пляшку кефіру. Інформацію про масу кефіру й масову частку жиру в ньому зазначено на етикетці. Обчисліть масу жиру в цьому кефірі.<p>Етикетка: «Кефір питний. Масова частка жиру 2 %. Маса 900 г».</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2 г"
+    },
+    {
+     "id": 1,
+     "content": "450 г"
+    },
+    {
+     "id": 2,
+     "content": "20 г"
+    },
+    {
+     "id": 3,
+     "content": "9 г"
+    },
+    {
+     "id": 4,
+     "content": "18 г"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"900 \\cdot  0{,}02 = 18\" data-type=\"inline-math\"></span> г"
+  },
+  {
+   "type": "single",
+   "content": "Фільм з бюджетом 80 млн гривень за перший тиждень прокату заробив 6 млн гривень. Який відсоток від вартості фільму становить прокат фільму за цей тиждень?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5%"
+    },
+    {
+     "id": 1,
+     "content": "7,5%"
+    },
+    {
+     "id": 2,
+     "content": "6%"
+    },
+    {
+     "id": 3,
+     "content": "0,75%"
+    },
+    {
+     "id": 4,
+     "content": "74%"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{6}{80} \\cdot  100\\% = 7{,}5\\%\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Валерія за два дні прочитала 132 вірші. За перший день вона прочитала на 20% віршів більше, ніж за другий. Скільки віршів прочитала Валерія за перший день?",
+   "variants": [],
+   "points": 2,
+   "solution": "другий день <span data-latex=\"x\" data-type=\"inline-math\"></span>, перший <span data-latex=\"1{,}2x\" data-type=\"inline-math\"></span>; <span data-latex=\"2{,}2x = 132\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 60\" data-type=\"inline-math\"></span>; <span data-latex=\"1{,}2 \\cdot  60 = 72\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "При купівлі трьох однакових футболок діє акційна пропозиція. За першу футболку покупець сплачує її повну вартість, за другу — на 20% менше, ніж за першу, а за третю — на 40% менше, ніж за першу. Усього за три футболки Микола заплатив 1056 грн. Скільки гривень коштує одна футболка без знижки?",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"x + 0{,}8x + 0{,}6x = 2{,}4x = 1056\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 440\" data-type=\"inline-math\"></span> грн"
+  },
+  {
+   "type": "short",
+   "content": "Улітку середня місячна кількість відвідувачів кінотеатру «Мрія» становила 18 000 осіб. У червні кількість відвідувачів кінотеатру «Мрія» була на 40% більшою, а в серпні — на 20% більшою, ніж у липні. Визначте кількість відвідувачів кінотеатру «Мрія» в червні.",
+   "variants": [],
+   "points": 2,
+   "solution": "за літо <span data-latex=\"3 \\cdot  18\\,000 = 54\\,000\" data-type=\"inline-math\"></span>; липень <span data-latex=\"x\" data-type=\"inline-math\"></span>: <span data-latex=\"3{,}6x = 54\\,000\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 15\\,000\" data-type=\"inline-math\"></span>; червень <span data-latex=\"1{,}4x = 21\\,000\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Опубліковане в соціальній мережі відео за перші дві доби сумарно набрало 1980 вподобайок. За першу добу кількість вподобайок була на 20% більшою, ніж за другу. Скільки вподобайок набрало відео за першу добу?",
+   "variants": [],
+   "points": 2,
+   "solution": "друга доба <span data-latex=\"x\" data-type=\"inline-math\"></span>: <span data-latex=\"2{,}2x = 1980\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 900\" data-type=\"inline-math\"></span>; перша <span data-latex=\"1{,}2 \\cdot  900 = 1080\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Василь замовив виготовлення двох рамок для своїх картин. Вартість рамки для більшої картини на 40% вища за вартість рамки для меншої картини. Визначте вартість (у грн) рамки для більшої картини, якщо за обидві рамки Василь заплатив 1560 грн.",
+   "variants": [],
+   "points": 2,
+   "solution": "менша <span data-latex=\"x\" data-type=\"inline-math\"></span>, більша <span data-latex=\"1{,}4x\" data-type=\"inline-math\"></span>: <span data-latex=\"2{,}4x = 1560\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 650\" data-type=\"inline-math\"></span>; <span data-latex=\"1{,}4 \\cdot  650 = 910\" data-type=\"inline-math\"></span> грн"
+  },
+  {
+   "type": "short",
+   "content": "Студентів і студенток опитали щодо улюбленого жанру кінофільмів. Результати опитування відображено на круговій діаграмі (Ф — «Фантастика», Х — «Хоррор»). Жанр «Фантастика» вибрало в 1,5 раза більше осіб, ніж жанр «Хоррор». Скільки всього було опитаних, якщо жанр «Фантастика» вибрало на 30 осіб більше, ніж жанр «Хоррор»?",
+   "variants": [],
+   "points": 2,
+   "solution": "Ф + Х <span data-latex=\"= 25\\%\" data-type=\"inline-math\"></span>, Ф <span data-latex=\"= 1{,}5\" data-type=\"inline-math\"></span> Х → Х <span data-latex=\"= 10\\%\" data-type=\"inline-math\"></span>, Ф <span data-latex=\"= 15\\%\" data-type=\"inline-math\"></span>; 5% — це 30 осіб: <span data-latex=\"30 : 0{,}05 = 600\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Початкова вартість сукні становила 144 грн. Унаслідок уцінення вартість цієї сукні було зменшено на 60%. Обчисліть вартість сукні після уцінення (у грн). (ЗНО-2014)",
+   "variants": [],
+   "points": 2,
+   "solution": "Залишилось <span data-latex=\"100\\% - 60\\% = 40\\%\" data-type=\"inline-math\"></span>: <span data-latex=\"144 \\cdot  0{,}4 = 57{,}6\" data-type=\"inline-math\"></span> грн"
+  },
+  {
+   "type": "short",
+   "content": "На виставці представлено лише два види мистецьких робіт: картини та скульптури, причому кількість скульптур у 4 рази менша за кількість картин. На скільки відсотків кількість картин більша за кількість скульптур? (ЗНО-2018, пробний)",
+   "variants": [],
+   "points": 2,
+   "solution": "Скульптур <span data-latex=\"s\" data-type=\"inline-math\"></span>, картин <span data-latex=\"4s\" data-type=\"inline-math\"></span>. Більше на <span data-latex=\"3s\" data-type=\"inline-math\"></span> — це <span data-latex=\"\\dfrac{3s}{s} \\cdot  100\\% = 300\\%\" data-type=\"inline-math\"></span> (ділимо на скульптури)"
+  },
+  {
+   "type": "short",
+   "content": "За 800 г борошна фабрики «Колос» заплатили 16 грн 56 коп., а за 1 кг борошна фабрики «Хлібна» — 18 грн. На скільки відсотків 1 кг борошна фабрики «Колос» дорожчий за 1 кг борошна фабрики «Хлібна»? (ЗНО-2021, демо)",
+   "variants": [],
+   "points": 2,
+   "solution": "1 кг «Колосу»: <span data-latex=\"16{,}56 : 0{,}8 = 20{,}7\" data-type=\"inline-math\"></span> грн. <span data-latex=\"\\dfrac{20{,}7 - 18}{18} \\cdot  100\\% = 15\\%\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Упродовж одного дня громадянин уклав з двома банками кредитні угоди на один рік: із першим банком під 12% річних, із другим — під 15% річних. Загальна сума грошей, отриманих за кредитними угодами, становить 5000 грн. Нарахована сума відсотків за користування кредитами становить 654 грн. Скільки грошей (у грн) узяв громадянин під більші відсотки? (ЗНО-2012, пробний)",
+   "variants": [],
+   "points": 2,
+   "solution": "Під 15% — <span data-latex=\"x\" data-type=\"inline-math\"></span>, під 12% — <span data-latex=\"5000 - x\" data-type=\"inline-math\"></span>: <span data-latex=\"0{,}12(5000 - x) + 0{,}15x = 654\" data-type=\"inline-math\"></span>, <span data-latex=\"600 + 0{,}03x = 654\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 1800\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  3,
+  2,
+  1,
+  0,
+  4,
+  3,
+  4,
+  1,
+  "72",
+  "440",
+  "21000",
+  "1080",
+  "910",
+  "600",
+  "57,6",
+  "300",
+  "15",
+  "1800"
+ ],
+ "incomplete": []
+}

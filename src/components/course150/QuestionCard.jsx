@@ -3,15 +3,17 @@ import { CheckCircle2, XCircle, Lightbulb, RotateCcw } from 'lucide-react';
 import MathContent from '../MathContent';
 import { LETTERS, normalizeQuestion, gradeQuestion } from '../../utils/nmtTest';
 
-// Інтерактивне завдання уроку: вибір / відповідність, перевірка одразу і розв'язання.
+// Інтерактивне завдання уроку: вибір / відповідність / відкрита відповідь, перевірка одразу і розв'язання.
 // example=true — розібраний приклад: розв'язання можна відкрити й без відповіді.
 export default function QuestionCard({ question, answer, number, example = false, initialResult, onResult }) {
   const q = useMemo(() => normalizeQuestion(question, 0, answer), [question, answer]);
-  const [value, setValue] = useState(q.type === 'connect' ? {} : null);
+  const empty = q.type === 'connect' ? {} : q.type === 'short' ? '' : null;
+  const [value, setValue] = useState(empty);
   const [result, setResult] = useState(null);
   const [showSolution, setShowSolution] = useState(false);
 
-  const complete = q.type === 'connect' ? Object.keys(value || {}).length === q.variants.length : value != null;
+  const complete = q.type === 'connect' ? Object.keys(value || {}).length === q.variants.length
+    : q.type === 'short' ? String(value).trim() !== '' : value != null;
   const checked = result != null;
 
   const check = () => {
@@ -21,7 +23,7 @@ export default function QuestionCard({ question, answer, number, example = false
     onResult?.(r.ok);
   };
   const reset = () => {
-    setValue(q.type === 'connect' ? {} : null);
+    setValue(empty);
     setResult(null);
     setShowSolution(false);
   };
@@ -69,6 +71,24 @@ export default function QuestionCard({ question, answer, number, example = false
               </button>
             );
           })}
+        </div>
+      )}
+
+      {q.type === 'short' && (
+        <div className="flex items-center gap-3">
+          <span className="text-sm font-semibold text-orange-200">Відповідь:</span>
+          <input
+            type="text"
+            inputMode="decimal"
+            value={value}
+            disabled={checked}
+            onChange={(e) => setValue(e.target.value)}
+            onKeyDown={(e) => { if (e.key === 'Enter' && complete && !checked) check(); }}
+            placeholder="число"
+            className={`w-40 rounded-xl px-4 py-2.5 bg-white/5 border text-white text-base font-semibold outline-none transition-all placeholder:text-slate-500 ${
+              checked ? (result.ok ? 'border-green-400 bg-green-500/20' : 'border-red-400 bg-red-500/20') : 'border-white/20 focus:border-orange-400'
+            }`}
+          />
         </div>
       )}
 
@@ -169,6 +189,7 @@ export default function QuestionCard({ question, answer, number, example = false
           <p className="text-xs font-bold uppercase tracking-wide text-amber-300 mb-1 flex items-center gap-1.5"><Lightbulb className="h-4 w-4" />Розв’язання</p>
           <MathContent html={question.solution} className="text-[15px] leading-relaxed" />
           {q.type === 'single' && correctIdx >= 0 && <p className="mt-2 text-sm font-semibold text-green-400">Відповідь: {LETTERS[correctIdx]}</p>}
+          {q.type === 'short' && q.correct && <p className="mt-2 text-sm font-semibold text-green-400">Відповідь: {q.correct[0]}</p>}
           {q.type === 'connect' && q.correct && (
             <p className="mt-2 text-sm font-semibold text-green-400">Відповідь: {q.correct.map((c, i) => `${i + 1}${LETTERS[c]}`).join(' ')}</p>
           )}

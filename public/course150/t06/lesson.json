@@ -1,0 +1,846 @@
+{
+ "number": 6,
+ "title": "Пропорції",
+ "intro": [
+  {
+   "title": "Пропорція",
+   "text": "добуток крайніх = добутку середніх"
+  },
+  {
+   "title": "Пряма й обернена",
+   "text": "у скільки разів більше — у стільки ж"
+  },
+  {
+   "title": "Відношення й частини",
+   "text": "<span data-latex=\"a : b\" data-type=\"inline-math\"></span>, «у <span data-latex=\"k\" data-type=\"inline-math\"></span> разів більше»"
+  },
+  {
+   "title": "Задачі",
+   "text": "рецепти, ціни, продуктивність, суміші"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"ad = bc\" data-type=\"inline-math\"></span>",
+   "text": "основна властивість пропорції"
+  },
+  {
+   "big": "<span data-latex=\"4 : 5\" data-type=\"inline-math\"></span>",
+   "text": "ділимо на частини"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span> від 240",
+   "text": "дріб від числа"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Пропорція",
+   "title": "Добуток крайніх = добутку середніх",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Пропорція",
+     "formula": "<span data-latex=\"\\dfrac{a}{b} = \\dfrac{c}{d}\" data-type=\"inline-math\"></span>  →  <span data-latex=\"ad = bc\" data-type=\"inline-math\"></span>",
+     "text": "Рівність двох відношень. Множимо «навхрест»."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Невідомий член",
+     "formula": "",
+     "text": "<span data-latex=\"\\dfrac{x}{6} = \\dfrac{5}{3}\" data-type=\"inline-math\"></span>: <span data-latex=\"3x = 6 \\cdot  5\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 10\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Виразити змінну",
+     "formula": "",
+     "text": "<span data-latex=\"\\dfrac{m}{2} = \\dfrac{3}{n}\" data-type=\"inline-math\"></span>: <span data-latex=\"mn = 6\" data-type=\"inline-math\"></span>, отже <span data-latex=\"m = \\dfrac{6}{n}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2013",
+    "title": "Виражаємо з пропорції",
+    "content": "Визначте <span data-latex=\"m\" data-type=\"inline-math\"></span> із співвідношення <span data-latex=\"\\dfrac{m}{2} = \\dfrac{3}{n}\" data-type=\"inline-math\"></span>, де <span data-latex=\"n \\ne  0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"m = 6n\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"m = \\dfrac{6}{n}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"m = \\dfrac{2n}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"m = \\dfrac{3}{2n}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"m = \\dfrac{n}{6}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Добуток крайніх дорівнює добутку середніх: <span data-latex=\"mn = 2 \\cdot  3 = 6\" data-type=\"inline-math\"></span>. Ділимо на <span data-latex=\"n\" data-type=\"inline-math\"></span>: <span data-latex=\"m = \\dfrac{6}{n}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Пряма й обернена пропорційність",
+   "title": "У скільки разів більше — у стільки ж",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Пряма",
+     "formula": "",
+     "text": "Більше часу — більше копій, більше кілограмів — більша ціна. Величини зростають <b>в однакову кількість разів</b>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Обернена",
+     "formula": "",
+     "text": "Швидкість зросла в 1,5 раза — час <b>зменшився</b> в 1,5 раза: <span data-latex=\"60 : 1{,}5 = 40\" data-type=\"inline-math\"></span> хв."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Через одиницю",
+     "formula": "",
+     "text": "Спершу знаходимо, скільки припадає на <b>одну</b> одиницю (1 с, 1 кг, 1 порцію), потім множимо."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2020",
+    "title": "Копії за хвилину",
+    "content": "Копіювальна машина робить 3 копії за 4 секунди. Яку максимальну кількість копій можна одержати за 1 хвилину?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "45"
+     },
+     {
+      "id": 1,
+      "content": "60"
+     },
+     {
+      "id": 2,
+      "content": "75"
+     },
+     {
+      "id": 3,
+      "content": "80"
+     },
+     {
+      "id": 4,
+      "content": "120"
+     }
+    ],
+    "points": 1,
+    "solution": "1 хв <span data-latex=\"= 60\" data-type=\"inline-math\"></span> с — це в <span data-latex=\"60 : 4 = 15\" data-type=\"inline-math\"></span> разів більше, ніж 4 с. Копій теж у 15 разів більше: <span data-latex=\"3 \\cdot  15 = 45\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026",
+    "title": "Швидкість відтворення",
+    "content": "Вадим планує переглянути навчальний відеоролик тривалістю 60 хвилин. Перед переглядом він у налаштуваннях збільшив швидкість відтворення в 1,5 раза. Скільки хвилин тепер триватиме перегляд цього відеоролика?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "90"
+     },
+     {
+      "id": 1,
+      "content": "45"
+     },
+     {
+      "id": 2,
+      "content": "40"
+     },
+     {
+      "id": 3,
+      "content": "35"
+     },
+     {
+      "id": 4,
+      "content": "30"
+     }
+    ],
+    "points": 1,
+    "solution": "Пропорційність <b>обернена</b>: швидше відтворення — менше часу. <span data-latex=\"60 : 1{,}5 = 40\" data-type=\"inline-math\"></span> хв."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Відношення й частини",
+   "title": "Рахуємо частини",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "4 : 5",
+     "title": "Відношення",
+     "formula": "",
+     "text": "Це 4 частини й 5 частин, разом <b>9 частин</b>. Загальна кількість обов’язково ділиться на <span data-latex=\"4 + 5 = 9\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "у k разів",
+     "title": "У <span data-latex=\"k\" data-type=\"inline-math\"></span> разів більше",
+     "formula": "",
+     "text": "Одного <span data-latex=\"x\" data-type=\"inline-math\"></span>, другого <span data-latex=\"kx\" data-type=\"inline-math\"></span>, разом <span data-latex=\"(k + 1)x\" data-type=\"inline-math\"></span>. Частка меншого — <span data-latex=\"\\dfrac{1}{k + 1}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2016 (пробний)",
+    "title": "Повітряні кульки",
+    "content": "Для оформлення зали до свята закуплено повітряні кульки лише двох кольорів у відношенні <span data-latex=\"4 : 5\" data-type=\"inline-math\"></span>. Якому з наведених чисел може дорівнювати загальна кількість повітряних кульок, закуплених для оформлення зали?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "100"
+     },
+     {
+      "id": 1,
+      "content": "115"
+     },
+     {
+      "id": 2,
+      "content": "117"
+     },
+     {
+      "id": 3,
+      "content": "120"
+     },
+     {
+      "id": 4,
+      "content": "145"
+     }
+    ],
+    "points": 1,
+    "solution": "Кульок <span data-latex=\"4k\" data-type=\"inline-math\"></span> і <span data-latex=\"5k\" data-type=\"inline-math\"></span>, разом <span data-latex=\"9k\" data-type=\"inline-math\"></span> — число ділиться на 9. Серед варіантів на 9 ділиться лише <span data-latex=\"117 = 9 \\cdot  13\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2015",
+    "title": "Яку частину зібрав",
+    "content": "Сергій і Петро збирали яблука. Сергій зібрав яблук у 5 разів більше, ніж Петро. Яку частину всіх яблук зібрав Петро?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{5}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Петро — <span data-latex=\"x\" data-type=\"inline-math\"></span>, Сергій — <span data-latex=\"5x\" data-type=\"inline-math\"></span>, разом <span data-latex=\"6x\" data-type=\"inline-math\"></span>. Частина Петра: <span data-latex=\"\\dfrac{x}{6x} = \\dfrac{1}{6}\" data-type=\"inline-math\"></span> (не <span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span> — ділимо на <b>всі</b> яблука)."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Дріб від числа",
+   "title": "Множимо чи ділимо",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Дріб від числа",
+     "formula": "",
+     "text": "Множимо: <span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span> від 240 — це <span data-latex=\"240 \\cdot  \\dfrac{3}{5} = 144\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Число за його дробом",
+     "formula": "",
+     "text": "Ділимо: якщо <span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span> числа дорівнює 50, то число <span data-latex=\"50 : \\dfrac{1}{4} = 200\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Решта",
+     "formula": "",
+     "text": "Якщо одне — <span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span> цілого, то решта — <span data-latex=\"1 - \\dfrac{3}{5} = \\dfrac{2}{5}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026",
+    "title": "Сир і фрукти",
+    "content": "Дарина купила сир і фрукти, витративши 240 грн. Скільки грошей (грн) Дарина витратила на фрукти, якщо за сир вона заплатила <span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span> витраченої суми?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "96"
+     },
+     {
+      "id": 1,
+      "content": "30"
+     },
+     {
+      "id": 2,
+      "content": "34"
+     },
+     {
+      "id": 3,
+      "content": "45"
+     },
+     {
+      "id": 4,
+      "content": "60"
+     }
+    ],
+    "points": 1,
+    "solution": "На фрукти — решта: <span data-latex=\"1 - \\dfrac{3}{5} = \\dfrac{2}{5}\" data-type=\"inline-math\"></span> суми. <span data-latex=\"240 \\cdot  \\dfrac{2}{5} = 96\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 5 · Задачі з відкритою відповіддю",
+   "title": "Одна частина — через <span data-latex=\"x\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Одна частина",
+     "formula": "",
+     "text": "Відношення <span data-latex=\"10 : 13\" data-type=\"inline-math\"></span> і перша величина 180 г: одна частина <span data-latex=\"180 : 10 = 18\" data-type=\"inline-math\"></span> г, усього <span data-latex=\"(10 + 13) \\cdot  18\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Рівняння",
+     "formula": "",
+     "text": "Меншу величину позначаємо <span data-latex=\"x\" data-type=\"inline-math\"></span>, решту виражаємо через неї й складаємо рівняння на суму."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "short",
+    "src": "ЗНО-2017",
+    "title": "Чайна суміш",
+    "content": "Для приготування чайної суміші змішали індійський та цейлонський чай у відношенні <span data-latex=\"10 : 13\" data-type=\"inline-math\"></span>, причому індійського чаю взяли 180 г. Скільки грамів чайної суміші отримали?",
+    "variants": [],
+    "points": 2,
+    "solution": "Одна частина: <span data-latex=\"180 : 10 = 18\" data-type=\"inline-math\"></span> г. Усього частин <span data-latex=\"10 + 13 = 23\" data-type=\"inline-math\"></span>: <span data-latex=\"23 \\cdot  18 = 414\" data-type=\"inline-math\"></span> г."
+   },
+   "answer": "414"
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "short",
+    "src": "ЗНО-2020 (пробний)",
+    "title": "Оренда велосипедів",
+    "content": "Сім’я за оренду двох велосипедів для батьків та одного велосипеда для дитини заплатила 1200 грн. Вартість оренди одного велосипеда для дорослих в 1,5 раза більша за вартість оренди одного велосипеда для дитини. Визначте вартість (у грн) оренди велосипеда для дитини.",
+    "variants": [],
+    "points": 2,
+    "solution": "Дитячий — <span data-latex=\"x\" data-type=\"inline-math\"></span>, дорослий — <span data-latex=\"1{,}5x\" data-type=\"inline-math\"></span>. <span data-latex=\"2 \\cdot  1{,}5x + x = 4x = 1200\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 300\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": "300"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2022 (демо)",
+    "title": "Бісквіти й безе",
+    "content": "У коробці лежать тістечка двох видів: бісквіти та безе. Яке з наведених чисел може бути кількістю тістечок у коробці, якщо бісквітів у 5 разів більше, ніж безе?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "27"
+     },
+     {
+      "id": 1,
+      "content": "44"
+     },
+     {
+      "id": 2,
+      "content": "50"
+     },
+     {
+      "id": 3,
+      "content": "61"
+     },
+     {
+      "id": 4,
+      "content": "72"
+     }
+    ],
+    "points": 1,
+    "solution": "Безе <span data-latex=\"x\" data-type=\"inline-math\"></span>, бісквітів <span data-latex=\"5x\" data-type=\"inline-math\"></span>, разом <span data-latex=\"6x\" data-type=\"inline-math\"></span> — кількість ділиться на 6. Лише <span data-latex=\"72 = 6 \\cdot  12\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2007",
+    "title": "Вікна й двері",
+    "content": "Будівельна компанія закупила для нового будинку металопластикові вікна та двері у відношенні <span data-latex=\"4 : 1\" data-type=\"inline-math\"></span>. Укажіть число, яким може виражатися загальна кількість вікон та дверей у цьому будинку.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "41"
+     },
+     {
+      "id": 1,
+      "content": "45"
+     },
+     {
+      "id": 2,
+      "content": "54"
+     },
+     {
+      "id": 3,
+      "content": "68"
+     },
+     {
+      "id": 4,
+      "content": "81"
+     }
+    ],
+    "points": 1,
+    "solution": "Вікон <span data-latex=\"4k\" data-type=\"inline-math\"></span>, дверей <span data-latex=\"k\" data-type=\"inline-math\"></span>, разом <span data-latex=\"5k\" data-type=\"inline-math\"></span> — ділиться на 5. Лише 45."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024",
+    "title": "Фруктовий салат",
+    "content": "Микола частує свою родину фруктовим салатом із яблук, бананів й апельсинів. Для приготування однієї порції салату потрібно 1 банан, 2 апельсини та 3 яблука. Скільки <b>апельсинів</b> використав Микола, якщо він приготував за цим рецептом салат із 24 фруктів?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "5"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "12"
+     },
+     {
+      "id": 4,
+      "content": "18"
+     }
+    ],
+    "points": 1,
+    "solution": "Одна порція — <span data-latex=\"1 + 2 + 3 = 6\" data-type=\"inline-math\"></span> фруктів; <span data-latex=\"24 : 6 = 4\" data-type=\"inline-math\"></span> порції; апельсинів <span data-latex=\"4 \\cdot  2 = 8\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Ціна за кілограм",
+    "content": "У магазині сухофруктів сушений лісовий горіх коштує 420 гривень за один кілограм. Андрій купив 300 грамів таких горіхів. Скільки грошей (у грн) заплатив Андрій за покупку?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "120"
+     },
+     {
+      "id": 1,
+      "content": "126"
+     },
+     {
+      "id": 2,
+      "content": "12,6"
+     },
+     {
+      "id": 3,
+      "content": "140"
+     },
+     {
+      "id": 4,
+      "content": "14"
+     }
+    ],
+    "points": 1,
+    "solution": "300 г <span data-latex=\"= 0{,}3\" data-type=\"inline-math\"></span> кг; <span data-latex=\"420 \\cdot  0{,}3 = 126\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Порції коктейлю",
+    "content": "Для приготування однієї порції коктейлю потрібно 40 г морозива. Яку найбільшу кількість таких порцій можна приготувати, якщо взяти 0,5 кг морозива?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "11"
+     },
+     {
+      "id": 1,
+      "content": "12"
+     },
+     {
+      "id": 2,
+      "content": "13"
+     },
+     {
+      "id": 3,
+      "content": "20"
+     },
+     {
+      "id": 4,
+      "content": "25"
+     }
+    ],
+    "points": 1,
+    "solution": "0,5 кг <span data-latex=\"= 500\" data-type=\"inline-math\"></span> г; <span data-latex=\"500 : 40 = 12{,}5\" data-type=\"inline-math\"></span> → лише 12 <b>повних</b> порцій."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Два автомати",
+    "content": "У цеху на лінії виробництва пляшкової води працюють два автомати для клейового маркування. Перший маркує 14 000 пляшок за годину, а другий — 16 000 пляшок за годину. Обидва автомати одночасно працювали 12 хвилин. Скільки всього пляшок було промарковано за цей час?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2000"
+     },
+     {
+      "id": 1,
+      "content": "2500"
+     },
+     {
+      "id": 2,
+      "content": "3000"
+     },
+     {
+      "id": 3,
+      "content": "6000"
+     },
+     {
+      "id": 4,
+      "content": "7500"
+     }
+    ],
+    "points": 1,
+    "solution": "Разом <span data-latex=\"30 000\" data-type=\"inline-math\"></span> пляшок за годину; 12 хв <span data-latex=\"= \\dfrac{1}{5}\" data-type=\"inline-math\"></span> год: <span data-latex=\"30 000 : 5 = 6000\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2012",
+    "title": "Ділимо гонорар",
+    "content": "Два фахівці розробили макет рекламного оголошення. За роботу вони отримали 5000 грн, розподіливши гроші таким чином: перший отримав четверту частину зароблених грошей, а другий — решту. Скільки гривень отримав за цю роботу другий фахівець?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1000 грн"
+     },
+     {
+      "id": 1,
+      "content": "1250 грн"
+     },
+     {
+      "id": 2,
+      "content": "3000 грн"
+     },
+     {
+      "id": 3,
+      "content": "3750 грн"
+     },
+     {
+      "id": 4,
+      "content": "4000 грн"
+     }
+    ],
+    "points": 1,
+    "solution": "Другий отримав <span data-latex=\"1 - \\dfrac{1}{4} = \\dfrac{3}{4}\" data-type=\"inline-math\"></span>: <span data-latex=\"5000 \\cdot  \\dfrac{3}{4} = 3750\" data-type=\"inline-math\"></span> грн."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023",
+    "title": "Ручки й набори",
+    "content": "У магазині канцтоварів ручка коштує 6 грн, а набір із двох ручок — 10 грн. Яку найбільшу кількість таких ручок можна купити в цьому магазині на суму до 58 грн?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "8"
+     },
+     {
+      "id": 1,
+      "content": "9"
+     },
+     {
+      "id": 2,
+      "content": "10"
+     },
+     {
+      "id": 3,
+      "content": "11"
+     },
+     {
+      "id": 4,
+      "content": "12"
+     }
+    ],
+    "points": 1,
+    "solution": "Набір дешевший: 5 наборів (10 ручок) за 50 грн, на решту 8 грн — ще 1 ручка за 6 грн. Разом 11."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023 (демо)",
+    "title": "Четверта безкоштовно",
+    "content": "У супермаркеті акція: купуєш три однакові шоколадки «Спокуса», а таку ж саму четверту супермаркет надає безкоштовно. Ціна кожної такої шоколадки — 35 грн. У покупця є 220 грн. Яку максимальну кількість шоколадок «Спокуса» він зможе отримати, узявши участь в акції?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"220 : 35 \\approx  6{,}3\" data-type=\"inline-math\"></span> → оплачує 6 шоколадок; за кожні 3 — четверта безкоштовно: <span data-latex=\"6 + 2 = 8\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2012 (пробний)",
+    "title": "Продуктивність верстата",
+    "content": "Верстат з автоматичним управлінням працює зі сталою продуктивністю і виготовляє 40 деталей за <span data-latex=\"t\" data-type=\"inline-math\"></span> год (<span data-latex=\"t &gt; 5\" data-type=\"inline-math\"></span>). Укажіть вираз для визначення кількості деталей, які виготовив верстат за 5 год.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{t}{8}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{40}{t - 5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{8}{t}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "8t"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{200}{t}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "За 1 год — <span data-latex=\"\\dfrac{40}{t}\" data-type=\"inline-math\"></span> деталей; за 5 год — <span data-latex=\"5 \\cdot  \\dfrac{40}{t} = \\dfrac{200}{t}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2012",
+    "title": "Наповнення басейну",
+    "content": "Порожній басейн, що вміщує <span data-latex=\"x\" data-type=\"inline-math\"></span> м³ води, повністю заповнюють водою за 5 годин (швидкість заповнення є сталою). За якою формулою можна обчислити кількість води <span data-latex=\"V\" data-type=\"inline-math\"></span> (у м³) у басейні через 2 години після початку його заповнення?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"V = \\dfrac{5}{2x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"V = 2 \\cdot  5x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"V = \\dfrac{2}{5x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"V = \\dfrac{2x}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"V = \\dfrac{5x}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "За 1 год — <span data-latex=\"\\dfrac{x}{5}\" data-type=\"inline-math\"></span> м³; за 2 год — <span data-latex=\"\\dfrac{2x}{5}\" data-type=\"inline-math\"></span> м³."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2019 (пробний)",
+    "title": "Оцінка вартості",
+    "content": "Один кілограм яблук коштує на базарі від 9 грн до 12 грн, а один кілограм груш — від 19 грн до 25 грн. Оксана заплатила за куплені на базарі 2 кг яблук та 3 кг груш <span data-latex=\"m\" data-type=\"inline-math\"></span> гривень. Укажіть нерівність, що виконуватиметься для <span data-latex=\"m\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "28 &lt; m &lt; 37"
+     },
+     {
+      "id": 1,
+      "content": "18 &lt; m &lt; 75"
+     },
+     {
+      "id": 2,
+      "content": "75 &lt; m &lt; 99"
+     },
+     {
+      "id": 3,
+      "content": "42 &lt; m &lt; 66"
+     },
+     {
+      "id": 4,
+      "content": "75 &lt; m &lt; 81"
+     }
+    ],
+    "points": 1,
+    "solution": "Найменше: <span data-latex=\"2 \\cdot  9 + 3 \\cdot  19 = 75\" data-type=\"inline-math\"></span>; найбільше: <span data-latex=\"2 \\cdot  12 + 3 \\cdot  25 = 99\" data-type=\"inline-math\"></span>. Отже <span data-latex=\"75 &lt; m &lt; 99\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "ЗНО-2018",
+    "title": "Лідія і Максим",
+    "content": "Лідія редагує 80 сторінок рукопису у 8 разів швидше, ніж Максим редагує 480 сторінок. Скільки сторінок відредагує Максим за той самий час, за який Лідія відредагує 320 сторінок? Уважайте, що продуктивність роботи і Лідії, і Максима є сталою.",
+    "variants": [],
+    "points": 2,
+    "solution": "Лідія за час <span data-latex=\"T\" data-type=\"inline-math\"></span> — 80 сторінок, Максим за <span data-latex=\"8T\" data-type=\"inline-math\"></span> — 480, тобто за <span data-latex=\"T\" data-type=\"inline-math\"></span> — 60. 320 сторінок Лідія редагує за <span data-latex=\"4T\" data-type=\"inline-math\"></span>; Максим за <span data-latex=\"4T\" data-type=\"inline-math\"></span> — <span data-latex=\"4 \\cdot  60 = 240\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "240"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "ЗНО-2021",
+    "title": "Дезінфікувальний розчин",
+    "content": "Для приготування дезінфікувального розчину концентрат розводять водою в масовому відношенні <span data-latex=\"2 : 7\" data-type=\"inline-math\"></span> відповідно, після чого на кожні 10 г води добавляють 1 г ароматичної рідини. Скільки грамів концентрату потрібно для приготування 485 г розчину?",
+    "variants": [],
+    "points": 2,
+    "solution": "Концентрат <span data-latex=\"2k\" data-type=\"inline-math\"></span>, вода <span data-latex=\"7k\" data-type=\"inline-math\"></span>, ароматична рідина <span data-latex=\"0{,}7k\" data-type=\"inline-math\"></span>. <span data-latex=\"9{,}7k = 485\" data-type=\"inline-math\"></span>, <span data-latex=\"k = 50\" data-type=\"inline-math\"></span>; концентрату <span data-latex=\"2 \\cdot  50 = 100\" data-type=\"inline-math\"></span> г."
+   },
+   "answer": "100"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"ad = bc\" data-type=\"inline-math\"></span>",
+   "text": "Пропорція: добуток крайніх дорівнює добутку середніх."
+  },
+  {
+   "big": "1 одиниця",
+   "text": "Спершу — скільки на одну секунду, кілограм, порцію; потім множимо."
+  },
+  {
+   "big": "<span data-latex=\"a + b\" data-type=\"inline-math\"></span>",
+   "text": "Відношення <span data-latex=\"a : b\" data-type=\"inline-math\"></span> — разом <span data-latex=\"a + b\" data-type=\"inline-math\"></span> частин; ціле ділиться на <span data-latex=\"a + b\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{k + 1}\" data-type=\"inline-math\"></span>",
+   "text": "«У <span data-latex=\"k\" data-type=\"inline-math\"></span> разів більше»: частка меншого — <span data-latex=\"\\dfrac{1}{k + 1}\" data-type=\"inline-math\"></span> від усього."
+  }
+ ]
+}

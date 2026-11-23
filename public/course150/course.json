@@ -68,17 +68,27 @@
     },
     {
      "number": 6,
-     "title": "Пропорції та відсотки (ч. 1)",
+     "title": "Пропорції",
      "free": true,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t06/lesson.json",
+      "homework": "/course150/t06/homework.pdf",
+      "test": "/course150/t06/test.json"
+     },
+     "testQuestions": 16
     },
     {
      "number": 7,
-     "title": "Пропорції та відсотки (ч. 2)",
+     "title": "Відсотки",
      "free": true,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t07/lesson.json",
+      "homework": "/course150/t07/homework.pdf",
+      "test": "/course150/t07/test.json"
+     },
+     "testQuestions": 18
     }
    ]
   },

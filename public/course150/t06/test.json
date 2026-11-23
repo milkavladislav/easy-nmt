@@ -1,0 +1,349 @@
+{
+ "title": "ДЗ 6. Пропорції (НМТ 150+)",
+ "lessonNumber": 6,
+ "source": "hw-sheet",
+ "hwKey": "150-6",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Настінний принтер друкує зображення зі сталою швидкістю 3 м² за одну годину. Скільки хвилин принтер друкував на стіні будинку зображення площею 2,4 м²?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "36"
+    },
+    {
+     "id": 1,
+     "content": "40"
+    },
+    {
+     "id": 2,
+     "content": "51"
+    },
+    {
+     "id": 3,
+     "content": "48"
+    },
+    {
+     "id": 4,
+     "content": "45"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{2{,}4}{3} = 0{,}8\" data-type=\"inline-math\"></span> год <span data-latex=\"= 48\" data-type=\"inline-math\"></span> хв"
+  },
+  {
+   "type": "single",
+   "content": "У Сніжани на картці залишилося 390 грн. У магазині вона збирається купити 3 зошити по 38 грн й альбоми по 54 грн кожен, розрахувавшись за покупки карткою. Яку <b>максимальну</b> кількість альбомів може придбати в цьому магазині Сніжана?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2"
+    },
+    {
+     "id": 1,
+     "content": "3"
+    },
+    {
+     "id": 2,
+     "content": "4"
+    },
+    {
+     "id": 3,
+     "content": "5"
+    },
+    {
+     "id": 4,
+     "content": "10"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"390 - 114 = 276\" data-type=\"inline-math\"></span>; <span data-latex=\"276 : 54 \\approx  5{,}1\" data-type=\"inline-math\"></span> → 5 альбомів"
+  },
+  {
+   "type": "single",
+   "content": "З одного літра ропи (насичений розчин солі), яку видобувають у солеварні Дрогобича, отримують 300 г солі. Визначте масу (у кг) солі, яку отримують у солеварні з 9000 літрів ропи.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2700"
+    },
+    {
+     "id": 1,
+     "content": "300"
+    },
+    {
+     "id": 2,
+     "content": "270 000"
+    },
+    {
+     "id": 3,
+     "content": "3000"
+    },
+    {
+     "id": 4,
+     "content": "27 000"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"0{,}3 \\cdot  9000 = 2700\" data-type=\"inline-math\"></span> кг"
+  },
+  {
+   "type": "single",
+   "content": "Водонапірний насос має пропускну здатність 5 літрів води за хвилину. Визначте <b>максимальну</b> кількість води, яка може бути використана для миття рук, що триває 2 хвилини.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2 л"
+    },
+    {
+     "id": 1,
+     "content": "5 л"
+    },
+    {
+     "id": 2,
+     "content": "7 л"
+    },
+    {
+     "id": 3,
+     "content": "10 л"
+    },
+    {
+     "id": 4,
+     "content": "25 л"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"5 \\cdot  2 = 10\" data-type=\"inline-math\"></span> л"
+  },
+  {
+   "type": "single",
+   "content": "Зі 100 кг соняшникового насіння можна виготовити 45 кг олії. Скільки олії можна виготовити з 350 кг соняшникового насіння?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "135 кг"
+    },
+    {
+     "id": 1,
+     "content": "147,5 кг"
+    },
+    {
+     "id": 2,
+     "content": "145 кг"
+    },
+    {
+     "id": 3,
+     "content": "157,5 кг"
+    },
+    {
+     "id": 4,
+     "content": "162,5 кг"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"0{,}45 \\cdot  350 = 157{,}5\" data-type=\"inline-math\"></span> кг"
+  },
+  {
+   "type": "single",
+   "content": "Пляшка об’ємом 750 мл на <span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span> заповнена соком. Скільки соку залишиться в цій пляшці, якщо відлити 150 мл соку?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "250 мл"
+    },
+    {
+     "id": 1,
+     "content": "600 мл"
+    },
+    {
+     "id": 2,
+     "content": "300 мл"
+    },
+    {
+     "id": 3,
+     "content": "450 мл"
+    },
+    {
+     "id": 4,
+     "content": "350 мл"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{2}{3} \\cdot  750 = 500\" data-type=\"inline-math\"></span>; <span data-latex=\"500 - 150 = 350\" data-type=\"inline-math\"></span> мл"
+  },
+  {
+   "type": "single",
+   "content": "Автомобіль, рухаючись містом, витрачає 6 л пального на 100 км пробігу, а за містом — 4 л на 100 км пробігу. За місяць водій проїхав 1000 км, із яких 300 км містом, решта — за містом. Скільки літрів пального витратив цей автомобіль за місяць?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "54 л"
+    },
+    {
+     "id": 1,
+     "content": "50 л"
+    },
+    {
+     "id": 2,
+     "content": "46 л"
+    },
+    {
+     "id": 3,
+     "content": "40 л"
+    },
+    {
+     "id": 4,
+     "content": "60 л"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"0{,}06 \\cdot  300 + 0{,}04 \\cdot  700 = 18 + 28 = 46\" data-type=\"inline-math\"></span> л"
+  },
+  {
+   "type": "single",
+   "content": "Принтер друкує одну сторінку за 10 секунд. Яку <b>найбільшу</b> кількість сторінок можна надрукувати на цьому принтері за 5 хвилин?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "30"
+    },
+    {
+     "id": 1,
+     "content": "300"
+    },
+    {
+     "id": 2,
+     "content": "50"
+    },
+    {
+     "id": 3,
+     "content": "60"
+    },
+    {
+     "id": 4,
+     "content": "2"
+    }
+   ],
+   "points": 1,
+   "solution": "5 хв <span data-latex=\"= 300\" data-type=\"inline-math\"></span> с; <span data-latex=\"300 : 10 = 30\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "У під’їзді дев’ятиповерхового будинку на кожному поверсі розташовано по 4 квартири. На якому поверсі квартира № 27, якщо квартири від № 1 і далі пронумеровано послідовно від першого до останнього поверху?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "7"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "9"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"27 : 4 = 6{,}75\" data-type=\"inline-math\"></span> → 7-й поверх"
+  },
+  {
+   "type": "single",
+   "content": "Число <span data-latex=\"a\" data-type=\"inline-math\"></span> в 5 разів більше за додатне число <span data-latex=\"b\" data-type=\"inline-math\"></span>. Тоді <span data-latex=\"a =\" data-type=\"inline-math\"></span> (ЗНО-2016)",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"b - 5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{5}{b}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "b + 5"
+    },
+    {
+     "id": 3,
+     "content": "5b"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{b}{5}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "«У 5 разів більше» — множимо: <span data-latex=\"a = 5b\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Перший автомат за 2 хвилини наповнює гелієм 3 однакові повітряні кульки, а другий автомат за цей самий час — на 100% більше таких кульок. За скільки секунд другий автомат наповнює гелієм одну повітряну кульку? (ЗНО-2017, пробний)",
+   "variants": [],
+   "points": 2,
+   "solution": "Другий — удвічі більше: 6 кульок за 2 хв <span data-latex=\"= 120\" data-type=\"inline-math\"></span> с; <span data-latex=\"120 : 6 = 20\" data-type=\"inline-math\"></span> с"
+  },
+  {
+   "type": "short",
+   "content": "Тарас може доїхати на велосипеді від села до станції за 3 год, а пішки дійти за 7 год. Його швидкість пішки на 8 км/год менша, ніж на велосипеді. Знайдіть відстань від села до станції (у км). (ЗНО-2010)",
+   "variants": [],
+   "points": 2,
+   "solution": "Швидкість на велосипеді <span data-latex=\"x\" data-type=\"inline-math\"></span>: <span data-latex=\"3x = 7(x - 8)\" data-type=\"inline-math\"></span>, <span data-latex=\"4x = 56\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 14\" data-type=\"inline-math\"></span>; відстань <span data-latex=\"3 \\cdot  14 = 42\" data-type=\"inline-math\"></span> км"
+  },
+  {
+   "type": "short",
+   "content": "На взуттєвій фабриці пошили 5340 пар дитячого, жіночого та чоловічого взуття. Чоловічого взуття було пошито 2100 пар, а жіночого — у 5 разів більше, ніж дитячого. Скільки пар дитячого взуття було пошито на цій фабриці? (ЗНО-2016, пробний)",
+   "variants": [],
+   "points": 2,
+   "solution": "Дитяче <span data-latex=\"x\" data-type=\"inline-math\"></span>, жіноче <span data-latex=\"5x\" data-type=\"inline-math\"></span>: <span data-latex=\"6x = 5340 - 2100 = 3240\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 540\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У магазині в продажу є лише музичні диски, диски з науково-популярними фільмами та диски з художніми фільмами. Кількість дисків із науково-популярними фільмами в п’ять разів більша за кількість музичних дисків і вдвічі менша за кількість дисків із художніми фільмами. Загальна кількість дисків у цьому магазині дорівнює 192. Визначте кількість дисків із науково-популярними фільмами. (ЗНО-2015)",
+   "variants": [],
+   "points": 2,
+   "solution": "Музичних <span data-latex=\"x\" data-type=\"inline-math\"></span>, науково-популярних <span data-latex=\"5x\" data-type=\"inline-math\"></span>, художніх <span data-latex=\"10x\" data-type=\"inline-math\"></span>: <span data-latex=\"16x = 192\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"5 \\cdot  12 = 60\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У дитячому шаховому клубі функціонують лише молодша й старша групи. Старшу групу відвідують 27 дітей. Відвідувачі молодшої групи становлять 46% від загальної кількості відвідувачів обох груп. Скільки дітей потрібно додатково набрати в молодшу групу за умови незмінності кількості дітей старшої групи, щоб відношення кількості відвідувачів молодшої групи до кількості відвідувачів старшої групи становило <span data-latex=\"4 : 3\" data-type=\"inline-math\"></span>? (ЗНО-2019)",
+   "variants": [],
+   "points": 2,
+   "solution": "Старша — 54%, тобто 27 дітей: усього <span data-latex=\"27 : 0{,}54 = 50\" data-type=\"inline-math\"></span>, молодша <span data-latex=\"50 - 27 = 23\" data-type=\"inline-math\"></span>. Потрібно <span data-latex=\"\\dfrac{4}{3} \\cdot  27 = 36\" data-type=\"inline-math\"></span>; набрати <span data-latex=\"36 - 23 = 13\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Тривалість зеленого сигналу світлофора на 15 с довша за тривалість червоного сигналу й у дванадцять разів довша за тривалість жовтого сигналу. Яка тривалість (у с) червоного сигналу, якщо тривалість зеленого сигналу відноситься до сумарної тривалості червоного й жовтого сигналів як 3 до 2? (ЗНО-2021, пробний)",
+   "variants": [],
+   "points": 2,
+   "solution": "Червоний <span data-latex=\"r\" data-type=\"inline-math\"></span>, зелений <span data-latex=\"r + 15\" data-type=\"inline-math\"></span>, жовтий <span data-latex=\"\\dfrac{r + 15}{12}\" data-type=\"inline-math\"></span>. <span data-latex=\"2(r + 15) = 3(r + \\dfrac{r + 15}{12})\" data-type=\"inline-math\"></span> → <span data-latex=\"r = 21\" data-type=\"inline-math\"></span> с"
+  }
+ ],
+ "answers": [
+  3,
+  3,
+  0,
+  3,
+  3,
+  4,
+  2,
+  0,
+  2,
+  3,
+  "20",
+  "42",
+  "540",
+  "60",
+  "13",
+  "21"
+ ],
+ "incomplete": []
+}
