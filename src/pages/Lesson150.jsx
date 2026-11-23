@@ -61,7 +61,9 @@ export default function Lesson150({ topic, onNavigate }) {
   const key = storageKey(user?.uid, topic.number);
   const [progress, setProgress] = useState(() => readProgress(key));
 
-  useEffect(() => window.scrollTo(0, 0), []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     fetch(topic.files.lessonData)
