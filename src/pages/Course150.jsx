@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Loader2, BookOpen, Lock, Clock, CheckCircle2, ChevronRight, Gift, Trophy } from 'lucide-react';
+import { Loader2, Lock, Clock, CheckCircle2, ChevronRight, Gift, Trophy } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import QuestBlock from '../components/quest/QuestBlock';
+import WorldsIntro from '../components/quest/WorldsIntro';
 import { loadCourse150, loadBestResults, loadBlockTest, testIdFor, blockTestIdFor, canOpen, BLOCK_TEST_MINUTES, hasQuest } from '../utils/course150';
 
 function TopicRow({ topic, best, onOpen }) {
@@ -130,49 +131,17 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
   return (
     <div className="min-h-screen overflow-x-clip bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
-        <div className="bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl p-5 sm:p-8 border border-orange-500/30 shadow-2xl shadow-orange-500/10 mb-8">
-          <p className="inline-block text-xs font-bold tracking-wide uppercase bg-orange-500/20 text-orange-300 border border-orange-500/30 rounded-full px-3 py-1 mb-3">
-            Самопідготовка
-          </p>
-          <h1 className="text-2xl sm:text-4xl font-bold text-white mb-2">{course.title}</h1>
-          <p className="text-slate-300 text-sm sm:text-base max-w-2xl">
-            Короткий курс на ≈18 тестових балів із 32: прості завдання з вибором відповіді, на відповідність і легкі відкриті.
-            У кожній темі — заняття з розібраними прикладами, задачі з НМТ минулих років, ДЗ і тест з автоперевіркою.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
-            <div className="bg-white/10 rounded-2xl px-4 py-3 border border-white/20">
-              <p className="text-slate-300 text-xs mb-1">Тем у курсі</p>
-              <p className="text-2xl font-bold text-white">{topics.length}</p>
-            </div>
-            <div className="bg-white/10 rounded-2xl px-4 py-3 border border-white/20">
-              <p className="text-slate-300 text-xs mb-1">Уже доступно</p>
-              <p className="text-2xl font-bold text-white">{ready}</p>
-            </div>
-            <div className="bg-white/10 rounded-2xl px-4 py-3 border border-white/20">
-              <p className="text-slate-300 text-xs mb-1">Тестів пройдено</p>
-              <p className="text-2xl font-bold text-white">{passed}</p>
-            </div>
-            <button
-              onClick={onOpenDovidnik}
-              className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-4 py-3 rounded-2xl flex items-center justify-center gap-2"
-            >
-              <BookOpen className="h-5 w-5" />
-              <span className="text-sm">Довідник</span>
-            </button>
-          </div>
-          <p className="mt-5 text-sm text-orange-200/90 flex items-start gap-2">
-            <Gift className="h-4 w-4 mt-0.5 shrink-0" />
-            Безкоштовна проба: блок 1 «{course.blocks[0].title}» відкритий після входу. Решта блоків — у повному доступі.
-          </p>
-        </div>
+        <WorldsIntro course={course} topicsCount={topics.length} ready={ready} passed={passed}
+          openBlocks={new Set(course.blocks.filter((bl) => bl.topics.every(hasQuest)).map((bl) => bl.number))}
+          onOpenDovidnik={onOpenDovidnik} />
 
         <div className="space-y-8">
-          {course.blocks.map((block) => (block.topics.every(hasQuest) ? (
-            <QuestBlock key={block.number} block={block} uid={user?.uid} best={best} testIdFor={testIdFor}
+          {course.blocks.map((block) => <div key={block.number} id={`block-${block.number}`} className="scroll-mt-16">{block.topics.every(hasQuest) ? (
+            <QuestBlock block={block} uid={user?.uid} best={best} testIdFor={testIdFor}
               examBest={best[blockTestIdFor(block.number)]} examLoading={loadingBlock === block.number}
               onOpen={(topic) => onNavigate('quest150', topic)} onExam={() => startBlockTest(block)} />
           ) : (
-            <section key={block.number}>
+            <section>
               <div className="flex items-baseline justify-between mb-3">
                 <h2 className="text-xl font-bold text-white">
                   <span className="text-orange-400 mr-2">Блок {block.number}.</span>
@@ -189,7 +158,7 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
                 )}
               </div>
             </section>
-          )))}
+          )}</div>)}
         </div>
       </div>
     </div>

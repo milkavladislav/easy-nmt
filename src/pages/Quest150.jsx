@@ -110,15 +110,20 @@ function Scroll({ section }) {
 }
 
 function Runes({ total, runes, current, label = 'Руни Брами', onPick }) {
+  const box = useRef(null);
+  useEffect(() => { // поточна руна завжди видна в стрічці на телефоні
+    const el = box.current?.children[(current || 1) - 1];
+    el?.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }, [current]);
   return (
-    <div className="flex flex-wrap gap-1.5 justify-center" aria-label={label}>
+    <div ref={box} className="no-scrollbar flex flex-nowrap overflow-x-auto sm:flex-wrap sm:overflow-visible gap-1.5 sm:justify-center py-1" aria-label={label}>
       {Array.from({ length: total }, (_, k) => {
         const n = k + 1;
         const v = runes[n] && typeof runes[n] === 'object' ? runes[n].ok : runes[n];
         const st = v === true ? ' lit' : v === false ? ' dim' : '';
         return (
           <button key={n} type="button" onClick={() => onPick?.(n)} title={`Перейти до ${n}`}
-            className={`q-rune hover:border-[var(--q-gold)]${st}${current === n ? ' now' : ''}`}>{n}</button>
+            className={`compact-btn q-rune shrink-0 hover:border-[var(--q-gold)]${st}${current === n ? ' now' : ''}`}>{n}</button>
         );
       })}
     </div>
@@ -299,9 +304,9 @@ export default function Quest150({ topic, onNavigate }) {
       {flash && <div key={flash.id} className="q-flash" style={{ '--x': flash.x, '--y': flash.y }} />}
 
       <div className="q-stage q-bar sticky top-0 z-30 border-b border-[rgba(245,200,107,.2)]">
-        <div className="max-w-4xl mx-auto px-4 py-2.5 flex items-center gap-3">
+        <div className="max-w-4xl mx-auto px-3 sm:px-4 py-1.5 sm:py-2.5 flex items-center gap-2 sm:gap-3">
           <button type="button" onClick={back} className="flex items-center gap-1 text-sm text-[var(--q-gold-soft)] hover:text-white shrink-0">
-            <ArrowLeft className="h-4 w-4" />До курсу
+            <ArrowLeft className="h-5 w-5 sm:h-4 sm:w-4" /><span className="hidden sm:inline">До курсу</span>
           </button>
           <div className="flex-1 min-w-0">
             {cur.phase === 'runes' ? <Runes total={total} runes={runes} current={cur.kind === 'trial' ? cur.n : null} onPick={(n) => go(stepOfTrial(n))} />

@@ -134,7 +134,7 @@
   border-radius: 6px;
   box-shadow: 0 25px 70px rgba(0, 0, 0, .6), inset 0 0 60px rgba(120, 70, 20, .35);
   transform-origin: top center;
-  animation: q-unroll .5s cubic-bezier(.2, .8, .2, 1) both;
+  animation: q-unroll 1.1s cubic-bezier(.2, .8, .2, 1) both;
 }
 .q-scroll::before, .q-scroll::after {
   content: ''; position: absolute; left: -14px; right: -14px; height: 26px; border-radius: 13px;
@@ -143,7 +143,7 @@
 }
 .q-scroll::before { top: -13px; }
 .q-scroll::after { bottom: -13px; }
-@keyframes q-unroll { from { transform: translateY(-14px) scaleY(.96); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes q-unroll { from { clip-path: inset(0 0 100% 0); opacity: .3; } to { clip-path: inset(0 0 0 0); opacity: 1; } }
 .q-scroll .katex { color: #1d1206; }
 .q-rune-card { border: 1px solid rgba(110, 67, 28, .35); background: rgba(255, 250, 235, .45); border-radius: 12px; }
 
@@ -293,3 +293,35 @@
 
 /* під затемненням (сувої, руни, іспит) фон стоїть: процесор працює лише на іскри й переходи */
 .q-sky.calm .q-star, .q-sky.calm .q-candle, .q-sky.calm .q-candle::before, .q-sky.calm .q-dust, .q-sky.calm .q-fog { animation-play-state: paused; }
+
+/* Початок сторінки курсу: дев'ять світів */
+.q-intro { border-top: 0; margin-top: -2rem; }
+.q-intro-sky { position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 50% at 85% 10%, rgba(139, 108, 255, .28), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 10% 90%, rgba(79, 209, 197, .14), transparent 70%),
+    radial-gradient(1.5px 1.5px at 12% 22%, #fff, transparent), radial-gradient(1px 1px at 32% 12%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 58% 30%, #fff, transparent), radial-gradient(1px 1px at 72% 18%, #fff, transparent),
+    radial-gradient(1px 1px at 90% 40%, #fff, transparent), radial-gradient(1.5px 1.5px at 45% 8%, #fff, transparent),
+    linear-gradient(180deg, #070b1f, #0b0d26); }
+.q-portals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 639px) {
+  .q-portal { flex-direction: column; justify-content: flex-start; text-align: center; gap: 6px; padding: 10px 6px; border-radius: 14px; }
+  .q-portal-ring { width: 42px; height: 42px; }
+  .q-portal-ring svg { width: 20px; height: 20px; }
+}
+.q-portal-ring { position: relative; }
+.q-portal-lock { position: absolute; right: -4px; bottom: -4px; width: 18px; height: 18px; border-radius: 999px; display: flex; align-items: center; justify-content: center; background: #1b1d3a; color: #b9b2d6; border: 1px solid rgba(255,255,255,.2); }
+@media (min-width: 900px) { .q-portals { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.q-portal { display: flex; align-items: center; gap: 12px; text-align: left; padding: 10px 14px; border-radius: 18px;
+  background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .1); transition: border-color .2s, background .2s; }
+.q-portal:hover { background: rgba(255, 255, 255, .08); border-color: color-mix(in srgb, var(--w) 60%, transparent); }
+.q-portal-ring { flex-shrink: 0; width: 48px; height: 48px; border-radius: 999px; display: flex; align-items: center; justify-content: center;
+  color: #8d86ab; border: 2px dashed rgba(255, 255, 255, .2); }
+.q-portal.open .q-portal-ring { color: var(--w); border: 2px solid var(--w);
+  background: radial-gradient(circle, color-mix(in srgb, var(--w) 30%, transparent), transparent 70%);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--w) 45%, transparent); }
+.q-portal.open { border-color: color-mix(in srgb, var(--w) 40%, transparent); }
+.q-intro-stat { background: rgba(255, 255, 255, .05); border: 1px solid rgba(245, 200, 107, .25); border-radius: 18px; padding: 12px 16px; }
+.q-intro-btn { color: var(--q-ink); background: linear-gradient(135deg, #ffd98a, #f5c86b); border-color: transparent; }
+.q-intro-btn:hover { filter: brightness(1.06); }

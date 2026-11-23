@@ -86,7 +86,7 @@ export default function QuestTrial({ question, answer, label, example = false, o
                         <td key={right.id} className="p-1">
                           <button type="button" disabled={checked} aria-label={`${li + 1}${LETTERS[right.id] || ''}`}
                             onClick={() => setValue((p) => ({ ...p, [left.id]: right.id }))}
-                            className={`${stoneCls(picked, good, checked && picked && !good)} w-10 h-10`} />
+                            className={`compact-btn ${stoneCls(picked, good, checked && picked && !good)} w-10 h-10`} />
                         </td>
                       );
                     })}
