@@ -3,6 +3,7 @@ import { ArrowLeft, Loader2, BookOpen, Target, ArrowRight, Sparkles } from 'luci
 import { useAuth } from '../context/AuthContext';
 import MathContent from '../components/MathContent';
 import QuestionCard from '../components/course150/QuestionCard';
+import { splitSource } from '../utils/course150';
 
 const CARD = {
   sun: 'from-amber-400/25 to-yellow-500/10 border-amber-400/40 text-amber-300',
@@ -12,14 +13,6 @@ const CARD = {
   ink: 'from-slate-300/15 to-slate-500/10 border-slate-300/30 text-slate-200',
   white: 'from-white/15 to-white/5 border-white/30 text-white'
 };
-
-// «НМТ-2024 (демо): …» на початку розв'язання — це джерело; виносимо його в мітку.
-const SRC_RE = /^((?:НМТ|ЗНО)-\d{4}(?:\s*\(демо\))?):\s*/;
-function splitSource(question) {
-  const m = (question.solution || '').match(SRC_RE);
-  if (!m) return question;
-  return { ...question, src: m[1], solution: question.solution.slice(m[0].length) };
-}
 
 const storageKey = (uid, n) => `course150:lesson:${uid || 'anon'}:${n}`;
 function readProgress(key) {

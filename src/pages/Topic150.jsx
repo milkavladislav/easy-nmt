@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { ArrowLeft, Presentation, ClipboardList, Play, Loader2, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Presentation, ClipboardList, Play, Loader2, CheckCircle2, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { loadTopicTest, loadBestResults, testIdFor } from '../utils/course150';
+import { loadTopicTest, loadBestResults, testIdFor, hasQuest } from '../utils/course150';
 
 function Step({ n, icon, title, text, children }) {
   return (
@@ -65,6 +65,14 @@ export default function Topic150({ topic, onNavigate }) {
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white"
               >
                 <Play className="h-4 w-4" />Почати заняття
+              </button>
+            )}
+            {hasQuest(topic) && (
+              <button
+                onClick={() => onNavigate('quest150', topic)}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white border border-amber-300/40 shadow-lg shadow-violet-900/40"
+              >
+                <Sparkles className="h-4 w-4 text-amber-200" />Повернутись у квест
               </button>
             )}
           </Step>

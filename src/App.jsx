@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Course150 from './pages/Course150';
+import Quest150 from './pages/Quest150';
 import Topic150 from './pages/Topic150';
 import Lesson150 from './pages/Lesson150';
 import Profile from './pages/Profile';
@@ -44,6 +45,8 @@ function AppContent() {
         return <Course150 onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />;
       case 'topic150':
         return <Topic150 topic={viewData} onNavigate={handleNavigate} />;
+      case 'quest150':
+        return <Quest150 topic={viewData} onNavigate={handleNavigate} />;
       case 'lesson150':
         return <Lesson150 topic={viewData} onNavigate={handleNavigate} />;
       case 'profile':

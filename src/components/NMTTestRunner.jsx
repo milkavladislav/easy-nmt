@@ -38,7 +38,7 @@ function formatTime(totalSeconds) {
 }
 
 export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practice = false, exit = null }) {
-  // practice — тест ДЗ курсу 150+: без шкали 200 балів; exit — куди повертатися (за замовчуванням список НМТ-тестів)
+  // practice — тест курсу 150+: без шкали 200 балів; exit — куди повертатися { view, data, label } (за замовчуванням список НМТ-тестів)
   const goBack = () => (exit ? onNavigate(exit.view, exit.data) : onNavigate('nmt'));
   const questions = useMemo(() => {
     const key = test.answers ?? test.correctAnswers ?? test.answerKey ?? [];
@@ -575,7 +575,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
               className="flex-1 px-6 py-3 rounded-xl text-sm transition-opacity hover:opacity-80"
               style={{ backgroundColor: t.activeBg, color: t.activeText }}
             >
-              {practice ? 'Назад до теми' : 'Назад до списку тестів'}
+              {exit?.label || (practice ? 'Назад до теми' : 'Назад до списку тестів')}
             </button>
           </div>
         </div>

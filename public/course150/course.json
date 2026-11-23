@@ -82,7 +82,11 @@
      },
      "testQuestions": 18
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b01/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 2,
