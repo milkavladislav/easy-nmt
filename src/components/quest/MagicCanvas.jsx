@@ -55,15 +55,15 @@ export default function MagicCanvas({ ref }) {
       if (api.current.reduce) return;
       const cols = PALETTE[kind] || PALETTE.gold;
       const ps = parts.current;
-      const count = Math.min(n, 70);
+      const count = Math.min(n, 45);
       if (ps.length + count > MAX_PARTS) ps.splice(0, ps.length + count - MAX_PARTS);
       for (let i = 0; i < count; i++) {
         const a = Math.random() * Math.PI * 2;
-        const v = (kind === 'bad' ? 1.5 : 3) + Math.random() * (kind === 'bad' ? 2 : 5);
+        const v = (kind === 'bad' ? 2.5 : 5) + Math.random() * (kind === 'bad' ? 3 : 7);
         const star = Math.random() < 0.25;
         ps.push({
           x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - (kind === 'bad' ? 0 : 1.5),
-          life: 1, decay: 0.016 + Math.random() * 0.02, s: (star ? 14 : 8) + Math.random() * 8,
+          life: 1, decay: 0.03 + Math.random() * 0.025, s: (star ? 14 : 8) + Math.random() * 8,
           img: sprite(cols[(Math.random() * cols.length) | 0], star), g: kind === 'bad' ? -0.03 : 0.06,
         });
       }
@@ -81,7 +81,7 @@ export default function MagicCanvas({ ref }) {
     let w = 0;
     let h = 0;
     const resize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+      const dpr = 1; // іскри — розмиті плями, повна роздільність їм не потрібна, а заливка екрана дешевшає вдвічі-вчетверо
       w = window.innerWidth; h = window.innerHeight;
       cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
       cv.style.width = `${w}px`; cv.style.height = `${h}px`;
@@ -90,15 +90,19 @@ export default function MagicCanvas({ ref }) {
     resize();
     window.addEventListener('resize', resize);
 
-    const tick = () => {
+    let lastT = 0;
+    const tick = (t) => {
+      const dt = lastT ? Math.min((t - lastT) / 16.67, 3) : 1; // у «кадрах по 60 fps»
+      lastT = t;
       ctx.clearRect(0, 0, w, h);
       const ps = parts.current;
-      if (!ps.length) { raf = 0; return; } // спокій — цикл зупиняється
+      if (!ps.length) { raf = 0; lastT = 0; return; } // спокій — цикл зупиняється
       ctx.globalCompositeOperation = 'lighter';
       let alive = 0;
       for (let i = 0; i < ps.length; i++) {
         const p = ps[i];
-        p.x += p.vx; p.y += p.vy; p.vy += p.g; p.vx *= 0.985; p.life -= p.decay;
+        const fr = 0.95 ** dt;
+        p.x += p.vx * dt; p.y += p.vy * dt; p.vy = p.vy * fr + p.g * dt; p.vx *= fr; p.life -= p.decay * dt;
         if (p.life <= 0) continue;
         ps[alive++] = p;
         ctx.globalAlpha = p.life;
@@ -120,7 +124,7 @@ export default function MagicCanvas({ ref }) {
       last = now;
       const ps = parts.current;
       if (ps.length > MAX_PARTS) return;
-      ps.push({ x: e.clientX, y: e.clientY, vx: (Math.random() - 0.5) * 0.8, vy: Math.random() * 0.8, life: 0.8, decay: 0.035, s: 7 + Math.random() * 5, img: sprite(PALETTE.gold[(Math.random() * 3) | 0], false), g: 0.02 });
+      ps.push({ x: e.clientX, y: e.clientY, vx: (Math.random() - 0.5) * 0.8, vy: Math.random() * 0.8, life: 0.8, decay: 0.05, s: 7 + Math.random() * 5, img: sprite(PALETTE.gold[(Math.random() * 3) | 0], false), g: 0.02 });
       wake();
     };
     window.addEventListener('pointermove', onMove, { passive: true });

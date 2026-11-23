@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, BookOpen, ChevronLeft, ChevronRight, Loader2, Map as MapIcon, X } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, Loader2, Map as MapIcon, X } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import MathContent from '../components/MathContent';
 import QuestScene from '../components/quest/QuestScene';
@@ -315,9 +315,6 @@ export default function Quest150({ topic, onNavigate }) {
           <span className="q-script text-lg text-[var(--q-gold)] shrink-0 hidden sm:block">{cur.phase === 'hw' ? STORY.homework.name : STORY.chapter}</span>
           <button type="button" onClick={() => setMapOpen(true)} className="flex items-center gap-1 text-sm text-[var(--q-gold-soft)] hover:text-white shrink-0">
             <MapIcon className="h-4 w-4" /><span className="hidden sm:inline">Карта</span>
-          </button>
-          <button type="button" onClick={toLesson} title="Звичайне заняття без квесту" className="flex items-center gap-1 text-sm text-[var(--q-gold-soft)] hover:text-white shrink-0">
-            <BookOpen className="h-4 w-4" /><span className="hidden sm:inline">Без квесту</span>
           </button>
         </div>
       </div>

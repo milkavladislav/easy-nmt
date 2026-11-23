@@ -68,7 +68,7 @@ export default function QuestScene({ deep = false }) {
     };
   }, []);
   return (
-    <div className="q-sky">
+    <div className={`q-sky${deep ? ' calm' : ''}`}>
       {stars.map((s, i) => (
         <span key={i} className="q-star" style={{ left: `${s.x}%`, top: `${s.y}%`, width: s.s, height: s.s, '--d': `${s.d}s`, '--delay': `${s.delay}s` }} />
       ))}

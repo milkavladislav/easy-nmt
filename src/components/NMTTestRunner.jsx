@@ -5,6 +5,10 @@ import { db } from '../firebase/config';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import MathContent from './MathContent';
 import { LETTERS, normalizeQuestion, gradeQuestion, to200Scale, isNmtPassed } from '../utils/nmtTest';
+import { splitContentSource } from '../utils/course150';
+import SourceHint from './course150/SourceHint';
+import QuestScene from './quest/QuestScene';
+import './quest/quest.css';
 
 const THEMES = {
   dark: {
@@ -28,6 +32,21 @@ const THEMES = {
     activeText: '#f2f4ea',
     correct: '#3f7a2a',
     wrong: '#b33a2b'
+  },
+  // skin="quest": іспит блоку в стилі його світу (зараз — школа чарів блоку 1)
+  quest: {
+    bg: '#0b0d26',
+    surface: '#26205a',
+    surfaceSoft: 'rgba(30, 24, 70, .82)',
+    text: '#f4ecdf',
+    muted: '#c4bce6',
+    activeBg: '#f5c86b',
+    activeText: '#1a1206',
+    correct: '#7ef0b4',
+    wrong: '#ff9a9a',
+    answeredBg: '#5a46b8',
+    answeredText: '#fff3c4',
+    selectedRow: 'rgba(245, 200, 107, .14)'
   }
 };
 
@@ -37,7 +56,8 @@ function formatTime(totalSeconds) {
   return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 }
 
-export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practice = false, exit = null }) {
+export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practice = false, exit = null, skin = null }) {
+  const quest = skin === 'quest';
   // practice — тест курсу 150+: без шкали 200 балів; exit — куди повертатися { view, data, label } (за замовчуванням список НМТ-тестів)
   const goBack = () => (exit ? onNavigate(exit.view, exit.data) : onNavigate('nmt'));
   const questions = useMemo(() => {
@@ -53,7 +73,10 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
   const menuRef = useRef(null);
   const stripRef = useRef(null);
   const savedRef = useRef(false);
-  const t = THEMES[theme] || THEMES.dark;
+  const t = quest ? THEMES.quest : THEMES[theme] || THEMES.dark;
+  const darkUi = quest || theme === 'dark';
+  const fsQ = quest ? 'text-xl sm:text-[22px] leading-relaxed' : 'text-[15px] sm:text-base leading-relaxed';
+  const fsV = quest ? 'text-lg sm:text-xl' : 'text-[15px]';
   const { user } = useAuth();
 
   useEffect(() => {
@@ -198,7 +221,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
       const variant = question.variants[idx];
       return (
         <div className="flex items-start space-x-2">
-          <span className="font-bold" style={{ color: t.correct }}>{LETTERS[idx] || ''}</span>
+          <span className={quest ? 'q-script text-xl' : 'font-bold'} style={{ color: t.correct }}>{LETTERS[idx] || ''}</span>
           <MathContent html={variant?.content} className="text-sm sm:text-base" />
         </div>
       );
@@ -233,10 +256,13 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
             key={variant.id}
             onClick={() => handleSingleSelect(variant.id)}
             className="w-full flex items-start gap-5 sm:gap-7 rounded-lg px-2 py-1.5 text-left transition-colors"
-            style={{ backgroundColor: selected ? t.surfaceSoft : 'transparent' }}
+            style={{
+              backgroundColor: selected ? t.selectedRow || t.surfaceSoft : 'transparent',
+              boxShadow: selected && quest ? 'inset 0 0 0 1px rgba(245,200,107,.55)' : undefined
+            }}
           >
             <span
-              className="w-8 h-8 shrink-0 rounded-md flex items-center justify-center text-[13px] font-medium"
+              className={`w-8 h-8 shrink-0 rounded-md flex items-center justify-center ${quest ? 'q-script text-xl' : 'text-[13px] font-medium'}`}
               style={{
                 backgroundColor: selected ? t.activeBg : t.surface,
                 color: selected ? t.activeText : t.text
@@ -245,7 +271,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
               {LETTERS[idx] || idx + 1}
             </span>
             <span className="flex-1 min-w-0 pt-0.5">
-              <MathContent html={variant.content} className="text-[15px]" />
+              <MathContent html={variant.content} className={fsV} />
               {variant.image && (
                 <img
                   src={variant.image}
@@ -270,13 +296,13 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
           {question.variants?.map((left, idx) => (
             <div key={left.id} className="flex items-start gap-4 sm:gap-5">
               <span
-                className="w-8 h-8 shrink-0 rounded-lg flex items-center justify-center text-[13px] font-medium select-none"
+                className={`w-8 h-8 shrink-0 rounded-lg flex items-center justify-center select-none ${quest ? 'q-script text-xl' : 'text-[13px] font-medium'}`}
                 style={{ backgroundColor: t.surface, color: t.text }}
               >
                 {idx + 1}
               </span>
               <div className="flex-1 min-w-0 pt-0.5">
-                <MathContent html={left.content} className="text-[15px] leading-normal" />
+                <MathContent html={left.content} className={`${fsV} leading-normal`} />
                 {left.image && (
                   <img
                     src={left.image}
@@ -295,13 +321,13 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
           {question.variantsRight?.map((right, idx) => (
             <div key={right.id} className="flex items-start gap-4 sm:gap-5">
               <span
-                className="w-8 h-8 shrink-0 rounded-lg flex items-center justify-center text-[13px] font-medium select-none"
+                className={`w-8 h-8 shrink-0 rounded-lg flex items-center justify-center select-none ${quest ? 'q-script text-xl' : 'text-[13px] font-medium'}`}
                 style={{ backgroundColor: t.surface, color: t.text }}
               >
                 {LETTERS[idx] || idx + 1}
               </span>
               <div className="flex-1 min-w-0 pt-0.5">
-                <MathContent html={right.content} className="text-[15px] leading-normal" />
+                <MathContent html={right.content} className={`${fsV} leading-normal`} />
                 {right.image && (
                   <img
                     src={right.image}
@@ -323,7 +349,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
           {question.variantsRight?.map((_, ri) => (
             <div
               key={ri}
-              className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center text-sm font-medium select-none"
+              className={`w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center select-none ${quest ? 'q-script text-xl' : 'text-sm font-medium'}`}
               style={{ color: t.text }}
             >
               {LETTERS[ri] || ri + 1}
@@ -351,8 +377,8 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
                     onClick={() => handleConnectChange(left.id, right.id)}
                     className="compact-btn w-7 h-7 sm:w-8 sm:h-8 rounded-lg border transition-all flex items-center justify-center hover:opacity-90"
                     style={{
-                      borderColor: selected ? t.text : 'rgba(150, 150, 150, 0.35)',
-                      backgroundColor: selected ? (theme === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.05)') : 'transparent',
+                      borderColor: selected ? (quest ? t.activeBg : t.text) : 'rgba(150, 150, 150, 0.35)',
+                      backgroundColor: selected ? (darkUi ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.05)') : 'transparent',
                       color: t.text
                     }}
                   >
@@ -382,6 +408,17 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
     </div>
   );
 
+  // умова без «(ЗНО-…)» у кінці; джерело — під значком «?»
+  const renderContent = (question, className) => {
+    const { html, src } = splitContentSource(question.content);
+    return (
+      <div className="flex items-start gap-1">
+        <MathContent html={html} className={`min-w-0 ${className}`} />
+        <SourceHint src={src} className="mt-0.5 shrink-0" style={{ borderColor: t.muted, color: t.muted }} tipStyle={{ backgroundColor: t.surface, color: t.text }} />
+      </div>
+    );
+  };
+
   const renderQuestion = (question) => {
     const hasImage = Boolean(question.image);
 
@@ -391,7 +428,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
           {hasImage ? (
             <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-10 lg:gap-14 items-start">
               <div className="min-w-0">
-                <MathContent html={question.content} className="text-[15px] sm:text-base leading-relaxed" />
+                {renderContent(question, fsQ)}
               </div>
               <div className="shrink-0 flex justify-center md:justify-end">
                 <img
@@ -402,9 +439,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
                 />
               </div>
             </div>
-          ) : (
-            <MathContent html={question.content} className="text-[15px] sm:text-base leading-relaxed" />
-          )}
+          ) : renderContent(question, fsQ)}
 
           {renderConnectVariants(question)}
         </div>
@@ -416,7 +451,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
         {hasImage ? (
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-10 lg:gap-14 items-start">
             <div className="min-w-0">
-              <MathContent html={question.content} className="text-[15px] sm:text-base leading-relaxed" />
+              {renderContent(question, fsQ)}
               {question.type === 'single' && renderSingleVariants(question)}
               {question.type === 'short' && renderShortInput(question)}
             </div>
@@ -432,7 +467,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
           </div>
         ) : (
           <div className="max-w-3xl">
-            <MathContent html={question.content} className="text-[15px] sm:text-base leading-relaxed" />
+            {renderContent(question, fsQ)}
             {question.type === 'single' && renderSingleVariants(question)}
             {question.type === 'short' && renderShortInput(question)}
           </div>
@@ -443,8 +478,9 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
 
   if (finished) {
     return (
-      <div className="fixed inset-0 z-50 overflow-y-auto" style={{ backgroundColor: t.bg, color: t.text }}>
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-6">
+      <div className={`fixed inset-0 z-50 overflow-y-auto ${quest ? 'quest q-runner' : ''}`} style={{ backgroundColor: t.bg, color: t.text }}>
+        {quest && <QuestScene deep />}
+        <div className="relative z-[2] max-w-3xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex items-center justify-between mb-10">
             <button
               onClick={goBack}
@@ -453,16 +489,17 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
             >
               <ArrowLeft className="h-4 w-4" />
             </button>
-            <button
+            {!quest && <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="compact-btn w-9 h-9 rounded-lg flex items-center justify-center"
               style={{ color: t.muted }}
             >
               {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </button>
+            </button>}
           </div>
 
-          <h2 className="text-2xl font-semibold mb-3">Тест завершено</h2>
+          {quest ? <h2 className="q-script text-5xl mb-3" style={{ color: t.activeBg }}>Іспит завершено</h2>
+            : <h2 className="text-2xl font-semibold mb-3">Тест завершено</h2>}
           {graded ? (
             <>
               <p className="text-4xl font-semibold mb-2">
@@ -510,7 +547,7 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
                     <span className="text-xs uppercase" style={{ color: t.muted }}>{q.type}</span>
                   )}
                 </div>
-                <MathContent html={q.content} className="mb-4 text-[15px]" />
+                <div className="mb-4">{renderContent(q, quest ? 'text-lg' : 'text-[15px]')}</div>
                 {q.image && (
                   <img src={q.image} alt="" className="rounded-lg max-h-64 object-contain bg-white mb-4" onError={(e) => { e.target.style.display = 'none'; }} />
                 )}
@@ -588,8 +625,9 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
   const progress = questions.length ? ((current + 1) / questions.length) * 100 : 0;
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col" style={{ backgroundColor: t.bg, color: t.text }}>
-      <header className="flex items-center gap-2 px-3 pt-3">
+    <div className={`fixed inset-0 z-50 flex flex-col ${quest ? 'quest q-runner' : ''}`} style={{ backgroundColor: t.bg, color: t.text }}>
+      {quest && <QuestScene deep />}
+      <header className="relative z-[4] flex items-center gap-2 px-3 pt-3">
         <button
           onClick={goBack}
           title="Вийти з тесту"
@@ -608,9 +646,11 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
                 key={q.id}
                 onClick={() => setCurrent(idx)}
                 className="compact-btn w-8 h-8 shrink-0 rounded-md text-[13px] font-medium transition-colors"
+                title={has ? 'Відповідь дано' : 'Без відповіді'}
                 style={{
-                  backgroundColor: active ? t.activeBg : t.surface,
-                  color: active ? t.activeText : has ? t.text : t.muted
+                  backgroundColor: active ? t.activeBg : has && t.answeredBg ? t.answeredBg : t.surface,
+                  color: active ? t.activeText : has ? (t.answeredText || t.text) : t.muted,
+                  boxShadow: has && quest && !active ? 'inset 0 0 0 1px rgba(245,200,107,.7)' : undefined
                 }}
               >
                 {idx + 1}
@@ -619,14 +659,18 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
           })}
         </div>
 
-        <button
+        {quest && test.timeSeconds > 0 && (
+          <span className="shrink-0 px-3 py-1 rounded-full text-[15px] font-bold tabular-nums" title="Залишилось часу"
+            style={{ color: timeLeft < 300 ? t.wrong : t.activeBg, border: `1px solid ${t.activeBg}66` }}>{formatTime(timeLeft)}</span>
+        )}
+        {!quest && <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           title="Змінити тему"
           className="compact-btn w-9 h-9 shrink-0 rounded-lg flex items-center justify-center transition-opacity hover:opacity-80"
           style={{ color: t.muted }}
         >
           {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-        </button>
+        </button>}
 
         <button
           onClick={() => onOpenDovidnik?.()}
@@ -684,17 +728,20 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
         </div>
       </header>
 
-      <div className="px-3 pt-2">
+      <div className="relative z-[2] px-3 pt-2">
         <div className="h-1 rounded-full overflow-hidden" style={{ backgroundColor: t.surface }}>
           <div
             className="h-full rounded-full transition-all duration-300"
-            style={{ width: `${progress}%`, backgroundColor: t.muted }}
+            style={{ width: `${progress}%`, backgroundColor: quest ? t.activeBg : t.muted }}
           />
         </div>
       </div>
 
-      <main className="flex-1 overflow-y-auto">
+      <main className="relative z-[2] flex-1 overflow-y-auto">
         <div className="max-w-5xl lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+          {quest && currentQuestion && (
+            <p className="q-script text-2xl sm:text-3xl mb-4" style={{ color: t.activeBg }}>Іспит Блоку · завдання {current + 1} з {questions.length}</p>
+          )}
           {currentQuestion ? (
             renderQuestion(currentQuestion)
           ) : (
@@ -703,12 +750,12 @@ export default function NMTTestRunner({ test, onNavigate, onOpenDovidnik, practi
         </div>
       </main>
 
-      <footer className="px-4 sm:px-6 lg:px-8 pb-6 pt-2">
+      <footer className="relative z-[2] px-4 sm:px-6 lg:px-8 pb-6 pt-2">
         <div className="max-w-5xl lg:max-w-6xl mx-auto flex items-center gap-3">
           <button
             onClick={() => (isLast ? handleFinish() : setCurrent((c) => c + 1))}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm transition-opacity hover:opacity-80"
-            style={{ backgroundColor: t.surface, color: t.text }}
+            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm transition-opacity hover:opacity-80 ${quest ? 'q-cast' : ''}`}
+            style={quest ? undefined : { backgroundColor: t.surface, color: t.text }}
           >
             <span>{isLast ? 'Завершити' : currentAnswered ? 'Далі' : 'Пропустити'}</span>
             {isLast ? <Check className="h-4 w-4" /> : <ArrowRight className="h-4 w-4" />}

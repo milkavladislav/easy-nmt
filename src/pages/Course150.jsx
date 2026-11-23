@@ -93,7 +93,7 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
     try {
       setLoadingBlock(block.number);
       const test = await loadBlockTest(block);
-      onNavigate('nmtTest', { test, practice: true, exit: { view: 'course', label: 'Назад до курсу' } });
+      onNavigate('nmtTest', { test, practice: true, skin: block.topics.every(hasQuest) ? 'quest' : null, exit: { view: 'course', label: 'Назад до курсу' } });
     } catch (err) {
       console.error('course150 block test load error:', err);
       setError('Не вдалося завантажити тест. Спробуйте ще раз.');

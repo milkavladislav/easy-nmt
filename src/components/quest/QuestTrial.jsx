@@ -1,12 +1,16 @@
 import { useMemo, useRef, useState } from 'react';
 import MathContent from '../MathContent';
 import { LETTERS, normalizeQuestion, gradeQuestion } from '../../utils/nmtTest';
+import { splitContentSource } from '../../utils/course150';
+import SourceHint from '../course150/SourceHint';
 
 // Випробування квесту: та сама перевірка, що й у звичайному уроці (normalizeQuestion / gradeQuestion),
 // але у вигляді руни. example=true — наставник показує: розв’язання можна відкрити без відповіді.
 // once=true — домашнє завдання: рахується перша спроба, без «Ще раз».
 export default function QuestTrial({ question, answer, label, example = false, once = false, initial, onResult }) {
   const q = useMemo(() => normalizeQuestion(question, 0, answer), [question, answer]);
+  const body = useMemo(() => splitContentSource(q.content), [q.content]);
+  const src = question.src || body.src;
   const empty = q.type === 'connect' ? {} : q.type === 'short' ? '' : null;
   const [value, setValue] = useState(empty);
   const [result, setResult] = useState(initial != null ? { ok: initial, restored: true } : null);
@@ -34,10 +38,13 @@ export default function QuestTrial({ question, answer, label, example = false, o
     <div className={`q-trial p-5 sm:p-7 ${fx}`}>
       <div className="flex flex-wrap items-center gap-2 mb-3">
         <span className="q-script text-2xl text-[var(--q-gold)]">{label}</span>
-        {question.src && <span className="text-xs tracking-wide px-2.5 py-0.5 rounded-full border border-[rgba(245,200,107,.35)] text-[var(--q-gold-soft)]">{question.src}</span>}
       </div>
       {question.title && <h3 className="text-2xl font-bold text-white mb-2">{question.title}</h3>}
-      <MathContent html={q.content} className="text-lg leading-relaxed text-[#f4ecdf] mb-5" />
+      <div className="flex items-start gap-1 mb-5">
+        <MathContent html={body.html} className="min-w-0 text-lg leading-relaxed text-[#f4ecdf]" />
+        <SourceHint src={src} className="mt-1 shrink-0" style={{ borderColor: 'rgba(245,200,107,.6)', color: 'var(--q-gold-soft)' }}
+          tipStyle={{ backgroundColor: '#26205a', color: '#f4ecdf', border: '1px solid rgba(245,200,107,.4)' }} />
+      </div>
 
       {q.type === 'single' && (
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">

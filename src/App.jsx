@@ -66,7 +66,7 @@ function AppContent() {
       case 'nmtTest':
         // з НМТ-тестів приходить сам тест; з курсу 150+ — { test, practice, exit }
         return viewData?.test
-          ? <NMTTestRunner test={viewData.test} practice={viewData.practice} exit={viewData.exit} onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />
+          ? <NMTTestRunner test={viewData.test} practice={viewData.practice} exit={viewData.exit} skin={viewData.skin} onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />
           : <NMTTestRunner test={viewData} onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />;
       default:
         return <Course150 onNavigate={handleNavigate} onOpenDovidnik={handleOpenDovidnik} />;

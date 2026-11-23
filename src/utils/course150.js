@@ -14,6 +14,14 @@ export function splitSource(question) {
   return { ...question, src: m[1], solution: question.solution.slice(m[0].length) };
 }
 
+// «… (ЗНО-2016, пробний)» у кінці умови — джерело; ховаємо його під значок «?».
+const TAIL_SRC_RE = /\s*\(((?:ЗНО|НМТ)[^()]*)\)\s*$/;
+export function splitContentSource(html) {
+  const m = String(html || '').match(TAIL_SRC_RE);
+  if (!m) return { html, src: null };
+  return { html: html.slice(0, m.index), src: m[1] };
+}
+
 export const testIdFor = (number) => `150-${number}`;
 export const blockTestIdFor = (number) => `150-b${number}`;
 export const BLOCK_TEST_MINUTES = 60;
