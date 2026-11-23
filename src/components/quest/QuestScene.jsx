@@ -10,7 +10,7 @@ function rand(seed) {
   };
 }
 
-function Castle() {
+export function Castle() {
   const win = (x, y, w = 6, h = 10) => <rect key={`${x}-${y}`} className="q-window" x={x} y={y} width={w} height={h} rx={w / 2} fill="#ffcf6b" />;
   return (
     <svg className="q-castle" viewBox="0 -110 1200 530" preserveAspectRatio="xMidYMax slice" aria-hidden="true">

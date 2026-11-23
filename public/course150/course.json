@@ -158,7 +158,7 @@
   },
   {
    "number": 4,
-   "title": "Рівняння",
+   "title": "Рівняння та нерівності",
    "topics": [
     {
      "number": 16,
@@ -194,13 +194,7 @@
      "free": false,
      "ready": false,
      "files": {}
-    }
-   ]
-  },
-  {
-   "number": 5,
-   "title": "Нерівності",
-   "topics": [
+    },
     {
      "number": 21,
      "title": "Нерівності",
@@ -211,7 +205,7 @@
    ]
   },
   {
-   "number": 6,
+   "number": 5,
    "title": "Коло й чотирикутники",
    "topics": [
     {
@@ -245,11 +239,39 @@
    ]
   },
   {
-   "number": 7,
-   "title": "Прогресії",
+   "number": 6,
+   "title": "Функції й прогресії",
    "topics": [
     {
      "number": 26,
+     "title": "Функціональна залежність і перетворення графіків",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 27,
+     "title": "Лінійна й квадратична функції",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 28,
+     "title": "Степенева, показникова, логарифмічна",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 29,
+     "title": "Тригонометричні функції",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 30,
      "title": "Прогресії",
      "free": false,
      "ready": false,
@@ -258,41 +280,7 @@
    ]
   },
   {
-   "number": 8,
-   "title": "Функції",
-   "topics": [
-    {
-     "number": 27,
-     "title": "Функціональна залежність і перетворення графіків",
-     "free": false,
-     "ready": false,
-     "files": {}
-    },
-    {
-     "number": 28,
-     "title": "Лінійна й квадратична функції",
-     "free": false,
-     "ready": false,
-     "files": {}
-    },
-    {
-     "number": 29,
-     "title": "Степенева, показникова, логарифмічна",
-     "free": false,
-     "ready": false,
-     "files": {}
-    },
-    {
-     "number": 30,
-     "title": "Тригонометричні функції",
-     "free": false,
-     "ready": false,
-     "files": {}
-    }
-   ]
-  },
-  {
-   "number": 9,
+   "number": 7,
    "title": "Похідна та інтеграл",
    "topics": [
     {
@@ -319,45 +307,25 @@
    ]
   },
   {
-   "number": 10,
-   "title": "Вектори й координати",
-   "topics": [
-    {
-     "number": 34,
-     "title": "Вектори на площині",
-     "free": false,
-     "ready": false,
-     "files": {}
-    },
-    {
-     "number": 35,
-     "title": "Координати й вектори у просторі",
-     "free": false,
-     "ready": false,
-     "files": {}
-    }
-   ]
-  },
-  {
-   "number": 11,
+   "number": 8,
    "title": "Ймовірність і статистика",
    "topics": [
     {
-     "number": 36,
+     "number": 34,
      "title": "Ймовірність",
      "free": false,
      "ready": false,
      "files": {}
     },
     {
-     "number": 37,
+     "number": 35,
      "title": "Статистика",
      "free": false,
      "ready": false,
      "files": {}
     },
     {
-     "number": 38,
+     "number": 36,
      "title": "Комбінаторика",
      "free": false,
      "ready": false,
@@ -366,9 +334,23 @@
    ]
   },
   {
-   "number": 12,
-   "title": "Стереометрія",
+   "number": 9,
+   "title": "Вектори й стереометрія",
    "topics": [
+    {
+     "number": 37,
+     "title": "Вектори на площині",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
+    {
+     "number": 38,
+     "title": "Координати й вектори у просторі",
+     "free": false,
+     "ready": false,
+     "files": {}
+    },
     {
      "number": 39,
      "title": "Аксіоми стереометрії",

@@ -6,20 +6,11 @@ import QuestScene from '../components/quest/QuestScene';
 import MagicCanvas from '../components/quest/MagicCanvas';
 import QuestTrial from '../components/quest/QuestTrial';
 import { CAST, getStory } from '../quest';
-import { splitSource, loadTopicTest, saveCourseResult } from '../utils/course150';
+import { splitSource, loadTopicTest, saveCourseResult, questSaveKey, readQuestSave } from '../utils/course150';
 import { normalizeQuestion } from '../utils/nmtTest';
 import '../components/quest/quest.css';
 
 const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
-const keyFor = (uid, n) => `course150:quest:${uid || 'anon'}:${n}`;
-function readSave(key) {
-  try {
-    return JSON.parse(localStorage.getItem(key)) || {};
-  } catch {
-    return {};
-  }
-}
-
 // Карта квесту: усі частини, крім окремих рун і зірок (до них — через кружечки в шапці)
 function mapLabel(s, k, STORY) {
   if (s.kind === 'title') return { tag: 'Початок', text: 'Титр' };
@@ -140,9 +131,9 @@ export default function Quest150({ topic, onNavigate }) {
   const [error, setError] = useState(null);
   const STORY = useMemo(() => getStory(topic.number), [topic.number]);
   const [hwTest, setHwTest] = useState(null);
-  const key = keyFor(user?.uid, topic.number);
-  const [save, setSave] = useState(() => readSave(key));
-  const [step, setStep] = useState(() => readSave(key).step || 0);
+  const key = questSaveKey(user?.uid, topic.number);
+  const [save, setSave] = useState(() => readQuestSave(user?.uid, topic.number));
+  const [step, setStep] = useState(() => readQuestSave(user?.uid, topic.number).step || 0);
   const [flash, setFlash] = useState(null);
   const [toast, setToast] = useState(null);
   const [gateOpen, setGateOpen] = useState(false);

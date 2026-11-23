@@ -72,6 +72,15 @@ export const canOpen = (topic) => topic.ready && topic.free;
 
 // Теми, для яких є сюжет квесту (src/quest/storyNN.js): клік по темі відкриває одразу гру
 export const QUEST_TOPICS = new Set(QUEST_NUMBERS);
+// Збережений прогрес квесту в браузері: { step, runes, hw, hwSaved }
+export const questSaveKey = (uid, n) => `course150:quest:${uid || 'anon'}:${n}`;
+export function readQuestSave(uid, n) {
+  try {
+    return JSON.parse(localStorage.getItem(questSaveKey(uid, n))) || {};
+  } catch {
+    return {};
+  }
+}
 export const hasQuest = (topic) => QUEST_TOPICS.has(topic.number) && Boolean(topic.files?.lessonData);
 
 // Результат ДЗ, пройденого в квесті, — у той самий журнал, що й звичайний тест (nmt_results)

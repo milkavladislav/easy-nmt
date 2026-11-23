@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Loader2, BookOpen, Lock, Clock, CheckCircle2, ChevronRight, Gift, Trophy } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import QuestBlock from '../components/quest/QuestBlock';
 import { loadCourse150, loadBestResults, loadBlockTest, testIdFor, blockTestIdFor, canOpen, BLOCK_TEST_MINUTES, hasQuest } from '../utils/course150';
 
 function TopicRow({ topic, best, onOpen }) {
@@ -127,7 +128,7 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
   const passed = topics.filter((t) => best[testIdFor(t.number)]).length;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
+    <div className="min-h-screen overflow-x-clip bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
         <div className="bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl p-5 sm:p-8 border border-orange-500/30 shadow-2xl shadow-orange-500/10 mb-8">
           <p className="inline-block text-xs font-bold tracking-wide uppercase bg-orange-500/20 text-orange-300 border border-orange-500/30 rounded-full px-3 py-1 mb-3">
@@ -166,7 +167,11 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
         </div>
 
         <div className="space-y-8">
-          {course.blocks.map((block) => (
+          {course.blocks.map((block) => (block.topics.every(hasQuest) ? (
+            <QuestBlock key={block.number} block={block} uid={user?.uid} best={best} testIdFor={testIdFor}
+              examBest={best[blockTestIdFor(block.number)]} examLoading={loadingBlock === block.number}
+              onOpen={(topic) => onNavigate('quest150', topic)} onExam={() => startBlockTest(block)} />
+          ) : (
             <section key={block.number}>
               <div className="flex items-baseline justify-between mb-3">
                 <h2 className="text-xl font-bold text-white">
@@ -184,7 +189,7 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
                 )}
               </div>
             </section>
-          ))}
+          )))}
         </div>
       </div>
     </div>

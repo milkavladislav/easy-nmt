@@ -232,3 +232,56 @@
 @media (prefers-reduced-motion: reduce) {
   .quest *, .quest *::before, .quest *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* ---------- блок курсу в стилі квесту (сторінка курсу) ---------- */
+.quest.q-embed { min-height: 0; background: #0b0d26; }
+.q-block-sky {
+  background:
+    radial-gradient(1px 1px at 12% 22%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 28% 12%, #fff 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 44% 30%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 61% 16%, #fff 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 72% 38%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 86% 10%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 93% 46%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 6% 52%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 52% 58%, #fff 50%, transparent 51%),
+    radial-gradient(ellipse 60% 50% at 80% 10%, rgba(139, 108, 255, .3), transparent 70%),
+    linear-gradient(180deg, #060918 0%, #121640 60%, #1b1640 100%);
+}
+.q-bleed { margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); border-top: 1px solid rgba(245, 200, 107, .3); border-bottom: 1px solid rgba(245, 200, 107, .3); }
+.q-moon-sm { width: 70px; height: 70px; top: 36px; right: 9%; box-shadow: 0 0 50px 14px rgba(255, 240, 190, .22); }
+@media (max-width: 640px) { .q-moon-sm { width: 44px; height: 44px; top: auto; bottom: 200px; right: 7%; } }
+.q-block-sky::after { /* далекі пагорби на всю ширину */
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 70px; pointer-events: none;
+  background: radial-gradient(ellipse 40% 100% at 15% 100%, #15123a 60%, transparent 61%),
+              radial-gradient(ellipse 45% 90% at 85% 100%, #15123a 60%, transparent 61%),
+              linear-gradient(180deg, transparent, rgba(15, 13, 42, .9));
+}
+.q-block-castle { position: absolute; left: 0; right: 0; bottom: 0; height: 240px; pointer-events: none; overflow: hidden; z-index: 1; }
+@media (min-width: 640px) { .q-block-castle { height: 280px; } }
+.q-block-castle .q-castle {
+  left: 50%; right: auto; width: 640px; max-width: none; height: 100%; min-height: 0; transform: translateX(-50%);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);
+}
+.q-block-halls { background: linear-gradient(180deg, #0f0d2a, #0b0a20); }
+.q-hall {
+  border-radius: 18px; border: 1px solid rgba(245, 200, 107, .25);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .02));
+  transition: border-color .25s ease, background .25s ease, transform .2s ease;
+}
+.q-hall:hover:not(:disabled) { border-color: rgba(245, 200, 107, .7); background: rgba(139, 108, 255, .12); transform: translateY(-1px); }
+.q-hall.locked { opacity: .55; cursor: not-allowed; }
+.q-hall-num {
+  width: 46px; height: 46px; flex: none; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 19px;
+  color: var(--q-gold); border: 1px solid rgba(245, 200, 107, .5); background: rgba(255, 255, 255, .04);
+}
+.q-hall-num.lit { color: #1a1206; background: radial-gradient(circle, #fff3c4, #f5c86b 60%, #c98a2b); box-shadow: 0 0 14px 2px rgba(245, 200, 107, .55); border-color: #fff3c4; }
+.q-exam { border-color: rgba(245, 200, 107, .55); background: linear-gradient(90deg, rgba(245, 200, 107, .16), rgba(139, 108, 255, .12)); }
+@media (max-width: 639px) { .q-block-castle .q-castle { width: 540px; } }
+@media (min-width: 640px) { .q-hall-num { width: 60px; height: 60px; font-size: 24px; } }
+.q-block-title { color: #ffd98a; text-shadow: 0 0 28px rgba(245, 200, 107, .45), 0 2px 0 rgba(0, 0, 0, .4); letter-spacing: .01em; }
+@media (min-width: 1024px) { .q-block-castle { height: 330px; } .q-block-castle .q-castle { width: 760px; } }
+@media (min-width: 640px) { .q-moon-sm { top: auto; right: auto; bottom: 190px; left: calc(50% + 230px); } }
+@media (min-width: 1024px) { .q-moon-sm { width: 80px; height: 80px; bottom: 220px; left: calc(50% + 300px); } }
