@@ -1,6 +1,7 @@
 import { db } from '../firebase/config';
 import { addDoc, collection, getDocs, query, serverTimestamp, where } from 'firebase/firestore';
 import { to200Scale, isNmtPassed } from './nmtTest';
+import { QUEST_NUMBERS } from '../quest';
 
 // Курс «НМТ самопідготовка 150+»: вміст лежить у public/course150 (генерує export_app.py у папці курсу)
 const BASE = '/course150';
@@ -70,7 +71,7 @@ export async function loadBestResults(uid) {
 export const canOpen = (topic) => topic.ready && topic.free;
 
 // Теми, для яких є сюжет квесту (src/quest/storyNN.js): клік по темі відкриває одразу гру
-export const QUEST_TOPICS = new Set([1]);
+export const QUEST_TOPICS = new Set(QUEST_NUMBERS);
 export const hasQuest = (topic) => QUEST_TOPICS.has(topic.number) && Boolean(topic.files?.lessonData);
 
 // Результат ДЗ, пройденого в квесті, — у той самий журнал, що й звичайний тест (nmt_results)

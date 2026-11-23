@@ -5,7 +5,7 @@ import MathContent from '../components/MathContent';
 import QuestScene from '../components/quest/QuestScene';
 import MagicCanvas from '../components/quest/MagicCanvas';
 import QuestTrial from '../components/quest/QuestTrial';
-import STORY, { CAST } from '../quest/story01';
+import { CAST, getStory } from '../quest';
 import { splitSource, loadTopicTest, saveCourseResult } from '../utils/course150';
 import { normalizeQuestion } from '../utils/nmtTest';
 import '../components/quest/quest.css';
@@ -21,7 +21,7 @@ function readSave(key) {
 }
 
 // Карта квесту: усі частини, крім окремих рун і зірок (до них — через кружечки в шапці)
-function mapLabel(s, k) {
+function mapLabel(s, k, STORY) {
   if (s.kind === 'title') return { tag: 'Початок', text: 'Титр' };
   if (s.kind === 'dialog' && s.hwIntro) return { tag: STORY.homework.name, text: 'Домашнє завдання' };
   if (s.kind === 'dialog' && s.phase === 'runes') return { tag: 'Брама', text: 'Руни · завдання заняття' };
@@ -33,10 +33,10 @@ function mapLabel(s, k) {
   return null;
 }
 
-function QuestMap({ steps, step, onGo, onClose }) {
+function QuestMap({ steps, step, story, onGo, onClose }) {
   let ex = 0;
   const items = steps.map((s, i) => {
-    const l = mapLabel(s, s.kind === 'example' ? ++ex : 0);
+    const l = mapLabel(s, s.kind === 'example' ? ++ex : 0, story);
     return l && { ...l, i };
   }).filter(Boolean);
   return (
@@ -138,6 +138,7 @@ export default function Quest150({ topic, onNavigate }) {
   const { user } = useAuth();
   const [lesson, setLesson] = useState(null);
   const [error, setError] = useState(null);
+  const STORY = useMemo(() => getStory(topic.number), [topic.number]);
   const [hwTest, setHwTest] = useState(null);
   const key = keyFor(user?.uid, topic.number);
   const [save, setSave] = useState(() => readSave(key));
@@ -193,7 +194,7 @@ export default function Quest150({ topic, onNavigate }) {
       out.push({ kind: 'hwDone', phase: 'hw' });
     }
     return out;
-  }, [lesson, hwQuestions]);
+  }, [lesson, hwQuestions, STORY]);
   const total = steps.filter((s) => s.kind === 'trial').length;
   const cur = steps[Math.min(step, steps.length - 1)];
   const lit = Object.values(runes).filter(Boolean).length;
@@ -413,7 +414,7 @@ export default function Quest150({ topic, onNavigate }) {
         </div>
       )}
 
-      {mapOpen && <QuestMap steps={steps} step={step} onClose={() => setMapOpen(false)} onGo={(i) => { setMapOpen(false); go(i); }} />}
+      {mapOpen && <QuestMap steps={steps} step={step} story={STORY} onClose={() => setMapOpen(false)} onGo={(i) => { setMapOpen(false); go(i); }} />}
 
       {cur.kind !== 'title' && (
         <div className="fixed bottom-0 inset-x-0 z-30 bg-gradient-to-t from-[rgba(5,6,20,.95)] to-transparent pt-8 pb-5">
