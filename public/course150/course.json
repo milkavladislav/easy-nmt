@@ -11,9 +11,7 @@
      "free": true,
      "ready": true,
      "files": {
-      "lesson": "/course150/t01/lesson.pdf",
       "lessonData": "/course150/t01/lesson.json",
-      "homework": "/course150/t01/homework.pdf",
       "test": "/course150/t01/test.json"
      },
      "testQuestions": 21
@@ -25,7 +23,6 @@
      "ready": true,
      "files": {
       "lessonData": "/course150/t02/lesson.json",
-      "homework": "/course150/t02/homework.pdf",
       "test": "/course150/t02/test.json"
      },
      "testQuestions": 23
@@ -37,7 +34,6 @@
      "ready": true,
      "files": {
       "lessonData": "/course150/t03/lesson.json",
-      "homework": "/course150/t03/homework.pdf",
       "test": "/course150/t03/test.json"
      },
      "testQuestions": 15
@@ -49,7 +45,6 @@
      "ready": true,
      "files": {
       "lessonData": "/course150/t04/lesson.json",
-      "homework": "/course150/t04/homework.pdf",
       "test": "/course150/t04/test.json"
      },
      "testQuestions": 20
@@ -61,7 +56,6 @@
      "ready": true,
      "files": {
       "lessonData": "/course150/t05/lesson.json",
-      "homework": "/course150/t05/homework.pdf",
       "test": "/course150/t05/test.json"
      },
      "testQuestions": 20
@@ -73,7 +67,6 @@
      "ready": true,
      "files": {
       "lessonData": "/course150/t06/lesson.json",
-      "homework": "/course150/t06/homework.pdf",
       "test": "/course150/t06/test.json"
      },
      "testQuestions": 16
@@ -85,7 +78,6 @@
      "ready": true,
      "files": {
       "lessonData": "/course150/t07/lesson.json",
-      "homework": "/course150/t07/homework.pdf",
       "test": "/course150/t07/test.json"
      },
      "testQuestions": 18

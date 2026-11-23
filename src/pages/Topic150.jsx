@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowLeft, Presentation, FileText, ClipboardList, Play, Loader2, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Presentation, ClipboardList, Play, Loader2, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { loadTopicTest, loadBestResults, testIdFor } from '../utils/course150';
 
@@ -17,22 +17,6 @@ function Step({ n, icon, title, text, children }) {
     </div>
   );
 }
-
-const PdfLink = ({ href, children, primary }) =>
-  href ? (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${
-        primary
-          ? 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white'
-          : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
-      }`}
-    >
-      {children}
-    </a>
-  ) : null;
 
 export default function Topic150({ topic, onNavigate }) {
   const { user } = useAuth();
@@ -75,25 +59,18 @@ export default function Topic150({ topic, onNavigate }) {
         <div className="space-y-4">
           <Step n={1} icon={<Presentation className="h-5 w-5 text-orange-300" />} title="Заняття"
             text="Коротка теорія, розібрані приклади й задачі з НМТ минулих років — з перевіркою відповіді одразу.">
-            {f.lessonData ? (
+            {f.lessonData && (
               <button
                 onClick={() => onNavigate('lesson150', topic)}
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white"
               >
                 <Play className="h-4 w-4" />Почати заняття
               </button>
-            ) : (
-              <PdfLink href={f.lesson} primary>Відкрити заняття</PdfLink>
             )}
           </Step>
 
           <Step n={2} icon={<ClipboardList className="h-5 w-5 text-orange-300" />} title="Домашнє завдання"
-            text={`Аркуш ДЗ на ${topic.testQuestions || ''} завдань — розв’яжи на папері.`}>
-            <PdfLink href={f.homework} primary><FileText className="h-4 w-4" />Відкрити ДЗ</PdfLink>
-          </Step>
-
-          <Step n={3} icon={<Play className="h-5 w-5 text-orange-300" />} title="Тест з автоперевіркою"
-            text="Внеси відповіді з ДЗ у тест: бали як на НМТ, після завершення — правильні відповіді й розв’язання.">
+            text={`Тест на ${topic.testQuestions || ''} завдань з автоперевіркою: бали як на НМТ, після завершення — правильні відповіді й розв’язання.`}>
             {f.test && (
               <button
                 onClick={startTest}
@@ -101,7 +78,7 @@ export default function Topic150({ topic, onNavigate }) {
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white disabled:opacity-60"
               >
                 {loadingTest ? <Loader2 className="h-4 w-4 animate-spin" /> : <Play className="h-4 w-4" />}
-                {best ? 'Пройти ще раз' : 'Почати тест'}
+                {best ? 'Пройти ще раз' : 'Почати ДЗ'}
               </button>
             )}
             {best && (
