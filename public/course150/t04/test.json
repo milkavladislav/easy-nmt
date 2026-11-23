@@ -1,0 +1,584 @@
+{
+ "title": "ДЗ 4. Корені (НМТ 150+)",
+ "lessonNumber": 4,
+ "source": "hw-sheet",
+ "hwKey": "150-4",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt{100 - 64}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "6"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "10"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{36} = 6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt{9 + 16}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "5"
+    },
+    {
+     "id": 3,
+     "content": "7"
+    },
+    {
+     "id": 4,
+     "content": "25"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{25} = 5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt{(-9)^{2}} + \\sqrt{49}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "7"
+    },
+    {
+     "id": 3,
+     "content": "9"
+    },
+    {
+     "id": 4,
+     "content": "16"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"9 + 7 = 16\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"4\\sqrt{(-15)^{2}}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "7,5"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-60\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "60"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-240\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "240"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4 \\cdot  15 = 60\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"(4\\sqrt{3})^{2}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "7"
+    },
+    {
+     "id": 1,
+     "content": "12"
+    },
+    {
+     "id": 2,
+     "content": "24"
+    },
+    {
+     "id": 3,
+     "content": "48"
+    },
+    {
+     "id": 4,
+     "content": "56"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"16 \\cdot  3 = 48\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt{(5 - \\sqrt{3})^{2}}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{3} - 5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\sqrt{5} + 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "8"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-\\sqrt{3} - 5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\sqrt{3} + 5\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\left|5 - \\sqrt{3}\\right| = 5 - \\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt{(2 - \\sqrt{5})^{2}}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{5} - 2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "1"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2 - \\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "3"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"9 - 4\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\left|2 - \\sqrt{5}\\right| = \\sqrt{5} - 2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt{27} - \\sqrt{12}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3"
+    },
+    {
+     "id": 1,
+     "content": "15"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\sqrt{15}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"5\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3\\sqrt{3} - 2\\sqrt{3} = \\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt{5} \\cdot  \\sqrt{20} - \\sqrt{72}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"2\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"4\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"10\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"10 - 6\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"10 - 2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{100} - 6\\sqrt{2} = 10 - 6\\sqrt{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Скільки всього цілих чисел містить інтервал <span data-latex=\"(\\sqrt{15}; \\sqrt{100})\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "7"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "9"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{15} \\approx  3{,}87\" data-type=\"inline-math\"></span>: числа 4, …, 9 — 6 чисел"
+  },
+  {
+   "type": "single",
+   "content": "Звільніться від ірраціональності у знаменнику дробу <span data-latex=\"\\dfrac{8}{\\sqrt{8}}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{\\sqrt{8}}{8}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{2\\sqrt{2}}{8}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{8}{\\sqrt{8}} = \\dfrac{8\\sqrt{8}}{8} = \\sqrt{8} = 2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\dfrac{\\sqrt[3]{80 + 1}}{\\sqrt[3]{3}}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1"
+    },
+    {
+     "id": 1,
+     "content": "2"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "9"
+    },
+    {
+     "id": 4,
+     "content": "27"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt[3]{\\dfrac{81}{3}} = \\sqrt[3]{27} = 3\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"(-\\sqrt[5]{2})^{5} + \\sqrt{256}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-12\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "14"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-14\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-16\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "16"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-2 + 16 = 14\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\sqrt[4]{\\dfrac{243}{48}}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1,5"
+    },
+    {
+     "id": 1,
+     "content": "0,5"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "1"
+    },
+    {
+     "id": 4,
+     "content": "3"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt[4]{\\dfrac{81}{16}} = \\dfrac{3}{2} = 1{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Якому з наведених проміжків належить число <span data-latex=\"\\sqrt[3]{75}\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "(1; 2)"
+    },
+    {
+     "id": 1,
+     "content": "(2; 3)"
+    },
+    {
+     "id": 2,
+     "content": "(3; 4)"
+    },
+    {
+     "id": 3,
+     "content": "(4; 5)"
+    },
+    {
+     "id": 4,
+     "content": "(5; 6)"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4^{3} = 64 &lt; 75 &lt; 125 = 5^{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"\\sqrt[3]{\\sqrt[4]{a^{6}}}\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"a \\ge  0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt[3]{a^{2}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\sqrt{a}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"a^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\sqrt[6]{a}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\sqrt[7]{a^{5}}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt[12]{a^{6}} = \\sqrt{a}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розташуйте в порядку зростання числа <span data-latex=\"\\dfrac{12}{5}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt{11}\" data-type=\"inline-math\"></span>, 3.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{12}{5}; \\sqrt{11}; 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"3; \\dfrac{12}{5}; \\sqrt{11}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{12}{5}; 3; \\sqrt{11}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\sqrt{11}; 3; \\dfrac{12}{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\sqrt{11}; \\dfrac{12}{5}; 3\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{12}{5} = 2{,}4\" data-type=\"inline-math\"></span>; <span data-latex=\"3 = \\sqrt{9} &lt; \\sqrt{11}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Скільки всього цілих чисел містить проміжок <span data-latex=\"[\\sqrt[3]{-64}; \\sqrt{30}]\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "7"
+    },
+    {
+     "id": 1,
+     "content": "8"
+    },
+    {
+     "id": 2,
+     "content": "9"
+    },
+    {
+     "id": 3,
+     "content": "10"
+    },
+    {
+     "id": 4,
+     "content": "11"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"[-4; 5{,}47\\ldots ]\" data-type=\"inline-math\"></span>: від −4 до 5 — 10 чисел"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між виразом (1–3) та твердженням про його значення (А–Д), яке є правильним.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(\\sqrt{3} - 1)^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{\\sqrt{12}}{\\sqrt{3}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\sqrt[3]{-8^{2}}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "є натуральним числом"
+    },
+    {
+     "id": 1,
+     "content": "є ірраціональним додатним числом"
+    },
+    {
+     "id": 2,
+     "content": "є ірраціональним від’ємним числом"
+    },
+    {
+     "id": 3,
+     "content": "є цілим від’ємним числом"
+    },
+    {
+     "id": 4,
+     "content": "дорівнює 0"
+    }
+   ],
+   "points": 3,
+   "solution": "1 — <span data-latex=\"4 - 2\\sqrt{3}\" data-type=\"inline-math\"></span> → Б; 2 — <span data-latex=\"\\sqrt{4} = 2\" data-type=\"inline-math\"></span> → А; 3 — <span data-latex=\"\\sqrt[3]{-64} = -4\" data-type=\"inline-math\"></span> → Г"
+  },
+  {
+   "type": "short",
+   "content": "Обчисліть значення виразу <span data-latex=\"(\\sqrt[6]{64} - \\sqrt[4]{36})(\\sqrt[6]{64} + \\sqrt[4]{36})\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"(\\sqrt[6]{64})^{2} - (\\sqrt[4]{36})^{2} = 2^{2} - 6 = -2\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  2,
+  2,
+  4,
+  2,
+  3,
+  4,
+  0,
+  2,
+  3,
+  1,
+  2,
+  2,
+  1,
+  0,
+  3,
+  1,
+  2,
+  3,
+  "1 0 3",
+  "-2"
+ ],
+ "incomplete": []
+}

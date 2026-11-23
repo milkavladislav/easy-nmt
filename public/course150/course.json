@@ -22,29 +22,49 @@
      "number": 2,
      "title": "Раціональні вирази",
      "free": true,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t02/lesson.json",
+      "homework": "/course150/t02/homework.pdf",
+      "test": "/course150/t02/test.json"
+     },
+     "testQuestions": 23
     },
     {
      "number": 3,
      "title": "Модуль",
      "free": true,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t03/lesson.json",
+      "homework": "/course150/t03/homework.pdf",
+      "test": "/course150/t03/test.json"
+     },
+     "testQuestions": 15
     },
     {
      "number": 4,
      "title": "Корені",
      "free": true,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t04/lesson.json",
+      "homework": "/course150/t04/homework.pdf",
+      "test": "/course150/t04/test.json"
+     },
+     "testQuestions": 20
     },
     {
      "number": 5,
      "title": "Степені",
      "free": true,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t05/lesson.json",
+      "homework": "/course150/t05/homework.pdf",
+      "test": "/course150/t05/test.json"
+     },
+     "testQuestions": 20
     },
     {
      "number": 6,

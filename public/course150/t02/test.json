@@ -1,0 +1,650 @@
+{
+ "title": "ДЗ 2. Раціональні вирази (НМТ 150+)",
+ "lessonNumber": 2,
+ "source": "hw-sheet",
+ "hwKey": "150-2",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"3a - c + (8c + 4a)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"a - 9c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"a + 9c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-a - 9c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"7a + 7c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"7a - 7c\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3a - c + 8c + 4a = 7a + 7c\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"3a - c - (8c + 4a)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"a - 9c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"a + 9c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-a - 9c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"7a + 7c\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"7a - 7c\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3a - c - 8c - 4a = -a - 9c\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть значення виразу <span data-latex=\"\\dfrac{1}{3}m + \\dfrac{1}{5}n\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"m = -18\" data-type=\"inline-math\"></span>, <span data-latex=\"n = 55\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-17\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "5"
+    },
+    {
+     "id": 4,
+     "content": "17"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-6 + 11 = 5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розкрийте дужки: <span data-latex=\"-7(5x + y)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-35x - 7y\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"35x + y\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-35x + y\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-2x + y\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-35x + 7y\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-35x - 7y\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"3a - 2(4 - a)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"a - 8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-3a^{2} + 14a - 8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2a - 8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"5a - 8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"10a\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3a - 8 + 2a = 5a - 8\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"(a - b)(3a + 3b)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"9a^{2} - 9b^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"6a - 6b\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"9a^{2} + 9b^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3a^{2} - 3b^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"3a^{2} + 3b^{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3(a - b)(a + b) = 3a^{2} - 3b^{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"4x + x^{2} - 5 - 2x^{2} - 4x + 19\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"2x^{2} - 3x + 14\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"x^{2} + 14\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-x^{2} + 14\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"2x^{2} - 3x - 24\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-x^{2} - 24\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-x^{2} + 14\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розкладіть на множники: <span data-latex=\"24ac + 6a\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"6(24ac + a)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"4a(6ac + 6)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"6a(4ac + 1)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"6a(4c + 1)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"4(6ac + 2a)\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"6a(4c + 1)\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Визначте <span data-latex=\"c\" data-type=\"inline-math\"></span> зі співвідношення <span data-latex=\"\\dfrac{c}{4} = \\dfrac{a}{3}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"c = \\dfrac{4a}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"c = \\dfrac{a}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"c = \\dfrac{3a}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"c = 4a\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"c = 3a\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"c = \\dfrac{4a}{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Якщо <span data-latex=\"b = \\dfrac{3}{x} - 2\" data-type=\"inline-math\"></span>, то <span data-latex=\"x =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{3}{b + 2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{1}{-b + 2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{b + 2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"b + 2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{-3}{b + 1}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{3}{x} = b + 2\" data-type=\"inline-math\"></span>, <span data-latex=\"x = \\dfrac{3}{b + 2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Два програмісти розробляють додаток. Перший програміст пише <span data-latex=\"x\" data-type=\"inline-math\"></span> рядків коду за годину, а другий — <span data-latex=\"y\" data-type=\"inline-math\"></span> рядків коду за годину. Скільки рядків коду напишуть обидва програмісти разом, якщо перший працював 4 години, а другий — 5 годин?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"9(x + y)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"9 + x + y\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"20xy\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"9xy\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"4x + 5y\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4x + 5y\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Відомо, що <span data-latex=\"p\" data-type=\"inline-math\"></span> однакових олівців коштують <span data-latex=\"y\" data-type=\"inline-math\"></span> гривень. Скільки гривень коштують <span data-latex=\"k\" data-type=\"inline-math\"></span> таких олівців?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{k}{yp}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{kp}{y}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{yk}{p}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"ykp\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{yp}{k}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "один олівець — <span data-latex=\"\\dfrac{y}{p}\" data-type=\"inline-math\"></span> грн; <span data-latex=\"k\" data-type=\"inline-math\"></span> олівців — <span data-latex=\"\\dfrac{yk}{p}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"99^{2} - 98^{2}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2"
+    },
+    {
+     "id": 1,
+     "content": "1"
+    },
+    {
+     "id": 2,
+     "content": "0"
+    },
+    {
+     "id": 3,
+     "content": "197"
+    },
+    {
+     "id": 4,
+     "content": "199"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"(99 - 98)(99 + 98) = 197\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Яке число потрібно підставити замість <span data-latex=\"x\" data-type=\"inline-math\"></span>, щоб рівність <span data-latex=\"(7a + 3)^{2} = 49a^{2} + xa + 9\" data-type=\"inline-math\"></span> була правильною?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "8"
+    },
+    {
+     "id": 1,
+     "content": "10"
+    },
+    {
+     "id": 2,
+     "content": "21"
+    },
+    {
+     "id": 3,
+     "content": "24"
+    },
+    {
+     "id": 4,
+     "content": "42"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2 \\cdot  7a \\cdot  3 = 42a\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Яке число потрібно підставити замість <span data-latex=\"x\" data-type=\"inline-math\"></span>, щоб рівність <span data-latex=\"(7a + 4)(7a - 4) = 49a^{2} - x\" data-type=\"inline-math\"></span> була правильною?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "7"
+    },
+    {
+     "id": 1,
+     "content": "9"
+    },
+    {
+     "id": 2,
+     "content": "14"
+    },
+    {
+     "id": 3,
+     "content": "16"
+    },
+    {
+     "id": 4,
+     "content": "24"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"49a^{2} - 16\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"\\dfrac{x - 3}{x^{2} - 9}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"x - 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{1}{x - 3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{x + 3}{x - 3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{1}{x + 3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "1"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{x - 3}{(x - 3)(x + 3)} = \\dfrac{1}{x + 3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"\\dfrac{a^{2} - 4b^{2}}{3a + 6b}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{a + 2b}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{a - 2b}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"3a - 6b\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{3}{a - 2b}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{3}{a + 2b}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{(a - 2b)(a + 2b)}{3(a + 2b)} = \\dfrac{a - 2b}{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"\\dfrac{3x + 12}{x^{2} - 16}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{3}{4 - x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{3}{x + 4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{3}{x - 4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-\\dfrac{3}{x + 4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{x - 4}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{3(x + 4)}{(x - 4)(x + 4)} = \\dfrac{3}{x - 4}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"\\dfrac{a^{2} + 2a}{2a + 4}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{a^{2}}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{a}{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"4a^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"2a\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{a}{4}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{a(a + 2)}{2(a + 2)} = \\dfrac{a}{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Якщо числа <span data-latex=\"x\" data-type=\"inline-math\"></span> і <span data-latex=\"y\" data-type=\"inline-math\"></span> задовольняють умови <span data-latex=\"2x - y = 3\" data-type=\"inline-math\"></span> і <span data-latex=\"2x + y \\ne  0\" data-type=\"inline-math\"></span>, то <span data-latex=\"\\dfrac{2x + y}{4x^{2} - y^{2}} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0,2"
+    },
+    {
+     "id": 1,
+     "content": "1,3"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "0,3"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{1}{2x - y} = \\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між виразом (1–3) та тотожно рівним йому дробом (А–Д).",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{16 - 4x}{76 - 19x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{19x - 19y}{4y - 4x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{4x + 19x^{2}}{16 + 76x}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-\\dfrac{4}{19}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{x}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-\\dfrac{19}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{4}{19}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\dfrac{x}{4}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 3,
+   "solution": "1 — <span data-latex=\"\\dfrac{4(4 - x)}{19(4 - x)}\" data-type=\"inline-math\"></span> → Г; 2 — <span data-latex=\"\\dfrac{19(x - y)}{-4(x - y)}\" data-type=\"inline-math\"></span> → В; 3 — <span data-latex=\"\\dfrac{x(4 + 19x)}{4(4 + 19x)}\" data-type=\"inline-math\"></span> → Б"
+  },
+  {
+   "type": "short",
+   "content": "Спростіть вираз <span data-latex=\"2(a^{2} - 5ab + 4b^{2}) - 3(2a^{2} - 2ab + 3b^{2})\" data-type=\"inline-math\"></span> та обчисліть його значення, якщо <span data-latex=\"a = 1{,}1\" data-type=\"inline-math\"></span>, <span data-latex=\"b = 0{,}8\" data-type=\"inline-math\"></span>. (ЗНО-2012)",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"2a^{2} - 10ab + 8b^{2} - 6a^{2} + 6ab - 9b^{2} = -4a^{2} - 4ab - b^{2} = -(2a + b)^{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"2a + b = 3\" data-type=\"inline-math\"></span>, отже <span data-latex=\"-9\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Обчисліть значення виразу <span data-latex=\"\\dfrac{10a + b}{b^{2} - 4a^{2}} + \\dfrac{4a + 2b}{b^{2} + 4ab + 4a^{2}}\" data-type=\"inline-math\"></span> при <span data-latex=\"a = 0{,}25\" data-type=\"inline-math\"></span>, <span data-latex=\"b = 4{,}5\" data-type=\"inline-math\"></span>. (ЗНО-2015)",
+   "variants": [],
+   "points": 2,
+   "solution": "Другий дріб: <span data-latex=\"\\dfrac{2(2a + b)}{(b + 2a)^{2}} = \\dfrac{2}{b + 2a}\" data-type=\"inline-math\"></span>. Спільний знаменник <span data-latex=\"(b - 2a)(b + 2a)\" data-type=\"inline-math\"></span>: <span data-latex=\"\\dfrac{10a + b + 2(b - 2a)}{b^{2} - 4a^{2}} = \\dfrac{6a + 3b}{(b - 2a)(b + 2a)} = \\dfrac{3}{b - 2a} = \\dfrac{3}{4} = 0{,}75\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  3,
+  2,
+  3,
+  0,
+  3,
+  3,
+  2,
+  3,
+  0,
+  0,
+  4,
+  2,
+  3,
+  4,
+  3,
+  3,
+  1,
+  2,
+  1,
+  4,
+  "3 2 1",
+  "-9",
+  "0,75"
+ ],
+ "incomplete": []
+}

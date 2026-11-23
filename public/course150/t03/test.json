@@ -1,0 +1,443 @@
+{
+ "title": "ДЗ 3. Модуль (НМТ 150+)",
+ "lessonNumber": 3,
+ "source": "hw-sheet",
+ "hwKey": "150-3",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|3 - 4 \\cdot  8\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "8"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-29\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "29"
+    },
+    {
+     "id": 4,
+     "content": "35"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\left|3 - 32\\right| = \\left|-29\\right| = 29\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|\\dfrac{5}{8} \\cdot  (-\\dfrac{2}{15})\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-12\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{10}{12}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-\\dfrac{1}{12}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{1}{12}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\dfrac{10}{120}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\left|-\\dfrac{10}{120}\\right| = \\dfrac{1}{12}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|-7{,}2 + \\dfrac{36}{10}\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-36\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "36"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-3{,}6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "3,6"
+    },
+    {
+     "id": 4,
+     "content": "10,8"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\left|-7{,}2 + 3{,}6\\right| = 3{,}6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|4 \\cdot  2\\dfrac{3}{5} - 4\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-3{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "2,6"
+    },
+    {
+     "id": 2,
+     "content": "6,4"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-6{,}4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "14,4"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\left|10{,}4 - 4\\right| = 6{,}4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|2{,}3 - \\dfrac{24}{5}\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2,25"
+    },
+    {
+     "id": 1,
+     "content": "1,5"
+    },
+    {
+     "id": 2,
+     "content": "0,2"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-2{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "2,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\left|2{,}3 - 4{,}8\\right| = 2{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"2 - \\left|1 - x\\right|\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"x &lt; -1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"1 + x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"3 + x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"1 - x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3 + 2x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "0"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x &lt; -1\" data-type=\"inline-math\"></span> → <span data-latex=\"1 - x &gt; 0\" data-type=\"inline-math\"></span>: <span data-latex=\"2 - (1 - x) = 1 + x\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"a - \\left|a\\right|\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"a &lt; 0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"2a\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"a\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "0"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-a\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-2a\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a &lt; 0\" data-type=\"inline-math\"></span> → <span data-latex=\"\\left|a\\right| = -a\" data-type=\"inline-math\"></span>: <span data-latex=\"a + a = 2a\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|\\sqrt{7} - 3\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{7} - 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\sqrt{7} + 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-\\sqrt{7} - 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\sqrt{7} + 3\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{7} &lt; 3\" data-type=\"inline-math\"></span> → <span data-latex=\"3 - \\sqrt{7}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|4 - \\sqrt{19}\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{19} - 4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\sqrt{19} + 4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "15"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-\\sqrt{19} - 4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\sqrt{19} + 4\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{19} &gt; 4\" data-type=\"inline-math\"></span> → <span data-latex=\"\\sqrt{19} - 4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|\\sqrt{3} - 3\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{3} - 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\sqrt{3} + 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-\\sqrt{3} - 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\sqrt{3} + 3\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{3} &lt; 3\" data-type=\"inline-math\"></span> → <span data-latex=\"3 - \\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|3 - \\sqrt{10}\\right| - \\left|3 + \\sqrt{10}\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "6"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"2\\sqrt{10}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "0"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"6 + 2\\sqrt{10}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"(\\sqrt{10} - 3) - (3 + \\sqrt{10}) = -6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|\\sqrt{32} - 8\\right| + \\left|8 - \\sqrt{32}\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "16"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-16\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"16 + 8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"16 - 8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2(8 - \\sqrt{32}) = 16 - 8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Якщо <span data-latex=\"a \\in  (-2; 3)\" data-type=\"inline-math\"></span>, то <span data-latex=\"\\left|a^{2} - a - 6\\right| =\" data-type=\"inline-math\"></span> (ЗНО-2015, пробний)",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"a^{2} - a - 6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"a^{2} + a - 6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"a^{2} + a + 6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-a^{2} + a + 6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-a^{2} - a + 6\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a^{2} - a - 6 = (a - 3)(a + 2) &lt; 0\" data-type=\"inline-math\"></span> на <span data-latex=\"(-2; 3)\" data-type=\"inline-math\"></span>, тому модуль <span data-latex=\"= -(a^{2} - a - 6) = -a^{2} + a + 6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між числовим виразом (1–4) та його значенням (А–Д), якщо <span data-latex=\"a = \\dfrac{25}{4}\" data-type=\"inline-math\"></span>. (ЗНО-2016)",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{2a}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{1}{a}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\left|9 - 2a\\right|\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"a^{\\dfrac{1}{2}}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{4}{25}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"2\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-3\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"4\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 4,
+   "solution": "<span data-latex=\"\\dfrac{2a}{3} = \\dfrac{25}{6} = 4\\dfrac{1}{6}\" data-type=\"inline-math\"></span> (Д); <span data-latex=\"\\dfrac{1}{a} = \\dfrac{4}{25}\" data-type=\"inline-math\"></span> (А); <span data-latex=\"\\left|9 - 12{,}5\\right| = 3{,}5\" data-type=\"inline-math\"></span> (Г); <span data-latex=\"a^{\\dfrac{1}{2}} = \\sqrt{\\dfrac{25}{4}} = 2{,}5\" data-type=\"inline-math\"></span> (Б)"
+  },
+  {
+   "type": "short",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\left|5 - 4x\\right| = 3\" data-type=\"inline-math\"></span>. Якщо рівняння має єдиний корінь, запишіть його у відповіді. Якщо коренів кілька — запишіть їхню суму. (ЗНО-2021, демо)",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"5 - 4x = 3\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 0{,}5\" data-type=\"inline-math\"></span>; <span data-latex=\"5 - 4x = -3\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>. Сума: <span data-latex=\"0{,}5 + 2 = 2{,}5\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  3,
+  3,
+  3,
+  2,
+  4,
+  0,
+  0,
+  4,
+  0,
+  4,
+  4,
+  4,
+  3,
+  "4 0 3 1",
+  "2,5"
+ ],
+ "incomplete": []
+}

@@ -1,0 +1,937 @@
+{
+ "number": 2,
+ "title": "Раціональні вирази",
+ "intro": [
+  {
+   "title": "Дужки й подібні",
+   "text": "знак перед дужками, зведення подібних"
+  },
+  {
+   "title": "Множення",
+   "text": "одночлен на многочлен, дужка на дужку"
+  },
+  {
+   "title": "Спільний множник",
+   "text": "виносимо за дужки, виражаємо змінну з формули"
+  },
+  {
+   "title": "Формули й дроби",
+   "text": "квадрат суми, різниця квадратів, скорочення"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"a - (b - c)\" data-type=\"inline-math\"></span>",
+   "text": "розкриваємо дужки"
+  },
+  {
+   "big": "<span data-latex=\"(a + b)^{2}\" data-type=\"inline-math\"></span>",
+   "text": "формули скороченого множення"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{a^{2} - b^{2}}{a - b}\" data-type=\"inline-math\"></span>",
+   "text": "скорочуємо дроби"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Розкриття дужок",
+   "title": "Знак перед дужками вирішує все",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "+ ( )",
+     "title": "Перед дужками «+»",
+     "formula": "<span data-latex=\"a + (b - c) = a + b - c\" data-type=\"inline-math\"></span>",
+     "text": "Дужки просто опускаємо, знаки всередині <b>не змінюються</b>."
+    },
+    {
+     "color": "coral",
+     "big": "− ( )",
+     "title": "Перед дужками «−»",
+     "formula": "<span data-latex=\"a - (b - c) = a - b + c\" data-type=\"inline-math\"></span>",
+     "text": "Опускаємо дужки й <b>змінюємо знак кожного</b> доданка в них."
+    },
+    {
+     "color": "mint",
+     "big": "3x + 5x",
+     "title": "Подібні доданки",
+     "formula": "",
+     "text": "Однакова буквена частина — додаємо коефіцієнти: <span data-latex=\"3x^{2} - 5x^{2} = -2x^{2}\" data-type=\"inline-math\"></span>, а <span data-latex=\"x\" data-type=\"inline-math\"></span> і <span data-latex=\"x^{2}\" data-type=\"inline-math\"></span> — <b>не подібні</b>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2019",
+    "title": "Мінус перед дужками",
+    "content": "Спростіть вираз <span data-latex=\"2a - (3b - 2a)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-3b\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4a - 3b\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-6ab - 4a\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-6ab + 4a\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-6ab - 4a^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Перед дужками «−»: <span data-latex=\"2a - 3b + 2a\" data-type=\"inline-math\"></span>. Зводимо подібні: <span data-latex=\"2a + 2a = 4a\" data-type=\"inline-math\"></span>. Разом <span data-latex=\"4a - 3b\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2014",
+    "title": "Дві змінні",
+    "content": "<span data-latex=\"-2xy^{2} - (3xy^{2} - 2x^{2}y) =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-5xy^{2} + 2x^{2}y\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-5xy^{2} - 2x^{2}y\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"xy^{2} - 2x^{2}y\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-6xy^{2} + 2x^{2}y\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-3xy^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Знаки в дужках змінюються: <span data-latex=\"-2xy^{2} - 3xy^{2} + 2x^{2}y\" data-type=\"inline-math\"></span>. Подібні тут <span data-latex=\"xy^{2}\" data-type=\"inline-math\"></span>: <span data-latex=\"-2 - 3 = -5\" data-type=\"inline-math\"></span>. Відповідь <span data-latex=\"-5xy^{2} + 2x^{2}y\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Множення",
+   "title": "Кожен на кожен",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Одночлен × многочлен",
+     "formula": "<span data-latex=\"a(b + c) = ab + ac\" data-type=\"inline-math\"></span>",
+     "text": "Множимо на <b>кожен</b> доданок у дужках: <span data-latex=\"-7(5x + y) = -35x - 7y\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Многочлен × многочлен",
+     "formula": "<span data-latex=\"(a + b)(c + d) = ac + ad + bc + bd\" data-type=\"inline-math\"></span>",
+     "text": "Кожен доданок першої дужки — на кожен другої, потім зводимо подібні."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2013",
+    "title": "Дужка на дужку",
+    "content": "Укажіть вираз, тотожно рівний виразу <span data-latex=\"(2x + 5)(3 - x)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"15 + x - 2x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"15 + x + 2x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"15 + 6x - 2x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"15 + 11x - 2x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"15 + 11x + 2x^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2x \\cdot  3 + 2x \\cdot  (-x) + 5 \\cdot  3 + 5 \\cdot  (-x) = 6x - 2x^{2} + 15 - 5x = 15 + x - 2x^{2}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Спільний множник",
+   "title": "Виносимо за дужки й виражаємо змінну",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Спільний множник",
+     "formula": "<span data-latex=\"15a^{2}b - 5ab = 5ab(3a - 1)\" data-type=\"inline-math\"></span>",
+     "text": "Шукаємо однакове число й букву в кожному доданку, ділимо на них кожен член."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Виразити змінну",
+     "formula": "<span data-latex=\"3x + y = 6 \\to  x = \\dfrac{6 - y}{3}\" data-type=\"inline-math\"></span>",
+     "text": "Переносимо все інше в другу частину (зі зміною знака), потім ділимо на коефіцієнт."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Підстановка",
+     "formula": "",
+     "text": "Якщо <span data-latex=\"m = n - 1\" data-type=\"inline-math\"></span>, то в <span data-latex=\"7 - m\" data-type=\"inline-math\"></span> замість <span data-latex=\"m\" data-type=\"inline-math\"></span> пишемо <span data-latex=\"(n - 1)\" data-type=\"inline-math\"></span> <b>в дужках</b>: <span data-latex=\"7 - (n - 1) = 8 - n\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2017",
+    "title": "Виражаємо y",
+    "content": "Якщо числа <span data-latex=\"x\" data-type=\"inline-math\"></span> і <span data-latex=\"y\" data-type=\"inline-math\"></span> задовольняють співвідношення <span data-latex=\"2y + 4 = x\" data-type=\"inline-math\"></span>, то <span data-latex=\"y =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"2x - 8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"8 - 2x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{x - 4}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{x + 4}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{4 - x}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Переносимо 4: <span data-latex=\"2y = x - 4\" data-type=\"inline-math\"></span>. Ділимо на 2: <span data-latex=\"y = \\dfrac{x - 4}{2}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2009",
+    "title": "Виражаємо b із дробу",
+    "content": "Якщо <span data-latex=\"a = 1 - \\dfrac{b}{c}\" data-type=\"inline-math\"></span>, то <span data-latex=\"b =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"c(1 - a)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"c(a - 1)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{c}{1 - a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1 - a}{c}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"1 - ac\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{b}{c} = 1 - a\" data-type=\"inline-math\"></span>, множимо обидві частини на <span data-latex=\"c\" data-type=\"inline-math\"></span>: <span data-latex=\"b = c(1 - a)\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Формули скороченого множення",
+   "title": "Три формули — є в довідці НМТ",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Квадрат суми",
+     "formula": "<span data-latex=\"(a + b)^{2} = a^{2} + 2ab + b^{2}\" data-type=\"inline-math\"></span>",
+     "text": "Подвоєний добуток — середній доданок."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Квадрат різниці",
+     "formula": "<span data-latex=\"(a - b)^{2} = a^{2} - 2ab + b^{2}\" data-type=\"inline-math\"></span>",
+     "text": "<span data-latex=\"(4x - 5)^{2} = 16x^{2} - 40x + 25\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Різниця квадратів",
+     "formula": "<span data-latex=\"a^{2} - b^{2} = (a - b)(a + b)\" data-type=\"inline-math\"></span>",
+     "text": "Працює в обидва боки: <span data-latex=\"25x^{2} - 1 = (5x - 1)(5x + 1)\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2020",
+    "title": "Квадрат різниці",
+    "content": "Укажіть вираз, тотожно рівний виразу <span data-latex=\"(2x - 3)^{2} + 12x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"4x^{2} + 12x - 9\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4x^{2} + 9\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"4x^{2} - 9\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"4x^{2} + 12x + 9\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"4x^{2} + 6x + 9\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(2x - 3)^{2} = 4x^{2} - 12x + 9\" data-type=\"inline-math\"></span>. Додаємо <span data-latex=\"12x\" data-type=\"inline-math\"></span>: <span data-latex=\"-12x + 12x = 0\" data-type=\"inline-math\"></span>, лишається <span data-latex=\"4x^{2} + 9\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 5 · Алгебраїчні дроби",
+   "title": "Скорочуємо, додаємо, віднімаємо",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Скорочення",
+     "formula": "<span data-latex=\"\\dfrac{3x + 12}{x^{2} - 16} = \\dfrac{3(x + 4)}{(x - 4)(x + 4)}\" data-type=\"inline-math\"></span>",
+     "text": "Спершу розкладаємо чисельник і знаменник на множники, потім скорочуємо <b>множники</b>, не доданки."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Однаковий знаменник",
+     "formula": "<span data-latex=\"\\dfrac{a}{c} - \\dfrac{b}{c} = \\dfrac{a - b}{c}\" data-type=\"inline-math\"></span>",
+     "text": "Додаємо чисельники, знаменник лишаємо."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Різні знаменники",
+     "formula": "",
+     "text": "Зводимо до спільного знаменника — домножуємо кожен дріб на «відсутній» множник."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2009",
+    "title": "Скорочуємо дріб",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{3x + 12}{x^{2} - 16}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{3}{4 - x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{3}{x + 4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{3}{x - 4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-\\dfrac{3}{x + 4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{x - 4}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{3(x + 4)}{(x - 4)(x + 4)}\" data-type=\"inline-math\"></span> — скорочуємо <span data-latex=\"(x + 4)\" data-type=\"inline-math\"></span>: <span data-latex=\"\\dfrac{3}{x - 4}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2016",
+    "title": "Різниця дробів",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{a}{b(a - b)} - \\dfrac{b}{a(a - b)}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{a + b}{ab}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{ab}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{b - a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{a - b}{ab}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "0"
+     }
+    ],
+    "points": 1,
+    "solution": "Спільний знаменник <span data-latex=\"ab(a - b)\" data-type=\"inline-math\"></span>: <span data-latex=\"\\dfrac{a^{2} - b^{2}}{ab(a - b)} = \\dfrac{(a - b)(a + b)}{ab(a - b)} = \\dfrac{a + b}{ab}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023",
+    "title": "Розкриваємо дужки",
+    "content": "<span data-latex=\"2(5x + 6) =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5x + 8"
+     },
+     {
+      "id": 1,
+      "content": "10x + 6"
+     },
+     {
+      "id": 2,
+      "content": "7x + 8"
+     },
+     {
+      "id": 3,
+      "content": "7x + 12"
+     },
+     {
+      "id": 4,
+      "content": "10x + 12"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2 \\cdot  5x + 2 \\cdot  6 = 10x + 12\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2025",
+    "title": "Зводимо подібні",
+    "content": "<span data-latex=\"4x + x^{2} - 5 - 2x^{2} - 4x + 19 =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"8x + x^{2} + 14\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"x^{2} + 14\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"8x - x^{2} + 14\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-x^{2} + 14\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"x^{2} - 14\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"4x - 4x = 0\" data-type=\"inline-math\"></span>; <span data-latex=\"x^{2} - 2x^{2} = -x^{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"-5 + 19 = 14\" data-type=\"inline-math\"></span>. Разом <span data-latex=\"-x^{2} + 14\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024 (демо)",
+    "title": "Підстановка",
+    "content": "Якщо <span data-latex=\"m = n - 1\" data-type=\"inline-math\"></span>, то <span data-latex=\"7 - m =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"n - 8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"6 - n\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"8 - n\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"n - 6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "6 + n"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"7 - (n - 1) = 7 - n + 1 = 8 - n\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2022 (демо)",
+    "title": "Множник і дужки",
+    "content": "Спростіть вираз <span data-latex=\"3(1 - x)(1 + x)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"3 - 3x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"3 - x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"3 + 3x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"3 + x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"3 + 6x - 3x^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(1 - x)(1 + x) = 1 - x^{2}\" data-type=\"inline-math\"></span> — різниця квадратів; <span data-latex=\"3(1 - x^{2}) = 3 - 3x^{2}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024",
+    "title": "Квадрат різниці",
+    "content": "<span data-latex=\"(4x - 5)^{2} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"16x^{2} - 40x + 25\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"16x^{2} - 25\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"16x^{2} - 20x + 25\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"16x^{2} + 25\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"4x^{2} - 40x + 25\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(4x)^{2} - 2 \\cdot  4x \\cdot  5 + 5^{2} = 16x^{2} - 40x + 25\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024",
+    "title": "Розклад на множники",
+    "content": "Розкладіть вираз <span data-latex=\"4x^{2} - 144\" data-type=\"inline-math\"></span> на множники.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(2x - 12)(2x + 12)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(2x - 72)(2x + 72)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(2x - 12)^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(2x - 72)^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"2(x - 6)(x + 6)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"4x^{2} - 144 = (2x)^{2} - 12^{2} = (2x - 12)(2x + 12)\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024 (демо)",
+    "title": "Дужки й квадрат суми",
+    "content": "Спростіть вираз <span data-latex=\"a(a + 2b) - (a + b)^{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"4ab + b^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4ab - b^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-b^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"2ab - b^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"b^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"a^{2} + 2ab - (a^{2} + 2ab + b^{2}) = -b^{2}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2025",
+    "title": "Дужки й квадрат різниці",
+    "content": "<span data-latex=\"x(x - 2y) - (x - y)^{2} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-y^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"y^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-4xy + y^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-2xy + y^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-4xy - y^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"x^{2} - 2xy - (x^{2} - 2xy + y^{2}) = -y^{2}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026",
+    "title": "Різниця квадратів у виразі",
+    "content": "Спростіть вираз <span data-latex=\"25b - (b - 5)(5 + b) + 25\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"25b - b^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"25b - b^{2} - 50\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"25b + b^{2} - 50\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"25b - b^{2} + 50\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"25b + b^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(b - 5)(b + 5) = b^{2} - 25\" data-type=\"inline-math\"></span>; <span data-latex=\"25b - b^{2} + 25 + 25 = 25b - b^{2} + 50\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2025",
+    "title": "Виражаємо змінну з формули",
+    "content": "Якщо <span data-latex=\"a = \\dfrac{(b + c) \\cdot  d}{2}\" data-type=\"inline-math\"></span>, то <span data-latex=\"c =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{2a - b}{d}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{ad}{2} - b\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2a}{d} + b\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{2a + b}{d}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{2a}{d} - b\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Множимо на 2: <span data-latex=\"2a = (b + c)d\" data-type=\"inline-math\"></span>; ділимо на <span data-latex=\"d\" data-type=\"inline-math\"></span>: <span data-latex=\"b + c = \\dfrac{2a}{d}\" data-type=\"inline-math\"></span>; <span data-latex=\"c = \\dfrac{2a}{d} - b\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2022",
+    "title": "Скорочуємо дріб",
+    "content": "Скоротіть дріб <span data-latex=\"\\dfrac{10ab^{3}}{5a^{2}b}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{2b^{2}}{a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{b^{4}}{2a^{3}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"50a^{3}b^{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{2b^{4}}{a^{3}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{b^{2}}{a^{2}}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{10}{5} = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{b^{3}}{b} = b^{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{a}{a^{2}} = \\dfrac{1}{a}\" data-type=\"inline-math\"></span>: разом <span data-latex=\"\\dfrac{2b^{2}}{a}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026 (демо)",
+    "title": "Дріб із формулами",
+    "content": "<span data-latex=\"\\dfrac{4x^{2} - 25}{(2x - 5)^{2}} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{2x + 5}{2x - 5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "1"
+     },
+     {
+      "id": 2,
+      "content": "2x + 5"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{2x - 5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{(2x - 5)(2x + 5)}{(2x - 5)^{2}} = \\dfrac{2x + 5}{2x - 5}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023 (демо)",
+    "title": "Дроби з однаковим знаменником",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{a^{2} + 16}{a - 4} - \\dfrac{8a}{a - 4}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"a - 4\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "a + 4"
+     },
+     {
+      "id": 3,
+      "content": "1"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(a - 4)^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{a^{2} - 8a + 16}{a - 4} = \\dfrac{(a - 4)^{2}}{a - 4} = a - 4\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023",
+    "title": "Різниця дробів",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{a^{2} + ab}{(a + b)^{2}} - \\dfrac{2a + b}{a + b}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{a - b}{a + b}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{b - a}{a + b}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{3a + b}{a + b}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{a(a + b)}{(a + b)^{2}} = \\dfrac{a}{a + b}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\dfrac{a - (2a + b)}{a + b} = \\dfrac{-a - b}{a + b} = -1\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  }
+ ],
+ "summary": [
+  {
+   "big": "«+» / «−»",
+   "text": "Плюс перед дужками — знаки зберігаємо, мінус — змінюємо всі."
+  },
+  {
+   "big": "<span data-latex=\"(a + b)^{2}\" data-type=\"inline-math\"></span>",
+   "text": "Квадрат суми й різниці — з подвоєним добутком, не забувай його."
+  },
+  {
+   "big": "<span data-latex=\"a^{2} - b^{2}\" data-type=\"inline-math\"></span>",
+   "text": "Різниця квадратів розкладає вирази на множники."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{a}{b}\" data-type=\"inline-math\"></span>",
+   "text": "Скорочуємо лише множники: спершу розклади чисельник і знаменник."
+  }
+ ]
+}

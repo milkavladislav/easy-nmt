@@ -1,0 +1,950 @@
+{
+ "number": 4,
+ "title": "Корені",
+ "intro": [
+  {
+   "title": "Квадратний корінь",
+   "text": "означення, корінь із квадрата"
+  },
+  {
+   "title": "Властивості",
+   "text": "добуток, частка, винесення множника"
+  },
+  {
+   "title": "Корінь n-го степеня",
+   "text": "парний і непарний показник"
+  },
+  {
+   "title": "Оцінка й формули",
+   "text": "сусідні квадрати, корінь у формулах"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"\\sqrt{a^{2}} = \\left|a\\right|\" data-type=\"inline-math\"></span>",
+   "text": "корінь із квадрата — модуль"
+  },
+  {
+   "big": "<span data-latex=\"\\sqrt{18} = 3\\sqrt{2}\" data-type=\"inline-math\"></span>",
+   "text": "виносимо множник з-під кореня"
+  },
+  {
+   "big": "<span data-latex=\"\\sqrt[3]{-8} = -2\" data-type=\"inline-math\"></span>",
+   "text": "корінь n-го степеня"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Квадратний корінь",
+   "title": "Що таке <span data-latex=\"\\sqrt{a}\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "√9 = 3",
+     "title": "Означення",
+     "formula": "",
+     "text": "<span data-latex=\"\\sqrt{a}\" data-type=\"inline-math\"></span> — <b>невід’ємне</b> число, квадрат якого дорівнює <span data-latex=\"a\" data-type=\"inline-math\"></span>. Існує лише для <span data-latex=\"a \\ge  0\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "(√a)² = a",
+     "title": "Квадрат кореня",
+     "formula": "",
+     "text": "<span data-latex=\"(\\sqrt{7})^{2} = 7\" data-type=\"inline-math\"></span>, <span data-latex=\"(2\\sqrt{3})^{2} = 4 \\cdot  3 = 12\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "√a² = |a|",
+     "title": "Корінь із квадрата",
+     "formula": "",
+     "text": "Не забувай модуль: <span data-latex=\"\\sqrt{(-3)^{2}} = \\left|-3\\right| = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"\\sqrt{(2 - \\sqrt{5})^{2}} = \\sqrt{5} - 2\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2008",
+    "title": "Корінь із квадрата",
+    "content": "Знайдіть значення виразу <span data-latex=\"\\dfrac{\\sqrt{9 + a^{2} - 6a}}{a - 3}\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"a = 2{,}5\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-0{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "0"
+     },
+     {
+      "id": 3,
+      "content": "0,5"
+     },
+     {
+      "id": 4,
+      "content": "1"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"9 + a^{2} - 6a = (a - 3)^{2}\" data-type=\"inline-math\"></span>, тому <span data-latex=\"\\sqrt{(a - 3)^{2}} = \\left|a - 3\\right| = \\left|-0{,}5\\right| = 0{,}5\" data-type=\"inline-math\"></span>. Ділимо на <span data-latex=\"a - 3 = -0{,}5\" data-type=\"inline-math\"></span>: виходить <span data-latex=\"-1\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Властивості",
+   "title": "Множимо, ділимо, виносимо",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Добуток і частка",
+     "formula": "<span data-latex=\"\\sqrt{ab} = \\sqrt{a} \\cdot  \\sqrt{b}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}\" data-type=\"inline-math\"></span>",
+     "text": "Для <span data-latex=\"a \\ge  0\" data-type=\"inline-math\"></span>, <span data-latex=\"b &gt; 0\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Винесення множника",
+     "formula": "",
+     "text": "Шукаємо під коренем точний квадрат: <span data-latex=\"\\sqrt{50} = \\sqrt{25 \\cdot  2} = 5\\sqrt{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\sqrt{18} - \\sqrt{8} = 3\\sqrt{2} - 2\\sqrt{2} = \\sqrt{2}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Формули скороченого множення",
+     "formula": "",
+     "text": "Працюють і з коренями: <span data-latex=\"(\\sqrt{3} - 1)(\\sqrt{3} + 1) = 3 - 1 = 2\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2013 (пробний)",
+    "title": "Добуток коренів",
+    "content": "Обчисліть <span data-latex=\"\\sqrt{2} \\cdot  \\sqrt{0{,}08}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,04"
+     },
+     {
+      "id": 1,
+      "content": "0,08"
+     },
+     {
+      "id": 2,
+      "content": "0,2"
+     },
+     {
+      "id": 3,
+      "content": "0,4"
+     },
+     {
+      "id": 4,
+      "content": "0,6"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt{2 \\cdot  0{,}08} = \\sqrt{0{,}16} = 0{,}4\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2021 (демо)",
+    "title": "Різниця квадратів",
+    "content": "<span data-latex=\"(\\sqrt{2} - a)(\\sqrt{2} + a) =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"2 - a\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"2 - a^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{2} - a^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"2 - \\sqrt{a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\sqrt[4]{2} - a^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Різниця квадратів: <span data-latex=\"(\\sqrt{2})^{2} - a^{2} = 2 - a^{2}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Корінь n-го степеня",
+   "title": "Парний і непарний показник",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "∛−8 = −2",
+     "title": "Непарний n",
+     "formula": "",
+     "text": "Корінь існує з <b>будь-якого</b> числа й має той самий знак: <span data-latex=\"\\sqrt[3]{(-5)^{3}} = -5\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "⁴√a, a ≥ 0",
+     "title": "Парний n",
+     "formula": "",
+     "text": "Лише з <span data-latex=\"a \\ge  0\" data-type=\"inline-math\"></span>, результат <span data-latex=\"\\ge  0\" data-type=\"inline-math\"></span>: <span data-latex=\"\\sqrt[4]{a^{4}} = \\left|a\\right|\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "ⁿ√a · ⁿ√b",
+     "title": "Однаковий показник",
+     "formula": "<span data-latex=\"\\dfrac{\\sqrt[3]{128}}{\\sqrt[3]{2}} = \\sqrt[3]{64} = 4\" data-type=\"inline-math\"></span>",
+     "text": "Множимо й ділимо під одним коренем."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2010 (пробний)",
+    "title": "Корінь четвертого степеня",
+    "content": "Обчисліть <span data-latex=\"\\sqrt[4]{16 \\cdot  81}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "6"
+     },
+     {
+      "id": 1,
+      "content": "12"
+     },
+     {
+      "id": 2,
+      "content": "18"
+     },
+     {
+      "id": 3,
+      "content": "36"
+     },
+     {
+      "id": 4,
+      "content": "72"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt[4]{16} \\cdot  \\sqrt[4]{81} = 2 \\cdot  3 = 6\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2017 (пробний)",
+    "title": "Парний і непарний корінь",
+    "content": "Обчисліть <span data-latex=\"\\sqrt{(-3)^{2}} + \\sqrt[3]{(-5)^{3}}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "2"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "15"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt{(-3)^{2}} = \\left|-3\\right| = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"\\sqrt[3]{(-5)^{3}} = -5\" data-type=\"inline-math\"></span>. Разом <span data-latex=\"3 + (-5) = -2\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2014",
+    "title": "Кубічний корінь",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{\\sqrt[3]{64}}{64}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{16}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "16"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt[3]{64} = 4\" data-type=\"inline-math\"></span>, бо <span data-latex=\"4^{3} = 64\" data-type=\"inline-math\"></span>. <span data-latex=\"\\dfrac{4}{64} = \\dfrac{1}{16}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Оцінка кореня",
+   "title": "Згадай сусідні точні степені",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Квадратний корінь",
+     "formula": "<span data-latex=\"\\sqrt{25} &lt; \\sqrt{27} &lt; \\sqrt{36}\" data-type=\"inline-math\"></span>",
+     "text": "<span data-latex=\"25 &lt; 27 &lt; 36\" data-type=\"inline-math\"></span>, тому <span data-latex=\"5 &lt; \\sqrt{27} &lt; 6\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Кубічний корінь",
+     "formula": "",
+     "text": "Куби: <span data-latex=\"1, 8, 27, 64\" data-type=\"inline-math\"></span>. <span data-latex=\"8 &lt; 18 &lt; 27\" data-type=\"inline-math\"></span>, тому <span data-latex=\"2 &lt; \\sqrt[3]{18} &lt; 3\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2016",
+    "title": "Оцінюємо кубічний корінь",
+    "content": "Якому проміжку належить число <span data-latex=\"\\sqrt[3]{18}\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "[0; 1)"
+     },
+     {
+      "id": 1,
+      "content": "[1; 2)"
+     },
+     {
+      "id": 2,
+      "content": "[2; 3)"
+     },
+     {
+      "id": 3,
+      "content": "[3; 4)"
+     },
+     {
+      "id": 4,
+      "content": "[4; +∞)"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2^{3} = 8 &lt; 18 &lt; 27 = 3^{3}\" data-type=\"inline-math\"></span>, отже <span data-latex=\"2 &lt; \\sqrt[3]{18} &lt; 3\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 5 · Корінь у формулах",
+   "title": "Виражаємо змінну з-під кореня",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Квадрат — щоб позбутися кореня",
+     "formula": "",
+     "text": "<span data-latex=\"T = 2\\pi \\sqrt{LC}\" data-type=\"inline-math\"></span> → <span data-latex=\"\\sqrt{LC} = \\dfrac{T}{2\\pi }\" data-type=\"inline-math\"></span> → <span data-latex=\"LC = \\dfrac{T^{2}}{4\\pi ^{2}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Корінь — щоб позбутися квадрата",
+     "formula": "",
+     "text": "<span data-latex=\"R^{2} = \\dfrac{GMm}{F}\" data-type=\"inline-math\"></span>, <span data-latex=\"R &gt; 0\" data-type=\"inline-math\"></span> → <span data-latex=\"R = \\sqrt{\\dfrac{GMm}{F}}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2008",
+    "title": "Виражаємо R",
+    "content": "Якщо <span data-latex=\"F = \\dfrac{GMm}{R^{2}}\" data-type=\"inline-math\"></span> і <span data-latex=\"R &gt; 0\" data-type=\"inline-math\"></span>, то <span data-latex=\"R =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{FGMm}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\sqrt{\\dfrac{Mm}{GF}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{\\dfrac{GF}{Mm}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{\\dfrac{F}{GMm}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\sqrt{\\dfrac{GMm}{F}}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Множимо на <span data-latex=\"R^{2}\" data-type=\"inline-math\"></span> і ділимо на <span data-latex=\"F\" data-type=\"inline-math\"></span>: <span data-latex=\"R^{2} = \\dfrac{GMm}{F}\" data-type=\"inline-math\"></span>. <span data-latex=\"R &gt; 0\" data-type=\"inline-math\"></span>, тому <span data-latex=\"R = \\sqrt{\\dfrac{GMm}{F}}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023 (демо)",
+    "title": "Частка кубічних коренів",
+    "content": "Обчисліть <span data-latex=\"\\dfrac{\\sqrt[3]{128}}{\\sqrt[3]{2}}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "64"
+     },
+     {
+      "id": 1,
+      "content": "18"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt[3]{\\dfrac{128}{2}} = \\sqrt[3]{64} = 4\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024",
+    "title": "Частка кубічних коренів",
+    "content": "Обчисліть <span data-latex=\"\\dfrac{\\sqrt[3]{189}}{\\sqrt[3]{7}}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3"
+     },
+     {
+      "id": 1,
+      "content": "7"
+     },
+     {
+      "id": 2,
+      "content": "9"
+     },
+     {
+      "id": 3,
+      "content": "21"
+     },
+     {
+      "id": 4,
+      "content": "27"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt[3]{\\dfrac{189}{7}} = \\sqrt[3]{27} = 3\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2024",
+    "title": "Корінь зі змінною",
+    "content": "Обчисліть значення виразу <span data-latex=\"2\\sqrt{m + m + m}\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"m = \\dfrac{1}{27}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{3}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{2}{9}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"m + m + m = 3m = \\dfrac{3}{27} = \\dfrac{1}{9}\" data-type=\"inline-math\"></span>; <span data-latex=\"2\\sqrt{\\dfrac{1}{9}} = 2 \\cdot  \\dfrac{1}{3} = \\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026 (демо)",
+    "title": "Добуток коренів",
+    "content": "<span data-latex=\"\\sqrt[3]{2^{3}} \\cdot  \\sqrt{36} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "12"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"6 \\cdot  \\sqrt[9]{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"6 \\cdot  \\sqrt[6]{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "72"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"6\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt[3]{2^{3}} = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt{36} = 6\" data-type=\"inline-math\"></span>: <span data-latex=\"2 \\cdot  6 = 12\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023",
+    "title": "Куб добутку",
+    "content": "Обчисліть <span data-latex=\"\\left(\\dfrac{1}{7} \\cdot  \\sqrt[3]{7}\\right)^{3}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "27"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{7}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{49}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "49"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(\\dfrac{1}{7})^{3} \\cdot  (\\sqrt[3]{7})^{3} = \\dfrac{1}{343} \\cdot  7 = \\dfrac{1}{49}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2014",
+    "title": "Парний і непарний корінь",
+    "content": "<span data-latex=\"\\sqrt{(-2)^{2}} + \\sqrt[3]{(-3)^{3}} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-23\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "1"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt{(-2)^{2}} = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt[3]{(-3)^{3}} = -3\" data-type=\"inline-math\"></span>: <span data-latex=\"2 - 3 = -1\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2019",
+    "title": "Оцінка виразу з коренем",
+    "content": "Якому проміжку належить значення виразу <span data-latex=\"\\dfrac{-1 + \\sqrt{27}}{2}\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; 0)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "[0; 1)"
+     },
+     {
+      "id": 2,
+      "content": "[1; 2)"
+     },
+     {
+      "id": 3,
+      "content": "[2; 3)"
+     },
+     {
+      "id": 4,
+      "content": "[3; +∞)"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"5 &lt; \\sqrt{27} &lt; 6\" data-type=\"inline-math\"></span>, тому <span data-latex=\"4 &lt; -1 + \\sqrt{27} &lt; 5\" data-type=\"inline-math\"></span> і <span data-latex=\"2 &lt; \\dfrac{-1 + \\sqrt{27}}{2} &lt; 2{,}5\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2020",
+    "title": "Цілі числа між коренями",
+    "content": "Скільки всього цілих чисел містить інтервал <span data-latex=\"(\\sqrt{8}; \\sqrt{81})\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "8"
+     },
+     {
+      "id": 1,
+      "content": "7"
+     },
+     {
+      "id": 2,
+      "content": "6"
+     },
+     {
+      "id": 3,
+      "content": "5"
+     },
+     {
+      "id": 4,
+      "content": "4"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2 &lt; \\sqrt{8} &lt; 3\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt{81} = 9\" data-type=\"inline-math\"></span> — кінці не входять: 3, 4, …, 8 — шість чисел"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2018",
+    "title": "Квадрат різниці з коренем",
+    "content": "Укажіть проміжок, якому належить значення виразу <span data-latex=\"(1 - \\sqrt{2})^{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-3; 0)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "[0; 0,5)"
+     },
+     {
+      "id": 2,
+      "content": "[0,5; 1)"
+     },
+     {
+      "id": 3,
+      "content": "[1; 2)"
+     },
+     {
+      "id": 4,
+      "content": "[2; 5)"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(1 - \\sqrt{2})^{2} = 3 - 2\\sqrt{2} \\approx  3 - 2{,}83 = 0{,}17\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2010",
+    "title": "Корінь четвертого степеня",
+    "content": "Якому з наведених проміжків належить число <span data-latex=\"\\sqrt[4]{30}\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(1; 2)"
+     },
+     {
+      "id": 1,
+      "content": "(2; 3)"
+     },
+     {
+      "id": 2,
+      "content": "(3; 4)"
+     },
+     {
+      "id": 3,
+      "content": "(4; 5)"
+     },
+     {
+      "id": 4,
+      "content": "(5; 6)"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2^{4} = 16 &lt; 30 &lt; 81 = 3^{4}\" data-type=\"inline-math\"></span>, отже <span data-latex=\"2 &lt; \\sqrt[4]{30} &lt; 3\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2012",
+    "title": "Порядок зростання",
+    "content": "Запишіть числа <span data-latex=\"\\sqrt[3]{2}\" data-type=\"inline-math\"></span>, 1, <span data-latex=\"\\sqrt[5]{3}\" data-type=\"inline-math\"></span> у порядку зростання.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"1, \\sqrt[3]{2}, \\sqrt[5]{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"1, \\sqrt[5]{3}, \\sqrt[3]{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt[3]{2}, \\sqrt[5]{3}, 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt[5]{3}, 1, \\sqrt[3]{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\sqrt[3]{2}, 1, \\sqrt[5]{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Зводимо до спільного показника 15: <span data-latex=\"\\sqrt[3]{2} = \\sqrt[15]{2^{5}} = \\sqrt[15]{32}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt[5]{3} = \\sqrt[15]{3^{3}} = \\sqrt[15]{27}\" data-type=\"inline-math\"></span>. Отже <span data-latex=\"1 &lt; \\sqrt[5]{3} &lt; \\sqrt[3]{2}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2012 (пробний)",
+    "title": "Корінь у знаменнику",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{2\\sqrt{2} + 1}{\\sqrt{2} + 1}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\sqrt{2} + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"3 + \\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"3 + 2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"3 - \\sqrt{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Домножуємо на <span data-latex=\"\\sqrt{2} - 1\" data-type=\"inline-math\"></span>: <span data-latex=\"\\dfrac{(2\\sqrt{2} + 1)(\\sqrt{2} - 1)}{2 - 1} = 4 - 2\\sqrt{2} + \\sqrt{2} - 1 = 3 - \\sqrt{2}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2021 (пробний)",
+    "title": "Формула Томсона",
+    "content": "Період <span data-latex=\"T\" data-type=\"inline-math\"></span> електромагнітних коливань обчислюють за формулою Томсона <span data-latex=\"T = 2\\pi \\sqrt{LC}\" data-type=\"inline-math\"></span>. Визначте з цієї формули індуктивність <span data-latex=\"L\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"L = \\dfrac{T}{2\\pi C}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"L = \\dfrac{2\\pi C}{T}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"L = \\dfrac{1}{C}\\sqrt{\\dfrac{T}{2\\pi }}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"L = \\dfrac{4\\pi ^{2}C}{T^{2}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"L = \\dfrac{T^{2}}{4\\pi ^{2}C}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\sqrt{LC} = \\dfrac{T}{2\\pi }\" data-type=\"inline-math\"></span>; підносимо до квадрата: <span data-latex=\"LC = \\dfrac{T^{2}}{4\\pi ^{2}}\" data-type=\"inline-math\"></span>; <span data-latex=\"L = \\dfrac{T^{2}}{4\\pi ^{2}C}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "ЗНО-2011 (пробний)",
+    "title": "Вирази з коренями",
+    "content": "Установіть відповідність між числовим виразом (1–4) та його значенням (А–Д).",
+    "lh": "Вираз",
+    "rh": "Значення",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(\\sqrt{3} + \\sqrt{2})^{2} - 2\\sqrt{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(\\sqrt{5} - 2)(\\sqrt{5} + 2)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(3\\sqrt{3} - \\sqrt{12})^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{2}(\\sqrt{50} - \\sqrt{8})\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "15"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "5"
+     },
+     {
+      "id": 3,
+      "content": "3"
+     },
+     {
+      "id": 4,
+      "content": "1"
+     }
+    ],
+    "points": 4,
+    "solution": "<span data-latex=\"3 + 2\\sqrt{6} + 2 - 2\\sqrt{6} = 5\" data-type=\"inline-math\"></span> (В); <span data-latex=\"5 - 4 = 1\" data-type=\"inline-math\"></span> (Д); <span data-latex=\"(3\\sqrt{3} - 2\\sqrt{3})^{2} = 3\" data-type=\"inline-math\"></span> (Г); <span data-latex=\"\\sqrt{100} - \\sqrt{16} = 10 - 4 = 6\" data-type=\"inline-math\"></span> (Б)"
+   },
+   "answer": "2 4 3 1"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"\\sqrt{a} \\ge  0\" data-type=\"inline-math\"></span>",
+   "text": "Квадратний корінь — невід’ємне число, існує лише з <span data-latex=\"a \\ge  0\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "<span data-latex=\"\\sqrt{a^{2}} = \\left|a\\right|\" data-type=\"inline-math\"></span>",
+   "text": "Корінь із квадрата — модуль: <span data-latex=\"\\sqrt{(-3)^{2}} = 3\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "<span data-latex=\"5\\sqrt{2}\" data-type=\"inline-math\"></span>",
+   "text": "Шукай під коренем точний квадрат і виноси його."
+  },
+  {
+   "big": "<span data-latex=\"5 &lt; \\sqrt{27} &lt; 6\" data-type=\"inline-math\"></span>",
+   "text": "Оцінюємо корінь сусідніми точними квадратами чи кубами."
+  }
+ ]
+}

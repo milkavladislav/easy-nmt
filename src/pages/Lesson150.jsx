@@ -35,7 +35,7 @@ function Theory({ section }) {
     <section className="space-y-3">
       <div>
         <p className="text-orange-300 text-xs font-bold uppercase tracking-wide">{section.tag}</p>
-        <h2 className="text-2xl font-bold text-white">{section.title}</h2>
+        <MathContent html={section.title} className="text-2xl font-bold text-white" />
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {section.cards.map((c, i) => {
@@ -43,7 +43,7 @@ function Theory({ section }) {
           return (
             <div key={i} className={`rounded-2xl border bg-gradient-to-br p-4 ${cls}`}>
               {c.big && <MathContent html={c.big} className="text-3xl font-extrabold mb-1" />}
-              {c.title && <p className="font-bold text-white">{c.title}</p>}
+              {c.title && <MathContent html={c.title} className="font-bold text-white" />}
               {c.formula && <MathContent html={c.formula} className="text-lg text-white my-2" />}
               {c.text && <MathContent html={c.text} className="text-sm text-white/85 leading-relaxed mt-1" />}
             </div>
@@ -146,7 +146,7 @@ export default function Lesson150({ topic, onNavigate }) {
                 <div key={i} className="flex items-start gap-3 bg-white/10 rounded-2xl px-4 py-3 border border-white/15">
                   <span className="shrink-0 w-7 h-7 rounded-lg bg-orange-500 text-white text-sm font-bold flex items-center justify-center">{i + 1}</span>
                   <div>
-                    <p className="font-semibold text-white">{p.title}</p>
+                    <MathContent html={p.title} className="font-semibold text-white" />
                     <MathContent html={p.text} className="text-sm text-slate-300" />
                   </div>
                 </div>
