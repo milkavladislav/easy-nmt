@@ -1,26 +1,29 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChevronLeft, ChevronRight, Loader2, Map as MapIcon, X } from 'lucide-react';
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { ArrowLeft, ChevronLeft, ChevronRight, Loader2, Map as MapIcon, X, Volume2, VolumeX } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import MathContent from '../components/MathContent';
 import QuestScene from '../components/quest/QuestScene';
 import MagicCanvas from '../components/quest/MagicCanvas';
 import QuestTrial from '../components/quest/QuestTrial';
-import { CAST, getStory } from '../quest';
+import { getStory } from '../quest';
+import { WORLDS } from '../quest/worlds';
+import { play, soundOn, setSoundOn } from '../quest/sound';
 import { splitSource, loadTopicTest, saveCourseResult, questSaveKey, readQuestSave } from '../utils/course150';
 import { normalizeQuestion } from '../utils/nmtTest';
 import '../components/quest/quest.css';
 
 const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const CastCtx = createContext({}); // герої світу поточної теми
 // Карта квесту: усі частини, крім окремих рун і зірок (до них — через кружечки в шапці)
 function mapLabel(s, k, STORY) {
   if (s.kind === 'title') return { tag: 'Початок', text: 'Титр' };
   if (s.kind === 'dialog' && s.hwIntro) return { tag: STORY.homework.name, text: 'Домашнє завдання' };
-  if (s.kind === 'dialog' && s.phase === 'runes') return { tag: 'Брама', text: 'Руни · завдання заняття' };
-  if (s.kind === 'dialog') return { tag: 'Пролог', text: 'Згасла Брама' };
-  if (s.kind === 'scroll') return { tag: 'Сувій', html: s.section.title };
+  if (s.kind === 'dialog' && s.phase === 'runes') return { tag: STORY.words.gate, text: `${STORY.words.runesOf} · завдання заняття` };
+  if (s.kind === 'dialog') return { tag: 'Пролог', text: STORY.words.prologue };
+  if (s.kind === 'scroll') return { tag: STORY.words.scroll, html: s.section.title };
   if (s.kind === 'example') return { tag: `Приклад ${k}`, html: s.section.question.title || '' };
   if (s.kind === 'finale') return { tag: 'Фінал', text: STORY.artifact.name };
-  if (s.kind === 'hwDone') return { tag: 'Світанок', text: 'Результат домашнього завдання' };
+  if (s.kind === 'hwDone') return { tag: STORY.words.dawn, text: 'Результат домашнього завдання' };
   return null;
 }
 
@@ -65,7 +68,8 @@ function useTypewriter(text, speed = 22) {
 }
 
 function Line({ line, onNext, nextLabel = 'Далі' }) {
-  const who = CAST[line.who] || CAST.narrator;
+  const cast = useContext(CastCtx);
+  const who = cast[line.who] || cast.narrator || {};
   const [shown, done, finish] = useTypewriter(line.text);
   const narrator = line.who === 'narrator';
   return (
@@ -109,7 +113,7 @@ function Scroll({ section }) {
   );
 }
 
-function Runes({ total, runes, current, label = 'Руни Брами', onPick }) {
+function Runes({ total, runes, current, label, onPick }) {
   const box = useRef(null);
   useEffect(() => { // поточна руна завжди видна в стрічці на телефоні
     const el = box.current?.children[(current || 1) - 1];
@@ -135,6 +139,7 @@ export default function Quest150({ topic, onNavigate }) {
   const [lesson, setLesson] = useState(null);
   const [error, setError] = useState(null);
   const STORY = useMemo(() => getStory(topic.number), [topic.number]);
+  const Relic = STORY.world ? WORLDS[STORY.world - 1]?.icon : null; // артефакт світу 2–9 — його знак
   const [hwTest, setHwTest] = useState(null);
   const key = questSaveKey(user?.uid, topic.number);
   const [save, setSave] = useState(() => readQuestSave(user?.uid, topic.number));
@@ -143,6 +148,7 @@ export default function Quest150({ topic, onNavigate }) {
   const [toast, setToast] = useState(null);
   const [gateOpen, setGateOpen] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
+  const [sound, setSound] = useState(soundOn);
   const magic = useRef(null);
   const runes = useMemo(() => save.runes || {}, [save.runes]);
 
@@ -155,9 +161,9 @@ export default function Quest150({ topic, onNavigate }) {
       .then(setLesson)
       .catch((err) => {
         console.error('quest lesson load error:', err);
-        setError('Не вдалося відкрити Браму. Спробуйте ще раз.');
+        setError(STORY.words.openError);
       });
-  }, [topic.files.lessonData]);
+  }, [topic.files.lessonData, STORY.words.openError]);
 
   useEffect(() => {
     if (!topic.files.test) return;
@@ -227,6 +233,9 @@ export default function Quest150({ topic, onNavigate }) {
     const target = Math.max(0, Math.min(to, steps.length - 1));
     if (target === step) return;
     if (steps[target]?.kind === 'hwDone') saveHw();
+    const world = STORY.world || 1;
+    if (steps[target]?.kind === 'hwDone') play('dawn', world);
+    else play(step === 0 && target === 1 ? 'enter' : 'step', world);
     setStep(target);
     setGateOpen(false);
     persist({ step: target });
@@ -240,9 +249,10 @@ export default function Quest150({ topic, onNavigate }) {
     const id = setTimeout(() => {
       setGateOpen(true);
       magic.current?.burst(window.innerWidth / 2, window.innerHeight * 0.4, 'gold', 160);
+      play(lit >= Math.ceil(total * 0.7) ? 'artifact' : 'artifactWeak', STORY.world || 1);
     }, 700);
     return () => clearTimeout(id);
-  }, [cur]);
+  }, [cur, lit, total, STORY.world]);
 
   useEffect(() => {
     if (!toast) return undefined;
@@ -252,6 +262,7 @@ export default function Quest150({ topic, onNavigate }) {
 
   const onTrial = (n, ok, rect) => {
     persist({ runes: { ...runes, [n]: runes[n] || ok } });
+    play(!ok ? 'wrong' : !runes[n] && lit + 1 === total ? 'complete' : 'correct', STORY.world || 1);
     const x = rect ? rect.left + rect.width / 2 : window.innerWidth / 2;
     const y = rect ? rect.top + rect.height / 2 : window.innerHeight / 2;
     magic.current?.burst(x, y, ok ? 'good' : 'bad', ok ? 110 : 40);
@@ -261,6 +272,7 @@ export default function Quest150({ topic, onNavigate }) {
   const onHw = (n, ok, rect, r, value) => {
     if (hw[n]) return; // рахується перша спроба
     persist({ hw: { ...hw, [n]: { ok, earned: r.earned, max: r.max, value } } });
+    play(ok ? 'star' : 'wrong', STORY.world || 1);
     const x = rect ? rect.left + rect.width / 2 : window.innerWidth / 2;
     const y = rect ? rect.top + rect.height / 2 : window.innerHeight / 2;
     magic.current?.burst(x, y, ok ? 'gold' : 'bad', ok ? 60 : 30);
@@ -272,8 +284,8 @@ export default function Quest150({ topic, onNavigate }) {
 
   if (error || !lesson) {
     return (
-      <div className="quest flex items-center justify-center">
-        <QuestScene />
+      <div className={`quest ${STORY.theme} flex items-center justify-center`}>
+        <QuestScene scene={STORY.scene} />
         <div className="q-stage text-center">
           {error ? (
             <div className="q-dialog p-8 max-w-md">
@@ -298,8 +310,9 @@ export default function Quest150({ topic, onNavigate }) {
   };
 
   return (
-    <div className="quest">
-      <QuestScene deep={cur.kind !== 'title' && cur.kind !== 'finale'} />
+    <CastCtx.Provider value={STORY.cast}>
+    <div className={`quest ${STORY.theme}`}>
+      <QuestScene scene={STORY.scene} deep={cur.kind !== 'title' && cur.kind !== 'finale'} />
       <MagicCanvas ref={magic} />
       {flash && <div key={flash.id} className="q-flash" style={{ '--x': flash.x, '--y': flash.y }} />}
 
@@ -309,8 +322,8 @@ export default function Quest150({ topic, onNavigate }) {
             <ArrowLeft className="h-5 w-5 sm:h-4 sm:w-4" /><span className="hidden sm:inline">До курсу</span>
           </button>
           <div className="flex-1 min-w-0">
-            {cur.phase === 'runes' ? <Runes total={total} runes={runes} current={cur.kind === 'trial' ? cur.n : null} onPick={(n) => go(stepOfTrial(n))} />
-              : cur.phase === 'hw' ? <Runes total={hwQuestions.length} runes={hw} current={cur.kind === 'hw' ? cur.n : null} label="Зорі нічної варти"
+            {cur.phase === 'runes' ? <Runes total={total} runes={runes} label={STORY.words.runesOf} current={cur.kind === 'trial' ? cur.n : null} onPick={(n) => go(stepOfTrial(n))} />
+              : cur.phase === 'hw' ? <Runes total={hwQuestions.length} runes={hw} current={cur.kind === 'hw' ? cur.n : null} label={STORY.words.starsOf}
                 onPick={(n) => go(steps.findIndex((s) => s.kind === 'hw' && s.n === n))} /> : (
               <div className="h-1.5 rounded-full bg-white/10 overflow-hidden">
                 <div className="h-full bg-gradient-to-r from-[#8b6cff] to-[#f5c86b] transition-all duration-700" style={{ width: `${(step / (steps.length - 1)) * 100}%` }} />
@@ -318,6 +331,11 @@ export default function Quest150({ topic, onNavigate }) {
             )}
           </div>
           <span className="q-script text-lg text-[var(--q-gold)] shrink-0 hidden sm:block">{cur.phase === 'hw' ? STORY.homework.name : STORY.chapter}</span>
+          <button type="button" onClick={() => { const on = !sound; setSound(on); setSoundOn(on); if (on) play('star', STORY.world || 1); }}
+            title={sound ? 'Вимкнути звук' : 'Увімкнути звук'} aria-label={sound ? 'Вимкнути звук' : 'Увімкнути звук'}
+            className="text-[var(--q-gold-soft)] hover:text-white shrink-0 p-1">
+            {sound ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
+          </button>
           <button type="button" onClick={() => setMapOpen(true)} className="flex items-center gap-1 text-sm text-[var(--q-gold-soft)] hover:text-white shrink-0">
             <MapIcon className="h-4 w-4" /><span className="hidden sm:inline">Карта</span>
           </button>
@@ -347,13 +365,13 @@ export default function Quest150({ topic, onNavigate }) {
           {cur.kind === 'example' && (
             <>
               {cur.line && <Line line={cur.line} />}
-              <QuestTrial question={cur.section.question} answer={cur.section.answer} label="Наставниця показує" example
-                onResult={(ok, rect) => magic.current?.burst(rect ? rect.left + rect.width / 2 : window.innerWidth / 2, rect ? rect.top : window.innerHeight / 2, ok ? 'good' : 'bad', ok ? 80 : 30)} />
+              <QuestTrial question={cur.section.question} answer={cur.section.answer} label={STORY.words.shows} words={STORY.words} example
+                onResult={(ok, rect) => play(ok ? 'correct' : 'wrong', STORY.world || 1) || magic.current?.burst(rect ? rect.left + rect.width / 2 : window.innerWidth / 2, rect ? rect.top : window.innerHeight / 2, ok ? 'good' : 'bad', ok ? 80 : 30)} />
             </>
           )}
 
           {cur.kind === 'trial' && (
-            <QuestTrial key={cur.n} question={cur.section.question} answer={cur.section.answer} label={`Руна ${cur.n} з ${total}`}
+            <QuestTrial key={cur.n} question={cur.section.question} answer={cur.section.answer} label={`${STORY.words.rune} ${cur.n} з ${total}`} words={STORY.words}
               initial={runes[cur.n]} onResult={(ok, rect) => onTrial(cur.n, ok, rect)} />
           )}
 
@@ -364,13 +382,13 @@ export default function Quest150({ topic, onNavigate }) {
                 <div className="q-door l" />
                 <div className="q-door r" />
               </div>
-              <div className={`q-crystal${strong ? '' : ' faint'}`} />
+              {Relic ? <div className={`q-relic${strong ? '' : ' faint'}`}><Relic /></div> : <div className={`q-crystal${strong ? '' : ' faint'}`} />}
               <p className="q-script text-3xl text-[var(--q-gold)]">{STORY.artifact.name}</p>
-              <p className="text-xl text-white">Руни, що світяться: <b>{lit}</b> з {total}</p>
+              <p className="text-xl text-white">{STORY.words.lit}: <b>{lit}</b> з {total}</p>
               <p className="text-lg text-[#d9d0f5] max-w-xl mx-auto">{STORY.artifact.text}</p>
               <Dialog key={strong ? 'o' : 'w'} lines={strong ? STORY.finale.open : STORY.finale.weak} onDone={() => {}} />
               <div className="flex flex-wrap justify-center gap-3 pt-2">
-                {firstDim != null && <button type="button" className="q-ghost" onClick={() => go(stepOfTrial(firstDim))}>Перезарядити згаслі руни</button>}
+                {firstDim != null && <button type="button" className="q-ghost" onClick={() => go(stepOfTrial(firstDim))}>{STORY.words.relight}</button>}
                 {hwStart > 0
                   ? <button type="button" className="q-cast" onClick={() => go(hwStart)}>{STORY.homework.name}: домашнє завдання</button>
                   : <button type="button" className="q-cast" onClick={toLesson}>До домашнього завдання</button>}
@@ -380,20 +398,20 @@ export default function Quest150({ topic, onNavigate }) {
 
           {cur.kind === 'hw' && (
             <QuestTrial key={`hw${cur.n}-${hw[cur.n] ? 1 : 0}`} question={splitSource(cur.question)} answer={cur.answer} once
-              label={`Зоря ${cur.n} з ${hwQuestions.length}`} initial={hw[cur.n]?.ok}
+              label={`${STORY.words.star} ${cur.n} з ${hwQuestions.length}`} words={STORY.words} initial={hw[cur.n]?.ok}
               onResult={(ok, rect, r, value) => onHw(cur.n, ok, rect, r, value)} />
           )}
 
           {cur.kind === 'hwDone' && (
             <div className="text-center pt-6 space-y-6">
-              <p className="q-script text-4xl q-shimmer">Світанок</p>
-              <p className="text-2xl text-white">Зорі: <b>{hwScore.ok}</b> з {hwQuestions.length}</p>
+              <p className="q-script text-4xl q-shimmer">{STORY.words.dawn}</p>
+              <p className="text-2xl text-white">{STORY.words.stars}: <b>{hwScore.ok}</b> з {hwQuestions.length}</p>
               <p className="text-lg text-[#d9d0f5]">Бали за домашнє завдання: <b className="text-white">{Math.round(hwScore.earned)}</b> з {hwScore.max}</p>
               {firstHwGap && <p className="text-[#ffb0b0]">Без відповіді лишилось завдань: {hwQuestions.length - hwScore.answered}</p>}
               <Dialog lines={STORY.homework.done} onDone={() => {}} />
               <div className="flex flex-wrap justify-center gap-3 pt-2">
                 {firstHwGap && <button type="button" className="q-ghost" onClick={() => go(steps.findIndex((s) => s.kind === 'hw' && s.n === firstHwGap.n))}>Повернутись до пропущених</button>}
-                <button type="button" className="q-ghost" onClick={restartHw}>Пройти варту ще раз</button>
+                <button type="button" className="q-ghost" onClick={restartHw}>{STORY.words.hwAgain}</button>
                 <button type="button" className="q-cast" onClick={back}>До курсу</button>
               </div>
             </div>
@@ -422,5 +440,6 @@ export default function Quest150({ topic, onNavigate }) {
         </div>
       )}
     </div>
+    </CastCtx.Provider>
   );
 }

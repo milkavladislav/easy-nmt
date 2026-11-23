@@ -1,9 +1,9 @@
-import { BookOpen, Gift, Lock } from 'lucide-react';
+import { NotebookPen, Gift, Lock } from 'lucide-react';
 import { WORLDS } from '../../quest/worlds';
 import './quest.css';
 
 // Початок сторінки курсу: історія подорожі крізь дев'ять світів і портали до кожного блоку.
-export default function WorldsIntro({ course, topicsCount, ready, passed, openBlocks, onOpenDovidnik }) {
+export default function WorldsIntro({ course, topicsCount, ready, passed, openBlocks, onOpenJournal }) {
   const toBlock = (n) => document.getElementById(`block-${n}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   return (
@@ -54,8 +54,8 @@ export default function WorldsIntro({ course, topicsCount, ready, passed, openBl
               <p className="text-3xl font-bold text-[var(--q-gold)]">{value}</p>
             </div>
           ))}
-          <button onClick={onOpenDovidnik} className="q-intro-stat q-intro-btn flex items-center justify-center gap-2 font-semibold text-lg">
-            <BookOpen className="h-5 w-5" />Довідник
+          <button onClick={onOpenJournal} className="q-intro-stat q-intro-btn flex items-center justify-center gap-2 font-semibold text-lg">
+            <NotebookPen className="h-5 w-5" />Журнал експедиції
           </button>
         </div>
 

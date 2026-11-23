@@ -44,7 +44,7 @@ export default function Topic150({ topic, onNavigate }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
+    <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
         <button onClick={() => onNavigate('course')} className="inline-flex items-center gap-2 text-slate-300 hover:text-white mb-6">
           <ArrowLeft className="h-5 w-5" />

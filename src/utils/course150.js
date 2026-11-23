@@ -76,6 +76,28 @@ export async function loadBestResults(uid) {
   return best;
 }
 
+// Усі результати користувача (ДЗ і тести курсу, тести НМТ) — для «Журналу експедиції», новіші спершу
+export async function loadAllResults(uid) {
+  if (!uid) return [];
+  const snap = await getDocs(query(collection(db, 'nmt_results'), where('userId', '==', uid)));
+  return snap.docs
+    .map((d) => {
+      const r = d.data();
+      return { testId: String(r.testId || ''), title: r.testTitle || '', earned: r.earned ?? 0, max: r.max ?? 0, percent: r.percent ?? 0,
+        scale200: r.scale200 ?? null, at: r.createdAt?.toDate ? r.createdAt.toDate() : null };
+    })
+    .sort((a, b) => (b.at?.getTime() || 0) - (a.at?.getTime() || 0));
+}
+
+// Найкращий результат по кожному тесту з готового списку результатів
+export function bestByTest(results) {
+  const best = {};
+  results.forEach((r) => {
+    if (!best[r.testId] || r.percent > best[r.testId].percent) best[r.testId] = r;
+  });
+  return best;
+}
+
 export const canOpen = (topic) => topic.ready && topic.free;
 
 // Теми, для яких є сюжет квесту (src/quest/storyNN.js): клік по темі відкриває одразу гру

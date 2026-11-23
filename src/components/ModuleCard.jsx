@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, BookOpen, CheckCircle2, Trophy } from 'lucide-react';
+import { ChevronDown, ChevronUp, BookOpen, CheckCircle2, Trophy, Compass, Star } from 'lucide-react';
 
 export default function ModuleCard({ module, topics, onTopicClick, completedTests }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -74,7 +74,7 @@ export default function ModuleCard({ module, topics, onTopicClick, completedTest
       >
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 gap-3 sm:gap-0">
           <div className="flex items-center space-x-3 sm:space-x-4">
-            <div className={`text-3xl sm:text-4xl`}>{module.icon || '🐱'}</div>
+            <div className={`text-3xl sm:text-4xl`}>{module.icon || <Compass className="h-9 w-9" />}</div>
             <div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-1">{module.title}</h3>
               <p className="text-slate-400 text-xs sm:text-sm">{module.description}</p>
@@ -129,7 +129,7 @@ export default function ModuleCard({ module, topics, onTopicClick, completedTest
                       {isCompleted ? (
                         <span className="text-xl">😺</span>
                       ) : (
-                        <span className="text-xl">🐾</span>
+                        <Star className="h-5 w-5 fill-current text-yellow-400" />
                       )}
                     </div>
                     <div>

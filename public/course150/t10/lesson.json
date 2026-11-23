@@ -1,0 +1,912 @@
+{
+ "number": 10,
+ "title": "Прямокутний трикутник",
+ "intro": [
+  {
+   "title": "Теорема Піфагора",
+   "text": "сума квадратів катетів — квадрат гіпотенузи"
+  },
+  {
+   "title": "Кут 30°",
+   "text": "катет проти нього — половина гіпотенузи"
+  },
+  {
+   "title": "Висота до гіпотенузи",
+   "text": "катети й проєкції"
+  },
+  {
+   "title": "Медіана до гіпотенузи",
+   "text": "половина гіпотенузи"
+  },
+  {
+   "title": "Синус, косинус, тангенс",
+   "text": "протилежний, прилеглий, гіпотенуза"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"a^{2} + b^{2}\" data-type=\"inline-math\"></span>",
+   "text": "теорема Піфагора"
+  },
+  {
+   "big": "30°",
+   "text": "катет — половина гіпотенузи"
+  },
+  {
+   "big": "sin, cos, tg",
+   "text": "відношення сторін"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Теорема Піфагора",
+   "title": "Катети й гіпотенуза",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"c^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"a^{2} + b^{2} = c^{2}\" data-type=\"inline-math\"></span>: сума квадратів <b>катетів</b> дорівнює квадрату <b>гіпотенузи</b>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Катет",
+     "formula": "",
+     "text": "<span data-latex=\"a = \\sqrt{c^{2} - b^{2}}\" data-type=\"inline-math\"></span> — від квадрата гіпотенузи віднімаємо квадрат відомого катета."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Трійки",
+     "formula": "",
+     "text": "Запам’ятай: <b>3, 4, 5</b>; <b>5, 12, 13</b>; <b>8, 15, 17</b> і кратні їм (6, 8, 10)."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Шукаємо інший катет",
+    "content": "Гіпотенуза та один з катетів прямокутного трикутника дорівнюють 13 та 5. Знайдіть інший катет.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "6"
+     },
+     {
+      "id": 1,
+      "content": "8"
+     },
+     {
+      "id": 2,
+      "content": "10"
+     },
+     {
+      "id": 3,
+      "content": "12"
+     },
+     {
+      "id": 4,
+      "content": "18"
+     }
+    ],
+    "points": 1,
+    "solution": "Інший катет: <span data-latex=\"\\sqrt{13^{2} - 5^{2}} = \\sqrt{169 - 25} = \\sqrt{144} = 12\" data-type=\"inline-math\"></span> (трійка 5, 12, 13)."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Кут 30°",
+   "title": "Половина гіпотенузи",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "½",
+     "title": "Катет проти 30°",
+     "formula": "",
+     "text": "Дорівнює <b>половині гіпотенузи</b>. Це менший катет."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Гострі кути",
+     "formula": "",
+     "text": "Сума гострих кутів — <b>90°</b>: якщо один 30°, другий — 60°."
+    },
+    {
+     "color": "coral",
+     "big": "45°",
+     "title": "Рівнобедрений",
+     "formula": "",
+     "text": "Кути 45° і 45°: катети рівні, гіпотенуза <span data-latex=\"c = a\\sqrt{2}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Катет проти кута 30°",
+    "content": "Гіпотенуза прямокутного трикутника дорівнює 52 см, а один із його кутів 30°. Знайдіть менший катет трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "15"
+     },
+     {
+      "id": 1,
+      "content": "23"
+     },
+     {
+      "id": 2,
+      "content": "26"
+     },
+     {
+      "id": 3,
+      "content": "32"
+     },
+     {
+      "id": 4,
+      "content": "40"
+     }
+    ],
+    "points": 1,
+    "solution": "Менший катет лежить проти кута 30° і дорівнює половині гіпотенузи: <span data-latex=\"52 : 2 = 26\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Висота до гіпотенузи",
+   "title": "Проєкції катетів",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Проєкції",
+     "formula": "",
+     "text": "Висота <span data-latex=\"h\" data-type=\"inline-math\"></span> ділить гіпотенузу на відрізки <span data-latex=\"a_{c}\" data-type=\"inline-math\"></span> і <span data-latex=\"b_{c}\" data-type=\"inline-math\"></span> — <b>проєкції</b> катетів."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"h^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Висота",
+     "formula": "",
+     "text": "<span data-latex=\"h^{2} = a_{c} \\cdot  b_{c}\" data-type=\"inline-math\"></span> — квадрат висоти дорівнює добутку проєкцій."
+    },
+    {
+     "color": "coral",
+     "big": "<span data-latex=\"a^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Катет",
+     "formula": "",
+     "text": "<span data-latex=\"a^{2} = c \\cdot  a_{c}\" data-type=\"inline-math\"></span> — квадрат катета дорівнює добутку гіпотенузи на <b>його</b> проєкцію."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Більший катет через проєкції",
+    "content": "Висота прямокутного трикутника, проведена до гіпотенузи, ділить її на відрізки завдовжки 9 см і 16 см. Знайдіть більший катет.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"10 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"12 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"15 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"20 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"25 \\text{см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Гіпотенуза: <span data-latex=\"9 + 16 = 25\" data-type=\"inline-math\"></span> см. Більший катет має більшу проєкцію 16: <span data-latex=\"a^{2} = 25 \\cdot  16 = 400\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 20\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Медіана до гіпотенузи",
+   "title": "Центр описаного кола",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "½",
+     "title": "Медіана",
+     "formula": "",
+     "text": "Медіана, проведена до гіпотенузи, дорівнює <b>половині гіпотенузи</b>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Описане коло",
+     "formula": "",
+     "text": "Центр — <b>середина гіпотенузи</b>, радіус <span data-latex=\"R = \\dfrac{c}{2}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Висота з катетів",
+     "formula": "",
+     "text": "<span data-latex=\"h = \\dfrac{ab}{c}\" data-type=\"inline-math\"></span> — добуток катетів, поділений на гіпотенузу."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Медіана до гіпотенузи",
+    "content": "У прямокутному трикутнику катети дорівнюють 3 см і 4 см. Знайдіть довжину медіани, що проведена до гіпотенузи.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"2 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"2{,}5 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"3 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"5 \\text{см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"7 \\text{см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Гіпотенуза: <span data-latex=\"\\sqrt{3^{2} + 4^{2}} = 5\" data-type=\"inline-math\"></span> см. Медіана до гіпотенузи — її половина: <span data-latex=\"5 : 2 = 2{,}5\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 5 · Синус, косинус, тангенс",
+   "title": "Відношення сторін",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "sin",
+     "title": "Синус",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{sin} \\alpha  = \\dfrac{\\text{протилежний катет}}{\\text{гіпотенуза}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "cos",
+     "title": "Косинус",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos} \\alpha  = \\dfrac{\\text{прилеглий катет}}{\\text{гіпотенуза}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "tg",
+     "title": "Тангенс",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{tg} \\alpha  = \\dfrac{\\text{протилежний катет}}{\\text{прилеглий катет}}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Косинус за рисунком",
+    "content": "Користуючись рисунком, знайдіть косинус кута <span data-latex=\"C\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 220\" width=\"420\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"40,170 40,40 352,170\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><polyline points=\"40,148 62,148 62,170\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"18\" y=\"180\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"18\" y=\"32\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"376\" y=\"164\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"16\" y=\"105\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">5</text><text x=\"196\" y=\"196\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">12</text><text x=\"206\" y=\"81\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">13</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{13}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{13}{12}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{12}{13}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{5}{13}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{5}{12}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Для кута <span data-latex=\"C\" data-type=\"inline-math\"></span> прилеглий катет — <span data-latex=\"AC = 12\" data-type=\"inline-math\"></span>, гіпотенуза — <span data-latex=\"BC = 13\" data-type=\"inline-math\"></span>: <span data-latex=\"\\operatorname{cos} C = \\dfrac{12}{13}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Синус гострого кута",
+    "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) гіпотенуза дорівнює 5, а катет <span data-latex=\"BC = 4\" data-type=\"inline-math\"></span>. Знайдіть синус кута <span data-latex=\"B\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{5}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{5}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "0,5"
+     }
+    ],
+    "points": 1,
+    "solution": "Інший катет: <span data-latex=\"AC = \\sqrt{25 - 16} = 3\" data-type=\"inline-math\"></span>. Для кута <span data-latex=\"B\" data-type=\"inline-math\"></span> протилежний катет — <span data-latex=\"AC\" data-type=\"inline-math\"></span>: <span data-latex=\"\\operatorname{sin} B = \\dfrac{3}{5}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Драбина біля будинку",
+    "content": "Драбину завдовжки 7,8 м приставили до стіни будинку у рівень з нижнім краєм вікна. Нижній кінець драбини розташований на відстані 3 м від будинку. Знайдіть висоту, на якій розташоване вікно.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 470 470\" width=\"470\" height=\"470\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><rect x=\"40\" y=\"70\" width=\"120\" height=\"330\" fill=\"#EEE9FF\" stroke=\"#1E1B4B\" stroke-width=\"5\"/><polygon points=\"30,70 230,70 160,30 40,30\" fill=\"#4B4775\"/><rect x=\"72\" y=\"110\" width=\"56\" height=\"56\" fill=\"#FFFDF8\" stroke=\"#1E1B4B\" stroke-width=\"7\"/><rect x=\"72\" y=\"250\" width=\"56\" height=\"56\" fill=\"#FFFDF8\" stroke=\"#1E1B4B\" stroke-width=\"7\"/><line x1=\"20\" y1=\"400\" x2=\"450\" y2=\"400\" stroke=\"#1E1B4B\" stroke-width=\"6\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"306\" x2=\"316\" y2=\"400\" stroke=\"#FF6A3D\" stroke-width=\"12\" stroke-linecap=\"round\"/><text x=\"213\" y=\"394\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">7,8 м</text><line x1=\"160\" y1=\"430\" x2=\"316\" y2=\"430\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"418\" x2=\"160\" y2=\"442\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"316\" y1=\"418\" x2=\"316\" y2=\"442\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"238\" y=\"456\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">3 м</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5,8"
+     },
+     {
+      "id": 1,
+      "content": "6,4"
+     },
+     {
+      "id": 2,
+      "content": "6,8"
+     },
+     {
+      "id": 3,
+      "content": "7,2"
+     },
+     {
+      "id": 4,
+      "content": "8,1"
+     }
+    ],
+    "points": 1,
+    "solution": "висота — катет: √(7,8² − 3²) = √(60,84 − 9) = √51,84 = 7,2 м"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Менший катет через проєкції",
+    "content": "Проєкції катетів прямокутного трикутника на гіпотенузу дорівнюють 4 і 21. Знайдіть менший катет.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "9"
+     },
+     {
+      "id": 3,
+      "content": "10"
+     },
+     {
+      "id": 4,
+      "content": "15"
+     }
+    ],
+    "points": 1,
+    "solution": "c = 4 + 21 = 25; менший катет² = 4 · 25 = 100 → 10"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Медіана до найбільшої сторони",
+    "content": "Катети прямокутного трикутника дорівнюють 18 та 24. Знайдіть медіану, що проведена до більшої зі сторін трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "10"
+     },
+     {
+      "id": 1,
+      "content": "15"
+     },
+     {
+      "id": 2,
+      "content": "25"
+     },
+     {
+      "id": 3,
+      "content": "30"
+     },
+     {
+      "id": 4,
+      "content": "32"
+     }
+    ],
+    "points": 1,
+    "solution": "найбільша сторона — гіпотенуза √(18² + 24²) = 30; медіана до неї = 30 : 2 = 15"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2015",
+    "title": "Правильна рівність",
+    "content": "На рисунку зображено прямокутний трикутник з катетами <span data-latex=\"a\" data-type=\"inline-math\"></span> і <span data-latex=\"b\" data-type=\"inline-math\"></span>, гіпотенузою <span data-latex=\"c\" data-type=\"inline-math\"></span> та гострим кутом <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>. Укажіть правильну рівність.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 330 430\" width=\"330\" height=\"430\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"70,360 70,50 290,360\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><polyline points=\"70,334 96,334 96,360\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M240 360 A50 50 0 0 1 261 319\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"216\" y=\"334\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">α</text><text x=\"40\" y=\"205\" font-size=\"38\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">a</text><text x=\"180\" y=\"390\" font-size=\"38\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">b</text><text x=\"204\" y=\"188\" font-size=\"38\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">c</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{cos α} = \\dfrac{a}{b}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{cos α} = \\dfrac{c}{b}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{cos α} = \\dfrac{a}{c}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{cos α} = \\dfrac{c}{a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{cos α} = \\dfrac{b}{c}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "cos α = прилеглий катет / гіпотенуза = b/c"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Гіпотенуза за катетом",
+    "content": "Катет, що лежить проти кута 30°, дорівнює 9. Знайдіть гіпотенузу.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3"
+     },
+     {
+      "id": 1,
+      "content": "5"
+     },
+     {
+      "id": 2,
+      "content": "6"
+     },
+     {
+      "id": 3,
+      "content": "9"
+     },
+     {
+      "id": 4,
+      "content": "18"
+     }
+    ],
+    "points": 1,
+    "solution": "катет проти 30° — половина гіпотенузи: 2 · 9 = 18"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Катети 3 : 4",
+    "content": "У прямокутному трикутнику катети відносяться як 3 : 4, а гіпотенуза дорівнює <span data-latex=\"15\\sqrt{3}\" data-type=\"inline-math\"></span>. Знайдіть менший з катетів.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"9\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"3\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"12\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "3k, 4k, 5k = 15√3 → k = 3√3; менший катет 3k = 9√3"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Висота й проєкції",
+    "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) проведено висоту <span data-latex=\"CK\" data-type=\"inline-math\"></span> так, що <span data-latex=\"AK = 8\" data-type=\"inline-math\"></span>, <span data-latex=\"KB = 2\" data-type=\"inline-math\"></span>. Знайдіть висоту <span data-latex=\"CK\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "2,5"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "4,25"
+     }
+    ],
+    "points": 1,
+    "solution": "CK² = AK · KB = 16 → CK = 4"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Висота до гіпотенузи",
+    "content": "Висота прямокутного трикутника ділить гіпотенузу на відрізки 10 і 40. Знайдіть висоту трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "12"
+     },
+     {
+      "id": 1,
+      "content": "20"
+     },
+     {
+      "id": 2,
+      "content": "25"
+     },
+     {
+      "id": 3,
+      "content": "200"
+     },
+     {
+      "id": 4,
+      "content": "400"
+     }
+    ],
+    "points": 1,
+    "solution": "h² = 10 · 40 = 400 → h = 20"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Проєкція катета",
+    "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) <span data-latex=\"\\angle B = 30^{\\circ}\" data-type=\"inline-math\"></span>, проведено висоту <span data-latex=\"CK\" data-type=\"inline-math\"></span>, катет <span data-latex=\"BC = 8\" data-type=\"inline-math\"></span>. Знайдіть <span data-latex=\"BK\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"2\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"3\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"5\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "BK = BC · cos 30° = 4√3"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Медіана за катетами",
+    "content": "Катети прямокутного трикутника дорівнюють 24 і 32. Знайдіть медіану, проведену до гіпотенузи.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "16"
+     },
+     {
+      "id": 1,
+      "content": "18"
+     },
+     {
+      "id": 2,
+      "content": "18,5"
+     },
+     {
+      "id": 3,
+      "content": "20"
+     },
+     {
+      "id": 4,
+      "content": "22"
+     }
+    ],
+    "points": 1,
+    "solution": "c = 40, медіана = 20"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тангенс кута",
+    "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) гіпотенуза дорівнює 5, а катет <span data-latex=\"BC = 4\" data-type=\"inline-math\"></span>. Знайдіть тангенс кута <span data-latex=\"A\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{4}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{5}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{5}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "0,5"
+     }
+    ],
+    "points": 1,
+    "solution": "AC = 3; tg A = BC/AC = 4/3"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2010 (пробний)",
+    "title": "Висота до бічної сторони",
+    "content": "Бічна сторона рівнобедреного трикутника дорівнює 10 см, а висота, опущена на неї, — 8 см. Знайдіть довжину основи трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "6 см"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4\\sqrt{2}\" data-type=\"inline-math\"></span> см"
+     },
+     {
+      "id": 2,
+      "content": "12 см"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"4\\sqrt{5}\" data-type=\"inline-math\"></span> см"
+     },
+     {
+      "id": 4,
+      "content": "16 см"
+     }
+    ],
+    "points": 1,
+    "solution": "Нехай <span data-latex=\"AB = BC = 10\" data-type=\"inline-math\"></span>, <span data-latex=\"AH = 8\" data-type=\"inline-math\"></span> — висота на <span data-latex=\"BC\" data-type=\"inline-math\"></span>. З трикутника <span data-latex=\"ABH\" data-type=\"inline-math\"></span>: <span data-latex=\"BH = \\sqrt{100 - 64} = 6\" data-type=\"inline-math\"></span>, тож <span data-latex=\"HC = 10 - 6 = 4\" data-type=\"inline-math\"></span>. Основа <span data-latex=\"AC = \\sqrt{8^{2} + 4^{2}} = \\sqrt{80} = 4\\sqrt{5}\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "НМТ",
+    "title": "Два рівні рівнобедрені трикутники",
+    "content": "На рисунку зображено два рівні рівнобедрені трикутники <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"AB = BC\" data-type=\"inline-math\"></span>) і <span data-latex=\"CMN\" data-type=\"inline-math\"></span> (<span data-latex=\"CM = MN\" data-type=\"inline-math\"></span>), що лежать в одній площині. <span data-latex=\"AN = 8\" data-type=\"inline-math\"></span> см, <span data-latex=\"AB = 2\\sqrt{17}\" data-type=\"inline-math\"></span> см. Узгодьте відрізок (1–3) із його довжиною (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 420\" width=\"420\" height=\"420\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"50\" y1=\"360\" x2=\"370\" y2=\"360\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"360\" x2=\"130\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"196\" x2=\"106\" y2=\"204\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"40\" x2=\"210\" y2=\"360\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"196\" x2=\"154\" y2=\"204\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"360\" x2=\"290\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"234\" y1=\"196\" x2=\"266\" y2=\"204\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"290\" y1=\"40\" x2=\"370\" y2=\"360\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"346\" y1=\"196\" x2=\"314\" y2=\"204\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"30\" y=\"384\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"210\" y=\"394\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"392\" y=\"384\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">N</text><text x=\"130\" y=\"10\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"290\" y=\"10\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+    "lh": null,
+    "rh": null,
+    "variants": [
+     {
+      "id": 0,
+      "content": "Відстань від <span data-latex=\"B\" data-type=\"inline-math\"></span> до сторони <span data-latex=\"AC\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"BM\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "Відстань між серединами сторін <span data-latex=\"AB\" data-type=\"inline-math\"></span> і <span data-latex=\"MN\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "4 см"
+     },
+     {
+      "id": 1,
+      "content": "6 см"
+     },
+     {
+      "id": 2,
+      "content": "7 см"
+     },
+     {
+      "id": 3,
+      "content": "8 см"
+     },
+     {
+      "id": 4,
+      "content": "10 см"
+     }
+    ],
+    "points": 3,
+    "solution": "1 — висота BH = √(68 − 4) = 8 см → Г; 2 — BM = AC = 4 см → А; 3 — середини AB і MN: (1; 4) і (7; 4) → 6 см → Б"
+   },
+   "answer": "3 0 1"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "НМТ-2022 (демо)",
+    "title": "Катет, радіус і висота",
+    "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> катет <span data-latex=\"AC = 12\" data-type=\"inline-math\"></span> см, гіпотенуза <span data-latex=\"AB = 20\" data-type=\"inline-math\"></span> см. Установіть відповідність між відрізком (1–3) та його довжиною (А–Д).",
+    "lh": "Відрізок",
+    "rh": "Довжина відрізка",
+    "variants": [
+     {
+      "id": 0,
+      "content": "катет <span data-latex=\"BC\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "радіус кола, описаного навколо трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "висота трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, проведена до гіпотенузи <span data-latex=\"AB\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "19,2 см"
+     },
+     {
+      "id": 1,
+      "content": "9,6 см"
+     },
+     {
+      "id": 2,
+      "content": "10 см"
+     },
+     {
+      "id": 3,
+      "content": "8 см"
+     },
+     {
+      "id": 4,
+      "content": "16 см"
+     }
+    ],
+    "points": 3,
+    "solution": "<span data-latex=\"BC = \\sqrt{20^{2} - 12^{2}} = 16\" data-type=\"inline-math\"></span> см (Д); <span data-latex=\"R = \\dfrac{AB}{2} = 10\" data-type=\"inline-math\"></span> см (В); <span data-latex=\"h = \\dfrac{AC \\cdot  BC}{AB} = \\dfrac{12 \\cdot  16}{20} = 9{,}6\" data-type=\"inline-math\"></span> см (Б)."
+   },
+   "answer": "4 2 1"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"c^{2}\" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"a^{2} + b^{2} = c^{2}\" data-type=\"inline-math\"></span>; трійки 3, 4, 5 і 5, 12, 13."
+  },
+  {
+   "big": "30°",
+   "text": "Катет проти 30° — половина гіпотенузи."
+  },
+  {
+   "big": "½",
+   "text": "Медіана до гіпотенузи — її половина, це й радіус описаного кола."
+  },
+  {
+   "big": "sin",
+   "text": "sin — протилежний : гіпотенуза, cos — прилеглий : гіпотенуза, tg — протилежний : прилеглий."
+  }
+ ]
+}

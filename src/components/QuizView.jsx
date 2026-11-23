@@ -1,10 +1,10 @@
 import { useAuth } from '../context/AuthContext';
-import { ArrowLeft, CheckCircle, XCircle, Trophy, Loader2, BookOpen } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle, Trophy, Loader2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { db } from '../firebase/config';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 
-export default function QuizView({ topic, test, onNavigate, moduleId, onOpenDovidnik }) {
+export default function QuizView({ topic, test, onNavigate, moduleId }) {
   const { user, addPoints } = useAuth();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -73,7 +73,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId, onOpenDovi
 
   if (completed) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f] flex items-center justify-center p-4">
         <div className="max-w-md w-full animate-fade-in px-4">
           <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 overflow-hidden shadow-2xl shadow-orange-500/10">
             <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-4 sm:p-8 text-center">
@@ -131,9 +131,9 @@ export default function QuizView({ topic, test, onNavigate, moduleId, onOpenDovi
 
   if (!currentQuestion) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center">
+      <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f] flex items-center justify-center">
         <div className="text-center animate-fade-in">
-          <Loader2 className="h-12 w-12 text-orange-400 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-[#f5c86b] animate-spin mx-auto mb-4" />
           <p className="text-slate-300">Завантаження питання...</p>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default function QuizView({ topic, test, onNavigate, moduleId, onOpenDovi
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
+    <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <button
           onClick={() => onNavigate('topicDetails', topic)}
@@ -159,13 +159,6 @@ export default function QuizView({ topic, test, onNavigate, moduleId, onOpenDovi
                 <span className="bg-gradient-to-r from-orange-500/30 to-amber-500/30 px-2 sm:px-3 py-1 rounded-full text-white text-xs sm:text-sm">
                   {currentQuestion.points_reward || 10} балів
                 </span>
-                <button
-                  onClick={onOpenDovidnik}
-                  className="bg-white/20 hover:bg-white/30 p-2 rounded-xl transition-colors"
-                  title="Відкрити довідник"
-                >
-                  <BookOpen className="h-4 sm:h-5 w-4 sm:w-5 text-white" />
-                </button>
               </div>
             </div>
             <div className="w-full bg-orange-900/50 rounded-full h-1.5 sm:h-2 mb-2 sm:mb-4">

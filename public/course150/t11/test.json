@@ -1,0 +1,301 @@
+{
+ "title": "ДЗ 11. Площі трикутників (НМТ 150+)",
+ "lessonNumber": 11,
+ "source": "hw-sheet",
+ "hwKey": "150-11",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Сторона трикутника дорівнює 12, а висота, проведена до неї, — 7. Знайдіть площу трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "19"
+    },
+    {
+     "id": 1,
+     "content": "38"
+    },
+    {
+     "id": 2,
+     "content": "84"
+    },
+    {
+     "id": 3,
+     "content": "168"
+    },
+    {
+     "id": 4,
+     "content": "42"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S = \\dfrac{1}{2} \\cdot  12 \\cdot  7 = 42\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Катети прямокутного трикутника дорівнюють 9 і 12. Знайдіть його площу.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "21"
+    },
+    {
+     "id": 1,
+     "content": "54"
+    },
+    {
+     "id": 2,
+     "content": "45"
+    },
+    {
+     "id": 3,
+     "content": "108"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"54\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S = \\dfrac{1}{2} \\cdot  9 \\cdot  12 = 54\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть площу рівностороннього трикутника зі стороною 6.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"9\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"18\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"36\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"6\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S = \\dfrac{a^{2}\\sqrt{3}}{4} = \\dfrac{36\\sqrt{3}}{4} = 9\\sqrt{3}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Дві сторони трикутника дорівнюють 6 і 10, а кут між ними — 150°. Знайдіть площу трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "60"
+    },
+    {
+     "id": 1,
+     "content": "30"
+    },
+    {
+     "id": 2,
+     "content": "15"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"15\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"30\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S = \\dfrac{1}{2} \\cdot  6 \\cdot  10 \\cdot  \\operatorname{sin} 150^{\\circ} = 30 \\cdot  \\dfrac{1}{2} = 15\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Основа рівнобедреного трикутника дорівнює 10, а бічна сторона — 13. Знайдіть площу трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "130"
+    },
+    {
+     "id": 1,
+     "content": "65"
+    },
+    {
+     "id": 2,
+     "content": "120"
+    },
+    {
+     "id": 3,
+     "content": "60"
+    },
+    {
+     "id": 4,
+     "content": "30"
+    }
+   ],
+   "points": 1,
+   "solution": "Висота до основи ділить її навпіл: <span data-latex=\"h = \\sqrt{13^{2} - 5^{2}} = 12\" data-type=\"inline-math\"></span>. <span data-latex=\"S = \\dfrac{1}{2} \\cdot  10 \\cdot  12 = 60\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Сторони трикутника дорівнюють 13, 14 і 15. Знайдіть його площу.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "42"
+    },
+    {
+     "id": 1,
+     "content": "84"
+    },
+    {
+     "id": 2,
+     "content": "91"
+    },
+    {
+     "id": 3,
+     "content": "105"
+    },
+    {
+     "id": 4,
+     "content": "168"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"p = 21\" data-type=\"inline-math\"></span>, <span data-latex=\"S = \\sqrt{21 \\cdot  8 \\cdot  7 \\cdot  6} = \\sqrt{7056} = 84\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Периметр трикутника дорівнює 30, а радіус вписаного в нього кола — 2. Знайдіть площу трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "15"
+    },
+    {
+     "id": 1,
+     "content": "30"
+    },
+    {
+     "id": 2,
+     "content": "60"
+    },
+    {
+     "id": 3,
+     "content": "32"
+    },
+    {
+     "id": 4,
+     "content": "120"
+    }
+   ],
+   "points": 1,
+   "solution": "Півпериметр <span data-latex=\"p = 15\" data-type=\"inline-math\"></span>, <span data-latex=\"S = pr = 15 \\cdot  2 = 30\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Площа трикутника дорівнює 48, а одна з його сторін — 16. Знайдіть висоту, проведену до цієї сторони.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "6"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "12"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"h = \\dfrac{2S}{a} = \\dfrac{96}{16} = 6\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Площа рівнобедреного прямокутного трикутника дорівнює 32. Знайдіть його катет.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "4"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"4\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "16"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "8"
+    }
+   ],
+   "points": 1,
+   "solution": "Катети рівні: <span data-latex=\"\\dfrac{a^{2}}{2} = 32\" data-type=\"inline-math\"></span>, <span data-latex=\"a^{2} = 64\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 8\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Медіана <span data-latex=\"BM\" data-type=\"inline-math\"></span> ділить трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> на два трикутники. Площа трикутника <span data-latex=\"ABM\" data-type=\"inline-math\"></span> дорівнює 17. Знайдіть площу трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "8,5"
+    },
+    {
+     "id": 1,
+     "content": "17"
+    },
+    {
+     "id": 2,
+     "content": "25,5"
+    },
+    {
+     "id": 3,
+     "content": "34"
+    },
+    {
+     "id": 4,
+     "content": "51"
+    }
+   ],
+   "points": 1,
+   "solution": "Медіана ділить трикутник на два трикутники однакової площі: <span data-latex=\"S_{ABC} = 2 \\cdot  17 = 34\" data-type=\"inline-math\"></span>."
+  }
+ ],
+ "answers": [
+  4,
+  1,
+  0,
+  2,
+  3,
+  1,
+  1,
+  2,
+  4,
+  3
+ ],
+ "incomplete": []
+}

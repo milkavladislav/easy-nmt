@@ -1,3 +1,4 @@
+import { WORDS } from '../../quest/story01';
 import { useMemo, useRef, useState } from 'react';
 import MathContent from '../MathContent';
 import { LETTERS, normalizeQuestion, gradeQuestion } from '../../utils/nmtTest';
@@ -7,7 +8,8 @@ import SourceHint from '../course150/SourceHint';
 // Випробування квесту: та сама перевірка, що й у звичайному уроці (normalizeQuestion / gradeQuestion),
 // але у вигляді руни. example=true — наставник показує: розв’язання можна відкрити без відповіді.
 // once=true — домашнє завдання: рахується перша спроба, без «Ще раз».
-export default function QuestTrial({ question, answer, label, example = false, once = false, initial, onResult }) {
+export default function QuestTrial({ question, answer, label, example = false, once = false, initial, onResult, words }) {
+  const w = { ...WORDS, ...words };
   const q = useMemo(() => normalizeQuestion(question, 0, answer), [question, answer]);
   const body = useMemo(() => splitContentSource(q.content), [q.content]);
   const src = question.src || body.src;
@@ -108,18 +110,18 @@ export default function QuestTrial({ question, answer, label, example = false, o
 
       <div className="flex flex-wrap items-center gap-3 mt-6">
         {!checked && (
-          <button ref={castRef} type="button" className="q-cast" disabled={!complete} onClick={cast}>Промовити закляття</button>
+          <button ref={castRef} type="button" className="q-cast" disabled={!complete} onClick={cast}>{w.cast}</button>
         )}
         {checked && !result.restored && (
           <span className={`q-script text-2xl ${result.ok ? 'text-[#7ef0b4]' : 'text-[#ff9a9a]'}`}>
-            {result.ok ? 'Закляття спрацювало!' : q.type === 'connect' ? `Влучних пар: ${result.hits} з ${result.rows}` : 'Закляття зірвалось'}
+            {result.ok ? w.ok : q.type === 'connect' ? `Влучних пар: ${result.hits} з ${result.rows}` : w.bad}
           </span>
         )}
         {checked && result.restored && (
-          <span className={`q-script text-2xl ${result.ok ? 'text-[#7ef0b4]' : 'text-[#ff9a9a]'}`}>{once ? (result.ok ? 'Зоря вже горить' : 'Ця зоря не загорілась') : result.ok ? 'Руна вже світиться' : 'Руна згасла — спробуй ще'}</span>
+          <span className={`q-script text-2xl ${result.ok ? 'text-[#7ef0b4]' : 'text-[#ff9a9a]'}`}>{once ? (result.ok ? w.starOk : w.starBad) : result.ok ? w.okDone : w.badDone}</span>
         )}
         {checked && !once && <button type="button" className="q-ghost text-sm" onClick={again}>Ще раз</button>}
-        {!showSolution && example && <button type="button" className="q-ghost text-sm" onClick={() => setShowSolution(true)}>Пояснення наставниці</button>}
+        {!showSolution && example && <button type="button" className="q-ghost text-sm" onClick={() => setShowSolution(true)}>{w.explain}</button>}
       </div>
 
       {showSolution && question.solution && (

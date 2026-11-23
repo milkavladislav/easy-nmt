@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+/* Верхня панель у стилі мандрівника світами: нічне небо, золоті лінії маршруту. */
+.k-nav {
+  position: relative;
+  background:
+    radial-gradient(1px 1px at 12% 30%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(1px 1px at 37% 70%, rgba(255,255,255,.35), transparent 60%),
+    radial-gradient(1.5px 1.5px at 58% 22%, rgba(248,223,164,.6), transparent 60%),
+    radial-gradient(1px 1px at 81% 64%, rgba(255,255,255,.4), transparent 60%),
+    radial-gradient(1px 1px at 93% 28%, rgba(255,255,255,.5), transparent 60%),
+    linear-gradient(90deg, #090d24 0%, #15113a 50%, #0b1030 100%);
+  border-bottom: 1px solid rgba(245, 200, 107, .22);
+  box-shadow: 0 10px 30px rgba(3, 5, 20, .45);
+}
+/* пунктир маршруту під панеллю */
+.k-nav::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+  background: repeating-linear-gradient(90deg, rgba(245,200,107,.55) 0 10px, transparent 10px 18px);
+  opacity: .45; pointer-events: none;
+}
+.k-brand-medal {
+  width: 42px; height: 42px; border-radius: 999px; display: grid; place-items: center; color: #2a1a0e;
+  background: radial-gradient(circle at 35% 30%, #ffd98f, #b9772b 70%);
+  box-shadow: 0 0 0 2px #0b1030, 0 0 0 3.5px rgba(245,200,107,.7), 0 0 18px rgba(245,200,107,.35);
+}
+.k-brand-title { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; color: #f5c86b; font-size: 25px; line-height: 1; letter-spacing: .01em; }
+.k-brand-sub { color: #b9b4d8; font-size: 11.5px; margin-top: 2px; letter-spacing: .04em; }
+
+.k-link {
+  position: relative; display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 12px;
+  color: #c9c5e6; font-weight: 500; transition: color .2s, background .2s;
+}
+.k-link:hover { color: #f8dfa4; background: rgba(245, 200, 107, .08); }
+.k-link.active { color: #f5c86b; }
+.k-link.active::after {
+  content: ''; position: absolute; left: 14px; right: 14px; bottom: 1px; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, transparent, #f5c86b, transparent);
+}
+.k-link.mobile { width: 100%; padding: 12px 14px; }
+.k-link.mobile.active::after { display: none; }
+.k-link.mobile.active { background: rgba(245, 200, 107, .1); }
+
+.k-traveler {
+  display: flex; align-items: center; gap: 10px; padding: 5px 6px 5px 5px; border-radius: 999px; cursor: pointer;
+  background: rgba(139, 108, 255, .12); border: 1px solid rgba(139, 108, 255, .35); transition: border-color .2s;
+}
+.k-traveler:hover { border-color: rgba(245, 200, 107, .6); }
+.k-traveler img { width: 34px; height: 34px; border-radius: 999px; box-shadow: 0 0 0 2px rgba(245,200,107,.75); }
+.k-points {
+  display: flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px;
+  background: rgba(245, 200, 107, .14); border: 1px solid rgba(245, 200, 107, .4); color: #f5c86b; font-weight: 700;
+}
+.k-logout {
+  display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px; color: #a9a4c8;
+  border: 1px solid rgba(201, 197, 230, .18); transition: color .2s, border-color .2s, background .2s;
+}
+.k-logout:hover { color: #fca5a5; border-color: rgba(252, 165, 165, .45); background: rgba(252, 165, 165, .08); }
+.k-brand-title { white-space: nowrap; }
+@media (max-width: 639px) {
+  .k-brand-title { font-size: 21px; }
+  .k-brand-medal { width: 36px; height: 36px; }
+}

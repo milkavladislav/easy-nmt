@@ -102,22 +102,22 @@ export default function Lesson150({ topic, onNavigate }) {
 
   if (error || !lesson) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f] flex items-center justify-center p-4">
         {error ? (
           <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-8 max-w-md text-center">
             <p className="text-red-400 mb-4">{error}</p>
             <button onClick={back} className="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-2 rounded-xl">До теми</button>
           </div>
         ) : (
-          <Loader2 className="h-12 w-12 text-orange-400 animate-spin" />
+          <Loader2 className="h-12 w-12 text-[#f5c86b] animate-spin" />
         )}
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
-      <div className="sticky top-0 z-20 bg-orange-950/85 backdrop-blur border-b border-orange-500/20">
+    <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
+      <div className="sticky top-0 z-20 bg-[#0b1030]/85 backdrop-blur border-b border-[rgba(245,200,107,.2)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-4">
           <button onClick={back} className="flex items-center gap-1.5 text-slate-300 hover:text-white text-sm shrink-0">
             <ArrowLeft className="h-4 w-4" />До теми

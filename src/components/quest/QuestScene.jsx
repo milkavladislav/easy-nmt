@@ -1,4 +1,7 @@
 import { useMemo } from 'react';
+import { Pyramids } from './DesertScene';
+
+const SCENES = { pyramids: Pyramids }; // світи 2–9; без збігу — замок школи чарів
 
 // Нічне небо, місяць, Академія на скелі над річкою, туман і свічки, що плавають у повітрі.
 // Усе — CSS/SVG, без зображень: легко замінити на згенеровані фони, коли вони з’являться.
@@ -58,7 +61,9 @@ export function Castle() {
   );
 }
 
-export default function QuestScene({ deep = false }) {
+export default function QuestScene({ deep = false, scene = 'castle' }) {
+  const Scene = SCENES[scene] || Castle;
+  const castle = Scene === Castle;
   const { stars, candles, dust } = useMemo(() => {
     const r = rand(42);
     return {
@@ -73,12 +78,12 @@ export default function QuestScene({ deep = false }) {
         <span key={i} className="q-star" style={{ left: `${s.x}%`, top: `${s.y}%`, width: s.s, height: s.s, '--d': `${s.d}s`, '--delay': `${s.delay}s` }} />
       ))}
       <div className="q-moon" />
-      <Castle />
+      <Scene />
       <div className="q-fog" />
       {dust.map((p, i) => (
         <span key={i} className="q-dust" style={{ left: `${p.x}%`, '--d': `${p.d}s`, '--delay': `${p.delay}s`, '--dx': `${p.dx}px` }} />
       ))}
-      {candles.map((c, i) => (
+      {castle && candles.map((c, i) => (
         <span key={i} className="q-candle" style={{ left: `${c.x}%`, top: `${c.y}%`, transform: `scale(${c.s})`, '--d': `${c.d}s`, '--delay': `${c.delay}s` }} />
       ))}
       <div className={`q-dim${deep ? ' deep' : ''}`} />

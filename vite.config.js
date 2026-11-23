@@ -10,11 +10,11 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'NMT Preparation',
-        short_name: 'NMT Prep',
-        description: 'Master the National Multi-Subject Test with interactive lessons and practice tests',
-        theme_color: '#4f46e5',
-        background_color: '#0f172a',
+        name: 'Експедиція НМТ',
+        short_name: 'Експедиція НМТ',
+        description: 'Підготовка до НМТ з математики: подорож дев’ятьма світами, уроки, квести й тести',
+        theme_color: '#0b1030',
+        background_color: '#070b1f',
         display: 'standalone',
         orientation: 'portrait',
         icons: [

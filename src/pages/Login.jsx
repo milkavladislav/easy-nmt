@@ -1,5 +1,5 @@
 import { useAuth } from '../context/AuthContext';
-import { BookOpen, Trophy, Sparkles, Loader2, Mail, Lock, User } from 'lucide-react';
+import { BookOpen, Trophy, Sparkles, Loader2, Mail, Lock, User, Compass } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Login() {
@@ -50,13 +50,13 @@ export default function Login() {
       <div className="max-w-4xl w-full animate-fade-in">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 p-6 rounded-3xl mb-8 ring-4 ring-violet-500/30 shadow-2xl shadow-violet-500/20 animate-pulse-slow">
-            <BookOpen className="h-20 w-20 text-violet-400" />
+            <Compass className="h-20 w-20 text-violet-400" />
           </div>
           <h1 className="text-6xl font-bold text-white mb-4 tracking-tight bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
-            Підготовка до НМТ
+            Експедиція НМТ
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Опануйте Національний мультипредметний тест за допомогою інтерактивних уроків, практичних тестів та гейміфікованого навчання
+            Підготовка до НМТ з математики як подорож дев’ятьма світами: уроки, квести, домашні завдання й тести у форматі НМТ
           </p>
         </div>
 

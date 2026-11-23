@@ -1,0 +1,814 @@
+{
+ "number": 12,
+ "title": "Вписане й описане коло",
+ "intro": [
+  {
+   "title": "Правильний трикутник",
+   "text": "<span data-latex=\"R = 2r\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Прямокутний трикутник",
+   "text": "<span data-latex=\"R = \\dfrac{c}{2}\" data-type=\"inline-math\"></span> і <span data-latex=\"r = \\dfrac{a + b - c}{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Вписане коло",
+   "text": "<span data-latex=\"r = \\dfrac{S}{p}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Описане коло",
+   "text": "<span data-latex=\"R = \\dfrac{a}{2\\operatorname{sin} A}\" data-type=\"inline-math\"></span> і <span data-latex=\"R = \\dfrac{abc}{4S}\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"R\" data-type=\"inline-math\"></span>",
+   "text": "описане коло"
+  },
+  {
+   "big": "<span data-latex=\"r = \\dfrac{S}{p}\" data-type=\"inline-math\"></span>",
+   "text": "вписане коло"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{c}{2}\" data-type=\"inline-math\"></span>",
+   "text": "прямокутний трикутник"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Правильний трикутник",
+   "title": "Центри збігаються",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"R\" data-type=\"inline-math\"></span>",
+     "title": "Описане коло",
+     "formula": "",
+     "text": "<span data-latex=\"R = \\dfrac{a\\sqrt{3}}{3}\" data-type=\"inline-math\"></span> — це <span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span> висоти."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"r\" data-type=\"inline-math\"></span>",
+     "title": "Вписане коло",
+     "formula": "",
+     "text": "<span data-latex=\"r = \\dfrac{a\\sqrt{3}}{6}\" data-type=\"inline-math\"></span> — це <span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span> висоти."
+    },
+    {
+     "color": "coral",
+     "big": "2 : 1",
+     "title": "Зв’язок",
+     "formula": "",
+     "text": "<span data-latex=\"R = 2r\" data-type=\"inline-math\"></span>: центр — точка перетину медіан, що діляться <b>2 : 1</b>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Правильний трикутник",
+    "content": "Знайдіть радіус кола, описаного навколо правильного трикутника зі стороною 12 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"2\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"4\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"8\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"12\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"R = \\dfrac{a\\sqrt{3}}{3} = \\dfrac{12\\sqrt{3}}{3} = 4\\sqrt{3}\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Прямокутний трикутник",
+   "title": "Гіпотенуза — діаметр",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\dfrac{c}{2}\" data-type=\"inline-math\"></span>",
+     "title": "Описане коло",
+     "formula": "",
+     "text": "Центр — <b>середина гіпотенузи</b>, <span data-latex=\"R = \\dfrac{c}{2}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Вписане коло",
+     "formula": "",
+     "text": "<span data-latex=\"r = \\dfrac{a + b - c}{2}\" data-type=\"inline-math\"></span> — сума катетів мінус гіпотенуза, навпіл."
+    },
+    {
+     "color": "coral",
+     "big": "90°",
+     "title": "Кут на діаметр",
+     "formula": "",
+     "text": "Вписаний кут, що спирається на <b>діаметр</b>, — прямий."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Прямокутний трикутник",
+    "content": "Катети прямокутного трикутника дорівнюють 6 см і 8 см. Знайдіть радіус кола, описаного навколо цього трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "10"
+     },
+     {
+      "id": 4,
+      "content": "12"
+     }
+    ],
+    "points": 1,
+    "solution": "Гіпотенуза: <span data-latex=\"\\sqrt{6^{2} + 8^{2}} = 10\" data-type=\"inline-math\"></span> см. Центр описаного кола — її середина: <span data-latex=\"R = 10 : 2 = 5\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Вписане коло",
+   "title": "Площа й півпериметр",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\dfrac{S}{p}\" data-type=\"inline-math\"></span>",
+     "title": "Радіус",
+     "formula": "",
+     "text": "<span data-latex=\"r = \\dfrac{S}{p}\" data-type=\"inline-math\"></span>, де <span data-latex=\"p = \\dfrac{a + b + c}{2}\" data-type=\"inline-math\"></span> — <b>півпериметр</b> (не весь периметр!)."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Центр",
+     "formula": "",
+     "text": "Точка перетину <b>бісектрис</b> — однаково віддалена від усіх сторін."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Дотичні",
+     "formula": "",
+     "text": "Відрізки дотичних з однієї вершини до кола <b>рівні</b>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Периметр і площа",
+    "content": "Периметр трикутника дорівнює 88 см, а площа — 440 см². Знайдіть радіус кола, вписаного у цей трикутник.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "10"
+     },
+     {
+      "id": 4,
+      "content": "12"
+     }
+    ],
+    "points": 1,
+    "solution": "Півпериметр: <span data-latex=\"p = 88 : 2 = 44\" data-type=\"inline-math\"></span> см. <span data-latex=\"r = \\dfrac{S}{p} = \\dfrac{440}{44} = 10\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Прямокутний трикутник",
+    "content": "У прямокутному трикутнику <span data-latex=\"AC = 24\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = 10\" data-type=\"inline-math\"></span> см, кут <span data-latex=\"C\" data-type=\"inline-math\"></span> — прямий. Знайдіть радіус вписаного кола.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2,5"
+     },
+     {
+      "id": 1,
+      "content": "2,75"
+     },
+     {
+      "id": 2,
+      "content": "3,25"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "Гіпотенуза: <span data-latex=\"\\sqrt{24^{2} + 10^{2}} = 26\" data-type=\"inline-math\"></span> см. <span data-latex=\"r = \\dfrac{24 + 10 - 26}{2} = 4\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Описане коло",
+   "title": "Будь-який трикутник",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"2R\" data-type=\"inline-math\"></span>",
+     "title": "Через синус",
+     "formula": "",
+     "text": "<span data-latex=\"R = \\dfrac{a}{2\\operatorname{sin} A}\" data-type=\"inline-math\"></span> — сторона й <b>протилежний</b> кут."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"\\dfrac{abc}{4S}\" data-type=\"inline-math\"></span>",
+     "title": "Через площу",
+     "formula": "",
+     "text": "<span data-latex=\"R = \\dfrac{abc}{4S}\" data-type=\"inline-math\"></span> — коли відомі всі три сторони."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Центр",
+     "formula": "",
+     "text": "Точка перетину <b>серединних перпендикулярів</b> до сторін."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Сторона і протилежний кут",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"\\angle BAC = 70^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle ACB = 80^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"AC = 10\" data-type=\"inline-math\"></span> см. Знайдіть радіус кола, описаного навколо цього трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "10"
+     },
+     {
+      "id": 1,
+      "content": "15"
+     },
+     {
+      "id": 2,
+      "content": "25"
+     },
+     {
+      "id": 3,
+      "content": "30"
+     },
+     {
+      "id": 4,
+      "content": "32"
+     }
+    ],
+    "points": 1,
+    "solution": "Кут проти <span data-latex=\"AC\" data-type=\"inline-math\"></span>: <span data-latex=\"\\angle B = 180^{\\circ} - 70^{\\circ} - 80^{\\circ} = 30^{\\circ}\" data-type=\"inline-math\"></span>. <span data-latex=\"2R = \\dfrac{AC}{\\operatorname{sin} B} = \\dfrac{10}{0{,}5} = 20\" data-type=\"inline-math\"></span>, тож <span data-latex=\"R = 10\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Рівнобедрений трикутник",
+    "content": "Бічні сторони рівнобедреного трикутника дорівнюють 50 см, а основа — 80 см. Знайдіть радіус кола, описаного навколо цього трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{125}{8}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{125}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "25"
+     },
+     {
+      "id": 3,
+      "content": "30"
+     },
+     {
+      "id": 4,
+      "content": "35"
+     }
+    ],
+    "points": 1,
+    "solution": "висота до основи = √(50² − 40²) = 30; S = ½ · 80 · 30 = 1200; R = abc/(4S) = 200 000/4800 = 125/3"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Правильний трикутник",
+    "content": "Знайдіть радіус кола, вписаного у правильний трикутник, якщо його сторона дорівнює <span data-latex=\"6\\sqrt{3}\" data-type=\"inline-math\"></span> см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "3"
+     },
+     {
+      "id": 2,
+      "content": "3,25"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "r = a√3/6 = 6√3 · √3/6 = 3 см"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Катет і площа",
+    "content": "Один з катетів прямокутного трикутника дорівнює 4 см, а площа — 6 см². Знайдіть радіус кола, вписаного у цей трикутник.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "другий катет = 2 · 6 : 4 = 3; гіпотенуза = 5; r = (4 + 3 − 5)/2 = 1 см"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Площа й периметр",
+    "content": "Площа трикутника дорівнює 100, а периметр у 2 рази менший за площу. Знайдіть радіус вписаного кола.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2,5"
+     },
+     {
+      "id": 1,
+      "content": "3"
+     },
+     {
+      "id": 2,
+      "content": "4"
+     },
+     {
+      "id": 3,
+      "content": "5,5"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"P = 50\" data-type=\"inline-math\"></span>, <span data-latex=\"p = 25\" data-type=\"inline-math\"></span>; <span data-latex=\"r = \\dfrac{S}{p} = \\dfrac{100}{25} = 4\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Правильний трикутник",
+    "content": "Сторона правильного трикутника дорівнює <span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>. Знайдіть радіус вписаного кола.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,5"
+     },
+     {
+      "id": 1,
+      "content": "0,75"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "1,5"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"r = \\dfrac{a\\sqrt{3}}{6} = \\dfrac{3}{6} = 0{,}5\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Рівнобедрений 5, 5, 6",
+    "content": "Бічні сторони рівнобедреного трикутника дорівнюють 5, а основа — 6. Знайдіть радіус вписаного кола.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,5"
+     },
+     {
+      "id": 1,
+      "content": "0,75"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "1,5"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"S = 12\" data-type=\"inline-math\"></span>, <span data-latex=\"p = 8\" data-type=\"inline-math\"></span>; <span data-latex=\"r = \\dfrac{12}{8} = 1{,}5\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Трикутник 13, 14, 15",
+    "content": "У трикутник зі сторонами 13, 14 і 15 вписано коло. Знайдіть радіус цього кола.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3"
+     },
+     {
+      "id": 1,
+      "content": "4"
+     },
+     {
+      "id": 2,
+      "content": "4,75"
+     },
+     {
+      "id": 3,
+      "content": "5"
+     },
+     {
+      "id": 4,
+      "content": "8"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"S = 84\" data-type=\"inline-math\"></span>, <span data-latex=\"p = 21\" data-type=\"inline-math\"></span>; <span data-latex=\"r = 4\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Прямокутний 3, 4, 5",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"AC = 4\" data-type=\"inline-math\"></span>, <span data-latex=\"BC = 3\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>. Знайдіть радіус вписаного кола.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,5"
+     },
+     {
+      "id": 1,
+      "content": "0,75"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "1,5"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "гіпотенуза 5; <span data-latex=\"r = \\dfrac{3 + 4 - 5}{2} = 1\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Описане коло прямокутного",
+    "content": "Знайдіть радіус кола, описаного навколо прямокутного трикутника з катетами 4 і <span data-latex=\"2\\sqrt{5}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "1,75"
+     },
+     {
+      "id": 2,
+      "content": "2"
+     },
+     {
+      "id": 3,
+      "content": "2,4"
+     },
+     {
+      "id": 4,
+      "content": "3"
+     }
+    ],
+    "points": 1,
+    "solution": "гіпотенуза <span data-latex=\"\\sqrt{16 + 20} = 6\" data-type=\"inline-math\"></span>; <span data-latex=\"R = \\dfrac{c}{2} = 3\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Описане коло правильного",
+    "content": "Знайдіть радіус кола, описаного навколо правильного трикутника зі стороною <span data-latex=\"8\\sqrt{3}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "8,5"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"R = \\dfrac{a\\sqrt{3}}{3} = \\dfrac{24}{3} = 8\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Середня лінія",
+    "content": "На сторонах <span data-latex=\"AB\" data-type=\"inline-math\"></span> і <span data-latex=\"BC\" data-type=\"inline-math\"></span> трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> вибрано точки <span data-latex=\"K\" data-type=\"inline-math\"></span> і <span data-latex=\"P\" data-type=\"inline-math\"></span> так, що <span data-latex=\"AK = KB\" data-type=\"inline-math\"></span>, <span data-latex=\"CP = PB\" data-type=\"inline-math\"></span>. Які з наведених тверджень є правильними?<p>I. <span data-latex=\"AC \\parallel  KP\" data-type=\"inline-math\"></span>.</p><p>II. Відрізок <span data-latex=\"KP\" data-type=\"inline-math\"></span> є середньою лінією трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>.</p><p>III. Площа трикутника <span data-latex=\"KBP\" data-type=\"inline-math\"></span> дорівнює площі чотирикутника <span data-latex=\"AKPC\" data-type=\"inline-math\"></span>.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "III і II"
+     },
+     {
+      "id": 1,
+      "content": "I і II"
+     },
+     {
+      "id": 2,
+      "content": "II"
+     },
+     {
+      "id": 3,
+      "content": "I і III"
+     },
+     {
+      "id": 4,
+      "content": "I, II та III"
+     }
+    ],
+    "points": 1,
+    "solution": "K і P — середини AB і BC → KP — середня лінія, KP ∥ AC (I, II правильні); S(KBP) = ¼ S(ABC), а S(AKPC) = ¾ S(ABC) → III хибне"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Висоти трикутників",
+    "content": "Які з наведених тверджень є правильними?<p>I. Одна з висот рівнобедреного трикутника ділить його на два рівні трикутники.</p><p>II. Дві висоти тупокутного трикутника лежать поза його межами.</p><p>III. Висота, проведена з вершини прямого кута прямокутного трикутника, більша за менший катет цього трикутника.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "III і II"
+     },
+     {
+      "id": 1,
+      "content": "I і II"
+     },
+     {
+      "id": 2,
+      "content": "II"
+     },
+     {
+      "id": 3,
+      "content": "I і III"
+     },
+     {
+      "id": 4,
+      "content": "I, II та III"
+     }
+    ],
+    "points": 1,
+    "solution": "I — висота до основи ділить рівнобедрений трикутник на два рівні; II — у тупокутному дві висоти поза трикутником; III хибне: висота ab/c менша за кожен катет"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кути трикутника",
+    "content": "Які з наведених тверджень є правильними?<p>I. У прямокутному трикутнику найбільший кут дорівнює половині розгорнутого кута.</p><p>II. У рівносторонньому трикутнику сума градусних мір двох кутів дорівнює 120°.</p><p>III. Існує гострокутний трикутник, у якого всі кути більші за 60°.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "III і II"
+     },
+     {
+      "id": 1,
+      "content": "I і II"
+     },
+     {
+      "id": 2,
+      "content": "II"
+     },
+     {
+      "id": 3,
+      "content": "I і III"
+     },
+     {
+      "id": 4,
+      "content": "I, II та III"
+     }
+    ],
+    "points": 1,
+    "solution": "I — 90° = 180° : 2; II — 60° + 60° = 120°; III хибне: три кути &gt; 60° дали б суму &gt; 180°"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2026",
+    "title": "Діаметр описаного кола",
+    "content": "У коло із центром <span data-latex=\"O\" data-type=\"inline-math\"></span> вписано трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (див. рисунок). <span data-latex=\"AC\" data-type=\"inline-math\"></span> — діаметр кола. Які з наведених тверджень є правильними?<p>I. Градусна міра кута <span data-latex=\"ABC\" data-type=\"inline-math\"></span> дорівнює 90°.</p><p>II. Градусна міра кута <span data-latex=\"BOC\" data-type=\"inline-math\"></span> вдвічі більша за градусну міру кута <span data-latex=\"BAC\" data-type=\"inline-math\"></span>.</p><p>III. Довжина відрізка <span data-latex=\"AC\" data-type=\"inline-math\"></span> вдвічі більша за довжину відрізка <span data-latex=\"OB\" data-type=\"inline-math\"></span>.</p><div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 400\" width=\"440\" height=\"400\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"220\" cy=\"200\" r=\"150\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"4\"/><polygon points=\"70,200 150,68 370,200\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"220\" y1=\"200\" x2=\"150\" y2=\"68\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"10 8\"/><circle cx=\"220\" cy=\"200\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"44\" y=\"210\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"396\" y=\"210\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"144\" y=\"50\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"220\" y=\"240\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "лише I"
+     },
+     {
+      "id": 1,
+      "content": "лише II"
+     },
+     {
+      "id": 2,
+      "content": "лише III"
+     },
+     {
+      "id": 3,
+      "content": "лише I та II"
+     },
+     {
+      "id": 4,
+      "content": "I, II та III"
+     }
+    ],
+    "points": 1,
+    "solution": "I — так: вписаний кут <span data-latex=\"ABC\" data-type=\"inline-math\"></span> спирається на діаметр. II — так: центральний кут <span data-latex=\"BOC\" data-type=\"inline-math\"></span> і вписаний <span data-latex=\"BAC\" data-type=\"inline-math\"></span> спираються на ту саму дугу <span data-latex=\"BC\" data-type=\"inline-math\"></span>. III — так: <span data-latex=\"AC\" data-type=\"inline-math\"></span> — діаметр, а <span data-latex=\"OB\" data-type=\"inline-math\"></span> — радіус."
+   },
+   "answer": 4
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"R = 2r\" data-type=\"inline-math\"></span>",
+   "text": "Правильний трикутник: <span data-latex=\"R = \\dfrac{a\\sqrt{3}}{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"r = \\dfrac{a\\sqrt{3}}{6}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{c}{2}\" data-type=\"inline-math\"></span>",
+   "text": "Прямокутний: <span data-latex=\"R = \\dfrac{c}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"r = \\dfrac{a + b - c}{2}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{S}{p}\" data-type=\"inline-math\"></span>",
+   "text": "Вписане коло: <span data-latex=\"r = \\dfrac{S}{p}\" data-type=\"inline-math\"></span>, <span data-latex=\"p\" data-type=\"inline-math\"></span> — півпериметр."
+  },
+  {
+   "big": "<span data-latex=\"2R\" data-type=\"inline-math\"></span>",
+   "text": "Описане коло: <span data-latex=\"R = \\dfrac{a}{2\\operatorname{sin} A} = \\dfrac{abc}{4S}\" data-type=\"inline-math\"></span>."
+  }
+ ]
+}

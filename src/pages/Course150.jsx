@@ -73,7 +73,7 @@ function BlockTestRow({ block, best, loading, onStart }) {
   );
 }
 
-export default function Course150({ onNavigate, onOpenDovidnik }) {
+export default function Course150({ onNavigate }) {
   const { user } = useAuth();
   const [course, setCourse] = useState(null);
   const [best, setBest] = useState({});
@@ -106,7 +106,7 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f] flex items-center justify-center p-4">
         <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-8 max-w-md text-center">
           <p className="text-red-400 mb-4">{error}</p>
           <button onClick={() => window.location.reload()} className="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-2 rounded-xl">
@@ -119,8 +119,8 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
 
   if (!course) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center">
-        <Loader2 className="h-12 w-12 text-orange-400 animate-spin" />
+      <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f] flex items-center justify-center">
+        <Loader2 className="h-12 w-12 text-[#f5c86b] animate-spin" />
       </div>
     );
   }
@@ -130,11 +130,11 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
   const passed = topics.filter((t) => best[testIdFor(t.number)]).length;
 
   return (
-    <div className="min-h-screen overflow-x-clip bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
+    <div className="min-h-screen overflow-x-clip bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
         <WorldsIntro course={course} topicsCount={topics.length} ready={ready} passed={passed}
           openBlocks={new Set(course.blocks.filter((bl) => bl.topics.every(hasQuest)).map((bl) => bl.number))}
-          onOpenDovidnik={onOpenDovidnik} />
+          onOpenJournal={() => onNavigate('journal')} />
 
         <div>
           {course.blocks.map((block) => <div key={block.number} id={`block-${block.number}`} className="scroll-mt-16">{(block.topics.every(hasQuest) || WORLD_SECTIONS[block.number]) ? (

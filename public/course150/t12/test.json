@@ -1,0 +1,338 @@
+{
+ "title": "ДЗ 12. Вписане й описане коло (НМТ 150+)",
+ "lessonNumber": 12,
+ "source": "hw-sheet",
+ "hwKey": "150-12",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Один з катетів прямокутного трикутника дорівнює 16, а площа — 96. Знайдіть радіус вписаного кола.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3,5"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "4,5"
+    },
+    {
+     "id": 3,
+     "content": "5,55"
+    },
+    {
+     "id": 4,
+     "content": "6,1"
+    }
+   ],
+   "points": 1,
+   "solution": "другий катет <span data-latex=\"\\dfrac{2 \\cdot  96}{16} = 12\" data-type=\"inline-math\"></span>, гіпотенуза 20; <span data-latex=\"r = \\dfrac{16 + 12 - 20}{2} = 4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Радіус кола, вписаного в рівносторонній трикутник, дорівнює <span data-latex=\"\\dfrac{\\sqrt{3}}{6}\" data-type=\"inline-math\"></span>. Знайдіть сторону цього трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0,5"
+    },
+    {
+     "id": 1,
+     "content": "0,75"
+    },
+    {
+     "id": 2,
+     "content": "1"
+    },
+    {
+     "id": 3,
+     "content": "1,5"
+    },
+    {
+     "id": 4,
+     "content": "2"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a = \\dfrac{6r}{\\sqrt{3}} = 1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть радіус кола, описаного навколо трикутника, сторона якого дорівнює 5, а протилежний кут — 60°.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{5\\sqrt{3}}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"5\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{4\\sqrt{3}}{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2R = \\dfrac{5}{\\operatorname{sin} 60^{\\circ}}\" data-type=\"inline-math\"></span>; <span data-latex=\"R = \\dfrac{5\\sqrt{3}}{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Одна зі сторін трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> дорівнює 20, радіус описаного кола теж дорівнює 20. Знайдіть гострий кут трикутника, що лежить навпроти цієї сторони.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "30°"
+    },
+    {
+     "id": 1,
+     "content": "45°"
+    },
+    {
+     "id": 2,
+     "content": "60°"
+    },
+    {
+     "id": 3,
+     "content": "90°"
+    },
+    {
+     "id": 4,
+     "content": "120°"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\text{sin α} = \\dfrac{20}{2 \\cdot  20} = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>; гострий кут 30°"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть радіус кола, описаного навколо рівнобедреного трикутника з основою 16 і бічною стороною 10.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{6}{27}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{25}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{2}{9}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{12}{7}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "8,3"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S = 48\" data-type=\"inline-math\"></span>; <span data-latex=\"R = \\dfrac{abc}{4S} = \\dfrac{1600}{192} = \\dfrac{25}{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Які з наведених тверджень є правильними щодо довільного трикутника зі сторонами <span data-latex=\"a\" data-type=\"inline-math\"></span>, <span data-latex=\"b\" data-type=\"inline-math\"></span>, <span data-latex=\"c\" data-type=\"inline-math\"></span>?<p>I. Якщо <span data-latex=\"a^{2} + b^{2} = c^{2}\" data-type=\"inline-math\"></span>, то трикутник прямокутний.</p><p>II. Сума довжин будь-яких двох сторін трикутника завжди більша за довжину третьої сторони.</p><p>III. Якщо <span data-latex=\"a = b = c\" data-type=\"inline-math\"></span>, то трикутник є рівностороннім.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "I"
+    },
+    {
+     "id": 1,
+     "content": "I, II"
+    },
+    {
+     "id": 2,
+     "content": "II, III"
+    },
+    {
+     "id": 3,
+     "content": "I, III"
+    },
+    {
+     "id": 4,
+     "content": "I, II, III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — обернена теорема Піфагора; II — нерівність трикутника; III — означення рівностороннього: усі правильні"
+  },
+  {
+   "type": "single",
+   "content": "Які з наведених тверджень є правильними?<p>I. Центром кола, описаного навколо прямокутного трикутника, є середина гіпотенузи.</p><p>II. Центром кола, вписаного в трикутник, є точка перетину його бісектрис.</p><p>III. Радіус кола, описаного навколо прямокутного трикутника, дорівнює гіпотенузі.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "I"
+    },
+    {
+     "id": 1,
+     "content": "I, II"
+    },
+    {
+     "id": 2,
+     "content": "II, III"
+    },
+    {
+     "id": 3,
+     "content": "I, III"
+    },
+    {
+     "id": 4,
+     "content": "I, II, III"
+    }
+   ],
+   "points": 1,
+   "solution": "I, II — правильні; III хибне: <span data-latex=\"R = \\dfrac{c}{2}\" data-type=\"inline-math\"></span>, а не <span data-latex=\"c\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Кути гострокутного трикутника <span data-latex=\"KLM\" data-type=\"inline-math\"></span> задовольняють умову <span data-latex=\"\\angle K &gt; \\angle L &gt; \\angle M\" data-type=\"inline-math\"></span>. Які з тверджень є правильними?<p>I. Сторона <span data-latex=\"LM\" data-type=\"inline-math\"></span> є найдовшою стороною цього трикутника.</p><p>II. Трикутник є рівностороннім.</p><p>III. Довжина висоти, проведеної з вершини <span data-latex=\"K\" data-type=\"inline-math\"></span>, менша за довжину сторони <span data-latex=\"KM\" data-type=\"inline-math\"></span>.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "I"
+    },
+    {
+     "id": 1,
+     "content": "I, II"
+    },
+    {
+     "id": 2,
+     "content": "III"
+    },
+    {
+     "id": 3,
+     "content": "I, III"
+    },
+    {
+     "id": 4,
+     "content": "I, II, III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — проти найбільшого кута <span data-latex=\"K\" data-type=\"inline-math\"></span> лежить найбільша сторона <span data-latex=\"LM\" data-type=\"inline-math\"></span>; II — кути різні; III — перпендикуляр коротший за похилу <span data-latex=\"KM\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Які з наведених тверджень є правильними?<p>I. У будь-якому трикутнику сума градусних мір двох кутів завжди більша за 90°.</p><p>II. У рівнобедреному трикутнику кути при основі завжди гострі.</p><p>III. Існує тупокутний трикутник, у якого два кути по 45°.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "I, II"
+    },
+    {
+     "id": 1,
+     "content": "II"
+    },
+    {
+     "id": 2,
+     "content": "III"
+    },
+    {
+     "id": 3,
+     "content": "I, III"
+    },
+    {
+     "id": 4,
+     "content": "I, II, III"
+    }
+   ],
+   "points": 1,
+   "solution": "I хибне (напр., кути 120°, 30°, 30°: <span data-latex=\"30^{\\circ} + 30^{\\circ} = 60^{\\circ}\" data-type=\"inline-math\"></span>); II — кути при основі рівні, тож менші за 90°; III — третій кут <span data-latex=\"90^{\\circ}\" data-type=\"inline-math\"></span>, не тупокутний"
+  },
+  {
+   "type": "single",
+   "content": "У трикутнику <span data-latex=\"DEF\" data-type=\"inline-math\"></span> на сторонах <span data-latex=\"DE\" data-type=\"inline-math\"></span> та <span data-latex=\"DF\" data-type=\"inline-math\"></span> позначено точки <span data-latex=\"P\" data-type=\"inline-math\"></span> та <span data-latex=\"K\" data-type=\"inline-math\"></span> відповідно такі, що <span data-latex=\"DP = 0{,}5DE\" data-type=\"inline-math\"></span> та <span data-latex=\"DK = 0{,}5DF\" data-type=\"inline-math\"></span>. Які з тверджень є правильними?<p>I. <span data-latex=\"PK = 0{,}5EF\" data-type=\"inline-math\"></span>.</p><p>II. Периметр трикутника <span data-latex=\"DPK\" data-type=\"inline-math\"></span> у 2 рази менший за периметр трикутника <span data-latex=\"DEF\" data-type=\"inline-math\"></span>.</p><p>III. Відношення площі трикутника <span data-latex=\"DPK\" data-type=\"inline-math\"></span> до площі трикутника <span data-latex=\"DEF\" data-type=\"inline-math\"></span> дорівнює <span data-latex=\"1 : 2\" data-type=\"inline-math\"></span>.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "I, II"
+    },
+    {
+     "id": 1,
+     "content": "II"
+    },
+    {
+     "id": 2,
+     "content": "III"
+    },
+    {
+     "id": 3,
+     "content": "I, III"
+    },
+    {
+     "id": 4,
+     "content": "I, II, III"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"P\" data-type=\"inline-math\"></span>, <span data-latex=\"K\" data-type=\"inline-math\"></span> — середини сторін, <span data-latex=\"PK\" data-type=\"inline-math\"></span> — середня лінія: I, II правильні; площі відносяться як <span data-latex=\"1 : 4\" data-type=\"inline-math\"></span> — III хибне"
+  },
+  {
+   "type": "single",
+   "content": "Які з наведених тверджень є правильними?<p>I. Центр кола, вписаного у трикутник, збігається з точкою перетину його медіан.</p><p>II. У будь-який прямокутник можна вписати коло.</p><p>III. Радіус кола, описаного навколо рівностороннього трикутника, удвічі більший за радіус кола, вписаного в цей же трикутник.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "I, II"
+    },
+    {
+     "id": 1,
+     "content": "II"
+    },
+    {
+     "id": 2,
+     "content": "I"
+    },
+    {
+     "id": 3,
+     "content": "III"
+    },
+    {
+     "id": 4,
+     "content": "I, II, III"
+    }
+   ],
+   "points": 1,
+   "solution": "I хибне (центр — перетин бісектрис); II хибне (лише квадрат); III: <span data-latex=\"R = \\dfrac{a\\sqrt{3}}{3} = 2 \\cdot  \\dfrac{a\\sqrt{3}}{6} = 2r\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У прямокутний трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> вписано коло, яке дотикається катетів <span data-latex=\"AC\" data-type=\"inline-math\"></span> та <span data-latex=\"BC\" data-type=\"inline-math\"></span> у точках <span data-latex=\"K\" data-type=\"inline-math\"></span> і <span data-latex=\"M\" data-type=\"inline-math\"></span> відповідно. Знайдіть радіус кола, описаного навколо трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (у см), якщо <span data-latex=\"AK = 4{,}5\" data-type=\"inline-math\"></span> см, <span data-latex=\"MB = 6\" data-type=\"inline-math\"></span> см.",
+   "variants": [],
+   "points": 2,
+   "solution": "Відрізки дотичних з однієї вершини рівні: дотичні з <span data-latex=\"A\" data-type=\"inline-math\"></span> дорівнюють 4,5, з <span data-latex=\"B\" data-type=\"inline-math\"></span> — 6. Тож гіпотенуза <span data-latex=\"AB = 4{,}5 + 6 = 10{,}5\" data-type=\"inline-math\"></span> см. Центр описаного кола — середина гіпотенузи: <span data-latex=\"R = 10{,}5 : 2 = 5{,}25\" data-type=\"inline-math\"></span> см."
+  }
+ ],
+ "answers": [
+  1,
+  2,
+  1,
+  0,
+  1,
+  4,
+  1,
+  3,
+  1,
+  0,
+  3,
+  "5,25"
+ ],
+ "incomplete": []
+}

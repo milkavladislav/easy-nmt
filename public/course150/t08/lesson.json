@@ -1,0 +1,900 @@
+{
+ "number": 8,
+ "title": "Основні поняття",
+ "intro": [
+  {
+   "title": "Кути",
+   "text": "суміжні, вертикальні, бісектриса"
+  },
+  {
+   "title": "Паралельні прямі",
+   "text": "відповідні, різносторонні, односторонні кути"
+  },
+  {
+   "title": "Трикутник",
+   "text": "сума кутів, зовнішній кут, нерівність трикутника"
+  },
+  {
+   "title": "Рівнобедрений",
+   "text": "кути при основі, бісектриса = медіана = висота"
+  },
+  {
+   "title": "Медіани й середня лінія",
+   "text": "2 : 1 і половина сторони"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "180°",
+   "text": "сума кутів трикутника"
+  },
+  {
+   "big": "2 : 1",
+   "text": "медіани діляться від вершини"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>",
+   "text": "середня лінія — половина сторони"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Кути",
+   "title": "Суміжні, вертикальні, бісектриса",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "180°",
+     "title": "Суміжні кути",
+     "formula": "",
+     "text": "Мають спільну сторону, дві інші — продовження одна одної. Разом дають <b>180°</b>."
+    },
+    {
+     "color": "mint",
+     "big": "=",
+     "title": "Вертикальні кути",
+     "formula": "",
+     "text": "Утворюються при перетині двох прямих навпроти один одного. Вертикальні кути <b>рівні</b>."
+    },
+    {
+     "color": "coral",
+     "big": "½",
+     "title": "Бісектриса",
+     "formula": "",
+     "text": "Промінь, що ділить кут <b>навпіл</b>. Розгорнутий кут — 180°, прямий — 90°."
+    }
+   ]
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Паралельні прямі й січна",
+   "title": "Три пари кутів",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Відповідні",
+     "formula": "",
+     "text": "Розташовані «однаково» біля кожної прямої. При <span data-latex=\"a \\parallel  b\" data-type=\"inline-math\"></span> — <b>рівні</b>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Різносторонні",
+     "formula": "",
+     "text": "Внутрішні, по різні боки від січної (буква Z). При <span data-latex=\"a \\parallel  b\" data-type=\"inline-math\"></span> — <b>рівні</b>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Односторонні",
+     "formula": "",
+     "text": "Внутрішні, по один бік від січної (буква П). При <span data-latex=\"a \\parallel  b\" data-type=\"inline-math\"></span> разом дають <b>180°</b>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Шоста частина",
+    "content": "Кут <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> дорівнює шостій частині розгорнутого кута. Знайдіть градусну міру кута <span data-latex=\"\\beta \" data-type=\"inline-math\"></span>, що суміжний із кутом <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "30°"
+     },
+     {
+      "id": 1,
+      "content": "120°"
+     },
+     {
+      "id": 2,
+      "content": "60°"
+     },
+     {
+      "id": 3,
+      "content": "150°"
+     },
+     {
+      "id": 4,
+      "content": "140°"
+     }
+    ],
+    "points": 1,
+    "solution": "Розгорнутий кут — 180°, його шоста частина: <span data-latex=\"\\alpha  = 180^{\\circ} : 6 = 30^{\\circ}\" data-type=\"inline-math\"></span>. Суміжні кути разом дають 180°: <span data-latex=\"\\beta  = 180^{\\circ} - 30^{\\circ} = 150^{\\circ}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Прямі a, b, c",
+    "content": "Прямі <span data-latex=\"a\" data-type=\"inline-math\"></span>, <span data-latex=\"b\" data-type=\"inline-math\"></span>, <span data-latex=\"c\" data-type=\"inline-math\"></span> попарно перетинаються в точках <span data-latex=\"A\" data-type=\"inline-math\"></span>, <span data-latex=\"B\" data-type=\"inline-math\"></span>, <span data-latex=\"C\" data-type=\"inline-math\"></span> (див. рисунок). За даними, вказаними на рисунку, знайдіть градусну міру кута <span data-latex=\"ABC\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 460 330\" width=\"414\" height=\"297\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"20\" y1=\"250\" x2=\"430\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"136\" y1=\"316\" x2=\"252\" y2=\"-4\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"412\" y1=\"280\" x2=\"100\" y2=\"100\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"250\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"178\" y=\"280\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"195\" cy=\"155\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"169\" y=\"141\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"360\" cy=\"250\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"352\" y=\"282\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><path d=\"M170 222 A30 30 0 0 0 130 250\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"104\" y=\"212\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">110°</text><path d=\"M400 273 A46 46 0 0 0 406 250\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M408 278 A55 55 0 0 0 415 250\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"410\" y=\"284\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">30°</text><path d=\"M181 192 A40 40 0 0 0 229 175\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"217\" y=\"217\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">?</text><text x=\"30\" y=\"226\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">a</text><text x=\"118\" y=\"306\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">c</text><text x=\"89\" y=\"105\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">b</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "70°"
+     },
+     {
+      "id": 1,
+      "content": "80°"
+     },
+     {
+      "id": 2,
+      "content": "140°"
+     },
+     {
+      "id": 3,
+      "content": "100°"
+     },
+     {
+      "id": 4,
+      "content": "40°"
+     }
+    ],
+    "points": 1,
+    "solution": "Кут <span data-latex=\"A\" data-type=\"inline-math\"></span> суміжний із кутом 110°: <span data-latex=\"\\angle A = 180^{\\circ} - 110^{\\circ} = 70^{\\circ}\" data-type=\"inline-math\"></span>. Кут <span data-latex=\"C\" data-type=\"inline-math\"></span> вертикальний до кута 30°, тож <span data-latex=\"\\angle C = 30^{\\circ}\" data-type=\"inline-math\"></span>. Сума кутів трикутника — 180°: <span data-latex=\"\\angle ABC = 180^{\\circ} - 70^{\\circ} - 30^{\\circ} = 80^{\\circ}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Трикутник",
+   "title": "Сума кутів — 180°",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "180°",
+     "title": "Сума кутів",
+     "formula": "",
+     "text": "<span data-latex=\"\\angle A + \\angle B + \\angle C = 180^{\\circ}\" data-type=\"inline-math\"></span>. Знаємо два кути — знайдемо третій."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Зовнішній кут",
+     "formula": "",
+     "text": "Суміжний із внутрішнім. Дорівнює <b>сумі двох інших</b> кутів трикутника (не суміжних із ним)."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Сторони й кути",
+     "formula": "",
+     "text": "Проти більшої сторони — більший кут. Кожна сторона <b>менша</b> за суму двох інших: <span data-latex=\"b - a &lt; c &lt; b + a\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2016",
+    "title": "Сума кутів",
+    "content": "Визначте градусну міру кута <span data-latex=\"B\" data-type=\"inline-math\"></span> трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\angle A + \\angle C = 70^{\\circ}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "20°"
+     },
+     {
+      "id": 1,
+      "content": "70°"
+     },
+     {
+      "id": 2,
+      "content": "110°"
+     },
+     {
+      "id": 3,
+      "content": "145°"
+     },
+     {
+      "id": 4,
+      "content": "160°"
+     }
+    ],
+    "points": 1,
+    "solution": "Сума кутів трикутника — 180°: <span data-latex=\"\\angle B = 180^{\\circ} - (\\angle A + \\angle C) = 180^{\\circ} - 70^{\\circ} = 110^{\\circ}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Рівнобедрений і рівносторонній",
+   "title": "Кути при основі рівні",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Рівнобедрений",
+     "formula": "",
+     "text": "Дві сторони рівні (бічні). Кути <b>при основі рівні</b>: <span data-latex=\"\\angle A = \\angle C\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"AB = BC\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Три в одному",
+     "formula": "",
+     "text": "Бісектриса, проведена до основи, є також <b>медіаною й висотою</b>."
+    },
+    {
+     "color": "coral",
+     "big": "60°",
+     "title": "Рівносторонній",
+     "formula": "",
+     "text": "Усі сторони рівні, усі кути по <b>60°</b>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2007",
+    "title": "Зовнішній кут рівнобедреного",
+    "content": "Градусна міра зовнішнього кута <span data-latex=\"A\" data-type=\"inline-math\"></span> рівнобедреного трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"AB = BC\" data-type=\"inline-math\"></span>) становить 125°. Знайдіть градусну міру внутрішнього кута <span data-latex=\"B\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 300\" width=\"357\" height=\"255\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"90,270 230,70 370,270\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"270\" x2=\"10\" y2=\"270\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M111 240 A36 36 0 0 0 54 270\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"56\" y=\"214\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">125°</text><text x=\"90\" y=\"300\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"230\" y=\"42\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"370\" y=\"300\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "30°"
+     },
+     {
+      "id": 1,
+      "content": "40°"
+     },
+     {
+      "id": 2,
+      "content": "50°"
+     },
+     {
+      "id": 3,
+      "content": "60°"
+     },
+     {
+      "id": 4,
+      "content": "70°"
+     }
+    ],
+    "points": 1,
+    "solution": "Зовнішній кут при <span data-latex=\"A\" data-type=\"inline-math\"></span> суміжний із внутрішнім: <span data-latex=\"\\angle A = 180^{\\circ} - 125^{\\circ} = 55^{\\circ}\" data-type=\"inline-math\"></span>. Трикутник рівнобедрений з основою <span data-latex=\"AC\" data-type=\"inline-math\"></span>, тож <span data-latex=\"\\angle C = \\angle A = 55^{\\circ}\" data-type=\"inline-math\"></span>. Тоді <span data-latex=\"\\angle B = 180^{\\circ} - 2 \\cdot  55^{\\circ} = 70^{\\circ}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 5 · Медіани й середня лінія",
+   "title": "2 : 1 і половина сторони",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "2 : 1",
+     "title": "Медіани",
+     "formula": "",
+     "text": "Медіана сполучає вершину із серединою протилежної сторони. Медіани перетинаються в одній точці й діляться нею <b>2 : 1 від вершини</b>."
+    },
+    {
+     "color": "mint",
+     "big": "½",
+     "title": "Середня лінія",
+     "formula": "",
+     "text": "Сполучає середини двох сторін. <b>Паралельна</b> третій стороні й дорівнює її <b>половині</b>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Подібні трикутники",
+     "formula": "",
+     "text": "Пряма, паралельна стороні, відтинає подібний трикутник. Сторони й периметри відносяться як <span data-latex=\"k\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Точка перетину медіан",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> проведено медіани <span data-latex=\"AK\" data-type=\"inline-math\"></span>, <span data-latex=\"BP\" data-type=\"inline-math\"></span>, <span data-latex=\"CH\" data-type=\"inline-math\"></span>, які перетинаються в точці <span data-latex=\"O\" data-type=\"inline-math\"></span>. Знайдіть <span data-latex=\"BP\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"OP = 3\" data-type=\"inline-math\"></span> см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3 см"
+     },
+     {
+      "id": 1,
+      "content": "6 см"
+     },
+     {
+      "id": 2,
+      "content": "9 см"
+     },
+     {
+      "id": 3,
+      "content": "12 см"
+     },
+     {
+      "id": 4,
+      "content": "15 см"
+     }
+    ],
+    "points": 1,
+    "solution": "Медіани точкою перетину діляться у відношенні <span data-latex=\"2 : 1\" data-type=\"inline-math\"></span>, рахуючи від вершини: <span data-latex=\"BO = 2 \\cdot  OP = 6\" data-type=\"inline-math\"></span> см. Уся медіана: <span data-latex=\"BP = 6 + 3 = 9\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Середня лінія рівностороннього",
+    "content": "На рисунку зображено рівносторонній трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, <span data-latex=\"KM\" data-type=\"inline-math\"></span> — його середня лінія. Периметр трикутника <span data-latex=\"KBM\" data-type=\"inline-math\"></span> дорівнює 12 см. Визначте периметр чотирикутника <span data-latex=\"AKMC\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 460 360\" width=\"391\" height=\"306\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"40,320 230,-9 420,320\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"6\" stroke-linejoin=\"round\"/><text x=\"11\" y=\"337\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"230\" y=\"-43\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"449\" y=\"337\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><line x1=\"135\" y1=\"156\" x2=\"325\" y2=\"156\" stroke=\"#6D4AFF\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"135\" cy=\"156\" r=\"8\" fill=\"#1E1B4B\"/><circle cx=\"325\" cy=\"156\" r=\"8\" fill=\"#1E1B4B\"/><text x=\"107\" y=\"156\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><text x=\"355\" y=\"156\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "32 см"
+     },
+     {
+      "id": 1,
+      "content": "28 см"
+     },
+     {
+      "id": 2,
+      "content": "24 см"
+     },
+     {
+      "id": 3,
+      "content": "20 см"
+     },
+     {
+      "id": 4,
+      "content": "16 см"
+     }
+    ],
+    "points": 1,
+    "solution": "Середня лінія <span data-latex=\"KM\" data-type=\"inline-math\"></span> рівностороннього трикутника відтинає рівносторонній <span data-latex=\"KBM\" data-type=\"inline-math\"></span> зі стороною <span data-latex=\"12 : 3 = 4\" data-type=\"inline-math\"></span> см. Тоді сторона <span data-latex=\"ABC\" data-type=\"inline-math\"></span> — 8 см, <span data-latex=\"AK = MC = 4\" data-type=\"inline-math\"></span> см, <span data-latex=\"KM = 4\" data-type=\"inline-math\"></span> см, <span data-latex=\"AC = 8\" data-type=\"inline-math\"></span> см. Периметр <span data-latex=\"AKMC = 4 + 4 + 4 + 8 = 20\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Промені й кути",
+    "content": "Які з наведених тверджень є правильними?<p>I. Доповняльні промені мають спільний початок і лежать на одній прямій.</p><p>II. Суміжні кути мають спільну сторону.</p><p>III. Якщо два кути рівні, то вони обов’язково є вертикальними.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "лише I"
+     },
+     {
+      "id": 1,
+      "content": "лише I та II"
+     },
+     {
+      "id": 2,
+      "content": "лише II"
+     },
+     {
+      "id": 3,
+      "content": "лише II та III"
+     },
+     {
+      "id": 4,
+      "content": "I, II та III"
+     }
+    ],
+    "points": 1,
+    "solution": "I — так; II — так (суміжні кути мають спільну сторону); III — ні: рівні кути не обов’язково вертикальні"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Відношення відрізків",
+    "content": "На відрізку <span data-latex=\"AB\" data-type=\"inline-math\"></span> вибрано точку <span data-latex=\"C\" data-type=\"inline-math\"></span> так, що <span data-latex=\"AC : CB = 2 : 3\" data-type=\"inline-math\"></span>. Визначте довжину відрізка <span data-latex=\"AC\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"CB = 12\" data-type=\"inline-math\"></span> см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4 см"
+     },
+     {
+      "id": 1,
+      "content": "18 см"
+     },
+     {
+      "id": 2,
+      "content": "6 см"
+     },
+     {
+      "id": 3,
+      "content": "12 см"
+     },
+     {
+      "id": 4,
+      "content": "8 см"
+     }
+    ],
+    "points": 1,
+    "solution": "AC = 2/3 · 12 = 8 см"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Перпендикулярні прямі",
+    "content": "Пряма <span data-latex=\"n\" data-type=\"inline-math\"></span> перетинає перпендикулярні прямі <span data-latex=\"l\" data-type=\"inline-math\"></span> і <span data-latex=\"m\" data-type=\"inline-math\"></span> (див. рисунок). Визначте градусну міру кута <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 300\" width=\"378\" height=\"270\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"20\" y1=\"230\" x2=\"400\" y2=\"230\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"310\" y1=\"20\" x2=\"310\" y2=\"285\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"275\" x2=\"349\" y2=\"62\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><polyline points=\"310,208 288,208 288,230\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M128 211 A34 34 0 0 0 66 230\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"54\" y=\"190\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">146°</text><path d=\"M338 69 A34 34 0 0 0 310 54\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"337\" y=\"37\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">α</text><text x=\"373\" y=\"68\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">n</text><text x=\"390\" y=\"206\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">l</text><text x=\"336\" y=\"280\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">m</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "34°"
+     },
+     {
+      "id": 1,
+      "content": "46°"
+     },
+     {
+      "id": 2,
+      "content": "54°"
+     },
+     {
+      "id": 3,
+      "content": "56°"
+     },
+     {
+      "id": 4,
+      "content": "58°"
+     }
+    ],
+    "points": 1,
+    "solution": "кут між n і l: 180° − 146° = 34°; α = 90° − 34° = 56°"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Три прямі",
+    "content": "Три прямі, що розміщені в одній площині, перетинаються в одній точці (див. рисунок). Визначте градусну міру кута <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 300\" width=\"396\" height=\"270\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"20\" y1=\"150\" x2=\"420\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"284\" x2=\"325\" y2=\"16\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"332\" y1=\"278\" x2=\"108\" y2=\"22\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M176 150 A44 44 0 0 0 193 185\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M249 183 A44 44 0 0 0 264 150\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M245 118 A40 40 0 0 0 194 120\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><path d=\"M250 111 A49 49 0 0 0 188 113\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"137\" y=\"190\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">52°</text><text x=\"303\" y=\"189\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">49°</text><text x=\"217\" y=\"74\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">α</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "101°"
+     },
+     {
+      "id": 1,
+      "content": "99°"
+     },
+     {
+      "id": 2,
+      "content": "81°"
+     },
+     {
+      "id": 3,
+      "content": "79°"
+     },
+     {
+      "id": 4,
+      "content": "69°"
+     }
+    ],
+    "points": 1,
+    "solution": "кут між нижніми променями: 180° − 52° − 49° = 79°, α — вертикальний до нього"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Розгорнутий кут",
+    "content": "З вершини розгорнутого кута <span data-latex=\"AOB\" data-type=\"inline-math\"></span>, зображеного на рисунку, проведено два промені <span data-latex=\"OK\" data-type=\"inline-math\"></span> і <span data-latex=\"OM\" data-type=\"inline-math\"></span> так, що <span data-latex=\"\\angle KOB = 110^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle MOB = 30^{\\circ}\" data-type=\"inline-math\"></span>. Обчисліть градусну міру кута <span data-latex=\"KOM\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 250\" width=\"378\" height=\"225\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"20\" y1=\"210\" x2=\"400\" y2=\"210\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"210\" x2=\"130\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"210\" x2=\"349\" y2=\"112\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"30\" y=\"240\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"210\" y=\"240\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><text x=\"390\" y=\"240\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"110\" y=\"38\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><text x=\"371\" y=\"104\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "140°"
+     },
+     {
+      "id": 1,
+      "content": "80°"
+     },
+     {
+      "id": 2,
+      "content": "60°"
+     },
+     {
+      "id": 3,
+      "content": "70°"
+     },
+     {
+      "id": 4,
+      "content": "90°"
+     }
+    ],
+    "points": 1,
+    "solution": "∠KOM = 110° − 30° = 80°"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2015",
+    "title": "Кут при основі",
+    "content": "На рисунку зображено рівнобедрений трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"AB = BC\" data-type=\"inline-math\"></span>). Визначте градусну міру кута <span data-latex=\"BAC\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\angle B = 40^{\\circ}\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 320 340\" width=\"272\" height=\"289\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"50,310 160,8 270,310\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><text x=\"29\" y=\"329\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"160\" y=\"-20\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"291\" y=\"329\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><line x1=\"90\" y1=\"153\" x2=\"120\" y2=\"164\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"153\" x2=\"200\" y2=\"164\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M143 55 A50 50 0 0 0 177 55\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"160\" y=\"92\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">40°</text><path d=\"M90 310 A40 40 0 0 0 64 272\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"106\" y=\"288\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">?</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "80°"
+     },
+     {
+      "id": 1,
+      "content": "70°"
+     },
+     {
+      "id": 2,
+      "content": "60°"
+     },
+     {
+      "id": 3,
+      "content": "50°"
+     },
+     {
+      "id": 4,
+      "content": "40°"
+     }
+    ],
+    "points": 1,
+    "solution": "(180° − 40°)/2 = 70°"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Зовнішній кут",
+    "content": "Зовнішній кут при вершині <span data-latex=\"A\" data-type=\"inline-math\"></span> трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> дорівнює 100°, <span data-latex=\"\\angle C = 20^{\\circ}\" data-type=\"inline-math\"></span> (див. рисунок). Визначте градусну міру кута <span data-latex=\"B\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 240\" width=\"374\" height=\"204\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"100,200 118,97 400,200\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"100\" y1=\"200\" x2=\"20\" y2=\"200\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M106 168 A32 32 0 0 0 68 200\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"54\" y=\"166\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">100°</text><path d=\"M344 180 A60 60 0 0 0 340 200\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M335 176 A69 69 0 0 0 331 200\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><text x=\"300\" y=\"182\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">20°</text><path d=\"M112 131 A34 34 0 0 0 150 109\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"147\" y=\"148\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">?</text><text x=\"100\" y=\"230\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"118\" y=\"71\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"400\" y=\"230\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "90°"
+     },
+     {
+      "id": 1,
+      "content": "70°"
+     },
+     {
+      "id": 2,
+      "content": "80°"
+     },
+     {
+      "id": 3,
+      "content": "120°"
+     },
+     {
+      "id": 4,
+      "content": "100°"
+     }
+    ],
+    "points": 1,
+    "solution": "100° = ∠B + 20°, ∠B = 80°"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2013",
+    "title": "Кут при бісектрисі",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"\\angle A = 65^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"BD\" data-type=\"inline-math\"></span> — бісектриса кута <span data-latex=\"B\" data-type=\"inline-math\"></span> (див. рисунок). Знайдіть градусну міру кута <span data-latex=\"BCA\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\angle ABD = 35^{\\circ}\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 360\" width=\"440\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"50,310 164,64 410,310\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"6\" stroke-linejoin=\"round\"/><text x=\"20\" y=\"326\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"156\" y=\"32\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"442\" y=\"323\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><line x1=\"164\" y1=\"64\" x2=\"208\" y2=\"310\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"208\" cy=\"310\" r=\"8\" fill=\"#1E1B4B\"/><text x=\"208\" y=\"342\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><path d=\"M96 310 A46 46 0 0 0 69 268\" fill=\"none\" stroke=\"#139C74\" stroke-width=\"4\"/><text x=\"128\" y=\"286\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#139C74\">65°</text><path d=\"M141 115 A56 56 0 0 0 174 120\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"146\" y=\"150\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">35°</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"35^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"45^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"50^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"55^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"80^{\\circ}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "∠B = 2 · 35° = 70°; ∠C = 180° − 65° − 70° = 45°"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2017 (пробний)",
+    "title": "Сторони 3 : 4 : 5",
+    "content": "Довжини сторін трикутника відносяться як <span data-latex=\"3 : 4 : 5\" data-type=\"inline-math\"></span>. Визначте довжину найбільшої сторони цього трикутника, якщо його периметр дорівнює 72 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "20 см"
+     },
+     {
+      "id": 1,
+      "content": "24 см"
+     },
+     {
+      "id": 2,
+      "content": "30 см"
+     },
+     {
+      "id": 3,
+      "content": "35 см"
+     },
+     {
+      "id": 4,
+      "content": "36 см"
+     }
+    ],
+    "points": 1,
+    "solution": "Сторони <span data-latex=\"3k\" data-type=\"inline-math\"></span>, <span data-latex=\"4k\" data-type=\"inline-math\"></span>, <span data-latex=\"5k\" data-type=\"inline-math\"></span>: <span data-latex=\"12k = 72\" data-type=\"inline-math\"></span>, <span data-latex=\"k = 6\" data-type=\"inline-math\"></span>. Найбільша сторона <span data-latex=\"5 \\cdot  6 = 30\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2016",
+    "title": "Яка може бути сторона",
+    "content": "Якому значенню серед наведених може дорівнювати довжина сторони <span data-latex=\"AC\" data-type=\"inline-math\"></span> трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"AB = 3\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = 10\" data-type=\"inline-math\"></span> см?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3 см"
+     },
+     {
+      "id": 1,
+      "content": "5 см"
+     },
+     {
+      "id": 2,
+      "content": "7 см"
+     },
+     {
+      "id": 3,
+      "content": "11 см"
+     },
+     {
+      "id": 4,
+      "content": "15 см"
+     }
+    ],
+    "points": 1,
+    "solution": "Нерівність трикутника: <span data-latex=\"10 - 3 &lt; AC &lt; 10 + 3\" data-type=\"inline-math\"></span>, тобто <span data-latex=\"7 &lt; AC &lt; 13\" data-type=\"inline-math\"></span>. Підходить лише 11 см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2011",
+    "title": "Пряма, паралельна стороні",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"AB = 31\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = 15\" data-type=\"inline-math\"></span> см, <span data-latex=\"AC = 26\" data-type=\"inline-math\"></span> см. Пряма <span data-latex=\"a\" data-type=\"inline-math\"></span>, паралельна стороні <span data-latex=\"AB\" data-type=\"inline-math\"></span>, перетинає сторони <span data-latex=\"BC\" data-type=\"inline-math\"></span> і <span data-latex=\"AC\" data-type=\"inline-math\"></span> у точках <span data-latex=\"M\" data-type=\"inline-math\"></span> і <span data-latex=\"N\" data-type=\"inline-math\"></span> відповідно. Обчисліть периметр трикутника <span data-latex=\"MNC\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"MC = 5\" data-type=\"inline-math\"></span> см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "15 см"
+     },
+     {
+      "id": 1,
+      "content": "24 см"
+     },
+     {
+      "id": 2,
+      "content": "48 см"
+     },
+     {
+      "id": 3,
+      "content": "21 см"
+     },
+     {
+      "id": 4,
+      "content": "26 см"
+     }
+    ],
+    "points": 1,
+    "solution": "MN ∥ AB → △MNC ∼ △BAC, k = MC : BC = 5 : 15 = 1/3; P = (31 + 15 + 26) · 1/3 = 24 см"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кути і сторони",
+    "content": "Кути гострокутного трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> задовольняють умову <span data-latex=\"\\angle A &lt; \\angle B &lt; \\angle C\" data-type=\"inline-math\"></span>. Які з наведених тверджень є правильними?<p>I. <span data-latex=\"AB\" data-type=\"inline-math\"></span> — найдовша сторона трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>.</p><p>II. Трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> — рівнобедрений.</p><p>III. Довжина висоти, проведеної з вершини <span data-latex=\"A\" data-type=\"inline-math\"></span>, менша за довжину сторони <span data-latex=\"AC\" data-type=\"inline-math\"></span>.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "лише I"
+     },
+     {
+      "id": 1,
+      "content": "лише III"
+     },
+     {
+      "id": 2,
+      "content": "лише I та III"
+     },
+     {
+      "id": 3,
+      "content": "лише II та III"
+     },
+     {
+      "id": 4,
+      "content": "I, II та III"
+     }
+    ],
+    "points": 1,
+    "solution": "I — проти найбільшого кута C лежить найбільша сторона AB; II — кути різні, тож не рівнобедрений; III — перпендикуляр з A на BC коротший за похилу AC"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "НМТ",
+    "title": "Рівносторонній і рівнобедрений",
+    "content": "Рівносторонній трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> і рівнобедрений трикутник <span data-latex=\"ACD\" data-type=\"inline-math\"></span>, у якому <span data-latex=\"AC = DC\" data-type=\"inline-math\"></span> і <span data-latex=\"\\angle ACD = 40^{\\circ}\" data-type=\"inline-math\"></span>, лежать в одній площині (див. рисунок). Установіть відповідність між кутом (1–4) та його градусною мірою (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 480 400\" width=\"384\" height=\"320\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"170,360 9,168 256,125\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"6\" stroke-linejoin=\"round\"/><polygon points=\"170,360 256,125 341,360\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"6\" stroke-linejoin=\"round\"/><text x=\"162\" y=\"393\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"-22\" y=\"154\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"270\" y=\"94\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"368\" y=\"380\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><line x1=\"77\" y1=\"274\" x2=\"102\" y2=\"254\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"131\" x2=\"135\" y2=\"162\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"198\" y1=\"237\" x2=\"228\" y2=\"248\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"313\" y1=\"237\" x2=\"283\" y2=\"248\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M238 172 A50 50 0 0 0 273 172\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"264\" y=\"203\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">40°</text></svg></div>",
+    "lh": "Кут",
+    "rh": "Градусна міра кута",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\angle ABC\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\angle ADC\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "кут між прямими <span data-latex=\"AB\" data-type=\"inline-math\"></span> і <span data-latex=\"AD\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "кут між бісектрисами кутів <span data-latex=\"BAC\" data-type=\"inline-math\"></span> і <span data-latex=\"CAD\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "45°"
+     },
+     {
+      "id": 1,
+      "content": "50°"
+     },
+     {
+      "id": 2,
+      "content": "60°"
+     },
+     {
+      "id": 3,
+      "content": "65°"
+     },
+     {
+      "id": 4,
+      "content": "70°"
+     }
+    ],
+    "points": 4,
+    "solution": "1 — ∠ABC = 60° → В; 2 — ∠ADC = (180° − 40°) : 2 = 70° → Д; 3 — ∠BAD = 60° + 70° = 130°, кут між прямими 50° → Б; 4 — 30° + 35° = 65° → Г"
+   },
+   "answer": "2 4 1 3"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ-2023 (демо)",
+    "title": "Найменший кут",
+    "content": "У прямокутному трикутнику сума двох кутів дорівнює 115°. Визначте градусну міру найменшого кута цього трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5°"
+     },
+     {
+      "id": 1,
+      "content": "15°"
+     },
+     {
+      "id": 2,
+      "content": "25°"
+     },
+     {
+      "id": 3,
+      "content": "35°"
+     },
+     {
+      "id": 4,
+      "content": "65°"
+     }
+    ],
+    "points": 1,
+    "solution": "Сума двох гострих кутів прямокутного трикутника — 90°, а тут 115°, тож один із двох кутів прямий, другий <span data-latex=\"115^{\\circ} - 90^{\\circ} = 25^{\\circ}\" data-type=\"inline-math\"></span>. Третій: <span data-latex=\"180^{\\circ} - 115^{\\circ} = 65^{\\circ}\" data-type=\"inline-math\"></span>. Найменший — 25°."
+   },
+   "answer": 2
+  }
+ ],
+ "summary": [
+  {
+   "big": "180°",
+   "text": "Суміжні кути — 180°, вертикальні — рівні; сума кутів трикутника — 180°."
+  },
+  {
+   "big": "<span data-latex=\"\\parallel \" data-type=\"inline-math\"></span>",
+   "text": "Паралельні прямі: відповідні й різносторонні кути рівні, односторонні — 180° разом."
+  },
+  {
+   "big": "2 : 1",
+   "text": "Медіани діляться точкою перетину 2 : 1 від вершини."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>",
+   "text": "Середня лінія паралельна стороні й дорівнює її половині."
+  }
+ ]
+}

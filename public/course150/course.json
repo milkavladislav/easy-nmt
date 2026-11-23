@@ -96,38 +96,62 @@
      "number": 8,
      "title": "Основні поняття",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t08/lesson.json",
+      "test": "/course150/t08/test.json"
+     },
+     "testQuestions": 20
     },
     {
      "number": 9,
      "title": "Теореми синусів і косинусів",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t09/lesson.json",
+      "test": "/course150/t09/test.json"
+     },
+     "testQuestions": 10
     },
     {
      "number": 10,
      "title": "Прямокутний трикутник",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t10/lesson.json",
+      "test": "/course150/t10/test.json"
+     },
+     "testQuestions": 10
     },
     {
      "number": 11,
      "title": "Площі трикутників",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t11/lesson.json",
+      "test": "/course150/t11/test.json"
+     },
+     "testQuestions": 10
     },
     {
      "number": 12,
      "title": "Вписане й описане коло",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t12/lesson.json",
+      "test": "/course150/t12/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b02/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 3,

@@ -1,0 +1,618 @@
+{
+ "title": "Підсумковий тест · Блок 2. Трикутники (НМТ 150+)",
+ "block": 2,
+ "source": "block-test",
+ "questions": [
+  {
+   "type": "single",
+   "src": "ЗНО-2014 (пробний)",
+   "title": "",
+   "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> проведено висоту <span data-latex=\"BM\" data-type=\"inline-math\"></span> (див. рисунок). Визначте градусну міру кута <span data-latex=\"MBA\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\angle A = 40^{\\circ}\" data-type=\"inline-math\"></span>. (ЗНО-2014, пробний)<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 520 350\" width=\"520\" height=\"350\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"50,280 280,87 470,280\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"280\" y1=\"87\" x2=\"280\" y2=\"280\" stroke=\"#6D4AFF\" stroke-width=\"4\" stroke-linecap=\"round\"/><polyline points=\"300,280 300,260 280,260\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"4\"/><path d=\"M100 280 A50 50 0 0 0 88 248\" fill=\"none\" stroke=\"#139C74\" stroke-width=\"4\"/><text x=\"138\" y=\"264\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#139C74\">40°</text><text x=\"17\" y=\"290\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"283\" y=\"53\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"502\" y=\"290\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"280\" y=\"320\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "20°"
+    },
+    {
+     "id": 1,
+     "content": "45°"
+    },
+    {
+     "id": 2,
+     "content": "50°"
+    },
+    {
+     "id": 3,
+     "content": "60°"
+    },
+    {
+     "id": 4,
+     "content": "90°"
+    }
+   ],
+   "points": 1,
+   "solution": "Трикутник <span data-latex=\"ABM\" data-type=\"inline-math\"></span> прямокутний (<span data-latex=\"\\angle M = 90^{\\circ}\" data-type=\"inline-math\"></span>): <span data-latex=\"\\angle MBA = 90^{\\circ} - 40^{\\circ} = 50^{\\circ}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "ЗНО-2015",
+   "title": "",
+   "content": "Катет <span data-latex=\"CB\" data-type=\"inline-math\"></span> і гіпотенуза <span data-latex=\"AB\" data-type=\"inline-math\"></span> прямокутного трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> лежать на прямих, що перетинаються під кутом 55° (див. рисунок). Визначте градусну міру <span data-latex=\"\\angle CAB\" data-type=\"inline-math\"></span>. (ЗНО-2015)<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 540 380\" width=\"540\" height=\"380\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"330\" y1=\"260\" x2=\"500\" y2=\"260\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"10 8\"/><line x1=\"330\" y1=\"260\" x2=\"473\" y2=\"360\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"10 8\"/><polygon points=\"70,78 330,260 70,260\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><polyline points=\"70,236 94,236 94,260\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M376 260 A46 46 0 0 1 368 286\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"422\" y=\"312\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">55°</text><text x=\"42\" y=\"84\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"42\" y=\"290\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"316\" y=\"304\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "15°"
+    },
+    {
+     "id": 1,
+     "content": "25°"
+    },
+    {
+     "id": 2,
+     "content": "35°"
+    },
+    {
+     "id": 3,
+     "content": "45°"
+    },
+    {
+     "id": 4,
+     "content": "55°"
+    }
+   ],
+   "points": 1,
+   "solution": "Кут 55° вертикальний до кута <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, тож <span data-latex=\"\\angle ABC = 55^{\\circ}\" data-type=\"inline-math\"></span>. Гострі кути прямокутного трикутника дають 90°: <span data-latex=\"\\angle CAB = 90^{\\circ} - 55^{\\circ} = 35^{\\circ}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "ЗНО-2013",
+   "title": "",
+   "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"\\angle A = 65^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"BD\" data-type=\"inline-math\"></span> — бісектриса кута <span data-latex=\"B\" data-type=\"inline-math\"></span>. Знайдіть градусну міру кута <span data-latex=\"BCA\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\angle ABD = 35^{\\circ}\" data-type=\"inline-math\"></span>. (ЗНО-2013)",
+   "variants": [
+    {
+     "id": 0,
+     "content": "35°"
+    },
+    {
+     "id": 1,
+     "content": "45°"
+    },
+    {
+     "id": 2,
+     "content": "50°"
+    },
+    {
+     "id": 3,
+     "content": "55°"
+    },
+    {
+     "id": 4,
+     "content": "80°"
+    }
+   ],
+   "points": 1,
+   "solution": "Бісектриса ділить кут навпіл: <span data-latex=\"\\angle B = 2 \\cdot  35^{\\circ} = 70^{\\circ}\" data-type=\"inline-math\"></span>. Тоді <span data-latex=\"\\angle C = 180^{\\circ} - 65^{\\circ} - 70^{\\circ} = 45^{\\circ}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "ЗНО-2008",
+   "title": "",
+   "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"\\angle A = 59^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle B = 62^{\\circ}\" data-type=\"inline-math\"></span>. Із вершин цих кутів проведено висоти, що перетинаються в точці <span data-latex=\"O\" data-type=\"inline-math\"></span> (див. рисунок). Визначте величину кута <span data-latex=\"AOB\" data-type=\"inline-math\"></span>. (ЗНО-2008)<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 520 380\" width=\"520\" height=\"380\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"50,320 470,320 310,70\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"50\" y1=\"320\" x2=\"348\" y2=\"129\" stroke=\"#6D4AFF\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"470\" y1=\"320\" x2=\"268\" y2=\"110\" stroke=\"#6D4AFF\" stroke-width=\"4\" stroke-linecap=\"round\"/><polyline points=\"337,112 320,123 331,140\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"4\"/><polyline points=\"283,96 296,111 282,125\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"4\"/><circle cx=\"310\" cy=\"154\" r=\"7\" fill=\"#FF6A3D\"/><text x=\"18\" y=\"332\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"501\" y=\"334\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"317\" y=\"37\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"310\" y=\"198\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "98°"
+    },
+    {
+     "id": 1,
+     "content": "121°"
+    },
+    {
+     "id": 2,
+     "content": "144°"
+    },
+    {
+     "id": 3,
+     "content": "149°"
+    },
+    {
+     "id": 4,
+     "content": "154°"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\angle C = 180^{\\circ} - 59^{\\circ} - 62^{\\circ} = 59^{\\circ}\" data-type=\"inline-math\"></span>. У чотирикутнику, утвореному вершиною <span data-latex=\"C\" data-type=\"inline-math\"></span>, точкою <span data-latex=\"O\" data-type=\"inline-math\"></span> і основами висот, два кути прямі, тож <span data-latex=\"\\angle AOB = 180^{\\circ} - \\angle C = 121^{\\circ}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "ЗНО-2016 (пробний)",
+   "title": "",
+   "content": "На сторонах <span data-latex=\"AB\" data-type=\"inline-math\"></span> та <span data-latex=\"AC\" data-type=\"inline-math\"></span> трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> задано точки <span data-latex=\"K\" data-type=\"inline-math\"></span> і <span data-latex=\"M\" data-type=\"inline-math\"></span> відповідно, <span data-latex=\"KM \\parallel  BC\" data-type=\"inline-math\"></span>. Визначте довжину відрізка <span data-latex=\"KM\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"AK = 6\" data-type=\"inline-math\"></span> см, <span data-latex=\"KB = 2\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = 10\" data-type=\"inline-math\"></span> см. (ЗНО-2016, пробний)",
+   "variants": [
+    {
+     "id": 0,
+     "content": "6 см"
+    },
+    {
+     "id": 1,
+     "content": "7 см"
+    },
+    {
+     "id": 2,
+     "content": "7,5 см"
+    },
+    {
+     "id": 3,
+     "content": "8 см"
+    },
+    {
+     "id": 4,
+     "content": "8,5 см"
+    }
+   ],
+   "points": 1,
+   "solution": "Трикутник <span data-latex=\"AKM\" data-type=\"inline-math\"></span> подібний до <span data-latex=\"ABC\" data-type=\"inline-math\"></span> з коефіцієнтом <span data-latex=\"\\dfrac{AK}{AB} = \\dfrac{6}{8} = \\dfrac{3}{4}\" data-type=\"inline-math\"></span>: <span data-latex=\"KM = 10 \\cdot  \\dfrac{3}{4} = 7{,}5\" data-type=\"inline-math\"></span> см."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Медіани трикутника дорівнюють 15 см, 18 см і 12 см. Знайдіть довжину найбільшого з відрізків, на які медіани діляться точкою перетину.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "4 см"
+    },
+    {
+     "id": 1,
+     "content": "8 см"
+    },
+    {
+     "id": 2,
+     "content": "10 см"
+    },
+    {
+     "id": 3,
+     "content": "12 см"
+    },
+    {
+     "id": 4,
+     "content": "14 см"
+    }
+   ],
+   "points": 1,
+   "solution": "найбільший відрізок — 2/3 найдовшої медіани: 2/3 · 18 = 12 см"
+  },
+  {
+   "type": "single",
+   "src": "НМТ-2025",
+   "title": "",
+   "content": "Які з наведених тверджень є правильними для будь-якого трикутника? (НМТ-2025)<p>I. Сума будь-яких двох сторін трикутника менша за третю його сторону.</p><p>II. Сума будь-яких двох кутів трикутника більша за 90°.</p><p>III. Навпроти найбільшої сторони трикутника лежить найбільший його кут.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише II"
+    },
+    {
+     "id": 2,
+     "content": "лише III"
+    },
+    {
+     "id": 3,
+     "content": "лише I та III"
+    },
+    {
+     "id": 4,
+     "content": "I, II та III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — ні: навпаки, сума двох сторін <b>більша</b> за третю. II — ні: у трикутнику з кутами 20°, 30°, 130° сума <span data-latex=\"20^{\\circ} + 30^{\\circ} = 50^{\\circ}\" data-type=\"inline-math\"></span>. III — так."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"AB = 7\" data-type=\"inline-math\"></span>, <span data-latex=\"AC = 8\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle A = 120^{\\circ}\" data-type=\"inline-math\"></span>. Знайдіть <span data-latex=\"BC\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "11"
+    },
+    {
+     "id": 1,
+     "content": "12"
+    },
+    {
+     "id": 2,
+     "content": "13"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\sqrt{57}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "15"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"BC^{2} = 49 + 64 - 2 \\cdot  7 \\cdot  8 \\cdot  \\operatorname{cos} 120^{\\circ} = 113 + 56 = 169\" data-type=\"inline-math\"></span>, <span data-latex=\"BC = 13\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Висота прямокутного трикутника, проведена до гіпотенузи, дорівнює 12 і ділить гіпотенузу на відрізки, один з яких дорівнює 9. Знайдіть гіпотенузу.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "16"
+    },
+    {
+     "id": 1,
+     "content": "20"
+    },
+    {
+     "id": 2,
+     "content": "21"
+    },
+    {
+     "id": 3,
+     "content": "25"
+    },
+    {
+     "id": 4,
+     "content": "30"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"h^{2} = a_{c} \\cdot  b_{c}\" data-type=\"inline-math\"></span>: другий відрізок <span data-latex=\"144 : 9 = 16\" data-type=\"inline-math\"></span>. Гіпотенуза: <span data-latex=\"9 + 16 = 25\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Дві сторони трикутника дорівнюють 8 і 10, а його площа — <span data-latex=\"20\\sqrt{3}\" data-type=\"inline-math\"></span>. Знайдіть гострий кут між цими сторонами.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "15°"
+    },
+    {
+     "id": 1,
+     "content": "30°"
+    },
+    {
+     "id": 2,
+     "content": "45°"
+    },
+    {
+     "id": 3,
+     "content": "50°"
+    },
+    {
+     "id": 4,
+     "content": "60°"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{1}{2} \\cdot  8 \\cdot  10 \\cdot  \\operatorname{sin} \\alpha  = 20\\sqrt{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} \\alpha  = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>, гострий кут — 60°."
+  },
+  {
+   "type": "single",
+   "src": "НМТ-2026",
+   "title": "",
+   "content": "Трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> — рівнобедрений, <span data-latex=\"\\angle ABC = 120^{\\circ}\" data-type=\"inline-math\"></span>. Точки <span data-latex=\"K\" data-type=\"inline-math\"></span> і <span data-latex=\"M\" data-type=\"inline-math\"></span> є серединами сторін <span data-latex=\"AB\" data-type=\"inline-math\"></span> та <span data-latex=\"AC\" data-type=\"inline-math\"></span> відповідно. Визначте площу (см²) чотирикутника <span data-latex=\"KBCM\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"AC = 24\" data-type=\"inline-math\"></span> см. (НМТ-2026)",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"48\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "24"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"24\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "36"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"36\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "Кути при основі — по 30°, висота до основи <span data-latex=\"h = 12 \\cdot  \\operatorname{tg} 30^{\\circ} = 4\\sqrt{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"S_{ABC} = \\dfrac{1}{2} \\cdot  24 \\cdot  4\\sqrt{3} = 48\\sqrt{3}\" data-type=\"inline-math\"></span>. <span data-latex=\"KM\" data-type=\"inline-math\"></span> — середня лінія, трикутник <span data-latex=\"AKM\" data-type=\"inline-math\"></span> має площу <span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span> від <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, тож <span data-latex=\"S_{KBCM} = \\dfrac{3}{4} \\cdot  48\\sqrt{3} = 36\\sqrt{3}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Катети прямокутного трикутника дорівнюють 5 і 12. Знайдіть радіус кола, вписаного в цей трикутник.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1"
+    },
+    {
+     "id": 1,
+     "content": "2"
+    },
+    {
+     "id": 2,
+     "content": "2,5"
+    },
+    {
+     "id": 3,
+     "content": "3"
+    },
+    {
+     "id": 4,
+     "content": "6,5"
+    }
+   ],
+   "points": 1,
+   "solution": "Гіпотенуза <span data-latex=\"\\sqrt{25 + 144} = 13\" data-type=\"inline-math\"></span>, <span data-latex=\"r = \\dfrac{5 + 12 - 13}{2} = 2\" data-type=\"inline-math\"></span>. (6,5 — це радіус <b>описаного</b> кола.)"
+  },
+  {
+   "type": "single",
+   "src": "НМТ-2024",
+   "title": "",
+   "content": "Які з наведених тверджень є правильними? (НМТ-2024)<p>I. Серединний перпендикуляр, проведений до сторони рівностороннього трикутника, ділить його на два рівних трикутники.</p><p>II. Точка перетину серединних перпендикулярів, проведених до катетів прямокутного трикутника, є серединою його гіпотенузи.</p><p>III. Точка перетину серединних перпендикулярів, проведених до сторін будь-якого тупокутного трикутника, міститься всередині цього трикутника.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише I та II"
+    },
+    {
+     "id": 2,
+     "content": "лише I та III"
+    },
+    {
+     "id": 3,
+     "content": "лише II та III"
+    },
+    {
+     "id": 4,
+     "content": "I, II та III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — так: він проходить через протилежну вершину. II — так: це центр описаного кола прямокутного трикутника. III — ні: у тупокутного центр описаного кола лежить <b>поза</b> трикутником."
+  },
+  {
+   "type": "single",
+   "src": "ЗНО-2019 (пробний)",
+   "title": "",
+   "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> кут <span data-latex=\"B\" data-type=\"inline-math\"></span> — тупий. Які з наведених тверджень є правильними? (ЗНО-2019, пробний)<p>I. <span data-latex=\"\\angle A + \\angle C &lt; 90^{\\circ}\" data-type=\"inline-math\"></span>.</p><p>II. <span data-latex=\"AB + BC &lt; AC\" data-type=\"inline-math\"></span>.</p><p>III. Центр кола, описаного навколо трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, лежить поза його межами.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I і II"
+    },
+    {
+     "id": 1,
+     "content": "лише I"
+    },
+    {
+     "id": 2,
+     "content": "лише II та III"
+    },
+    {
+     "id": 3,
+     "content": "I, II і III"
+    },
+    {
+     "id": 4,
+     "content": "лише I і III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — так: <span data-latex=\"\\angle A + \\angle C = 180^{\\circ} - \\angle B &lt; 90^{\\circ}\" data-type=\"inline-math\"></span>. II — ні: суперечить нерівності трикутника. III — так: у тупокутного трикутника центр описаного кола зовні."
+  },
+  {
+   "type": "connect",
+   "src": "ЗНО-2017",
+   "title": "",
+   "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span>: <span data-latex=\"AB = c\" data-type=\"inline-math\"></span>, <span data-latex=\"BC = a\" data-type=\"inline-math\"></span>, <span data-latex=\"AC = b\" data-type=\"inline-math\"></span>. До кожного початку речення (1–4) доберіть його закінчення (А–Д) так, щоб утворилося правильне твердження. (ЗНО-2017)",
+   "lh": "Початок речення",
+   "rh": "Закінчення речення",
+   "variants": [
+    {
+     "id": 0,
+     "content": "Якщо <span data-latex=\"a = b = c\" data-type=\"inline-math\"></span>,"
+    },
+    {
+     "id": 1,
+     "content": "Якщо <span data-latex=\"c^{2} = a^{2} + b^{2}\" data-type=\"inline-math\"></span>,"
+    },
+    {
+     "id": 2,
+     "content": "Якщо <span data-latex=\"a = c = \\dfrac{b}{\\sqrt{2}}\" data-type=\"inline-math\"></span>,"
+    },
+    {
+     "id": 3,
+     "content": "Якщо <span data-latex=\"c^{2} = a^{2} + b^{2} - 2ab \\cdot  (-\\dfrac{1}{2})\" data-type=\"inline-math\"></span>,"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "то <span data-latex=\"\\angle C = 30^{\\circ}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "id": 1,
+     "content": "то <span data-latex=\"\\angle C = 45^{\\circ}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "id": 2,
+     "content": "то <span data-latex=\"\\angle C = 60^{\\circ}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "id": 3,
+     "content": "то <span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "id": 4,
+     "content": "то <span data-latex=\"\\angle C = 120^{\\circ}\" data-type=\"inline-math\"></span>."
+    }
+   ],
+   "points": 4,
+   "solution": "1 — рівносторонній: 60° (В); 2 — обернена теорема Піфагора: <span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span> (Г); 3 — <span data-latex=\"a^{2} + c^{2} = b^{2}\" data-type=\"inline-math\"></span>, тож прямий кут <span data-latex=\"B\" data-type=\"inline-math\"></span>, а трикутник рівнобедрений: <span data-latex=\"\\angle C = 45^{\\circ}\" data-type=\"inline-math\"></span> (Б); 4 — теорема косинусів з <span data-latex=\"\\operatorname{cos} C = -\\dfrac{1}{2}\" data-type=\"inline-math\"></span>: 120° (Д)."
+  },
+  {
+   "type": "connect",
+   "src": "НМТ-2023",
+   "title": "",
+   "content": "Периметр рівнобедреного трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span> дорівнює 32 см, <span data-latex=\"AB = BC = 10\" data-type=\"inline-math\"></span> см. Узгодьте відрізок (1–3) з його довжиною (А–Д). (НМТ-2023)",
+   "lh": "Відрізок",
+   "rh": "Довжина відрізка, см",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"AC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "висота, проведена з вершини <span data-latex=\"B\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "радіус кола, описаного навколо трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "6,25"
+    },
+    {
+     "id": 1,
+     "content": "7,5"
+    },
+    {
+     "id": 2,
+     "content": "8"
+    },
+    {
+     "id": 3,
+     "content": "12"
+    },
+    {
+     "id": 4,
+     "content": "12,5"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"AC = 32 - 20 = 12\" data-type=\"inline-math\"></span> (Г); висота до основи ділить її навпіл: <span data-latex=\"\\sqrt{10^{2} - 6^{2}} = 8\" data-type=\"inline-math\"></span> (В); <span data-latex=\"S = \\dfrac{1}{2} \\cdot  12 \\cdot  8 = 48\" data-type=\"inline-math\"></span>, <span data-latex=\"R = \\dfrac{abc}{4S} = \\dfrac{10 \\cdot  10 \\cdot  12}{192} = 6{,}25\" data-type=\"inline-math\"></span> (А)."
+  },
+  {
+   "type": "connect",
+   "src": "НМТ-2023",
+   "title": "",
+   "content": "У прямокутному трикутнику <span data-latex=\"ACB\" data-type=\"inline-math\"></span> <span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle B = 24^{\\circ}\" data-type=\"inline-math\"></span>. На продовженні катета <span data-latex=\"AC\" data-type=\"inline-math\"></span> вибрано точку <span data-latex=\"K\" data-type=\"inline-math\"></span> так, що <span data-latex=\"AK = KB\" data-type=\"inline-math\"></span> (див. рисунок). Точка <span data-latex=\"O\" data-type=\"inline-math\"></span> — центр кола, описаного навколо трикутника <span data-latex=\"ACB\" data-type=\"inline-math\"></span>. Узгодьте кут (1–3) із його градусною мірою (А–Д). (НМТ-2023)<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 460 460\" width=\"460\" height=\"460\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"110\" y1=\"175\" x2=\"110\" y2=\"409\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"10 8\"/><polygon points=\"110,59 370,175 110,175\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"409\" x2=\"370\" y2=\"175\" stroke=\"#6D4AFF\" stroke-width=\"4\" stroke-linecap=\"round\"/><polyline points=\"110,153 132,153 132,175\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><circle cx=\"240\" cy=\"117\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"96\" y=\"28\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"404\" y=\"170\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"79\" y=\"161\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"100\" y=\"442\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><text x=\"254\" y=\"101\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "lh": "Кут",
+   "rh": "Градусна міра кута",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\angle BAC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\angle KBC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\angle OKB\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "24°"
+    },
+    {
+     "id": 1,
+     "content": "34°"
+    },
+    {
+     "id": 2,
+     "content": "42°"
+    },
+    {
+     "id": 3,
+     "content": "66°"
+    },
+    {
+     "id": 4,
+     "content": "72°"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"\\angle BAC = 90^{\\circ} - 24^{\\circ} = 66^{\\circ}\" data-type=\"inline-math\"></span> (Г). Трикутник <span data-latex=\"AKB\" data-type=\"inline-math\"></span> рівнобедрений: <span data-latex=\"\\angle KBA = \\angle KAB = 66^{\\circ}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"\\angle KBC = 66^{\\circ} - 24^{\\circ} = 42^{\\circ}\" data-type=\"inline-math\"></span> (В). <span data-latex=\"O\" data-type=\"inline-math\"></span> — середина гіпотенузи <span data-latex=\"AB\" data-type=\"inline-math\"></span>, тож <span data-latex=\"KO\" data-type=\"inline-math\"></span> — медіана й бісектриса рівнобедреного <span data-latex=\"AKB\" data-type=\"inline-math\"></span>: <span data-latex=\"\\angle OKB = (180^{\\circ} - 132^{\\circ}) : 2 = 24^{\\circ}\" data-type=\"inline-math\"></span> (А)."
+  },
+  {
+   "type": "short",
+   "src": "ЗНО-2012",
+   "title": "",
+   "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> основа висоти <span data-latex=\"AK\" data-type=\"inline-math\"></span> лежить на продовженні сторони <span data-latex=\"BC\" data-type=\"inline-math\"></span> за точку <span data-latex=\"B\" data-type=\"inline-math\"></span>. <span data-latex=\"AK = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"KB = 2\\sqrt{3}\" data-type=\"inline-math\"></span>. Радіус кола, описаного навколо трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, дорівнює <span data-latex=\"15\\sqrt{3}\" data-type=\"inline-math\"></span>. Визначте довжину <span data-latex=\"AC\" data-type=\"inline-math\"></span>. (ЗНО-2012)",
+   "variants": [],
+   "points": 2,
+   "solution": "З прямокутного трикутника <span data-latex=\"AKB\" data-type=\"inline-math\"></span>: <span data-latex=\"\\operatorname{tg}\\angle ABK = \\dfrac{6}{2\\sqrt{3}} = \\sqrt{3}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"\\angle ABK = 60^{\\circ}\" data-type=\"inline-math\"></span>, а тупий кут <span data-latex=\"ABC = 120^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} 120^{\\circ} = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>. За теоремою синусів <span data-latex=\"AC = 2R\\operatorname{sin} B = 2 \\cdot  15\\sqrt{3} \\cdot  \\dfrac{\\sqrt{3}}{2} = 45\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "src": "ЗНО-2018",
+   "title": "",
+   "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) відстані від середини медіани <span data-latex=\"BM\" data-type=\"inline-math\"></span> до катетів <span data-latex=\"AC\" data-type=\"inline-math\"></span> і <span data-latex=\"BC\" data-type=\"inline-math\"></span> дорівнюють 5 см і 6 см відповідно. Визначте радіус (у см) кола, описаного навколо трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>. (ЗНО-2018)",
+   "variants": [],
+   "points": 2,
+   "solution": "Середина медіани <span data-latex=\"BM\" data-type=\"inline-math\"></span> удвічі ближча до катетів, ніж кінці: до <span data-latex=\"AC\" data-type=\"inline-math\"></span> відстань від <span data-latex=\"B\" data-type=\"inline-math\"></span> — це <span data-latex=\"BC = 2 \\cdot  5 = 10\" data-type=\"inline-math\"></span>, а до <span data-latex=\"BC\" data-type=\"inline-math\"></span> відстань від <span data-latex=\"M\" data-type=\"inline-math\"></span> — це <span data-latex=\"MC = 2 \\cdot  6 = 12\" data-type=\"inline-math\"></span>, тож <span data-latex=\"AC = 24\" data-type=\"inline-math\"></span>. Гіпотенуза <span data-latex=\"\\sqrt{24^{2} + 10^{2}} = 26\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 13\" data-type=\"inline-math\"></span> см."
+  },
+  {
+   "type": "short",
+   "src": "ЗНО-2013",
+   "title": "",
+   "content": "Паркова зона має форму трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>. Дуга <span data-latex=\"AB\" data-type=\"inline-math\"></span> — велосипедна доріжка, вона є четвертою частиною кола радіуса 1,8 км. <span data-latex=\"CA\" data-type=\"inline-math\"></span> і <span data-latex=\"CB\" data-type=\"inline-math\"></span> — дотичні до цього кола (<span data-latex=\"A\" data-type=\"inline-math\"></span> і <span data-latex=\"B\" data-type=\"inline-math\"></span> — точки дотику). Обчисліть площу паркової зони (у км²). (ЗНО-2013)",
+   "variants": [],
+   "points": 2,
+   "solution": "Дуга — чверть кола, тож <span data-latex=\"\\angle AOB = 90^{\\circ}\" data-type=\"inline-math\"></span>, а радіуси <span data-latex=\"OA\" data-type=\"inline-math\"></span>, <span data-latex=\"OB\" data-type=\"inline-math\"></span> перпендикулярні дотичним: <span data-latex=\"OACB\" data-type=\"inline-math\"></span> — квадрат зі стороною 1,8. Трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> — половина квадрата: <span data-latex=\"S = \\dfrac{1{,}8^{2}}{2} = 1{,}62\" data-type=\"inline-math\"></span> км²."
+  }
+ ],
+ "answers": [
+  2,
+  2,
+  1,
+  1,
+  2,
+  3,
+  2,
+  2,
+  3,
+  4,
+  4,
+  1,
+  1,
+  4,
+  "2 3 1 4",
+  "3 2 0",
+  "3 2 0",
+  "45",
+  "13",
+  "1,62"
+ ]
+}

@@ -1,9 +1,9 @@
-import { ArrowLeft, Play, Loader2, BookOpen } from 'lucide-react';
+import { ArrowLeft, Play, Loader2, Compass } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 
-export default function TopicDetails({ topic, onNavigate, onOpenDovidnik }) {
+export default function TopicDetails({ topic, onNavigate }) {
   const [tests, setTests] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -37,9 +37,9 @@ export default function TopicDetails({ topic, onNavigate, onOpenDovidnik }) {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center">
+      <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f] flex items-center justify-center">
         <div className="text-center animate-fade-in">
-          <Loader2 className="h-12 w-12 text-orange-400 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-[#f5c86b] animate-spin mx-auto mb-4" />
           <p className="text-slate-300">Завантаження деталей теми...</p>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function TopicDetails({ topic, onNavigate, onOpenDovidnik }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
+    <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center justify-between mb-4 sm:mb-6">
           <button
@@ -73,18 +73,11 @@ export default function TopicDetails({ topic, onNavigate, onOpenDovidnik }) {
             <ArrowLeft className="h-4 sm:h-5 w-4 sm:w-5" />
             <span className="text-sm sm:text-base">Повернутися до курсу</span>
           </button>
-          <button
-            onClick={onOpenDovidnik}
-            className="flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-3 sm:px-4 py-2 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25"
-          >
-            <BookOpen className="h-4 sm:h-5 w-4 sm:w-5" />
-            <span className="text-xs sm:text-sm font-medium">Довідник</span>
-          </button>
         </div>
 
         <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-xl rounded-3xl border border-orange-500/20 overflow-hidden mb-8 animate-slide-up shadow-2xl shadow-orange-500/10">
           <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 p-4 sm:p-8">
-            <span className="text-3xl sm:text-4xl mb-4 block">🐱</span>
+            <Compass className="h-9 w-9 sm:h-10 sm:w-10 mb-4 text-white" />
             <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2">{topic.title}</h1>
             <p className="text-orange-200 text-sm sm:text-base">Тема #{topic.order}</p>
           </div>

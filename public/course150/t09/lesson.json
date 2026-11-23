@@ -1,0 +1,780 @@
+{
+ "number": 9,
+ "title": "Теореми синусів і косинусів",
+ "intro": [
+  {
+   "title": "Теорема косинусів",
+   "text": "третя сторона за двома сторонами й кутом"
+  },
+  {
+   "title": "Кут за трьома сторонами",
+   "text": "знак косинуса підкаже, чи кут тупий"
+  },
+  {
+   "title": "Теорема синусів",
+   "text": "сторони пропорційні синусам протилежних кутів"
+  },
+  {
+   "title": "Описане коло",
+   "text": "відношення сторони до синуса — це <span data-latex=\"2R\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"c^{2}\" data-type=\"inline-math\"></span>",
+   "text": "теорема косинусів"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{a}{\\operatorname{sin} A}\" data-type=\"inline-math\"></span>",
+   "text": "теорема синусів"
+  },
+  {
+   "big": "<span data-latex=\"2R\" data-type=\"inline-math\"></span>",
+   "text": "радіус описаного кола"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Теорема косинусів",
+   "title": "Квадрат сторони",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"c^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"c^{2} = a^{2} + b^{2} - 2ab\\operatorname{cos} C\" data-type=\"inline-math\"></span>, де <span data-latex=\"C\" data-type=\"inline-math\"></span> — кут <b>між</b> сторонами <span data-latex=\"a\" data-type=\"inline-math\"></span> і <span data-latex=\"b\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Корисні косинуси",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos} 60^{\\circ} = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{cos} 45^{\\circ} = \\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{cos} 30^{\\circ} = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{cos} 90^{\\circ} = 0\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "+",
+     "title": "Тупий кут",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos} 120^{\\circ} = -\\dfrac{1}{2}\" data-type=\"inline-math\"></span>: мінус на мінус дає плюс — <span data-latex=\"c^{2} = a^{2} + b^{2} + ab\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Сторона між двома відомими",
+    "content": "Знайдіть невідому сторону трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"AB = 5\" data-type=\"inline-math\"></span>, <span data-latex=\"BC = 8\" data-type=\"inline-math\"></span>, а <span data-latex=\"\\angle B = 60^{\\circ}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "9"
+     },
+     {
+      "id": 4,
+      "content": "11"
+     }
+    ],
+    "points": 1,
+    "solution": "За теоремою косинусів: <span data-latex=\"AC^{2} = 5^{2} + 8^{2} - 2 \\cdot  5 \\cdot  8 \\cdot  \\operatorname{cos} 60^{\\circ} = 25 + 64 - 40 = 49\" data-type=\"inline-math\"></span>, тож <span data-latex=\"AC = 7\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Кут за трьома сторонами",
+   "title": "Обертаємо формулу",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "cos",
+     "title": "Формула кута",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos} C = \\dfrac{a^{2} + b^{2} - c^{2}}{2ab}\" data-type=\"inline-math\"></span>, де <span data-latex=\"c\" data-type=\"inline-math\"></span> — сторона <b>проти</b> кута <span data-latex=\"C\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Найбільший кут",
+     "formula": "",
+     "text": "Лежить проти <b>найбільшої</b> сторони. Найменший — проти найменшої."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Знак косинуса",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos} &gt; 0\" data-type=\"inline-math\"></span> — кут гострий, <span data-latex=\"= 0\" data-type=\"inline-math\"></span> — прямий, <span data-latex=\"&lt; 0\" data-type=\"inline-math\"></span> — <b>тупий</b>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Найбільший кут",
+    "content": "Сторони трикутника дорівнюють 12 см, 20 см і 28 см. Знайдіть найбільший кут трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"30^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"45^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"60^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"120^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"150^{\\circ}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Найбільший кут — проти сторони 28 см: <span data-latex=\"\\operatorname{cos} \\alpha  = \\dfrac{12^{2} + 20^{2} - 28^{2}}{2 \\cdot  12 \\cdot  20} = \\dfrac{144 + 400 - 784}{480} = -\\dfrac{1}{2}\" data-type=\"inline-math\"></span>. Косинус від’ємний, кут тупий: <span data-latex=\"\\alpha  = 120^{\\circ}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Теорема синусів",
+   "title": "Сторони й протилежні кути",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "=",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"\\dfrac{a}{\\operatorname{sin} A} = \\dfrac{b}{\\operatorname{sin} B} = \\dfrac{c}{\\operatorname{sin} C}\" data-type=\"inline-math\"></span> — кожна сторона ділиться на синус <b>протилежного</b> кута."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Коли брати",
+     "formula": "",
+     "text": "Відомі <b>кут і протилежна сторона</b> та ще один кут або сторона."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Корисні синуси",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{sin} 30^{\\circ} = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} 45^{\\circ} = \\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} 60^{\\circ} = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin}(180^{\\circ} - \\alpha ) = \\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Сторона проти 60°",
+    "content": "Два кути трикутника дорівнюють 60° і 45°, а сторона, яка лежить проти меншого з них, дорівнює <span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span> см. Знайдіть сторону трикутника, яка лежить проти кута 60°.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "8"
+     },
+     {
+      "id": 1,
+      "content": "10"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"8\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"4\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Менший кут — 45°, проти нього <span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span>. За теоремою синусів: <span data-latex=\"\\dfrac{8\\sqrt{2}}{\\operatorname{sin} 45^{\\circ}} = \\dfrac{x}{\\operatorname{sin} 60^{\\circ}}\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 8\\sqrt{2} \\cdot  \\dfrac{\\sqrt{3}}{2} : \\dfrac{\\sqrt{2}}{2} = 8\\sqrt{3}\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Радіус описаного кола",
+   "title": "Те саме відношення",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"2R\" data-type=\"inline-math\"></span>",
+     "title": "Розширена теорема",
+     "formula": "",
+     "text": "<span data-latex=\"\\dfrac{a}{\\operatorname{sin} A} = 2R\" data-type=\"inline-math\"></span>, де <span data-latex=\"R\" data-type=\"inline-math\"></span> — радіус кола, <b>описаного</b> навколо трикутника."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Знайти R",
+     "formula": "",
+     "text": "Досить однієї сторони й протилежного кута: <span data-latex=\"R = \\dfrac{a}{2\\operatorname{sin} A}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Знайти сторону",
+     "formula": "",
+     "text": "Відомий <span data-latex=\"R\" data-type=\"inline-math\"></span> і кут — сторона <span data-latex=\"a = 2R\\operatorname{sin} A\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Радіус описаного кола",
+    "content": "У трикутнику <span data-latex=\"DEF\" data-type=\"inline-math\"></span> відомо, що <span data-latex=\"DE = 8\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\operatorname{sin} F = 0{,}16\" data-type=\"inline-math\"></span>. Знайдіть радіус кола, описаного навколо трикутника <span data-latex=\"DEF\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "20 см"
+     },
+     {
+      "id": 1,
+      "content": "25 см"
+     },
+     {
+      "id": 2,
+      "content": "30 см"
+     },
+     {
+      "id": 3,
+      "content": "45 см"
+     },
+     {
+      "id": 4,
+      "content": "50 см"
+     }
+    ],
+    "points": 1,
+    "solution": "Сторона <span data-latex=\"DE\" data-type=\"inline-math\"></span> лежить проти кута <span data-latex=\"F\" data-type=\"inline-math\"></span>: <span data-latex=\"\\dfrac{DE}{\\operatorname{sin} F} = 2R\" data-type=\"inline-math\"></span>, <span data-latex=\"2R = \\dfrac{8}{0{,}16} = 50\" data-type=\"inline-math\"></span>, тож <span data-latex=\"R = 25\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Сторона за двома сторонами й кутом",
+    "content": "Знайдіть невідому сторону трикутника <span data-latex=\"DEF\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"DE = 4\" data-type=\"inline-math\"></span> см, <span data-latex=\"DF = 2\\sqrt{3}\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\angle D = 30^{\\circ}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1 см"
+     },
+     {
+      "id": 1,
+      "content": "2 см"
+     },
+     {
+      "id": 2,
+      "content": "2,25 см"
+     },
+     {
+      "id": 3,
+      "content": "5 см"
+     },
+     {
+      "id": 4,
+      "content": "6 см"
+     }
+    ],
+    "points": 1,
+    "solution": "EF² = 16 + 12 − 2 · 4 · 2√3 · cos 30° = 28 − 24 = 4 → EF = 2 см"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Третя сторона",
+    "content": "Дві сторони трикутника дорівнюють <span data-latex=\"3\\sqrt{3}\" data-type=\"inline-math\"></span> см і 11 см, а кут між ними — 30°. Знайдіть третю сторону трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{247}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "c² = 27 + 121 − 2 · 3√3 · 11 · (√3/2) = 148 − 99 = 49 → c = 7 см"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Косинус найбільшого кута",
+    "content": "Сторони трикутника дорівнюють 7, 8 і 10. Знайдіть косинус найбільшого кута цього трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{7}{96}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{23}{112}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{13}{112}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{11}{96}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{13}{52}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "найбільший кут — проти сторони 10: cos = (49 + 64 − 100)/(2 · 7 · 8) = 13/112"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Медіана через теорему косинусів",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"AB = 6\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = \\sqrt{2}\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\angle B = 45^{\\circ}\" data-type=\"inline-math\"></span>. Обчисліть довжину медіани, проведеної з вершини <span data-latex=\"C\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\sqrt{14}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{7}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\sqrt{17}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "BM = 3 (половина AB); CM² = 2 + 9 − 2 · √2 · 3 · (√2/2) = 5 → √5 см"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2013",
+    "title": "Запис теореми синусів",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"AC = 2\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\angle A = 50^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle B = 70^{\\circ}\" data-type=\"inline-math\"></span> (див. рисунок). Визначте <span data-latex=\"BC\" data-type=\"inline-math\"></span> (у см) за теоремою синусів.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 330\" width=\"396\" height=\"297\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"40,290 253,36 400,290\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"6\" stroke-linejoin=\"round\"/><text x=\"9\" y=\"304\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"258\" y=\"2\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"430\" y=\"305\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><path d=\"M90 290 A50 50 0 0 0 72 252\" fill=\"none\" stroke=\"#139C74\" stroke-width=\"4\"/><text x=\"126\" y=\"268\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#139C74\">50°</text><path d=\"M224 71 A46 46 0 0 0 276 76\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"257\" y=\"112\" font-size=\"28\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">70°</text><text x=\"220\" y=\"320\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">2 см</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{2\\operatorname{sin} 70^{\\circ}}{\\operatorname{sin} 50^{\\circ}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{\\operatorname{sin} 50^{\\circ}}{2\\operatorname{sin} 70^{\\circ}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{\\operatorname{sin} 50^{\\circ}\\operatorname{sin} 70^{\\circ}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{\\operatorname{sin} 70^{\\circ}}{2\\operatorname{sin} 50^{\\circ}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{2\\operatorname{sin} 50^{\\circ}}{\\operatorname{sin} 70^{\\circ}}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "BC/sin A = AC/sin B → BC = 2 sin 50°/sin 70°"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2014",
+    "title": "Сторона через висоту",
+    "content": "У гострокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> проведено висоту <span data-latex=\"BM\" data-type=\"inline-math\"></span>. Визначте довжину сторони <span data-latex=\"AB\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"BM = 12\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle A = \\alpha \" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{12}{\\text{cos α}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"12\\text{cos α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"12\\text{tg α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"12\\text{sin α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{12}{\\text{sin α}}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "у прямокутному △ABM: sin α = BM/AB → AB = 12/sin α"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кут за двома сторонами",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> відомо, що <span data-latex=\"AC = \\sqrt{2}\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = 1\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\angle A = 30^{\\circ}\" data-type=\"inline-math\"></span>. Знайдіть кут <span data-latex=\"B\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"30^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"45^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"60^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"90^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"120^{\\circ}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "BC/sin A = AC/sin B → sin B = √2 · ½ : 1 = √2/2 → B = 45° (135° серед варіантів немає)"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Синус кута",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> відомо, що <span data-latex=\"AB = 12\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = 10\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\operatorname{sin} A = 0{,}2\" data-type=\"inline-math\"></span>. Знайдіть синус кута <span data-latex=\"C\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,2"
+     },
+     {
+      "id": 1,
+      "content": "0,24"
+     },
+     {
+      "id": 2,
+      "content": "0,25"
+     },
+     {
+      "id": 3,
+      "content": "0,3"
+     },
+     {
+      "id": 4,
+      "content": "0,325"
+     }
+    ],
+    "points": 1,
+    "solution": "BC/sin A = AB/sin C → sin C = 12 · 0,2 : 10 = 0,24"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Основа рівнобедреного",
+    "content": "Кут при основі рівнобедреного трикутника дорівнює 30°, а бічна сторона — <span data-latex=\"4\\sqrt{2}\" data-type=\"inline-math\"></span>. Знайдіть основу трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4\\sqrt{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"2\\sqrt{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"4\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"5\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "основа <span data-latex=\"= 2 \\cdot  4\\sqrt{2} \\cdot  \\operatorname{cos} 30^{\\circ} = 4\\sqrt{6}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Середній кут",
+    "content": "Сторони трикутника дорівнюють 5, 7 і <span data-latex=\"\\sqrt{18}\" data-type=\"inline-math\"></span>. Знайдіть середній за величиною кут цього трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "30°"
+     },
+     {
+      "id": 1,
+      "content": "45°"
+     },
+     {
+      "id": 2,
+      "content": "60°"
+     },
+     {
+      "id": 3,
+      "content": "90°"
+     },
+     {
+      "id": 4,
+      "content": "120°"
+     }
+    ],
+    "points": 1,
+    "solution": "середній кут — проти сторони 5: <span data-latex=\"\\operatorname{cos} = \\dfrac{18 + 49 - 25}{2 \\cdot  \\sqrt{18} \\cdot  7} = \\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span> → 45°"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Гострий кут за синусами",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"BC = 3\" data-type=\"inline-math\"></span>, <span data-latex=\"AC = \\sqrt{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle ABC = 30^{\\circ}\" data-type=\"inline-math\"></span>, кут <span data-latex=\"BAC\" data-type=\"inline-math\"></span> — гострий. Знайдіть <span data-latex=\"\\angle BAC\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "30°"
+     },
+     {
+      "id": 1,
+      "content": "45°"
+     },
+     {
+      "id": 2,
+      "content": "60°"
+     },
+     {
+      "id": 3,
+      "content": "90°"
+     },
+     {
+      "id": 4,
+      "content": "120°"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\operatorname{sin} A = \\dfrac{3 \\cdot  \\operatorname{sin} 30^{\\circ}}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>; гострий кут — 60°"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Синус кута",
+    "content": "У трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> <span data-latex=\"BC = \\sqrt{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"AC = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle ABC = 30^{\\circ}\" data-type=\"inline-math\"></span>. Знайдіть <span data-latex=\"\\text{sin ∠}BAC\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{2}}{4}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\operatorname{sin} A = \\dfrac{BC \\cdot  \\operatorname{sin} B}{AC} = \\dfrac{\\sqrt{2} \\cdot  \\dfrac{1}{2}}{2} = \\dfrac{\\sqrt{2}}{4}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Бічна сторона",
+    "content": "У рівнобедреному трикутнику основа дорівнює 8 см, а кут при основі — 45°. Знайдіть бічну сторону трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"6\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"8\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"16\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "бічна сторона <span data-latex=\"= \\dfrac{4}{\\operatorname{cos} 45^{\\circ}} = 4\\sqrt{2}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "ЗНО-2008",
+    "title": "Периметр із кутом 120°",
+    "content": "Сторони трикутника, одна з яких на 8 см більша за другу, утворюють кут 120°, а довжина третьої сторони дорівнює 28 см. Знайдіть периметр трикутника.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "84 см"
+     },
+     {
+      "id": 1,
+      "content": "72 см"
+     },
+     {
+      "id": 2,
+      "content": "64 см"
+     },
+     {
+      "id": 3,
+      "content": "60 см"
+     },
+     {
+      "id": 4,
+      "content": "56 см"
+     }
+    ],
+    "points": 1,
+    "solution": "Сторони <span data-latex=\"x\" data-type=\"inline-math\"></span> і <span data-latex=\"x + 8\" data-type=\"inline-math\"></span>, кут між ними 120°: <span data-latex=\"28^{2} = x^{2} + (x + 8)^{2} + x(x + 8)\" data-type=\"inline-math\"></span>, тобто <span data-latex=\"x^{2} + 8x - 240 = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 12\" data-type=\"inline-math\"></span>. Сторони 12, 20 і 28 см, периметр 60 см."
+   },
+   "answer": 3
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"c^{2}\" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"c^{2} = a^{2} + b^{2} - 2ab\\operatorname{cos} C\" data-type=\"inline-math\"></span> — кут між відомими сторонами."
+  },
+  {
+   "big": "cos",
+   "text": "Знак косинуса показує, гострий кут чи тупий."
+  },
+  {
+   "big": "sin",
+   "text": "Сторони пропорційні синусам протилежних кутів."
+  },
+  {
+   "big": "<span data-latex=\"2R\" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"\\dfrac{a}{\\operatorname{sin} A} = 2R\" data-type=\"inline-math\"></span> — радіус описаного кола."
+  }
+ ]
+}

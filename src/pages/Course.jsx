@@ -3,9 +3,9 @@ import { db } from '../firebase/config';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import ModuleCard from '../components/ModuleCard';
-import { Loader2, BookOpen } from 'lucide-react';
+import { Loader2, Compass } from 'lucide-react';
 
-export default function Course({ onNavigate, onOpenDovidnik }) {
+export default function Course({ onNavigate }) {
   const { user } = useAuth();
   const [modules, setModules] = useState([]);
   const [modulesWithTopics, setModulesWithTopics] = useState([]);
@@ -58,9 +58,9 @@ export default function Course({ onNavigate, onOpenDovidnik }) {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950 flex items-center justify-center">
+      <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f] flex items-center justify-center">
         <div className="text-center animate-fade-in">
-          <Loader2 className="h-12 w-12 text-orange-400 animate-spin mx-auto mb-4" />
+          <Loader2 className="h-12 w-12 text-[#f5c86b] animate-spin mx-auto mb-4" />
           <p className="text-slate-300">Завантаження модулів...</p>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default function Course({ onNavigate, onOpenDovidnik }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950">
+    <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="animate-fade-in">
           {/* Header */}
@@ -92,11 +92,11 @@ export default function Course({ onNavigate, onOpenDovidnik }) {
             <div className="bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 backdrop-blur-xl rounded-3xl p-4 sm:p-8 border border-orange-500/30 shadow-2xl shadow-orange-500/10">
               <div className="flex flex-col sm:flex-row items-center sm:items-start space-x-0 sm:space-x-4 mb-4">
                 <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-3 sm:p-4 rounded-2xl shadow-lg mb-4 sm:mb-0">
-                  <span className="text-3xl sm:text-4xl">🐱</span>
+                  <Compass className="h-8 w-8 sm:h-9 sm:w-9 text-amber-300" />
                 </div>
                 <div className="text-center sm:text-left">
                   <h1 className="text-2xl sm:text-4xl font-bold text-white mb-2">
-                    КотоНМТ
+                    Експедиція НМТ
                   </h1>
                   <p className="text-slate-300 text-sm sm:text-lg">
                     Оберіть модуль для початку навчання
@@ -120,13 +120,6 @@ export default function Course({ onNavigate, onOpenDovidnik }) {
                     )}
                   </p>
                 </div>
-                <button
-                  onClick={onOpenDovidnik}
-                  className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold px-3 sm:px-6 py-3 sm:py-4 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25 flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-2"
-                >
-                  <BookOpen className="h-5 w-5 sm:h-6 sm:w-6" />
-                  <span className="text-xs sm:text-sm font-medium">Довідник</span>
-                </button>
               </div>
             </div>
           </div>
@@ -140,7 +133,7 @@ export default function Course({ onNavigate, onOpenDovidnik }) {
             {modulesWithTopics.length === 0 ? (
               <div className="bg-gradient-to-br from-orange-800/50 to-amber-900/50 backdrop-blur-sm p-16 rounded-3xl border border-orange-500/20 text-center">
                 <div className="bg-gradient-to-br from-orange-500/20 to-amber-500/20 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 border border-orange-500/30">
-                  <span className="text-5xl">🐱</span>
+                  <Compass className="h-12 w-12 text-amber-300" />
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-3">Модулів ще немає</h3>
                 <p className="text-slate-400 mb-8 max-w-md mx-auto text-lg">

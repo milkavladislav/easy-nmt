@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FileText, Trash2, Clock, Calendar, Play, Plus, Loader2 } from 'lucide-react';
+import { FileText, Trash2, Clock, Calendar, Play, Plus, Loader2, Flag, Mountain } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
 import {
@@ -197,14 +197,21 @@ export default function NMT({ onNavigate }) {
     }
   };
 
+  const field = 'w-full bg-[#070b1f]/70 border border-[#f5c86b]/20 rounded-2xl p-4 text-[#f4ecdf] placeholder-[#f4ecdf]/30 focus:outline-none focus:border-[#f5c86b]/60 focus:ring-2 focus:ring-[#f5c86b]/15 transition-all resize-y font-mono text-sm';
+  const goldBtn = 'flex items-center justify-center gap-2 bg-gradient-to-b from-[#f8d78a] to-[#e0a84a] hover:from-[#fbe2a6] hover:to-[#eab45a] text-[#1a1206] font-semibold rounded-2xl transition-all duration-300 shadow-lg shadow-[#f5c86b]/10 disabled:opacity-50 disabled:cursor-not-allowed';
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 py-8">
+    <div className="min-h-screen bg-gradient-to-b from-[#070b1f] via-[#0b1030] to-[#070b1f] py-8 sm:py-12 text-[#f4ecdf]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 animate-fade-in">
-          <div className="inline-flex items-center justify-center bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 p-5 rounded-3xl mb-6 ring-4 ring-violet-500/30 shadow-2xl shadow-violet-500/20">
-            <FileText className="h-12 w-12 text-violet-400" />
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-5 bg-[#f5c86b]/10 ring-2 ring-[#f5c86b]/50 shadow-[0_0_40px_rgba(245,200,107,.2)]">
+            <Flag className="h-9 w-9 text-[#f5c86b]" />
           </div>
-          <h1 className="text-4xl sm:text-2xl font-bold text-white mb-4">НМТ тести</h1>
+          <p className="text-xs uppercase tracking-[0.3em] text-[#f5c86b]/70 mb-2">Фінальна вершина</p>
+          <h1 className="font-['Cormorant_Garamond',serif] text-4xl sm:text-5xl font-semibold text-[#f5c86b] mb-3">Тести НМТ</h1>
+          <p className="text-[#c4bce6] text-base max-w-xl mx-auto">
+            Справжні варіанти НМТ з математики з таймером, як на іспиті. Тут перевіряєш, чого навчився у всіх світах.
+          </p>
         </div>
 
         {isAdmin && (
@@ -212,7 +219,7 @@ export default function NMT({ onNavigate }) {
             <div className="flex justify-center mb-8 animate-slide-up">
               <button
                 onClick={() => setShowAddModal(true)}
-                className="flex items-center justify-center space-x-3 bg-violet-500 hover:bg-violet-600 text-white font-semibold px-8 py-3 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-violet-500/30"
+                className="flex items-center justify-center gap-2 border border-[#f5c86b]/40 text-[#f5c86b] hover:bg-[#f5c86b]/10 font-semibold px-6 py-2.5 rounded-2xl transition-all duration-300"
               >
                 <Plus className="h-5 w-5" />
                 <span>Додати тест</span>
@@ -221,45 +228,31 @@ export default function NMT({ onNavigate }) {
 
             {showAddModal && (
               <div
-                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
                 onClick={() => setShowAddModal(false)}
               >
                 <div
-                  className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-xl rounded-3xl border border-violet-500/20 p-6 shadow-2xl"
+                  className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-[#0b1030] rounded-3xl border border-[#f5c86b]/25 p-6 shadow-2xl"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-xl font-bold text-white">Додати тест</h2>
+                    <h2 className="font-['Cormorant_Garamond',serif] text-2xl font-semibold text-[#f5c86b]">Додати тест</h2>
                     <button
                       onClick={() => setShowAddModal(false)}
-                      className="text-slate-400 hover:text-white text-3xl leading-none"
+                      className="text-[#c4bce6] hover:text-white text-3xl leading-none"
                       aria-label="Закрити"
                     >
                       ×
                     </button>
                   </div>
 
-                  <label className="block text-slate-300 text-sm font-medium mb-2">JSON тесту</label>
-                  <textarea
-                    value={jsonText}
-                    onChange={(e) => setJsonText(e.target.value)}
-                    rows={4}
-                    className="w-full bg-slate-900/50 border border-slate-700 rounded-2xl p-4 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-all resize-y font-mono text-sm mb-6"
-                  />
+                  <label className="block text-[#c4bce6] text-sm font-medium mb-2">JSON тесту</label>
+                  <textarea value={jsonText} onChange={(e) => setJsonText(e.target.value)} rows={4} className={`${field} mb-6`} />
 
-                  <label className="block text-slate-300 text-sm font-medium mb-2">Відповіді</label>
-                  <textarea
-                    value={answersText}
-                    onChange={(e) => setAnswersText(e.target.value)}
-                    rows={2}
-                    className="w-full bg-slate-900/50 border border-slate-700 rounded-2xl p-4 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-all resize-y font-mono text-sm mb-4"
-                  />
+                  <label className="block text-[#c4bce6] text-sm font-medium mb-2">Відповіді</label>
+                  <textarea value={answersText} onChange={(e) => setAnswersText(e.target.value)} rows={2} className={`${field} mb-4`} />
 
-                  <button
-                    onClick={handleText}
-                    disabled={!jsonText.trim() || saving}
-                    className="w-full flex items-center justify-center space-x-3 bg-violet-500 hover:bg-violet-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold px-8 py-3 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-violet-500/30"
-                  >
+                  <button onClick={handleText} disabled={!jsonText.trim() || saving} className={`${goldBtn} w-full px-8 py-3`}>
                     {saving ? (
                       <>
                         <Loader2 className="h-5 w-5 animate-spin" />
@@ -275,7 +268,7 @@ export default function NMT({ onNavigate }) {
 
                   {error && (
                     <div className="mt-4 p-4 bg-red-500/10 border border-red-500/30 rounded-xl">
-                      <p className="text-red-400 text-sm text-center">{error}</p>
+                      <p className="text-red-300 text-sm text-center">{error}</p>
                     </div>
                   )}
                 </div>
@@ -286,53 +279,54 @@ export default function NMT({ onNavigate }) {
 
         {loading ? (
           <div className="flex flex-col items-center justify-center py-16 animate-fade-in">
-            <Loader2 className="h-10 w-10 text-violet-400 animate-spin mb-4" />
-            <p className="text-slate-400 text-base">Завантаження тестів...</p>
+            <Loader2 className="h-10 w-10 text-[#f5c86b] animate-spin mb-4" />
+            <p className="text-[#c4bce6] text-base">Завантаження тестів...</p>
           </div>
         ) : tests.length === 0 ? (
-          <div className="text-center py-16 bg-slate-800/30 rounded-3xl border border-slate-700 animate-fade-in">
-            <FileText className="h-16 w-16 text-slate-600 mx-auto mb-4" />
-            <p className="text-slate-400 text-lg">Ще не завантажено жодного тесту</p>
+          <div className="text-center py-16 bg-[#0b1030]/70 rounded-3xl border border-[#f5c86b]/15 animate-fade-in">
+            <FileText className="h-14 w-14 text-[#f5c86b]/40 mx-auto mb-4" />
+            <p className="text-[#c4bce6] text-lg">Ще не завантажено жодного тесту</p>
           </div>
         ) : (
           <div className="space-y-4 animate-slide-up">
             {tests.map((test) => (
               <div
                 key={test.id}
-                className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-slate-700 p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 hover:border-violet-500/40 transition-all duration-300 shadow-lg"
+                className="relative overflow-hidden bg-gradient-to-br from-[#141a45]/90 to-[#0b1030]/90 rounded-3xl border border-[#f5c86b]/20 p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 hover:border-[#f5c86b]/50 hover:shadow-[0_0_30px_rgba(245,200,107,.08)] transition-all duration-300"
               >
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-white mb-2">{test.title}</h3>
-                  <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400">
-                    {test.year && (
-                      <span className="flex items-center space-x-1.5">
-                        <Calendar className="h-4 w-4" />
-                        <span>{test.year}</span>
+                <div className="flex items-start gap-4 flex-1 min-w-0">
+                  <div className="hidden sm:flex w-12 h-12 shrink-0 rounded-full items-center justify-center bg-[#f5c86b]/10 ring-1 ring-[#f5c86b]/40">
+                    <Mountain className="h-6 w-6 text-[#f5c86b]" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="font-['Cormorant_Garamond',serif] text-2xl font-semibold text-[#f4ecdf] mb-2 leading-tight">{test.title}</h3>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-[#c4bce6]">
+                      {test.year && (
+                        <span className="flex items-center gap-1.5">
+                          <Calendar className="h-4 w-4 text-[#f5c86b]/70" />
+                          <span>{test.year}</span>
+                        </span>
+                      )}
+                      <span className="flex items-center gap-1.5">
+                        <Clock className="h-4 w-4 text-[#f5c86b]/70" />
+                        <span>{formatTime(test.timeSeconds)}</span>
                       </span>
-                    )}
-                    <span className="flex items-center space-x-1.5">
-                      <Clock className="h-4 w-4" />
-                      <span>{formatTime(test.timeSeconds)}</span>
-                    </span>
-                    <span>{test.questionCount} питань</span>
-                    {test.answers && (
-                      <span className="text-xs bg-green-500/10 text-green-400 px-2 py-1 rounded-lg">з відповідями</span>
-                    )}
-                    <span className="uppercase text-xs bg-slate-700/50 px-2 py-1 rounded-lg">{test.subject}</span>
+                      <span>{test.questionCount} завдань</span>
+                      {test.answers && (
+                        <span className="text-xs bg-[#7ef0b4]/10 text-[#7ef0b4] px-2 py-1 rounded-lg">з перевіркою</span>
+                      )}
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3 w-full sm:w-auto">
-                  <button
-                    onClick={() => onNavigate('nmtTest', test)}
-                    className="flex-1 sm:flex-none flex items-center justify-center space-x-2 bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 text-white font-semibold px-6 py-3 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-violet-500/25"
-                  >
+                <div className="flex items-center gap-3 w-full sm:w-auto">
+                  <button onClick={() => onNavigate('nmtTest', test)} className={`${goldBtn} flex-1 sm:flex-none px-6 py-3`}>
                     <Play className="h-4 w-4" />
                     <span>Почати</span>
                   </button>
                   {isAdmin && (
                     <button
                       onClick={() => handleDelete(test.id)}
-                      className="p-3 text-slate-400 hover:text-red-400 hover:bg-red-500/10 rounded-2xl border border-slate-700 hover:border-red-500/30 transition-all duration-300"
+                      className="p-3 text-[#c4bce6] hover:text-red-300 hover:bg-red-500/10 rounded-2xl border border-[#f5c86b]/15 hover:border-red-400/40 transition-all duration-300"
                       title="Видалити"
                     >
                       <Trash2 className="h-5 w-5" />

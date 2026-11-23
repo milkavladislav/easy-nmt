@@ -26,9 +26,9 @@ function HallStatus({ topic, story, state, best }) {
   return (
     <>
       <span className={`block ${state.artifact ? 'text-[var(--q-gold)]' : 'text-[#cfc8ea]'}`}>
-        {state.artifact ? <><Sparkles className="inline h-4 w-4 mr-1" />{story.artifact.name}</> : state.lit ? `Руни: ${state.lit} з 14` : state.started ? 'Почато' : 'Ще не відкрита'}
+        {state.artifact ? <><Sparkles className="inline h-4 w-4 mr-1" />{story.artifact.name}</> : state.lit ? `${story.words?.runes || 'Руни'}: ${state.lit} з 14` : state.started ? 'Почато' : 'Ще не відкрита'}
       </span>
-      {best && <span className="block text-[#8ff5c0]">Нічна варта: {best.earned} / {best.max}</span>}
+      {best && <span className="block text-[#8ff5c0]">{story.homework?.name || 'Нічна варта'}: {best.earned} / {best.max}</span>}
     </>
   );
 }

@@ -1,0 +1,301 @@
+{
+ "title": "ДЗ 10. Прямокутний трикутник (НМТ 150+)",
+ "lessonNumber": 10,
+ "source": "hw-sheet",
+ "hwKey": "150-10",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Доберіть таке закінчення речення, щоб утворилося правильне твердження: «Сума квадратів катетів прямокутного трикутника дорівнює…»",
+   "variants": [
+    {
+     "id": 0,
+     "content": "гіпотенузі"
+    },
+    {
+     "id": 1,
+     "content": "квадрату суми катетів"
+    },
+    {
+     "id": 2,
+     "content": "квадрату гіпотенузи"
+    },
+    {
+     "id": 3,
+     "content": "добутку катетів"
+    },
+    {
+     "id": 4,
+     "content": "подвійному добутку катетів"
+    }
+   ],
+   "points": 1,
+   "solution": "теорема Піфагора: a² + b² = c² — сума квадратів катетів дорівнює квадрату гіпотенузи"
+  },
+  {
+   "type": "single",
+   "content": "У прямокутному трикутнику один із кутів дорівнює 43°. Знайдіть більший з кутів цього трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "43°"
+    },
+    {
+     "id": 1,
+     "content": "47°"
+    },
+    {
+     "id": 2,
+     "content": "60°"
+    },
+    {
+     "id": 3,
+     "content": "90°"
+    },
+    {
+     "id": 4,
+     "content": "137°"
+    }
+   ],
+   "points": 1,
+   "solution": "кути 90°, 43°, 47°; найбільший — прямий, 90°"
+  },
+  {
+   "type": "single",
+   "content": "Гіпотенуза та один з катетів дорівнюють 26 і 10 відповідно. Знайдіть інший катет.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "10"
+    },
+    {
+     "id": 1,
+     "content": "20"
+    },
+    {
+     "id": 2,
+     "content": "24"
+    },
+    {
+     "id": 3,
+     "content": "25"
+    },
+    {
+     "id": 4,
+     "content": "30"
+    }
+   ],
+   "points": 1,
+   "solution": "√(26² − 10²) = √576 = 24"
+  },
+  {
+   "type": "single",
+   "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) проведено висоту <span data-latex=\"CK\" data-type=\"inline-math\"></span> так, що <span data-latex=\"AK = 8\" data-type=\"inline-math\"></span>, <span data-latex=\"KB = 2\" data-type=\"inline-math\"></span>. Знайдіть менший з катетів.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{\\sqrt{5}}{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"4\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"2\\sqrt{20}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "AB = 10; BC² = KB · AB = 20 → BC = 2√5"
+  },
+  {
+   "type": "single",
+   "content": "Проєкції катетів прямокутного трикутника на гіпотенузу дорівнюють 16 і 4. Знайдіть більший з катетів.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{\\sqrt{5}}{8}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"4\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"8\\sqrt{5}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "c = 20; більший катет² = 16 · 20 = 320 → 8√5"
+  },
+  {
+   "type": "single",
+   "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) <span data-latex=\"\\angle B = 30^{\\circ}\" data-type=\"inline-math\"></span>, проведено висоту <span data-latex=\"CK\" data-type=\"inline-math\"></span>, катет <span data-latex=\"BC = 8\" data-type=\"inline-math\"></span>. Знайдіть висоту <span data-latex=\"CK\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2"
+    },
+    {
+     "id": 1,
+     "content": "3"
+    },
+    {
+     "id": 2,
+     "content": "4"
+    },
+    {
+     "id": 3,
+     "content": "5"
+    },
+    {
+     "id": 4,
+     "content": "6"
+    }
+   ],
+   "points": 1,
+   "solution": "у △BCK: CK = BC · sin 30° = 4"
+  },
+  {
+   "type": "single",
+   "content": "Висота прямокутного трикутника, проведена до гіпотенузи, ділить її на відрізки завдовжки 9 см і 16 см. Знайдіть менший катет трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "10 см"
+    },
+    {
+     "id": 1,
+     "content": "12 см"
+    },
+    {
+     "id": 2,
+     "content": "15 см"
+    },
+    {
+     "id": 3,
+     "content": "20 см"
+    },
+    {
+     "id": 4,
+     "content": "25 см"
+    }
+   ],
+   "points": 1,
+   "solution": "c = 25; менший катет² = 9 · 25 = 225 → 15 см"
+  },
+  {
+   "type": "single",
+   "content": "Гіпотенуза прямокутного трикутника дорівнює 14 см. Знайдіть довжину медіани, проведеної до гіпотенузи.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5 см"
+    },
+    {
+     "id": 1,
+     "content": "7 см"
+    },
+    {
+     "id": 2,
+     "content": "8 см"
+    },
+    {
+     "id": 3,
+     "content": "10 см"
+    },
+    {
+     "id": 4,
+     "content": "12 см"
+    }
+   ],
+   "points": 1,
+   "solution": "медіана до гіпотенузи — половина гіпотенузи: 7 см"
+  },
+  {
+   "type": "single",
+   "content": "Відрізок, проведений з вершини прямого кута до середини гіпотенузи, дорівнює 12,5. Знайдіть гіпотенузу трикутника.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "6,25"
+    },
+    {
+     "id": 1,
+     "content": "10,5"
+    },
+    {
+     "id": 2,
+     "content": "12,5"
+    },
+    {
+     "id": 3,
+     "content": "20"
+    },
+    {
+     "id": 4,
+     "content": "25"
+    }
+   ],
+   "points": 1,
+   "solution": "гіпотенуза = 2 · 12,5 = 25"
+  },
+  {
+   "type": "single",
+   "content": "У прямокутному трикутнику <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>) гіпотенуза <span data-latex=\"AB = 10\" data-type=\"inline-math\"></span>, а <span data-latex=\"\\operatorname{tg} A = \\dfrac{3}{4}\" data-type=\"inline-math\"></span>. Знайдіть катет <span data-latex=\"BC\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "6"
+    },
+    {
+     "id": 3,
+     "content": "7,5"
+    },
+    {
+     "id": 4,
+     "content": "8"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{tg} A = \\dfrac{BC}{AC} = \\dfrac{3}{4}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"BC = 3k\" data-type=\"inline-math\"></span>, <span data-latex=\"AC = 4k\" data-type=\"inline-math\"></span>, гіпотенуза <span data-latex=\"5k = 10\" data-type=\"inline-math\"></span>, <span data-latex=\"k = 2\" data-type=\"inline-math\"></span>. <span data-latex=\"BC = 6\" data-type=\"inline-math\"></span>."
+  }
+ ],
+ "answers": [
+  2,
+  3,
+  2,
+  2,
+  4,
+  2,
+  2,
+  1,
+  4,
+  2
+ ],
+ "incomplete": []
+}
