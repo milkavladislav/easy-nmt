@@ -1,11 +1,14 @@
 import { useMemo } from 'react';
 import { Loader2, Lock, Clock, ChevronRight, Trophy, Sparkles } from 'lucide-react';
 import { Castle } from './QuestScene';
+import { Pyramids } from './DesertScene';
+import { Ship, City, Cathedral, Space, Train, Mountains, Cave } from './WorldScenes';
 import { getStory } from '../../quest';
-import { canOpen, readQuestSave, BLOCK_TEST_MINUTES } from '../../utils/course150';
+import { canOpen, readQuestSave, hasQuest, BLOCK_TEST_MINUTES } from '../../utils/course150';
+import { WORLD_SECTIONS } from '../../quest/worlds';
 import './quest.css';
 
-// Блок курсу в стилі квесту (зараз — блок 1): кожна тема — зала школи чарів зі своїм артефактом.
+// Блок курсу в стилі свого світу (quest/worlds.js): кожна тема — «зала» світу зі своїм артефактом.
 // Анімацій тут майже немає: це сторінка-список, вона має бути легкою.
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
 const plural = (n) => (n === 1 ? 'тема' : n < 5 ? 'теми' : 'тем');
@@ -30,8 +33,10 @@ function HallStatus({ topic, story, state, best }) {
   );
 }
 
-function Hall({ topic, index, state, best, onOpen }) {
-  const story = getStory(topic.number);
+const SCENES = { castle: Castle, pyramids: Pyramids, ship: Ship, city: City, cathedral: Cathedral, space: Space, train: Train, mountains: Mountains, cave: Cave };
+
+function Hall({ topic, index, state, best, onOpen, world }) {
+  const story = hasQuest(topic) ? getStory(topic.number) : { place: world.places?.[topic.number] || topic.title, artifact: { name: '' } };
   const open = canOpen(topic);
   return (
     <button type="button" disabled={!open} onClick={() => onOpen(topic)}
@@ -51,31 +56,33 @@ function Hall({ topic, index, state, best, onOpen }) {
 }
 
 export default function QuestBlock({ block, uid, best, testIdFor, examBest, examLoading, onOpen, onExam }) {
+  const world = WORLD_SECTIONS[block.number] || WORLD_SECTIONS[1];
+  const Scene = SCENES[world.scene] || Castle;
   const states = useMemo(() => Object.fromEntries(block.topics.map((t) => [t.number, hallState(uid, t)])), [block.topics, uid]);
   const artifacts = block.topics.filter((t) => states[t.number].artifact).length;
   const examOpen = block.topics.every((t) => t.ready) && block.topics[0]?.free;
 
   return (
-    <section className="quest q-embed q-bleed">
+    <section className={`quest q-embed q-bleed ${world.theme}`}>
       <div className="q-block-sky relative">
-        <div className="q-moon q-moon-sm" />
+        {world.orb && <div className={world.orb} />}
         <div className="relative z-[1] max-w-6xl mx-auto px-4 sm:px-8 pt-12 pb-[250px] sm:pb-[290px] lg:pb-[340px]">
         <div className="flex items-baseline justify-between gap-3">
           <p className="q-script text-2xl sm:text-3xl text-[var(--q-gold-soft)]">Блок {block.number} · {block.topics.length} {plural(block.topics.length)}</p>
-          <p className="text-lg sm:text-xl font-medium text-[#f1ebff]">Артефакти: <b className="text-[var(--q-gold)]">{artifacts}</b> з {block.topics.length}</p>
+          <p className="text-lg sm:text-xl font-medium text-[#f1ebff]">{world.found}: <b className="text-[var(--q-gold)]">{artifacts}</b> з {block.topics.length}</p>
         </div>
         <h2 className="q-block-title text-5xl sm:text-7xl font-bold mt-2">{block.title}</h2>
         <p className="text-lg sm:text-[22px] leading-snug font-medium text-[#f1ebff] mt-3 max-w-3xl">
-          Сім залів старої школи чарів. У кожній — сувої з теорією, руни-завдання, нічна варта (домашнє завдання) і артефакт, який треба здобути.
+          {world.intro}
         </p>
         </div>
-        <div className="q-block-castle" aria-hidden="true"><Castle /></div>
+        <div className="q-block-castle" aria-hidden="true"><Scene /></div>
       </div>
 
       <div className="q-block-halls">
         <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-3 pb-12 space-y-3">
         {block.topics.map((t, i) => (
-          <Hall key={t.number} topic={t} index={i} state={states[t.number]} best={best[testIdFor(t.number)]} onOpen={onOpen} />
+          <Hall key={t.number} topic={t} index={i} state={states[t.number]} best={best[testIdFor(t.number)]} onOpen={onOpen} world={world} />
         ))}
         {block.test && (
           <button type="button" disabled={!examOpen || examLoading} onClick={onExam}

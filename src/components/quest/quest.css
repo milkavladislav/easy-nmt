@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Marck+Script&family=Caveat:wght@600;700&family=Lobster&family=PT+Mono&family=Ruslan+Display&family=Russo+One&family=Kelly+Slab&family=Amatic+SC:wght@700&family=Comfortaa:wght@600;700&display=swap');
 
 .quest {
   --q-gold: #f5c86b;
@@ -325,3 +325,126 @@
 .q-intro-stat { background: rgba(255, 255, 255, .05); border: 1px solid rgba(245, 200, 107, .25); border-radius: 18px; padding: 12px 16px; }
 .q-intro-btn { color: var(--q-ink); background: linear-gradient(135deg, #ffd98a, #f5c86b); border-color: transparent; }
 .q-intro-btn:hover { filter: brightness(1.06); }
+
+/* ---------- світ блоку 2: Долина Пірамід (захід сонця, пісок, бірюза, теракота) ---------- */
+.w-desert { --q-gold: #ffc37a; --q-gold-soft: #ffe0b0; background: #2a120d; border-color: rgba(255, 195, 122, .35); }
+.w-desert .q-script { font-family: 'Caveat', 'Cormorant Garamond', cursive; font-weight: 700; }
+.w-desert .q-block-sky {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 100%, rgba(255, 170, 90, .55), transparent 70%),
+    radial-gradient(1px 1px at 14% 10%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 33% 6%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 78% 8%, #fff 50%, transparent 51%),
+    linear-gradient(180deg, #2b1640 0%, #6b2a45 30%, #c4563a 62%, #f0a35e 100%);
+}
+.w-desert .q-block-sky::after { display: none; }
+.q-sun-sm {
+  position: absolute; width: 120px; height: 120px; border-radius: 50%; left: 50%; bottom: 150px; transform: translateX(-50%);
+  background: radial-gradient(circle, #fff4d6 0%, #ffd27a 45%, #ff9a4a 100%);
+  box-shadow: 0 0 80px 30px rgba(255, 170, 80, .45);
+}
+@media (min-width: 640px) { .q-sun-sm { width: 150px; height: 150px; bottom: 170px; left: calc(50% - 60px); } }
+@media (min-width: 1024px) { .q-sun-sm { width: 170px; height: 170px; bottom: 200px; } }
+.q-block-castle .q-castle.wide { -webkit-mask-image: none; mask-image: none; width: 100%; min-width: 760px; left: 50%; }
+.q-embed[class*='w-'] .q-block-sky::after { display: none; }
+.w-desert .q-block-halls { background: linear-gradient(180deg, #3a1a14, #24100c); }
+.w-desert .q-hall { border-color: rgba(255, 195, 122, .3); background: linear-gradient(180deg, rgba(255, 220, 170, .07), rgba(255, 220, 170, .02)); }
+.w-desert .q-hall:hover:not(:disabled) { border-color: rgba(79, 209, 197, .7); background: rgba(79, 209, 197, .1); }
+.w-desert .q-hall-num { border-color: rgba(79, 209, 197, .6); color: #7fe6da; clip-path: polygon(50% 4%, 98% 92%, 2% 92%); border-radius: 0; background: rgba(79, 209, 197, .12); padding-top: 14px; }
+.w-desert .q-hall-num.lit { background: linear-gradient(180deg, #ffe7b0, #f0a35e); color: #3a1a14; }
+.w-desert .q-block-title { color: #ffe0b0; text-shadow: 0 0 28px rgba(255, 150, 70, .55), 0 2px 0 rgba(60, 20, 10, .5); }
+.w-desert .q-exam { background: linear-gradient(90deg, rgba(255, 195, 122, .16), rgba(79, 209, 197, .12)); }
+
+/* ---------- світи 3–9: палітра, шрифт підписів, небо, зали ---------- */
+/* 3 · корабель-обсерваторія: нічне море, латунь */
+.w-sea { --q-gold: #f2cf8a; --q-gold-soft: #cfe2ff; background: #071730; border-color: rgba(127, 184, 255, .35); }
+.w-sea .q-script { font-family: 'Lobster', cursive; }
+.w-sea .q-block-sky { background:
+  radial-gradient(1px 1px at 12% 18%, #fff 50%, transparent 51%), radial-gradient(1.5px 1.5px at 30% 9%, #fff 50%, transparent 51%),
+  radial-gradient(1px 1px at 48% 26%, #fff 50%, transparent 51%), radial-gradient(1.5px 1.5px at 66% 12%, #fff 50%, transparent 51%),
+  radial-gradient(1px 1px at 82% 30%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 94% 8%, #fff 50%, transparent 51%),
+  linear-gradient(180deg, #040a1c 0%, #0b1f3f 60%, #123a5e 100%); }
+.w-sea .q-block-halls { background: linear-gradient(180deg, #071730, #050f22); }
+.w-sea .q-hall { border-color: rgba(127, 184, 255, .3); }
+.w-sea .q-hall:hover:not(:disabled) { border-color: rgba(242, 207, 138, .7); background: rgba(127, 184, 255, .1); }
+.w-sea .q-hall-num { color: #f2cf8a; border: 3px double rgba(242, 207, 138, .7); background: rgba(127, 184, 255, .1); }
+.w-sea .q-block-title { color: #f2cf8a; text-shadow: 0 0 28px rgba(127, 184, 255, .45); }
+
+/* 4 · детективне бюро: нічне місто, дощ, бурштин */
+.w-noir { --q-gold: #ffb648; --q-gold-soft: #f1d9b5; background: #120c09; border-color: rgba(224, 176, 122, .35); }
+.w-noir .q-script { font-family: 'PT Mono', monospace; font-weight: 400; letter-spacing: .02em; }
+.w-noir .q-block-sky { background:
+  repeating-linear-gradient(104deg, rgba(255, 255, 255, .07) 0 1px, transparent 1px 13px),
+  radial-gradient(ellipse 50% 40% at 50% 100%, rgba(255, 182, 72, .25), transparent 70%),
+  linear-gradient(180deg, #0c0907 0%, #221812 60%, #33241a 100%); }
+.w-noir .q-block-halls { background: linear-gradient(180deg, #17100c, #0f0a07); }
+.w-noir .q-hall { border-color: rgba(224, 176, 122, .3); border-radius: 6px; }
+.w-noir .q-hall:hover:not(:disabled) { border-color: rgba(255, 182, 72, .7); background: rgba(255, 182, 72, .08); }
+.w-noir .q-hall-num { border-radius: 4px; color: #ffb648; border-color: rgba(255, 182, 72, .6); font-family: 'PT Mono', monospace; }
+.w-noir .q-block-title { color: #f1d9b5; text-shadow: 0 0 24px rgba(255, 182, 72, .35), 0 2px 0 #000; }
+
+/* 5 · вітражна майстерня: рубін, смарагд, сапфір */
+.w-glass { --q-gold: #ffc96b; --q-gold-soft: #ffd0dc; background: #140c22; border-color: rgba(255, 122, 156, .35); }
+.w-glass .q-script { font-family: 'Ruslan Display', serif; }
+.w-glass .q-block-sky { background:
+  conic-gradient(from 200deg at 50% 110%, transparent 0 8%, rgba(224, 64, 94, .16) 8% 11%, transparent 11% 15%, rgba(63, 111, 224, .16) 15% 18%, transparent 18% 22%, rgba(47, 158, 107, .14) 22% 25%, transparent 25%),
+  linear-gradient(180deg, #120a20 0%, #2c1745 55%, #4a1f4e 100%); }
+.w-glass .q-block-halls { background: linear-gradient(180deg, #1a1028, #110a1c); }
+.w-glass .q-hall { border-color: rgba(255, 122, 156, .3); }
+.w-glass .q-hall:hover:not(:disabled) { border-color: rgba(63, 111, 224, .8); background: rgba(63, 111, 224, .12); }
+.w-glass .q-hall-num { color: #fff; border: 3px solid transparent; background: linear-gradient(#24163a, #24163a) padding-box, conic-gradient(#e0405e, #f2b33d, #2f9e6b, #3f6fe0, #e0405e) border-box; }
+.w-glass .q-block-title { color: #ffd0dc; text-shadow: 0 0 28px rgba(224, 64, 94, .5); }
+
+/* 6 · космічна місія: неоновий HUD */
+.w-space { --q-gold: #6ef0ff; --q-gold-soft: #c7f8ff; background: #02030c; border-color: rgba(110, 240, 255, .35); }
+.w-space .q-script { font-family: 'Russo One', sans-serif; letter-spacing: .03em; }
+.w-space .q-block-title { font-family: 'Russo One', sans-serif; font-weight: 400; color: #c7f8ff; text-shadow: 0 0 22px rgba(110, 240, 255, .6); }
+.w-space .q-block-sky { background:
+  radial-gradient(1px 1px at 8% 14%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 19% 40%, #fff 50%, transparent 51%),
+  radial-gradient(1.5px 1.5px at 33% 12%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 47% 34%, #fff 50%, transparent 51%),
+  radial-gradient(1px 1px at 58% 8%, #fff 50%, transparent 51%), radial-gradient(1.5px 1.5px at 71% 28%, #fff 50%, transparent 51%),
+  radial-gradient(1px 1px at 86% 16%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 95% 44%, #fff 50%, transparent 51%),
+  radial-gradient(ellipse 40% 35% at 80% 20%, rgba(255, 122, 217, .22), transparent 70%),
+  radial-gradient(ellipse 45% 40% at 15% 30%, rgba(110, 240, 255, .14), transparent 70%),
+  linear-gradient(180deg, #02030c 0%, #070b24 100%); }
+.w-space .q-block-halls { background: linear-gradient(180deg, #0a1330, #050818); }
+.w-space .q-hall { border-color: rgba(110, 240, 255, .3); border-radius: 4px 18px; }
+.w-space .q-hall:hover:not(:disabled) { border-color: rgba(255, 122, 217, .7); background: rgba(110, 240, 255, .08); }
+.w-space .q-hall-num { clip-path: polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0 50%); border-radius: 0; color: #02030c; background: linear-gradient(135deg, #6ef0ff, #3aa8c9); font-family: 'Russo One', sans-serif; font-weight: 400; }
+
+/* 7 · майстерня винахідниці: мідь, пара, шестерні */
+.w-steam { --q-gold: #ffc27a; --q-gold-soft: #f4e3cf; background: #2a160d; border-color: rgba(232, 154, 98, .4); }
+.w-steam .q-script { font-family: 'Kelly Slab', serif; }
+.w-steam .q-block-sky { background:
+  radial-gradient(ellipse 50% 40% at 70% 60%, rgba(255, 200, 140, .35), transparent 70%),
+  linear-gradient(180deg, #24120a 0%, #5e2f1a 55%, #b8683a 100%); }
+.w-steam .q-block-halls { background: linear-gradient(180deg, #3a1d10, #24120a); }
+.w-steam .q-hall { border-color: rgba(232, 154, 98, .35); }
+.w-steam .q-hall:hover:not(:disabled) { border-color: rgba(255, 194, 122, .8); background: rgba(232, 154, 98, .1); }
+.w-steam .q-hall-num { clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%); border-radius: 0; color: #2a160d; background: radial-gradient(circle, #ffd9a6, #c98a4a 70%); }
+.w-steam .q-block-title { color: #ffd9a6; text-shadow: 0 0 24px rgba(232, 154, 98, .5), 0 2px 0 #2a160d; }
+
+/* 8 · метеостанція в Карпатах: гори, хмари, ялиці */
+.w-peaks { --q-gold: #ffe08a; --q-gold-soft: #e6f6ee; background: #16301f; border-color: rgba(143, 224, 168, .35); }
+.w-peaks .q-script { font-family: 'Amatic SC', cursive; font-weight: 700; }
+.w-peaks .q-block-sky { background:
+  radial-gradient(ellipse 50% 40% at 85% 25%, rgba(255, 224, 138, .25), transparent 70%),
+  linear-gradient(180deg, #13263a 0%, #2c4f68 55%, #6f97b0 100%); }
+.w-peaks .q-block-halls { background: linear-gradient(180deg, #16301f, #0f2116); }
+.w-peaks .q-hall { border-color: rgba(143, 224, 168, .3); }
+.w-peaks .q-hall:hover:not(:disabled) { border-color: rgba(255, 224, 138, .7); background: rgba(143, 224, 168, .08); }
+.w-peaks .q-hall-num { color: #8fe0a8; border-color: rgba(143, 224, 168, .6); background: rgba(143, 224, 168, .1); }
+.w-peaks .q-block-title { color: #e6f6ee; text-shadow: 0 0 24px rgba(143, 224, 168, .4), 0 2px 0 #0f2116; }
+
+/* 9 · кришталеві печери: фіолет і бірюза */
+.w-crystal { --q-gold: #d9c2ff; --q-gold-soft: #b9fff5; background: #0b0618; border-color: rgba(197, 155, 255, .35); }
+.w-crystal .q-script { font-family: 'Comfortaa', sans-serif; font-weight: 700; }
+.w-crystal .q-block-sky { background:
+  radial-gradient(ellipse 50% 45% at 50% 100%, rgba(197, 155, 255, .3), transparent 70%),
+  radial-gradient(ellipse 30% 30% at 20% 60%, rgba(79, 209, 197, .15), transparent 70%),
+  linear-gradient(180deg, #07040f 0%, #160c30 60%, #24134a 100%); }
+.w-crystal .q-block-halls { background: linear-gradient(180deg, #0b0618, #08040f); }
+.w-crystal .q-hall { border-color: rgba(197, 155, 255, .3); }
+.w-crystal .q-hall:hover:not(:disabled) { border-color: rgba(79, 209, 197, .7); background: rgba(197, 155, 255, .1); }
+.w-crystal .q-hall-num { clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); border-radius: 0; color: #0b0618; background: linear-gradient(135deg, #e6d8ff, #8f6bff 60%, #4fd1c5); }
+.w-crystal .q-block-title { color: #e6d8ff; text-shadow: 0 0 28px rgba(197, 155, 255, .6); }

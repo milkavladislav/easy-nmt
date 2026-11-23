@@ -3,6 +3,7 @@ import { Loader2, Lock, Clock, CheckCircle2, ChevronRight, Gift, Trophy } from '
 import { useAuth } from '../context/AuthContext';
 import QuestBlock from '../components/quest/QuestBlock';
 import WorldsIntro from '../components/quest/WorldsIntro';
+import { WORLD_SECTIONS } from '../quest/worlds';
 import { loadCourse150, loadBestResults, loadBlockTest, testIdFor, blockTestIdFor, canOpen, BLOCK_TEST_MINUTES, hasQuest } from '../utils/course150';
 
 function TopicRow({ topic, best, onOpen }) {
@@ -135,13 +136,13 @@ export default function Course150({ onNavigate, onOpenDovidnik }) {
           openBlocks={new Set(course.blocks.filter((bl) => bl.topics.every(hasQuest)).map((bl) => bl.number))}
           onOpenDovidnik={onOpenDovidnik} />
 
-        <div className="space-y-8">
-          {course.blocks.map((block) => <div key={block.number} id={`block-${block.number}`} className="scroll-mt-16">{block.topics.every(hasQuest) ? (
+        <div>
+          {course.blocks.map((block) => <div key={block.number} id={`block-${block.number}`} className="scroll-mt-16">{(block.topics.every(hasQuest) || WORLD_SECTIONS[block.number]) ? (
             <QuestBlock block={block} uid={user?.uid} best={best} testIdFor={testIdFor}
               examBest={best[blockTestIdFor(block.number)]} examLoading={loadingBlock === block.number}
               onOpen={(topic) => onNavigate('quest150', topic)} onExam={() => startBlockTest(block)} />
           ) : (
-            <section>
+            <section className="pt-10">
               <div className="flex items-baseline justify-between mb-3">
                 <h2 className="text-xl font-bold text-white">
                   <span className="text-orange-400 mr-2">Блок {block.number}.</span>
