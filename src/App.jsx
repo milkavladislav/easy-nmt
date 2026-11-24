@@ -100,7 +100,8 @@ function AppContent() {
 
   return (
     <div>
-      <Navbar onNavigate={handleNavigate} current={currentView} />
+      {/* у квесті й квест-тесті блоку своя шапка з кнопкою «До курсу»; шапку сайту там ховає нерухоме небо */}
+      {!(currentView === 'quest150' || viewData?.skin === 'quest') && <Navbar onNavigate={handleNavigate} current={currentView} />}
       {renderView()}
     </div>
   );
