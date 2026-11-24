@@ -95,7 +95,7 @@ export default function Course150({ onNavigate }) {
     try {
       setLoadingBlock(block.number);
       const test = await loadBlockTest(block);
-      onNavigate('nmtTest', { test, practice: true, skin: block.topics.every(hasQuest) ? 'quest' : null, exit: { view: 'course', label: 'Назад до курсу' } });
+      onNavigate('nmtTest', { test, practice: true, skin: block.topics.every(hasQuest) ? 'quest' : null, world: block.number, exit: { view: 'course', label: 'Назад до курсу' } });
     } catch (err) {
       console.error('course150 block test load error:', err);
       setError('Не вдалося завантажити тест. Спробуйте ще раз.');
@@ -131,7 +131,7 @@ export default function Course150({ onNavigate }) {
 
   return (
     <div className="min-h-screen overflow-x-clip bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
+      <div className="animate-fade-in">
         <WorldsIntro course={course} topicsCount={topics.length} ready={ready} passed={passed}
           openBlocks={new Set(course.blocks.filter((bl) => bl.topics.every(hasQuest)).map((bl) => bl.number))}
           onOpenJournal={() => onNavigate('journal')} />
@@ -142,7 +142,7 @@ export default function Course150({ onNavigate }) {
               examBest={best[blockTestIdFor(block.number)]} examLoading={loadingBlock === block.number}
               onOpen={(topic) => onNavigate('quest150', topic)} onExam={() => startBlockTest(block)} />
           ) : (
-            <section className="pt-10">
+            <section className="max-w-[1600px] mx-auto px-4 sm:px-8 pt-10">
               <div className="flex items-baseline justify-between mb-3">
                 <h2 className="text-xl font-bold text-white">
                   <span className="text-orange-400 mr-2">Блок {block.number}.</span>

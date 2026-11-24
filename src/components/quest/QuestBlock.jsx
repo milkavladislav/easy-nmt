@@ -66,7 +66,7 @@ export default function QuestBlock({ block, uid, best, testIdFor, examBest, exam
     <section className={`quest q-embed q-bleed ${world.theme}`}>
       <div className="q-block-sky relative">
         {world.orb && <div className={world.orb} />}
-        <div className="relative z-[1] max-w-6xl mx-auto px-4 sm:px-8 pt-12 pb-[250px] sm:pb-[290px] lg:pb-[340px]">
+        <div className="relative z-[1] max-w-[1600px] mx-auto px-4 sm:px-8 pt-12 pb-[250px] sm:pb-[290px] lg:pb-[340px]">
         <div className="flex items-baseline justify-between gap-3">
           <p className="q-script text-2xl sm:text-3xl text-[var(--q-gold-soft)]">Блок {block.number} · {block.topics.length} {plural(block.topics.length)}</p>
           <p className="text-lg sm:text-xl font-medium text-[#f1ebff]">{world.found}: <b className="text-[var(--q-gold)]">{artifacts}</b> з {block.topics.length}</p>
@@ -80,7 +80,7 @@ export default function QuestBlock({ block, uid, best, testIdFor, examBest, exam
       </div>
 
       <div className="q-block-halls">
-        <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-3 pb-12 space-y-3">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 pt-3 pb-12 space-y-3">
         {block.topics.map((t, i) => (
           <Hall key={t.number} topic={t} index={i} state={states[t.number]} best={best[testIdFor(t.number)]} onOpen={onOpen} world={world} />
         ))}

@@ -9,7 +9,7 @@ export default function WorldsIntro({ course, topicsCount, ready, passed, openBl
   return (
     <section className="quest q-embed q-bleed q-intro">
       <div className="q-intro-sky" aria-hidden="true" />
-      <div className="relative z-[1] max-w-6xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-10 sm:pb-14">
+      <div className="relative z-[1] max-w-[1600px] mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-10 sm:pb-14">
         <p className="q-script text-2xl sm:text-3xl text-[var(--q-gold-soft)]">{course.title}</p>
         <h1 className="q-block-title text-4xl sm:text-6xl font-bold mt-1 leading-tight">Подорож крізь дев’ять світів</h1>
         <div className="text-lg sm:text-[21px] leading-snug font-medium text-[#f1ebff] mt-4 max-w-3xl space-y-3">

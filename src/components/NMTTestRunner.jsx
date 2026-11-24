@@ -8,6 +8,7 @@ import { LETTERS, normalizeQuestion, gradeQuestion, to200Scale, isNmtPassed } fr
 import { splitContentSource } from '../utils/course150';
 import SourceHint from './course150/SourceHint';
 import QuestScene from './quest/QuestScene';
+import { WORLD_SECTIONS } from '../quest/worlds';
 import './quest/quest.css';
 
 const THEMES = {
@@ -61,8 +62,10 @@ function formatTime(totalSeconds) {
   return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 }
 
-export default function NMTTestRunner({ test, onNavigate, practice = false, exit = null, skin = null }) {
+export default function NMTTestRunner({ test, onNavigate, practice = false, exit = null, skin = null, world = null }) {
   const quest = skin === 'quest';
+  const ws = quest ? WORLD_SECTIONS[world] : null; // світ блоку: тема кольорів і сцена
+  const qClass = quest ? `quest q-runner ${ws?.theme || ''}` : '';
   // practice — тест курсу 150+: без шкали 200 балів; exit — куди повертатися { view, data, label } (за замовчуванням список НМТ-тестів)
   const goBack = () => (exit ? onNavigate(exit.view, exit.data) : onNavigate('nmt'));
   const questions = useMemo(() => {
@@ -483,8 +486,8 @@ export default function NMTTestRunner({ test, onNavigate, practice = false, exit
 
   if (finished) {
     return (
-      <div className={`fixed inset-0 z-50 overflow-y-auto ${quest ? 'quest q-runner' : ''}`} style={{ backgroundColor: t.bg, backgroundImage: quest ? undefined : t.sky, color: t.text }}>
-        {quest && <QuestScene deep />}
+      <div className={`fixed inset-0 z-50 overflow-y-auto ${qClass}`} style={{ backgroundColor: t.bg, backgroundImage: quest ? undefined : t.sky, color: t.text }}>
+        {quest && <QuestScene deep scene={ws?.scene} />}
         <div className="relative z-[2] max-w-3xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex items-center justify-between mb-10">
             <button
@@ -630,8 +633,8 @@ export default function NMTTestRunner({ test, onNavigate, practice = false, exit
   const progress = questions.length ? ((current + 1) / questions.length) * 100 : 0;
 
   return (
-    <div className={`fixed inset-0 z-50 flex flex-col ${quest ? 'quest q-runner' : ''}`} style={{ backgroundColor: t.bg, backgroundImage: quest ? undefined : t.sky, color: t.text }}>
-      {quest && <QuestScene deep />}
+    <div className={`fixed inset-0 z-50 flex flex-col ${qClass}`} style={{ backgroundColor: t.bg, backgroundImage: quest ? undefined : t.sky, color: t.text }}>
+      {quest && <QuestScene deep scene={ws?.scene} />}
       <header className="relative z-[4] flex items-center gap-2 px-3 pt-3">
         <button
           onClick={goBack}

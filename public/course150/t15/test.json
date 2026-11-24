@@ -1,0 +1,351 @@
+{
+ "title": "ДЗ 15. Тригонометрія (ч. 2) (НМТ 150+)",
+ "lessonNumber": 15,
+ "source": "hw-sheet",
+ "hwKey": "150-15",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"1 - \\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\operatorname{tg}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\operatorname{cos} \\alpha \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"7\\operatorname{sin}^{2} \\alpha  - 7\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"7\\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-7\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-7\\operatorname{tg}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"7\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-7\\operatorname{cos} \\alpha \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-7(1 - \\operatorname{sin}^{2} \\alpha ) = -7\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"\\dfrac{\\operatorname{cos}^{2} \\alpha  - 1}{\\operatorname{sin}^{2} \\alpha  - 1}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\operatorname{tg}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\operatorname{cos} \\alpha \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{-\\operatorname{sin}^{2} \\alpha }{-\\operatorname{cos}^{2} \\alpha } = \\operatorname{tg}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть вираз <span data-latex=\"\\dfrac{1 - \\operatorname{sin}^{2} \\alpha }{\\operatorname{cos} \\alpha }\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\operatorname{tg}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\operatorname{cos} \\alpha \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{\\operatorname{cos}^{2} \\alpha }{\\operatorname{cos} \\alpha } = \\operatorname{cos} \\alpha \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть <span data-latex=\"\\dfrac{\\operatorname{sin} 2\\alpha }{2\\operatorname{sin}^{2} \\alpha }\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{1}{\\operatorname{tg} \\alpha }\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\operatorname{tg} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{1}{\\operatorname{sin} \\alpha }\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{\\operatorname{tg} \\alpha }{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{2\\operatorname{sin} \\alpha  \\operatorname{cos} \\alpha }{2\\operatorname{sin}^{2} \\alpha } = \\dfrac{1}{\\operatorname{tg} \\alpha }\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть <span data-latex=\"(\\operatorname{sin} \\alpha  + \\operatorname{cos} \\alpha )^{2} + (\\operatorname{sin} \\alpha  - \\operatorname{cos} \\alpha )^{2}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0"
+    },
+    {
+     "id": 1,
+     "content": "1"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2(\\operatorname{sin}^{2} \\alpha  + \\operatorname{cos}^{2} \\alpha ) = 2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть <span data-latex=\"\\dfrac{4\\operatorname{sin}^{2} \\alpha  + 4\\operatorname{cos}^{2} \\alpha }{\\operatorname{tg} \\alpha  \\operatorname{ctg} \\alpha }\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0"
+    },
+    {
+     "id": 1,
+     "content": "1"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "4"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{4}{1} = 4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Вкажіть проміжок, якому належить значення виразу <span data-latex=\"8\\operatorname{sin} 75^{\\circ} \\operatorname{cos} 75^{\\circ}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(-\\infty ; -2)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"[-1; 0)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "[0; 1)"
+    },
+    {
+     "id": 3,
+     "content": "[1; 2)"
+    },
+    {
+     "id": 4,
+     "content": "[2; +∞)"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4\\operatorname{sin} 150^{\\circ} = 2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Спростіть <span data-latex=\"\\operatorname{tg}^{2} \\alpha  - \\operatorname{tg}^{2} \\alpha  \\cdot  \\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\operatorname{tg}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "1"
+    },
+    {
+     "id": 4,
+     "content": "0"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{tg}^{2} \\alpha  \\operatorname{cos}^{2} \\alpha  = \\operatorname{sin}^{2} \\alpha \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть значення виразу <span data-latex=\"2\\operatorname{sin}^{2} \\alpha  + 5\\operatorname{cos}^{2} \\alpha \" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\operatorname{cos}^{2} \\alpha  = 0{,}4\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2,4"
+    },
+    {
+     "id": 1,
+     "content": "2,8"
+    },
+    {
+     "id": 2,
+     "content": "3,2"
+    },
+    {
+     "id": 3,
+     "content": "3,6"
+    },
+    {
+     "id": 4,
+     "content": "4,0"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2 + 3\\operatorname{cos}^{2} \\alpha  = 3{,}2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Для кутів <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> і <span data-latex=\"\\beta \" data-type=\"inline-math\"></span> виконується умова <span data-latex=\"\\alpha  + \\beta  = 180^{\\circ}\" data-type=\"inline-math\"></span>. Визначте <span data-latex=\"\\operatorname{sin} \\beta \" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\operatorname{sin} \\alpha  = 0{,}8\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-0{,}8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-0{,}6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "0,6"
+    },
+    {
+     "id": 3,
+     "content": "0,8"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{sin}(180^{\\circ} - \\alpha ) = \\operatorname{sin} \\alpha  = 0{,}8\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Для кутів <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> і <span data-latex=\"\\beta \" data-type=\"inline-math\"></span> виконується умова <span data-latex=\"\\alpha  + \\beta  = 180^{\\circ}\" data-type=\"inline-math\"></span>. Визначте <span data-latex=\"\\operatorname{cos} \\beta \" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\operatorname{cos} \\alpha  = \\dfrac{1}{3}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{cos}(180^{\\circ} - \\alpha ) = -\\operatorname{cos} \\alpha  = -\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  1,
+  1,
+  2,
+  4,
+  0,
+  2,
+  4,
+  4,
+  0,
+  2,
+  3,
+  2
+ ],
+ "incomplete": []
+}

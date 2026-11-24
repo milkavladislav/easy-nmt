@@ -1,0 +1,796 @@
+{
+ "number": 13,
+ "title": "Логарифми",
+ "intro": [
+  {
+   "title": "Означення",
+   "text": "у який степінь піднести основу"
+  },
+  {
+   "title": "Властивості",
+   "text": "сума, різниця, степінь"
+  },
+  {
+   "title": "Основна тотожність",
+   "text": "і основа-степінь"
+  },
+  {
+   "title": "Оцінка логарифма",
+   "text": "між якими цілими лежить"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"a^{c} = b\" data-type=\"inline-math\"></span>",
+   "text": "означення логарифма"
+  },
+  {
+   "big": "<span data-latex=\"\\operatorname{log} xy\" data-type=\"inline-math\"></span>",
+   "text": "сума логарифмів"
+  },
+  {
+   "big": "<span data-latex=\"a^{\\operatorname{log}_{a} b}\" data-type=\"inline-math\"></span>",
+   "text": "основна тотожність"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Означення",
+   "title": "Логарифм — це показник степеня",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "?",
+     "title": "Означення",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{log}_{a} b = c\" data-type=\"inline-math\"></span> означає <span data-latex=\"a^{c} = b\" data-type=\"inline-math\"></span>: у який степінь треба піднести <b>основу</b> <span data-latex=\"a\" data-type=\"inline-math\"></span>, щоб отримати <span data-latex=\"b\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Обмеження",
+     "formula": "",
+     "text": "<span data-latex=\"a &gt; 0\" data-type=\"inline-math\"></span>, <span data-latex=\"a \\ne  1\" data-type=\"inline-math\"></span>, <span data-latex=\"b &gt; 0\" data-type=\"inline-math\"></span>. Логарифма від’ємного числа чи нуля <b>немає</b>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Особливі",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{lg} b = \\operatorname{log}_{10} b\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{ln} b = \\operatorname{log}_{e} b\" data-type=\"inline-math\"></span>. Завжди <span data-latex=\"\\operatorname{log}_{a} 1 = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{log}_{a} a = 1\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Логарифм дробу",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{3} \\dfrac{1}{27}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{9}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "3"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{1}{27} = 3^{-3}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"\\operatorname{log}_{3} \\dfrac{1}{27} = -3\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Властивості",
+   "title": "Сума, різниця, степінь",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "+",
+     "title": "Сума",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{log}_{a} x + \\operatorname{log}_{a} y = \\operatorname{log}_{a} (xy)\" data-type=\"inline-math\"></span> — лише за <b>однакової</b> основи."
+    },
+    {
+     "color": "mint",
+     "big": "−",
+     "title": "Різниця",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{log}_{a} x - \\operatorname{log}_{a} y = \\operatorname{log}_{a} \\dfrac{x}{y}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "<span data-latex=\"k\" data-type=\"inline-math\"></span>",
+     "title": "Степінь",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{log}_{a} x^{k} = k\\operatorname{log}_{a} x\" data-type=\"inline-math\"></span>. Зокрема <span data-latex=\"\\operatorname{log}_{a} a^{k} = k\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Сума десяткових логарифмів",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{lg} 4 + \\operatorname{lg} 0{,}025\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\operatorname{lg} 4{,}025\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "0,1"
+     },
+     {
+      "id": 2,
+      "content": "10"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Сума десяткових логарифмів — логарифм добутку: <span data-latex=\"\\operatorname{lg} 4 + \\operatorname{lg} 0{,}025 = \\operatorname{lg} (4 \\cdot  0{,}025) = \\operatorname{lg} 0{,}1 = -1\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Основна тотожність",
+   "title": "Степінь «з’їдає» логарифм",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"=b\" data-type=\"inline-math\"></span>",
+     "title": "Тотожність",
+     "formula": "",
+     "text": "<span data-latex=\"a^{\\operatorname{log}_{a} b} = b\" data-type=\"inline-math\"></span>. Наприклад, <span data-latex=\"7^{\\operatorname{log}_{7} 12} = 12\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Основа — степінь",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{log}_{a^{k}} b = \\dfrac{1}{k}\\operatorname{log}_{a} b\" data-type=\"inline-math\"></span>. Наприклад, <span data-latex=\"\\operatorname{log}_{8} 4 = \\operatorname{log}_{2^{3}} 2^{2} = \\dfrac{2}{3}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Підготуй основу",
+     "formula": "",
+     "text": "Перед тотожністю зведи обидва числа до <b>однієї основи</b>: <span data-latex=\"100 = 10^{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"0{,}25 = 0{,}5^{2}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Основа 0,25",
+    "content": "Обчисліть <span data-latex=\"0{,}25^{\\operatorname{log}_{0{,}5} 4}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "16"
+     },
+     {
+      "id": 1,
+      "content": "0,5"
+     },
+     {
+      "id": 2,
+      "content": "0,25"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"0{,}25 = 0{,}5^{2}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"0{,}25^{\\operatorname{log}_{0{,}5} 4} = (0{,}5^{\\operatorname{log}_{0{,}5} 4})^{2} = 4^{2} = 16\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Оцінка логарифма",
+   "title": "Між якими цілими лежить",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Порівняй зі степенями",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{log}_{2} 10\" data-type=\"inline-math\"></span>: <span data-latex=\"2^{3} = 8 &lt; 10 &lt; 16 = 2^{4}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"3 &lt; \\operatorname{log}_{2} 10 &lt; 4\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Основа менша за 1",
+     "formula": "",
+     "text": "Якщо <span data-latex=\"0 &lt; a &lt; 1\" data-type=\"inline-math\"></span>, логарифм числа <span data-latex=\"b &gt; 1\" data-type=\"inline-math\"></span> <b>від’ємний</b>: <span data-latex=\"\\operatorname{log}_{\\dfrac{1}{2}} 8 = -3\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Цілі в проміжку",
+     "formula": "",
+     "text": "Спершу обчисли кінці, потім рахуй цілі з урахуванням дужок: <span data-latex=\"[\" data-type=\"inline-math\"></span> включає, <span data-latex=\"(\" data-type=\"inline-math\"></span> — ні."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Проміжок для логарифма",
+    "content": "Укажіть проміжок, якому належить число <span data-latex=\"\\operatorname{log}_{\\dfrac{1}{2}} 8\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -5]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-5; 0]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "(0; 1]"
+     },
+     {
+      "id": 3,
+      "content": "(1; 5]"
+     },
+     {
+      "id": 4,
+      "content": "(5; +∞)"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span> у степені <span data-latex=\"-3\" data-type=\"inline-math\"></span> дає 8, тож <span data-latex=\"\\operatorname{log}_{\\dfrac{1}{2}} 8 = -3\" data-type=\"inline-math\"></span>. Число <span data-latex=\"-3\" data-type=\"inline-math\"></span> лежить у проміжку <span data-latex=\"(-5; 0]\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Сума логарифмів",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{15} 5 + \\operatorname{log}_{15} 3\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-15\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-\\dfrac{1}{10}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "3"
+     },
+     {
+      "id": 4,
+      "content": "8"
+     }
+    ],
+    "points": 1,
+    "solution": "log₁₅ (5 · 3) = log₁₅ 15 = 1"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Різниця логарифмів",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{20} 100 - \\operatorname{log}_{20} 5\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-20\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "20"
+     },
+     {
+      "id": 4,
+      "content": "95"
+     }
+    ],
+    "points": 1,
+    "solution": "log₂₀ 100/5 = log₂₀ 20 = 1"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Логарифм степеня",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{7} 7^{10}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-7\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-\\dfrac{1}{7}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{7}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "7"
+     },
+     {
+      "id": 4,
+      "content": "10"
+     }
+    ],
+    "points": 1,
+    "solution": "10 · log₇ 7 = 10"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Основна тотожність",
+    "content": "Знайдіть значення виразу <span data-latex=\"5{,}6^{\\operatorname{log}_{5{,}6} 12}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5,6"
+     },
+     {
+      "id": 1,
+      "content": "12"
+     },
+     {
+      "id": 2,
+      "content": "6,4"
+     },
+     {
+      "id": 3,
+      "content": "67,2"
+     },
+     {
+      "id": 4,
+      "content": "17,6"
+     }
+    ],
+    "points": 1,
+    "solution": "основна логарифмічна тотожність: 12"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Степінь з lg",
+    "content": "Обчисліть <span data-latex=\"10^{3\\operatorname{lg} 2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "10^(lg 2³) = 2³ = 8"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Основа — степінь числа",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{125} \\dfrac{1}{5}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "3"
+     },
+     {
+      "id": 4,
+      "content": "25"
+     }
+    ],
+    "points": 1,
+    "solution": "125^(−1/3) = 1/5 → −1/3"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Різні основи",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{8} 16\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{4}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "12"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "log_2³ 2⁴ = 4/3"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Сума за основою 4",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{4} 2 + \\operatorname{log}_{4} 32\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\operatorname{log}_{4} 34\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "16"
+     }
+    ],
+    "points": 1,
+    "solution": "log₄ (2 · 32) = log₄ 64 = 3"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дробова основа",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{2} 8 - \\operatorname{log}_{\\dfrac{1}{5}} 25\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "3 − (−2) = 5"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Логарифм зі змінною",
+    "content": "Спростіть вираз <span data-latex=\"\\operatorname{log}_{a} 3a - \\operatorname{log}_{a} 3\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\operatorname{log}_{a} 9\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\operatorname{log}_{a} (3a - 3)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "3"
+     },
+     {
+      "id": 4,
+      "content": "0"
+     }
+    ],
+    "points": 1,
+    "solution": "log_a 3a/3 = log_a a = 1"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Відомий логарифм",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{2} \\dfrac{16}{a}\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\operatorname{log}_{2} a = 0{,}5\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "8"
+     },
+     {
+      "id": 1,
+      "content": "4,5"
+     },
+     {
+      "id": 2,
+      "content": "3,5"
+     },
+     {
+      "id": 3,
+      "content": "5"
+     },
+     {
+      "id": 4,
+      "content": "16"
+     }
+    ],
+    "points": 1,
+    "solution": "log₂ 16 − log₂ a = 4 − 0,5 = 3,5"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Модуль з логарифмом",
+    "content": "Обчисліть <span data-latex=\"\\left|\\operatorname{lg} 50 - 2\\right|\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\operatorname{lg} 2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\operatorname{lg} 0{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\operatorname{lg} 48\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\operatorname{lg} 25\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\operatorname{lg} 5\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "2 = lg 100 &gt; lg 50: 2 − lg 50 = lg 100/50 = lg 2"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Цілі числа в проміжку",
+    "content": "Скільки всього цілих чисел містить проміжок <span data-latex=\"[-1; \\operatorname{log}_{4} 16]\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "3"
+     },
+     {
+      "id": 2,
+      "content": "4"
+     },
+     {
+      "id": 3,
+      "content": "5"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "log₄ 16 = 2: −1, 0, 1, 2 — 4 числа"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "НМТ",
+    "title": "Значення при $a = 4$",
+    "content": "Узгодьте вираз (1–3) із його значенням (А–Д), якщо <span data-latex=\"a = 4\" data-type=\"inline-math\"></span>.",
+    "lh": "Вираз",
+    "rh": "Значення виразу",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{2a^{2} - 12a}{a^{2} - 36}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"0{,}04^{\\operatorname{log}_{5} a}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"a^{0} - a^{\\dfrac{3}{2}}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{16}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-7\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "0,8"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-\\dfrac{1}{16}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 3,
+    "solution": "1 — (2a(a − 6))/((a − 6)(a + 6)) = 8/10 = 0,8; 2 — 5^(−2log₅ 4) = 4⁻² = 1/16; 3 — 1 − 8 = −7"
+   },
+   "answer": "3 0 2"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"a^{c} = b\" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"\\operatorname{log}_{a} b = c\" data-type=\"inline-math\"></span> — показник степеня, у який підносять основу."
+  },
+  {
+   "big": "<span data-latex=\"+\" data-type=\"inline-math\"></span>",
+   "text": "Сума логарифмів — логарифм добутку, різниця — частки."
+  },
+  {
+   "big": "<span data-latex=\"k\" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"\\operatorname{log}_{a} x^{k} = k\\operatorname{log}_{a} x\" data-type=\"inline-math\"></span>, а <span data-latex=\"a^{\\operatorname{log}_{a} b} = b\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "<span data-latex=\"\\operatorname{log}_{a^{k}}\" data-type=\"inline-math\"></span>",
+   "text": "Основу-степінь замінюй множником <span data-latex=\"\\dfrac{1}{k}\" data-type=\"inline-math\"></span>."
+  }
+ ]
+}

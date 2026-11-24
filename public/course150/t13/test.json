@@ -1,0 +1,373 @@
+{
+ "title": "ДЗ 13. Логарифми (НМТ 150+)",
+ "lessonNumber": 13,
+ "source": "hw-sheet",
+ "hwKey": "150-13",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{4} 64\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1"
+    },
+    {
+     "id": 1,
+     "content": "2"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "4"
+    },
+    {
+     "id": 4,
+     "content": "8"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4^{3} = 64\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{0{,}2} 0{,}008\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1"
+    },
+    {
+     "id": 1,
+     "content": "2"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "0,2"
+    },
+    {
+     "id": 4,
+     "content": "0,3"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"0{,}2^{3} = 0{,}008\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"100^{\\operatorname{lg} 3}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "6"
+    },
+    {
+     "id": 1,
+     "content": "1 000 000"
+    },
+    {
+     "id": 2,
+     "content": "9"
+    },
+    {
+     "id": 3,
+     "content": "3"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"100^{\\operatorname{lg} 3} = (10^{\\operatorname{lg} 3})^{2} = 3^{2} = 9\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"5^{\\operatorname{log}_{5} 15} + 7^{\\operatorname{log}_{7} 12}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "7"
+    },
+    {
+     "id": 2,
+     "content": "12"
+    },
+    {
+     "id": 3,
+     "content": "25"
+    },
+    {
+     "id": 4,
+     "content": "27"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"15 + 12 = 27\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\operatorname{lg} 25 + \\operatorname{lg} 40\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\operatorname{lg} 65\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "3"
+    },
+    {
+     "id": 4,
+     "content": "4"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{lg} (25 \\cdot  40) = \\operatorname{lg} 1000 = 3\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"2\\operatorname{log}_{6} 3 + \\operatorname{log}_{6} 4\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"2\\operatorname{log}_{6} 12\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "4"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"2\\operatorname{log}_{6} 7\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\operatorname{log}_{6} 13\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{log}_{6} 9 + \\operatorname{log}_{6} 4 = \\operatorname{log}_{6} 36 = 2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть значення виразу <span data-latex=\"\\operatorname{log}_{6} (36 \\cdot  k)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\operatorname{log}_{6} k = 1{,}5\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "2"
+    },
+    {
+     "id": 1,
+     "content": "3,5"
+    },
+    {
+     "id": 2,
+     "content": "4,5"
+    },
+    {
+     "id": 3,
+     "content": "9"
+    },
+    {
+     "id": 4,
+     "content": "24"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{log}_{6} 36 + \\operatorname{log}_{6} k = 2 + 1{,}5 = 3{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\operatorname{log}_{5} \\dfrac{25}{k}\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\operatorname{log}_{5} k = 1{,}2\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0,5"
+    },
+    {
+     "id": 1,
+     "content": "0,8"
+    },
+    {
+     "id": 2,
+     "content": "3,2"
+    },
+    {
+     "id": 3,
+     "content": "4,16"
+    },
+    {
+     "id": 4,
+     "content": "20,83"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{log}_{5} 25 - \\operatorname{log}_{5} k = 2 - 1{,}2 = 0{,}8\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть <span data-latex=\"\\left|\\operatorname{lg} 20 - 1\\right|\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\operatorname{lg} 18\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"1 - \\operatorname{lg} 20\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\operatorname{lg} 2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\operatorname{lg} 19\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\operatorname{lg} 21\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{lg} 20 &gt; 1\" data-type=\"inline-math\"></span>: <span data-latex=\"\\operatorname{lg} 20 - \\operatorname{lg} 10 = \\operatorname{lg} 2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть проміжок, якому належить значення виразу <span data-latex=\"\\operatorname{log}_{0{,}2} 125\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(-\\infty ; -3)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"[-3; 0)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "[0; 3)"
+    },
+    {
+     "id": 3,
+     "content": "[3; 25)"
+    },
+    {
+     "id": 4,
+     "content": "[25; +∞)"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"0{,}2^{-3} = 125\" data-type=\"inline-math\"></span> → <span data-latex=\"-3 \\in  [-3; 0)\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Скільки всього цілих чисел містить проміжок <span data-latex=\"(\\operatorname{log}_{5} 25; 10)\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "7"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "9"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"(2; 10)\" data-type=\"inline-math\"></span>: <span data-latex=\"3, \\ldots , 9\" data-type=\"inline-math\"></span> — 7 чисел"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між виразом (1–3) та його значенням (А–Д).",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{2}{\\sqrt{0{,}25}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"(2^{-1})^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\operatorname{log}_{2} \\dfrac{1}{16}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "2"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 3,
+   "solution": "1 — <span data-latex=\"\\dfrac{2}{0{,}5} = 4\" data-type=\"inline-math\"></span>; 2 — <span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>; 3 — <span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  2,
+  2,
+  2,
+  4,
+  3,
+  0,
+  1,
+  1,
+  2,
+  1,
+  2,
+  "1 4 0"
+ ],
+ "incomplete": []
+}

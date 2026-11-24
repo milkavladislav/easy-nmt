@@ -9,6 +9,7 @@ import {
   createUserWithEmailAndPassword,
   updateProfile,
   signOut,
+  sendPasswordResetEmail,
   onAuthStateChanged
 } from 'firebase/auth';
 import { doc, getDoc, setDoc, updateDoc, arrayUnion, serverTimestamp } from 'firebase/firestore';
@@ -30,6 +31,10 @@ function formatError(err) {
       return 'Неправильний пароль.';
     case 'auth/popup-closed-by-user':
       return 'Вікно авторизації закрите.';
+    case 'auth/too-many-requests':
+      return 'Забагато спроб. Зачекайте кілька хвилин і спробуйте ще раз.';
+    case 'auth/missing-email':
+      return 'Вкажіть електронну пошту.';
     case 'auth/cancelled-popup-request':
       return 'Запит авторизації скасовано.';
     default:
@@ -172,6 +177,16 @@ export function AuthProvider({ children }) {
     }
   };
 
+  const resetPassword = async (email) => {
+    try {
+      setError(null);
+      await sendPasswordResetEmail(auth, email);
+    } catch (err) {
+      setError(formatError(err));
+      throw err;
+    }
+  };
+
   const logout = async () => {
     try {
       setError(null);
@@ -270,6 +285,8 @@ export function AuthProvider({ children }) {
     signInWithGoogle,
     signIn,
     signUp,
+    resetPassword,
+    clearError: () => setError(null),
     logout,
     addPoints,
     checkModuleCompletion

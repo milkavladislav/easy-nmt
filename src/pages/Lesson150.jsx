@@ -118,7 +118,7 @@ export default function Lesson150({ topic, onNavigate }) {
   return (
     <div className="min-h-screen bg-[#070b1f] bg-gradient-to-b from-[#0d1236] via-[#070b1f] to-[#070b1f]">
       <div className="sticky top-0 z-20 bg-[#0b1030]/85 backdrop-blur border-b border-[rgba(245,200,107,.2)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-4">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 py-3 flex items-center gap-4">
           <button onClick={back} className="flex items-center gap-1.5 text-slate-300 hover:text-white text-sm shrink-0">
             <ArrowLeft className="h-4 w-4" />До теми
           </button>
@@ -129,7 +129,7 @@ export default function Lesson150({ topic, onNavigate }) {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-fade-in">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 py-8 space-y-8 animate-fade-in">
         <header className="bg-gradient-to-r from-orange-600/20 via-amber-600/20 to-yellow-600/20 rounded-3xl p-5 sm:p-8 border border-orange-500/30">
           <p className="text-orange-300 text-sm font-semibold mb-1">НМТ 150+ · Тема {lesson.number} · Заняття</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">{lesson.title}</h1>

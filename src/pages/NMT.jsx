@@ -201,31 +201,34 @@ export default function NMT({ onNavigate }) {
   const goldBtn = 'flex items-center justify-center gap-2 bg-gradient-to-b from-[#f8d78a] to-[#e0a84a] hover:from-[#fbe2a6] hover:to-[#eab45a] text-[#1a1206] font-semibold rounded-2xl transition-all duration-300 shadow-lg shadow-[#f5c86b]/10 disabled:opacity-50 disabled:cursor-not-allowed';
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#070b1f] via-[#0b1030] to-[#070b1f] py-8 sm:py-12 text-[#f4ecdf]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-10 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-5 bg-[#f5c86b]/10 ring-2 ring-[#f5c86b]/50 shadow-[0_0_40px_rgba(245,200,107,.2)]">
-            <Flag className="h-9 w-9 text-[#f5c86b]" />
+    <div className="min-h-screen bg-gradient-to-b from-[#070b1f] via-[#0b1030] to-[#070b1f] py-8 text-[#f4ecdf]">
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-8 animate-fade-in">
+          <div className="flex items-center gap-5">
+            <div className="hidden sm:flex shrink-0 items-center justify-center w-16 h-16 rounded-full bg-[#f5c86b]/10 ring-2 ring-[#f5c86b]/50 shadow-[0_0_40px_rgba(245,200,107,.2)]">
+              <Flag className="h-8 w-8 text-[#f5c86b]" />
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-[#f5c86b]/70 mb-1">Фінальна вершина</p>
+              <h1 className="font-['Cormorant_Garamond',serif] text-4xl sm:text-5xl font-semibold text-[#f5c86b] mb-2">Тести НМТ</h1>
+              <p className="text-[#c4bce6] text-base max-w-2xl">
+                Справжні варіанти НМТ з математики з таймером, як на іспиті. Тут перевіряєш, чого навчився у всіх світах.
+              </p>
+            </div>
           </div>
-          <p className="text-xs uppercase tracking-[0.3em] text-[#f5c86b]/70 mb-2">Фінальна вершина</p>
-          <h1 className="font-['Cormorant_Garamond',serif] text-4xl sm:text-5xl font-semibold text-[#f5c86b] mb-3">Тести НМТ</h1>
-          <p className="text-[#c4bce6] text-base max-w-xl mx-auto">
-            Справжні варіанти НМТ з математики з таймером, як на іспиті. Тут перевіряєш, чого навчився у всіх світах.
-          </p>
+          {isAdmin && (
+            <button
+              onClick={() => setShowAddModal(true)}
+              className="self-start sm:self-auto shrink-0 flex items-center justify-center gap-2 border border-[#f5c86b]/40 text-[#f5c86b] hover:bg-[#f5c86b]/10 font-semibold px-6 py-2.5 rounded-2xl transition-all duration-300"
+            >
+              <Plus className="h-5 w-5" />
+              <span>Додати тест</span>
+            </button>
+          )}
         </div>
 
         {isAdmin && (
           <>
-            <div className="flex justify-center mb-8 animate-slide-up">
-              <button
-                onClick={() => setShowAddModal(true)}
-                className="flex items-center justify-center gap-2 border border-[#f5c86b]/40 text-[#f5c86b] hover:bg-[#f5c86b]/10 font-semibold px-6 py-2.5 rounded-2xl transition-all duration-300"
-              >
-                <Plus className="h-5 w-5" />
-                <span>Додати тест</span>
-              </button>
-            </div>
-
             {showAddModal && (
               <div
                 className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
@@ -288,7 +291,7 @@ export default function NMT({ onNavigate }) {
             <p className="text-[#c4bce6] text-lg">Ще не завантажено жодного тесту</p>
           </div>
         ) : (
-          <div className="space-y-4 animate-slide-up">
+          <div className="grid gap-4 lg:grid-cols-2 animate-slide-up">
             {tests.map((test) => (
               <div
                 key={test.id}

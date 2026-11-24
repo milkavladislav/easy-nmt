@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 import { Pyramids } from './DesertScene';
+import { Ship } from './WorldScenes';
 
-const SCENES = { pyramids: Pyramids }; // світи 2–9; без збігу — замок школи чарів
+const SCENES = { pyramids: Pyramids, ship: Ship }; // світи 2–9; без збігу — замок школи чарів
 
 // Нічне небо, місяць, Академія на скелі над річкою, туман і свічки, що плавають у повітрі.
 // Усе — CSS/SVG, без зображень: легко замінити на згенеровані фони, коли вони з’являться.

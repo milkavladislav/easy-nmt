@@ -1,0 +1,780 @@
+{
+ "number": 14,
+ "title": "Тригонометрія (ч. 1)",
+ "intro": [
+  {
+   "title": "Радіани",
+   "text": "переводимо градуси й радіани"
+  },
+  {
+   "title": "Одиничне коло",
+   "text": "косинус — абсциса, синус — ордината"
+  },
+  {
+   "title": "Знаки й значення",
+   "text": "чверті та табличні кути"
+  },
+  {
+   "title": "Формули зведення",
+   "text": "кути <span data-latex=\"90^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span>, <span data-latex=\"180^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span>, <span data-latex=\"270^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"\\pi \" data-type=\"inline-math\"></span>",
+   "text": "дорівнює 180°"
+  },
+  {
+   "big": "<span data-latex=\"(x; y)\" data-type=\"inline-math\"></span>",
+   "text": "косинус і синус на колі"
+  },
+  {
+   "big": "<span data-latex=\"90^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span>",
+   "text": "формули зведення"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Радіани",
+   "title": "<span data-latex=\"\\pi \" data-type=\"inline-math\"></span> радіан = 180°",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\pi \" data-type=\"inline-math\"></span>",
+     "title": "Головне",
+     "formula": "",
+     "text": "<span data-latex=\"\\pi  = 180^{\\circ}\" data-type=\"inline-math\"></span>. Тож <span data-latex=\"\\dfrac{\\pi }{6} = 30^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{\\pi }{4} = 45^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{\\pi }{3} = 60^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{\\pi }{2} = 90^{\\circ}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Градуси → радіани",
+     "formula": "",
+     "text": "Помнож на <span data-latex=\"\\dfrac{\\pi }{180^{\\circ}}\" data-type=\"inline-math\"></span>: <span data-latex=\"225^{\\circ} = \\dfrac{225\\pi }{180} = \\dfrac{5\\pi }{4}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Радіани → градуси",
+     "formula": "",
+     "text": "Заміни <span data-latex=\"\\pi \" data-type=\"inline-math\"></span> на 180°: <span data-latex=\"\\dfrac{5\\pi }{6} = \\dfrac{5 \\cdot  180^{\\circ}}{6} = 150^{\\circ}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Суміжний кут",
+    "content": "Укажіть радіанну міру кута <span data-latex=\"\\beta \" data-type=\"inline-math\"></span>, якщо суміжний з ним кут <span data-latex=\"\\alpha  = \\dfrac{\\pi }{5}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{\\pi }{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{7\\pi }{10}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{4\\pi }{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{9\\pi }{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{3\\pi }{10}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Суміжні кути разом дають <span data-latex=\"\\pi \" data-type=\"inline-math\"></span> (тобто 180°): <span data-latex=\"\\beta  = \\pi  - \\dfrac{\\pi }{5} = \\dfrac{4\\pi }{5}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Одиничне коло",
+   "title": "Точка кола — це <span data-latex=\"(\\operatorname{cos} \\alpha ; \\operatorname{sin} \\alpha )\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"x\" data-type=\"inline-math\"></span>",
+     "title": "Косинус",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos} \\alpha \" data-type=\"inline-math\"></span> — <b>абсциса</b> точки одиничного кола, що відповідає куту <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"y\" data-type=\"inline-math\"></span>",
+     "title": "Синус",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span> — <b>ордината</b> тієї самої точки."
+    },
+    {
+     "color": "coral",
+     "big": "<span data-latex=\"\\dfrac{y}{x}\" data-type=\"inline-math\"></span>",
+     "title": "Тангенс",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{tg} \\alpha  = \\dfrac{\\operatorname{sin} \\alpha }{\\operatorname{cos} \\alpha }\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{ctg} \\alpha  = \\dfrac{\\operatorname{cos} \\alpha }{\\operatorname{sin} \\alpha }\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Синус за точкою",
+    "content": "На одиничному колі позначено точку <span data-latex=\"C(0{,}75; 0{,}65)\" data-type=\"inline-math\"></span> і кут <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> (див. рисунок). Визначте <span data-latex=\"\\text{sin α}\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 300\" width=\"330\" height=\"330\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"150\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"280\" x2=\"150\" y2=\"20\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"280,142 298,150 280,158\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><polygon points=\"142,20 150,2 158,20\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"150\" x2=\"226\" y2=\"84\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M180 150 A30 30 0 0 0 173 130\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><circle cx=\"226\" cy=\"84\" r=\"8\" fill=\"#FF6A3D\"/><text x=\"248\" y=\"60\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"188\" y=\"110\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">α</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-0{,}75\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-0{,}65\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "0,65"
+     },
+     {
+      "id": 3,
+      "content": "0,75"
+     },
+     {
+      "id": 4,
+      "content": "0,5"
+     }
+    ],
+    "points": 1,
+    "solution": "Синус — ордината точки на одиничному колі: <span data-latex=\"\\operatorname{sin} \\alpha  = 0{,}65\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Знаки й значення",
+   "title": "Чверті та повний оберт",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Знаки за чвертями",
+     "formula": "",
+     "text": "I: усі <span data-latex=\"+\" data-type=\"inline-math\"></span>. II: лише <span data-latex=\"\\operatorname{sin} &gt; 0\" data-type=\"inline-math\"></span>. III: лише <span data-latex=\"\\operatorname{tg}, \\operatorname{ctg} &gt; 0\" data-type=\"inline-math\"></span>. IV: лише <span data-latex=\"\\operatorname{cos} &gt; 0\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Табличні значення",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{sin} 30^{\\circ} = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} 45^{\\circ} = \\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} 60^{\\circ} = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} 90^{\\circ} = 1\" data-type=\"inline-math\"></span>; косинус — у зворотному порядку."
+    },
+    {
+     "color": "coral",
+     "big": "360°",
+     "title": "Повний оберт",
+     "formula": "",
+     "text": "Додавання 360° (<span data-latex=\"2\\pi \" data-type=\"inline-math\"></span>) не змінює sin і cos: <span data-latex=\"\\operatorname{cos} 390^{\\circ} = \\operatorname{cos} 30^{\\circ} = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>. <span data-latex=\"\\operatorname{cos}(-\\alpha ) = \\operatorname{cos} \\alpha \" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin}(-\\alpha ) = -\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Синус 210°",
+    "content": "Обчисліть <span data-latex=\"\\operatorname{sin} 210^{\\circ}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-\\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-\\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"210^{\\circ} = 180^{\\circ} + 30^{\\circ}\" data-type=\"inline-math\"></span> — III чверть, синус від’ємний: <span data-latex=\"\\operatorname{sin} 210^{\\circ} = -\\operatorname{sin} 30^{\\circ} = -\\dfrac{1}{2}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Формули зведення",
+   "title": "Два питання до кута",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "",
+     "title": "Чи міняти назву?",
+     "formula": "",
+     "text": "Кут <span data-latex=\"90^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span> або <span data-latex=\"270^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span> — sin ↔ cos, tg ↔ ctg. Кут <span data-latex=\"180^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span> або <span data-latex=\"360^{\\circ} \\pm  \\alpha \" data-type=\"inline-math\"></span> — назва <b>та сама</b>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Який знак?",
+     "formula": "",
+     "text": "Вважай <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> гострим і визнач знак <b>початкової</b> функції в тій чверті, де лежить кут."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos}(90^{\\circ} + \\alpha )\" data-type=\"inline-math\"></span>: назва → sin; <span data-latex=\"90^{\\circ} + \\alpha \" data-type=\"inline-math\"></span> у II чверті, cos там від’ємний. Отже <span data-latex=\"-\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Дріб із формулою зведення",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{\\operatorname{cos}(90^{\\circ} + \\alpha )}{\\text{sin α}}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{ctg α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{tg α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-\\text{ctg α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "1"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\operatorname{cos}(90^{\\circ} + \\alpha ) = -\\operatorname{sin} \\alpha \" data-type=\"inline-math\"></span>, тож дріб дорівнює <span data-latex=\"\\dfrac{-\\operatorname{sin} \\alpha }{\\operatorname{sin} \\alpha } = -1\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Радіани в градуси",
+    "content": "Знайдіть градусну міру кута <span data-latex=\"\\dfrac{4\\pi }{3}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "140°"
+     },
+     {
+      "id": 1,
+      "content": "150°"
+     },
+     {
+      "id": 2,
+      "content": "170°"
+     },
+     {
+      "id": 3,
+      "content": "200°"
+     },
+     {
+      "id": 4,
+      "content": "240°"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{4 \\cdot  180^{\\circ}}{3} = 240^{\\circ}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тангенс за точкою",
+    "content": "На одиничному колі позначено точку <span data-latex=\"C(-\\dfrac{10}{\\sqrt{3}}; \\dfrac{2}{3})\" data-type=\"inline-math\"></span> і кут <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> (див. рисунок). Визначте <span data-latex=\"\\text{tg α}\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 300\" width=\"330\" height=\"330\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"150\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"280\" x2=\"150\" y2=\"20\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"280,142 298,150 280,158\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><polygon points=\"142,20 150,2 158,20\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"150\" x2=\"56\" y2=\"116\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M180 150 A30 30 0 0 0 122 140\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><circle cx=\"56\" cy=\"116\" r=\"8\" fill=\"#FF6A3D\"/><text x=\"36\" y=\"92\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"170\" y=\"108\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">α</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-\\dfrac{20}{3\\sqrt{3}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-5\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-\\dfrac{20}{\\sqrt{3}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-\\dfrac{15}{\\sqrt{3}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-\\dfrac{\\sqrt{3}}{15}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "tg α = y/x = 2/3 : (−10/√3) = −2√3/30 = −√3/15"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Подвійна нерівність",
+    "content": "Укажіть правильну подвійну нерівність, якщо <span data-latex=\"a = \\operatorname{sin} 225^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"b = \\operatorname{cos} 300^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"c = 0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "a &lt; b &lt; c"
+     },
+     {
+      "id": 1,
+      "content": "c &lt; b &lt; a"
+     },
+     {
+      "id": 2,
+      "content": "b &lt; c &lt; a"
+     },
+     {
+      "id": 3,
+      "content": "a &lt; c &lt; b"
+     },
+     {
+      "id": 4,
+      "content": "c &lt; a &lt; b"
+     }
+    ],
+    "points": 1,
+    "solution": "a = −√2/2, b = 1/2, c = 0 → a &lt; c &lt; b"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Порядок зростання",
+    "content": "Розташуйте в порядку зростання числа <span data-latex=\"a = \\operatorname{sin} 45^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"b = \\operatorname{sin} 210^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"c = \\operatorname{sin} 180^{\\circ}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "a, b, c"
+     },
+     {
+      "id": 1,
+      "content": "b, c, a"
+     },
+     {
+      "id": 2,
+      "content": "b, a, c"
+     },
+     {
+      "id": 3,
+      "content": "a, c, b"
+     },
+     {
+      "id": 4,
+      "content": "c, b, a"
+     }
+    ],
+    "points": 1,
+    "solution": "a = √2/2, b = −1/2, c = 0 → b, c, a"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Синус через формулу зведення",
+    "content": "Визначте <span data-latex=\"\\operatorname{sin}(180^{\\circ} + \\alpha )\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\text{sin α} = 0{,}8\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,6"
+     },
+     {
+      "id": 1,
+      "content": "0,2"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-0{,}8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-0{,}6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "0,8"
+     }
+    ],
+    "points": 1,
+    "solution": "III чверть, синус від’ємний, функцію не змінюємо: −sin α = −0,8"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Спрощення виразу",
+    "content": "Спростіть вираз <span data-latex=\"2\\operatorname{cos}(450^{\\circ} + \\alpha ) - \\text{sin α}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{sin α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-3\\text{sin α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-2\\text{cos α} - \\text{sin α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"2\\text{cos α} - \\text{sin α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"3\\text{sin α}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "cos(450° + α) = cos(90° + α) = −sin α: −2sin α − sin α = −3sin α"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дріб із формулою зведення",
+    "content": "Спростіть вираз <span data-latex=\"\\dfrac{\\operatorname{sin}(\\dfrac{3\\pi }{2} - \\alpha )}{\\text{cos α}}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-\\text{tg α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{\\text{tg α}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{tg α}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "sin(3π/2 − α) = −cos α → −1"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Значення виразу",
+    "content": "Обчисліть <span data-latex=\"4\\operatorname{sin} 450^{\\circ} + \\operatorname{tg} 135^{\\circ}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "4 · 1 + (−1) = 3"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Проміжок",
+    "content": "Укажіть проміжок, якому належить значення виразу <span data-latex=\"2\\operatorname{cos} 450^{\\circ} + \\operatorname{tg}(-60^{\\circ})\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"[-3; -2)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"[-2; -1)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"[-1; 0)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "[0; 1)"
+     },
+     {
+      "id": 4,
+      "content": "[1; 2)"
+     }
+    ],
+    "points": 1,
+    "solution": "0 − √3 ≈ −1,73 ∈ [−2; −1)"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Знак добутку",
+    "content": "За якого найменшого з наведених значень кута <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> справджується нерівність <span data-latex=\"\\operatorname{cos} 210^{\\circ} \\cdot  \\text{sin α} &gt; 0\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"0^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"90^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"150^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"270^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"300^{\\circ}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "cos 210° &lt; 0 → потрібно sin α &lt; 0: найменший — 270°"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Знак добутку",
+    "content": "За якого найменшого з наведених значень кута <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> справджується нерівність <span data-latex=\"\\operatorname{sin} 240^{\\circ} \\cdot  \\text{cos α} &gt; 0\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"30^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"60^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"120^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"210^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"300^{\\circ}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "sin 240° &lt; 0 → потрібно cos α &lt; 0: 120°"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Знак добутку",
+    "content": "За якого найменшого з наведених значень кута <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> справджується нерівність <span data-latex=\"\\operatorname{tg} 130^{\\circ} \\cdot  \\text{sin α} &lt; 0\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"45^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"135^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"220^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"310^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"330^{\\circ}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "tg 130° &lt; 0 → потрібно sin α &gt; 0: 45°"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Знак добутку",
+    "content": "За якого найменшого з наведених значень кута <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> справджується нерівність <span data-latex=\"\\operatorname{cos} 310^{\\circ} \\cdot  \\text{tg α} &gt; 0\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"30^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"100^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"200^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"280^{\\circ}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"340^{\\circ}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "cos 310° &gt; 0 → потрібно tg α &gt; 0: 30°"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Радіани",
+    "content": "Обчисліть значення виразу <span data-latex=\"2\\operatorname{sin}(-\\dfrac{\\pi }{2}) + \\operatorname{cos} 3\\pi \" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "2"
+     },
+     {
+      "id": 4,
+      "content": "3"
+     }
+    ],
+    "points": 1,
+    "solution": "2 · (−1) + (−1) = −3"
+   },
+   "answer": 0
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"\\pi \" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"\\pi  = 180^{\\circ}\" data-type=\"inline-math\"></span>: множ на <span data-latex=\"\\dfrac{\\pi }{180^{\\circ}}\" data-type=\"inline-math\"></span> або заміняй <span data-latex=\"\\pi \" data-type=\"inline-math\"></span> на 180°."
+  },
+  {
+   "big": "<span data-latex=\"(x; y)\" data-type=\"inline-math\"></span>",
+   "text": "На одиничному колі <span data-latex=\"\\operatorname{cos} \\alpha  = x\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} \\alpha  = y\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "big": "±",
+   "text": "Знак — за чвертю; 360° не змінює значення."
+  },
+  {
+   "big": "<span data-latex=\"90^{\\circ}\" data-type=\"inline-math\"></span>",
+   "text": "Біля 90° і 270° назва змінюється, біля 180° і 360° — ні."
+  }
+ ]
+}

@@ -249,7 +249,7 @@
     radial-gradient(ellipse 60% 50% at 80% 10%, rgba(139, 108, 255, .3), transparent 70%),
     linear-gradient(180deg, #060918 0%, #121640 60%, #1b1640 100%);
 }
-.q-bleed { margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); border-top: 1px solid rgba(245, 200, 107, .3); border-bottom: 1px solid rgba(245, 200, 107, .3); }
+.q-bleed { border-top: 1px solid rgba(245, 200, 107, .3); border-bottom: 1px solid rgba(245, 200, 107, .3); }
 .q-moon-sm { width: 70px; height: 70px; top: 36px; right: 9%; box-shadow: 0 0 50px 14px rgba(255, 240, 190, .22); }
 @media (max-width: 640px) { .q-moon-sm { width: 44px; height: 44px; top: auto; bottom: 200px; right: 7%; } }
 .q-block-sky::after { /* далекі пагорби на всю ширину */
@@ -295,7 +295,7 @@
 .q-sky.calm .q-star, .q-sky.calm .q-candle, .q-sky.calm .q-candle::before, .q-sky.calm .q-dust, .q-sky.calm .q-fog { animation-play-state: paused; }
 
 /* Початок сторінки курсу: дев'ять світів */
-.q-intro { border-top: 0; margin-top: -2rem; }
+.q-intro { border-top: 0; }
 .q-intro-sky { position: absolute; inset: 0; pointer-events: none;
   background:
     radial-gradient(ellipse 60% 50% at 85% 10%, rgba(139, 108, 255, .28), transparent 70%),
@@ -457,6 +457,14 @@
     linear-gradient(180deg, #0a0920 0%, #1c1236 45%, #4a2140 72%, #8a3f32 100%);
 }
 .w-desert .q-dust { background: rgba(255, 210, 150, .55); }
+/* ---------- квест у світі 3: нічне море ---------- */
+.w-sea .q-sky {
+  background:
+    radial-gradient(ellipse 60% 30% at 50% 100%, rgba(127, 184, 255, .22), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 20% 10%, rgba(139, 108, 255, .14), transparent 70%),
+    linear-gradient(180deg, #030817 0%, #071733 55%, #0d2a52 100%);
+}
+.w-sea .q-dust { background: rgba(200, 225, 255, .5); }
 .q-relic { width: 120px; height: 120px; margin: 0 auto; border-radius: 50%; display: flex; align-items: center; justify-content: center;
   color: var(--q-gold); border: 2px solid var(--q-gold); background: radial-gradient(circle, rgba(255, 220, 150, .3), transparent 70%);
   box-shadow: 0 0 40px rgba(255, 195, 122, .5); animation: q-crystal 3s ease-in-out infinite; }

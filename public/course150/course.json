@@ -161,24 +161,40 @@
      "number": 13,
      "title": "Логарифми",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t13/lesson.json",
+      "test": "/course150/t13/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 14,
      "title": "Тригонометрія (ч. 1)",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t14/lesson.json",
+      "test": "/course150/t14/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 15,
      "title": "Тригонометрія (ч. 2)",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t15/lesson.json",
+      "test": "/course150/t15/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b03/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 4,

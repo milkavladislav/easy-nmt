@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { Loader2 } from 'lucide-react';
+import { pathFor, titleFor, resolvePath } from './router';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
@@ -16,16 +18,52 @@ import Navbar from './components/Navbar';
 
 function AppContent() {
   const { user } = useAuth();
-  const [currentView, setCurrentView] = useState('course');
+  const [currentView, setCurrentView] = useState(null); // null — адреса ще розбирається
   const [viewData, setViewData] = useState(null);
 
-  const handleNavigate = (view, data = null) => {
+  const show = useCallback((view, data) => {
     setCurrentView(view);
     setViewData(data);
+    document.title = titleFor(view, data);
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleNavigate = (view, data = null) => {
+    const path = pathFor(view, data);
+    if (path && path !== window.location.pathname) window.history.pushState(null, '', path);
+    show(view, data);
   };
+
+  // адреса з браузера: перше відкриття сторінки й кнопки «назад / вперед»
+  useEffect(() => {
+    if (!user) return;
+    let alive = true;
+    const sync = () => resolvePath(window.location.pathname)
+      .then((r) => {
+        if (!alive) return;
+        const path = pathFor(r.view, r.data);
+        if (path && path !== window.location.pathname) window.history.replaceState(null, '', path);
+        show(r.view, r.data);
+      })
+      .catch((err) => {
+        console.error('route error:', err);
+        if (alive) show('course', null);
+      });
+    sync();
+    window.addEventListener('popstate', sync);
+    return () => { alive = false; window.removeEventListener('popstate', sync); };
+  }, [user, show]);
 
   if (!user) {
     return <Login />;
+  }
+
+  if (!currentView) {
+    return (
+      <div className="min-h-screen bg-[#070b1f] flex items-center justify-center">
+        <Loader2 className="h-10 w-10 text-[#f5c86b] animate-spin" />
+      </div>
+    );
   }
 
   const renderView = () => {
@@ -53,7 +91,7 @@ function AppContent() {
       case 'nmtTest':
         // з НМТ-тестів приходить сам тест; з курсу 150+ — { test, practice, exit }
         return viewData?.test
-          ? <NMTTestRunner test={viewData.test} practice={viewData.practice} exit={viewData.exit} skin={viewData.skin} onNavigate={handleNavigate} />
+          ? <NMTTestRunner test={viewData.test} practice={viewData.practice} exit={viewData.exit} skin={viewData.skin} world={viewData.world} onNavigate={handleNavigate} />
           : <NMTTestRunner test={viewData} onNavigate={handleNavigate} />;
       default:
         return <Course150 onNavigate={handleNavigate} />;
