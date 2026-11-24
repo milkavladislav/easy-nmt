@@ -12,6 +12,7 @@ import {
   sendPasswordResetEmail,
   onAuthStateChanged
 } from 'firebase/auth';
+import { setFullAccess } from '../utils/course150';
 import { doc, getDoc, setDoc, updateDoc, arrayUnion, serverTimestamp } from 'firebase/firestore';
 
 function formatError(err) {
@@ -74,6 +75,7 @@ export function AuthProvider({ children }) {
 
         if (userDoc.exists()) {
           const userData = userDoc.data();
+          setFullAccess(userData.full_access);
           setUser({
             uid: currentUser.uid,
             email: currentUser.email,
@@ -83,6 +85,7 @@ export function AuthProvider({ children }) {
             metadata: currentUser.metadata
           });
         } else {
+          setFullAccess(false);
           await setDoc(userDocRef, {
             name: currentUser.displayName,
             email: currentUser.email,
@@ -103,6 +106,7 @@ export function AuthProvider({ children }) {
           });
         }
       } else {
+        setFullAccess(false);
         setUser(null);
       }
       setLoading(false);

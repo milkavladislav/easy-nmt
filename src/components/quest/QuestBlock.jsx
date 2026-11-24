@@ -4,7 +4,7 @@ import { Castle } from './QuestScene';
 import { Pyramids } from './DesertScene';
 import { Ship, City, Cathedral, Space, Train, Mountains, Cave } from './WorldScenes';
 import { getStory } from '../../quest';
-import { canOpen, readQuestSave, hasQuest, BLOCK_TEST_MINUTES } from '../../utils/course150';
+import { canOpen, isFree, readQuestSave, hasQuest, BLOCK_TEST_MINUTES } from '../../utils/course150';
 import { WORLD_SECTIONS } from '../../quest/worlds';
 import './quest.css';
 
@@ -22,7 +22,7 @@ function hallState(uid, topic) {
 
 function HallStatus({ topic, story, state, best }) {
   if (!topic.ready) return <span className="flex items-center gap-1.5 text-[#cfc8ea]"><Clock className="h-4 w-4" />Готується</span>;
-  if (!topic.free) return <span className="flex items-center gap-1.5 text-[var(--q-gold-soft)]"><Lock className="h-4 w-4" />Повний доступ</span>;
+  if (!isFree(topic)) return <span className="flex items-center gap-1.5 text-[var(--q-gold-soft)]"><Lock className="h-4 w-4" />Повний доступ</span>;
   return (
     <>
       <span className={`block ${state.artifact ? 'text-[var(--q-gold)]' : 'text-[#cfc8ea]'}`}>
@@ -60,7 +60,7 @@ export default function QuestBlock({ block, uid, best, testIdFor, examBest, exam
   const Scene = SCENES[world.scene] || Castle;
   const states = useMemo(() => Object.fromEntries(block.topics.map((t) => [t.number, hallState(uid, t)])), [block.topics, uid]);
   const artifacts = block.topics.filter((t) => states[t.number].artifact).length;
-  const examOpen = block.topics.every((t) => t.ready) && block.topics[0]?.free;
+  const examOpen = block.topics.every((t) => t.ready) && isFree(block.topics[0]);
 
   return (
     <section className={`quest q-embed q-bleed ${world.theme}`}>

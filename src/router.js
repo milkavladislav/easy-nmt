@@ -9,7 +9,7 @@
 // /block/:b/exam        підсумковий тест блоку
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from './firebase/config';
-import { loadCourse150, loadTopicTest, loadBlockTest, canOpen, hasQuest } from './utils/course150';
+import { loadCourse150, loadTopicTest, loadBlockTest, canOpen, hasQuest, isFree } from './utils/course150';
 
 const TABS = { course: '/', journal: '/journal', profile: '/profile', nmt: '/nmt' };
 const TITLES = { journal: 'Журнал експедиції', profile: 'Профіль', nmt: 'Тести НМТ' };
@@ -87,7 +87,7 @@ export async function resolvePath(pathname) {
   if (m) {
     const c = await course();
     const block = c.blocks.find((b) => b.number === Number(m[1]));
-    const open = block?.test && block.topics.every((t) => t.ready) && block.topics[0]?.free;
+    const open = block?.test && block.topics.every((t) => t.ready) && isFree(block.topics[0]);
     if (!open) return HOME;
     const test = await loadBlockTest(block);
     return {

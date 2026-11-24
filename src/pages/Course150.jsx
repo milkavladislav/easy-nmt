@@ -4,13 +4,13 @@ import { useAuth } from '../context/AuthContext';
 import QuestBlock from '../components/quest/QuestBlock';
 import WorldsIntro from '../components/quest/WorldsIntro';
 import { WORLD_SECTIONS } from '../quest/worlds';
-import { loadCourse150, loadBestResults, loadBlockTest, testIdFor, blockTestIdFor, canOpen, BLOCK_TEST_MINUTES, hasQuest } from '../utils/course150';
+import { loadCourse150, loadBestResults, loadBlockTest, testIdFor, blockTestIdFor, canOpen, isFree, BLOCK_TEST_MINUTES, hasQuest } from '../utils/course150';
 
 function TopicRow({ topic, best, onOpen }) {
   const open = canOpen(topic);
   const status = !topic.ready
     ? { icon: <Clock className="h-4 w-4" />, text: 'Готується', cls: 'text-slate-400 bg-white/5 border-white/10' }
-    : !topic.free
+    : !isFree(topic)
       ? { icon: <Lock className="h-4 w-4" />, text: 'Повний доступ', cls: 'text-amber-300 bg-amber-500/10 border-amber-500/30' }
       : best
         ? { icon: <CheckCircle2 className="h-4 w-4" />, text: `Тест: ${best.earned} / ${best.max}`, cls: 'text-green-400 bg-green-500/10 border-green-500/30' }
@@ -42,7 +42,7 @@ function TopicRow({ topic, best, onOpen }) {
 }
 
 function BlockTestRow({ block, best, loading, onStart }) {
-  const open = block.topics.every((t) => t.ready) && block.topics[0]?.free;
+  const open = block.topics.every((t) => t.ready) && isFree(block.topics[0]);
   return (
     <button
       type="button"

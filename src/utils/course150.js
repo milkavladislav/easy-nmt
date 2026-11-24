@@ -98,7 +98,11 @@ export function bestByTest(results) {
   return best;
 }
 
-export const canOpen = (topic) => topic.ready && topic.free;
+// Повний доступ до всіх блоків — позначка full_access у документі користувача (users/{uid}), її ставить AuthContext
+let fullAccess = false;
+export const setFullAccess = (on) => { fullAccess = !!on; };
+export const isFree = (topic) => !!topic?.free || fullAccess;
+export const canOpen = (topic) => topic.ready && isFree(topic);
 
 // Теми, для яких є сюжет квесту (src/quest/storyNN.js): клік по темі відкриває одразу гру
 export const QUEST_TOPICS = new Set(QUEST_NUMBERS);
