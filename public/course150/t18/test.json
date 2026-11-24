@@ -1,0 +1,359 @@
+{
+ "title": "ДЗ 18. Тригонометричні (НМТ 150+)",
+ "lessonNumber": 18,
+ "source": "hw-sheet",
+ "hwKey": "150-18",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"2\\operatorname{sin} 4x = 1\" data-type=\"inline-math\"></span>. У відповідь оберіть корінь рівняння.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{11\\pi }{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{2\\pi }{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{24}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{2\\pi }{7}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "π"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4x = \\dfrac{\\pi }{6}\" data-type=\"inline-math\"></span> → <span data-latex=\"x = \\dfrac{\\pi }{24}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{sin}(x + \\dfrac{\\pi }{4}) = 0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"x = (-1)^{n} + \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"x = \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"x = -\\dfrac{\\pi }{4} + \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"x = -\\dfrac{\\pi }{4} + 2\\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "Коренів немає"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x + \\dfrac{\\pi }{4} = \\pi n\" data-type=\"inline-math\"></span> → <span data-latex=\"x = -\\dfrac{\\pi }{4} + \\pi n\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{sin}(3x) = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>. У відповідь оберіть найменший додатний корінь.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-\\dfrac{11\\pi }{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{18}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-\\dfrac{\\pi }{18}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{2\\pi }{7}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\pi \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3x = \\dfrac{\\pi }{6}\" data-type=\"inline-math\"></span> → <span data-latex=\"x = \\dfrac{\\pi }{18}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть корінь рівняння <span data-latex=\"\\operatorname{sin} \\pi x = 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-\\dfrac{\\pi }{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "1"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\pi x = \\dfrac{\\pi }{2} + 2\\pi n\" data-type=\"inline-math\"></span> → <span data-latex=\"x = \\dfrac{1}{2} + 2n\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{sin} x = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>. У відповідь оберіть кількість коренів рівняння на проміжку <span data-latex=\"[0; 2\\pi ]\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодного"
+    },
+    {
+     "id": 1,
+     "content": "один"
+    },
+    {
+     "id": 2,
+     "content": "два"
+    },
+    {
+     "id": 3,
+     "content": "три"
+    },
+    {
+     "id": 4,
+     "content": "більше трьох"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{\\pi }{6}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{5\\pi }{6}\" data-type=\"inline-math\"></span> — два"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{cos}(6x) = 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{\\pi k}{6}, k \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{\\pi k}{3}, k \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{2\\pi k}{3}, k \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{6}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"6x = 2\\pi k\" data-type=\"inline-math\"></span> → <span data-latex=\"x = \\dfrac{\\pi k}{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{cos}(2x) = \\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{6} + \\pi k, k \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{3} + 2\\pi k, k \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\pm \\dfrac{\\pi }{12} + 2\\pi k, k \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\pm \\dfrac{\\pi }{12} + \\pi k, k \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\pm \\dfrac{\\pi }{6} + \\pi k, k \\in  Z\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2x = \\pm \\dfrac{\\pi }{6} + 2\\pi k\" data-type=\"inline-math\"></span> → <span data-latex=\"x = \\pm \\dfrac{\\pi }{12} + \\pi k\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"3\\operatorname{cos} 2x = 3\" data-type=\"inline-math\"></span>. У відповідь оберіть найменший додатний корінь.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{5\\pi }{12}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "π"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{7\\pi }{12}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{7\\pi }{18}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{cos} 2x = 1\" data-type=\"inline-math\"></span> → <span data-latex=\"x = \\pi k\" data-type=\"inline-math\"></span> → <span data-latex=\"\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{tg} \\dfrac{x}{3} = 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"x = \\dfrac{3\\pi }{4} + 3\\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"x = \\dfrac{3\\pi }{4} + 2\\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"x = \\pm \\dfrac{3\\pi }{4} + \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"x = \\pm 3\\pi  + 4\\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"x = \\pm \\dfrac{3\\pi }{8} + 2\\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{x}{3} = \\dfrac{\\pi }{4} + \\pi n\" data-type=\"inline-math\"></span> → <span data-latex=\"x = \\dfrac{3\\pi }{4} + 3\\pi n\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{tg} x = -\\dfrac{1}{\\sqrt{3}}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"x = \\dfrac{\\pi }{2} + \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"x = \\dfrac{5\\pi }{6} + \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"x = \\dfrac{5\\pi }{6} + 2\\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"x = \\dfrac{\\pi }{3} + \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"x = -\\dfrac{\\pi }{3} + \\pi n, n \\in  Z\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = -\\dfrac{\\pi }{6} + \\pi n = \\dfrac{5\\pi }{6} + \\pi (n - 1)\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть корінь рівняння <span data-latex=\"\\operatorname{tg} \\dfrac{x}{3} = 0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3π"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-\\dfrac{3\\pi }{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{2\\pi }{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{3\\pi }{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{x}{3} = \\pi n\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 3\\pi n\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Скільки коренів рівняння <span data-latex=\"\\operatorname{tg} x = \\sqrt{3}\" data-type=\"inline-math\"></span> належить проміжку <span data-latex=\"[0; 2\\pi ]\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодного"
+    },
+    {
+     "id": 1,
+     "content": "один"
+    },
+    {
+     "id": 2,
+     "content": "три"
+    },
+    {
+     "id": 3,
+     "content": "два"
+    },
+    {
+     "id": 4,
+     "content": "більше трьох"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{\\pi }{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{4\\pi }{3}\" data-type=\"inline-math\"></span> — два"
+  }
+ ],
+ "answers": [
+  2,
+  2,
+  1,
+  4,
+  2,
+  1,
+  3,
+  1,
+  0,
+  1,
+  0,
+  3
+ ],
+ "incomplete": []
+}

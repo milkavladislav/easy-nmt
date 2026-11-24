@@ -1,0 +1,338 @@
+{
+ "title": "ДЗ 19. Логарифмічні й показникові (НМТ 150+)",
+ "lessonNumber": 19,
+ "source": "hw-sheet",
+ "hwKey": "150-19",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{log}_{5} x = 4\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "25"
+    },
+    {
+     "id": 2,
+     "content": "125"
+    },
+    {
+     "id": 3,
+     "content": "625"
+    },
+    {
+     "id": 4,
+     "content": "1225"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = 5^{4} = 625\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{log}_{3} (x - 2) = 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0,05"
+    },
+    {
+     "id": 1,
+     "content": "0,5"
+    },
+    {
+     "id": 2,
+     "content": "2,5"
+    },
+    {
+     "id": 3,
+     "content": "5"
+    },
+    {
+     "id": 4,
+     "content": "7,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x - 2 = 3\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{log}_{2} (2x - 1) = \\operatorname{log}_{2} (5x - 4)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "0"
+    },
+    {
+     "id": 2,
+     "content": "1"
+    },
+    {
+     "id": 3,
+     "content": "2"
+    },
+    {
+     "id": 4,
+     "content": "3"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2x - 1 = 5x - 4\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 1\" data-type=\"inline-math\"></span> (ОДЗ виконується)"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{log}_{3} x + \\operatorname{log}_{3} (x + 2) = 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "0"
+    },
+    {
+     "id": 2,
+     "content": "1"
+    },
+    {
+     "id": 3,
+     "content": "2"
+    },
+    {
+     "id": 4,
+     "content": "3"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x(x + 2) = 3\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 1\" data-type=\"inline-math\"></span> або <span data-latex=\"x = -3\" data-type=\"inline-math\"></span>; ОДЗ: <span data-latex=\"x &gt; 0\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{log}_{9} (2x - 5) = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "43"
+    },
+    {
+     "id": 3,
+     "content": "4"
+    },
+    {
+     "id": 4,
+     "content": "16"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2x - 5 = 9^{\\dfrac{1}{2}} = 3\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Якому із наведених проміжків належить корінь рівняння <span data-latex=\"\\operatorname{log}_{0{,}5} (x - 2) = -2\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "[1; 3)"
+    },
+    {
+     "id": 1,
+     "content": "[3; 5)"
+    },
+    {
+     "id": 2,
+     "content": "[5; 7)"
+    },
+    {
+     "id": 3,
+     "content": "[7; 9)"
+    },
+    {
+     "id": 4,
+     "content": "[9; +∞)"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x - 2 = 0{,}5^{-2} = 4\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть число, що є коренем рівняння <span data-latex=\"3^{x - 2} = 9\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "4"
+    },
+    {
+     "id": 4,
+     "content": "6"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x - 2 = 2\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"3^{x} = \\dfrac{1}{9}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "3"
+    },
+    {
+     "id": 4,
+     "content": "10"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3^{x} = 3^{-2}\" data-type=\"inline-math\"></span> → <span data-latex=\"x = -2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"5^{4x - 1} = 125\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-0{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "0,5"
+    },
+    {
+     "id": 3,
+     "content": "1"
+    },
+    {
+     "id": 4,
+     "content": "2"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4x - 1 = 3\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"(\\dfrac{1}{7})^{4x} = 7\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-0{,}25\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-1{,}25\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-2{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "0,25"
+    },
+    {
+     "id": 4,
+     "content": "4,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"7^{-4x} = 7^{1}\" data-type=\"inline-math\"></span> → <span data-latex=\"x = -0{,}25\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"16^{1 + 2x} = 8^{x + 7}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0"
+    },
+    {
+     "id": 1,
+     "content": "1,25"
+    },
+    {
+     "id": 2,
+     "content": "2,5"
+    },
+    {
+     "id": 3,
+     "content": "3,4"
+    },
+    {
+     "id": 4,
+     "content": "4,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2^{4 + 8x} = 2^{3x + 21}\" data-type=\"inline-math\"></span> → <span data-latex=\"5x = 17\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 3{,}4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Розв’яжіть рівняння <span data-latex=\"25^{x} - 5^{x} - 20 = 0\" data-type=\"inline-math\"></span>. У відповідь запишіть суму коренів. Якщо рівняння має 1 корінь, у відповідь запишіть його, якщо рівняння коренів немає, у відповідь запишіть число 100.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"t = 5^{x}\" data-type=\"inline-math\"></span>: <span data-latex=\"t^{2} - t - 20 = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"t = 5\" data-type=\"inline-math\"></span> (<span data-latex=\"t = -4\" data-type=\"inline-math\"></span> не підходить) → <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  3,
+  3,
+  2,
+  2,
+  3,
+  2,
+  3,
+  1,
+  3,
+  0,
+  3,
+  "1"
+ ],
+ "incomplete": []
+}

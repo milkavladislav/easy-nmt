@@ -465,6 +465,52 @@
     linear-gradient(180deg, #030817 0%, #071733 55%, #0d2a52 100%);
 }
 .w-sea .q-dust { background: rgba(200, 225, 255, .5); }
+/* ---------- квест у світі 4: нічне місто під дощем ---------- */
+.w-noir .q-sky {
+  background:
+    radial-gradient(ellipse 60% 30% at 50% 100%, rgba(255, 182, 72, .2), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 15%, rgba(120, 140, 170, .12), transparent 70%),
+    linear-gradient(180deg, #07060a 0%, #14100f 55%, #2a1c12 100%);
+}
+.w-noir .q-dust { background: rgba(190, 205, 225, .45); }
+/* ---------- квест у світі 5: вітражний собор ---------- */
+.w-glass .q-sky {
+  background:
+    conic-gradient(from 200deg at 50% 115%, transparent 0 8%, rgba(224, 64, 94, .14) 8% 11%, transparent 11% 15%, rgba(63, 111, 224, .14) 15% 18%, transparent 18% 22%, rgba(47, 158, 107, .12) 22% 25%, transparent 25%),
+    radial-gradient(ellipse 50% 30% at 50% 0%, rgba(255, 201, 107, .12), transparent 70%),
+    linear-gradient(180deg, #0f0819 0%, #22133a 55%, #3a1a42 100%);
+}
+.w-glass .q-dust { background: rgba(255, 220, 200, .5); }
+/* ---------- квест у світі 6: космос ---------- */
+.w-space .q-sky {
+  background:
+    radial-gradient(ellipse 45% 30% at 80% 20%, rgba(255, 122, 217, .14), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 15% 75%, rgba(110, 240, 255, .12), transparent 70%),
+    linear-gradient(180deg, #01020a 0%, #060b24 60%, #0a1330 100%);
+}
+.w-space .q-dust { background: rgba(199, 248, 255, .6); }
+/* ---------- квест у світі 7: паротяг у горах ---------- */
+.w-steam .q-sky {
+  background:
+    radial-gradient(ellipse 60% 30% at 50% 100%, rgba(255, 170, 90, .28), transparent 70%),
+    linear-gradient(180deg, #1b0f14 0%, #4a2618 55%, #8a4a24 100%);
+}
+.w-steam .q-dust { background: rgba(244, 227, 207, .5); }
+/* ---------- квест у світі 8: високогір’я ---------- */
+.w-peaks .q-sky {
+  background:
+    radial-gradient(ellipse 50% 30% at 70% 15%, rgba(255, 224, 138, .16), transparent 70%),
+    linear-gradient(180deg, #0b1a2a 0%, #16304a 50%, #24503c 100%);
+}
+.w-peaks .q-dust { background: rgba(230, 246, 238, .55); }
+/* ---------- квест у світі 9: кришталеві печери ---------- */
+.w-crystal .q-sky {
+  background:
+    radial-gradient(ellipse 45% 35% at 50% 60%, rgba(197, 155, 255, .18), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 20% 20%, rgba(79, 209, 197, .12), transparent 70%),
+    linear-gradient(180deg, #07040f 0%, #160c30 60%, #24134a 100%);
+}
+.w-crystal .q-dust { background: rgba(185, 255, 245, .55); }
 .q-relic { width: 120px; height: 120px; margin: 0 auto; border-radius: 50%; display: flex; align-items: center; justify-content: center;
   color: var(--q-gold); border: 2px solid var(--q-gold); background: radial-gradient(circle, rgba(255, 220, 150, .3), transparent 70%);
   box-shadow: 0 0 40px rgba(255, 195, 122, .5); animation: q-crystal 3s ease-in-out infinite; }

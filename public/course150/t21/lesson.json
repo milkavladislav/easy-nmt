@@ -1,0 +1,780 @@
+{
+ "number": 21,
+ "title": "Нерівності",
+ "intro": [
+  {
+   "title": "Лінійні",
+   "text": "ділення на від’ємне змінює знак"
+  },
+  {
+   "title": "Квадратні",
+   "text": "нулі й інтервали"
+  },
+  {
+   "title": "Показникові",
+   "text": "основа більша чи менша за 1"
+  },
+  {
+   "title": "Логарифмічні",
+   "text": "ще й область визначення"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"&lt;\" data-type=\"inline-math\"></span> ↔ <span data-latex=\"&gt;\" data-type=\"inline-math\"></span>",
+   "text": "ділимо на від’ємне"
+  },
+  {
+   "big": "+ − +",
+   "text": "метод інтервалів"
+  },
+  {
+   "big": "<span data-latex=\"0 &lt; a &lt; 1\" data-type=\"inline-math\"></span>",
+   "text": "знак змінюється"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Лінійні нерівності",
+   "title": "Як рівняння, але з пасткою",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "↔",
+     "title": "Пастка",
+     "formula": "",
+     "text": "Множимо чи ділимо на <b>від’ємне</b> число — знак нерівності змінюється."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "<span data-latex=\"-3x &lt; 9\" data-type=\"inline-math\"></span>: <span data-latex=\"x &gt; -3\" data-type=\"inline-math\"></span>, відповідь <span data-latex=\"(-3; +\\infty )\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Дужки",
+     "formula": "",
+     "text": "Строга нерівність — круглі дужки <span data-latex=\"( )\" data-type=\"inline-math\"></span>; нестрога — квадратні <span data-latex=\"[ ]\" data-type=\"inline-math\"></span>. Біля <span data-latex=\"\\infty \" data-type=\"inline-math\"></span> — завжди кругла."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Ділимо на від’ємне",
+    "content": "Розв’яжіть нерівність <span data-latex=\"2 - 8x &gt; 4\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -\\dfrac{1}{4})\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-4; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-\\dfrac{3}{4}; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-\\dfrac{1}{4}; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; -4)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"-8x &gt; 4 - 2 = 2\" data-type=\"inline-math\"></span>. Ділимо на <span data-latex=\"-8\" data-type=\"inline-math\"></span> і змінюємо знак: <span data-latex=\"x &lt; -\\dfrac{1}{4}\" data-type=\"inline-math\"></span>, тобто <span data-latex=\"(-\\infty ; -\\dfrac{1}{4})\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Квадратні нерівності",
+   "title": "Нулі й інтервали",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "1",
+     "title": "Нулі",
+     "formula": "",
+     "text": "Розв’яжи рівняння <span data-latex=\"ax^{2} + bx + c = 0\" data-type=\"inline-math\"></span> — отримаєш точки на прямій."
+    },
+    {
+     "color": "mint",
+     "big": "2",
+     "title": "Знаки",
+     "formula": "",
+     "text": "При <span data-latex=\"a &gt; 0\" data-type=\"inline-math\"></span>: <b>плюс</b> зовні коренів, <b>мінус</b> між ними."
+    },
+    {
+     "color": "coral",
+     "big": "3",
+     "title": "Вибір",
+     "formula": "",
+     "text": "<span data-latex=\"&gt; 0\" data-type=\"inline-math\"></span> — зовні, <span data-latex=\"&lt; 0\" data-type=\"inline-math\"></span> — між коренями. Якщо <span data-latex=\"D &lt; 0\" data-type=\"inline-math\"></span> — знак сталий."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Квадратний тричлен",
+    "content": "Розв’яжіть нерівність <span data-latex=\"x^{2} + 2x - 24 \\ge  0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -6] \\cup  [4; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-\\infty ; -6]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"[-4; 6]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-\\infty ; -4] \\cup  [6; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"[-6; 4]\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Нулі: <span data-latex=\"x^{2} + 2x - 24 = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"x = -6\" data-type=\"inline-math\"></span> або <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>. Нам потрібно <span data-latex=\"\\ge  0\" data-type=\"inline-math\"></span> — зовні коренів: <span data-latex=\"(-\\infty ; -6] \\cup  [4; +\\infty )\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Показникові нерівності",
+   "title": "Дивимось на основу",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"a &gt; 1\" data-type=\"inline-math\"></span>",
+     "title": "Знак зберігається",
+     "formula": "",
+     "text": "<span data-latex=\"2^{f} &gt; 2^{g}\" data-type=\"inline-math\"></span> ⇔ <span data-latex=\"f &gt; g\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"0 &lt; a &lt; 1\" data-type=\"inline-math\"></span>",
+     "title": "Знак змінюється",
+     "formula": "",
+     "text": "<span data-latex=\"0{,}2^{f} &gt; 0{,}2^{g}\" data-type=\"inline-math\"></span> ⇔ <span data-latex=\"f &lt; g\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Спершу — одна основа",
+     "formula": "",
+     "text": "<span data-latex=\"\\dfrac{1}{9} = 3^{-2}\" data-type=\"inline-math\"></span>, <span data-latex=\"1 = a^{0}\" data-type=\"inline-math\"></span>: приведи обидві частини до степенів з однаковою основою."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Основа менша за 1",
+    "content": "Розв’яжіть нерівність <span data-latex=\"(\\dfrac{3}{7})^{x - 5} &gt; \\dfrac{3}{7}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; 5)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-\\infty ; 6)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "(0; 5)"
+     },
+     {
+      "id": 3,
+      "content": "(5; +∞)"
+     },
+     {
+      "id": 4,
+      "content": "(6; +∞)"
+     }
+    ],
+    "points": 1,
+    "solution": "Праворуч <span data-latex=\"\\dfrac{3}{7} = (\\dfrac{3}{7})^{1}\" data-type=\"inline-math\"></span>. Основа <span data-latex=\"0 &lt; \\dfrac{3}{7} &lt; 1\" data-type=\"inline-math\"></span>, тож знак змінюється: <span data-latex=\"x - 5 &lt; 1\" data-type=\"inline-math\"></span>, <span data-latex=\"x &lt; 6\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Логарифмічні нерівності й системи",
+   "title": "Основа плюс область визначення",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"f &gt; 0\" data-type=\"inline-math\"></span>",
+     "title": "Область визначення",
+     "formula": "",
+     "text": "Під логарифмом — лише додатне. Ця умова входить у відповідь."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Основа",
+     "formula": "",
+     "text": "<span data-latex=\"a &gt; 1\" data-type=\"inline-math\"></span> — знак зберігається, <span data-latex=\"0 &lt; a &lt; 1\" data-type=\"inline-math\"></span> — змінюється. Число <span data-latex=\"b = \\operatorname{log}_{a} a^{b}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Системи нерівностей",
+     "formula": "",
+     "text": "Розв’язок системи — <b>перетин</b> розв’язків кожної нерівності."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Основа 0,5",
+    "content": "Розв’яжіть нерівність <span data-latex=\"\\operatorname{log}_{0{,}5} (x - 1) &gt; 2\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(1; 1,25)"
+     },
+     {
+      "id": 1,
+      "content": "(2; +∞)"
+     },
+     {
+      "id": 2,
+      "content": "(1,25; +∞)"
+     },
+     {
+      "id": 3,
+      "content": "(0; 0,25)"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; 1{,}25)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2 = \\operatorname{log}_{0{,}5} 0{,}25\" data-type=\"inline-math\"></span>. Основа менша за 1, тож знак змінюється, а під логарифмом має бути додатне: <span data-latex=\"0 &lt; x - 1 &lt; 0{,}25\" data-type=\"inline-math\"></span>, тобто <span data-latex=\"1 &lt; x &lt; 1{,}25\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Цілі розв’язки",
+    "content": "Укажіть кількість цілих чисел, що є розв’язками нерівності <span data-latex=\"-4 &lt; x \\le  2{,}2\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "−3, −2, −1, 0, 1, 2 — 6 чисел"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Найменший цілий",
+    "content": "Укажіть <b>найменший</b> цілий розв’язок нерівності <span data-latex=\"\\dfrac{x}{3} - \\dfrac{x}{2} &lt; 1\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "0"
+     }
+    ],
+    "points": 1,
+    "solution": "−x/6 &lt; 1 → x &gt; −6; найменший цілий −5"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дріб у нерівності",
+    "content": "Розв’яжіть нерівність <span data-latex=\"\\dfrac{2x + 10}{5} &gt; -4\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -15)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-5; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-\\infty ; 15)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-\\infty ; -5)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-15; +\\infty )\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "2x + 10 &gt; −20 → x &gt; −15"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Квадрат менший за число",
+    "content": "Розв’яжіть нерівність <span data-latex=\"x^{2} &lt; 9\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -3)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-\\infty ; -3) \\cup  (3; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-\\infty ; 3)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "(3; +∞)"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-3; 3)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "−3 &lt; x &lt; 3"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Добуток множників",
+    "content": "Розв’яжіть нерівність <span data-latex=\"(x + 3)(x - 2) &lt; 0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -3) \\cup  (2; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-3; 2)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "(2; +∞)"
+     },
+     {
+      "id": 3,
+      "content": "(2; 3)"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; -2) \\cup  (3; +\\infty )\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "нулі −3 і 2; між ними знак «−»"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Мінус перед x^2",
+    "content": "Розв’яжіть нерівність <span data-latex=\"-x^{2} - x + 6 &lt; 0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-3; 2)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-\\infty ; -3) \\cup  (2; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-\\infty ; -1) \\cup  (6; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-\\infty ; -2) \\cup  (3; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-2; 3)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x² + x − 6 &gt; 0; нулі −3 і 2"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Порівняння з одиницею",
+    "content": "Розв’яжіть нерівність <span data-latex=\"(\\dfrac{1}{3})^{x} &gt; 1\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; 0)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-\\infty ; 1)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "(0; +∞)"
+     },
+     {
+      "id": 3,
+      "content": "(1; +∞)"
+     },
+     {
+      "id": 4,
+      "content": "(3; +∞)"
+     }
+    ],
+    "points": 1,
+    "solution": "(1/3)x &gt; (1/3)⁰ → x &lt; 0"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Основа 8",
+    "content": "Розв’яжіть нерівність <span data-latex=\"8^{x} &gt; \\dfrac{1}{64}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(2; +∞)"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-\\infty ; 2)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-2; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "(0; 2)"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; -2)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "8x &gt; 8⁻² → x &gt; −2"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Від’ємний степінь",
+    "content": "Розв’яжіть нерівність <span data-latex=\"(\\dfrac{1}{3})^{2x - 1} \\le  27^{-1}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; 2]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"[-1; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-\\infty ; 4]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "[2; +∞)"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; -1]\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "(1/3)^(2x − 1) &lt;= (1/3)³ → 2x − 1 &gt;= 3 → x &gt;= 2"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Подвійна нерівність",
+    "content": "Яке з наведених чисел є розв’язком подвійної нерівності <span data-latex=\"5 \\le  3^{x} \\le  15\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "4"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "2"
+     },
+     {
+      "id": 4,
+      "content": "1"
+     }
+    ],
+    "points": 1,
+    "solution": "3² = 9 — між 5 і 15"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Змінна праворуч",
+    "content": "Розв’яжіть нерівність <span data-latex=\"\\operatorname{log}_{0{,}5} 5 &lt; \\operatorname{log}_{0{,}5} x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-5; 0)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "(0; 5)"
+     },
+     {
+      "id": 2,
+      "content": "(5; +∞)"
+     },
+     {
+      "id": 3,
+      "content": "(0,5; 5)"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; 5)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "0,5 &lt; 1: 0 &lt; x &lt; 5"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Основа 3",
+    "content": "Розв’яжіть нерівність <span data-latex=\"\\operatorname{log}_{3} (2x - 1) &lt; 2\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(0,5; 5)"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-\\infty ; 3{,}5)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "(0,5; 3,5)"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-\\infty ; 5)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "(0,5; +∞)"
+     }
+    ],
+    "points": 1,
+    "solution": "0 &lt; 2x − 1 &lt; 9 → 0,5 &lt; x &lt; 5"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дві лінійні нерівності",
+    "content": "Розв’яжіть систему нерівностей <span data-latex=\"\\begin{cases}x \\ge  -4,\\\\2x &lt; 5.\\end{cases}\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"[-4; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "(2,5; +∞)"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"[-4; 2{,}5)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-\\infty ; -4]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; 2{,}5)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x &gt;= −4 і x &lt; 2,5"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Квадрат і степінь",
+    "content": "Розв’яжіть систему нерівностей <span data-latex=\"\\begin{cases}x^{2} + 9 \\ge  0,\\\\2^{x} &gt; \\dfrac{1}{16}.\\end{cases}\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "∅"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-4; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-4; -3]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-4; -3] \\cup  [3; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"[-3; +\\infty )\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x² + 9 &gt;= 0 — завжди; 2x &gt; 2⁻⁴ → x &gt; −4"
+   },
+   "answer": 1
+  }
+ ],
+ "summary": [
+  {
+   "big": "↔",
+   "text": "Ділиш на від’ємне — змінюй знак."
+  },
+  {
+   "big": "+ − +",
+   "text": "Квадратна: нулі, потім знаки."
+  },
+  {
+   "big": "<span data-latex=\"0 &lt; a &lt; 1\" data-type=\"inline-math\"></span>",
+   "text": "Мала основа змінює знак."
+  },
+  {
+   "big": "<span data-latex=\"f &gt; 0\" data-type=\"inline-math\"></span>",
+   "text": "Логарифм: не забудь область визначення."
+  }
+ ]
+}

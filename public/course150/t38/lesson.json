@@ -1,0 +1,780 @@
+{
+ "number": 38,
+ "title": "Координати й вектори у просторі",
+ "intro": [
+  {
+   "title": "Осі й площини",
+   "text": "які координати нулі"
+  },
+  {
+   "title": "Відстані",
+   "text": "до осі й до точки"
+  },
+  {
+   "title": "Вектори у просторі",
+   "text": "три координати"
+  },
+  {
+   "title": "Довжина й скалярний добуток",
+   "text": "як на площині"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"(x; y; z)\" data-type=\"inline-math\"></span>",
+   "text": "три координати"
+  },
+  {
+   "big": "<span data-latex=\"Oxz\" data-type=\"inline-math\"></span>",
+   "text": "площини й осі"
+  },
+  {
+   "big": "<span data-latex=\"\\sqrt{x^{2} + y^{2} + z^{2}}\" data-type=\"inline-math\"></span>",
+   "text": "довжина"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Осі й координатні площини",
+   "title": "Хто дорівнює нулю",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"y = 0\" data-type=\"inline-math\"></span>",
+     "title": "Площина Oxz",
+     "formula": "",
+     "text": "Точки площини <span data-latex=\"Oxz\" data-type=\"inline-math\"></span> мають <span data-latex=\"y = 0\" data-type=\"inline-math\"></span>; площини <span data-latex=\"Oxy\" data-type=\"inline-math\"></span> — <span data-latex=\"z = 0\" data-type=\"inline-math\"></span>; площини <span data-latex=\"Oyz\" data-type=\"inline-math\"></span> — <span data-latex=\"x = 0\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Осі",
+     "formula": "",
+     "text": "На осі <span data-latex=\"Oz\" data-type=\"inline-math\"></span>: <span data-latex=\"x = y = 0\" data-type=\"inline-math\"></span>, тобто точка <span data-latex=\"(0; 0; z)\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Проєкція",
+     "formula": "",
+     "text": "Проєкція на вісь чи площину — обнуляємо «зайві» координати."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Площина Oxz",
+    "content": "Яка з наведених точок лежить у площині <span data-latex=\"Oxz\" data-type=\"inline-math\"></span> прямокутної системи координат у просторі?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(0; −3; 0)"
+     },
+     {
+      "id": 1,
+      "content": "(0; 4; −3)"
+     },
+     {
+      "id": 2,
+      "content": "(3; 0; −4)"
+     },
+     {
+      "id": 3,
+      "content": "(−4; 3; 0)"
+     },
+     {
+      "id": 4,
+      "content": "(−3; 3; 3)"
+     }
+    ],
+    "points": 1,
+    "solution": "У площині <span data-latex=\"Oxz\" data-type=\"inline-math\"></span> координата <span data-latex=\"y\" data-type=\"inline-math\"></span> дорівнює нулю — шукаємо точку з <span data-latex=\"y = 0\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Відстані",
+   "title": "До осі й між точками",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\sqrt{x^{2} + y^{2}}\" data-type=\"inline-math\"></span>",
+     "title": "До осі Oz",
+     "formula": "",
+     "text": "Беремо дві інші координати: до <span data-latex=\"Oz\" data-type=\"inline-math\"></span> — <span data-latex=\"\\sqrt{x^{2} + y^{2}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Між точками",
+     "formula": "",
+     "text": "<span data-latex=\"AB = \\sqrt{(\\Delta x)^{2} + (\\Delta y)^{2} + (\\Delta z)^{2}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Середина",
+     "formula": "",
+     "text": "Середина відрізка — півсума координат кінців."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Відстань до осі",
+    "content": "Знайдіть відстань від точки <span data-latex=\"A(2; 3; 6)\" data-type=\"inline-math\"></span> до осі <span data-latex=\"Oz\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{13}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "7"
+     },
+     {
+      "id": 2,
+      "content": "6"
+     },
+     {
+      "id": 3,
+      "content": "5"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"3\\sqrt{5}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "До осі <span data-latex=\"Oz\" data-type=\"inline-math\"></span> беремо <span data-latex=\"x\" data-type=\"inline-math\"></span> і <span data-latex=\"y\" data-type=\"inline-math\"></span>: <span data-latex=\"\\sqrt{4 + 9} = \\sqrt{13}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Скалярний добуток",
+   "title": "Три доданки",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"x_{1}x_{2} + y_{1}y_{2} + z_{1}z_{2}\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "Як на площині, але з третьою координатою."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Перпендикулярність",
+     "formula": "",
+     "text": "<span data-latex=\"\\overrightarrow{a} \\perp  \\overrightarrow{b}\" data-type=\"inline-math\"></span>, коли скалярний добуток дорівнює нулю."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Колінеарність",
+     "formula": "",
+     "text": "Усі три координати пропорційні."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Скалярний добуток",
+    "content": "Обчисліть скалярний добуток векторів <span data-latex=\"\\overrightarrow{a}(-3; 2; -1)\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{b}(-1; -4; 5)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "120"
+     },
+     {
+      "id": 1,
+      "content": "26"
+     },
+     {
+      "id": 2,
+      "content": "0"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-10\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-16\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(-3)(-1) + 2 \\cdot  (-4) + (-1) \\cdot  5 = 3 - 8 - 5 = -10\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Довжина вектора",
+   "title": "Спершу координати",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\left|\\overrightarrow{a}\\right|\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"\\left|\\overrightarrow{a}\\right| = \\sqrt{x^{2} + y^{2} + z^{2}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Сума",
+     "formula": "",
+     "text": "Довжина суми — це довжина вектора з координатами-сумами, а не сума довжин."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "<span data-latex=\"\\overrightarrow{a}(2; 3; 6)\" data-type=\"inline-math\"></span>: <span data-latex=\"\\sqrt{4 + 9 + 36} = 7\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Довжина суми",
+    "content": "Визначте модуль (довжину) вектора <span data-latex=\"\\overrightarrow{d} = \\overrightarrow{x} + \\overrightarrow{y}\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\overrightarrow{x}(1; 5; -3)\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{y}(4; -2; 1)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "5"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{38}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{39}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\sqrt{42}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\overrightarrow{d} = (5; 3; -2)\" data-type=\"inline-math\"></span>, <span data-latex=\"\\left|\\overrightarrow{d}\\right| = \\sqrt{25 + 9 + 4} = \\sqrt{38}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Точка на осі z",
+    "content": "У прямокутній системі координат у просторі на осі <span data-latex=\"z\" data-type=\"inline-math\"></span> вибрано точку <span data-latex=\"M\" data-type=\"inline-math\"></span> (див. рисунок). Укажіть можливі координати цієї точки.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 532 448\" width=\"532\" height=\"448\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"237\" y1=\"280\" x2=\"173\" y2=\"344\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"161,356 168,339 178,349\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"147\" y=\"374\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><line x1=\"237\" y1=\"280\" x2=\"473\" y2=\"280\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"489,280 473,287 473,273\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"493\" y=\"310\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><line x1=\"237\" y1=\"280\" x2=\"237\" y2=\"84\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"237,68 244,84 230,84\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"217\" y=\"78\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">z</text><circle cx=\"237\" cy=\"169\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"263\" y=\"177\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text><text x=\"253\" y=\"306\" font-size=\"39\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(1; 0; 0)"
+     },
+     {
+      "id": 1,
+      "content": "(1; 1; 0)"
+     },
+     {
+      "id": 2,
+      "content": "(0; 0; 1)"
+     },
+     {
+      "id": 3,
+      "content": "(0; 0; −1)"
+     },
+     {
+      "id": 4,
+      "content": "(0; 1; 0)"
+     }
+    ],
+    "points": 1,
+    "solution": "точка осі z — (0; 0; z), на рисунку z &gt; 0"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Середина відрізка",
+    "content": "Точка <span data-latex=\"N\" data-type=\"inline-math\"></span> лежить на координатній осі <span data-latex=\"z\" data-type=\"inline-math\"></span> (див. рисунок). Укажіть можливі координати середини відрізка <span data-latex=\"ON\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 532 448\" width=\"532\" height=\"448\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"237\" y1=\"280\" x2=\"173\" y2=\"344\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"161,356 168,339 178,349\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"147\" y=\"374\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><line x1=\"237\" y1=\"280\" x2=\"473\" y2=\"280\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"489,280 473,287 473,273\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"493\" y=\"310\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><line x1=\"237\" y1=\"280\" x2=\"237\" y2=\"84\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"237,68 244,84 230,84\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"217\" y=\"78\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">z</text><circle cx=\"237\" cy=\"169\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"263\" y=\"177\" font-size=\"42\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">N</text><text x=\"253\" y=\"306\" font-size=\"39\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(0; 0; 5)"
+     },
+     {
+      "id": 1,
+      "content": "(0; 0; −5)"
+     },
+     {
+      "id": 2,
+      "content": "(5; 0; 0)"
+     },
+     {
+      "id": 3,
+      "content": "(0; 5; 0)"
+     },
+     {
+      "id": 4,
+      "content": "(5; 0; 5)"
+     }
+    ],
+    "points": 1,
+    "solution": "N(0; 0; z), z &gt; 0; середина ON — теж на додатній півосі z"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Вісь Oz",
+    "content": "Яка з наведених точок належить осі <span data-latex=\"Oz\" data-type=\"inline-math\"></span> прямокутної системи координат у просторі?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "M(0; −3; 0)"
+     },
+     {
+      "id": 1,
+      "content": "N(3; 0; −3)"
+     },
+     {
+      "id": 2,
+      "content": "K(−3; 0; 0)"
+     },
+     {
+      "id": 3,
+      "content": "L(−3; 3; 0)"
+     },
+     {
+      "id": 4,
+      "content": "F(0; 0; −3)"
+     }
+    ],
+    "points": 1,
+    "solution": "на осі Oz x = y = 0"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Відстань до осі",
+    "content": "У прямокутній системі координат у просторі знайдіть відстань від точки <span data-latex=\"M(0; 8; 6)\" data-type=\"inline-math\"></span> до осі <span data-latex=\"Oy\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "6"
+     },
+     {
+      "id": 1,
+      "content": "7"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "10"
+     },
+     {
+      "id": 4,
+      "content": "14"
+     }
+    ],
+    "points": 1,
+    "solution": "√(x² + z²) = √(0 + 36) = 6"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Проєкція на вісь",
+    "content": "Задано точку <span data-latex=\"A(-1; 4; 5)\" data-type=\"inline-math\"></span>. Укажіть координати точки, що є проєкцією точки <span data-latex=\"A\" data-type=\"inline-math\"></span> на вісь <span data-latex=\"y\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(−1; 0; 5)"
+     },
+     {
+      "id": 1,
+      "content": "(0; 4; 0)"
+     },
+     {
+      "id": 2,
+      "content": "(−1; 0; 0)"
+     },
+     {
+      "id": 3,
+      "content": "(0; −4; 0)"
+     },
+     {
+      "id": 4,
+      "content": "(0; 0; 5)"
+     }
+    ],
+    "points": 1,
+    "solution": "проєкція на вісь y: (0; y; 0)"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Симетрія відносно точки",
+    "content": "Задано точки <span data-latex=\"A(5; -4; 0)\" data-type=\"inline-math\"></span> і <span data-latex=\"B(7; 2; -2)\" data-type=\"inline-math\"></span>. Визначте координати точки <span data-latex=\"C\" data-type=\"inline-math\"></span>, яка симетрична до точки <span data-latex=\"A\" data-type=\"inline-math\"></span> відносно точки <span data-latex=\"B\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(2; 6; −2)"
+     },
+     {
+      "id": 1,
+      "content": "(12; −6; 2)"
+     },
+     {
+      "id": 2,
+      "content": "(9; 8; 4)"
+     },
+     {
+      "id": 3,
+      "content": "(6; −1; −1)"
+     },
+     {
+      "id": 4,
+      "content": "(9; 8; −4)"
+     }
+    ],
+    "points": 1,
+    "solution": "C = 2B − A = (14 − 5; 4 + 4; −4 − 0)"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Проєкція і відстань",
+    "content": "Задано точки <span data-latex=\"C(-1; 3; -4)\" data-type=\"inline-math\"></span> і <span data-latex=\"D\" data-type=\"inline-math\"></span>. Точка <span data-latex=\"D\" data-type=\"inline-math\"></span> є проєкцією точки <span data-latex=\"C\" data-type=\"inline-math\"></span> на вісь <span data-latex=\"x\" data-type=\"inline-math\"></span>. Знайдіть відстань між точками <span data-latex=\"C\" data-type=\"inline-math\"></span> і <span data-latex=\"D\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{10}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\sqrt{17}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "5"
+     },
+     {
+      "id": 4,
+      "content": "4"
+     }
+    ],
+    "points": 1,
+    "solution": "D(−1; 0; 0); CD = √(9 + 16) = 5"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Відстань до початку",
+    "content": "Задано точку <span data-latex=\"O(0; 0; 0)\" data-type=\"inline-math\"></span>. Укажіть з-поміж наведених точку, відстань від якої до точки <span data-latex=\"O\" data-type=\"inline-math\"></span> дорівнює 10.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(10; 10; 10)"
+     },
+     {
+      "id": 1,
+      "content": "(−10; 10; 0)"
+     },
+     {
+      "id": 2,
+      "content": "(5; 5; 0)"
+     },
+     {
+      "id": 3,
+      "content": "(0; −6; 8)"
+     },
+     {
+      "id": 4,
+      "content": "(0; 4; 6)"
+     }
+    ],
+    "points": 1,
+    "solution": "√(0 + 36 + 64) = 10"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Діагональ паралелепіпеда",
+    "content": "Зображено прямокутний паралелепіпед, одна з вершин якого — початок координат <span data-latex=\"O\" data-type=\"inline-math\"></span>, а три ребра лежать на координатних осях. Точка <span data-latex=\"K(5; 1; 7)\" data-type=\"inline-math\"></span> — вершина паралелепіпеда. Визначте довжину його діагоналі.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 505 436\" width=\"505\" height=\"436\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"172\" y1=\"287\" x2=\"172\" y2=\"97\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"287\" x2=\"352\" y2=\"287\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"287\" x2=\"112\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"97\" x2=\"352\" y2=\"97\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"97\" x2=\"112\" y2=\"156\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"352\" y1=\"287\" x2=\"352\" y2=\"97\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"352\" y1=\"287\" x2=\"292\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"352\" y1=\"97\" x2=\"292\" y2=\"156\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"112\" y1=\"346\" x2=\"112\" y2=\"156\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"112\" y1=\"346\" x2=\"292\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"112\" y1=\"156\" x2=\"292\" y2=\"156\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"292\" y1=\"346\" x2=\"292\" y2=\"156\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"287\" x2=\"92\" y2=\"367\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"81,378 87,362 97,372\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"67\" y=\"396\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><line x1=\"172\" y1=\"287\" x2=\"431\" y2=\"287\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"447,287 431,294 431,280\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"451\" y=\"317\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><line x1=\"172\" y1=\"287\" x2=\"172\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"172,22 179,38 165,38\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"152\" y=\"32\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">z</text><text x=\"312\" y=\"188\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><text x=\"154\" y=\"277\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"5\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\sqrt{26}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"10\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "15"
+     },
+     {
+      "id": 4,
+      "content": "13"
+     }
+    ],
+    "points": 1,
+    "solution": "√(25 + 1 + 49) = √75 = 5√3"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Симетрія відносно площини",
+    "content": "Знайдіть точку, симетричну точці <span data-latex=\"A(2; -3; 7)\" data-type=\"inline-math\"></span> відносно координатної площини <span data-latex=\"yz\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(2; −3; −7)"
+     },
+     {
+      "id": 1,
+      "content": "(−2; −3; 7)"
+     },
+     {
+      "id": 2,
+      "content": "(2; 3; 7)"
+     },
+     {
+      "id": 3,
+      "content": "(−2; 3; −7)"
+     },
+     {
+      "id": 4,
+      "content": "(−2; −3; −7)"
+     }
+    ],
+    "points": 1,
+    "solution": "відносно yz змінюється знак x"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Точка на сфері",
+    "content": "Задано сферу з центром у початку координат, якій належить точка <span data-latex=\"A(0; 0; -5)\" data-type=\"inline-math\"></span>. Яка з наведених точок також належить цій сфері?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "K(5; 5; 0)"
+     },
+     {
+      "id": 1,
+      "content": "L(0; 1; 4)"
+     },
+     {
+      "id": 2,
+      "content": "M(0; 0; 10)"
+     },
+     {
+      "id": 3,
+      "content": "N(0; 0; 5)"
+     },
+     {
+      "id": 4,
+      "content": "P(5; 5; 5)"
+     }
+    ],
+    "points": 1,
+    "solution": "R = 5; N(0; 0; 5): √25 = 5"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Центр сфери",
+    "content": "Задано сферу з центром у точці <span data-latex=\"M\" data-type=\"inline-math\"></span>. Відрізок <span data-latex=\"AB\" data-type=\"inline-math\"></span> — діаметр цієї сфери. Визначте координати точки <span data-latex=\"M\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"A(2; -1; 0)\" data-type=\"inline-math\"></span>, <span data-latex=\"B(8; 3; 2)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(10; 2; 2)"
+     },
+     {
+      "id": 1,
+      "content": "(6; 4; 2)"
+     },
+     {
+      "id": 2,
+      "content": "(3; 2; 1)"
+     },
+     {
+      "id": 3,
+      "content": "(5; 1; 2)"
+     },
+     {
+      "id": 4,
+      "content": "(5; 1; 1)"
+     }
+    ],
+    "points": 1,
+    "solution": "M — середина AB: (5; 1; 1)"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Усередині сфери",
+    "content": "Задано сферу з центром у точці <span data-latex=\"O(11; -3; -5)\" data-type=\"inline-math\"></span>. Точка <span data-latex=\"A(-1; 2; -5)\" data-type=\"inline-math\"></span> належить цій сфері. Яка з наведених точок лежить усередині сфери?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "(11; −3; 10)"
+     },
+     {
+      "id": 1,
+      "content": "(11; −3; 6)"
+     },
+     {
+      "id": 2,
+      "content": "(11; −3; 19)"
+     },
+     {
+      "id": 3,
+      "content": "(11; −3; −19)"
+     },
+     {
+      "id": 4,
+      "content": "(11; −3; 9)"
+     }
+    ],
+    "points": 1,
+    "solution": "R = √(144 + 25) = 13; (11; −3; 6): d = 11 &lt; 13"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Зовнішній дотик",
+    "content": "Задано кулі з центрами в точках <span data-latex=\"O_{1}(1; -4; 10)\" data-type=\"inline-math\"></span> і <span data-latex=\"O_{2}(7; 4; -14)\" data-type=\"inline-math\"></span>, що мають зовнішній дотик (див. рисунок). Якому значенню серед наведених <b>може</b> дорівнювати радіус меншої кулі?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 598 312\" width=\"598\" height=\"312\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"150\" cy=\"156\" r=\"124\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M26 156 A124 35 0 0 0 273 156\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><path d=\"M26 156 A124 35 0 0 1 273 156\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><circle cx=\"422\" cy=\"156\" r=\"150\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M273 156 A150 42 0 0 0 572 156\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><path d=\"M273 156 A150 42 0 0 1 572 156\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><circle cx=\"150\" cy=\"156\" r=\"6\" fill=\"#1E1B4B\"/><circle cx=\"422\" cy=\"156\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"110\" y=\"148\" font-size=\"39\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O₁</text><text x=\"467\" y=\"148\" font-size=\"39\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O₂</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "12"
+     },
+     {
+      "id": 1,
+      "content": "13"
+     },
+     {
+      "id": 2,
+      "content": "16"
+     },
+     {
+      "id": 3,
+      "content": "17"
+     },
+     {
+      "id": 4,
+      "content": "26"
+     }
+    ],
+    "points": 1,
+    "solution": "O₁O₂ = 26 = R₁ + R₂; менший радіус &lt; 13"
+   },
+   "answer": 0
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"(x; y; z)\" data-type=\"inline-math\"></span>",
+   "text": "Три координати."
+  },
+  {
+   "big": "<span data-latex=\"y = 0\" data-type=\"inline-math\"></span>",
+   "text": "Площина Oxz."
+  },
+  {
+   "big": "<span data-latex=\"\\sqrt{x^{2} + y^{2}}\" data-type=\"inline-math\"></span>",
+   "text": "Відстань до осі Oz."
+  },
+  {
+   "big": "<span data-latex=\"\\left|\\overrightarrow{a}\\right|\" data-type=\"inline-math\"></span>",
+   "text": "Довжина — корінь із суми квадратів."
+  }
+ ]
+}

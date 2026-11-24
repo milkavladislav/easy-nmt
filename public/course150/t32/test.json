@@ -1,0 +1,107 @@
+{
+ "title": "ДЗ 32. Застосування похідної (НМТ 150+)",
+ "lessonNumber": 32,
+ "source": "hw-sheet",
+ "hwKey": "150-32",
+ "questions": [
+  {
+   "type": "short",
+   "content": "Для якого значення <span data-latex=\"x_{0}\" data-type=\"inline-math\"></span> функція <span data-latex=\"y = 2x^{3} - 3x^{2} - 12x + 5\" data-type=\"inline-math\"></span> набуває свого найбільшого значення на проміжку <span data-latex=\"[-2; 3]\" data-type=\"inline-math\"></span>?",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"y&#x27; = 6(x + 1)(x - 2)\" data-type=\"inline-math\"></span>; <span data-latex=\"y(-2) = 1\" data-type=\"inline-math\"></span>, <span data-latex=\"y(-1) = 12\" data-type=\"inline-math\"></span>, <span data-latex=\"y(2) = -15\" data-type=\"inline-math\"></span>, <span data-latex=\"y(3) = -4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Знайдіть різницю між найбільшим і найменшим значеннями функції <span data-latex=\"f(x) = 2x^{3} - 3x^{2} - 12x + 1\" data-type=\"inline-math\"></span> на відрізку <span data-latex=\"[0; 3]\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "критична точка <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>; <span data-latex=\"f(0) = 1\" data-type=\"inline-math\"></span>, <span data-latex=\"f(2) = -19\" data-type=\"inline-math\"></span>, <span data-latex=\"f(3) = -8\" data-type=\"inline-math\"></span>; <span data-latex=\"1 - (-19) = 20\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Знайдіть різницю між найбільшим і найменшим значеннями функції <span data-latex=\"f(x) = x^{3} - 6x^{2} + 9\" data-type=\"inline-math\"></span> на відрізку <span data-latex=\"[-1; 4]\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f&#x27;(x) = 3x(x - 4)\" data-type=\"inline-math\"></span>; <span data-latex=\"f(-1) = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"f(0) = 9\" data-type=\"inline-math\"></span>, <span data-latex=\"f(4) = -23\" data-type=\"inline-math\"></span>; <span data-latex=\"9 - (-23) = 32\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Обчисліть кутовий коефіцієнт дотичної, проведеної до графіка функції <span data-latex=\"f(x) = \\sqrt{x} + 3\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0} = 4\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"k = f&#x27;(4) = \\dfrac{1}{2\\sqrt{4}} = 0{,}25\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Обчисліть кутовий коефіцієнт дотичної, проведеної до графіка функції <span data-latex=\"f(x) = 3\\operatorname{cos} x\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0} = \\dfrac{\\pi }{6}\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"k = -3\\operatorname{sin}\\dfrac{\\pi }{6} = -1{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Дотична, проведена до графіка функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0} = 2\" data-type=\"inline-math\"></span>, паралельна прямій <span data-latex=\"y = -2x + 7\" data-type=\"inline-math\"></span>. Знайдіть значення похідної функції <span data-latex=\"g(x) = 4x^{2} - f(x)\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = 2\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f&#x27;(2) = -2\" data-type=\"inline-math\"></span>; <span data-latex=\"g&#x27;(2) = 8 \\cdot  2 - f&#x27;(2) = 18\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Дотична, проведена до графіка функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0} = 0\" data-type=\"inline-math\"></span>, паралельна прямій <span data-latex=\"y = x + 3\" data-type=\"inline-math\"></span>. Знайдіть значення похідної функції <span data-latex=\"g(x) = e^{x} - f(x)\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = 0\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f&#x27;(0) = 1\" data-type=\"inline-math\"></span>; <span data-latex=\"g&#x27;(0) = e^{0} - 1 = 0\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Дотична, проведена до графіка функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0} = 1\" data-type=\"inline-math\"></span>, перпендикулярна до прямої <span data-latex=\"y = 2x - 3\" data-type=\"inline-math\"></span>. Знайдіть значення похідної функції <span data-latex=\"g(x) = 3x^{2} + f(x)\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = 1\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f&#x27;(1) = -\\dfrac{1}{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"g&#x27;(1) = 6 - 0{,}5 = 5{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Дотична, проведена до графіка функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0} = 3\" data-type=\"inline-math\"></span>, перпендикулярна до прямої <span data-latex=\"y = -0{,}25x + 10\" data-type=\"inline-math\"></span>. Знайдіть значення похідної функції <span data-latex=\"g(x) = \\sqrt{x + 1} + 2f(x)\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = 3\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f&#x27;(3) = 4\" data-type=\"inline-math\"></span>; <span data-latex=\"g&#x27;(3) = \\dfrac{1}{2\\sqrt{4}} + 2 \\cdot  4 = 8{,}25\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Графіком функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> є парабола з вершиною в точці <span data-latex=\"(0; 0)\" data-type=\"inline-math\"></span>. Обчисліть <span data-latex=\"f(3)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f&#x27;(2) = 10\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f = ax^{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(2) = 4a = 10\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 2{,}5\" data-type=\"inline-math\"></span>; <span data-latex=\"f(3) = 22{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Графіком функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> є парабола з вершиною в точці <span data-latex=\"(0; -2)\" data-type=\"inline-math\"></span>. Обчисліть <span data-latex=\"f(-1)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f&#x27;(-3) = -6\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f = ax^{2} - 2\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(-3) = -6a = -6\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 1\" data-type=\"inline-math\"></span>; <span data-latex=\"f(-1) = -1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Графіком функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> є парабола з вершиною в точці <span data-latex=\"(1; -1)\" data-type=\"inline-math\"></span>. Обчисліть <span data-latex=\"f(2)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f&#x27;(0) = -2\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"f = a(x - 1)^{2} - 1\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(0) = -2a = -2\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 1\" data-type=\"inline-math\"></span>; <span data-latex=\"f(2) = 0\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  "-1",
+  "20",
+  "32",
+  "0,25",
+  "-1,5",
+  "18",
+  "0",
+  "5,5",
+  "8,25",
+  "22,5",
+  "-1",
+  "0"
+ ],
+ "incomplete": []
+}

@@ -1,0 +1,212 @@
+{
+ "title": "ДЗ 43. Куля (НМТ 150+)",
+ "lessonNumber": 43,
+ "source": "hw-sheet",
+ "hwKey": "150-43",
+ "questions": [
+  {
+   "type": "single",
+   "content": "На сайт інтернет-магазину надійшло замовлення на придбання свічки у формі кулі. Яку із зображених свічок має вибрати для цього замовлення менеджер магазину?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"20,130 75,148 65,15\" fill=\"#F6A15B\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"75,148 112,128 65,15\" fill=\"#E07F35\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg></div>"
+    },
+    {
+     "id": 1,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"30,40 85,40 85,145 30,145\" fill=\"#C0393B\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"85,40 108,25 108,128 85,145\" fill=\"#8E2526\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"30,40 53,25 108,25 85,40\" fill=\"#D96465\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg></div>"
+    },
+    {
+     "id": 2,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"65\" cy=\"88\" r=\"46\" fill=\"#3D63D8\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><line x1=\"65\" y1=\"42\" x2=\"68\" y2=\"28\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></div>"
+    },
+    {
+     "id": 3,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M25 25 L25 140 A40 12 0 0 0 105 140 L105 25\" fill=\"#F3E3B3\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><ellipse cx=\"65\" cy=\"25\" rx=\"40\" ry=\"12\" fill=\"#F3E3B3\" stroke=\"#1E1B4B\" stroke-width=\"3\"/></svg></div>"
+    },
+    {
+     "id": 4,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M65 12 L27 135 A38 11 0 0 0 103 135 Z\" fill=\"#3FA34D\" stroke=\"#1E1B4B\" stroke-width=\"3\"/></svg></div>"
+    }
+   ],
+   "points": 1,
+   "solution": "куля — свічка В"
+  },
+  {
+   "type": "single",
+   "content": "Доберіть закінчення речення так, щоб утворилося правильне твердження: «Сфера утворена обертанням…»",
+   "variants": [
+    {
+     "id": 0,
+     "content": "круга навколо хорди, що не є діаметром"
+    },
+    {
+     "id": 1,
+     "content": "кола навколо його діаметра"
+    },
+    {
+     "id": 2,
+     "content": "кола навколо хорди, що не є діаметром"
+    },
+    {
+     "id": 3,
+     "content": "круга навколо прямої, що не проходить через його центр"
+    },
+    {
+     "id": 4,
+     "content": "кола навколо його дотичної"
+    }
+   ],
+   "points": 1,
+   "solution": "сфера утворюється обертанням кола (півкола) навколо діаметра"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть площу сфери, діаметр якої дорівнює 12 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"36\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"72\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"144\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"288\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"576\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"R = 6\" data-type=\"inline-math\"></span>; <span data-latex=\"4\\pi  \\cdot  36 = 144\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Переріз кулі площиною має площу <span data-latex=\"144\\pi \" data-type=\"inline-math\"></span> см². Знайдіть відстань від центра кулі до площини перерізу, якщо радіус кулі дорівнює 13 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\text{3 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\text{5 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\text{10 см}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"r = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"d = \\sqrt{169 - 144} = 5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "У скільки разів зменшиться об’єм кулі, якщо її радіус зменшити у 3 рази?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "у 3 рази"
+    },
+    {
+     "id": 1,
+     "content": "у 6 разів"
+    },
+    {
+     "id": 2,
+     "content": "у 9 разів"
+    },
+    {
+     "id": 3,
+     "content": "у 12 разів"
+    },
+    {
+     "id": 4,
+     "content": "у 27 разів"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"V \\text{∼} R^{3}\" data-type=\"inline-math\"></span>: <span data-latex=\"3^{3} = 27\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Задано сферу з площею поверхні <span data-latex=\"648\\pi \" data-type=\"inline-math\"></span> см² і правильну чотирикутну піраміду. Радіус кола, описаного навколо основи піраміди, дорівнює радіусу сфери. Знайдіть об’єм піраміди (у см³), якщо її апофема нахилена до площини основи під кутом 45°.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"R^{2} = 162\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 9\\sqrt{2}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a = 18\" data-type=\"inline-math\"></span>; кут 45° ⇒ <span data-latex=\"H = \\dfrac{a}{2} = 9\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  324 \\cdot  9\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Задано сферу з площею поверхні <span data-latex=\"432\\pi \" data-type=\"inline-math\"></span> см² і правильну трикутну піраміду. Радіус кола, описаного навколо основи піраміди, дорівнює радіусу сфери, а висота піраміди — діаметру сфери. Визначте об’єм (у см³) піраміди.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"R^{2} = 108\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 6\\sqrt{3}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a = 18\" data-type=\"inline-math\"></span>, <span data-latex=\"S = 81\\sqrt{3}\" data-type=\"inline-math\"></span>; <span data-latex=\"H = 12\\sqrt{3}\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  81\\sqrt{3} \\cdot  12\\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Об’єм кулі дорівнює <span data-latex=\"288\\pi \" data-type=\"inline-math\"></span> см³. Знайдіть радіус кулі (у см).",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"\\dfrac{4}{3}\\pi R^{3} = 288\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"R^{3} = 216\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 6\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "content": "Площа сфери дорівнює <span data-latex=\"196\\pi \" data-type=\"inline-math\"></span> см². Знайдіть діаметр сфери (у см).",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"4\\pi R^{2} = 196\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"R^{2} = 49\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 7\" data-type=\"inline-math\"></span>, <span data-latex=\"d = 14\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "content": "Кулю радіуса 6 см перетнули площиною на відстані 4 см від центра. Площа перерізу дорівнює <span data-latex=\"S\\pi \" data-type=\"inline-math\"></span> см². Знайдіть <span data-latex=\"S\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"r^{2} = R^{2} - d^{2} = 36 - 16 = 20\" data-type=\"inline-math\"></span>; площа перерізу <span data-latex=\"\\pi r^{2} = 20\\pi \" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "content": "Скільки кульок радіуса 2 см можна відлити з металевої кулі радіуса 6 см? Втратами металу знехтуйте.",
+   "variants": [],
+   "points": 2,
+   "solution": "Об’єми відносяться як куби радіусів: <span data-latex=\"(\\dfrac{6}{2})^{3} = 27\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "content": "Куля радіуса 3 см вписана в циліндр (дотикається до обох основ і бічної поверхні). Об’єм циліндра дорівнює <span data-latex=\"V\\pi \" data-type=\"inline-math\"></span> см³. Знайдіть <span data-latex=\"V\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "Радіус циліндра 3, висота — діаметр кулі 6: <span data-latex=\"\\pi  \\cdot  9 \\cdot  6 = 54\\pi \" data-type=\"inline-math\"></span>."
+  }
+ ],
+ "answers": [
+  2,
+  1,
+  2,
+  1,
+  4,
+  "972",
+  "972",
+  "6",
+  "14",
+  "20",
+  "27",
+  "54"
+ ],
+ "incomplete": []
+}

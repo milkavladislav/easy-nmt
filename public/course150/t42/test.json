@@ -1,0 +1,254 @@
+{
+ "title": "ДЗ 42. Циліндр і конус (НМТ 150+)",
+ "lessonNumber": 42,
+ "source": "hw-sheet",
+ "hwKey": "150-42",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Площа основи циліндра дорівнює <span data-latex=\"36\\pi \" data-type=\"inline-math\"></span> см², а його твірна — 4 см. Знайдіть площу бічної поверхні цього циліндра.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"144\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"108\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"48\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"24\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"72\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"R = 6\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 2\\pi  \\cdot  6 \\cdot  4 = 48\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Осьовим перерізом циліндра є квадрат зі стороною 8 см. Визначте площу <span data-latex=\"S\" data-type=\"inline-math\"></span> (у см²) бічної поверхні цього циліндра. У відповіді запишіть значення виразу <span data-latex=\"\\dfrac{S}{\\pi }\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"R = 4\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 8\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 2\\pi  \\cdot  4 \\cdot  8 = 64\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У прямокутній системі координат у просторі задано циліндр, осьовим перерізом якого є прямокутник <span data-latex=\"ABCD\" data-type=\"inline-math\"></span>. Висота й радіус основи циліндра є рівними. Обчисліть площу <span data-latex=\"S\" data-type=\"inline-math\"></span> повної поверхні циліндра, якщо <span data-latex=\"A(-10; 8; 3)\" data-type=\"inline-math\"></span>, <span data-latex=\"C(0; -7; 8)\" data-type=\"inline-math\"></span>. У відповідь запишіть значення <span data-latex=\"\\dfrac{S}{\\pi }\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"AC^{2} = 350 = 4R^{2} + R^{2}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"R^{2} = 70\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 4\\pi R^{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У прямокутній системі координат у просторі задано циліндр, осьовим перерізом якого є квадрат <span data-latex=\"ABCD\" data-type=\"inline-math\"></span>, <span data-latex=\"C(8; -13; 10)\" data-type=\"inline-math\"></span>. Точка <span data-latex=\"O(4; -3; 2)\" data-type=\"inline-math\"></span> ділить відрізок <span data-latex=\"AD\" data-type=\"inline-math\"></span> навпіл. Обчисліть об’єм <span data-latex=\"V\" data-type=\"inline-math\"></span> цього циліндра. У відповідь запишіть значення <span data-latex=\"\\dfrac{V}{\\pi }\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"OC^{2} = 180 = a^{2} + \\dfrac{a^{2}}{4}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\pi  \\cdot  36 \\cdot  12\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Осьовим перерізом циліндра є квадрат <span data-latex=\"ABCD\" data-type=\"inline-math\"></span>. Точки <span data-latex=\"L\" data-type=\"inline-math\"></span> і <span data-latex=\"M\" data-type=\"inline-math\"></span> є серединами сторін <span data-latex=\"AD\" data-type=\"inline-math\"></span> і <span data-latex=\"CD\" data-type=\"inline-math\"></span>, <span data-latex=\"LM = \\sqrt{212}\" data-type=\"inline-math\"></span>. Визначте площу <span data-latex=\"S\" data-type=\"inline-math\"></span> бічної поверхні циліндра. У відповідь запишіть значення <span data-latex=\"\\dfrac{S}{\\pi }\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"LM = \\dfrac{a\\sqrt{2}}{2}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a^{2} = 424\" data-type=\"inline-math\"></span>; <span data-latex=\"S = \\pi a^{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Пряма чотирикутна призма й циліндр мають рівні висоти. В основі призми лежить ромб з діагоналями 12 см і 16 см. Радіус основи циліндра дорівнює стороні ромба. Площа бічної поверхні циліндра дорівнює <span data-latex=\"400\\pi \" data-type=\"inline-math\"></span> см². Знайдіть об’єм призми (у см³).",
+   "variants": [],
+   "points": 2,
+   "solution": "сторона ромба 10 = <span data-latex=\"R\" data-type=\"inline-math\"></span>; <span data-latex=\"2\\pi  \\cdot  10 \\cdot  H = 400\\pi \" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"H = 20\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{12 \\cdot  16}{2} \\cdot  20\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Доберіть закінчення речення так, щоб утворилося правильне твердження: «Конус утворений обертанням…»",
+   "variants": [
+    {
+     "id": 0,
+     "content": "рівнобедреного трикутника навколо його основи"
+    },
+    {
+     "id": 1,
+     "content": "рівностороннього трикутника навколо його сторони"
+    },
+    {
+     "id": 2,
+     "content": "рівностороннього трикутника навколо його висоти"
+    },
+    {
+     "id": 3,
+     "content": "прямокутного трикутника навколо його гіпотенузи"
+    },
+    {
+     "id": 4,
+     "content": "прямокутника навколо його діагоналі"
+    }
+   ],
+   "points": 1,
+   "solution": "рівносторонній трикутник обертається навколо висоти — половина трикутника є прямокутним трикутником, що обертається навколо катета"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть геометричне тіло, яке утворене внаслідок обертання прямокутного трикутника з меншим катетом 10 см навколо прямої <span data-latex=\"a\" data-type=\"inline-math\"></span> (див. рисунок).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 320\" width=\"300\" height=\"320\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"230,280 70,280 230,50\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"230\" y1=\"20\" x2=\"230\" y2=\"305\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><polyline points=\"214,280 214,264 230,264\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><path d=\"M208 28 A22 7 0 1 0 252 28\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><text x=\"248\" y=\"310\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">a</text><text x=\"150\" y=\"312\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">10 см</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "циліндр із твірною 10 см"
+    },
+    {
+     "id": 1,
+     "content": "циліндр із радіусом основи 10 см"
+    },
+    {
+     "id": 2,
+     "content": "конус із твірною 10 см"
+    },
+    {
+     "id": 3,
+     "content": "конус із радіусом основи 10 см"
+    },
+    {
+     "id": 4,
+     "content": "конус із висотою 10 см"
+    }
+   ],
+   "points": 1,
+   "solution": "вісь — більший катет, тому менший катет 10 см стає радіусом основи"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть тіло, яке утвориться внаслідок обертання рівнобедреного трикутника навколо прямої <span data-latex=\"a\" data-type=\"inline-math\"></span> (див. рисунок).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 260 330\" width=\"260\" height=\"330\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"45,280 215,280 130,50\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"130\" y1=\"25\" x2=\"130\" y2=\"305\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><polyline points=\"144,280 144,266 130,266\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><path d=\"M108 32 A22 7 0 1 0 152 32\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><text x=\"148\" y=\"310\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">a</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "конус"
+    },
+    {
+     "id": 1,
+     "content": "циліндр"
+    },
+    {
+     "id": 2,
+     "content": "куля"
+    },
+    {
+     "id": 3,
+     "content": "зрізаний конус"
+    },
+    {
+     "id": 4,
+     "content": "півкуля"
+    }
+   ],
+   "points": 1,
+   "solution": "висота ділить трикутник на два прямокутні, обертання навколо катета — конус"
+  },
+  {
+   "type": "single",
+   "content": "Довжина кола основи конуса дорівнює <span data-latex=\"8\\pi \" data-type=\"inline-math\"></span> см. Знайдіть довжину твірної конуса, якщо його висота дорівнює 3 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\text{11 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\text{10 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\text{7 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\text{5 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"R = 4\" data-type=\"inline-math\"></span>, <span data-latex=\"l = \\sqrt{16 + 9} = 5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть об’єм конуса, якщо його радіус дорівнює 6 см, твірна — 10 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"48\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"60\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"96\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"120\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"288\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"H = 8\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3}\\pi  \\cdot  36 \\cdot  8 = 96\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Визначте об’єм конуса, твірна якого дорівнює 13 см, а висота — 12 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"156\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"325\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"100\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"60\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"300\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"R = 5\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3}\\pi  \\cdot  25 \\cdot  12 = 100\\pi \" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  2,
+  "64",
+  "280",
+  "432",
+  "424",
+  "1920",
+  2,
+  3,
+  0,
+  3,
+  2,
+  2
+ ],
+ "incomplete": []
+}

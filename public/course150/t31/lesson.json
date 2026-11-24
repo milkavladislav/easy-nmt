@@ -1,0 +1,717 @@
+{
+ "number": 31,
+ "title": "Похідна",
+ "intro": [
+  {
+   "title": "Таблиця похідних",
+   "text": "степінь, синус, косинус, експонента"
+  },
+  {
+   "title": "Добуток і частка",
+   "text": "<span data-latex=\"(uv)&#x27;\" data-type=\"inline-math\"></span> і <span data-latex=\"(\\dfrac{u}{v})&#x27;\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Складена функція",
+   "text": "похідна зовнішньої на похідну внутрішньої"
+  },
+  {
+   "title": "Механічний зміст",
+   "text": "швидкість і прискорення"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"(x^{n})&#x27;\" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"nx^{n - 1}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "big": "<span data-latex=\"(uv)&#x27;\" data-type=\"inline-math\"></span>",
+   "text": "добуток"
+  },
+  {
+   "big": "<span data-latex=\"v = s&#x27;\" data-type=\"inline-math\"></span>",
+   "text": "швидкість"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Таблиця похідних",
+   "title": "Похідна суми — сума похідних",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"x^{n}\" data-type=\"inline-math\"></span>",
+     "title": "Степінь",
+     "formula": "",
+     "text": "<span data-latex=\"(x^{n})&#x27; = nx^{n - 1}\" data-type=\"inline-math\"></span>; <span data-latex=\"(c)&#x27; = 0\" data-type=\"inline-math\"></span>; <span data-latex=\"(kx)&#x27; = k\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Тригонометрія",
+     "formula": "",
+     "text": "<span data-latex=\"(\\operatorname{sin} x)&#x27; = \\operatorname{cos} x\" data-type=\"inline-math\"></span>, <span data-latex=\"(\\operatorname{cos} x)&#x27; = -\\operatorname{sin} x\" data-type=\"inline-math\"></span>, <span data-latex=\"(\\operatorname{tg} x)&#x27; = \\dfrac{1}{\\operatorname{cos}^{2} x}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Експонента й логарифм",
+     "formula": "",
+     "text": "<span data-latex=\"(e^{x})&#x27; = e^{x}\" data-type=\"inline-math\"></span>, <span data-latex=\"(\\operatorname{ln} x)&#x27; = \\dfrac{1}{x}\" data-type=\"inline-math\"></span>, <span data-latex=\"(\\sqrt{x})&#x27; = \\dfrac{1}{2\\sqrt{x}}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Сума",
+    "content": "Знайдіть похідну функції <span data-latex=\"y = x^{4} + 3\\operatorname{cos} x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"y&#x27; = 4x^{3} + 3\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"y&#x27; = 4x - 3\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"y&#x27; = 4x^{3} - 3\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"y&#x27; = \\dfrac{x^{5}}{5} + 3\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"y&#x27; = x^{3} - 3\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Похідна суми — сума похідних: <span data-latex=\"(x^{4})&#x27; = 4x^{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"(3\\operatorname{cos} x)&#x27; = -3\\operatorname{sin} x\" data-type=\"inline-math\"></span>. Разом <span data-latex=\"y&#x27; = 4x^{3} - 3\\operatorname{sin} x\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Добуток і частка",
+   "title": "Дві формули",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"(uv)&#x27;\" data-type=\"inline-math\"></span>",
+     "title": "Добуток",
+     "formula": "",
+     "text": "<span data-latex=\"(uv)&#x27; = u&#x27;v + uv&#x27;\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"(\\dfrac{u}{v})&#x27;\" data-type=\"inline-math\"></span>",
+     "title": "Частка",
+     "formula": "",
+     "text": "<span data-latex=\"(\\dfrac{u}{v})&#x27; = \\dfrac{u&#x27;v - uv&#x27;}{v^{2}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Простіше",
+     "formula": "",
+     "text": "Інколи легше розкрити дужки: <span data-latex=\"x(x + 2) = x^{2} + 2x\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Добуток",
+    "content": "Знайдіть похідну функції <span data-latex=\"y = x^{2} \\cdot  e^{x}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"y&#x27; = 2x^{2} + e^{x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"y&#x27; = 2x^{2}e^{x} + x^{2}e^{x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"y&#x27; = 2xe^{x} + x^{2}e^{x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"y&#x27; = 2x^{2} + 2e^{x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"y&#x27; = 2x + e^{x}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"u = x^{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"v = e^{x}\" data-type=\"inline-math\"></span>: <span data-latex=\"y&#x27; = 2x \\cdot  e^{x} + x^{2} \\cdot  e^{x}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Складена функція",
+   "title": "Зовнішня на внутрішню",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"f(g(x))&#x27;\" data-type=\"inline-math\"></span>",
+     "title": "Правило",
+     "formula": "",
+     "text": "<span data-latex=\"(f(g(x)))&#x27; = f&#x27;(g(x)) \\cdot  g&#x27;(x)\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Приклади",
+     "formula": "",
+     "text": "<span data-latex=\"(\\operatorname{sin} 5x)&#x27; = 5\\operatorname{cos} 5x\" data-type=\"inline-math\"></span>; <span data-latex=\"(e^{3x})&#x27; = 3e^{3x}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Степінь дужки",
+     "formula": "",
+     "text": "<span data-latex=\"((x^{2} + 1)^{4})&#x27; = 4(x^{2} + 1)^{3} \\cdot  2x\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Складена функція",
+    "content": "Знайдіть похідну функції <span data-latex=\"y = e^{-2x}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"y&#x27; = e^{-2x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"y&#x27; = -2e^{-2x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"y&#x27; = -2xe^{-2x - 1}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"y&#x27; = 2e^{-2x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"y&#x27; = -\\dfrac{1}{2}e^{-2x}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Зовнішня — <span data-latex=\"e^{u}\" data-type=\"inline-math\"></span>, внутрішня — <span data-latex=\"u = -2x\" data-type=\"inline-math\"></span>: <span data-latex=\"y&#x27; = e^{-2x} \\cdot  (-2) = -2e^{-2x}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Механічний зміст",
+   "title": "Швидкість і прискорення",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"v = s&#x27;\" data-type=\"inline-math\"></span>",
+     "title": "Швидкість",
+     "formula": "",
+     "text": "Швидкість — похідна шляху за часом."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"a = v&#x27;\" data-type=\"inline-math\"></span>",
+     "title": "Прискорення",
+     "formula": "",
+     "text": "Прискорення — похідна швидкості."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Зупинка",
+     "formula": "",
+     "text": "Тіло зупиняється, коли <span data-latex=\"v(t) = 0\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Прискорення",
+    "content": "Тіло рухається прямолінійно за законом <span data-latex=\"s(t) = \\dfrac{2}{3}t^{3} - 2t^{2} + 4t\" data-type=\"inline-math\"></span> (час <span data-latex=\"t\" data-type=\"inline-math\"></span> — у секундах, шлях <span data-latex=\"s\" data-type=\"inline-math\"></span> — у метрах). Визначте прискорення руху в момент <span data-latex=\"t = 10\" data-type=\"inline-math\"></span> с.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "164 м/с²"
+     },
+     {
+      "id": 1,
+      "content": "60 м/с²"
+     },
+     {
+      "id": 2,
+      "content": "36 м/с²"
+     },
+     {
+      "id": 3,
+      "content": "20 м/с²"
+     },
+     {
+      "id": 4,
+      "content": "10 м/с²"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"v(t) = 2t^{2} - 4t + 4\" data-type=\"inline-math\"></span>, <span data-latex=\"a(t) = v&#x27;(t) = 4t - 4\" data-type=\"inline-math\"></span>. У момент <span data-latex=\"t = 10\" data-type=\"inline-math\"></span>: <span data-latex=\"a = 36\" data-type=\"inline-math\"></span> м/с²."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Сума",
+    "content": "Укажіть похідну функції <span data-latex=\"y = \\operatorname{sin} x - \\operatorname{cos} x + 1\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"y&#x27; = \\operatorname{cos} x + \\operatorname{sin} x + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"y&#x27; = \\operatorname{cos} x - \\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"y&#x27; = -\\operatorname{cos} x - \\operatorname{sin} x + x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"y&#x27; = -\\operatorname{cos} x - \\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"y&#x27; = \\operatorname{cos} x + \\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "cos x − (−sin x) + 0"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Розкрити дужки",
+    "content": "Укажіть похідну функції <span data-latex=\"f(x) = x(x^{3} + 1)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"f&#x27;(x) = 4x^{3} + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"f&#x27;(x) = 4x^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"f&#x27;(x) = 3x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"f&#x27;(x) = 3x^{2} + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"f&#x27;(x) = \\dfrac{x^{5}}{5} + \\dfrac{x^{2}}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "f(x) = x⁴ + x, f'(x) = 4x³ + 1"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Степінь і тангенс",
+    "content": "Укажіть похідну функції <span data-latex=\"f(x) = 4x^{3} + \\operatorname{tg} x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"f&#x27;(x) = 12x^{2} + \\dfrac{1}{\\operatorname{tg} x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"f&#x27;(x) = 12x - \\dfrac{1}{\\operatorname{tg} x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"f&#x27;(x) = x^{4} + \\dfrac{1}{\\operatorname{cos}^{2} x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"f&#x27;(x) = 12x^{2} + \\dfrac{1}{\\operatorname{cos}^{2} x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"f&#x27;(x) = x^{4} - \\dfrac{1}{\\operatorname{tg} x}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "(4x³)' = 12x², (tg x)' = 1/(cos² x)"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дріб",
+    "content": "Знайдіть похідну функції <span data-latex=\"f(x) = 2 + \\dfrac{3}{x}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"f&#x27;(x) = -\\dfrac{3}{x^{2}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"f&#x27;(x) = 3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"f&#x27;(x) = 3\\operatorname{ln}\\left|x\\right|\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"f&#x27;(x) = 2x + 3\\operatorname{ln}\\left|x\\right|\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"f&#x27;(x) = \\dfrac{3}{x^{2}}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "(3x⁻¹)' = −3x⁻² = −3/x²"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Частка",
+    "content": "Знайдіть похідну функції <span data-latex=\"f(x) = \\dfrac{x}{x^{2} + 1}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"f&#x27;(x) = \\dfrac{1 + 3x^{2}}{(x^{2} + 1)^{2}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"f&#x27;(x) = \\dfrac{1 - x^{2}}{(x^{2} + 1)^{2}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"f&#x27;(x) = \\dfrac{1}{2x}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"f&#x27;(x) = \\dfrac{1 - x^{2}}{x^{2} + 1}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"f&#x27;(x) = \\dfrac{x^{2} - 1}{(x^{2} + 1)^{2}}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "(1 · (x² + 1) − x · 2x)/((x² + 1)²) = (1 − x²)/((x² + 1)²)"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Значення похідної",
+    "content": "Знайдіть значення похідної функції <span data-latex=\"f(x) = 4\\operatorname{cos} x + 5\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = \\dfrac{\\pi }{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "f'(x) = −4sin x, f'(π/2) = −4"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Складена функція",
+    "content": "Знайдіть похідну функції <span data-latex=\"y = \\operatorname{cos} 3x\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = \\dfrac{\\pi }{18}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-\\dfrac{3}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-\\dfrac{3\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-\\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{3}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "y' = −3sin 3x, −3sinπ/6 = −3/2"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Значення похідної",
+    "content": "Знайдіть значення похідної функції <span data-latex=\"f(x) = x^{3} - 2x\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = 2\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "10"
+     },
+     {
+      "id": 4,
+      "content": "12"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x) = 3x^{2} - 2\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(2) = 12 - 2 = 10\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Значення похідної",
+    "content": "Знайдіть <span data-latex=\"f&#x27;(0)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f(x) = 5\\operatorname{sin} x + x^{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0"
+     },
+     {
+      "id": 1,
+      "content": "1"
+     },
+     {
+      "id": 2,
+      "content": "5"
+     },
+     {
+      "id": 3,
+      "content": "6"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x) = 5\\operatorname{cos} x + 2x\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(0) = 5 \\cdot  1 + 0 = 5\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Складена функція",
+    "content": "Знайдіть <span data-latex=\"f&#x27;(1)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f(x) = (2x - 1)^{3}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "6"
+     },
+     {
+      "id": 4,
+      "content": "12"
+     }
+    ],
+    "points": 1,
+    "solution": "Складена функція: <span data-latex=\"f&#x27;(x) = 3(2x - 1)^{2} \\cdot  2 = 6(2x - 1)^{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(1) = 6\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Значення похідної",
+    "content": "Знайдіть <span data-latex=\"f&#x27;(0)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f(x) = 3e^{x} - x^{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "0"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "3"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"3e\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x) = 3e^{x} - 2x\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(0) = 3 - 0 = 3\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Значення похідної",
+    "content": "Обчисліть <span data-latex=\"f&#x27;(1)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f(x) = \\operatorname{ln} x + x^{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"f&#x27;(x) = \\dfrac{1}{x} + 2x\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(1) = 1 + 2 = 3\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "3"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Похідна кореня",
+    "content": "Обчисліть <span data-latex=\"f&#x27;(4)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f(x) = \\sqrt{x}\" data-type=\"inline-math\"></span>.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"f&#x27;(x) = \\dfrac{1}{2\\sqrt{x}}\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(4) = \\dfrac{1}{4} = 0{,}25\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "0,25"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Швидкість",
+    "content": "Точка рухається прямолінійно за законом <span data-latex=\"s(t) = t^{3} - t\" data-type=\"inline-math\"></span> (<span data-latex=\"s\" data-type=\"inline-math\"></span> — у метрах, <span data-latex=\"t\" data-type=\"inline-math\"></span> — у секундах). Знайдіть швидкість (у м/с) у момент <span data-latex=\"t = 2\" data-type=\"inline-math\"></span> с.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"v(t) = s&#x27;(t) = 3t^{2} - 1\" data-type=\"inline-math\"></span>, <span data-latex=\"v(2) = 12 - 1 = 11\" data-type=\"inline-math\"></span> м/с."
+   },
+   "answer": "11"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"nx^{n - 1}\" data-type=\"inline-math\"></span>",
+   "text": "Похідна степеня."
+  },
+  {
+   "big": "<span data-latex=\"u&#x27;v + uv&#x27;\" data-type=\"inline-math\"></span>",
+   "text": "Похідна добутку."
+  },
+  {
+   "big": "<span data-latex=\"f&#x27;(g) \\cdot  g&#x27;\" data-type=\"inline-math\"></span>",
+   "text": "Складена функція."
+  },
+  {
+   "big": "<span data-latex=\"v = s&#x27;\" data-type=\"inline-math\"></span>",
+   "text": "Швидкість — похідна шляху."
+  }
+ ]
+}

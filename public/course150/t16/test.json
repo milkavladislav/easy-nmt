@@ -1,0 +1,359 @@
+{
+ "title": "ДЗ 16. Лінійні й квадратні (НМТ 150+)",
+ "lessonNumber": 16,
+ "source": "hw-sheet",
+ "hwKey": "150-16",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"x + 3 = 4(2 - x)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0,5"
+    },
+    {
+     "id": 1,
+     "content": "1"
+    },
+    {
+     "id": 2,
+     "content": "1,5"
+    },
+    {
+     "id": 3,
+     "content": "2"
+    },
+    {
+     "id": 4,
+     "content": "2,25"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x + 3 = 8 - 4x\" data-type=\"inline-math\"></span> → <span data-latex=\"5x = 5\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"45(x - 1) = 25(2x - 3)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "4,5"
+    },
+    {
+     "id": 1,
+     "content": "5"
+    },
+    {
+     "id": 2,
+     "content": "5,5"
+    },
+    {
+     "id": 3,
+     "content": "6"
+    },
+    {
+     "id": 4,
+     "content": "6,25"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"45x - 45 = 50x - 75\" data-type=\"inline-math\"></span> → <span data-latex=\"5x = 30\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{3}{2} = \\dfrac{x}{4}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{8}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "5"
+    },
+    {
+     "id": 2,
+     "content": "1,5"
+    },
+    {
+     "id": 3,
+     "content": "6"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = \\dfrac{3 \\cdot  4}{2} = 6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{2 + x}{3} = \\dfrac{5 - x}{4}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0,25"
+    },
+    {
+     "id": 1,
+     "content": "0,5"
+    },
+    {
+     "id": 2,
+     "content": "0,75"
+    },
+    {
+     "id": 3,
+     "content": "1"
+    },
+    {
+     "id": 4,
+     "content": "1,25"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4(2 + x) = 3(5 - x)\" data-type=\"inline-math\"></span> → <span data-latex=\"7x = 7\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть проміжок, якому належить корінь рівняння <span data-latex=\"\\dfrac{3}{7}x = -4\\dfrac{1}{7}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(-70; -55)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"(-55; -10)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"(-10; -4)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"(-4; 3)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "(3; 11)"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = -\\dfrac{29}{7} : \\dfrac{3}{7} = -\\dfrac{29}{3} \\approx  -9{,}7\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"x^{2} - 14x + 45 = 0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5; 9"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-5; 9\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"5; -9\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "5"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-9\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"D = 196 - 180 = 16\" data-type=\"inline-math\"></span>; <span data-latex=\"x = \\dfrac{14 \\pm  4}{2}\" data-type=\"inline-math\"></span>: <span data-latex=\"5\" data-type=\"inline-math\"></span>; <span data-latex=\"9\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"4x^{2} + 6x - 10 = 0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1; 2,5"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-1; 2{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"1; -2{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-1; -2{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2x^{2} + 3x - 5 = 0\" data-type=\"inline-math\"></span>; <span data-latex=\"D = 49\" data-type=\"inline-math\"></span>; <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>; <span data-latex=\"x = -2{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Скільки всього коренів має рівняння <span data-latex=\"5x^{2} = 2x\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодного"
+    },
+    {
+     "id": 1,
+     "content": "один"
+    },
+    {
+     "id": 2,
+     "content": "два"
+    },
+    {
+     "id": 3,
+     "content": "три"
+    },
+    {
+     "id": 4,
+     "content": "безліч"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x(5x - 2) = 0\" data-type=\"inline-math\"></span> → два корені"
+  },
+  {
+   "type": "single",
+   "content": "Скільки всього коренів має рівняння <span data-latex=\"x^{2} = -9\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодного"
+    },
+    {
+     "id": 1,
+     "content": "один"
+    },
+    {
+     "id": 2,
+     "content": "два"
+    },
+    {
+     "id": 3,
+     "content": "три"
+    },
+    {
+     "id": 4,
+     "content": "безліч"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x^{2} \\ge  0\" data-type=\"inline-math\"></span>, а <span data-latex=\"-9 &lt; 0\" data-type=\"inline-math\"></span> — коренів немає"
+  },
+  {
+   "type": "single",
+   "content": "Скільки всього коренів має рівняння <span data-latex=\"4x^{2} + 4x + 1 = 0\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодного"
+    },
+    {
+     "id": 1,
+     "content": "один"
+    },
+    {
+     "id": 2,
+     "content": "два"
+    },
+    {
+     "id": 3,
+     "content": "три"
+    },
+    {
+     "id": 4,
+     "content": "безліч"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"(2x + 1)^{2} = 0\" data-type=\"inline-math\"></span> → один корінь"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"x^{2} - 22x - 37 = 0\" data-type=\"inline-math\"></span>. У відповідь оберіть суму коренів.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "22"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-22\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "37"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-37\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-15\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "За Вієтою <span data-latex=\"x_{1} + x_{2} = 22\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть рівняння <span data-latex=\"x^{2} + 16x - 84 = 0\" data-type=\"inline-math\"></span>. У відповідь оберіть добуток коренів.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "16"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-84\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "84"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-16\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "68"
+    }
+   ],
+   "points": 1,
+   "solution": "За Вієтою <span data-latex=\"x_{1} x_{2} = -84\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  1,
+  3,
+  3,
+  3,
+  2,
+  0,
+  2,
+  2,
+  0,
+  1,
+  0,
+  1
+ ],
+ "incomplete": []
+}

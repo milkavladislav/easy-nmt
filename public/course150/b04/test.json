@@ -1,0 +1,587 @@
+{
+ "title": "Підсумковий тест · Блок 4. Рівняння та нерівності (НМТ 150+)",
+ "block": 4,
+ "source": "block-test",
+ "questions": [
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть рівняння <span data-latex=\"3(x - 2) = 2x + 5\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-11\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "1"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "7"
+    },
+    {
+     "id": 4,
+     "content": "11"
+    }
+   ],
+   "points": 1,
+   "solution": "Розкриваємо дужки: <span data-latex=\"3x - 6 = 2x + 5\" data-type=\"inline-math\"></span>, тож <span data-latex=\"x = 11\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Укажіть добуток коренів рівняння <span data-latex=\"x^{2} - 2x - 15 = 0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-15\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "15"
+    }
+   ],
+   "points": 1,
+   "solution": "За теоремою Вієта добуток коренів дорівнює вільному члену: <span data-latex=\"-15\" data-type=\"inline-math\"></span> (корені <span data-latex=\"-3\" data-type=\"inline-math\"></span> і <span data-latex=\"5\" data-type=\"inline-math\"></span>)."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Укажіть суму коренів рівняння <span data-latex=\"\\left|2x - 3\\right| = 5\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "1"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "4"
+    },
+    {
+     "id": 4,
+     "content": "5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2x - 3 = 5\" data-type=\"inline-math\"></span> або <span data-latex=\"2x - 3 = -5\" data-type=\"inline-math\"></span>: <span data-latex=\"x = 4\" data-type=\"inline-math\"></span> або <span data-latex=\"x = -1\" data-type=\"inline-math\"></span>. Сума <span data-latex=\"3\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{x^{2} - 9}{x - 3} = 0\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "3"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>; <span data-latex=\"3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "9"
+    },
+    {
+     "id": 4,
+     "content": "коренів немає"
+    }
+   ],
+   "points": 1,
+   "solution": "Чисельник <span data-latex=\"x^{2} - 9 = 0\" data-type=\"inline-math\"></span> при <span data-latex=\"x = \\pm 3\" data-type=\"inline-math\"></span>, але <span data-latex=\"x = 3\" data-type=\"inline-math\"></span> перетворює знаменник на нуль. Лишається <span data-latex=\"x = -3\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\sqrt{x + 1} = x - 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0"
+    },
+    {
+     "id": 1,
+     "content": "3"
+    },
+    {
+     "id": 2,
+     "content": "0; 3"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "1"
+    }
+   ],
+   "points": 1,
+   "solution": "Підносимо до квадрата: <span data-latex=\"x + 1 = x^{2} - 2x + 1\" data-type=\"inline-math\"></span>, <span data-latex=\"x^{2} - 3x = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 0\" data-type=\"inline-math\"></span> або <span data-latex=\"x = 3\" data-type=\"inline-math\"></span>. Права частина має бути невід’ємною: <span data-latex=\"x - 1 \\ge  0\" data-type=\"inline-math\"></span>, тож <span data-latex=\"x = 0\" data-type=\"inline-math\"></span> — сторонній. Відповідь: <span data-latex=\"3\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Укажіть корінь рівняння <span data-latex=\"\\operatorname{tg} \\dfrac{x}{2} = -1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-\\dfrac{\\pi }{8}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-\\dfrac{\\pi }{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "0"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\dfrac{\\pi }{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "x/2 = −π/4 + πn → x = −π/2 + 2πn"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Скільки коренів рівняння <span data-latex=\"\\operatorname{tg} x = 0\" data-type=\"inline-math\"></span> належить проміжку <span data-latex=\"[0; 3\\pi ]\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодного"
+    },
+    {
+     "id": 1,
+     "content": "один"
+    },
+    {
+     "id": 2,
+     "content": "три"
+    },
+    {
+     "id": 3,
+     "content": "два"
+    },
+    {
+     "id": 4,
+     "content": "більше трьох"
+    }
+   ],
+   "points": 1,
+   "solution": "0, π, 2π, 3π — чотири, тобто більше трьох"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{cos} x = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"n \\in  Z\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{2} + 2\\pi n\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\pi n\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{2} + \\pi n\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"2\\pi n\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\dfrac{\\pi }{2} + 2\\pi n\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "Косинус дорівнює нулю у верхній і нижній точках кола: <span data-latex=\"x = \\dfrac{\\pi }{2} + \\pi n\" data-type=\"inline-math\"></span>, <span data-latex=\"n \\in  Z\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Якому із наведених проміжків належить корінь рівняння <span data-latex=\"\\dfrac{\\operatorname{log}_{5} (4x - 3) - \\operatorname{log}_{5} (x + 3)}{2} = 0\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"[-1; 1)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "[1; 3)"
+    },
+    {
+     "id": 2,
+     "content": "[3; 5)"
+    },
+    {
+     "id": 3,
+     "content": "[5; 7)"
+    },
+    {
+     "id": 4,
+     "content": "[7; +∞)"
+    }
+   ],
+   "points": 1,
+   "solution": "4x − 3 = x + 3 → x = 2"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Укажіть число, що є коренем рівняння <span data-latex=\"4^{x - 3} = 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2"
+    },
+    {
+     "id": 3,
+     "content": "3"
+    },
+    {
+     "id": 4,
+     "content": "10"
+    }
+   ],
+   "points": 1,
+   "solution": "x − 3 = 0 → x = 3"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\operatorname{log}_{3} (x + 2) = 2\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "4"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "7"
+    },
+    {
+     "id": 3,
+     "content": "9"
+    },
+    {
+     "id": 4,
+     "content": "11"
+    }
+   ],
+   "points": 1,
+   "solution": "За означенням: <span data-latex=\"x + 2 = 3^{2} = 9\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 7\" data-type=\"inline-math\"></span>. Перевірка: <span data-latex=\"7 + 2 &gt; 0\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}2x + y = 8,\\\\x - y = 1.\\end{cases}\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(2; 3)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"(3; 2)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"(4; 0)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"(3; -2)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"(2; 4)\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "Додаємо рівняння: <span data-latex=\"3x = 9\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 3\" data-type=\"inline-math\"></span>. Тоді <span data-latex=\"y = 3 - 1 = 2\" data-type=\"inline-math\"></span>. Розв’язок <span data-latex=\"(3; 2)\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть систему <span data-latex=\"\\begin{cases}x + y = 6,\\\\xy = 8.\\end{cases}\" data-type=\"inline-math\"></span> Укажіть найбільше значення <span data-latex=\"x\" data-type=\"inline-math\"></span> серед розв’язків.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1"
+    },
+    {
+     "id": 1,
+     "content": "2"
+    },
+    {
+     "id": 2,
+     "content": "3"
+    },
+    {
+     "id": 3,
+     "content": "4"
+    },
+    {
+     "id": 4,
+     "content": "8"
+    }
+   ],
+   "points": 1,
+   "solution": "За Вієта <span data-latex=\"x\" data-type=\"inline-math\"></span> і <span data-latex=\"y\" data-type=\"inline-math\"></span> — корені рівняння <span data-latex=\"t^{2} - 6t + 8 = 0\" data-type=\"inline-math\"></span>, тобто <span data-latex=\"2\" data-type=\"inline-math\"></span> і <span data-latex=\"4\" data-type=\"inline-math\"></span>. Розв’язки <span data-latex=\"(2; 4)\" data-type=\"inline-math\"></span> і <span data-latex=\"(4; 2)\" data-type=\"inline-math\"></span>, найбільше <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Знайдіть <b>найбільший</b> цілий розв’язок нерівності <span data-latex=\"(x - 4)(4 + x) &lt; 8x - 7\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0"
+    },
+    {
+     "id": 1,
+     "content": "9"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "10"
+    }
+   ],
+   "points": 1,
+   "solution": "x² − 8x − 9 &lt; 0 → −1 &lt; x &lt; 9; найбільший цілий 8"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть нерівність <span data-latex=\"2 \\cdot  (0{,}3)^{x} &lt; 0{,}18\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(-\\infty ; 2)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "(2; +∞)"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"(-\\infty ; 0{,}3)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "(0,3; +∞)"
+    },
+    {
+     "id": 4,
+     "content": "(0; 2)"
+    }
+   ],
+   "points": 1,
+   "solution": "0,3x &lt; 0,09 = 0,3² → x &gt; 2"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть нерівність <span data-latex=\"\\operatorname{log}_{0{,}3} (x + 3) &gt; \\operatorname{log}_{0{,}3} 4\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "(0; 1)"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"(-3; 1)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "(7; +∞)"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"(-\\infty ; 1)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "(1; +∞)"
+    }
+   ],
+   "points": 1,
+   "solution": "0,3 &lt; 1: 0 &lt; x + 3 &lt; 4 → −3 &lt; x &lt; 1"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть нерівність <span data-latex=\"3 + \\operatorname{log}_{2} x &lt; \\operatorname{log}_{2} 48\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(-\\infty ; 6)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "(0; 16)"
+    },
+    {
+     "id": 2,
+     "content": "(0; 40)"
+    },
+    {
+     "id": 3,
+     "content": "(0; 6)"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"(-\\infty ; 40)\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "log₂ 8x &lt; log₂ 48 → 0 &lt; x &lt; 6"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть систему нерівностей <span data-latex=\"\\begin{cases}5^{x} &lt; 25,\\\\2 - x &lt; 8.\\end{cases}\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(-6; 2)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"(-\\infty ; -6)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "(2; +∞)"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"(-6; 5)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "(2; 6)"
+    }
+   ],
+   "points": 1,
+   "solution": "5x &lt; 5² → x &lt; 2; x &gt; −6"
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{x + 3}{4} = \\dfrac{2x - 1}{3}\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "Перемножуємо навхрест: <span data-latex=\"3(x + 3) = 4(2x - 1)\" data-type=\"inline-math\"></span>, <span data-latex=\"3x + 9 = 8x - 4\" data-type=\"inline-math\"></span>, <span data-latex=\"5x = 13\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 2{,}6\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}3x - 2y = 4,\\\\x + 2y = 12.\\end{cases}\" data-type=\"inline-math\"></span> У відповідь запишіть <span data-latex=\"x_{0} + y_{0}\" data-type=\"inline-math\"></span>, де <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи.",
+   "variants": [],
+   "points": 2,
+   "solution": "Додаємо рівняння: <span data-latex=\"4x = 16\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>. Тоді <span data-latex=\"2y = 12 - 4 = 8\" data-type=\"inline-math\"></span>, <span data-latex=\"y = 4\" data-type=\"inline-math\"></span>. Сума <span data-latex=\"x_{0} + y_{0} = 8\" data-type=\"inline-math\"></span>."
+  }
+ ],
+ "answers": [
+  4,
+  0,
+  2,
+  0,
+  1,
+  4,
+  4,
+  2,
+  1,
+  3,
+  2,
+  1,
+  3,
+  3,
+  1,
+  1,
+  3,
+  0,
+  "2,6",
+  "8"
+ ]
+}

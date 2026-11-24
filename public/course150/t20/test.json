@@ -1,0 +1,338 @@
+{
+ "title": "ДЗ 20. Системи рівнянь (НМТ 150+)",
+ "lessonNumber": 20,
+ "source": "hw-sheet",
+ "hwKey": "150-20",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{2}{x} = -0{,}5,\\\\\\dfrac{y}{3} = 2.\\end{cases}\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(6; -4)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"(-\\dfrac{1}{4}; \\dfrac{2}{3})\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"(-\\dfrac{1}{4}; 6)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"(-4; \\dfrac{2}{3})\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"(-4; 6)\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = -4\" data-type=\"inline-math\"></span>, <span data-latex=\"y = 6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}2x = \\dfrac{y}{5},\\\\4x - y = 3.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-5{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-0{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2,5"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-4{,}5\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"y = 10x\" data-type=\"inline-math\"></span>: <span data-latex=\"-6x = 3\" data-type=\"inline-math\"></span> → <span data-latex=\"x = -0{,}5\" data-type=\"inline-math\"></span>, <span data-latex=\"y = -5\" data-type=\"inline-math\"></span>; <span data-latex=\"x + y = -5{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{x}{4} = 3y - 1,\\\\x - 2y = 1.\\end{cases}\" data-type=\"inline-math\"></span> Для одержаного розв’язку <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> системи знайдіть суму <span data-latex=\"x_{0} + y_{0}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1,6"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "2,5"
+    },
+    {
+     "id": 3,
+     "content": "22"
+    },
+    {
+     "id": 4,
+     "content": "1"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = 12y - 4\" data-type=\"inline-math\"></span>: <span data-latex=\"10y = 5\" data-type=\"inline-math\"></span> → <span data-latex=\"y = 0{,}5\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>; <span data-latex=\"x + y = 2{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{x}{2x + y} = \\dfrac{1}{5},\\\\4x + 2 = y.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "12"
+    },
+    {
+     "id": 2,
+     "content": "6"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"5x = 2x + y\" data-type=\"inline-math\"></span> → <span data-latex=\"y = 3x\" data-type=\"inline-math\"></span>: <span data-latex=\"4x + 2 = 3x\" data-type=\"inline-math\"></span> → <span data-latex=\"x = -2\" data-type=\"inline-math\"></span>, <span data-latex=\"y = -6\" data-type=\"inline-math\"></span>; <span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{1}{3y} = \\dfrac{2}{x},\\\\x - y = 30.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "35"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-150\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "150"
+    },
+    {
+     "id": 3,
+     "content": "36"
+    },
+    {
+     "id": 4,
+     "content": "42"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = 6y\" data-type=\"inline-math\"></span>: <span data-latex=\"5y = 30\" data-type=\"inline-math\"></span> → <span data-latex=\"y = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 36\" data-type=\"inline-math\"></span>; <span data-latex=\"x + y = 42\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}y - \\dfrac{2}{x} = 3,\\\\y + \\dfrac{1}{x} = 9.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "4,5"
+    },
+    {
+     "id": 1,
+     "content": "2"
+    },
+    {
+     "id": 2,
+     "content": "6"
+    },
+    {
+     "id": 3,
+     "content": "3,5"
+    },
+    {
+     "id": 4,
+     "content": "7,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{3}{x} = 6\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 0{,}5\" data-type=\"inline-math\"></span>, <span data-latex=\"y = 7\" data-type=\"inline-math\"></span>; <span data-latex=\"x + y = 7{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}2^{y + 2x} = 64,\\\\2x - y = 12.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "4,5"
+    },
+    {
+     "id": 1,
+     "content": "9"
+    },
+    {
+     "id": 2,
+     "content": "1,5"
+    },
+    {
+     "id": 3,
+     "content": "7,5"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"y + 2x = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"2x - y = 12\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 4{,}5\" data-type=\"inline-math\"></span>, <span data-latex=\"y = -3\" data-type=\"inline-math\"></span>; <span data-latex=\"1{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}3^{x} = \\sqrt{3},\\\\\\dfrac{y + 2}{2x + 1} = \\dfrac{1 - 2x}{2}.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-1{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "0"
+    },
+    {
+     "id": 3,
+     "content": "1"
+    },
+    {
+     "id": 4,
+     "content": "2,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\dfrac{y + 2}{2} = 0\" data-type=\"inline-math\"></span> → <span data-latex=\"y = -2\" data-type=\"inline-math\"></span>; <span data-latex=\"x + y = -1{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\operatorname{log}_{2} x = 2,\\\\\\dfrac{y + 10}{x + 1} = \\dfrac{x + 2}{2}.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "9"
+    },
+    {
+     "id": 3,
+     "content": "18"
+    },
+    {
+     "id": 4,
+     "content": "29"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"x = 4\" data-type=\"inline-math\"></span>; <span data-latex=\"\\dfrac{y + 10}{5} = 3\" data-type=\"inline-math\"></span> → <span data-latex=\"y = 5\" data-type=\"inline-math\"></span>; <span data-latex=\"x + y = 9\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}x + y = 5,\\\\\\sqrt{xy} = 2.\\end{cases}\" data-type=\"inline-math\"></span> У відповідь запишіть найбільший з добутків <span data-latex=\"xy\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"\\sqrt{xy} = 2\" data-type=\"inline-math\"></span> → <span data-latex=\"xy = 4\" data-type=\"inline-math\"></span> (пари <span data-latex=\"(1; 4)\" data-type=\"inline-math\"></span> і <span data-latex=\"(4; 1)\" data-type=\"inline-math\"></span>); найбільший добуток <span data-latex=\"4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему <span data-latex=\"\\begin{cases}x + y = 7,\\\\x - y = 1.\\end{cases}\" data-type=\"inline-math\"></span>. Укажіть добуток <span data-latex=\"x_{0} \\cdot  y_{0}\" data-type=\"inline-math\"></span>, де <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "6"
+    },
+    {
+     "id": 1,
+     "content": "10"
+    },
+    {
+     "id": 2,
+     "content": "12"
+    },
+    {
+     "id": 3,
+     "content": "14"
+    },
+    {
+     "id": 4,
+     "content": "16"
+    }
+   ],
+   "points": 1,
+   "solution": "Додаємо: <span data-latex=\"2x = 8\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>, <span data-latex=\"y = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"x_{0} \\cdot  y_{0} = 12\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Розв’яжіть систему <span data-latex=\"\\begin{cases}y = 2x - 1,\\\\3x + y = 9.\\end{cases}\" data-type=\"inline-math\"></span>. Укажіть суму <span data-latex=\"x_{0} + y_{0}\" data-type=\"inline-math\"></span>, де <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "5"
+    },
+    {
+     "id": 3,
+     "content": "6"
+    },
+    {
+     "id": 4,
+     "content": "7"
+    }
+   ],
+   "points": 1,
+   "solution": "Підстановка: <span data-latex=\"3x + 2x - 1 = 9\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"y = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"x_{0} + y_{0} = 5\" data-type=\"inline-math\"></span>."
+  }
+ ],
+ "answers": [
+  4,
+  0,
+  2,
+  0,
+  4,
+  4,
+  2,
+  1,
+  2,
+  "4",
+  2,
+  2
+ ],
+ "incomplete": []
+}

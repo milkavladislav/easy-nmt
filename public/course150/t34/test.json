@@ -1,0 +1,338 @@
+{
+ "title": "ДЗ 34. Ймовірність (НМТ 150+)",
+ "lessonNumber": 34,
+ "source": "hw-sheet",
+ "hwKey": "150-34",
+ "questions": [
+  {
+   "type": "single",
+   "content": "На діаграмі — результати анкетування 100 студентів щодо відкриття неподалік піцерії (одна відповідь: так, ні, байдуже). Яка ймовірність того, що навмання обрана особа підтримала відкриття піцерії?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 360 280\" width=\"360\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"70\" y1=\"234\" x2=\"344\" y2=\"234\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"242\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><line x1=\"70\" y1=\"191\" x2=\"344\" y2=\"191\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"199\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">20</text><line x1=\"70\" y1=\"148\" x2=\"344\" y2=\"148\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"156\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">40</text><line x1=\"70\" y1=\"106\" x2=\"344\" y2=\"106\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"114\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">60</text><line x1=\"70\" y1=\"63\" x2=\"344\" y2=\"63\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"71\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">80</text><line x1=\"70\" y1=\"20\" x2=\"344\" y2=\"20\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"28\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">100</text><polygon points=\"88,63 143,63 143,234 88,234\" fill=\"#3FA9F5\" stroke=\"#3FA9F5\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"116\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">так</text><polygon points=\"180,223 234,223 234,234 180,234\" fill=\"#3FA9F5\" stroke=\"#3FA9F5\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"207\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">ні</text><polygon points=\"271,202 326,202 326,234 271,234\" fill=\"#3FA9F5\" stroke=\"#3FA9F5\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"298\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">байдуже</text><line x1=\"70\" y1=\"234\" x2=\"344\" y2=\"234\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"234\" x2=\"70\" y2=\"14\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"18\" y=\"127\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#1E1B4B\" font-family=\"Nunito Variable\" transform=\"rotate(-90 18 127)\">осіб</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{8}{9}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{3}{20}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{17}{20}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{80}{100} = \\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "На столі лежать 18 світлин: 8 із зображенням природи, 6 — людей і 4 — будівель. Яка ймовірність того, що навмання вибрана світлина буде із зображенням природи або людини?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{2}{9}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{4}{9}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{7}{9}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{5}{9}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{11}{18}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{8 + 6}{18}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "У десятому класі 24 учні. Ймовірність того, що вік учня, прізвище якого навмання вибирають зі списку класу, менший за 15 років, дорівнює <span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>. Скільки в класі учнів, вік яких менший за 15 років?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "3"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "8"
+    },
+    {
+     "id": 3,
+     "content": "6"
+    },
+    {
+     "id": 4,
+     "content": "20"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"24 \\cdot  \\dfrac{1}{6} = 4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Людина купляє перший білет на вагон потяга навмання. У вагоні 60 доступних місць; спереду і позаду вагона є по столику, біля кожного — 4 пасажирські місця. Визначте ймовірність того, що їй дістанеться місце за столиком.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{1}{30}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{1}{60}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{4}{15}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{2}{15}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{10}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2 \\cdot  4 = 8\" data-type=\"inline-math\"></span> місць із 60"
+  },
+  {
+   "type": "single",
+   "content": "У залі кінотеатру 39 місць (див. рисунок). Усі VIP-місця зайняті. Михайло навмання обирає собі місце. Визначте ймовірність того, що він обере місце з кріслом-мішком.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 285 204\" width=\"285\" height=\"204\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"2,2 283,2 283,202 2,202\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"143\" y=\"25\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">крісла-мішки</text><circle cx=\"71\" cy=\"46\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"118\" cy=\"46\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"164\" cy=\"46\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"211\" cy=\"46\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"71\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"71\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"141\" cy=\"71\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"188\" cy=\"71\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"234\" cy=\"71\" r=\"10\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><polygon points=\"19,93 35,93 35,109 19,109\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"40,93 56,93 56,109 40,109\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"61,93 77,93 77,109 61,109\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"19,114 35,114 35,130 19,130\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"40,114 56,114 56,130 40,130\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"61,114 77,114 77,130 61,130\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"19,135 35,135 35,151 19,151\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"40,135 56,135 56,151 40,151\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"61,135 77,135 77,151 61,151\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"19,156 35,156 35,172 19,172\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"40,156 56,156 56,172 40,172\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"61,156 77,156 77,172 61,172\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"205,93 221,93 221,109 205,109\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"226,93 242,93 242,109 226,109\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"247,93 263,93 263,109 247,109\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"205,114 221,114 221,130 205,130\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"226,114 242,114 242,130 226,130\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"247,114 263,114 263,130 247,130\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"205,135 221,135 221,151 205,151\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"226,135 242,135 242,151 226,151\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"247,135 263,135 263,151 247,151\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"205,156 221,156 221,172 205,172\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"226,156 242,156 242,172 226,172\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"247,156 263,156 263,172 247,172\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"107,90 179,90 179,176 107,176\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"115,97 139,97 139,118 115,118\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146,97 170,97 170,118 146,118\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"115,123 139,123 139,144 115,144\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146,123 170,123 170,144 146,144\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"115,149 139,149 139,170 115,170\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"146,149 170,149 170,170 146,170\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"143\" y=\"195\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">VIP-місця</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{3}{11}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{7}{10}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{10}{13}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{3}{8}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{3}{10}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "вільних <span data-latex=\"39 - 6 = 33\" data-type=\"inline-math\"></span>, крісел-мішків 9"
+  },
+  {
+   "type": "single",
+   "content": "На дитячій каруселі 19 місць: 9 човнів, 5 літаків і 5 машинок. Микита навмання обирає собі місце. Визначте ймовірність того, що він сяде на машинку.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{5}{19}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{5}{14}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{14}{19}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{4}{15}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{15}{19}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{5}{19}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "На рисунку — план кав’ярні, у якій 25 місць. Коли Матвій зайшов, вільними були всі місця, окрім місць за прямокутними (квадратними) столиками. Він вибирає місце навмання. Яка ймовірність того, що це буде місце за барною стійкою?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 322 248\" width=\"322\" height=\"248\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"12,6 310,6 310,25 12,25\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"161\" y=\"20\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#fff\">барна стійка</text><circle cx=\"37\" cy=\"45\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"99\" cy=\"45\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"161\" cy=\"45\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"223\" cy=\"45\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"285\" cy=\"45\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"56\" cy=\"105\" r=\"22\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"56\" cy=\"71\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"56\" cy=\"140\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"21\" cy=\"105\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"105\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"161\" cy=\"105\" r=\"22\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"161\" cy=\"71\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"161\" cy=\"140\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"126\" cy=\"105\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"196\" cy=\"105\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"267\" cy=\"105\" r=\"22\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"267\" cy=\"71\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"267\" cy=\"140\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"232\" cy=\"105\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"301\" cy=\"105\" r=\"9\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><polygon points=\"73,179 113,179 113,218 73,218\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"86,160 100,160 100,175 86,175\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"86,222 100,222 100,237 86,237\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"55,191 69,191 69,206 55,206\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"117,191 131,191 131,206 117,206\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"210,179 249,179 249,218 210,218\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"222,160 237,160 237,175 222,175\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"222,222 237,222 237,237 222,237\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"191,191 206,191 206,206 191,206\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"253,191 268,191 268,206 253,206\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{5}{21}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{1}{17}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{5}{17}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "вільних <span data-latex=\"25 - 8 = 17\" data-type=\"inline-math\"></span>, біля стійки 5"
+  },
+  {
+   "type": "single",
+   "content": "На круговій діаграмі — розподіл музичних треків за жанрами на платівці. Програвач відтворює один випадковий трек. Знайдіть ймовірність того, що першим прозвучить трек у жанрі рок.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 230\" width=\"420\" height=\"230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M210 115 L210 20 A95 95 0 0 1 303 136 Z\" fill=\"#3FA9F5\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"325\" y=\"33\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">рок</text><text x=\"325\" y=\"59\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">20</text><path d=\"M210 115 L303 136 A95 95 0 0 1 136 174 Z\" fill=\"#9B8CF2\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"243\" y=\"233\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">поп</text><text x=\"243\" y=\"259\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">25</text><path d=\"M210 115 L136 174 A95 95 0 0 1 120 86 Z\" fill=\"#F5B971\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"65\" y=\"133\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">джаз</text><text x=\"65\" y=\"159\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">11</text><path d=\"M210 115 L120 86 A95 95 0 0 1 210 20 Z\" fill=\"#FFD23F\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"124\" y=\"10\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">диско</text><text x=\"124\" y=\"36\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">14</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{2}{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{5}{14}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{20}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{2}{7}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "усього <span data-latex=\"20 + 25 + 11 + 14 = 70\" data-type=\"inline-math\"></span> треків"
+  },
+  {
+   "type": "single",
+   "content": "Місця в літаку розташовані у 20 рядів, у кожному ряді по 3 місця ліворуч і праворуч від проходу. Програма випадковим чином обирає місце для пасажира. Визначте ймовірність того, що пасажиру дістанеться місце біля проходу.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{2}{5}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "у кожному ряду 2 місця з 6 біля проходу"
+  },
+  {
+   "type": "single",
+   "content": "В Андрія 25 кульок: 7 синіх і по 6 зелених, жовтих та червоних. Якщо він навмання вибере синю кульку, буде робити домашнє завдання, а якщо іншого кольору — піде на баскетбол. Визначте ймовірність того, що Андрій піде на баскетбол.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{18}{25}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{7}{25}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{7}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{1}{18}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{25}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "не синіх <span data-latex=\"25 - 7 = 18\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У коробці 80 цукерок, з яких 44 — з чорного шоколаду, а решта — з білого. Визначте ймовірність того, що навмання взята цукерка буде з білого шоколаду.",
+   "variants": [],
+   "points": 2,
+   "solution": "білих <span data-latex=\"80 - 44 = 36\" data-type=\"inline-math\"></span>: <span data-latex=\"\\dfrac{36}{80} = 0{,}45\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "24 учні обирали один із п’яти напрямків екскурсії (результати — у таблиці). Екскурсію «Полтавські галушки» скасували, і картки з голосами за неї вилучили. Учителька навмання витягає одну з решти карток. Яка ймовірність того, що на ній записано «Мальовничий край»?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><table style=\"border-collapse:collapse;font-size:24px;margin:4px auto\"><tr><td style=\"border:2px solid #1F1B4D;padding:4px 14px\"><b>Напрямок екскурсії</b></td><td style=\"border:2px solid #1F1B4D;padding:4px 14px;text-align:center\"><b>Голосів</b></td></tr><tr><td style=\"border:2px solid #1F1B4D;padding:4px 14px\">«Гетьманська столиця»</td><td style=\"border:2px solid #1F1B4D;padding:4px 14px;text-align:center\">5</td></tr><tr><td style=\"border:2px solid #1F1B4D;padding:4px 14px\">«Мальовничий край»</td><td style=\"border:2px solid #1F1B4D;padding:4px 14px;text-align:center\">6</td></tr><tr><td style=\"border:2px solid #1F1B4D;padding:4px 14px\">«Каньйони України»</td><td style=\"border:2px solid #1F1B4D;padding:4px 14px;text-align:center\">4</td></tr><tr><td style=\"border:2px solid #1F1B4D;padding:4px 14px\">«Замки Поділля»</td><td style=\"border:2px solid #1F1B4D;padding:4px 14px;text-align:center\">5</td></tr><tr><td style=\"border:2px solid #1F1B4D;padding:4px 14px\">«Полтавські галушки»</td><td style=\"border:2px solid #1F1B4D;padding:4px 14px;text-align:center\">4</td></tr></table></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{3}{10}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{3}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "карток <span data-latex=\"24 - 4 = 20\" data-type=\"inline-math\"></span>: <span data-latex=\"\\dfrac{6}{20}\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  4,
+  2,
+  1,
+  3,
+  0,
+  0,
+  3,
+  4,
+  3,
+  0,
+  "0,45",
+  1
+ ],
+ "incomplete": []
+}

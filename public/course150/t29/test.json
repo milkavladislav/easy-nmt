@@ -1,0 +1,443 @@
+{
+ "title": "ДЗ 29. Тригонометричні функції (НМТ 150+)",
+ "lessonNumber": 29,
+ "source": "hw-sheet",
+ "hwKey": "150-29",
+ "questions": [
+  {
+   "type": "single",
+   "content": "На рисунку зображено фрагмент графіка однієї з наведених функцій на проміжку <span data-latex=\"[0; \\pi ]\" data-type=\"inline-math\"></span>. Укажіть цю функцію.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 332 240\" width=\"206\" height=\"149\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"180\" x2=\"308\" y2=\"180\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"308,180 294,174 294,186\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"62\" y1=\"210\" x2=\"62\" y2=\"18\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"62,18 56,32 68,32\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"302\" y=\"206\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"40\" y=\"26\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"46\" y=\"200\" font-size=\"41\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><text x=\"222\" y=\"210\" font-size=\"41\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">π</text><text x=\"50\" y=\"80\" font-size=\"41\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">2</text><line x1=\"62\" y1=\"80\" x2=\"142\" y2=\"80\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\"/><polyline points=\"62,180 72,160 74,157 80,145 82,142 84,138 86,135 88,131 90,128 92,124 102,109 104,107 106,104 108,102 110,99 120,89 122,88 124,86 134,81 136,81 138,80 146,80 148,81 150,81 160,86 162,88 164,89 174,99 176,102 178,104 180,107 182,109 192,124 194,128 196,131 198,135 200,138 202,142 204,145 210,157 212,160 222,180\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"y = 2\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"y = \\operatorname{sin} 2x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"y = 2\\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"y = \\operatorname{cos} 2x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"y = -2\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f(0) = f(\\pi ) = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"f(\\dfrac{\\pi }{2}) = 2\" data-type=\"inline-math\"></span>: <span data-latex=\"y = 2\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть область значень функції <span data-latex=\"y = 3\\operatorname{sin} x - 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"[-1; 2]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"[-4; 2]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"[-1; 4]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "[2; 4]"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"(-\\infty ; +\\infty )\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-1 \\le  \\operatorname{sin} x \\le  1\" data-type=\"inline-math\"></span> → <span data-latex=\"-4 \\le  3\\operatorname{sin} x - 1 \\le  2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть область значень функції <span data-latex=\"y = \\dfrac{1}{3}\\operatorname{cos} x - 2\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"[-\\dfrac{5}{3}; -\\dfrac{7}{3}]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"[-\\dfrac{7}{3}; -\\dfrac{5}{3}]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"[-2; -\\dfrac{5}{3}]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"[-\\dfrac{1}{3}; 2]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"(-\\infty ; +\\infty )\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-\\dfrac{1}{3} - 2 \\le  y \\le  \\dfrac{1}{3} - 2\" data-type=\"inline-math\"></span>: <span data-latex=\"[-\\dfrac{7}{3}; -\\dfrac{5}{3}]\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть область значень функції <span data-latex=\"y = -\\dfrac{1}{2}\\operatorname{cos} x + 1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "[0; 1]"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"[\\dfrac{1}{2}; \\dfrac{3}{2}]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"[-\\dfrac{1}{2}; \\dfrac{1}{2}]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"[1; \\dfrac{3}{2}]\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"(-\\infty ; +\\infty )\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-\\dfrac{1}{2} \\le  -\\dfrac{1}{2}\\operatorname{cos} x \\le  \\dfrac{1}{2}\" data-type=\"inline-math\"></span> → <span data-latex=\"\\dfrac{1}{2} \\le  y \\le  \\dfrac{3}{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між функціями, заданими формулами (1–3), та їхніми властивостями (А–Д).",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"y = x^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"y = \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"y = \\operatorname{tg} x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "областю визначення функції є проміжок <span data-latex=\"[0; +\\infty )\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "функція спадає на інтервалі <span data-latex=\"(0; +\\infty )\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "функція зростає на інтервалі <span data-latex=\"(-\\infty ; +\\infty )\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "парна функція"
+    },
+    {
+     "id": 4,
+     "content": "періодична функція з найменшим додатним періодом <span data-latex=\"T = \\pi \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"x^{3}\" data-type=\"inline-math\"></span> зростає на <span data-latex=\"R\" data-type=\"inline-math\"></span>; <span data-latex=\"\\operatorname{cos} x\" data-type=\"inline-math\"></span> — парна; <span data-latex=\"\\operatorname{tg} x\" data-type=\"inline-math\"></span> — період <span data-latex=\"\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між початком речення (1–3) і його закінченням (А–Д) так, щоб утворилося правильне твердження.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "Графік функції <span data-latex=\"y = -x^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "Графік функції <span data-latex=\"y = \\sqrt{x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "Графік функції <span data-latex=\"y = \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "розміщено лише в першій і другій координатних чвертях."
+    },
+    {
+     "id": 1,
+     "content": "має з графіком рівняння <span data-latex=\"x^{2} + y^{2} = 9\" data-type=\"inline-math\"></span> лише одну спільну точку."
+    },
+    {
+     "id": 2,
+     "content": "симетричний відносно осі <span data-latex=\"y\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "id": 3,
+     "content": "симетричний відносно початку координат."
+    },
+    {
+     "id": 4,
+     "content": "не має спільних точок із графіком рівняння <span data-latex=\"x = 0\" data-type=\"inline-math\"></span>."
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"-x^{3}\" data-type=\"inline-math\"></span> — непарна; <span data-latex=\"\\sqrt{x}\" data-type=\"inline-math\"></span> і коло: <span data-latex=\"x + x^{2} = 9\" data-type=\"inline-math\"></span> має один додатний корінь; <span data-latex=\"\\operatorname{cos} x\" data-type=\"inline-math\"></span> — парна"
+  },
+  {
+   "type": "connect",
+   "content": "Увідповідніть функцію (1–3) та її властивість (А–Д).",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"f(x) = 2^{x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"f(x) = \\operatorname{tg} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"f(x) = 2x + 1\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "функція непарна"
+    },
+    {
+     "id": 1,
+     "content": "множина значень функції є проміжок <span data-latex=\"(0; +\\infty )\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "областю визначення функції є проміжок <span data-latex=\"[0; +\\infty )\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "функція спадає на проміжку <span data-latex=\"(-\\infty ; +\\infty )\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "графік функції має лише дві точки перетину з осями координат"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"2^{x} &gt; 0\" data-type=\"inline-math\"></span>; <span data-latex=\"\\operatorname{tg} x\" data-type=\"inline-math\"></span> — непарна; <span data-latex=\"y = 2x + 1\" data-type=\"inline-math\"></span> перетинає осі в <span data-latex=\"(0; 1)\" data-type=\"inline-math\"></span> і <span data-latex=\"(-\\dfrac{1}{2}; 0)\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між твердженням (1–3) та функцією (А–Д), для якої це твердження є правильним.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "областю визначення функції є проміжок <span data-latex=\"[-1; +\\infty )\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "графік функції проходить через точку <span data-latex=\"(0; 1)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "функція має точку локального екстремуму на проміжку <span data-latex=\"[1; 3]\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"y = -\\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"y = 4^{x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"y = 2\\sqrt{x + 1}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"y = x^{2} - 4x + 3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"y = x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"x + 1 \\ge  0\" data-type=\"inline-math\"></span> → <span data-latex=\"x \\ge  -1\" data-type=\"inline-math\"></span>; <span data-latex=\"4^{0} = 1\" data-type=\"inline-math\"></span>; вершина <span data-latex=\"x^{2} - 4x + 3\" data-type=\"inline-math\"></span> у <span data-latex=\"x = 2 \\in  [1; 3]\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "У прямокутній системі координат на площині зображено замкнену ламану <span data-latex=\"ABCDA\" data-type=\"inline-math\"></span>, <span data-latex=\"A(0; -1)\" data-type=\"inline-math\"></span>, <span data-latex=\"B(0; 1)\" data-type=\"inline-math\"></span>, <span data-latex=\"C(2\\pi ; 1)\" data-type=\"inline-math\"></span>, <span data-latex=\"D(2\\pi ; -1)\" data-type=\"inline-math\"></span> (див. рисунок). Увідповідніть функцію (1–3) із кількістю (А–Д) спільних точок її графіка з ламаною <span data-latex=\"ABCDA\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 454 286\" width=\"281\" height=\"177\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"148\" x2=\"430\" y2=\"148\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"430,148 416,142 416,154\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"72\" y1=\"256\" x2=\"72\" y2=\"18\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"72,18 66,32 78,32\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"424\" y=\"174\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"50\" y=\"26\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"56\" y=\"168\" font-size=\"41\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><text x=\"142\" y=\"178\" font-size=\"41\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">π/2</text><text x=\"212\" y=\"178\" font-size=\"41\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">π</text><text x=\"282\" y=\"178\" font-size=\"41\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">3π/2</text><polyline points=\"72,208 72,88 352,88 352,208 72,208\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"48\" y=\"226\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"48\" y=\"70\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"370\" y=\"70\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"370\" y=\"226\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"362\" y=\"166\" font-size=\"41\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">2π</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"y = x^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"y = \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"y = x + 1\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "жодної"
+    },
+    {
+     "id": 1,
+     "content": "одна"
+    },
+    {
+     "id": 2,
+     "content": "дві"
+    },
+    {
+     "id": 3,
+     "content": "три"
+    },
+    {
+     "id": 4,
+     "content": "чотири"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"x^{3}\" data-type=\"inline-math\"></span>: <span data-latex=\"(0; 0)\" data-type=\"inline-math\"></span> і <span data-latex=\"(1; 1)\" data-type=\"inline-math\"></span> — дві; <span data-latex=\"\\operatorname{cos} x\" data-type=\"inline-math\"></span>: <span data-latex=\"B(0; 1)\" data-type=\"inline-math\"></span>, <span data-latex=\"(\\pi ; -1)\" data-type=\"inline-math\"></span>, <span data-latex=\"C(2\\pi ; 1)\" data-type=\"inline-math\"></span> — три; <span data-latex=\"x + 1\" data-type=\"inline-math\"></span>: лише <span data-latex=\"B(0; 1)\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "Установіть відповідність між функцією (1–3) та властивістю її графіка (А–Д).",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"y = \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"y = -\\dfrac{2}{x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"y = 2^{x}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "проходить через точку <span data-latex=\"(1; 0)\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "не перетинає вісь <span data-latex=\"y\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "симетричний відносно осі <span data-latex=\"y\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "розміщений лише в I та II координатних чвертях"
+    },
+    {
+     "id": 4,
+     "content": "розміщений лише в I та IV координатних чвертях"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"\\operatorname{cos} x\" data-type=\"inline-math\"></span> — парна; <span data-latex=\"-\\dfrac{2}{x}\" data-type=\"inline-math\"></span>: <span data-latex=\"x \\ne  0\" data-type=\"inline-math\"></span>; <span data-latex=\"2^{x} &gt; 0\" data-type=\"inline-math\"></span> — I та II чверті"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть найменший додатний період функції <span data-latex=\"y = \\operatorname{sin} \\dfrac{x}{3}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{\\pi }{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{2\\pi }{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"3\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"6\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"2\\pi \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "Тут <span data-latex=\"k = \\dfrac{1}{3}\" data-type=\"inline-math\"></span>, тож період <span data-latex=\"\\dfrac{2\\pi }{1/3} = 6\\pi \" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "content": "Укажіть непарну функцію.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"y = \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"y = x^{2} + \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"y = \\operatorname{sin} x + 1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"y = x \\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"y = \\operatorname{sin} 2x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\operatorname{sin}(-2x) = -\\operatorname{sin} 2x\" data-type=\"inline-math\"></span> — непарна. <span data-latex=\"\\operatorname{cos} x\" data-type=\"inline-math\"></span> і <span data-latex=\"x\\operatorname{sin} x\" data-type=\"inline-math\"></span> — парні, а <span data-latex=\"\\operatorname{sin} x + 1\" data-type=\"inline-math\"></span> — ні та, ні та."
+  }
+ ],
+ "answers": [
+  0,
+  1,
+  1,
+  1,
+  "2 3 4",
+  "3 1 2",
+  "1 0 4",
+  "2 1 3",
+  "2 3 1",
+  "2 1 3",
+  3,
+  4
+ ],
+ "incomplete": []
+}

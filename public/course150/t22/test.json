@@ -1,0 +1,359 @@
+{
+ "title": "ДЗ 22. Коло і круг (НМТ 150+)",
+ "lessonNumber": 22,
+ "source": "hw-sheet",
+ "hwKey": "150-22",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Точки <span data-latex=\"A\" data-type=\"inline-math\"></span> і <span data-latex=\"B\" data-type=\"inline-math\"></span> лежать на колі радіуса 16. Укажіть найбільше можливе значення довжини відрізка <span data-latex=\"AB\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "16"
+    },
+    {
+     "id": 1,
+     "content": "64"
+    },
+    {
+     "id": 2,
+     "content": "8"
+    },
+    {
+     "id": 3,
+     "content": "48"
+    },
+    {
+     "id": 4,
+     "content": "32"
+    }
+   ],
+   "points": 1,
+   "solution": "найбільша хорда — діаметр <span data-latex=\"2 \\cdot  16 = 32\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "На прямій <span data-latex=\"AB\" data-type=\"inline-math\"></span> два кола з центрами в точках <span data-latex=\"A\" data-type=\"inline-math\"></span> і <span data-latex=\"C\" data-type=\"inline-math\"></span> мають зовнішній дотик, точка <span data-latex=\"B\" data-type=\"inline-math\"></span> належить меншому колу (див. рисунок). Обчисліть відстань <span data-latex=\"AB\" data-type=\"inline-math\"></span>, якщо радіуси кіл дорівнюють 8 см і 5 см.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 460 220\" width=\"460\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"20\" y1=\"110\" x2=\"450\" y2=\"110\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"130\" cy=\"110\" r=\"96\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/><circle cx=\"286\" cy=\"110\" r=\"60\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/><circle cx=\"130\" cy=\"110\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"130\" y=\"84\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"286\" cy=\"110\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"286\" y=\"84\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"346\" cy=\"110\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"368\" y=\"88\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "26 см"
+    },
+    {
+     "id": 1,
+     "content": "18 см"
+    },
+    {
+     "id": 2,
+     "content": "16 см"
+    },
+    {
+     "id": 3,
+     "content": "13 см"
+    },
+    {
+     "id": 4,
+     "content": "21 см"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"AB = AC + CB = (8 + 5) + 5 = 18\" data-type=\"inline-math\"></span> см"
+  },
+  {
+   "type": "single",
+   "content": "Коло радіуса 6 уписано в квадрат (див. рисунок). Визначте периметр квадрата.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 280 280\" width=\"280\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"30,30 250,30 250,250 30,250\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><circle cx=\"140\" cy=\"140\" r=\"110\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "24"
+    },
+    {
+     "id": 1,
+     "content": "12"
+    },
+    {
+     "id": 2,
+     "content": "36"
+    },
+    {
+     "id": 3,
+     "content": "48"
+    },
+    {
+     "id": 4,
+     "content": "60"
+    }
+   ],
+   "points": 1,
+   "solution": "сторона <span data-latex=\"= 2r = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"P = 48\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "До кола проведено дотичну <span data-latex=\"AB\" data-type=\"inline-math\"></span> (<span data-latex=\"B\" data-type=\"inline-math\"></span> — точка дотику) та січну <span data-latex=\"AC\" data-type=\"inline-math\"></span>, що проходить через центр <span data-latex=\"O\" data-type=\"inline-math\"></span> кола (див. рисунок). Знайдіть градусну міру кута <span data-latex=\"COB\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\angle OAB = 35^{\\circ}\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 380 330\" width=\"380\" height=\"330\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"150\" cy=\"200\" r=\"95\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/><line x1=\"86\" y1=\"122\" x2=\"264\" y2=\"57\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"73\" y1=\"310\" x2=\"267\" y2=\"32\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"200\" x2=\"118\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M207 78 A40 40 0 0 0 222 97\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"197\" y=\"84\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">35°</text><path d=\"M140 174 A28 28 0 0 0 134 223\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"120\" y=\"206\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">?</text><circle cx=\"245\" cy=\"64\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"263\" y=\"54\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"118\" cy=\"111\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"102\" y=\"91\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"96\" cy=\"278\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"76\" y=\"288\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"150\" cy=\"200\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"168\" y=\"214\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "105°"
+    },
+    {
+     "id": 1,
+     "content": "115°"
+    },
+    {
+     "id": 2,
+     "content": "120°"
+    },
+    {
+     "id": 3,
+     "content": "125°"
+    },
+    {
+     "id": 4,
+     "content": "145°"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\angle AOB = 90^{\\circ} - 35^{\\circ} = 55^{\\circ}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\angle COB = 180^{\\circ} - 55^{\\circ} = 125^{\\circ}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "До кола з центром у точці <span data-latex=\"O\" data-type=\"inline-math\"></span> проведено дотичну <span data-latex=\"AB\" data-type=\"inline-math\"></span> (<span data-latex=\"B\" data-type=\"inline-math\"></span> — точка дотику). <span data-latex=\"BC\" data-type=\"inline-math\"></span> — хорда, що утворює з радіусом кола кут 35° (див. рисунок). Знайдіть градусну міру кута <span data-latex=\"ABC\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 380 300\" width=\"380\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"170\" cy=\"170\" r=\"105\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/><line x1=\"59\" y1=\"99\" x2=\"360\" y2=\"-11\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"170\" x2=\"134\" y2=\"71\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"170\" x2=\"275\" y2=\"179\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"134\" y1=\"71\" x2=\"275\" y2=\"179\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M235 176 A40 40 0 0 1 243 155\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"217\" y=\"175\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">35°</text><circle cx=\"134\" cy=\"71\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"120\" y=\"49\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"275\" cy=\"179\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"297\" y=\"179\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"170\" cy=\"170\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"160\" y=\"194\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><circle cx=\"350\" cy=\"-7\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"350\" y=\"-31\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "35°"
+    },
+    {
+     "id": 1,
+     "content": "45°"
+    },
+    {
+     "id": 2,
+     "content": "55°"
+    },
+    {
+     "id": 3,
+     "content": "65°"
+    },
+    {
+     "id": 4,
+     "content": "70°"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\angle OBC = \\angle OCB = 35^{\\circ}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\angle ABC = 90^{\\circ} - 35^{\\circ} = 55^{\\circ}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "На колі з центром <span data-latex=\"O\" data-type=\"inline-math\"></span> вибрано точки <span data-latex=\"A\" data-type=\"inline-math\"></span> та <span data-latex=\"B\" data-type=\"inline-math\"></span> (див. рисунок). Визначте градусну міру кута <span data-latex=\"AOB\" data-type=\"inline-math\"></span>, якщо довжина дуги <span data-latex=\"AB\" data-type=\"inline-math\"></span> становить <span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span> довжини цього кола.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 280\" width=\"300\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"160\" cy=\"140\" r=\"115\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M102 40 A115 115 0 0 0 45 140\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"8\"/><line x1=\"160\" y1=\"140\" x2=\"45\" y2=\"140\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-dasharray=\"8 8\"/><line x1=\"160\" y1=\"140\" x2=\"102\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-dasharray=\"8 8\"/><text x=\"126\" y=\"124\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">?</text><circle cx=\"160\" cy=\"140\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"178\" y=\"150\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><circle cx=\"45\" cy=\"140\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"23\" y=\"140\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"102\" cy=\"40\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"94\" y=\"18\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "30°"
+    },
+    {
+     "id": 1,
+     "content": "45°"
+    },
+    {
+     "id": 2,
+     "content": "60°"
+    },
+    {
+     "id": 3,
+     "content": "75°"
+    },
+    {
+     "id": 4,
+     "content": "90°"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"360^{\\circ} : 6 = 60^{\\circ}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Дотичні до кола перетинаються у точці <span data-latex=\"P\" data-type=\"inline-math\"></span>. Одна з них дорівнює 20 см. Знайдіть іншу дотичну.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "10"
+    },
+    {
+     "id": 2,
+     "content": "15"
+    },
+    {
+     "id": 3,
+     "content": "20"
+    },
+    {
+     "id": 4,
+     "content": "25"
+    }
+   ],
+   "points": 1,
+   "solution": "відрізки дотичних з однієї точки рівні: 20"
+  },
+  {
+   "type": "single",
+   "content": "Радіус кола дорівнює 15. Знайдіть довжину дуги, якщо центральний кут, на який вона спирається, дорівнює 150°.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "8π"
+    },
+    {
+     "id": 1,
+     "content": "10π"
+    },
+    {
+     "id": 2,
+     "content": "12,5π"
+    },
+    {
+     "id": 3,
+     "content": "15π"
+    },
+    {
+     "id": 4,
+     "content": "20π"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"l = \\dfrac{2\\pi  \\cdot  15 \\cdot  150}{360} = 12{,}5\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Точки <span data-latex=\"P\" data-type=\"inline-math\"></span> і <span data-latex=\"K\" data-type=\"inline-math\"></span> належать колу радіуса 9 і ділять його на 2 дуги, довжини яких відносяться як 7 : 2. Знайдіть довжину меншої дуги.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "π"
+    },
+    {
+     "id": 1,
+     "content": "2π"
+    },
+    {
+     "id": 2,
+     "content": "3π"
+    },
+    {
+     "id": 3,
+     "content": "4π"
+    },
+    {
+     "id": 4,
+     "content": "14π"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"L = 18\\pi \" data-type=\"inline-math\"></span>; менша дуга <span data-latex=\"\\dfrac{2}{9} \\cdot  18\\pi  = 4\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "До кола з центром у точці <span data-latex=\"O\" data-type=\"inline-math\"></span> проведено дотичну <span data-latex=\"BC\" data-type=\"inline-math\"></span>, <span data-latex=\"AB\" data-type=\"inline-math\"></span> — хорда, що утворює з радіусом кола кут 45° (див. рисунок). Знайдіть градусну міру кута <span data-latex=\"ABC\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 320 300\" width=\"320\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"150\" cy=\"130\" r=\"110\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/><line x1=\"64\" y1=\"221\" x2=\"315\" y2=\"288\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"130\" x2=\"122\" y2=\"236\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"130\" x2=\"256\" y2=\"158\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"122\" y1=\"236\" x2=\"256\" y2=\"158\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"130\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"144\" y=\"108\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><circle cx=\"122\" cy=\"236\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"112\" y=\"260\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"256\" cy=\"158\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"278\" y=\"158\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"305\" cy=\"285\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"305\" y=\"307\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "30°"
+    },
+    {
+     "id": 1,
+     "content": "45°"
+    },
+    {
+     "id": 2,
+     "content": "60°"
+    },
+    {
+     "id": 3,
+     "content": "90°"
+    },
+    {
+     "id": 4,
+     "content": "120°"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\angle OBC = 90^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\angle OBA = 45^{\\circ}\" data-type=\"inline-math\"></span> → <span data-latex=\"\\angle ABC = 45^{\\circ}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "За рисунком, де <span data-latex=\"\\angle AOC = 148^{\\circ}\" data-type=\"inline-math\"></span>, знайдіть кут <span data-latex=\"ABC\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"150\" cy=\"150\" r=\"120\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/><line x1=\"171\" y1=\"32\" x2=\"37\" y2=\"191\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"171\" y1=\"32\" x2=\"99\" y2=\"259\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"37\" y1=\"191\" x2=\"270\" y2=\"160\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"99\" y1=\"259\" x2=\"270\" y2=\"160\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"171\" y1=\"32\" x2=\"150\" y2=\"150\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"150\" x2=\"270\" y2=\"160\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"171\" cy=\"32\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"171\" y=\"10\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"37\" cy=\"191\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"17\" y=\"197\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"99\" cy=\"259\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"89\" y=\"281\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><circle cx=\"270\" cy=\"160\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"292\" y=\"160\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"150\" cy=\"150\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"144\" y=\"172\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "48°"
+    },
+    {
+     "id": 1,
+     "content": "64°"
+    },
+    {
+     "id": 2,
+     "content": "67°"
+    },
+    {
+     "id": 3,
+     "content": "74°"
+    },
+    {
+     "id": 4,
+     "content": "90°"
+    }
+   ],
+   "points": 1,
+   "solution": "вписаний кут — половина центрального: 74°"
+  },
+  {
+   "type": "single",
+   "content": "За рисунком, де <span data-latex=\"\\cup AC = 100^{\\circ}\" data-type=\"inline-math\"></span>, знайдіть <span data-latex=\"\\angle AOC\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"150\" cy=\"150\" r=\"120\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\"/><line x1=\"171\" y1=\"32\" x2=\"37\" y2=\"191\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"171\" y1=\"32\" x2=\"99\" y2=\"259\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"37\" y1=\"191\" x2=\"270\" y2=\"160\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"99\" y1=\"259\" x2=\"270\" y2=\"160\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"171\" y1=\"32\" x2=\"150\" y2=\"150\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"150\" x2=\"270\" y2=\"160\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"171\" cy=\"32\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"171\" y=\"10\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"37\" cy=\"191\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"17\" y=\"197\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"99\" cy=\"259\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"89\" y=\"281\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><circle cx=\"270\" cy=\"160\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"292\" y=\"160\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"150\" cy=\"150\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"144\" y=\"172\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "25°"
+    },
+    {
+     "id": 1,
+     "content": "50°"
+    },
+    {
+     "id": 2,
+     "content": "100°"
+    },
+    {
+     "id": 3,
+     "content": "150°"
+    },
+    {
+     "id": 4,
+     "content": "200°"
+    }
+   ],
+   "points": 1,
+   "solution": "центральний кут дорівнює дузі: 100°"
+  }
+ ],
+ "answers": [
+  4,
+  1,
+  3,
+  3,
+  2,
+  2,
+  3,
+  2,
+  3,
+  1,
+  3,
+  2
+ ],
+ "incomplete": []
+}

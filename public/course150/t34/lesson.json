@@ -1,0 +1,759 @@
+{
+ "number": 34,
+ "title": "Ймовірність",
+ "intro": [
+  {
+   "title": "Класичне означення",
+   "text": "сприятливі на всі"
+  },
+  {
+   "title": "Протилежна подія",
+   "text": "<span data-latex=\"1 - P(A)\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Несумісні події",
+   "text": "ймовірності додаються"
+  },
+  {
+   "title": "Зворотні задачі",
+   "text": "від ймовірності до кількості"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"\\dfrac{m}{n}\" data-type=\"inline-math\"></span>",
+   "text": "класична ймовірність"
+  },
+  {
+   "big": "<span data-latex=\"1 - P\" data-type=\"inline-math\"></span>",
+   "text": "протилежна подія"
+  },
+  {
+   "big": "<span data-latex=\"P + P\" data-type=\"inline-math\"></span>",
+   "text": "несумісні події"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Класичне означення",
+   "title": "Сприятливі на всі",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\dfrac{m}{n}\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"P(A) = \\dfrac{m}{n}\" data-type=\"inline-math\"></span>: <span data-latex=\"m\" data-type=\"inline-math\"></span> — сприятливих наслідків, <span data-latex=\"n\" data-type=\"inline-math\"></span> — усіх рівноможливих."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Межі",
+     "formula": "",
+     "text": "<span data-latex=\"0 \\le  P(A) \\le  1\" data-type=\"inline-math\"></span>. Неможлива подія — 0, вірогідна — 1."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Порахуй усіх",
+     "formula": "",
+     "text": "Спершу знайди <span data-latex=\"n\" data-type=\"inline-math\"></span> — загальну кількість, часто це сума кількох груп."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Мед у бідонах",
+    "content": "Пасічник зберігає мед в однакових закритих бідонах. Їх у нього дванадцять: у трьох — квітковий мед, у чотирьох — мед із липи, у п’яти — мед із гречки. Знайдіть ймовірність того, що перший навмання відкритий бідон буде містити квітковий мед.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{5}{12}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{12}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{3}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Усього бідонів 12, з квітковим медом — 3. <span data-latex=\"P = \\dfrac{3}{12} = \\dfrac{1}{4}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Протилежна подія",
+   "title": "«Не» — це <span data-latex=\"1 - P\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"1 - P\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"P(\\text{не } A) = 1 - P(A)\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Або напряму",
+     "formula": "",
+     "text": "Можна порахувати сприятливі для «не <span data-latex=\"A\" data-type=\"inline-math\"></span>»: усі мінус ті, що дають <span data-latex=\"A\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "Влучність 0,7 — ймовірність промаху 0,3."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Карусель",
+    "content": "На дитячій каруселі є 19 місць для катання: 9 човнів, 5 літаків і 5 машинок. Микита навмання обирає собі місце на каруселі. Визначте ймовірність того, що він сяде не на літак.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{15}{19}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{5}{14}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{14}{19}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{4}{15}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{5}{19}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Не літаків <span data-latex=\"19 - 5 = 14\" data-type=\"inline-math\"></span> місць із 19: <span data-latex=\"P = \\dfrac{14}{19}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Несумісні події",
+   "title": "Ймовірності додаються",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "+",
+     "title": "«Або»",
+     "formula": "",
+     "text": "Якщо <span data-latex=\"A\" data-type=\"inline-math\"></span> і <span data-latex=\"B\" data-type=\"inline-math\"></span> не можуть статися разом: <span data-latex=\"P(A \\text{ або } B) = P(A) + P(B)\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Частки",
+     "formula": "",
+     "text": "Частки — це теж ймовірності: третина — <span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>, половина — <span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Решта",
+     "formula": "",
+     "text": "Сума ймовірностей усіх варіантів — 1."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Тюльпани",
+    "content": "У суміші цибулин тюльпанів рожеві становлять третину всіх тюльпанів, білі — половину, а чорні — решту. Яка ймовірність того, що з навмання взятої цибулини виросте білий або рожевий тюльпан?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{5}{6}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Події «рожевий» і «білий» несумісні, тож ймовірності додаються: <span data-latex=\"\\dfrac{1}{3} + \\dfrac{1}{2} = \\dfrac{5}{6}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Від ймовірності до кількості",
+   "title": "Зворотні задачі",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"P \\cdot  n\" data-type=\"inline-math\"></span>",
+     "title": "Кількість",
+     "formula": "",
+     "text": "Сприятливих <span data-latex=\"m = P \\cdot  n\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Усього",
+     "formula": "",
+     "text": "<span data-latex=\"n = \\dfrac{m}{P}\" data-type=\"inline-math\"></span>: 5 сприятливих при <span data-latex=\"P = 0{,}25\" data-type=\"inline-math\"></span> — усього 20."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Не забудь",
+     "formula": "",
+     "text": "Читай уважно: питають сприятливі чи решту?"
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Білети без виграшу",
+    "content": "Випущено 300 лотерейних білетів. Ймовірність того, що навмання вибраний білет буде виграшним, дорівнює 0,2. Визначте кількість білетів <b>без виграшу</b>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "6"
+     },
+     {
+      "id": 1,
+      "content": "60"
+     },
+     {
+      "id": 2,
+      "content": "294"
+     },
+     {
+      "id": 3,
+      "content": "150"
+     },
+     {
+      "id": 4,
+      "content": "240"
+     }
+    ],
+    "points": 1,
+    "solution": "Виграшних <span data-latex=\"300 \\cdot  0{,}2 = 60\" data-type=\"inline-math\"></span>, без виграшу <span data-latex=\"300 - 60 = 240\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Банки з джемом",
+    "content": "На полиці 18 однакових банок із джемом: 6 — з абрикосовим, 12 — з яблучним. Господиня навмання взяла одну банку. Яка ймовірність того, що вона буде з абрикосовим джемом?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{18}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "6/18"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Лотерея",
+    "content": "У лотереї 10 виграшних білетів і 290 білетів без виграшу. Яка ймовірність того, що перший придбаний білет цієї лотереї буде виграшним?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{29}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{29}{30}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{300}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{30}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{10}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "n = 300: 10/300"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Цифра навмання",
+    "content": "Комп’ютерна програма видаляє у п’ятицифровому числі одну цифру навмання. Яка ймовірність того, що в числі 37281 буде видалено цифру 1 або цифру 2?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{2}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "дві сприятливі цифри з п’яти"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кінотеатр",
+    "content": "У залі кінотеатру є 39 місць (див. рисунок). Усі місця з кріслами-мішками зайняті. Михайло навмання обирає собі місце в кінотеатрі. Визначте ймовірність того, що він обере VIP-місце.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 460 330\" width=\"460\" height=\"330\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"4,4 456,4 456,326 4,326\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"230\" y=\"40\" font-size=\"26\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">крісла-мішки</text><circle cx=\"115\" cy=\"75\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"75\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"265\" cy=\"75\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"340\" cy=\"75\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"78\" cy=\"115\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"153\" cy=\"115\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"228\" cy=\"115\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"303\" cy=\"115\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"378\" cy=\"115\" r=\"16\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><polygon points=\"30,150 56,150 56,176 30,176\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"64,150 90,150 90,176 64,176\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"98,150 124,150 124,176 98,176\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"30,184 56,184 56,210 30,210\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"64,184 90,184 90,210 64,210\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"98,184 124,184 124,210 98,210\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"30,218 56,218 56,244 30,244\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"64,218 90,218 90,244 64,244\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"98,218 124,218 124,244 98,244\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"30,252 56,252 56,278 30,278\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"64,252 90,252 90,278 64,278\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"98,252 124,252 124,278 98,278\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"330,150 356,150 356,176 330,176\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"364,150 390,150 390,176 364,176\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"398,150 424,150 424,176 398,176\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"330,184 356,184 356,210 330,210\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"364,184 390,184 390,210 364,210\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"398,184 424,184 424,210 398,210\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"330,218 356,218 356,244 330,244\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"364,218 390,218 390,244 364,244\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"398,218 424,218 424,244 398,244\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"330,252 356,252 356,278 330,278\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"364,252 390,252 390,278 364,278\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"398,252 424,252 424,278 398,278\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"172,146 288,146 288,284 172,284\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"186,156 224,156 224,190 186,190\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"236,156 274,156 274,190 236,190\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"186,198 224,198 224,232 186,232\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"236,198 274,198 274,232 236,232\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"186,240 224,240 224,274 186,274\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"236,240 274,240 274,274 236,274\" fill=\"#6D4AFF\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"230\" y=\"314\" font-size=\"26\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">VIP-місця</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{2}{13}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "вільних 39 − 9 = 30, VIP — 6: 6/30"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Літак",
+    "content": "Місця в літаку розташовані у 20 рядів, у кожному ряді по 3 місця ліворуч і праворуч від проходу. Комп’ютерна програма випадковим чином обирає місце для пасажира. Визначте ймовірність того, що пасажиру дістанеться перший або останній ряд.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{20}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{10}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "2 ряди з 20"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кав’ярня",
+    "content": "На рисунку — план кав’ярні, у якій 25 місць. Коли Соломія зайшла, вільними були всі місця, окрім місць біля барної стійки. Соломія вибирає місце навмання. Яка ймовірність того, що воно буде за круглим столиком?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 468 360\" width=\"468\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"18,9 450,9 450,36 18,36\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"234\" y=\"29\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#fff\">барна стійка</text><circle cx=\"54\" cy=\"65\" r=\"14\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"144\" cy=\"65\" r=\"14\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"234\" cy=\"65\" r=\"14\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"324\" cy=\"65\" r=\"14\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"414\" cy=\"65\" r=\"14\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"81\" cy=\"153\" r=\"32\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"81\" cy=\"103\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"81\" cy=\"203\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"31\" cy=\"153\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"131\" cy=\"153\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"234\" cy=\"153\" r=\"32\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"234\" cy=\"103\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"234\" cy=\"203\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"184\" cy=\"153\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"284\" cy=\"153\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"387\" cy=\"153\" r=\"32\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"387\" cy=\"103\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"387\" cy=\"203\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"337\" cy=\"153\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"437\" cy=\"153\" r=\"13\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><polygon points=\"106,259 164,259 164,317 106,317\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"124,232 146,232 146,254 124,254\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"124,322 146,322 146,344 124,344\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"79,277 101,277 101,299 79,299\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"169,277 191,277 191,299 169,299\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"304,259 362,259 362,317 304,317\" fill=\"#FFD23F\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"322,232 344,232 344,254 322,254\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"322,322 344,322 344,344 322,344\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"277,277 299,277 299,299 277,299\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"367,277 389,277 389,299 367,299\" fill=\"#FF6A3D\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{12}{25}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{12}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{4}{25}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "вільних 25 − 5 = 20, за круглими — 12"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Стежки до озер",
+    "content": "Від бази відпочинку до озер веде кілька стежок: до озера Прозоре — 2, до озера Мальовниче — 4, до озера Піщане — 3. Турист навмання вибирає одну стежку. Яка ймовірність того, що він вибере маршрут до озера Мальовниче?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{4}{9}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{9}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{2}{9}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "2 + 4 + 3 = 9 стежок"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Автомобільний номер",
+    "content": "Номер складається з 4 букв і 4 цифр. Одна з цифр замазана брудом. Програма підбирає відсутню цифру з десяти можливих значень. Яка ймовірність того, що вона правильно визначить цю цифру?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><span style=\"display:inline-flex;align-items:center;gap:14px;border:4px solid #1F1B4D;border-radius:14px;padding:6px 22px 6px 8px;font:800 64px 'Unbounded Variable',sans-serif;background:#fff\"><span style=\"display:flex;flex-direction:column;width:34px;height:64px;border-radius:6px;overflow:hidden\"><span style=\"flex:1;background:#2F6FDE\"></span><span style=\"flex:1;background:#FFD23F\"></span></span>AA 37<span style=\"display:inline-block;width:48px;height:64px;background:#9A97AE;border-radius:12px\"></span>0 CI</span></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{10}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{8}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{9}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "одна правильна цифра з 10"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кубик",
+    "content": "Гральний кубик кинули один раз. Яка ймовірність того, що випаде парне число очок?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Парних граней три (2, 4, 6) із шести: <span data-latex=\"\\dfrac{3}{6} = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кубик",
+    "content": "Гральний кубик кинули один раз. Яка ймовірність того, що випаде більше ніж 4 очки?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Сприятливі грані 5 і 6 — дві з шести: <span data-latex=\"\\dfrac{2}{6} = \\dfrac{1}{3}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дві монети",
+    "content": "Монету підкинули двічі. Яка ймовірність того, що обидва рази випаде герб?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Рівноможливих наслідків чотири: ГГ, ГЦ, ЦГ, ЦЦ. Сприятливий один: <span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Два кубики",
+    "content": "Кинули два гральні кубики. Яка ймовірність того, що сума очок дорівнюватиме 7?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Усього <span data-latex=\"6 \\cdot  6 = 36\" data-type=\"inline-math\"></span> пар. Сума 7: (1; 6), (2; 5), (3; 4), (4; 3), (5; 2), (6; 1) — шість пар. <span data-latex=\"\\dfrac{6}{36} = \\dfrac{1}{6}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Навмання з класу",
+    "content": "У класі 12 хлопців і 18 дівчат. Учителька навмання викликає одного учня. Яка ймовірність того, що це буде дівчина?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{2}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{18}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{3}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Усього <span data-latex=\"12 + 18 = 30\" data-type=\"inline-math\"></span> учнів, дівчат 18: <span data-latex=\"\\dfrac{18}{30} = \\dfrac{3}{5}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Кратне трьом",
+    "content": "Із чисел від 1 до 20 навмання вибирають одне. Знайдіть ймовірність того, що воно ділиться на 3.",
+    "variants": [],
+    "points": 2,
+    "solution": "Кратні 3: 3, 6, 9, 12, 15, 18 — шість із двадцяти. <span data-latex=\"\\dfrac{6}{20} = 0{,}3\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "0,3"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"\\dfrac{m}{n}\" data-type=\"inline-math\"></span>",
+   "text": "Сприятливі на всі."
+  },
+  {
+   "big": "<span data-latex=\"1 - P\" data-type=\"inline-math\"></span>",
+   "text": "Протилежна подія."
+  },
+  {
+   "big": "<span data-latex=\"P + P\" data-type=\"inline-math\"></span>",
+   "text": "Несумісні події — додаємо."
+  },
+  {
+   "big": "<span data-latex=\"P \\cdot  n\" data-type=\"inline-math\"></span>",
+   "text": "Кількість сприятливих."
+  }
+ ]
+}

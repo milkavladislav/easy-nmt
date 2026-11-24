@@ -1,0 +1,359 @@
+{
+ "title": "ДЗ 39. Аксіоми стереометрії (НМТ 150+)",
+ "lessonNumber": 39,
+ "source": "hw-sheet",
+ "hwKey": "150-39",
+ "questions": [
+  {
+   "type": "single",
+   "content": "На рисунку — трикутна піраміда <span data-latex=\"SABC\" data-type=\"inline-math\"></span>, <span data-latex=\"SO\" data-type=\"inline-math\"></span> — висота піраміди. Укажіть пару прямих, що лежать в одній площині.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 221 244\" width=\"221\" height=\"244\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"36\" y1=\"174\" x2=\"186\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"186\" y1=\"174\" x2=\"73\" y2=\"209\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"73\" y1=\"209\" x2=\"36\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"97\" y1=\"36\" x2=\"36\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"97\" y1=\"36\" x2=\"186\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"97\" y1=\"36\" x2=\"73\" y2=\"209\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"97\" y1=\"36\" x2=\"97\" y2=\"186\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"97\" cy=\"186\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"13\" y=\"191\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"209\" y=\"189\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"63\" y=\"240\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"97\" y=\"22\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"97\" y=\"220\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"SB\" data-type=\"inline-math\"></span> і <span data-latex=\"AC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"SO\" data-type=\"inline-math\"></span> і <span data-latex=\"AC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"SA\" data-type=\"inline-math\"></span> і <span data-latex=\"BC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"SO\" data-type=\"inline-math\"></span> і <span data-latex=\"BC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"SO\" data-type=\"inline-math\"></span> і <span data-latex=\"SB\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"SO\" data-type=\"inline-math\"></span> і <span data-latex=\"SB\" data-type=\"inline-math\"></span> перетинаються в точці <span data-latex=\"S\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "На рисунку — чотирикутна піраміда <span data-latex=\"SABCD\" data-type=\"inline-math\"></span>. Скільки прямих, перпендикулярних до висоти <span data-latex=\"SO\" data-type=\"inline-math\"></span>, лежать у площині основи <span data-latex=\"ABCD\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 238 240\" width=\"238\" height=\"240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"36\" y1=\"204\" x2=\"156\" y2=\"204\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"156\" y1=\"204\" x2=\"202\" y2=\"168\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"204\" x2=\"82\" y2=\"168\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"82\" y1=\"168\" x2=\"202\" y2=\"168\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"119\" y1=\"36\" x2=\"36\" y2=\"204\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"119\" y1=\"36\" x2=\"82\" y2=\"168\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"119\" y1=\"36\" x2=\"202\" y2=\"168\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"119\" y1=\"36\" x2=\"156\" y2=\"204\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"119\" y1=\"36\" x2=\"119\" y2=\"186\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"119\" cy=\"186\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"15\" y=\"226\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"172\" y=\"233\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"59\" y=\"182\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"226\" y=\"179\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"119\" y=\"22\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"119\" y=\"220\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодної"
+    },
+    {
+     "id": 1,
+     "content": "лише одна"
+    },
+    {
+     "id": 2,
+     "content": "лише дві"
+    },
+    {
+     "id": 3,
+     "content": "лише три"
+    },
+    {
+     "id": 4,
+     "content": "безліч"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"SO \\perp  (ABCD)\" data-type=\"inline-math\"></span> — перпендикулярна до кожної прямої основи"
+  },
+  {
+   "type": "single",
+   "content": "На рисунку — прямокутний паралелепіпед <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>. Позначте пару паралельних площин.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 225 227\" width=\"225\" height=\"227\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"187\" x2=\"148\" y2=\"187\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"187\" x2=\"78\" y2=\"157\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"78\" y1=\"157\" x2=\"186\" y2=\"157\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"148\" y1=\"187\" x2=\"186\" y2=\"157\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"70\" x2=\"148\" y2=\"70\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"70\" x2=\"78\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"40\" x2=\"186\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"70\" x2=\"186\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"187\" x2=\"40\" y2=\"70\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"78\" y1=\"157\" x2=\"78\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"186\" y1=\"157\" x2=\"186\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"187\" x2=\"148\" y2=\"70\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"23\" y=\"214\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"158\" y=\"219\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"63\" y=\"186\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"206\" y=\"179\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"19\" y=\"68\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"163\" y=\"62\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"68\" y=\"28\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"203\" y=\"33\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"ABB_{1}\" data-type=\"inline-math\"></span> і <span data-latex=\"A_{1}D_{1}D\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"A_{1}D_{1}D\" data-type=\"inline-math\"></span> і <span data-latex=\"CBB_{1}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"CDD_{1}\" data-type=\"inline-math\"></span> і <span data-latex=\"BB_{1}C_{1}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"ABC\" data-type=\"inline-math\"></span> і <span data-latex=\"A_{1}D_{1}D\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"A_{1}B_{1}C_{1}\" data-type=\"inline-math\"></span> і <span data-latex=\"ADD_{1}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"ADD_{1}A_{1} \\parallel  BCC_{1}B_{1}\" data-type=\"inline-math\"></span> — протилежні грані"
+  },
+  {
+   "type": "single",
+   "content": "На рисунку — трикутна піраміда <span data-latex=\"SABC\" data-type=\"inline-math\"></span>, <span data-latex=\"AM\" data-type=\"inline-math\"></span> — медіана трикутника <span data-latex=\"ABC\" data-type=\"inline-math\"></span>. Скільки всього площин можна провести через пряму <span data-latex=\"AM\" data-type=\"inline-math\"></span> і точку <span data-latex=\"S\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 221 244\" width=\"221\" height=\"244\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"36\" y1=\"174\" x2=\"186\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"186\" y1=\"174\" x2=\"44\" y2=\"209\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"209\" x2=\"36\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"36\" x2=\"36\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"36\" x2=\"186\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"36\" x2=\"44\" y2=\"209\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"174\" x2=\"115\" y2=\"191\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"115\" cy=\"191\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"13\" y=\"191\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"209\" y=\"188\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"28\" y=\"236\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"90\" y=\"22\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"127\" y=\"222\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодної"
+    },
+    {
+     "id": 1,
+     "content": "лише одну"
+    },
+    {
+     "id": 2,
+     "content": "лише дві"
+    },
+    {
+     "id": 3,
+     "content": "лише три"
+    },
+    {
+     "id": 4,
+     "content": "більше як три"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S \\notin  AM\" data-type=\"inline-math\"></span> — площина єдина"
+  },
+  {
+   "type": "single",
+   "content": "Точка <span data-latex=\"M\" data-type=\"inline-math\"></span> <b>не</b> належить площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>. Які з наведених тверджень є правильними?<p>I. Через точку <span data-latex=\"M\" data-type=\"inline-math\"></span> можна провести лише одну площину, паралельну площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>II. Через точку <span data-latex=\"M\" data-type=\"inline-math\"></span> можна провести лише одну площину, перпендикулярну до площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>III. Через точку <span data-latex=\"M\" data-type=\"inline-math\"></span> можна провести лише одну площину, що перетинає площину <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> під кутом 45°.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише II"
+    },
+    {
+     "id": 2,
+     "content": "лише I і III"
+    },
+    {
+     "id": 3,
+     "content": "лише II і III"
+    },
+    {
+     "id": 4,
+     "content": "I, II і III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — так; II, III — ні: таких площин безліч"
+  },
+  {
+   "type": "single",
+   "content": "Які з наведених тверджень є правильними?<p>I. Якщо коло має з площиною дві спільні точки, то всі точки кола належать цій площині.</p><p>II. Якщо три вершини паралелограма належать площині, то всі точки паралелограма належать цій площині.</p><p>III. Якщо круг і площина мають три спільні точки, то всі точки круга належать цій площині.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише II"
+    },
+    {
+     "id": 1,
+     "content": "лише III"
+    },
+    {
+     "id": 2,
+     "content": "лише I і II"
+    },
+    {
+     "id": 3,
+     "content": "лише I і III"
+    },
+    {
+     "id": 4,
+     "content": "лише II і III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — ні; II — так (паралелограм визначається трьома вершинами); III — ні: точки можуть лежати на одній прямій"
+  },
+  {
+   "type": "single",
+   "content": "На рисунку — трикутна піраміда <span data-latex=\"SABC\" data-type=\"inline-math\"></span> з основою <span data-latex=\"ABC\" data-type=\"inline-math\"></span>. Точка <span data-latex=\"M\" data-type=\"inline-math\"></span> — середина ребра <span data-latex=\"AB\" data-type=\"inline-math\"></span>. Укажіть лінію перетину площин <span data-latex=\"SMC\" data-type=\"inline-math\"></span> і <span data-latex=\"ABS\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 221 244\" width=\"221\" height=\"244\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"44\" y1=\"209\" x2=\"186\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"174\" x2=\"36\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"174\" x2=\"44\" y2=\"209\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"36\" x2=\"44\" y2=\"209\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"36\" x2=\"186\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"36\" x2=\"36\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"36\" x2=\"115\" y2=\"191\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"174\" x2=\"115\" y2=\"191\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"115\" cy=\"191\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"13\" y=\"191\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"209\" y=\"188\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"28\" y=\"236\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"83\" y=\"22\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"128\" y=\"222\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "SM"
+    },
+    {
+     "id": 1,
+     "content": "AB"
+    },
+    {
+     "id": 2,
+     "content": "AC"
+    },
+    {
+     "id": 3,
+     "content": "BC"
+    },
+    {
+     "id": 4,
+     "content": "CM"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S\" data-type=\"inline-math\"></span> і <span data-latex=\"M\" data-type=\"inline-math\"></span> належать обом площинам"
+  },
+  {
+   "type": "single",
+   "content": "У просторі задано пряму <span data-latex=\"b\" data-type=\"inline-math\"></span> і точку <span data-latex=\"A\" data-type=\"inline-math\"></span>, що не належить цій прямій. Скільки існує різних площин, які проходять через точку <span data-latex=\"A\" data-type=\"inline-math\"></span> і <b>не мають</b> спільних точок з прямою <span data-latex=\"b\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодної"
+    },
+    {
+     "id": 1,
+     "content": "лише одна"
+    },
+    {
+     "id": 2,
+     "content": "лише дві"
+    },
+    {
+     "id": 3,
+     "content": "лише три"
+    },
+    {
+     "id": 4,
+     "content": "безліч"
+    }
+   ],
+   "points": 1,
+   "solution": "площини через пряму, що проходить через <span data-latex=\"A\" data-type=\"inline-math\"></span> паралельно <span data-latex=\"b\" data-type=\"inline-math\"></span> (крім площини з <span data-latex=\"b\" data-type=\"inline-math\"></span>)"
+  },
+  {
+   "type": "single",
+   "content": "Прямі <span data-latex=\"a\" data-type=\"inline-math\"></span> та <span data-latex=\"b\" data-type=\"inline-math\"></span> мимобіжні. Які з наведених тверджень є правильними?<p>I. Прямі <span data-latex=\"a\" data-type=\"inline-math\"></span> та <span data-latex=\"b\" data-type=\"inline-math\"></span> перетинаються.</p><p>II. Прямі <span data-latex=\"a\" data-type=\"inline-math\"></span> та <span data-latex=\"b\" data-type=\"inline-math\"></span> лежать в одній площині.</p><p>III. Існує пряма, паралельна прямій <span data-latex=\"a\" data-type=\"inline-math\"></span>, що перетинає пряму <span data-latex=\"b\" data-type=\"inline-math\"></span>.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише II"
+    },
+    {
+     "id": 2,
+     "content": "лише I та II"
+    },
+    {
+     "id": 3,
+     "content": "лише III"
+    },
+    {
+     "id": 4,
+     "content": "I, II та III"
+    }
+   ],
+   "points": 1,
+   "solution": "I, II — ні; III — так"
+  },
+  {
+   "type": "single",
+   "content": "Точка <span data-latex=\"A\" data-type=\"inline-math\"></span> належить площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>. Які з наведених тверджень є правильними?<p>I. Через точку <span data-latex=\"A\" data-type=\"inline-math\"></span> можна провести пряму, перпендикулярну до площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>II. Через точку <span data-latex=\"A\" data-type=\"inline-math\"></span> можна провести площину, перпендикулярну до площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>III. Через точку <span data-latex=\"A\" data-type=\"inline-math\"></span> можна провести площину, паралельну площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише II та III"
+    },
+    {
+     "id": 2,
+     "content": "лише II"
+    },
+    {
+     "id": 3,
+     "content": "лише I та II"
+    },
+    {
+     "id": 4,
+     "content": "I, II та III"
+    }
+   ],
+   "points": 1,
+   "solution": "I, II — так; III — ні: площина через <span data-latex=\"A\" data-type=\"inline-math\"></span>, паралельна <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, — це сама <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> і <span data-latex=\"\\beta \" data-type=\"inline-math\"></span> паралельні. Які з наведених тверджень є правильними?<p>I. Існує пряма, що лежить і в площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, і в площині <span data-latex=\"\\beta \" data-type=\"inline-math\"></span>.</p><p>II. Якщо пряма перпендикулярна до площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, то вона перпендикулярна до площини <span data-latex=\"\\beta \" data-type=\"inline-math\"></span>.</p><p>III. Якщо пряма лежить у площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, то вона паралельна будь-якій прямій у площині <span data-latex=\"\\beta \" data-type=\"inline-math\"></span>.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише I та II"
+    },
+    {
+     "id": 2,
+     "content": "лише II"
+    },
+    {
+     "id": 3,
+     "content": "лише II та III"
+    },
+    {
+     "id": 4,
+     "content": "лише III"
+    }
+   ],
+   "points": 1,
+   "solution": "лише II"
+  },
+  {
+   "type": "single",
+   "content": "Задано дві мимобіжні прямі <span data-latex=\"a\" data-type=\"inline-math\"></span> і <span data-latex=\"b\" data-type=\"inline-math\"></span>. Скільки існує різних площин, які проходять через пряму <span data-latex=\"a\" data-type=\"inline-math\"></span> та паралельні прямій <span data-latex=\"b\" data-type=\"inline-math\"></span>?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "жодної"
+    },
+    {
+     "id": 1,
+     "content": "одна"
+    },
+    {
+     "id": 2,
+     "content": "дві"
+    },
+    {
+     "id": 3,
+     "content": "три"
+    },
+    {
+     "id": 4,
+     "content": "безліч"
+    }
+   ],
+   "points": 1,
+   "solution": "через точку <span data-latex=\"a\" data-type=\"inline-math\"></span> проводимо <span data-latex=\"b&#x27; \\parallel  b\" data-type=\"inline-math\"></span>: площина <span data-latex=\"(a, b&#x27;)\" data-type=\"inline-math\"></span> єдина"
+  }
+ ],
+ "answers": [
+  4,
+  4,
+  1,
+  1,
+  0,
+  0,
+  0,
+  4,
+  3,
+  3,
+  2,
+  1
+ ],
+ "incomplete": []
+}

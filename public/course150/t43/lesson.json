@@ -1,0 +1,780 @@
+{
+ "number": 43,
+ "title": "Куля",
+ "intro": [
+  {
+   "title": "Об’єм кулі",
+   "text": "<span data-latex=\"\\dfrac{4}{3}\\pi R^{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Переріз кулі",
+   "text": "коло радіуса <span data-latex=\"\\sqrt{R^{2} - d^{2}}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Подібність",
+   "text": "об’єм ∼ <span data-latex=\"R^{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Переплавлення",
+   "text": "об’єми рівні"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"4\\pi R^{2}\" data-type=\"inline-math\"></span>",
+   "text": "площа сфери"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{4}{3}\\pi R^{3}\" data-type=\"inline-math\"></span>",
+   "text": "об’єм кулі"
+  },
+  {
+   "big": "<span data-latex=\"\\sqrt{R^{2} - d^{2}}\" data-type=\"inline-math\"></span>",
+   "text": "переріз"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Об’єм і площа",
+   "title": "Дві формули",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\dfrac{4}{3}\\pi R^{3}\" data-type=\"inline-math\"></span>",
+     "title": "Об’єм кулі",
+     "formula": "",
+     "text": "<span data-latex=\"V = \\dfrac{4}{3}\\pi R^{3}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"4\\pi R^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Площа сфери",
+     "formula": "",
+     "text": "Учетверо більша за площу великого круга."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Діаметр",
+     "formula": "",
+     "text": "Не плутай: <span data-latex=\"d = 2R\" data-type=\"inline-math\"></span> — у формули ставимо радіус."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Діаметр кулі",
+    "content": "Об’єм кулі дорівнює <span data-latex=\"36\\pi \" data-type=\"inline-math\"></span> см³. Знайдіть її діаметр.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{3 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{24 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{18 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{4}{3}\\pi R^{3} = 36\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"R^{3} = 27\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 3\" data-type=\"inline-math\"></span>, діаметр <span data-latex=\"6\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Переріз кулі",
+   "title": "Завжди круг",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"r^{2} = R^{2} - d^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Радіус перерізу",
+     "formula": "",
+     "text": "<span data-latex=\"d\" data-type=\"inline-math\"></span> — відстань від центра до площини."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Великий круг",
+     "formula": "",
+     "text": "Площина через центр (<span data-latex=\"d = 0\" data-type=\"inline-math\"></span>) — переріз найбільший, <span data-latex=\"r = R\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Дотик",
+     "formula": "",
+     "text": "<span data-latex=\"d = R\" data-type=\"inline-math\"></span> — площина дотикається до кулі в одній точці."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Відстань до перерізу",
+    "content": "Переріз кулі площиною має площу <span data-latex=\"81\\pi \" data-type=\"inline-math\"></span> см². Знайдіть відстань від центра кулі до площини перерізу, якщо радіус кулі дорівнює 15 см.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 340 310\" width=\"340\" height=\"310\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"170\" cy=\"185\" r=\"110\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><polygon points=\"30,175 250,175 320,95 100,95\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><ellipse cx=\"170\" cy=\"135\" rx=\"98\" ry=\"29\" fill=\"#CFE8FB\" fill-opacity=\".85\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><line x1=\"170\" y1=\"185\" x2=\"170\" y2=\"135\" stroke=\"#FF6A3D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"170\" y1=\"135\" x2=\"268\" y2=\"135\" stroke=\"#6D4AFF\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"185\" x2=\"268\" y2=\"135\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><polyline points=\"170,147 182,147 182,135\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"185\" r=\"5\" fill=\"#1E1B4B\"/><circle cx=\"170\" cy=\"135\" r=\"5\" fill=\"#1E1B4B\"/><circle cx=\"268\" cy=\"135\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"150\" y=\"195\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><text x=\"144\" y=\"129\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O₁</text><text x=\"286\" y=\"141\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"300\" y=\"89\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">α</text><text x=\"233\" y=\"178\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">R</text><text x=\"219\" y=\"123\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">r</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{9 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{15 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\pi r^{2} = 81\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"r = 9\" data-type=\"inline-math\"></span>; <span data-latex=\"d = \\sqrt{225 - 81} = 12\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Радіус змінюється",
+   "title": "Степені подібності",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"k^{3}\" data-type=\"inline-math\"></span>",
+     "title": "Об’єм",
+     "formula": "",
+     "text": "Радіус у <span data-latex=\"k\" data-type=\"inline-math\"></span> разів більший — об’єм у <span data-latex=\"k^{3}\" data-type=\"inline-math\"></span> разів."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"k^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Площа",
+     "formula": "",
+     "text": "Площа сфери — у <span data-latex=\"k^{2}\" data-type=\"inline-math\"></span> разів."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "Радіус удвічі менший — об’єм у 8 разів менший."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Радіус удвічі",
+    "content": "У скільки разів збільшиться об’єм кулі, якщо її радіус збільшити у 2 рази?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "у 2 рази"
+     },
+     {
+      "id": 1,
+      "content": "у 4 рази"
+     },
+     {
+      "id": 2,
+      "content": "у 6 разів"
+     },
+     {
+      "id": 3,
+      "content": "у 8 разів"
+     },
+     {
+      "id": 4,
+      "content": "у 16 разів"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"V \\text{∼} R^{3}\" data-type=\"inline-math\"></span>: <span data-latex=\"2^{3} = 8\" data-type=\"inline-math\"></span> — об’єм збільшиться у 8 разів."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Переплавлення",
+   "title": "Об’єм зберігається",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "=",
+     "title": "Ідея",
+     "formula": "",
+     "text": "Сума об’ємів до = сума об’ємів після."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Кількість",
+     "formula": "",
+     "text": "Кульок <span data-latex=\"(\\dfrac{R}{r})^{3}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Злиття",
+     "formula": "",
+     "text": "Кілька куль в одну: <span data-latex=\"R^{3} = R_{1}^{3} + R_{2}^{3} + \\ldots \" data-type=\"inline-math\"></span>"
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Переплавлення",
+    "content": "Свинцеву кулю радіуса 5 см переплавили в кульки однакового розміру, радіус кожної з яких — 1 см. Скільки таких кульок одержали? Втратами свинцю під час переплавлення знехтуйте.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "125"
+     },
+     {
+      "id": 1,
+      "content": "50"
+     },
+     {
+      "id": 2,
+      "content": "25"
+     },
+     {
+      "id": 3,
+      "content": "10"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\dfrac{V}{v} = \\dfrac{5^{3}}{1^{3}} = 125\" data-type=\"inline-math\"></span> кульок."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Площа сфери",
+    "content": "Знайдіть площу сфери радіуса 3 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"9\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"12\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"36\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"72\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"108\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"S = 4\\pi R^{2} = 4\\pi  \\cdot  9 = 36\\pi \" data-type=\"inline-math\"></span> см²."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Об’єм кулі",
+    "content": "Знайдіть об’єм кулі радіуса 3 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"9\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"12\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"27\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"36\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"108\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"V = \\dfrac{4}{3}\\pi R^{3} = \\dfrac{4}{3}\\pi  \\cdot  27 = 36\\pi \" data-type=\"inline-math\"></span> см³."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Радіус за площею",
+    "content": "Площа поверхні кулі дорівнює <span data-latex=\"100\\pi \" data-type=\"inline-math\"></span> см². Знайдіть радіус кулі.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{5 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{10 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{25 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{10}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{50 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"4\\pi R^{2} = 100\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"R^{2} = 25\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 5\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Великий круг",
+    "content": "Діаметр кулі дорівнює 10 см. Знайдіть площу її великого круга.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"100\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"50\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"25\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"10\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"5\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Великий круг проходить через центр: його радіус <span data-latex=\"R = 5\" data-type=\"inline-math\"></span>, площа <span data-latex=\"25\\pi \" data-type=\"inline-math\"></span> см²."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Площа й радіус",
+    "content": "У скільки разів збільшиться площа поверхні кулі, якщо її радіус збільшити втричі?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{у 3 рази}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{у 6 разів}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{у 9 разів}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{у 12 разів}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{у 27 разів}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"S \\text{∼} R^{2}\" data-type=\"inline-math\"></span>: <span data-latex=\"3^{2} = 9\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Радіус перерізу",
+    "content": "Радіус кулі дорівнює 10 см. Площина віддалена від центра кулі на 6 см. Знайдіть радіус перерізу.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{10 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"2\\sqrt{34}\\text{ см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"r = \\sqrt{R^{2} - d^{2}} = \\sqrt{100 - 36} = 8\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Радіус кулі",
+    "content": "Радіус перерізу кулі дорівнює 5 см, а відстань від центра кулі до площини перерізу — 12 см. Знайдіть радіус кулі.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{7 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{13 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{17 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\sqrt{119}\\text{ см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"R = \\sqrt{r^{2} + d^{2}} = \\sqrt{25 + 144} = 13\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Відстань до перерізу",
+    "content": "Радіус кулі дорівнює 5 см, площа перерізу — <span data-latex=\"16\\pi \" data-type=\"inline-math\"></span> см². Знайдіть відстань від центра кулі до площини перерізу.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{1 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{3 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{41}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{9 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"r^{2} = 16\" data-type=\"inline-math\"></span>; <span data-latex=\"d = \\sqrt{25 - 16} = 3\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дотична площина",
+    "content": "Радіус кулі дорівнює 7 см, а відстань від її центра до площини — теж 7 см. Скільки спільних точок мають куля й площина?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{жодної}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{одну}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{дві}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{три}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{безліч}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Відстань дорівнює радіусу — площина дотикається до кулі в одній точці."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Куля в кубі",
+    "content": "Куля вписана в куб з ребром 6 см. Знайдіть радіус кулі.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{2 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{3 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"3\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"3\\sqrt{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Куля дотикається до протилежних граней, тож її діаметр дорівнює ребру: <span data-latex=\"R = 3\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Куб у кулі",
+    "content": "Куб з ребром 2 см вписано в кулю. Знайдіть радіус кулі.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{1 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{2 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"2\\sqrt{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Діаметр кулі — діагональ куба <span data-latex=\"2\\sqrt{3}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"R = \\sqrt{3}\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Півкуля",
+    "content": "Знайдіть об’єм півкулі радіуса 3 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"9\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"18\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"27\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"36\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"54\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Половина об’єму кулі: <span data-latex=\"\\dfrac{1}{2} \\cdot  36\\pi  = 18\\pi \" data-type=\"inline-math\"></span> см³."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Відношення об’ємів",
+    "content": "Радіуси двох куль дорівнюють 1 см і 2 см. Знайдіть відношення об’єму меншої кулі до об’єму більшої.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1 : 2"
+     },
+     {
+      "id": 1,
+      "content": "1 : 4"
+     },
+     {
+      "id": 2,
+      "content": "1 : 6"
+     },
+     {
+      "id": 3,
+      "content": "1 : 8"
+     },
+     {
+      "id": 4,
+      "content": "1 : 16"
+     }
+    ],
+    "points": 1,
+    "solution": "Об’єми відносяться як куби радіусів: <span data-latex=\"1^{3} : 2^{3} = 1 : 8\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Від площі до об’єму",
+    "content": "Площа сфери дорівнює <span data-latex=\"64\\pi \" data-type=\"inline-math\"></span> см². Знайдіть об’єм кулі, обмеженої цією сферою.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{256\\pi }{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"64\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{64\\pi }{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"256\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"32\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"4\\pi R^{2} = 64\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"R = 4\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{4}{3}\\pi  \\cdot  64 = \\dfrac{256\\pi }{3}\" data-type=\"inline-math\"></span> см³."
+   },
+   "answer": 0
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"\\dfrac{4}{3}\\pi R^{3}\" data-type=\"inline-math\"></span>",
+   "text": "Об’єм кулі."
+  },
+  {
+   "big": "<span data-latex=\"4\\pi R^{2}\" data-type=\"inline-math\"></span>",
+   "text": "Площа сфери."
+  },
+  {
+   "big": "<span data-latex=\"\\sqrt{R^{2} - d^{2}}\" data-type=\"inline-math\"></span>",
+   "text": "Радіус перерізу."
+  },
+  {
+   "big": "<span data-latex=\"k^{3}\" data-type=\"inline-math\"></span>",
+   "text": "Об’єм ∼ куб радіуса."
+  }
+ ]
+}

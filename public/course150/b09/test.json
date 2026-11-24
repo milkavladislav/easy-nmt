@@ -1,0 +1,575 @@
+{
+ "title": "Підсумковий тест · Блок 9. Вектори й стереометрія (НМТ 150+)",
+ "block": 9,
+ "source": "block-test",
+ "questions": [
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "При якому значенні <span data-latex=\"p\" data-type=\"inline-math\"></span> вектори <span data-latex=\"\\overrightarrow{a}(2; 5)\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{c}(-6; p)\" data-type=\"inline-math\"></span> колінеарні?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-15\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "5"
+    },
+    {
+     "id": 4,
+     "content": "15"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{2}{-6} = \\dfrac{5}{p}\" data-type=\"inline-math\"></span> → <span data-latex=\"p = -15\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Знайдіть модуль вектора <span data-latex=\"\\overrightarrow{a}(-8; 6)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "2"
+    },
+    {
+     "id": 2,
+     "content": "6"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "10"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\sqrt{64 + 36} = 10\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Задано сфери, що мають внутрішній дотик (див. рисунок). <span data-latex=\"A(9; -2; 4)\" data-type=\"inline-math\"></span> — точка дотику, <span data-latex=\"B(1; 7; -8)\" data-type=\"inline-math\"></span> — центр меншої сфери. Яким <b>найменшим</b> з-поміж наведених може бути радіус сфери з центром у точці <span data-latex=\"O\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 546 429\" width=\"546\" height=\"429\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"325\" cy=\"214\" r=\"195\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M130 214 A195 55 0 0 0 520 214\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><path d=\"M130 214 A195 55 0 0 1 520 214\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><circle cx=\"211\" cy=\"214\" r=\"81\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><path d=\"M130 214 A81 23 0 0 0 291 214\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><path d=\"M130 214 A81 23 0 0 1 291 214\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-dasharray=\"8 7\"/><circle cx=\"130\" cy=\"214\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"106\" y=\"204\" font-size=\"39\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"211\" cy=\"214\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"233\" y=\"204\" font-size=\"39\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"325\" cy=\"214\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"349\" y=\"204\" font-size=\"39\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "36"
+    },
+    {
+     "id": 1,
+     "content": "21"
+    },
+    {
+     "id": 2,
+     "content": "17"
+    },
+    {
+     "id": 3,
+     "content": "42"
+    },
+    {
+     "id": 4,
+     "content": "56"
+    }
+   ],
+   "points": 1,
+   "solution": "r = AB = 17; R &gt; 17, найменше з варіантів — 21"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Задано точки <span data-latex=\"K(0; 1; 0)\" data-type=\"inline-math\"></span> і <span data-latex=\"M(0; 0; 1)\" data-type=\"inline-math\"></span>. Знайдіть координати вектора <span data-latex=\"\\overrightarrow{KM}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "(0; 1; 1)"
+    },
+    {
+     "id": 1,
+     "content": "(0; −1; 1)"
+    },
+    {
+     "id": 2,
+     "content": "(0; 1; −1)"
+    },
+    {
+     "id": 3,
+     "content": "(2; 0; 0)"
+    },
+    {
+     "id": 4,
+     "content": "(0; 0; 0)"
+    }
+   ],
+   "points": 1,
+   "solution": "(0 − 0; 0 − 1; 1 − 0)"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "При яких значеннях <span data-latex=\"m\" data-type=\"inline-math\"></span> і <span data-latex=\"n\" data-type=\"inline-math\"></span> вектори <span data-latex=\"\\overrightarrow{a}(m; 2; 3)\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{b}(-12; 6; n)\" data-type=\"inline-math\"></span> колінеарні?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "m = −36, n = 9"
+    },
+    {
+     "id": 1,
+     "content": "m = −4, n = 1"
+    },
+    {
+     "id": 2,
+     "content": "m = −36, n = 1"
+    },
+    {
+     "id": 3,
+     "content": "m = 3, n = 9"
+    },
+    {
+     "id": 4,
+     "content": "m = −4, n = 9"
+    }
+   ],
+   "points": 1,
+   "solution": "2/6 = 1/3: m = −12 · 1/3 = −4, n = 3 · 3 = 9"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "З вершини <span data-latex=\"B\" data-type=\"inline-math\"></span> квадрата <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> проведено перпендикуляр <span data-latex=\"SB\" data-type=\"inline-math\"></span> до площини квадрата (див. рисунок). Які з наведених тверджень є правильними?<p>I. <span data-latex=\"\\angle SBA = 90^{\\circ}\" data-type=\"inline-math\"></span>.</p><p>II. <span data-latex=\"\\angle SAD = \\angle SDA\" data-type=\"inline-math\"></span>.</p><p>III. <span data-latex=\"\\angle SAD = 90^{\\circ}\" data-type=\"inline-math\"></span>.</p><div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 376 479\" width=\"376\" height=\"479\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"46\" y1=\"433\" x2=\"246\" y2=\"433\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"246\" y1=\"433\" x2=\"330\" y2=\"366\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"433\" x2=\"130\" y2=\"366\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"366\" x2=\"330\" y2=\"366\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"46\" x2=\"46\" y2=\"433\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"46\" x2=\"130\" y2=\"366\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"46\" x2=\"330\" y2=\"366\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"46\" x2=\"246\" y2=\"433\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"27\" y=\"458\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"259\" y=\"463\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"111\" y=\"391\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"353\" y=\"382\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"126\" y=\"32\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише I і II"
+    },
+    {
+     "id": 2,
+     "content": "лише I і III"
+    },
+    {
+     "id": 3,
+     "content": "лише III"
+    },
+    {
+     "id": 4,
+     "content": "I, II і III"
+    }
+   ],
+   "points": 1,
+   "solution": "SB ⊥ AB; AD ⊥ (SAB), тому ∠SAD = 90°, а ∠SDA &lt; 90°"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "У просторі задано паралельні прямі <span data-latex=\"m\" data-type=\"inline-math\"></span> і <span data-latex=\"n\" data-type=\"inline-math\"></span>. Які з наведених тверджень є правильними?<p>I. Існує площина, що містить обидві прямі <span data-latex=\"m\" data-type=\"inline-math\"></span> і <span data-latex=\"n\" data-type=\"inline-math\"></span>.</p><p>II. Існує пряма, що перетинає обидві прямі <span data-latex=\"m\" data-type=\"inline-math\"></span> і <span data-latex=\"n\" data-type=\"inline-math\"></span>.</p><p>III. Існує точка, що належить обом прямим <span data-latex=\"m\" data-type=\"inline-math\"></span> і <span data-latex=\"n\" data-type=\"inline-math\"></span>.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише I"
+    },
+    {
+     "id": 1,
+     "content": "лише II"
+    },
+    {
+     "id": 2,
+     "content": "лише II та III"
+    },
+    {
+     "id": 3,
+     "content": "лише III"
+    },
+    {
+     "id": 4,
+     "content": "лише I та II"
+    }
+   ],
+   "points": 1,
+   "solution": "I, II — так; III — ні"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Обчисліть довжину ребра куба, діагональ якого дорівнює <span data-latex=\"2\\sqrt{3}\" data-type=\"inline-math\"></span> см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"2\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\text{1 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\text{2 см}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a\\sqrt{3} = 2\\sqrt{3}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a = 2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Визначте об’єм конуса, висота якого дорівнює 4 см, а діаметр основи — 6 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"12\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"18\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"24\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"36\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"72\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"R = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3}\\pi  \\cdot  9 \\cdot  4 = 12\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Діаметр основи конуса дорівнює 12 см. Знайдіть площу бічної поверхні конуса, якщо його висота на 2 см більша за радіус основи.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"96\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"60\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"72\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"36\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"48\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"R = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 8\" data-type=\"inline-math\"></span>, <span data-latex=\"l = 10\" data-type=\"inline-math\"></span>; <span data-latex=\"S = \\pi  \\cdot  6 \\cdot  10\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "src": "",
+   "title": "",
+   "content": "У прямокутній системі координат дано вектори <span data-latex=\"\\overrightarrow{a}(3; 4)\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{b}(-2; 2)\" data-type=\"inline-math\"></span>. До кожного початку речення (1–4) доберіть його закінчення (А–Д) так, щоб утворилося правильне твердження.",
+   "lh": "Початок",
+   "rh": "Закінчення",
+   "variants": [
+    {
+     "id": 0,
+     "content": "Довжина вектора <span data-latex=\"\\overrightarrow{a}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "Сумою векторів <span data-latex=\"\\overrightarrow{a}\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{c}(-3; k)\" data-type=\"inline-math\"></span> є нульовий вектор, якщо <span data-latex=\"k\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "Вектори <span data-latex=\"\\overrightarrow{b}\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{d}(-4; m)\" data-type=\"inline-math\"></span> колінеарні, якщо <span data-latex=\"m\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "Скалярний добуток векторів <span data-latex=\"\\overrightarrow{a}\" data-type=\"inline-math\"></span> і <span data-latex=\"\\overrightarrow{b}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "дорівнює 7"
+    },
+    {
+     "id": 1,
+     "content": "дорівнює 2"
+    },
+    {
+     "id": 2,
+     "content": "дорівнює −4"
+    },
+    {
+     "id": 3,
+     "content": "дорівнює 5"
+    },
+    {
+     "id": 4,
+     "content": "дорівнює 4"
+    }
+   ],
+   "points": 4,
+   "solution": "<span data-latex=\"\\left|\\overrightarrow{a}\\right| = 5\" data-type=\"inline-math\"></span>; <span data-latex=\"4 + k = 0\" data-type=\"inline-math\"></span> → <span data-latex=\"k = -4\" data-type=\"inline-math\"></span>; <span data-latex=\"\\dfrac{-2}{-4} = \\dfrac{2}{m}\" data-type=\"inline-math\"></span> → <span data-latex=\"m = 4\" data-type=\"inline-math\"></span>; <span data-latex=\"3 \\cdot  (-2) + 4 \\cdot  2 = 2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "src": "",
+   "title": "",
+   "content": "На рисунку зображено систему координат, на осях якої позначено точки <span data-latex=\"K\" data-type=\"inline-math\"></span>, <span data-latex=\"L\" data-type=\"inline-math\"></span>, <span data-latex=\"M\" data-type=\"inline-math\"></span>, <span data-latex=\"N\" data-type=\"inline-math\"></span>. Установіть відповідність між точками (1–4) та їхніми можливими координатами (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 528 456\" width=\"528\" height=\"456\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"264\" y1=\"228\" x2=\"347\" y2=\"145\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"264\" y1=\"228\" x2=\"34\" y2=\"228\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"264\" y1=\"228\" x2=\"264\" y2=\"420\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"264\" y1=\"228\" x2=\"192\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"181,311 187,294 198,305\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"167\" y=\"329\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><line x1=\"264\" y1=\"228\" x2=\"478\" y2=\"228\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"494,228 478,235 478,221\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"498\" y=\"258\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><line x1=\"264\" y1=\"228\" x2=\"264\" y2=\"42\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"264,26 271,42 257,42\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"244\" y=\"36\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">z</text><circle cx=\"120\" cy=\"228\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"120\" y=\"212\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><circle cx=\"264\" cy=\"84\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"242\" y=\"90\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">L</text><circle cx=\"318\" cy=\"174\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"308\" y=\"160\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text><circle cx=\"408\" cy=\"228\" r=\"7\" fill=\"#1E1B4B\"/><text x=\"408\" y=\"212\" font-size=\"36\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">N</text><text x=\"276\" y=\"256\" font-size=\"31\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text></svg></div>",
+   "lh": "Точка",
+   "rh": "Координати",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"K\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"L\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"M\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"N\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "(−3; 0; 0)"
+    },
+    {
+     "id": 1,
+     "content": "(0; −3; 0)"
+    },
+    {
+     "id": 2,
+     "content": "(0; 0; −3)"
+    },
+    {
+     "id": 3,
+     "content": "(0; 0; 3)"
+    },
+    {
+     "id": 4,
+     "content": "(0; 3; 0)"
+    }
+   ],
+   "points": 4,
+   "solution": "K — від’ємна піввісь y, L — додатна z, M — від’ємна x, N — додатна y"
+  },
+  {
+   "type": "connect",
+   "src": "",
+   "title": "",
+   "content": "<span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span> — прямокутний паралелепіпед. Установіть відповідність між площиною (1–3) та паралельною їй прямою (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 308 340\" width=\"308\" height=\"340\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"300\" x2=\"205\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"300\" x2=\"103\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"103\" y1=\"250\" x2=\"268\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"205\" y1=\"300\" x2=\"268\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"90\" x2=\"205\" y2=\"90\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"90\" x2=\"103\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"103\" y1=\"40\" x2=\"268\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"90\" x2=\"268\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"300\" x2=\"40\" y2=\"90\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"103\" y1=\"250\" x2=\"103\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"268\" y1=\"250\" x2=\"268\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"300\" x2=\"205\" y2=\"90\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"24\" y=\"328\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"214\" y=\"333\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"90\" y=\"280\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"288\" y=\"274\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"20\" y=\"87\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"218\" y=\"80\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"94\" y=\"28\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"284\" y=\"32\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+   "lh": "Площина",
+   "rh": "Пряма",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"(AB_{1}C_{1})\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"(DD_{1}C_{1})\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"(AA_{1}C_{1})\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"BC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"A_{1}D\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"A_{1}B\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"BD\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"DD_{1}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 3,
+   "solution": "BC ∥ B₁C₁; A₁B ∥ D₁C; DD₁ ∥ AA₁"
+  },
+  {
+   "type": "connect",
+   "src": "",
+   "title": "",
+   "content": "На рисунку зображено прямокутний паралелепіпед <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>, у якому <span data-latex=\"AA_{1} = AD = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"DC = 1\" data-type=\"inline-math\"></span>. До кожного початку речення (1–3) доберіть закінчення (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 309 301\" width=\"309\" height=\"301\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"262\" x2=\"230\" y2=\"262\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"262\" x2=\"80\" y2=\"230\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"80\" y1=\"230\" x2=\"270\" y2=\"230\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"230\" y1=\"262\" x2=\"270\" y2=\"230\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"72\" x2=\"230\" y2=\"72\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"72\" x2=\"80\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"40\" x2=\"270\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"72\" x2=\"270\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"262\" x2=\"40\" y2=\"72\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"230\" x2=\"80\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"270\" y1=\"230\" x2=\"270\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"262\" x2=\"230\" y2=\"72\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"23\" y=\"289\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"243\" y=\"292\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"63\" y=\"257\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"290\" y=\"254\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"20\" y=\"68\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"246\" y=\"64\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"66\" y=\"30\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"287\" y=\"33\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+   "lh": "Початок",
+   "rh": "Закінчення",
+   "variants": [
+    {
+     "id": 0,
+     "content": "Довжина діагоналі"
+    },
+    {
+     "id": 1,
+     "content": "Площа бічної поверхні"
+    },
+    {
+     "id": 2,
+     "content": "Площа повної поверхні"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "12"
+    },
+    {
+     "id": 1,
+     "content": "16"
+    },
+    {
+     "id": 2,
+     "content": "4"
+    },
+    {
+     "id": 3,
+     "content": "7"
+    },
+    {
+     "id": 4,
+     "content": "3"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"d = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"S_{\\text{біч}} = 6 \\cdot  2 = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 12 + 4 = 16\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "У прямокутній системі координат у просторі задано правильну трикутну призму <span data-latex=\"ABCA_{1}B_{1}C_{1}\" data-type=\"inline-math\"></span>, усі ребра якої рівні. Діагоналі грані <span data-latex=\"BCC_{1}B_{1}\" data-type=\"inline-math\"></span> перетинаються в точці <span data-latex=\"K(2; -8; 7)\" data-type=\"inline-math\"></span>, точка <span data-latex=\"M(6; 2; 4)\" data-type=\"inline-math\"></span> — середина ребра <span data-latex=\"AC\" data-type=\"inline-math\"></span>. Обчисліть площу бічної поверхні призми.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"KM^{2} = \\dfrac{a^{2}}{2} = 125\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a^{2} = 250\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 3a^{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "На рисунку зображено правильну чотирикутну призму та правильну чотирикутну піраміду. Сторона основи піраміди вдвічі менша від діагоналі основи призми. Усі ребра піраміди рівні й дорівнюють <span data-latex=\"3\\sqrt{2}\" data-type=\"inline-math\"></span> см. Знайдіть об’єм (у см³) призми, якщо сума довжин висот призми та піраміди дорівнює 13 см.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 531 305\" width=\"531\" height=\"305\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><g transform=\"translate(0 0)\"><line x1=\"30\" y1=\"276\" x2=\"140\" y2=\"276\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"276\" x2=\"186\" y2=\"239\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"239\" x2=\"76\" y2=\"239\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"76\" y1=\"239\" x2=\"30\" y2=\"276\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"30\" y1=\"67\" x2=\"140\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"67\" x2=\"186\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"30\" x2=\"76\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"30\" x2=\"30\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"276\" x2=\"30\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"276\" x2=\"140\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"239\" x2=\"186\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"239\" x2=\"76\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/></g><g transform=\"translate(246 11)\"><line x1=\"44\" y1=\"250\" x2=\"188\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"188\" y1=\"250\" x2=\"242\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"242\" y1=\"208\" x2=\"97\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"97\" y1=\"208\" x2=\"44\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"142\" y1=\"44\" x2=\"44\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"44\" x2=\"188\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"44\" x2=\"242\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"44\" x2=\"97\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/></g></svg></div>",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"H_{\\text{пір}} = \\dfrac{3\\sqrt{2}}{\\sqrt{2}} = 3\" data-type=\"inline-math\"></span>, <span data-latex=\"H_{\\text{пр}} = 10\" data-type=\"inline-math\"></span>; сторона призми 6; <span data-latex=\"V = 36 \\cdot  10\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "На рисунку зображено пряму чотирикутну призму й чотирикутну піраміду <span data-latex=\"SABCD\" data-type=\"inline-math\"></span>, основою якої є ромб <span data-latex=\"ABCD\" data-type=\"inline-math\"></span>. Основою призми є прямокутник, більша сторона якого дорівнює 20 см, а менша дорівнює діагоналі <span data-latex=\"AC\" data-type=\"inline-math\"></span> ромба. <span data-latex=\"BD = 20\" data-type=\"inline-math\"></span> см, <span data-latex=\"SA = SC = 25\" data-type=\"inline-math\"></span> см, <span data-latex=\"SB = SD = 26\" data-type=\"inline-math\"></span> см. Визначте об’єм (у см³) призми, якщо площа її бічної поверхні дорівнює 680 см².<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 531 305\" width=\"531\" height=\"305\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><g transform=\"translate(0 0)\"><line x1=\"30\" y1=\"276\" x2=\"140\" y2=\"276\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"276\" x2=\"186\" y2=\"239\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"239\" x2=\"76\" y2=\"239\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"76\" y1=\"239\" x2=\"30\" y2=\"276\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"30\" y1=\"67\" x2=\"140\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"67\" x2=\"186\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"30\" x2=\"76\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"30\" x2=\"30\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"276\" x2=\"30\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"276\" x2=\"140\" y2=\"67\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"186\" y1=\"239\" x2=\"186\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"239\" x2=\"76\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/></g><g transform=\"translate(246 11)\"><line x1=\"44\" y1=\"250\" x2=\"188\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"188\" y1=\"250\" x2=\"242\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"242\" y1=\"208\" x2=\"97\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"97\" y1=\"208\" x2=\"44\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"142\" y1=\"44\" x2=\"44\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"44\" x2=\"188\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"44\" x2=\"242\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"44\" x2=\"97\" y2=\"208\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><text x=\"23\" y=\"272\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"203\" y=\"279\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"265\" y=\"221\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"75\" y=\"225\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"142\" y=\"32\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text></g></svg></div>",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"SO = \\sqrt{26^{2} - 10^{2}} = 24\" data-type=\"inline-math\"></span>, <span data-latex=\"AO = \\sqrt{25^{2} - 24^{2}} = 7\" data-type=\"inline-math\"></span>, <span data-latex=\"AC = 14\" data-type=\"inline-math\"></span>; <span data-latex=\"68h = 680\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"h = 10\" data-type=\"inline-math\"></span>; <span data-latex=\"V = 20 \\cdot  14 \\cdot  10\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Осьовим перерізом конуса є рівносторонній трикутник, площа якого дорівнює <span data-latex=\"27\\sqrt{3}\" data-type=\"inline-math\"></span> см². Визначте об’єм <span data-latex=\"V\" data-type=\"inline-math\"></span> (у см³) конуса. У відповіді запишіть значення <span data-latex=\"\\dfrac{V}{\\pi }\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"a^{2} = 108\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 3\\sqrt{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 9\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3}\\pi  \\cdot  27 \\cdot  9 = 81\\pi \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Сферу задано рівнянням <span data-latex=\"(x - 2)^{2} + y^{2} + (z + 1)^{2} = 49\" data-type=\"inline-math\"></span>. Знайдіть радіус сфери.",
+   "variants": [],
+   "points": 2,
+   "solution": "Праворуч стоїть <span data-latex=\"R^{2} = 49\" data-type=\"inline-math\"></span>, тож <span data-latex=\"R = 7\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Об’єм кулі дорівнює <span data-latex=\"36\\pi \" data-type=\"inline-math\"></span> см³. Площа її поверхні дорівнює <span data-latex=\"S\\pi \" data-type=\"inline-math\"></span> см². Знайдіть <span data-latex=\"S\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"\\dfrac{4}{3}\\pi R^{3} = 36\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"R = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"4\\pi R^{2} = 36\\pi \" data-type=\"inline-math\"></span>."
+  }
+ ],
+ "answers": [
+  0,
+  4,
+  1,
+  1,
+  4,
+  2,
+  4,
+  4,
+  0,
+  1,
+  "3 2 4 1",
+  "1 3 0 4",
+  "0 2 4",
+  "4 0 1",
+  "750",
+  "360",
+  "2800",
+  "81",
+  "7",
+  "36"
+ ]
+}

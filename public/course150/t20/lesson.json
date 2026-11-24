@@ -1,0 +1,780 @@
+{
+ "number": 20,
+ "title": "Системи рівнянь",
+ "intro": [
+  {
+   "title": "Підстановка",
+   "text": "виражаємо одну змінну"
+  },
+  {
+   "title": "Додавання",
+   "text": "одна змінна зникає"
+  },
+  {
+   "title": "Нові змінні",
+   "text": "<span data-latex=\"\\dfrac{1}{x}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\sqrt{y}\" data-type=\"inline-math\"></span> — як окремі невідомі"
+  },
+  {
+   "title": "Показникові й логарифмічні",
+   "text": "спершу спрощуємо кожне рівняння"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"y = \\ldots \" data-type=\"inline-math\"></span>",
+   "text": "підстановка"
+  },
+  {
+   "big": "+",
+   "text": "додавання рівнянь"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{x} = u\" data-type=\"inline-math\"></span>",
+   "text": "нові змінні"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Підстановка",
+   "title": "Вирази одну змінну",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "1",
+     "title": "Вирази",
+     "formula": "",
+     "text": "З простішого рівняння вирази одну змінну: <span data-latex=\"x = -2y + 1\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "2",
+     "title": "Підстав",
+     "formula": "",
+     "text": "Підстав у друге рівняння — отримаєш рівняння з однією змінною."
+    },
+    {
+     "color": "coral",
+     "big": "3",
+     "title": "Знайди другу",
+     "formula": "",
+     "text": "Обчисли другу змінну. Відповідь — <b>пара</b> <span data-latex=\"(x; y)\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Підставляємо $y$",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{y}{4} = 2,\\\\x = -2y + 1.\\end{cases}\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-15; 8)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-5; 2)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-17; 8)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-3; 2)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "(0; 0,5)"
+     }
+    ],
+    "points": 1,
+    "solution": "З першого рівняння <span data-latex=\"y = 8\" data-type=\"inline-math\"></span>. Підставляємо: <span data-latex=\"x = -2 \\cdot  8 + 1 = -15\" data-type=\"inline-math\"></span>. Розв’язок <span data-latex=\"(-15; 8)\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Додавання",
+   "title": "Одна змінна зникає",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "+",
+     "title": "Протилежні коефіцієнти",
+     "formula": "",
+     "text": "<span data-latex=\"-4y\" data-type=\"inline-math\"></span> і <span data-latex=\"+4y\" data-type=\"inline-math\"></span>: додаємо рівняння — <span data-latex=\"y\" data-type=\"inline-math\"></span> зникає."
+    },
+    {
+     "color": "mint",
+     "big": "−",
+     "title": "Однакові коефіцієнти",
+     "formula": "",
+     "text": "Однакові доданки — <b>віднімаємо</b> рівняння."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Підготуй",
+     "formula": "",
+     "text": "Помнож одне з рівнянь на число, щоб коефіцієнти стали протилежними."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Додавання рівнянь",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}10x - 4y = 26,\\\\6x + 4y = 6.\\end{cases}\" data-type=\"inline-math\"></span> Для одержаного розв’язку <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> обчисліть добуток <span data-latex=\"x_{0} \\cdot  y_{0}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "4"
+     },
+     {
+      "id": 3,
+      "content": "6"
+     },
+     {
+      "id": 4,
+      "content": "3"
+     }
+    ],
+    "points": 1,
+    "solution": "Додаємо рівняння: <span data-latex=\"16x = 32\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>. Тоді <span data-latex=\"6 \\cdot  2 + 4y = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"y = -1{,}5\" data-type=\"inline-math\"></span>. Добуток <span data-latex=\"x_{0} \\cdot  y_{0} = 2 \\cdot  (-1{,}5) = -3\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Нові змінні",
+   "title": "Складний вираз — як одна невідома",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"u\" data-type=\"inline-math\"></span>",
+     "title": "Заміна",
+     "formula": "",
+     "text": "<span data-latex=\"\\dfrac{1}{x} = u\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{1}{y} = v\" data-type=\"inline-math\"></span> — і система стає лінійною."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Не повертайся зайве",
+     "formula": "",
+     "text": "Якщо питають <span data-latex=\"\\dfrac{1}{x_{0}} + \\dfrac{1}{y_{0}}\" data-type=\"inline-math\"></span> — це просто <span data-latex=\"u + v\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Умови",
+     "formula": "",
+     "text": "<span data-latex=\"\\sqrt{y} \\ge  0\" data-type=\"inline-math\"></span>, знаменник <span data-latex=\"\\ne  0\" data-type=\"inline-math\"></span> — перевір знайдений розв’язок."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Нові змінні",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{2}{x} + \\dfrac{5}{y} = 5,\\\\\\dfrac{1}{x} - \\dfrac{2}{y} = 7.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"\\dfrac{1}{x_{0}} + \\dfrac{1}{y_{0}} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "12"
+     },
+     {
+      "id": 1,
+      "content": "5"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "Позначимо <span data-latex=\"u = \\dfrac{1}{x}\" data-type=\"inline-math\"></span>, <span data-latex=\"v = \\dfrac{1}{y}\" data-type=\"inline-math\"></span>: <span data-latex=\"2u + 5v = 5\" data-type=\"inline-math\"></span>, <span data-latex=\"u - 2v = 7\" data-type=\"inline-math\"></span>. З другого <span data-latex=\"u = 7 + 2v\" data-type=\"inline-math\"></span>, тоді <span data-latex=\"14 + 9v = 5\" data-type=\"inline-math\"></span>, <span data-latex=\"v = -1\" data-type=\"inline-math\"></span>, <span data-latex=\"u = 5\" data-type=\"inline-math\"></span>. Шукана сума <span data-latex=\"u + v = 4\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Показникові й логарифмічні системи",
+   "title": "Спершу спрости кожне рівняння",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"2^{a} = 2^{b}\" data-type=\"inline-math\"></span>",
+     "title": "Показникове",
+     "formula": "",
+     "text": "<span data-latex=\"2^{3x - y} = 2^{7}\" data-type=\"inline-math\"></span> дає лінійне <span data-latex=\"3x - y = 7\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Логарифмічне",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{log}_{2} x + \\operatorname{log}_{2} y = 2\" data-type=\"inline-math\"></span> дає <span data-latex=\"xy = 4\" data-type=\"inline-math\"></span> при <span data-latex=\"x, y &gt; 0\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Далі — як завжди",
+     "formula": "",
+     "text": "Після спрощення — підстановка або додавання."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Показникова система",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}2^{3x - y} = 2^{7},\\\\2x + y = 3.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} \\cdot  y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "1"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2^{3x - y} = 2^{7}\" data-type=\"inline-math\"></span>, тож <span data-latex=\"3x - y = 7\" data-type=\"inline-math\"></span>. Додаємо до <span data-latex=\"2x + y = 3\" data-type=\"inline-math\"></span>: <span data-latex=\"5x = 10\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"y = -1\" data-type=\"inline-math\"></span>. Добуток <span data-latex=\"x_{0} \\cdot  y_{0} = -2\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кожне рівняння окремо",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}-2x = 6,\\\\\\dfrac{y}{3} = 9.\\end{cases}\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-3; 3)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "(4; 27)"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(3; -27)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "(4; 3)"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-3; 27)\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x = −3, y = 27"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Модуль у системі",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}3x + 9 = x + 1,\\\\\\left|x - 1\\right| + 2y + 7 = 0.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-10\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-0{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "10,5"
+     }
+    ],
+    "points": 1,
+    "solution": "x = −4; 5 + 2y + 7 = 0 → y = −6; x + y = −10"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Однакові ліві частини",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}x(4 - y) = 14,\\\\x(4 - y) = 3x - 7.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "6"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "7"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "3x − 7 = 14 → x = 7; 4 − y = 2 → y = 2"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Корінь і дріб",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\sqrt{y} - \\dfrac{6}{x} = 6,\\\\\\sqrt{y} + \\dfrac{4}{x} = 1.\\end{cases}\" data-type=\"inline-math\"></span> У відповідь запишіть <span data-latex=\"x + y\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "9"
+     },
+     {
+      "id": 4,
+      "content": "83"
+     }
+    ],
+    "points": 1,
+    "solution": "10/x = −5 → x = −2; √y = 3 → y = 9; x + y = 7"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Рівні корені",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\sqrt{2x} = \\sqrt{6},\\\\x - 4y = 7.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-2{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "1,25"
+     },
+     {
+      "id": 4,
+      "content": "3"
+     }
+    ],
+    "points": 1,
+    "solution": "2x = 6 → x = 3; 3 − 4y = 7 → y = −1"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дріб у системі",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{3}{x + y} = -\\dfrac{1}{2},\\\\2x - y = 12.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} \\cdot  y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "16"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-10\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-16\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x + y = −6, 2x − y = 12 → x = 2, y = −8; xy = −16"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Віднімаємо рівняння",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}x - \\dfrac{3}{y} = 3,\\\\x + \\dfrac{1}{y} = 11.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-2{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "6,5"
+     },
+     {
+      "id": 3,
+      "content": "9,5"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "4/y = 8 → y = 0,5, x = 9; x + y = 9,5"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Степінь і пропорція",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}5^{x} = \\sqrt{5},\\\\\\dfrac{y + 1}{2x + 3} = \\dfrac{1 - 4x}{2}.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-2{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-3{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-7{,}5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "1,5"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-0{,}5\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x = 1/2; (y + 1)/4 = −1/2 → y = −3; x + y = −2,5"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Логарифмічна система",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\operatorname{log}_{2} x + \\operatorname{log}_{2} y = 2,\\\\x + \\dfrac{1}{y} = 10.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + 2y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "6"
+     },
+     {
+      "id": 4,
+      "content": "9"
+     }
+    ],
+    "points": 1,
+    "solution": "xy = 4 → 1/y = x/4; 5x/4 = 10 → x = 8, y = 0,5; x + 2y = 9"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Додавання рівнянь",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}x + 2y = 8,\\\\x - 2y = -4.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} \\cdot  y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-10\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "5"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2x = 4\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"y = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"xy = 6\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Добуток розв’язку",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}x - y = 3,\\\\3x + 2y = -1.\\end{cases}\" data-type=\"inline-math\"></span> У відповідь запишіть добуток <span data-latex=\"xy\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-5\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "0"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"x = y + 3\" data-type=\"inline-math\"></span>: <span data-latex=\"5y + 9 = -1\" data-type=\"inline-math\"></span> → <span data-latex=\"y = -2\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>; <span data-latex=\"xy = -2\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дріб у системі",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}\\dfrac{2x + y}{x} = 5,\\\\4x - y = -2.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} + y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "4"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"y = 3x\" data-type=\"inline-math\"></span>: <span data-latex=\"x = -2\" data-type=\"inline-math\"></span>, <span data-latex=\"y = -6\" data-type=\"inline-math\"></span>; <span data-latex=\"x + y = -8\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Спільний множник",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}x(y + 2) = 12,\\\\x(2y - 1) = 12.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2,4"
+     },
+     {
+      "id": 1,
+      "content": "12"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{5}{12}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"y + 2 = 2y - 1\" data-type=\"inline-math\"></span> → <span data-latex=\"y = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"5x = 12\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 2{,}4\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Показникова система",
+    "content": "Розв’яжіть систему рівнянь <span data-latex=\"\\begin{cases}x + y = 5,\\\\4^{x} = 16^{-1}.\\end{cases}\" data-type=\"inline-math\"></span> Якщо <span data-latex=\"(x_{0}; y_{0})\" data-type=\"inline-math\"></span> — розв’язок системи, то <span data-latex=\"x_{0} \\cdot  y_{0} =\" data-type=\"inline-math\"></span>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-36\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-14\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"4^{x} = 4^{-2}\" data-type=\"inline-math\"></span> → <span data-latex=\"x = -2\" data-type=\"inline-math\"></span>, <span data-latex=\"y = 7\" data-type=\"inline-math\"></span>; <span data-latex=\"xy = -14\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"y = \\ldots \" data-type=\"inline-math\"></span>",
+   "text": "Підстановка: вирази змінну й підстав."
+  },
+  {
+   "big": "±",
+   "text": "Додавання: протилежні коефіцієнти зникають."
+  },
+  {
+   "big": "<span data-latex=\"u, v\" data-type=\"inline-math\"></span>",
+   "text": "Нові змінні роблять систему лінійною."
+  },
+  {
+   "big": "<span data-latex=\"a^{f}\" data-type=\"inline-math\"></span>",
+   "text": "Показникові й логарифмічні — спершу спрости."
+  }
+ ]
+}

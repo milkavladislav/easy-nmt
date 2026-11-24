@@ -1,0 +1,226 @@
+{
+ "title": "ДЗ 41. Піраміда (НМТ 150+)",
+ "lessonNumber": 41,
+ "source": "hw-sheet",
+ "hwKey": "150-41",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Сторона основи правильної чотирикутної піраміди дорівнює 4 см, а об’єм — 64 см³. Знайдіть висоту піраміди.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{4}{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\text{16 см}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{1}{3} \\cdot  16 \\cdot  H = 64\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"H = 12\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Периметр основи правильної чотирикутної піраміди дорівнює 72 см. Визначте довжину висоти піраміди, якщо її апофема дорівнює 15 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\text{9 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\text{10 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\text{14 см}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a = 18\" data-type=\"inline-math\"></span>, <span data-latex=\"OM = 9\" data-type=\"inline-math\"></span>; <span data-latex=\"H = \\sqrt{225 - 81} = 12\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Визначте довжину апофеми правильної чотирикутної піраміди, якщо площа її <b>повної</b> поверхні дорівнює 208 см², а сторона основи — 8 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\text{13 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\text{9 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S_{\\text{біч}} = 208 - 64 = 144 = \\dfrac{1}{2} \\cdot  32 \\cdot  m\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"m = 9\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Сторона основи правильної чотирикутної піраміди дорівнює 6 см, апофема — 7 см. Визначте площу <b>повної</b> поверхні цієї піраміди.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"84\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"204\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"156\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"162\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"120\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"36 + \\dfrac{1}{2} \\cdot  24 \\cdot  7 = 36 + 84 = 120\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "connect",
+   "content": "У правильній чотирикутній піраміді <span data-latex=\"SABCD\" data-type=\"inline-math\"></span> (див. рисунок) <span data-latex=\"SO\" data-type=\"inline-math\"></span> — висота, <span data-latex=\"\\angle SCO = 30^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"AO = \\sqrt{6}\" data-type=\"inline-math\"></span>. До кожного початку речення (1–3) доберіть закінчення (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 335 199\" width=\"335\" height=\"199\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"44\" y1=\"155\" x2=\"220\" y2=\"155\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"155\" x2=\"292\" y2=\"98\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"155\" x2=\"116\" y2=\"98\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"116\" y1=\"98\" x2=\"292\" y2=\"98\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"168\" y1=\"44\" x2=\"44\" y2=\"155\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"168\" y1=\"44\" x2=\"116\" y2=\"98\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"168\" y1=\"44\" x2=\"292\" y2=\"98\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"168\" y1=\"44\" x2=\"220\" y2=\"155\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"155\" x2=\"292\" y2=\"98\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"116\" y1=\"98\" x2=\"220\" y2=\"155\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"168\" y1=\"44\" x2=\"168\" y2=\"126\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"168\" cy=\"126\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"21\" y=\"173\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"92\" y=\"101\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"315\" y=\"105\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"239\" y=\"180\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"168\" y=\"30\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"162\" y=\"158\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "Довжина діагоналі <span data-latex=\"AC\" data-type=\"inline-math\"></span> дорівнює"
+    },
+    {
+     "id": 1,
+     "content": "Довжина висоти <span data-latex=\"SO\" data-type=\"inline-math\"></span> дорівнює"
+    },
+    {
+     "id": 2,
+     "content": "Довжина ребра <span data-latex=\"AS\" data-type=\"inline-math\"></span> дорівнює"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"2\\sqrt{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"4\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 3,
+   "solution": "<span data-latex=\"AC = 2\\sqrt{6}\" data-type=\"inline-math\"></span>; <span data-latex=\"SO = \\sqrt{6} \\cdot  \\operatorname{tg} 30^{\\circ} = \\sqrt{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"AS = \\dfrac{\\sqrt{6}}{\\operatorname{cos} 30^{\\circ}} = 2\\sqrt{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Діагональним перерізом правильної чотирикутної піраміди є прямокутний трикутник. Визначте об’єм (у см³) піраміди, якщо її бічне ребро дорівнює <span data-latex=\"6\\sqrt{2}\" data-type=\"inline-math\"></span> см.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"AC = 6\\sqrt{2} \\cdot  \\sqrt{2} = 12\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"S_{\\text{осн}} = 72\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  72 \\cdot  6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Сторона основи правильної трикутної піраміди дорівнює <span data-latex=\"8\\sqrt{3}\" data-type=\"inline-math\"></span>, апофема — 8. Визначте об’єм цієї піраміди.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"r = 4\" data-type=\"inline-math\"></span>, <span data-latex=\"H = \\sqrt{64 - 16} = 4\\sqrt{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"S_{\\text{осн}} = 48\\sqrt{3}\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  48\\sqrt{3} \\cdot  4\\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Діагональним перерізом правильної чотирикутної піраміди є рівносторонній трикутник, площа якого дорівнює <span data-latex=\"72\\sqrt{3}\" data-type=\"inline-math\"></span>. Визначте площу основи цієї піраміди.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"\\dfrac{\\sqrt{3}}{4}d^{2} = 72\\sqrt{3}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"d^{2} = 288\" data-type=\"inline-math\"></span>; <span data-latex=\"S_{\\text{осн}} = \\dfrac{d^{2}}{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Діагональним перерізом правильної чотирикутної піраміди є рівносторонній трикутник, висота піраміди дорівнює <span data-latex=\"4\\sqrt{6}\" data-type=\"inline-math\"></span> см. Визначте площу <span data-latex=\"S\" data-type=\"inline-math\"></span> (у см²) бічної поверхні цієї піраміди. У відповіді запишіть значення <span data-latex=\"\\dfrac{S}{\\sqrt{7}}\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"d = \\dfrac{2H}{\\sqrt{3}} = 8\\sqrt{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 8\" data-type=\"inline-math\"></span>; <span data-latex=\"m = \\sqrt{96 + 16} = 4\\sqrt{7}\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 16 \\cdot  4\\sqrt{7}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Висота правильної чотирикутної піраміди дорівнює 12 см, апофема — 13 см. Обчисліть об’єм (у см³) цієї піраміди.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"OM = 5\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 10\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  100 \\cdot  12\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У правильній чотирикутній піраміді бічне ребро дорівнює 15 см, а сторона основи — <span data-latex=\"9\\sqrt{2}\" data-type=\"inline-math\"></span> см. Визначте об’єм цієї піраміди (у см³).",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"AO = 9\" data-type=\"inline-math\"></span>, <span data-latex=\"H = \\sqrt{225 - 81} = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  162 \\cdot  12\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У прямокутній системі координат у просторі задано трикутну піраміду <span data-latex=\"SABC\" data-type=\"inline-math\"></span> з вершиною <span data-latex=\"S(0; 0; 9)\" data-type=\"inline-math\"></span>. Основою піраміди є прямокутний рівнобедрений трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span> (<span data-latex=\"\\angle C = 90^{\\circ}\" data-type=\"inline-math\"></span>), що лежить у площині <span data-latex=\"xy\" data-type=\"inline-math\"></span>, <span data-latex=\"A(-8; 10; 0)\" data-type=\"inline-math\"></span>, <span data-latex=\"B(8; -2; 0)\" data-type=\"inline-math\"></span>. Знайдіть об’єм піраміди.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"AB = 20\" data-type=\"inline-math\"></span>, катети <span data-latex=\"10\\sqrt{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"S = 100\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 9\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  100 \\cdot  9\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  3,
+  3,
+  2,
+  4,
+  "3 0 1",
+  "144",
+  "192",
+  "144",
+  "64",
+  "400",
+  "648",
+  "300"
+ ],
+ "incomplete": []
+}

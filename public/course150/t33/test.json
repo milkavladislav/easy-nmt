@@ -1,0 +1,359 @@
+{
+ "title": "ДЗ 33. Первісна, інтеграл, площі (НМТ 150+)",
+ "lessonNumber": 33,
+ "source": "hw-sheet",
+ "hwKey": "150-33",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Знайдіть загальний вигляд первісних для функції <span data-latex=\"f(x) = 6 - 3x\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"6x - 3x^{2} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"6x - 1{,}5x^{2} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-3 - 1{,}5x^{2} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"6 - 1{,}5x^{2} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"3x^{2} - 3x + C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"6x - 3 \\cdot  \\dfrac{x^{2}}{2} + C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть загальний вигляд первісних для функції <span data-latex=\"f(x) = 4x^{3} + 2x - 7\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"12x^{2} + 2 - 7x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"x^{4} + x^{2} - 7x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"x^{4} + 2x^{2} - 7 + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"4x^{4} + x^{2} - 7x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{4}x^{4} + x^{2} - 7x + C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4 \\cdot  \\dfrac{x^{4}}{4} + 2 \\cdot  \\dfrac{x^{2}}{2} - 7x + C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть загальний вигляд первісних для функції <span data-latex=\"f(x) = 3\\operatorname{cos} x - 4\\operatorname{sin} x\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-3\\operatorname{sin} x - 4\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"3\\operatorname{sin} x + 4\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-3\\operatorname{sin} x + 4\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3\\operatorname{sin} x - 4\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-3\\operatorname{cos} x - 4\\operatorname{sin} x + C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"3\\operatorname{sin} x - 4 \\cdot  (-\\operatorname{cos} x) + C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть загальний вигляд первісних для функції <span data-latex=\"f(x) = x^{2}(3 - x)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"x^{3} - 0{,}25x^{4} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"3x^{3} - x^{4} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"6x - 3x^{2} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3 - 3x^{2} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{3}x^{3} - \\dfrac{1}{4}x^{4} + C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f(x) = 3x^{2} - x^{3}\" data-type=\"inline-math\"></span>; <span data-latex=\"x^{3} - \\dfrac{x^{4}}{4} + C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть загальний вигляд первісних для функції <span data-latex=\"f(x) = 4x - \\dfrac{3}{\\operatorname{cos}^{2} x}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"2x^{2} - 3\\operatorname{tg} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"4x^{2} - 3\\operatorname{tg} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2x^{2} + 3\\operatorname{tg} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"x^{2} - 3\\operatorname{tg} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"2x^{2} - \\dfrac{3}{\\operatorname{tg} x} + C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"4 \\cdot  \\dfrac{x^{2}}{2} - 3\\operatorname{tg} x + C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть загальний вигляд первісних для функції <span data-latex=\"f(x) = x^{10} - x^{8} + x + 13\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"10x^{9} - 8x^{7} + 1 + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{x^{11}}{11} - \\dfrac{x^{9}}{9} + \\dfrac{x^{2}}{2} + 13x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{x^{11}}{11} - \\dfrac{x^{9}}{9} + \\dfrac{x^{2}}{2} + 13 + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"11x^{11} - 9x^{9} + 2x^{2} + 13x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\dfrac{x^{11}}{11} + \\dfrac{x^{9}}{9} - \\dfrac{x^{2}}{2} - 13x + C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{x^{11}}{11} - \\dfrac{x^{9}}{9} + \\dfrac{x^{2}}{2} + 13x + C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть загальний вигляд первісних для функції <span data-latex=\"f(x) = -4\\operatorname{cos} x\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-4\\operatorname{sin} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"4\\operatorname{sin} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-4\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"4\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-16\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-4\\operatorname{sin} x + C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть рисунок, на якому <b>може</b> бути зображений графік первісної для функції <span data-latex=\"f(x) = -1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 162 186\" width=\"130\" height=\"149\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"102\" x2=\"146\" y2=\"102\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"146,102 132,96 132,108\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"72\" y1=\"174\" x2=\"72\" y2=\"16\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"72,16 66,30 78,30\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"128\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"50\" y=\"24\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"56\" y=\"122\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"12,60 132,60\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+    },
+    {
+     "id": 1,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 162 186\" width=\"130\" height=\"149\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"102\" x2=\"146\" y2=\"102\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"146,102 132,96 132,108\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"72\" y1=\"174\" x2=\"72\" y2=\"16\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"72,16 66,30 78,30\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"128\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"50\" y=\"24\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"56\" y=\"122\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"48,174 96,30\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+    },
+    {
+     "id": 2,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 162 186\" width=\"130\" height=\"149\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"102\" x2=\"146\" y2=\"102\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"146,102 132,96 132,108\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"72\" y1=\"174\" x2=\"72\" y2=\"16\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"72,16 66,30 78,30\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"128\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"50\" y=\"24\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"56\" y=\"122\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"12,33 132,153\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+    },
+    {
+     "id": 3,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 162 186\" width=\"130\" height=\"149\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"102\" x2=\"146\" y2=\"102\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"146,102 132,96 132,108\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"72\" y1=\"174\" x2=\"72\" y2=\"16\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"72,16 66,30 78,30\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"128\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"50\" y=\"24\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"56\" y=\"122\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"30,174 132,72\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+    },
+    {
+     "id": 4,
+     "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 162 186\" width=\"130\" height=\"149\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"102\" x2=\"146\" y2=\"102\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"146,102 132,96 132,108\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"72\" y1=\"174\" x2=\"72\" y2=\"16\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"72,16 66,30 78,30\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"128\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"50\" y=\"24\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"56\" y=\"122\" font-size=\"32\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"12,150 132,150\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"F(x) = -x + C\" data-type=\"inline-math\"></span> — спадна пряма; лише на рисунку В"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть для функції <span data-latex=\"f(x) = 3x + 1\" data-type=\"inline-math\"></span> первісну, графік якої проходить через точку <span data-latex=\"M(0; 1)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"3x^{2} + 1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{3}{2}x^{2} + x + 1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{3}{2}x^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"3x^{2} + x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"F(x) = \\dfrac{3}{2}x^{2} + x + C\" data-type=\"inline-math\"></span>, <span data-latex=\"F(0) = C = 1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Для функції <span data-latex=\"f(x) = \\operatorname{sin} x\" data-type=\"inline-math\"></span> знайдіть первісну <span data-latex=\"F(x)\" data-type=\"inline-math\"></span>, графік якої проходить через точку <span data-latex=\"O(0; 0)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\operatorname{sin} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\operatorname{cos} x + 1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"1 - \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\operatorname{cos} x - 1\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"F(x) = -\\operatorname{cos} x + C\" data-type=\"inline-math\"></span>, <span data-latex=\"F(0) = -1 + C = 0\" data-type=\"inline-math\"></span> → <span data-latex=\"C = 1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Якщо функція <span data-latex=\"F(x) = x^{3} + 4\" data-type=\"inline-math\"></span> є однією з первісних для функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>, то <span data-latex=\"f(x) =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"3x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{x^{4}}{4} + C\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"3x^{2} + 4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"2x^{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"3x^{2}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f(x) = F&#x27;(x) = 3x^{2}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Функція <span data-latex=\"G(x) = 0{,}25\\operatorname{cos} 4x + 2x - 9\" data-type=\"inline-math\"></span> є первісною функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>. Укажіть <span data-latex=\"F(x)\" data-type=\"inline-math\"></span>, яка також є первісною функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"0{,}25\\operatorname{cos} 4x + x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"0{,}25\\operatorname{cos} 4x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"0{,}25\\operatorname{sin} 4x + 2x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"0{,}25\\operatorname{cos} 4x + 2x + 7\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"0{,}25\\operatorname{cos} 4x + 2\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "первісні відрізняються лише сталою: <span data-latex=\"0{,}25\\operatorname{cos} 4x + 2x + 7\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  0,
+  2,
+  1,
+  3,
+  4,
+  3
+ ],
+ "incomplete": []
+}

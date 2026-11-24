@@ -1,0 +1,780 @@
+{
+ "number": 33,
+ "title": "Первісна, інтеграл, площі",
+ "intro": [
+  {
+   "title": "Первісна",
+   "text": "<span data-latex=\"F&#x27;(x) = f(x)\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Первісна через точку",
+   "text": "знаходимо <span data-latex=\"C\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Визначений інтеграл",
+   "text": "формула Ньютона — Лейбніца"
+  },
+  {
+   "title": "Площі",
+   "text": "верхня функція мінус нижня"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"F&#x27; = f\" data-type=\"inline-math\"></span>",
+   "text": "первісна"
+  },
+  {
+   "big": "<span data-latex=\"F(b) - F(a)\" data-type=\"inline-math\"></span>",
+   "text": "Ньютон — Лейбніц"
+  },
+  {
+   "big": "<span data-latex=\"S\" data-type=\"inline-math\"></span>",
+   "text": "площа під графіком"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Первісна",
+   "title": "Похідна навпаки",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"F&#x27; = f\" data-type=\"inline-math\"></span>",
+     "title": "Означення",
+     "formula": "",
+     "text": "<span data-latex=\"F\" data-type=\"inline-math\"></span> — первісна для <span data-latex=\"f\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"F&#x27;(x) = f(x)\" data-type=\"inline-math\"></span>. Перевірка — продиференціюй."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Таблиця",
+     "formula": "",
+     "text": "<span data-latex=\"x^{n} \\to  \\dfrac{x^{n + 1}}{n + 1}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{cos} x \\to  \\operatorname{sin} x\" data-type=\"inline-math\"></span>, <span data-latex=\"\\operatorname{sin} x \\to  -\\operatorname{cos} x\" data-type=\"inline-math\"></span>, <span data-latex=\"e^{x} \\to  e^{x}\" data-type=\"inline-math\"></span>, <span data-latex=\"\\dfrac{1}{x} \\to  \\operatorname{ln}\\left|x\\right|\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "<span data-latex=\"+ C\" data-type=\"inline-math\"></span>",
+     "formula": "",
+     "text": "Усі первісні відрізняються на сталу: <span data-latex=\"F(x) + C\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Перевірка похідною",
+    "content": "Яка з наведених функцій є первісною для функції <span data-latex=\"f(x) = e^{x} + 2\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"F(x) = e^{x} + 2x - 3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"F(x) = e^{x} + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"F(x) = 2x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"F(x) = xe^{x - 1} + 2x + 3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"F(x) = xe^{x - 1}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Перевіряємо похідною: <span data-latex=\"(e^{x} + 2x - 3)&#x27; = e^{x} + 2\" data-type=\"inline-math\"></span> — це <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>. Інші варіанти дають іншу похідну."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Первісна через точку",
+   "title": "Знаходимо сталу <span data-latex=\"C\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "1",
+     "title": "Загальний вигляд",
+     "formula": "",
+     "text": "Знайди <span data-latex=\"F(x) = \\ldots  + C\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "2",
+     "title": "Підстав точку",
+     "formula": "",
+     "text": "<span data-latex=\"F(x_{0}) = y_{0}\" data-type=\"inline-math\"></span> — рівняння для <span data-latex=\"C\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "<span data-latex=\"f(x) = 3x^{2}\" data-type=\"inline-math\"></span>, точка <span data-latex=\"(1; 5)\" data-type=\"inline-math\"></span>: <span data-latex=\"x^{3} + C\" data-type=\"inline-math\"></span>, <span data-latex=\"1 + C = 5\" data-type=\"inline-math\"></span>, <span data-latex=\"C = 4\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Через точку",
+    "content": "Визначте для функції <span data-latex=\"f(x) = 2x + 2\" data-type=\"inline-math\"></span> первісну, графік якої проходить через точку <span data-latex=\"(1; 4)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"F(x) = 2x^{2} + 2x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"F(x) = x^{2} + 2x + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"F(x) = x^{2} + 2x + 2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"F(x) = x^{2} + 2x - 4\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"F(x) = 2x^{2} + x + 1\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"F(x) = x^{2} + 2x + C\" data-type=\"inline-math\"></span>. <span data-latex=\"F(1) = 1 + 2 + C = 4\" data-type=\"inline-math\"></span>, тож <span data-latex=\"C = 1\" data-type=\"inline-math\"></span>: <span data-latex=\"F(x) = x^{2} + 2x + 1\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Визначений інтеграл",
+   "title": "Формула Ньютона — Лейбніца",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"F(b) - F(a)\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"\\int\\limits_{a}^{b} f(x)\\text{d}x = F(b) - F(a)\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Властивості",
+     "formula": "",
+     "text": "Сталу виносимо: <span data-latex=\"\\int\\limits_{a}^{b} kf = k\\int\\limits_{a}^{b} f\" data-type=\"inline-math\"></span>; інтеграл суми — сума інтегралів."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Стала функція",
+     "formula": "",
+     "text": "<span data-latex=\"\\int\\limits_{a}^{b} c\\text{d}x = c(b - a)\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Ньютон — Лейбніц",
+    "content": "Використовуючи формулу Ньютона — Лейбніца, обчисліть <span data-latex=\"\\int\\limits_{1}^{2} 6x^{2}\\text{d}x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "12"
+     },
+     {
+      "id": 1,
+      "content": "14"
+     },
+     {
+      "id": 2,
+      "content": "18"
+     },
+     {
+      "id": 3,
+      "content": "22"
+     },
+     {
+      "id": 4,
+      "content": "42"
+     }
+    ],
+    "points": 1,
+    "solution": "Первісна для <span data-latex=\"6x^{2}\" data-type=\"inline-math\"></span> — <span data-latex=\"2x^{3}\" data-type=\"inline-math\"></span>. <span data-latex=\"\\int\\limits_{1}^{2} 6x^{2}\\text{d}x = 2 \\cdot  8 - 2 \\cdot  1 = 14\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Площі фігур",
+   "title": "Верхня мінус нижня",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"S\" data-type=\"inline-math\"></span>",
+     "title": "Під графіком",
+     "formula": "",
+     "text": "Якщо <span data-latex=\"f(x) \\ge  0\" data-type=\"inline-math\"></span> на <span data-latex=\"[a; b]\" data-type=\"inline-math\"></span>: <span data-latex=\"S = \\int\\limits_{a}^{b} f(x)\\text{d}x\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Між графіками",
+     "formula": "",
+     "text": "<span data-latex=\"S = \\int\\limits_{a}^{b} (f(x) - g(x))\\text{d}x\" data-type=\"inline-math\"></span>, де <span data-latex=\"f\" data-type=\"inline-math\"></span> — верхня, межі — точки перетину."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Під віссю",
+     "formula": "",
+     "text": "Якщо фігура під віссю <span data-latex=\"x\" data-type=\"inline-math\"></span>, інтеграл від’ємний — беремо його зі знаком мінус."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Площа між графіками",
+    "content": "На рисунку зображено графіки функцій <span data-latex=\"y = \\sqrt{x}\" data-type=\"inline-math\"></span> та <span data-latex=\"y = \\dfrac{x}{2}\" data-type=\"inline-math\"></span>. Укажіть формулу для обчислення площі зафарбованої фігури.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 502 320\" width=\"502\" height=\"320\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"300\" x2=\"30\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"92\" y1=\"300\" x2=\"92\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"300\" x2=\"154\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"216\" y1=\"300\" x2=\"216\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"278\" y1=\"300\" x2=\"278\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"340\" y1=\"300\" x2=\"340\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"402\" y1=\"300\" x2=\"402\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"300\" x2=\"452\" y2=\"300\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"238\" x2=\"452\" y2=\"238\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"176\" x2=\"452\" y2=\"176\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"114\" x2=\"452\" y2=\"114\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"52\" x2=\"452\" y2=\"52\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"67,251 70,237 73,231 76,227 80,223 83,220 86,217 89,214 92,212 95,209 98,207 101,205 104,203 108,201 111,199 114,197 117,195 120,194 123,192 126,190 129,189 132,187 135,186 138,184 142,183 145,182 148,180 151,179 154,177 157,176 160,175 163,174 166,172 170,171 173,170 176,169 179,168 182,166 185,165 188,164 191,163 194,162 197,161 200,160 204,159 207,158 210,157 213,156 216,155 219,154 222,153 225,152 228,151 232,150 235,149 238,148 241,147 244,146 247,145 250,144 253,143 256,142 259,142 262,141 266,140 269,139 272,138 275,137 278,136 281,136 284,135 287,134 290,133 294,132 297,132 300,131 303,130 306,129 309,128 312,128 315,127 315,127 312,128 309,130 306,131 303,133 300,135 297,136 294,138 290,139 287,141 284,142 281,144 278,145 275,147 272,148 269,150 266,152 262,153 259,155 256,156 253,158 250,159 247,161 244,162 241,164 238,166 235,167 232,169 228,170 225,172 222,173 219,175 216,176 213,178 210,180 207,181 204,183 200,184 197,186 194,187 191,189 188,190 185,192 182,193 179,195 176,196 173,198 170,200 166,201 163,203 160,204 157,206 154,207 151,209 148,210 145,212 142,214 138,215 135,217 132,218 129,220 126,221 123,223 120,224 117,226 114,228 111,229 108,231 104,232 101,234 98,235 95,237 92,238 89,240 86,242 83,243 80,245 76,246 73,248 70,249 67,251\" fill=\"#CFC8EE\" stroke=\"#CFC8EE\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"251\" x2=\"482\" y2=\"251\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"482,251 468,244 468,257\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"67\" y1=\"300\" x2=\"67\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"67,10 61,24 74,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"476\" y=\"277\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"45\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"51\" y=\"271\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"67,251 72,234 77,227 81,221 86,217 91,212 96,209 100,206 105,202 110,199 114,197 119,194 124,192 129,189 133,187 138,184 148,180 152,178 162,174 166,172 171,170 176,169 181,167 185,165 190,164 200,160 204,159 209,157 214,156 218,154 223,152 233,150 237,148 242,147 247,145 252,144 256,142 266,140 270,138 285,135 289,133 304,130 308,128 318,126 322,125 337,122 341,120 356,117 360,116 370,114 374,113 389,110 393,109 398,108 403,106 408,106 412,104 417,104 422,102 426,102 441,99 445,98\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"30,269 35,267 40,264 46,262 56,256 62,254 72,248 77,246 83,243 88,240 93,238 98,235 104,232 109,230 114,227 120,225 130,219 135,217 141,214 146,211 151,209 156,206 162,204 172,198 178,196 188,190 193,188 199,185 204,182 209,180 214,177 220,174 225,172 230,169 236,167 246,161 251,159 257,156 262,154 272,148 278,146 288,140 294,138 304,132 309,130 315,127 320,124 325,122 330,119 336,117 346,111 352,109 362,103 367,101 373,98 378,96 388,90 394,88 404,82 409,80 415,77 420,74 425,72 430,69 436,66 441,64 446,61 452,59\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"315\" y1=\"251\" x2=\"315\" y2=\"127\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><text x=\"315\" y=\"275\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">4</text><text x=\"57\" y=\"127\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">2</text><text x=\"396\" y=\"124\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y = √x</text><text x=\"377\" y=\"62\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">y = x/2</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{2} (\\sqrt{x} - \\dfrac{x}{2})\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{2} (\\dfrac{x}{2} - \\sqrt{x})\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{4} (\\sqrt{x} - \\dfrac{x}{2})\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{4} (\\dfrac{x}{2} - \\sqrt{x})\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{4} (\\dfrac{x}{2} + \\sqrt{x})\\text{d}x\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Графіки перетинаються, коли <span data-latex=\"\\sqrt{x} = \\dfrac{x}{2}\" data-type=\"inline-math\"></span>: <span data-latex=\"x = 0\" data-type=\"inline-math\"></span> і <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>. На <span data-latex=\"(0; 4)\" data-type=\"inline-math\"></span> корінь вище, тож <span data-latex=\"S = \\int\\limits_{0}^{4} (\\sqrt{x} - \\dfrac{x}{2})\\text{d}x\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Степенева функція",
+    "content": "Знайдіть загальний вигляд первісних функції <span data-latex=\"f(x) = \\dfrac{12}{x^{3}} - 4x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"F(x) = -\\dfrac{36}{x^{2}} - 2x^{2} + C\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"F(x) = -\\dfrac{6}{x^{2}} - 2x^{2} + C\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"F(x) = \\dfrac{4}{x^{2}} - 4 + C\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"F(x) = -\\dfrac{36}{x^{4}} - 4 + C\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"F(x) = -\\dfrac{6}{x^{2}} - 4 + C\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "12 · x⁻²/(−2) − 4 · x²/2 + C = −6/x² − 2x² + C"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Логарифм",
+    "content": "Укажіть первісну <span data-latex=\"F(x)\" data-type=\"inline-math\"></span> для функції <span data-latex=\"f(x) = \\dfrac{1}{2x}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"F(x) = \\dfrac{1}{x^{2}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"F(x) = \\dfrac{1}{2}\\operatorname{ln}\\left|x\\right|\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"F(x) = -\\dfrac{1}{2x^{2}}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"F(x) = 2\\operatorname{ln}\\left|x\\right|\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"F(x) = \\operatorname{ln}\\left|2x\\right|\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "1/2 · ln\\|x\\|"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Складений аргумент",
+    "content": "Яка з наведених функцій є первісною для функції <span data-latex=\"f(x) = 2 + \\operatorname{sin} 2x\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"F(x) = 2x - \\dfrac{\\operatorname{cos} 2x}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"F(x) = 2x + \\dfrac{\\operatorname{cos} 2x}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"F(x) = 2x + 2\\operatorname{cos} 2x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"F(x) = 2\\operatorname{cos} 2x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"F(x) = 2x - \\operatorname{cos} 2x\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "(2x − (cos 2x)/2)' = 2 + sin 2x"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Графік первісної",
+    "content": "Укажіть рисунок, на якому <b>може</b> бути зображений графік первісної для функції <span data-latex=\"f(x) = -3\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 208 240\" width=\"229\" height=\"264\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"14\" y1=\"130\" x2=\"190\" y2=\"130\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"190,130 176,124 176,136\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"94\" y1=\"226\" x2=\"94\" y2=\"18\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"94,18 88,32 100,32\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"184\" y=\"156\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"72\" y=\"26\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"78\" y=\"150\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"14,74 174,74\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+     },
+     {
+      "id": 1,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 208 240\" width=\"229\" height=\"264\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"14\" y1=\"130\" x2=\"190\" y2=\"130\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"190,130 176,124 176,136\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"94\" y1=\"226\" x2=\"94\" y2=\"18\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"94,18 88,32 100,32\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"184\" y=\"156\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"72\" y=\"26\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"78\" y=\"150\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"62,226 126,34\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+     },
+     {
+      "id": 2,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 208 240\" width=\"229\" height=\"264\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"14\" y1=\"130\" x2=\"190\" y2=\"130\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"190,130 176,124 176,136\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"94\" y1=\"226\" x2=\"94\" y2=\"18\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"94,18 88,32 100,32\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"184\" y=\"156\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"72\" y=\"26\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"78\" y=\"150\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"70,34 134,226\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+     },
+     {
+      "id": 3,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 208 240\" width=\"229\" height=\"264\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"14\" y1=\"130\" x2=\"190\" y2=\"130\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"190,130 176,124 176,136\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"94\" y1=\"226\" x2=\"94\" y2=\"18\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"94,18 88,32 100,32\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"184\" y=\"156\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"72\" y=\"26\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"78\" y=\"150\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"38,226 174,90\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+     },
+     {
+      "id": 4,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 208 240\" width=\"229\" height=\"264\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"14\" y1=\"130\" x2=\"190\" y2=\"130\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"190,130 176,124 176,136\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"94\" y1=\"226\" x2=\"94\" y2=\"18\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"94,18 88,32 100,32\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"184\" y=\"156\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"72\" y=\"26\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"78\" y=\"150\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"14,194 174,194\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg></div>"
+     }
+    ],
+    "points": 1,
+    "solution": "F(x) = −3x + C — спадна пряма з кутовим коефіцієнтом −3"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Від первісної до функції",
+    "content": "Функція <span data-latex=\"F(x) = 6\\operatorname{sin}(2x) - 1\" data-type=\"inline-math\"></span> є первісною функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>. Знайдіть функцію <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"f(x) = -12\\operatorname{cos}(2x)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"f(x) = 6\\operatorname{cos}(2x)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"f(x) = 12\\operatorname{cos}(2x)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"f(x) = -3\\operatorname{cos}(2x) - x + C\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"f(x) = -6\\operatorname{cos}(2x) - x + C\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "f(x) = F'(x) = 12cos(2x)"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Інша первісна",
+    "content": "Функція <span data-latex=\"F(x) = 5x^{4} - 1\" data-type=\"inline-math\"></span> є первісною функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>. Укажіть функцію <span data-latex=\"G(x)\" data-type=\"inline-math\"></span>, яка також є первісною функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"G(x) = x^{5} - x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"G(x) = 5x^{4} - x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"G(x) = 20x^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"G(x) = 5x^{4} + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"G(x) = x^{4} - 5\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "первісні відрізняються лише сталою: 5x⁴ + 1"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Інша первісна",
+    "content": "Функція <span data-latex=\"F(x) = 10x^{5} - 4\" data-type=\"inline-math\"></span> є первісною функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>. Укажіть функцію <span data-latex=\"G(x)\" data-type=\"inline-math\"></span>, яка також є первісною функції <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"G(x) = 10x^{5} + 7\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"G(x) = 2x^{6} - 4x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"G(x) = 50x^{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"G(x) = 50x^{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"G(x) = x^{5} - 4\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "первісні відрізняються лише сталою: 10x⁵ + 7"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Стала за знак інтеграла",
+    "content": "Обчисліть інтеграл <span data-latex=\"\\int\\limits_{1}^{5} 3f(x)\\text{d}x\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\int\\limits_{1}^{5} f(x)\\text{d}x = 14\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "11"
+     },
+     {
+      "id": 1,
+      "content": "42"
+     },
+     {
+      "id": 2,
+      "content": "17"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{14}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "52"
+     }
+    ],
+    "points": 1,
+    "solution": "3 · 14 = 42"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Інтеграл суми",
+    "content": "Обчисліть інтеграл <span data-latex=\"\\int\\limits_{0}^{2} (f(x) + 6)\\text{d}x\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\int\\limits_{0}^{2} f(x)\\text{d}x = 8\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "20"
+     },
+     {
+      "id": 1,
+      "content": "14"
+     },
+     {
+      "id": 2,
+      "content": "2"
+     },
+     {
+      "id": 3,
+      "content": "28"
+     },
+     {
+      "id": 4,
+      "content": "48"
+     }
+    ],
+    "points": 1,
+    "solution": "8 + 6 · 2 = 20"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Паркова зона",
+    "content": "У прямокутній системі координат зображено план паркової зони, що має форму фігури, обмеженої графіками функцій <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> і <span data-latex=\"y = 3\" data-type=\"inline-math\"></span> (див. рисунок). Укажіть формулу для обчислення площі <span data-latex=\"S\" data-type=\"inline-math\"></span> цієї фігури.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 370 359\" width=\"370\" height=\"359\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"339\" x2=\"30\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"339\" x2=\"74\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"339\" x2=\"118\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"339\" x2=\"162\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"339\" x2=\"206\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"339\" x2=\"250\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"294\" y1=\"339\" x2=\"294\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"339\" x2=\"320\" y2=\"339\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"295\" x2=\"320\" y2=\"295\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"251\" x2=\"320\" y2=\"251\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"207\" x2=\"320\" y2=\"207\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"163\" x2=\"320\" y2=\"163\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"119\" x2=\"320\" y2=\"119\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"75\" x2=\"320\" y2=\"75\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"74,137 76,137 78,137 81,137 83,137 85,137 87,137 89,137 92,137 94,137 96,137 98,137 100,137 103,137 105,137 107,137 109,137 111,137 114,137 116,137 118,137 120,137 122,137 125,137 127,137 129,137 131,137 133,137 136,137 138,137 140,137 142,137 144,137 147,137 149,137 151,137 153,137 155,137 158,137 160,137 162,137 164,137 166,137 169,137 171,137 173,137 175,137 177,137 180,137 182,137 184,137 186,137 188,137 191,137 193,137 195,137 197,137 199,137 202,137 204,137 206,137 208,137 210,137 213,137 215,137 217,137 219,137 221,137 224,137 226,137 228,137 230,137 232,137 235,137 237,137 239,137 241,137 243,137 246,137 248,137 250,137 250,137 248,146 246,154 243,162 241,170 239,178 237,186 235,193 232,200 230,207 228,214 226,220 224,227 221,233 219,238 217,244 215,249 213,255 210,260 208,264 206,269 204,273 202,277 199,281 197,285 195,288 193,291 191,294 188,297 186,300 184,302 182,304 180,306 177,307 175,309 173,310 171,311 169,312 166,312 164,313 162,313 160,313 158,312 155,312 153,311 151,310 149,309 147,307 144,306 142,304 140,302 138,300 136,297 133,294 131,291 129,288 127,285 125,281 122,277 120,273 118,269 116,264 114,260 111,255 109,249 107,244 105,238 103,233 100,227 98,220 96,214 94,207 92,200 89,193 87,186 85,178 83,170 81,162 78,154 76,146 74,137\" fill=\"#CFC8EE\" stroke=\"#CFC8EE\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"269\" x2=\"350\" y2=\"269\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"350,269 336,262 336,275\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"74\" y1=\"339\" x2=\"74\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"74,10 68,24 80,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"344\" y=\"295\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"52\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"58\" y=\"289\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"54,49 57,62 60,74 62,87 68,111 70,122 76,144 78,154 84,174 86,183 95,210 97,218 100,226 103,233 105,240 108,247 114,259 116,265 119,270 124,280 127,285 130,289 132,293 138,299 140,302 143,305 146,307 148,309 157,312 159,313 165,313 167,312 176,309 178,307 181,305 184,302 186,299 192,293 194,289 197,285 200,280 205,270 208,265 210,259 216,247 219,240 221,233 224,226 227,218 229,210 238,183 240,174 246,154 248,144 254,122 256,111 262,87 264,74 267,62 270,49\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"30,137 320,137\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"118\" y=\"293\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">1</text><text x=\"250\" y=\"293\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">4</text><text x=\"64\" y=\"225\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">1</text><text x=\"162\" y=\"198\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">Паркова</text><text x=\"162\" y=\"223\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">зона</text><text x=\"232\" y=\"36\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y = f(x)</text><text x=\"296\" y=\"121\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#FF6A3D\">y = 3</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\int\\limits_{-1}^{3} (f(x) - 3)\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\int\\limits_{-1}^{3} (3 - f(x))\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{4} (f(x) + 3)\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{4} (f(x) - 3)\\text{d}x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{4} (3 - f(x))\\text{d}x\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "f(x) = 3 при x = 0 і x = 4; пряма y = 3 вище параболи"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Частина під віссю",
+    "content": "На рисунку зображено графік неперервної функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span>. Укажіть формулу для обчислення площі зафарбованої фігури (у варіантах <span data-latex=\"\\int\\limits_{a}^{b} f\" data-type=\"inline-math\"></span> означає <span data-latex=\"\\int\\limits_{a}^{b} f(x)\\text{d}x\" data-type=\"inline-math\"></span>).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 352 300\" width=\"352\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"86,160 87,159 88,158 89,156 90,155 91,153 92,151 93,149 94,147 95,145 96,143 97,141 98,139 99,137 100,134 101,132 102,130 103,128 104,125 105,123 106,121 107,119 108,117 109,115 110,113 111,111 112,109 113,108 114,106 115,105 116,104 117,102 118,102 119,101 120,100 121,100 122,100 123,100 124,100 125,100 126,101 127,101 128,102 129,102 130,103 131,104 132,104 133,105 134,106 135,108 136,109 137,110 138,111 139,112 140,114 141,115 142,116 143,118 144,120 145,121 146,123 147,124 148,126 149,128 150,130 151,131 152,133 153,135 154,137 155,139 156,141 157,143 158,145 159,146 160,148 161,150 162,152 163,154 164,156 165,158 166,160 166,160 165,160 164,160 163,160 162,160 161,160 160,160 159,160 158,160 157,160 156,160 155,160 154,160 153,160 152,160 151,160 150,160 149,160 148,160 147,160 146,160 145,160 144,160 143,160 142,160 141,160 140,160 139,160 138,160 137,160 136,160 135,160 134,160 133,160 132,160 131,160 130,160 129,160 128,160 127,160 126,160 125,160 124,160 123,160 122,160 121,160 120,160 119,160 118,160 117,160 116,160 115,160 114,160 113,160 112,160 111,160 110,160 109,160 108,160 107,160 106,160 105,160 104,160 103,160 102,160 101,160 100,160 99,160 98,160 97,160 96,160 95,160 94,160 93,160 92,160 91,160 90,160 89,160 88,160 87,160 86,160\" fill=\"#CFC8EE\" stroke=\"#CFC8EE\" stroke-width=\"0\" stroke-linejoin=\"round\"/><polygon points=\"166,160 167,162 168,164 169,166 170,169 171,172 172,174 173,177 174,180 175,183 176,186 177,190 178,193 179,196 180,199 181,203 182,206 183,210 184,213 185,216 186,220 187,223 188,226 189,229 190,232 191,235 192,238 193,241 194,243 195,246 196,248 197,250 198,252 199,254 200,255 201,257 202,258 203,259 204,260 205,260 206,260 207,260 208,260 209,259 210,258 211,257 212,256 213,254 214,253 215,251 216,249 217,247 218,245 219,242 220,240 221,237 222,234 223,231 224,228 225,226 226,222 227,219 228,216 229,213 230,209 231,206 232,203 233,200 234,196 235,193 236,190 237,186 238,183 239,180 240,177 241,174 242,171 243,168 244,165 245,162 246,160 246,160 245,160 244,160 243,160 242,160 241,160 240,160 239,160 238,160 237,160 236,160 235,160 234,160 233,160 232,160 231,160 230,160 229,160 228,160 227,160 226,160 225,160 224,160 223,160 222,160 221,160 220,160 219,160 218,160 217,160 216,160 215,160 214,160 213,160 212,160 211,160 210,160 209,160 208,160 207,160 206,160 205,160 204,160 203,160 202,160 201,160 200,160 199,160 198,160 197,160 196,160 195,160 194,160 193,160 192,160 191,160 190,160 189,160 188,160 187,160 186,160 185,160 184,160 183,160 182,160 181,160 180,160 179,160 178,160 177,160 176,160 175,160 174,160 173,160 172,160 171,160 170,160 169,160 168,160 167,160 166,160\" fill=\"#CFC8EE\" stroke=\"#CFC8EE\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"160\" x2=\"332\" y2=\"160\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"332,160 318,154 318,166\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"166\" y1=\"280\" x2=\"166\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"166,10 160,24 172,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"326\" y=\"186\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"144\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"150\" y=\"180\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"38,188 41,186 44,185 47,183 53,181 56,179 62,177 72,172 78,168 87,159 90,155 93,150 96,143 99,137 108,116 114,106 117,102 120,100 123,100 126,101 130,103 132,105 136,108 142,116 151,131 157,143 160,148 166,160 169,167 172,175 175,184 190,234 194,242 197,249 200,255 203,258 206,260 209,259 212,256 215,251 218,245 221,237 227,219 239,179 242,170 248,154 252,146 254,139 258,132 261,124 264,117 267,109 270,102 273,94 276,87 279,79 282,72\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"86\" y=\"146\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">-1</text><text x=\"246\" y=\"146\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">1</text><text x=\"246\" y=\"56\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y = f(x)</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\int\\limits_{-1}^{1} f\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"2\\int\\limits_{0}^{1} f\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{1} f - \\int\\limits_{-1}^{0} f\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"2\\int\\limits_{-1}^{0} f\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\int\\limits_{-1}^{0} f - \\int\\limits_{0}^{1} f\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "на [−1; 0] f ≥ 0, на [0; 1] f ≤ 0 — другий інтеграл беремо з мінусом"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Непарна функція",
+    "content": "На рисунку зображено графік непарної функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span>, визначеної на проміжку <span data-latex=\"[-5; 5]\" data-type=\"inline-math\"></span>. Яке з наведених співвідношень є справедливим для <span data-latex=\"f(x)\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 627 319\" width=\"627\" height=\"319\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"174\" x2=\"607\" y2=\"174\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"607,174 593,168 593,181\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"299\" y1=\"299\" x2=\"299\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"299,10 292,24 305,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"601\" y=\"200\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"277\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"283\" y=\"194\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><polyline points=\"59,266 61,263 64,261 66,259 68,256 71,254 73,252 76,250 78,247 85,240 88,238 90,236 92,233 95,231 97,228 100,226 109,217 112,215 114,212 116,210 119,208 121,205 124,203 126,201 128,198 131,196 133,194 136,192 138,190 140,187 143,185 145,183 148,181 150,179 152,176 155,174 157,172 160,170 162,168 164,165 167,163 169,160 172,158 174,155 193,136 196,134 200,130 203,129 205,127 208,126 210,124 212,124 215,123 217,122 229,122 232,123 236,125 239,126 241,127 244,129 246,130 248,132 251,134 253,136 256,137 265,146 268,148 272,152 275,154 284,163 287,165 289,167 292,169 296,173 299,174 301,176 304,178 308,182 311,184 313,186 316,188 320,192 323,194 325,197 328,199 332,203 335,205 337,207 340,209 344,213 347,215 349,217 352,218 354,220 356,221 359,223 361,224 364,225 366,226 368,226 371,227 380,227 383,226 385,225 388,224 392,222 395,220 397,218 400,217 409,208 412,206 414,204 416,201 421,196 424,194 428,188 431,186 445,172 448,170 452,166 455,164 457,161 460,159 469,150 472,148 474,146 476,143 479,141 481,139 484,137 486,134 488,132 491,130 493,127 496,125 498,123 500,120 503,118 517,104 520,102 522,99 524,97 527,95 529,92 532,90 539,83\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"59\" y1=\"174\" x2=\"59\" y2=\"266\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"539\" y1=\"174\" x2=\"539\" y2=\"83\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"59\" cy=\"266\" r=\"6\" fill=\"#1E1B4B\"/><circle cx=\"539\" cy=\"83\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"59\" y=\"160\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">-5</text><text x=\"155\" y=\"198\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">-3</text><text x=\"443\" y=\"198\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">3</text><text x=\"539\" y=\"198\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">5</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\int\\limits_{-3}^{0} f(x)\\text{d}x &lt; 0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\int\\limits_{0}^{3} f(x)\\text{d}x &gt; 0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\int\\limits_{-3}^{3} f(x)\\text{d}x &lt; 0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\int\\limits_{-3}^{3} f(x)\\text{d}x &gt; 0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\int\\limits_{-3}^{3} f(x)\\text{d}x = 0\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "для непарної функції інтеграл по симетричному відрізку дорівнює 0"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Порівняти інтеграли",
+    "content": "На рисунку зображено графік функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span>, визначеної на <span data-latex=\"(-\\infty ; +\\infty )\" data-type=\"inline-math\"></span>. Укажіть правильну подвійну нерівність, якщо <span data-latex=\"a = \\int\\limits_{-2}^{0} f(x)\\text{d}x\" data-type=\"inline-math\"></span>, <span data-latex=\"b = \\int\\limits_{0}^{2} f(x)\\text{d}x\" data-type=\"inline-math\"></span>, <span data-latex=\"c = \\int\\limits_{2}^{4} f(x)\\text{d}x\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 480 435\" width=\"480\" height=\"435\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"415\" x2=\"30\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"415\" x2=\"80\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"415\" x2=\"130\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"415\" x2=\"180\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"415\" x2=\"230\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"280\" y1=\"415\" x2=\"280\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"415\" x2=\"330\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"380\" y1=\"415\" x2=\"380\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"430\" y1=\"415\" x2=\"430\" y2=\"40\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"415\" x2=\"430\" y2=\"415\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"365\" x2=\"430\" y2=\"365\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"315\" x2=\"430\" y2=\"315\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"265\" x2=\"430\" y2=\"265\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"215\" x2=\"430\" y2=\"215\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"165\" x2=\"430\" y2=\"165\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"115\" x2=\"430\" y2=\"115\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"65\" x2=\"430\" y2=\"65\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"290\" x2=\"460\" y2=\"290\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"460,290 446,284 446,296\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"180\" y1=\"415\" x2=\"180\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"180,10 174,24 186,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"454\" y=\"316\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"158\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"164\" y=\"310\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"50,350 53,344 55,342 58,336 59,335 61,331 64,328 69,318 70,315 72,313 73,310 74,308 76,302 77,298 78,295 80,291 82,283 85,268 86,262 88,257 90,245 91,238 93,226 94,219 96,212 97,206 99,192 100,186 102,172 104,166 105,160 106,153 108,141 109,136 110,130 112,125 114,115 116,107 117,104 118,100 120,97 123,91 124,90 126,90 128,91 129,92 131,96 133,102 134,106 136,110 140,130 142,142 144,148 145,154 146,161 147,167 148,174 149,180 150,187 152,194 153,200 154,207 158,231 160,237 161,242 162,248 163,252 164,257 166,265 168,268 170,274 173,280 174,281 176,282 179,285 180,285 181,286 182,286 184,287 187,287 189,283 190,280 192,275 193,269 194,261 195,252 196,242 197,231 198,219 200,207 201,194 202,182 203,169 204,157 206,135 208,126 209,118 210,111 212,101 213,97 214,94 216,91 218,87 221,84 226,84 227,85 238,85 240,86 241,86 242,88 243,89 244,91 246,97 248,100 249,104 250,109 252,121 254,137 256,146 258,166 259,177 260,187 262,209 264,219 265,230 266,239 267,249 269,265 270,272 272,278 273,282 274,285 275,287 276,288 280,288 282,286 283,284 286,275 288,272 292,260 294,256 296,254 297,254 298,252 300,250 301,250 303,248 305,247 306,246 307,246 309,244 310,244 311,243 313,243 314,242 315,242 316,241 317,241 318,240 321,240 322,239 325,239 326,238 330,238 331,237 337,237 338,238 339,238 345,244 346,246 347,249 348,251 350,257 351,261 352,264 354,268 360,292 362,296 364,304 365,309 366,313 367,318 368,322 370,327 371,331 374,346 375,350 376,355 378,360 383,385 384,391 386,396 388,408 389,413 390,419 391,424 392,430\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"80\" y=\"314\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">-2</text><text x=\"230\" y=\"314\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">1</text><text x=\"280\" y=\"314\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">2</text><text x=\"380\" y=\"314\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">4</text><text x=\"170\" y=\"240\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">1</text><text x=\"340\" y=\"210\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y = f(x)</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "a &lt; b &lt; c"
+     },
+     {
+      "id": 1,
+      "content": "b &lt; c &lt; a"
+     },
+     {
+      "id": 2,
+      "content": "c &lt; a &lt; b"
+     },
+     {
+      "id": 3,
+      "content": "c &lt; b &lt; a"
+     },
+     {
+      "id": 4,
+      "content": "b &lt; a &lt; c"
+     }
+    ],
+    "points": 1,
+    "solution": "c — найменша площа, частина під віссю; b &gt; a за рисунком"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Під синусоїдою",
+    "content": "Обчисліть площу зафарбованої фігури, зображеної на рисунку.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 551 379\" width=\"551\" height=\"379\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"92,205 93,204 94,202 94,201 95,199 96,198 97,196 98,195 98,194 99,192 100,191 101,189 102,188 103,186 103,185 104,184 105,182 106,181 107,179 107,178 108,176 109,175 110,174 111,172 112,171 112,170 113,168 114,167 115,166 116,164 116,163 117,162 118,160 119,159 120,158 120,156 121,155 122,154 123,152 124,151 124,150 125,149 126,148 127,146 128,145 128,144 129,143 130,142 131,140 132,139 133,138 133,137 134,136 135,135 136,134 137,132 137,131 138,130 139,129 140,128 141,127 142,126 142,125 143,124 144,123 145,122 146,121 146,120 147,120 148,119 149,118 150,117 150,116 151,115 152,114 153,114 154,113 154,112 155,111 156,110 157,110 157,205 156,205 155,205 154,205 154,205 153,205 152,205 151,205 150,205 150,205 149,205 148,205 147,205 146,205 146,205 145,205 144,205 143,205 142,205 142,205 141,205 140,205 139,205 138,205 137,205 137,205 136,205 135,205 134,205 133,205 133,205 132,205 131,205 130,205 129,205 128,205 128,205 127,205 126,205 125,205 124,205 124,205 123,205 122,205 121,205 120,205 120,205 119,205 118,205 117,205 116,205 116,205 115,205 114,205 113,205 112,205 112,205 111,205 110,205 109,205 108,205 107,205 107,205 106,205 105,205 104,205 103,205 103,205 102,205 101,205 100,205 99,205 98,205 98,205 97,205 96,205 95,205 94,205 94,205 93,205 92,205\" fill=\"#CFC8EE\" stroke=\"#CFC8EE\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"205\" x2=\"531\" y2=\"205\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"531,205 517,199 517,211\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"92\" y1=\"359\" x2=\"92\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"92,10 86,24 98,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"525\" y=\"231\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"70\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"76\" y=\"225\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"36,291 48,277 53,269 59,261 65,252 71,242 76,232 94,202 99,192 111,172 116,163 134,136 139,129 145,122 162,105 168,101 174,98 180,96 185,95 191,95 197,96 202,98 208,100 220,108 226,113 231,119 243,133 248,141 266,168 271,178 283,198 288,208 312,248 317,257 323,266 329,274 334,281 346,295 352,300 357,305 363,309 369,312 375,314 380,315 386,315 392,314 398,312 403,310 415,302 426,291 438,277 443,268 449,260 461,242 466,232 484,202 489,191 495,181\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"157\" y1=\"205\" x2=\"157\" y2=\"110\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><text x=\"157\" y=\"235\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">π/3</text><text x=\"82\" y=\"95\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">1</text><text x=\"82\" y=\"315\" font-size=\"26\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">-1</text><text x=\"235\" y=\"73\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y = sin x</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{3}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{2 - \\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "1"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "−cos x від 0 до π/3: 1 − 1/2"
+   },
+   "answer": 4
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"F&#x27; = f\" data-type=\"inline-math\"></span>",
+   "text": "Первісна — похідна навпаки."
+  },
+  {
+   "big": "<span data-latex=\"+ C\" data-type=\"inline-math\"></span>",
+   "text": "Сталу знаходимо з точки."
+  },
+  {
+   "big": "<span data-latex=\"F(b) - F(a)\" data-type=\"inline-math\"></span>",
+   "text": "Ньютон — Лейбніц."
+  },
+  {
+   "big": "верх − низ",
+   "text": "Площа між графіками."
+  }
+ ]
+}

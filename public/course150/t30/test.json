@@ -1,0 +1,359 @@
+{
+ "title": "ДЗ 30. Прогресії (НМТ 150+)",
+ "lessonNumber": 30,
+ "source": "hw-sheet",
+ "hwKey": "150-30",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Визначте восьмий член <span data-latex=\"a_{8}\" data-type=\"inline-math\"></span> арифметичної прогресії <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span>, у якої <span data-latex=\"a_{7} = 11\" data-type=\"inline-math\"></span>, <span data-latex=\"a_{9} = 18\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "29"
+    },
+    {
+     "id": 1,
+     "content": "14,5"
+    },
+    {
+     "id": 2,
+     "content": "15"
+    },
+    {
+     "id": 3,
+     "content": "3,5"
+    },
+    {
+     "id": 4,
+     "content": "7"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a_{8} = \\dfrac{a_{7} + a_{9}}{2} = \\dfrac{11 + 18}{2} = 14{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "В арифметичній прогресії <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span>: <span data-latex=\"a_{1} = 4\" data-type=\"inline-math\"></span>, <span data-latex=\"a_{3} = 9\" data-type=\"inline-math\"></span>. Визначте різницю <span data-latex=\"d\" data-type=\"inline-math\"></span> прогресії.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"d = -2{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"d = 6{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"d = 5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"d = 2{,}5\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"d = -5\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a_{3} = a_{1} + 2d\" data-type=\"inline-math\"></span>: <span data-latex=\"9 = 4 + 2d\" data-type=\"inline-math\"></span>, <span data-latex=\"d = 2{,}5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть найбільший від’ємний член арифметичної прогресії <span data-latex=\"2{,}9; 2{,}2; 1{,}5; \\ldots \" data-type=\"inline-math\"></span> .",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-0{,}1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-0{,}3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-0{,}6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-0{,}8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-1{,}3\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"d = -0{,}7\" data-type=\"inline-math\"></span>; <span data-latex=\"a_{n} = 2{,}9 - 0{,}7(n - 1)\" data-type=\"inline-math\"></span>: <span data-latex=\"1{,}5; 0{,}8; 0{,}1; -0{,}6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "В арифметичній прогресії <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span> справджується рівність <span data-latex=\"a_{5} - a_{3} = 4{,}8\" data-type=\"inline-math\"></span>. Тоді <span data-latex=\"a_{6} - a_{3} =\" data-type=\"inline-math\"></span>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "7,2"
+    },
+    {
+     "id": 1,
+     "content": "5,4"
+    },
+    {
+     "id": 2,
+     "content": "6,4"
+    },
+    {
+     "id": 3,
+     "content": "8,4"
+    },
+    {
+     "id": 4,
+     "content": "9,6"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a_{5} - a_{3} = 2d = 4{,}8\" data-type=\"inline-math\"></span> → <span data-latex=\"d = 2{,}4\" data-type=\"inline-math\"></span>; <span data-latex=\"a_{6} - a_{3} = 3d = 7{,}2\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Різниця арифметичної прогресії <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span> дорівнює 4. Обчисліть значення виразу <span data-latex=\"a_{5} - a_{3}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-8\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "8"
+    },
+    {
+     "id": 3,
+     "content": "0"
+    },
+    {
+     "id": 4,
+     "content": "4"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a_{5} - a_{3} = 2d = 8\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "У магазині побутової техніки діє акція: на першу велику покупку (вартість перевищує 1000 грн) надається знижка 30 грн, на кожну наступну велику покупку попередня знижка збільшується на 25 грн. На яку за рахунком велику покупку отримає в цьому магазині покупець знижку 180 грн?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "четверту"
+    },
+    {
+     "id": 1,
+     "content": "п’яту"
+    },
+    {
+     "id": 2,
+     "content": "шосту"
+    },
+    {
+     "id": 3,
+     "content": "сьому"
+    },
+    {
+     "id": 4,
+     "content": "восьму"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"30 + 25(n - 1) = 180\" data-type=\"inline-math\"></span> → <span data-latex=\"n = 7\" data-type=\"inline-math\"></span> — сьому"
+  },
+  {
+   "type": "single",
+   "content": "У першому ряду кінотеатру встановлено 15 крісел, а у кожному наступному — на 3 крісла більше, ніж у попередньому. Скільки всього крісел встановлено в сьомому ряду цього кінотеатру?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "21"
+    },
+    {
+     "id": 1,
+     "content": "27"
+    },
+    {
+     "id": 2,
+     "content": "30"
+    },
+    {
+     "id": 3,
+     "content": "33"
+    },
+    {
+     "id": 4,
+     "content": "36"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a_{7} = 15 + 6 \\cdot  3 = 33\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Задано арифметичну прогресію <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span>, у якій різниця <span data-latex=\"d = 0{,}5\" data-type=\"inline-math\"></span>, п’ятнадцятий член <span data-latex=\"a_{15} = 12\" data-type=\"inline-math\"></span>. Визначте перший член прогресії <span data-latex=\"a_{1}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "24"
+    },
+    {
+     "id": 1,
+     "content": "12,5"
+    },
+    {
+     "id": 2,
+     "content": "6"
+    },
+    {
+     "id": 3,
+     "content": "5"
+    },
+    {
+     "id": 4,
+     "content": "4,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a_{1} = a_{15} - 14d = 12 - 7 = 5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "В арифметичній прогресії <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span>: <span data-latex=\"a_{1} = -4\" data-type=\"inline-math\"></span>, <span data-latex=\"a_{5} = a_{4} + 3\" data-type=\"inline-math\"></span>. Визначте десятий член <span data-latex=\"a_{10}\" data-type=\"inline-math\"></span> цієї прогресії.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-31\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-27\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "26"
+    },
+    {
+     "id": 3,
+     "content": "27"
+    },
+    {
+     "id": 4,
+     "content": "23"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"d = a_{5} - a_{4} = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"a_{10} = -4 + 9 \\cdot  3 = 23\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "В арифметичній прогресії <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span> перший член <span data-latex=\"a_{1} = -21\" data-type=\"inline-math\"></span>, різниця <span data-latex=\"d = 1{,}5\" data-type=\"inline-math\"></span>. Скільки всього від’ємних членів має ця прогресія?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "13"
+    },
+    {
+     "id": 1,
+     "content": "14"
+    },
+    {
+     "id": 2,
+     "content": "15"
+    },
+    {
+     "id": 3,
+     "content": "16"
+    },
+    {
+     "id": 4,
+     "content": "18"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-21 + 1{,}5(n - 1) &lt; 0\" data-type=\"inline-math\"></span> → <span data-latex=\"n &lt; 15\" data-type=\"inline-math\"></span>: членів 14 (<span data-latex=\"a_{15} = 0\" data-type=\"inline-math\"></span>)"
+  },
+  {
+   "type": "single",
+   "content": "В арифметичній прогресії <span data-latex=\"(a_{n})\" data-type=\"inline-math\"></span> відомо, що <span data-latex=\"a_{1} = 2{,}9\" data-type=\"inline-math\"></span>, <span data-latex=\"a_{2} = 2{,}2\" data-type=\"inline-math\"></span>. Визначте найменший додатний член цієї прогресії.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "0,1"
+    },
+    {
+     "id": 1,
+     "content": "0,2"
+    },
+    {
+     "id": 2,
+     "content": "0,3"
+    },
+    {
+     "id": 3,
+     "content": "0,4"
+    },
+    {
+     "id": 4,
+     "content": "0,5"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"d = -0{,}7\" data-type=\"inline-math\"></span>: <span data-latex=\"2{,}9; 2{,}2; 1{,}5; 0{,}8; 0{,}1\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Число 27 є членом арифметичної прогресії з різницею <span data-latex=\"d = 5\" data-type=\"inline-math\"></span>. Серед наведених чисел укажіть число, що може бути членом цієї прогресії.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "49"
+    },
+    {
+     "id": 1,
+     "content": "50"
+    },
+    {
+     "id": 2,
+     "content": "51"
+    },
+    {
+     "id": 3,
+     "content": "52"
+    },
+    {
+     "id": 4,
+     "content": "53"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"52 - 27 = 25\" data-type=\"inline-math\"></span> — ділиться на 5"
+  }
+ ],
+ "answers": [
+  1,
+  3,
+  2,
+  0,
+  2,
+  3,
+  3,
+  3,
+  4,
+  1,
+  0,
+  3
+ ],
+ "incomplete": []
+}

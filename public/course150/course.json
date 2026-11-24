@@ -204,45 +204,73 @@
      "number": 16,
      "title": "Лінійні й квадратні",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t16/lesson.json",
+      "test": "/course150/t16/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 17,
      "title": "З модулем, дробові, ірраціональні",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t17/lesson.json",
+      "test": "/course150/t17/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 18,
      "title": "Тригонометричні",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t18/lesson.json",
+      "test": "/course150/t18/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 19,
      "title": "Логарифмічні й показникові",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t19/lesson.json",
+      "test": "/course150/t19/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 20,
      "title": "Системи рівнянь",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t20/lesson.json",
+      "test": "/course150/t20/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 21,
      "title": "Нерівності",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t21/lesson.json",
+      "test": "/course150/t21/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b04/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 5,
@@ -252,31 +280,51 @@
      "number": 22,
      "title": "Коло і круг",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t22/lesson.json",
+      "test": "/course150/t22/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 23,
      "title": "Паралелограм і прямокутник",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t23/lesson.json",
+      "test": "/course150/t23/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 24,
      "title": "Ромб і квадрат",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t24/lesson.json",
+      "test": "/course150/t24/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 25,
      "title": "Трапеція",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t25/lesson.json",
+      "test": "/course150/t25/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b05/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 6,
@@ -286,38 +334,62 @@
      "number": 26,
      "title": "Функціональна залежність і перетворення графіків",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t26/lesson.json",
+      "test": "/course150/t26/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 27,
      "title": "Лінійна й квадратична функції",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t27/lesson.json",
+      "test": "/course150/t27/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 28,
      "title": "Степенева, показникова, логарифмічна",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t28/lesson.json",
+      "test": "/course150/t28/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 29,
      "title": "Тригонометричні функції",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t29/lesson.json",
+      "test": "/course150/t29/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 30,
      "title": "Прогресії",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t30/lesson.json",
+      "test": "/course150/t30/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b06/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 7,
@@ -327,24 +399,40 @@
      "number": 31,
      "title": "Похідна",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t31/lesson.json",
+      "test": "/course150/t31/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 32,
      "title": "Застосування похідної",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t32/lesson.json",
+      "test": "/course150/t32/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 33,
      "title": "Первісна, інтеграл, площі",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t33/lesson.json",
+      "test": "/course150/t33/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b07/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 8,
@@ -354,24 +442,40 @@
      "number": 34,
      "title": "Ймовірність",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t34/lesson.json",
+      "test": "/course150/t34/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 35,
      "title": "Статистика",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t35/lesson.json",
+      "test": "/course150/t35/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 36,
      "title": "Комбінаторика",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t36/lesson.json",
+      "test": "/course150/t36/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b08/test.json",
+    "questions": 20
+   }
   },
   {
    "number": 9,
@@ -381,52 +485,84 @@
      "number": 37,
      "title": "Вектори на площині",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t37/lesson.json",
+      "test": "/course150/t37/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 38,
      "title": "Координати й вектори у просторі",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t38/lesson.json",
+      "test": "/course150/t38/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 39,
      "title": "Аксіоми стереометрії",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t39/lesson.json",
+      "test": "/course150/t39/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 40,
      "title": "Призма, куб, паралелепіпед",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t40/lesson.json",
+      "test": "/course150/t40/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 41,
      "title": "Піраміда",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t41/lesson.json",
+      "test": "/course150/t41/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 42,
      "title": "Циліндр і конус",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t42/lesson.json",
+      "test": "/course150/t42/test.json"
+     },
+     "testQuestions": 12
     },
     {
      "number": 43,
      "title": "Куля",
      "free": false,
-     "ready": false,
-     "files": {}
+     "ready": true,
+     "files": {
+      "lessonData": "/course150/t43/lesson.json",
+      "test": "/course150/t43/test.json"
+     },
+     "testQuestions": 12
     }
-   ]
+   ],
+   "test": {
+    "file": "/course150/b09/test.json",
+    "questions": 20
+   }
   }
  ]
 }

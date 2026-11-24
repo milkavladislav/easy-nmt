@@ -1,0 +1,598 @@
+{
+ "title": "Підсумковий тест · Блок 5. Коло й чотирикутники (НМТ 150+)",
+ "block": 5,
+ "source": "block-test",
+ "questions": [
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Які з наведених тверджень є правильними?<p>I. Пряма, що проходить через центр кола і лежить із цим колом в одній площині, має з ним дві спільні точки.</p><p>II. Діаметр кола, перпендикулярний до його хорди, проходить через середину цієї хорди.</p><p>III. Можна провести два діаметри кола, що не мають жодної спільної точки.</p>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "лише II"
+    },
+    {
+     "id": 1,
+     "content": "лише I та II"
+    },
+    {
+     "id": 2,
+     "content": "лише I та III"
+    },
+    {
+     "id": 3,
+     "content": "лише II та III"
+    },
+    {
+     "id": 4,
+     "content": "I, II та III"
+    }
+   ],
+   "points": 1,
+   "solution": "I — так; II — так; III — ні (діаметри перетинаються в центрі)"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Довжина кола дорівнює <span data-latex=\"10\\pi \" data-type=\"inline-math\"></span>. Знайдіть площу круга, обмеженого цим колом.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"10\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"20\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"25\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"50\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"100\\pi \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"2\\pi R = 10\\pi \" data-type=\"inline-math\"></span>, тож <span data-latex=\"R = 5\" data-type=\"inline-math\"></span>. Площа <span data-latex=\"S = \\pi  \\cdot  5^{2} = 25\\pi \" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Центральний кут <span data-latex=\"AOB\" data-type=\"inline-math\"></span> дорівнює 110°. Знайдіть вписаний кут <span data-latex=\"ACB\" data-type=\"inline-math\"></span>, що спирається на ту саму дугу <span data-latex=\"AB\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "35°"
+    },
+    {
+     "id": 1,
+     "content": "55°"
+    },
+    {
+     "id": 2,
+     "content": "70°"
+    },
+    {
+     "id": 3,
+     "content": "110°"
+    },
+    {
+     "id": 4,
+     "content": "220°"
+    }
+   ],
+   "points": 1,
+   "solution": "Вписаний кут дорівнює половині центрального, що спирається на ту саму дугу: <span data-latex=\"\\dfrac{110^{\\circ}}{2} = 55^{\\circ}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "З точки <span data-latex=\"B\" data-type=\"inline-math\"></span> до кола з центром <span data-latex=\"O\" data-type=\"inline-math\"></span> і радіусом 5 проведено дотичну <span data-latex=\"BA\" data-type=\"inline-math\"></span> (<span data-latex=\"A\" data-type=\"inline-math\"></span> — точка дотику), <span data-latex=\"AB = 12\" data-type=\"inline-math\"></span>. Знайдіть <span data-latex=\"OB\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "7"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\sqrt{119}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"5\\sqrt{2}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "17"
+    },
+    {
+     "id": 4,
+     "content": "13"
+    }
+   ],
+   "points": 1,
+   "solution": "Радіус <span data-latex=\"OA\" data-type=\"inline-math\"></span> перпендикулярний до дотичної, тож трикутник <span data-latex=\"OAB\" data-type=\"inline-math\"></span> прямокутний: <span data-latex=\"OB = \\sqrt{5^{2} + 12^{2}} = 13\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Знайдіть площу сектора круга радіуса 6, центральний кут якого дорівнює 60°.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"2\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"3\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"12\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"6\\pi \" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"36\\pi \" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "Сектор з кутом <span data-latex=\"60^{\\circ}\" data-type=\"inline-math\"></span> — це <span data-latex=\"\\dfrac{60^{\\circ}}{360^{\\circ}} = \\dfrac{1}{6}\" data-type=\"inline-math\"></span> круга: <span data-latex=\"\\dfrac{1}{6} \\cdot  \\pi  \\cdot  6^{2} = 6\\pi \" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Точка <span data-latex=\"K\" data-type=\"inline-math\"></span> — середина висоти <span data-latex=\"BM\" data-type=\"inline-math\"></span> паралелограма <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> (див. рисунок). <span data-latex=\"AB = 8\\sqrt{3}\" data-type=\"inline-math\"></span> см, <span data-latex=\"DK = 12\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\angle ADK = 30^{\\circ}\" data-type=\"inline-math\"></span>. Визначте площу паралелограма <span data-latex=\"ABCD\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 360 220\" width=\"360\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"20,200 82,92 238,92 176,200\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"82\" y1=\"92\" x2=\"82\" y2=\"200\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><polyline points=\"82,188 94,188 94,200\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><line x1=\"82\" y1=\"146\" x2=\"176\" y2=\"200\" stroke=\"#139C74\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M133 175 A50 50 0 0 0 126 200\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"102\" y=\"188\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">30°</text><circle cx=\"20\" cy=\"200\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"4\" y=\"208\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"82\" cy=\"92\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"76\" y=\"72\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"238\" cy=\"92\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"254\" y=\"82\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"176\" cy=\"200\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"186\" y=\"220\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><circle cx=\"82\" cy=\"200\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"82\" y=\"222\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text><circle cx=\"82\" cy=\"146\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"62\" y=\"142\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"120\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"72\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"96\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"144\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"60\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "KM = 6, BM = 12, MD = 6√3, AM = √(192 − 144) = 4√3; S = 10√3 · 12 = 120√3"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "На стороні <span data-latex=\"BC\" data-type=\"inline-math\"></span> прямокутника <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> вибрано точку <span data-latex=\"K\" data-type=\"inline-math\"></span> так, що <span data-latex=\"AK = 8\" data-type=\"inline-math\"></span> см, <span data-latex=\"\\angle BAK = 30^{\\circ}\" data-type=\"inline-math\"></span> (див. рисунок). <span data-latex=\"AK\" data-type=\"inline-math\"></span> — бісектриса кута <span data-latex=\"BAC\" data-type=\"inline-math\"></span>. Знайдіть площу цього прямокутника.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 276 185\" width=\"304\" height=\"203\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"30,155 30,30 246,30 246,155\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"155\" x2=\"102\" y2=\"30\" stroke=\"#139C74\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"155\" x2=\"246\" y2=\"30\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M53 115 A46 46 0 0 0 30 109\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"40\" y=\"91\" font-size=\"23\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">30°</text><circle cx=\"30\" cy=\"155\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"8\" y=\"165\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"30\" cy=\"30\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"8\" y=\"20\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"246\" cy=\"30\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"268\" y=\"20\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"246\" cy=\"155\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"268\" y=\"165\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><circle cx=\"102\" cy=\"30\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"102\" y=\"8\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"16\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"48\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"24\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"48\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"16\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "∠BAC = 60°, AB = 8 · cos 30° = 4√3, BC = AB · tg 60° = 12; S = 48√3"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Один із кутів паралелограма на 40° більший за інший. Знайдіть більший кут паралелограма.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "40°"
+    },
+    {
+     "id": 1,
+     "content": "70°"
+    },
+    {
+     "id": 2,
+     "content": "110°"
+    },
+    {
+     "id": 3,
+     "content": "140°"
+    },
+    {
+     "id": 4,
+     "content": "220°"
+    }
+   ],
+   "points": 1,
+   "solution": "Ці кути сусідні (протилежні рівні), тож <span data-latex=\"x + (x + 40^{\\circ}) = 180^{\\circ}\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 70^{\\circ}\" data-type=\"inline-math\"></span>. Більший кут <span data-latex=\"110^{\\circ}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Діагональ квадрата <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> дорівнює 12 см. На стороні <span data-latex=\"BC\" data-type=\"inline-math\"></span> квадрата вибрано точку <span data-latex=\"K\" data-type=\"inline-math\"></span> так, що <span data-latex=\"\\angle KAB = 30^{\\circ}\" data-type=\"inline-math\"></span> (див. рисунок). Визначте площу трикутника <span data-latex=\"ABK\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 268 268\" width=\"308\" height=\"308\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"34,234 34,34 234,34 234,234\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"34\" y1=\"234\" x2=\"150\" y2=\"34\" stroke=\"#139C74\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M59 191 A50 50 0 0 0 34 184\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\"/><text x=\"46\" y=\"162\" font-size=\"22\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">30°</text><circle cx=\"34\" cy=\"234\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"12\" y=\"244\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"34\" cy=\"34\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"12\" y=\"24\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"234\" cy=\"34\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"256\" y=\"24\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"234\" cy=\"234\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"256\" y=\"244\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><circle cx=\"150\" cy=\"34\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"150\" y=\"12\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"12\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"18\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"24\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"36\\sqrt{3}\\text{ см²}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"36\\text{ см²}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "AB = 6√2, BK = AB · tg 30° = 2√6; S = (6√2 · 2√6)/2 = 12√3"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Відпочинкова зона в Парку здоров’я складається з двох ділянок квадратної форми площею 144 м² і 225 м² і ділянки у формі прямокутного трикутника, гіпотенуза та катет якого є сторонами квадратів (див. рисунок). На ділянці трикутної форми розміщено фонтан, який на схемі зображений у формі кола, що дотикається до сторін трикутника. Визначте радіус цього кола.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 400 300\" width=\"440\" height=\"330\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"30,110 180,110 180,260 30,260\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><text x=\"105\" y=\"185\" font-size=\"23\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">225 м²</text><polygon points=\"180,110 180,260 252,206\" fill=\"#FFF3C4\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"200\" r=\"30\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><polygon points=\"180,110 276,38 348,134 252,206\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><text x=\"264\" y=\"122\" font-size=\"23\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">144 м²</text><text x=\"250\" y=\"260\" font-size=\"23\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">фонтан</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "4,5 м"
+    },
+    {
+     "id": 1,
+     "content": "9 м"
+    },
+    {
+     "id": 2,
+     "content": "6 м"
+    },
+    {
+     "id": 3,
+     "content": "3 м"
+    },
+    {
+     "id": 4,
+     "content": "1,5 м"
+    }
+   ],
+   "points": 1,
+   "solution": "гіпотенуза 15, катет 12, другий катет 9; r = (9 + 12 − 15)/2 = 3 м"
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Діагоналі ромба дорівнюють 10 і 24. Знайдіть периметр ромба.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "34"
+    },
+    {
+     "id": 1,
+     "content": "48"
+    },
+    {
+     "id": 2,
+     "content": "68"
+    },
+    {
+     "id": 3,
+     "content": "120"
+    },
+    {
+     "id": 4,
+     "content": "52"
+    }
+   ],
+   "points": 1,
+   "solution": "Половини діагоналей — катети 5 і 12, сторона <span data-latex=\"\\sqrt{25 + 144} = 13\" data-type=\"inline-math\"></span>. Периметр <span data-latex=\"4 \\cdot  13 = 52\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Основи трапеції дорівнюють 6 і 14. Знайдіть довжину її середньої лінії.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "10"
+    },
+    {
+     "id": 1,
+     "content": "4"
+    },
+    {
+     "id": 2,
+     "content": "8"
+    },
+    {
+     "id": 3,
+     "content": "12"
+    },
+    {
+     "id": 4,
+     "content": "20"
+    }
+   ],
+   "points": 1,
+   "solution": "Середня лінія — півсума основ: <span data-latex=\"\\dfrac{6 + 14}{2} = 10\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Основи рівнобічної трапеції дорівнюють 10 і 4, а бічна сторона — 5. Знайдіть площу трапеції.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "20"
+    },
+    {
+     "id": 1,
+     "content": "28"
+    },
+    {
+     "id": 2,
+     "content": "35"
+    },
+    {
+     "id": 3,
+     "content": "56"
+    },
+    {
+     "id": 4,
+     "content": "70"
+    }
+   ],
+   "points": 1,
+   "solution": "Висота відтинає від більшої основи <span data-latex=\"\\dfrac{10 - 4}{2} = 3\" data-type=\"inline-math\"></span>, тож <span data-latex=\"h = \\sqrt{5^{2} - 3^{2}} = 4\" data-type=\"inline-math\"></span>. Площа <span data-latex=\"\\dfrac{10 + 4}{2} \\cdot  4 = 28\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Кут при більшій основі рівнобічної трапеції дорівнює 65°. Знайдіть кут при меншій основі.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "25°"
+    },
+    {
+     "id": 1,
+     "content": "65°"
+    },
+    {
+     "id": 2,
+     "content": "125°"
+    },
+    {
+     "id": 3,
+     "content": "135°"
+    },
+    {
+     "id": 4,
+     "content": "115°"
+    }
+   ],
+   "points": 1,
+   "solution": "Кути при бічній стороні разом дають <span data-latex=\"180^{\\circ}\" data-type=\"inline-math\"></span>: <span data-latex=\"180^{\\circ} - 65^{\\circ} = 115^{\\circ}\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "single",
+   "src": "",
+   "title": "",
+   "content": "Діагоналі трапеції <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> (<span data-latex=\"BC \\parallel  AD\" data-type=\"inline-math\"></span>) перетинаються в точці <span data-latex=\"O\" data-type=\"inline-math\"></span>. <span data-latex=\"BC = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"AD = 15\" data-type=\"inline-math\"></span>, <span data-latex=\"BO = 4\" data-type=\"inline-math\"></span>. Знайдіть <span data-latex=\"OD\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{8}{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "8"
+    },
+    {
+     "id": 3,
+     "content": "10"
+    },
+    {
+     "id": 4,
+     "content": "15"
+    }
+   ],
+   "points": 1,
+   "solution": "Трикутники <span data-latex=\"BOC\" data-type=\"inline-math\"></span> і <span data-latex=\"DOA\" data-type=\"inline-math\"></span> подібні з коефіцієнтом <span data-latex=\"\\dfrac{AD}{BC} = \\dfrac{15}{6}\" data-type=\"inline-math\"></span>: <span data-latex=\"OD = 4 \\cdot  \\dfrac{15}{6} = 10\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "connect",
+   "src": "",
+   "title": "",
+   "content": "На рисунку точки <span data-latex=\"K\" data-type=\"inline-math\"></span>, <span data-latex=\"L\" data-type=\"inline-math\"></span>, <span data-latex=\"M\" data-type=\"inline-math\"></span> та <span data-latex=\"N\" data-type=\"inline-math\"></span> — середини сторін <span data-latex=\"AB\" data-type=\"inline-math\"></span>, <span data-latex=\"BC\" data-type=\"inline-math\"></span>, <span data-latex=\"CD\" data-type=\"inline-math\"></span> та <span data-latex=\"AD\" data-type=\"inline-math\"></span> прямокутника <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> відповідно. <span data-latex=\"AB = 12\" data-type=\"inline-math\"></span> см, <span data-latex=\"BC = 16\" data-type=\"inline-math\"></span> см. Точка <span data-latex=\"P\" data-type=\"inline-math\"></span> — середина відрізка <span data-latex=\"KN\" data-type=\"inline-math\"></span>. Установіть відповідність між відрізком (1–3) та його довжиною (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 316 252\" width=\"284\" height=\"227\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"30,222 30,30 286,30 286,222\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\"/><polygon points=\"30,126 158,30 286,126 158,222\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linejoin=\"round\"/><circle cx=\"94\" cy=\"174\" r=\"8\" fill=\"#1E1B4B\"/><line x1=\"72\" y1=\"137\" x2=\"52\" y2=\"163\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"136\" y1=\"185\" x2=\"116\" y2=\"211\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"222\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"8\" y=\"232\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"30\" cy=\"30\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"8\" y=\"20\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"286\" cy=\"30\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"308\" y=\"20\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"286\" cy=\"222\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"308\" y=\"232\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><circle cx=\"30\" cy=\"126\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"8\" y=\"126\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><circle cx=\"158\" cy=\"30\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"158\" y=\"8\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">L</text><circle cx=\"286\" cy=\"126\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"308\" y=\"126\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text><circle cx=\"158\" cy=\"222\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"158\" y=\"246\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">N</text><circle cx=\"94\" cy=\"174\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"82\" y=\"156\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">P</text></svg></div>",
+   "lh": "Відрізок",
+   "rh": "Довжина відрізка",
+   "variants": [
+    {
+     "id": 0,
+     "content": "відстань від точки <span data-latex=\"P\" data-type=\"inline-math\"></span> до сторони <span data-latex=\"BC\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "відстань від точки <span data-latex=\"P\" data-type=\"inline-math\"></span> до середини <span data-latex=\"MN\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "відстань від точки <span data-latex=\"P\" data-type=\"inline-math\"></span> до вершини <span data-latex=\"C\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "8 см"
+    },
+    {
+     "id": 1,
+     "content": "9 см"
+    },
+    {
+     "id": 2,
+     "content": "12 см"
+    },
+    {
+     "id": 3,
+     "content": "15 см"
+    },
+    {
+     "id": 4,
+     "content": "16 см"
+    }
+   ],
+   "points": 3,
+   "solution": "P(4; 3) при A(0; 0): 1 — 12 − 3 = 9; 2 — середина MN (12; 3) → 8; 3 — C(16; 12): √(144 + 81) = 15"
+  },
+  {
+   "type": "connect",
+   "src": "",
+   "title": "",
+   "content": "Точка <span data-latex=\"O\" data-type=\"inline-math\"></span> — середина діагоналі <span data-latex=\"AC\" data-type=\"inline-math\"></span> ромба <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> (див. рисунок). <span data-latex=\"AK\" data-type=\"inline-math\"></span> — висота ромба, <span data-latex=\"AK = 12\" data-type=\"inline-math\"></span> см, <span data-latex=\"BK = 5\" data-type=\"inline-math\"></span> см. Узгодьте відрізок (1–3) із його довжиною (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 268 202\" width=\"255\" height=\"192\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"90,167 35,35 178,35 233,167\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"167\" x2=\"178\" y2=\"35\" stroke=\"#1E1B4B\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"167\" x2=\"90\" y2=\"35\" stroke=\"#139C74\" stroke-width=\"5\" stroke-linecap=\"round\"/><polyline points=\"90,47 102,47 102,35\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><line x1=\"134\" y1=\"101\" x2=\"90\" y2=\"35\" stroke=\"#FF6A3D\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"134\" cy=\"101\" r=\"8\" fill=\"#1E1B4B\"/><line x1=\"99\" y1=\"125\" x2=\"125\" y2=\"143\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"143\" y1=\"59\" x2=\"169\" y2=\"77\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"90\" cy=\"167\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"76\" y=\"187\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><circle cx=\"35\" cy=\"35\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"15\" y=\"29\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><circle cx=\"178\" cy=\"35\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"198\" y=\"27\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><circle cx=\"233\" cy=\"167\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"251\" y=\"181\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><circle cx=\"90\" cy=\"35\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"90\" y=\"13\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">K</text><circle cx=\"134\" cy=\"101\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"154\" y=\"111\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+   "lh": "Відрізок",
+   "rh": "Довжина відрізка",
+   "variants": [
+    {
+     "id": 0,
+     "content": "Сторона ромба"
+    },
+    {
+     "id": 1,
+     "content": "Радіус кола, вписаного в ромб"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"OK\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "variantsRight": [
+    {
+     "id": 0,
+     "content": "6 см"
+    },
+    {
+     "id": 1,
+     "content": "12 см"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2\\sqrt{13}\" data-type=\"inline-math\"></span> см"
+    },
+    {
+     "id": 3,
+     "content": "13 см"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"4\\sqrt{13}\" data-type=\"inline-math\"></span> см"
+    }
+   ],
+   "points": 3,
+   "solution": "1 — √(144 + 25) = 13; 2 — AK/2 = 6; 3 — KC = 8, AC = √(144 + 64) = 4√13, медіана прямокутного трикутника OK = 2√13"
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Сторони прямокутника дорівнюють 5 см і 12 см. Знайдіть довжину його діагоналі (у см).",
+   "variants": [],
+   "points": 2,
+   "solution": "Діагональ — гіпотенуза прямокутного трикутника з катетами 5 і 12: <span data-latex=\"d = \\sqrt{25 + 144} = 13\" data-type=\"inline-math\"></span> см."
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Діагональ квадрата дорівнює <span data-latex=\"6\\sqrt{2}\" data-type=\"inline-math\"></span> см. Знайдіть площу квадрата (у см²).",
+   "variants": [],
+   "points": 2,
+   "solution": "Сторона квадрата <span data-latex=\"a = \\dfrac{d}{\\sqrt{2}} = 6\" data-type=\"inline-math\"></span> см, площа <span data-latex=\"6^{2} = 36\" data-type=\"inline-math\"></span> см². Або одразу <span data-latex=\"S = \\dfrac{d^{2}}{2} = \\dfrac{72}{2} = 36\" data-type=\"inline-math\"></span>."
+  },
+  {
+   "type": "short",
+   "src": "",
+   "title": "",
+   "content": "Основи трапеції дорівнюють 7 см і 13 см, а висота — 6 см. Знайдіть площу трапеції (у см²).",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"S = \\dfrac{7 + 13}{2} \\cdot  6 = 10 \\cdot  6 = 60\" data-type=\"inline-math\"></span> см²."
+  }
+ ],
+ "answers": [
+  1,
+  2,
+  1,
+  4,
+  3,
+  0,
+  1,
+  2,
+  0,
+  3,
+  4,
+  0,
+  1,
+  4,
+  3,
+  "1 0 3",
+  "3 0 2",
+  "13",
+  "36",
+  "60"
+ ]
+}

@@ -1,0 +1,654 @@
+{
+ "number": 32,
+ "title": "Застосування похідної",
+ "intro": [
+  {
+   "title": "Геометричний зміст",
+   "text": "<span data-latex=\"f&#x27;(x_{0}) = \\operatorname{tg} \\alpha \" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Критичні точки",
+   "text": "<span data-latex=\"f&#x27;(x) = 0\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Монотонність і екстремуми",
+   "text": "знак похідної"
+  },
+  {
+   "title": "Найбільше й найменше",
+   "text": "на відрізку"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"\\operatorname{tg} \\alpha \" data-type=\"inline-math\"></span>",
+   "text": "нахил дотичної"
+  },
+  {
+   "big": "<span data-latex=\"f&#x27; = 0\" data-type=\"inline-math\"></span>",
+   "text": "критичні точки"
+  },
+  {
+   "big": "max",
+   "text": "на відрізку"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Геометричний зміст похідної",
+   "title": "Нахил дотичної",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"k\" data-type=\"inline-math\"></span>",
+     "title": "Кутовий коефіцієнт",
+     "formula": "",
+     "text": "<span data-latex=\"f&#x27;(x_{0}) = k = \\operatorname{tg} \\alpha \" data-type=\"inline-math\"></span>, де <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> — кут дотичної з віссю <span data-latex=\"x\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Рівняння дотичної",
+     "formula": "",
+     "text": "<span data-latex=\"y = f(x_{0}) + f&#x27;(x_{0})(x - x_{0})\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Знак",
+     "formula": "",
+     "text": "Гострий кут — <span data-latex=\"f&#x27;(x_{0}) &gt; 0\" data-type=\"inline-math\"></span>, тупий — <span data-latex=\"f&#x27;(x_{0}) &lt; 0\" data-type=\"inline-math\"></span>, дотична горизонтальна — <span data-latex=\"f&#x27;(x_{0}) = 0\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Кут 45°",
+    "content": "Дотична, проведена до графіка функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0}\" data-type=\"inline-math\"></span>, нахилена до додатного напряму осі <span data-latex=\"Ox\" data-type=\"inline-math\"></span> під кутом 45° (див. рисунок). Знайдіть <span data-latex=\"f&#x27;(x_{0})\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 464 457\" width=\"464\" height=\"457\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"362\" x2=\"444\" y2=\"362\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"444,362 430,356 430,369\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"154\" y1=\"437\" x2=\"154\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"154,10 148,24 160,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"438\" y=\"388\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"132\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"138\" y=\"382\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"30,226 35,232 39,237 62,260 72,268 76,271 81,275 86,278 90,281 95,284 100,286 104,288 109,291 114,292 118,294 123,296 128,297 132,298 142,300 165,300 170,299 174,298 184,296 188,295 193,293 197,291 207,287 211,284 216,282 221,279 225,276 230,272 235,269 239,265 244,261 248,257 253,253 258,248 262,243 272,233 276,228 286,216 290,210 300,198 304,191 314,177 318,170 323,162 328,155 332,147 337,138 342,130 346,122 356,104 360,95 365,85 369,76 379,56 383,46 388,35 393,25 397,14 402,3\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"142,364 408,98\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"257\" y1=\"362\" x2=\"257\" y2=\"249\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"257\" cy=\"249\" r=\"8\" fill=\"#1E1B4B\"/><text x=\"203\" y=\"341\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">45°</text><text x=\"257\" y=\"396\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x₀</text><text x=\"290\" y=\"96\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y = f(x)</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{3}}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "1"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"-\\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x_{0}) = \\operatorname{tg} 45^{\\circ} = 1\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Критичні точки",
+   "title": "Де похідна дорівнює нулю",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"f&#x27; = 0\" data-type=\"inline-math\"></span>",
+     "title": "Означення",
+     "formula": "",
+     "text": "Критичні точки — внутрішні точки, де <span data-latex=\"f&#x27;(x) = 0\" data-type=\"inline-math\"></span> або похідної не існує."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Алгоритм",
+     "formula": "",
+     "text": "Знайди <span data-latex=\"f&#x27;(x)\" data-type=\"inline-math\"></span>, прирівняй до нуля, розв’яжи рівняння."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "<span data-latex=\"f(x) = x^{2} - 8x\" data-type=\"inline-math\"></span>: <span data-latex=\"f&#x27;(x) = 2x - 8\" data-type=\"inline-math\"></span>, критична точка <span data-latex=\"x = 4\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Критичні точки",
+    "content": "Визначте всі критичні точки функції <span data-latex=\"f(x) = \\dfrac{x^{3}}{3} - 2x^{2} + 3x + 1\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "−3; −1"
+     },
+     {
+      "id": 1,
+      "content": "1; 3"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "−3; 1"
+     },
+     {
+      "id": 4,
+      "content": "1"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x) = x^{2} - 4x + 3 = (x - 1)(x - 3)\" data-type=\"inline-math\"></span>. Критичні точки: <span data-latex=\"1\" data-type=\"inline-math\"></span> і <span data-latex=\"3\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Монотонність і екстремуми",
+   "title": "Знак похідної",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "↗",
+     "title": "Зростає",
+     "formula": "",
+     "text": "<span data-latex=\"f&#x27;(x) &gt; 0\" data-type=\"inline-math\"></span> на проміжку — функція зростає."
+    },
+    {
+     "color": "mint",
+     "big": "↘",
+     "title": "Спадає",
+     "formula": "",
+     "text": "<span data-latex=\"f&#x27;(x) &lt; 0\" data-type=\"inline-math\"></span> — спадає."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Екстремум",
+     "formula": "",
+     "text": "Знак змінюється з «+» на «−» — максимум; з «−» на «+» — мінімум."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Проміжок спадання",
+    "content": "Укажіть проміжок, на якому спадає функція <span data-latex=\"f(x) = x^{3} - 3x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -1]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"[-1; 1]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"[1; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"[0; 3]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; +\\infty )\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x) = 3x^{2} - 3 = 3(x - 1)(x + 1)\" data-type=\"inline-math\"></span>. Між <span data-latex=\"-1\" data-type=\"inline-math\"></span> і <span data-latex=\"1\" data-type=\"inline-math\"></span> похідна від’ємна, тож функція спадає на <span data-latex=\"[-1; 1]\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Найбільше й найменше на відрізку",
+   "title": "Кінці й критичні точки",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "1",
+     "title": "Критичні точки",
+     "formula": "",
+     "text": "Знайди критичні точки, що лежать <b>усередині</b> відрізка."
+    },
+    {
+     "color": "mint",
+     "big": "2",
+     "title": "Значення",
+     "formula": "",
+     "text": "Обчисли <span data-latex=\"f\" data-type=\"inline-math\"></span> у цих точках і на кінцях відрізка."
+    },
+    {
+     "color": "coral",
+     "big": "3",
+     "title": "Вибір",
+     "formula": "",
+     "text": "Найбільше з чисел — найбільше значення, найменше — найменше."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "short",
+    "src": "",
+    "title": "Відкрита відповідь",
+    "content": "Визначте найбільше значення функції <span data-latex=\"y = 10\\sqrt{x} - x - 3\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"x \\in  [4; 36]\" data-type=\"inline-math\"></span>.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"y&#x27; = \\dfrac{5}{\\sqrt{x}} - 1 = 0\" data-type=\"inline-math\"></span> при <span data-latex=\"x = 25 \\in  [4; 36]\" data-type=\"inline-math\"></span>. <span data-latex=\"y(4) = 20 - 4 - 3 = 13\" data-type=\"inline-math\"></span>, <span data-latex=\"y(25) = 50 - 25 - 3 = 22\" data-type=\"inline-math\"></span>, <span data-latex=\"y(36) = 60 - 36 - 3 = 21\" data-type=\"inline-math\"></span>. Найбільше — <span data-latex=\"22\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "22"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дві дотичні",
+    "content": "На рисунку зображено графік функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> і дотичні до нього в точках <span data-latex=\"x_{1}\" data-type=\"inline-math\"></span> і <span data-latex=\"x_{2}\" data-type=\"inline-math\"></span>. Користуючись геометричним змістом похідної, знайдіть <span data-latex=\"f&#x27;(x_{1}) + f&#x27;(x_{2})\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 462 450\" width=\"462\" height=\"450\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"30\" y1=\"321\" x2=\"442\" y2=\"321\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"442,321 428,314 428,327\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"209\" y1=\"430\" x2=\"209\" y2=\"10\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"209,10 203,24 216,24\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"436\" y=\"347\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"187\" y=\"18\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"193\" y=\"341\" font-size=\"30\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><polyline points=\"42,318 50,288 55,275 59,263 63,252 68,241 76,223 81,215 85,208 89,202 94,196 98,191 102,187 107,184 111,181 116,179 120,177 128,175 133,175 137,176 142,176 146,178 150,179 154,181 159,184 163,186 168,189 172,193 176,196 180,200 185,204 189,208 194,212 202,220 207,224 211,229 215,233 220,237 224,242 228,246 233,250 237,254 241,257 246,261 254,267 259,270 267,274 272,276 276,278 280,279 293,279 298,278 306,274 311,272 319,264 324,260 332,248 337,241 341,234 345,225 350,216 354,206 358,195 363,183 367,170 371,156 376,141 380,125 384,108 389,90\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"178,406 404,179\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"46,175 225,175\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"320\" y1=\"321\" x2=\"320\" y2=\"264\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"131\" y1=\"321\" x2=\"131\" y2=\"175\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"320\" cy=\"264\" r=\"8\" fill=\"#1E1B4B\"/><circle cx=\"131\" cy=\"175\" r=\"8\" fill=\"#1E1B4B\"/><text x=\"286\" y=\"311\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">45°</text><text x=\"320\" y=\"355\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x₁</text><text x=\"131\" y=\"355\" font-size=\"28\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x₂</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{3}}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "f'(x₁) = tg45° = 1, у x₂ дотична горизонтальна: f'(x₂) = 0"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кутовий коефіцієнт",
+    "content": "Знайдіть кутовий коефіцієнт дотичної до графіка функції <span data-latex=\"f(x) = x^{2} - 3x\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = 2\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "0"
+     },
+     {
+      "id": 3,
+      "content": "1"
+     },
+     {
+      "id": 4,
+      "content": "2"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"k = f&#x27;(x_{0})\" data-type=\"inline-math\"></span>; <span data-latex=\"f&#x27;(x) = 2x - 3\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(2) = 1\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Рівняння дотичної",
+    "content": "Укажіть рівняння дотичної до графіка функції <span data-latex=\"f(x) = x^{2}\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = 1\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"y = 2x - 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"y = 2x + 1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"y = x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"y = 2x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"y = x + 1\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"y = f(x_{0}) + f&#x27;(x_{0})(x - x_{0})\" data-type=\"inline-math\"></span>: <span data-latex=\"f(1) = 1\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(1) = 2\" data-type=\"inline-math\"></span>, тож <span data-latex=\"y = 1 + 2(x - 1) = 2x - 1\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Проміжок зростання",
+    "content": "Укажіть проміжок зростання функції <span data-latex=\"f(x) = x^{2} - 4x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; 2]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"[-2; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"[2; +\\infty )\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"[0; 4]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(-\\infty ; 4]\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x) = 2x - 4 \\ge  0\" data-type=\"inline-math\"></span> при <span data-latex=\"x \\ge  2\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Точки екстремуму",
+    "content": "Скільки точок екстремуму має функція <span data-latex=\"f(x) = x^{4} - 2x^{2}\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "одну"
+     },
+     {
+      "id": 2,
+      "content": "дві"
+     },
+     {
+      "id": 3,
+      "content": "три"
+     },
+     {
+      "id": 4,
+      "content": "чотири"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"f&#x27;(x) = 4x^{3} - 4x = 4x(x - 1)(x + 1)\" data-type=\"inline-math\"></span>: три корені, і в кожному похідна змінює знак — три точки екстремуму."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Монотонність",
+    "content": "Яка з функцій зростає на всій числовій прямій?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"y = x^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"y = x^{3} + x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"y = -x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"y = x^{3} - 3x\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"y = \\operatorname{cos} x\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"(x^{3} + x)&#x27; = 3x^{2} + 1 &gt; 0\" data-type=\"inline-math\"></span> для всіх <span data-latex=\"x\" data-type=\"inline-math\"></span> — функція зростає скрізь."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Точка максимуму",
+    "content": "Знайдіть точку максимуму функції <span data-latex=\"f(x) = -x^{3} + 3x\" data-type=\"inline-math\"></span>.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"f&#x27;(x) = -3x^{2} + 3 = 0\" data-type=\"inline-math\"></span> при <span data-latex=\"x = \\pm 1\" data-type=\"inline-math\"></span>. Похідна змінює знак з «+» на «−» у точці <span data-latex=\"x = 1\" data-type=\"inline-math\"></span> — це максимум."
+   },
+   "answer": "1"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Найменше на відрізку",
+    "content": "Знайдіть найменше значення функції <span data-latex=\"f(x) = x^{2} - 6x + 1\" data-type=\"inline-math\"></span> на відрізку <span data-latex=\"[0; 5]\" data-type=\"inline-math\"></span>.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"f&#x27;(x) = 2x - 6 = 0\" data-type=\"inline-math\"></span> при <span data-latex=\"x = 3 \\in  [0; 5]\" data-type=\"inline-math\"></span>. <span data-latex=\"f(0) = 1\" data-type=\"inline-math\"></span>, <span data-latex=\"f(3) = -8\" data-type=\"inline-math\"></span>, <span data-latex=\"f(5) = -4\" data-type=\"inline-math\"></span>. Найменше — <span data-latex=\"-8\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "-8"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Найбільше на відрізку",
+    "content": "Знайдіть найбільше значення функції <span data-latex=\"f(x) = x^{3} - 3x\" data-type=\"inline-math\"></span> на відрізку <span data-latex=\"[0; 2]\" data-type=\"inline-math\"></span>.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"f&#x27;(x) = 3x^{2} - 3 = 0\" data-type=\"inline-math\"></span> при <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>. <span data-latex=\"f(0) = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"f(1) = -2\" data-type=\"inline-math\"></span>, <span data-latex=\"f(2) = 2\" data-type=\"inline-math\"></span>. Найбільше — <span data-latex=\"2\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "2"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "На рисунку зображено графік функції <span data-latex=\"y = f(x)\" data-type=\"inline-math\"></span> і дотичну до нього в точці з абсцисою 0. Користуючись геометричним змістом похідної, знайдіть <span data-latex=\"f&#x27;(0)\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 286 308\" width=\"286\" height=\"308\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"14\" y1=\"171\" x2=\"268\" y2=\"171\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"268,171 254,164 254,177\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"128\" y1=\"294\" x2=\"128\" y2=\"14\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"128,14 122,28 135,28\" fill=\"#1E1B4B\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"262\" y=\"197\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">x</text><text x=\"106\" y=\"22\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y</text><text x=\"112\" y=\"191\" font-size=\"26\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><text x=\"40\" y=\"195\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">−2</text><text x=\"216\" y=\"195\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">2</text><text x=\"140\" y=\"259\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"start\" dominant-baseline=\"central\" fill=\"#1E1B4B\">−2</text><polyline points=\"21,102 25,120 28,128 30,137 32,144 34,152 37,160 41,174 44,180 46,187 48,193 51,199 53,205 55,210 58,216 60,221 62,225 64,230 67,234 71,242 74,246 78,252 83,257 85,260 88,262 90,264 92,265 94,267 97,268 99,269 101,269 104,270 108,270 111,269 113,269 115,268 118,267 120,266 124,262 127,260 129,258 132,256 136,250 138,246 141,243 145,235 148,231 150,227 152,222 155,217 157,212 159,206 162,201 166,189 168,182 171,176 175,162 178,154 180,147 182,139 185,131 187,122 189,114 192,105 196,87 198,77 201,67 205,47\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"93,294 260,127\" fill=\"none\" stroke=\"#FF6A3D\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"236\" y=\"147\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">45°</text><text x=\"76\" y=\"56\" font-size=\"25\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">y = f(x)</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{\\sqrt{3}}{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "дотична в <span data-latex=\"x = 0\" data-type=\"inline-math\"></span> утворює з <span data-latex=\"Ox\" data-type=\"inline-math\"></span> кут 45°: <span data-latex=\"f&#x27;(0) = \\operatorname{tg}45^{\\circ} = 1\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Знайдіть критичні точки функції <span data-latex=\"y = x^{3} - 3x^{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>; <span data-latex=\"0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>; <span data-latex=\"2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"2\" data-type=\"inline-math\"></span>; <span data-latex=\"0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"2\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"y&#x27; = 3x^{2} - 6x = 3x(x - 2) = 0\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 0\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 2\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Знайдіть критичні точки функції <span data-latex=\"y = \\dfrac{1}{3}x^{3} + x^{2} - 3x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>; <span data-latex=\"0\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>; <span data-latex=\"1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>; <span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"1\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"y&#x27; = x^{2} + 2x - 3 = 0\" data-type=\"inline-math\"></span> → <span data-latex=\"x = -3\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 1\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Відкрита відповідь",
+    "content": "Визначте найбільше значення функції <span data-latex=\"y = 6\\sqrt{x} - x + 2\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"x \\in  [0; 25]\" data-type=\"inline-math\"></span>.",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"y&#x27; = \\dfrac{3}{\\sqrt{x}} - 1 = 0\" data-type=\"inline-math\"></span> → <span data-latex=\"x = 9\" data-type=\"inline-math\"></span>; <span data-latex=\"y(0) = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"y(9) = 11\" data-type=\"inline-math\"></span>, <span data-latex=\"y(25) = 7\" data-type=\"inline-math\"></span>"
+   },
+   "answer": "11"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Відкрита відповідь",
+    "content": "Для якого значення <span data-latex=\"x_{0}\" data-type=\"inline-math\"></span> функція <span data-latex=\"y = 3x^{4} - 4x^{3} - 1\" data-type=\"inline-math\"></span> набуває свого найменшого значення на проміжку <span data-latex=\"[-1; 2]\" data-type=\"inline-math\"></span>?",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"y&#x27; = 12x^{2}(x - 1)\" data-type=\"inline-math\"></span>; <span data-latex=\"y(-1) = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"y(0) = -1\" data-type=\"inline-math\"></span>, <span data-latex=\"y(1) = -2\" data-type=\"inline-math\"></span>, <span data-latex=\"y(2) = 15\" data-type=\"inline-math\"></span>"
+   },
+   "answer": "1"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"\\operatorname{tg} \\alpha \" data-type=\"inline-math\"></span>",
+   "text": "Похідна — нахил дотичної."
+  },
+  {
+   "big": "<span data-latex=\"f&#x27; = 0\" data-type=\"inline-math\"></span>",
+   "text": "Критичні точки."
+  },
+  {
+   "big": "+ → −",
+   "text": "Максимум; − → + — мінімум."
+  },
+  {
+   "big": "кінці",
+   "text": "На відрізку перевір і кінці."
+  }
+ ]
+}

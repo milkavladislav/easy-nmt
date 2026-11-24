@@ -1,0 +1,780 @@
+{
+ "number": 42,
+ "title": "Циліндр і конус",
+ "intro": [
+  {
+   "title": "Циліндр",
+   "text": "осьовий переріз"
+  },
+  {
+   "title": "Об’єм циліндра",
+   "text": "<span data-latex=\"\\pi R^{2}H\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Конус",
+   "text": "твірна й бічна поверхня"
+  },
+  {
+   "title": "Кут твірної",
+   "text": "прямокутний трикутник"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"\\pi R^{2}H\" data-type=\"inline-math\"></span>",
+   "text": "об’єм циліндра"
+  },
+  {
+   "big": "<span data-latex=\"\\pi Rl\" data-type=\"inline-math\"></span>",
+   "text": "бічна поверхня конуса"
+  },
+  {
+   "big": "<span data-latex=\"2R \\cdot  H\" data-type=\"inline-math\"></span>",
+   "text": "осьовий переріз"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Осьовий переріз циліндра",
+   "title": "Прямокутник",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"2RH\" data-type=\"inline-math\"></span>",
+     "title": "Площа",
+     "formula": "",
+     "text": "Осьовий переріз — прямокутник зі сторонами <span data-latex=\"2R\" data-type=\"inline-math\"></span> і <span data-latex=\"H\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Бічна поверхня",
+     "formula": "",
+     "text": "<span data-latex=\"S_{\\text{біч}} = 2\\pi RH\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Повна",
+     "formula": "",
+     "text": "<span data-latex=\"S_{\\text{повн}} = 2\\pi RH + 2\\pi R^{2}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Осьовий переріз",
+    "content": "Радіус основи циліндра дорівнює 5 см, а висота — 8 см. Знайдіть площу осьового перерізу циліндра.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"40\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"80\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"40\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"80\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"160\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"S = 2R \\cdot  H = 10 \\cdot  8 = 80\" data-type=\"inline-math\"></span> см²."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Об’єм циліндра",
+   "title": "Площа основи на висоту",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\pi R^{2}H\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"V = \\pi R^{2}H\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Обернена задача",
+     "formula": "",
+     "text": "Ділимо об’єм на <span data-latex=\"\\pi H\" data-type=\"inline-math\"></span> і добуваємо корінь."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Квадрат обертається",
+     "formula": "",
+     "text": "Обертання квадрата навколо сторони дає циліндр з <span data-latex=\"R = H = a\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Радіус за об’ємом",
+    "content": "Об’єм циліндра дорівнює <span data-latex=\"45\\pi \" data-type=\"inline-math\"></span> см³, а його висота — 5 см. Знайдіть радіус основи циліндра.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{3 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{9 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{4,5 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{5}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{5 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"\\pi R^{2} \\cdot  5 = 45\\pi \" data-type=\"inline-math\"></span>, <span data-latex=\"R^{2} = 9\" data-type=\"inline-math\"></span>, <span data-latex=\"R = 3\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Конус",
+   "title": "Вершина, радіус, твірна",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\pi Rl\" data-type=\"inline-math\"></span>",
+     "title": "Бічна поверхня",
+     "formula": "",
+     "text": "<span data-latex=\"S_{\\text{біч}} = \\pi Rl\" data-type=\"inline-math\"></span>, <span data-latex=\"l\" data-type=\"inline-math\"></span> — твірна."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"l^{2}\" data-type=\"inline-math\"></span>",
+     "title": "Піфагор",
+     "formula": "",
+     "text": "<span data-latex=\"l^{2} = R^{2} + H^{2}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>",
+     "title": "Об’єм",
+     "formula": "",
+     "text": "<span data-latex=\"V = \\dfrac{1}{3}\\pi R^{2}H\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Твірна за площею",
+    "content": "Діаметр основи конуса дорівнює 6 см, а площа його бічної поверхні — <span data-latex=\"24\\pi \" data-type=\"inline-math\"></span> см². Знайдіть довжину твірної конуса.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{2 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"R = 3\" data-type=\"inline-math\"></span>: <span data-latex=\"3\\pi l = 24\\pi \" data-type=\"inline-math\"></span>, тож <span data-latex=\"l = 8\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Кут твірної з основою",
+   "title": "Трикутник <span data-latex=\"SOA\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "tg",
+     "title": "Тангенс",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{tg} \\alpha  = \\dfrac{H}{R}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "45°",
+     "formula": "",
+     "text": "Якщо <span data-latex=\"H = R\" data-type=\"inline-math\"></span>, кут дорівнює <span data-latex=\"45^{\\circ}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Подібні конуси",
+     "formula": "",
+     "text": "Відсікли площиною на середині висоти — об’єм у 8 разів менший."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Кут твірної",
+    "content": "Висота конуса вдвічі менша за діаметр його основи. Знайдіть градусну міру кута між твірною конуса та площиною його основи.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "15°"
+     },
+     {
+      "id": 1,
+      "content": "30°"
+     },
+     {
+      "id": 2,
+      "content": "45°"
+     },
+     {
+      "id": 3,
+      "content": "60°"
+     },
+     {
+      "id": 4,
+      "content": "75°"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"H = \\dfrac{d}{2} = R\" data-type=\"inline-math\"></span>, тож <span data-latex=\"\\operatorname{tg} \\alpha  = 1\" data-type=\"inline-math\"></span> і <span data-latex=\"\\alpha  = 45^{\\circ}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Твірна",
+    "content": "На рисунку зображено циліндр, прямокутник <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> — його осьовий переріз. Укажіть відрізок, який є твірною цього циліндра.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 320 360\" width=\"320\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"50,285 270,285 270,45 50,45\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"0\" stroke-linejoin=\"round\"/><ellipse cx=\"160\" cy=\"285\" rx=\"110\" ry=\"31\" fill=\"#CFE8FB\" fill-opacity=\".7\" stroke=\"none\"/><path d=\"M50 285 A110 31 0 0 0 270 285\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><path d=\"M50 285 A110 31 0 0 1 270 285\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><ellipse cx=\"160\" cy=\"45\" rx=\"110\" ry=\"31\" fill=\"#CFE8FB\" fill-opacity=\".5\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><line x1=\"50\" y1=\"45\" x2=\"50\" y2=\"285\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"45\" x2=\"270\" y2=\"285\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"45\" x2=\"160\" y2=\"285\" stroke=\"#FF6A3D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"160\" cy=\"285\" r=\"5\" fill=\"#1E1B4B\"/><circle cx=\"160\" cy=\"45\" r=\"5\" fill=\"#1E1B4B\"/><line x1=\"50\" y1=\"285\" x2=\"270\" y2=\"285\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"50\" y1=\"45\" x2=\"270\" y2=\"45\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"30\" y=\"295\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"290\" y=\"295\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"290\" y=\"43\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"30\" y=\"43\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"184\" y=\"319\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><text x=\"186\" y=\"35\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O₁</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "AB"
+     },
+     {
+      "id": 1,
+      "content": "AC"
+     },
+     {
+      "id": 2,
+      "content": "AD"
+     },
+     {
+      "id": 3,
+      "content": "CD"
+     },
+     {
+      "id": 4,
+      "content": "OA"
+     }
+    ],
+    "points": 1,
+    "solution": "твірна сполучає відповідні точки кіл основ: AD"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тіло обертання",
+    "content": "Квадрат зі стороною 6 см обертається навколо прямої <span data-latex=\"a\" data-type=\"inline-math\"></span>, що містить його сторону (див. рисунок). Визначте площу повної поверхні отриманого тіла обертання.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 280 290\" width=\"280\" height=\"290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"70,70 210,70 210,210 70,210\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"255\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M188 42 A22 7 0 1 0 232 42\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><text x=\"228\" y=\"250\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">a</text><text x=\"140\" y=\"244\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">6 см</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"36\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"72\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"108\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"144\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"216\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "R = H = 6; S = 2π · 6 · 6 + 2π · 36 = 144π"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кут діагоналі",
+    "content": "Діагональ осьового перерізу циліндра утворює з площиною основи кут <span data-latex=\"45^{\\circ}\" data-type=\"inline-math\"></span>. Знайдіть висоту циліндра, якщо радіус його основи дорівнює 4 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"4\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"8\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{16 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "tg 45° = H/2R = 1 ⇒ H = 8"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Твірна",
+    "content": "На рисунку зображено конус, трикутник <span data-latex=\"ASB\" data-type=\"inline-math\"></span> — його осьовий переріз. Укажіть відрізок, який є твірною цього конуса.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 330\" width=\"300\" height=\"330\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><ellipse cx=\"150\" cy=\"280\" rx=\"110\" ry=\"30\" fill=\"#CFE8FB\" fill-opacity=\".7\" stroke=\"none\"/><path d=\"M40 280 A110 30 0 0 0 260 280\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><path d=\"M40 280 A110 30 0 0 1 260 280\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><line x1=\"150\" y1=\"30\" x2=\"40\" y2=\"280\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"30\" x2=\"260\" y2=\"280\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"280\" stroke=\"#FF6A3D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><polyline points=\"150,266 164,266 164,280\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"280\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"150\" y=\"16\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"20\" y=\"290\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"280\" y=\"290\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"132\" y=\"312\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "OB"
+     },
+     {
+      "id": 1,
+      "content": "SB"
+     },
+     {
+      "id": 2,
+      "content": "AB"
+     },
+     {
+      "id": 3,
+      "content": "SO"
+     },
+     {
+      "id": 4,
+      "content": "AO"
+     }
+    ],
+    "points": 1,
+    "solution": "твірна сполучає вершину з точкою кола основи: SB"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тіло обертання",
+    "content": "Прямокутний трикутник із катетами 9 см і 12 см обертається навколо більшого катета (див. рисунок). Визначте площу повної поверхні отриманого тіла обертання.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 320\" width=\"300\" height=\"320\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"230,280 70,280 230,50\" fill=\"#C9C5DD\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"230\" y1=\"20\" x2=\"230\" y2=\"305\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><polyline points=\"214,280 214,264 230,264\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><path d=\"M208 28 A22 7 0 1 0 252 28\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><text x=\"248\" y=\"310\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">a</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"324\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"216\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"180\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"135\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"81\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "R = 9, H = 12, l = 15; S = 135π + 81π = 216π"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Менший конус",
+    "content": "Об’єм конуса дорівнює 64 см³. Через середину висоти цього конуса паралельно його основі проведено площину. Утворений переріз є основою меншого конуса, вершина якого збігається з вершиною заданого. Знайдіть об’єм меншого конуса.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><ellipse cx=\"150\" cy=\"250\" rx=\"120\" ry=\"32\" fill=\"#CFE8FB\" fill-opacity=\".7\" stroke=\"none\"/><path d=\"M30 250 A120 32 0 0 0 270 250\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><path d=\"M30 250 A120 32 0 0 1 270 250\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><line x1=\"150\" y1=\"0\" x2=\"30\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"0\" x2=\"270\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"250\" stroke=\"#FF6A3D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><polyline points=\"150,236 164,236 164,250\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"250\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"150\" y=\"-14\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"132\" y=\"282\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><polygon points=\"20,155 230,155 280,95 70,95\" fill=\"#CFE8FB\" fill-opacity=\".55\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M90 125 A60 16 0 0 0 210 125\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"3\"/><path d=\"M90 125 A60 16 0 0 1 210 125\" fill=\"none\" stroke=\"#6D4AFF\" stroke-width=\"3\"/><line x1=\"150\" y1=\"0\" x2=\"90\" y2=\"125\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"0\" x2=\"210\" y2=\"125\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"125\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"128\" y=\"133\" font-size=\"26\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O₁</text><text x=\"260\" y=\"91\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">β</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"32\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"16\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"12\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"8\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"4\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "конуси подібні з k = 1/2: V = 64 · 1/8 = 8"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "На сайт інтернет-магазину надійшло замовлення на придбання свічки у формі циліндра. Яку із зображених свічок має вибрати для цього замовлення менеджер магазину?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><circle cx=\"65\" cy=\"88\" r=\"46\" fill=\"#3D63D8\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><line x1=\"65\" y1=\"42\" x2=\"68\" y2=\"28\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></div>"
+     },
+     {
+      "id": 1,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M25 25 L25 140 A40 12 0 0 0 105 140 L105 25\" fill=\"#F3E3B3\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><ellipse cx=\"65\" cy=\"25\" rx=\"40\" ry=\"12\" fill=\"#F3E3B3\" stroke=\"#1E1B4B\" stroke-width=\"3\"/></svg></div>"
+     },
+     {
+      "id": 2,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"30,40 85,40 85,145 30,145\" fill=\"#C0393B\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"85,40 108,25 108,128 85,145\" fill=\"#8E2526\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"30,40 53,25 108,25 85,40\" fill=\"#D96465\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg></div>"
+     },
+     {
+      "id": 3,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M65 12 L27 135 A38 11 0 0 0 103 135 Z\" fill=\"#3FA34D\" stroke=\"#1E1B4B\" stroke-width=\"3\"/></svg></div>"
+     },
+     {
+      "id": 4,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 130 160\" width=\"130\" height=\"160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"20,130 75,148 65,15\" fill=\"#F6A15B\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"75,148 112,128 65,15\" fill=\"#E07F35\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg></div>"
+     }
+    ],
+    "points": 1,
+    "solution": "циліндр — свічка Б"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Доберіть закінчення речення так, щоб утворилося правильне твердження: «Циліндр утворений обертанням…»",
+    "variants": [
+     {
+      "id": 0,
+      "content": "квадрата навколо його діагоналі"
+     },
+     {
+      "id": 1,
+      "content": "квадрата навколо його сторони"
+     },
+     {
+      "id": 2,
+      "content": "прямокутного трикутника навколо його гіпотенузи"
+     },
+     {
+      "id": 3,
+      "content": "прямокутного трикутника навколо його катета"
+     },
+     {
+      "id": 4,
+      "content": "прямокутника навколо його діагоналі"
+     }
+    ],
+    "points": 1,
+    "solution": "квадрат обертається навколо сторони — циліндр"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Периметр осьового перерізу циліндра дорівнює 32 см. Знайдіть площу бічної поверхні циліндра, якщо його висота дорівнює 10 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"30\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"60\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"90\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"120\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"360\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"2(2R + 10) = 32\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"R = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 2\\pi  \\cdot  3 \\cdot  10 = 60\\pi \" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Визначте об’єм циліндра, радіус основи якого дорівнює 4 см, а висота — 10 см.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"40\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{40\\pi }{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{160\\pi }{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"80\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"160\\pi \\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"V = \\pi  \\cdot  16 \\cdot  10 = 160\\pi \" data-type=\"inline-math\"></span>"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Об’єм циліндра дорівнює <span data-latex=\"72\\pi \" data-type=\"inline-math\"></span>. Визначте висоту цього циліндра, якщо радіус його основи дорівнює 3.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "24"
+     },
+     {
+      "id": 1,
+      "content": "12"
+     },
+     {
+      "id": 2,
+      "content": "9"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"9\\pi H = 72\\pi \" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"H = 8\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Осьовим перерізом циліндра є квадрат, площа якого дорівнює 16 см². Знайдіть площу повної поверхні циліндра.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"24\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"12\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"64\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"48\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"36\\pi \\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "сторона 4: <span data-latex=\"R = 2\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 4\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 2\\pi  \\cdot  2 \\cdot  4 + 2\\pi  \\cdot  4 = 24\\pi \" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Площа бічної поверхні циліндра дорівнює <span data-latex=\"30\\pi \" data-type=\"inline-math\"></span> см², а площа основи — <span data-latex=\"9\\pi \" data-type=\"inline-math\"></span> см². Знайдіть висоту циліндра.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{10 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{2,5 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{5 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"3\\dfrac{1}{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"4\\dfrac{2}{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"R = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"2\\pi  \\cdot  3 \\cdot  H = 30\\pi \" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"H = 5\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Діагональ осьового перерізу циліндра дорівнює 17 см, а радіус основи циліндра дорівнює 4 см. Знайдіть висоту циліндра.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{353}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{16 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{273}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{15 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{8 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"H = \\sqrt{17^{2} - 8^{2}} = 15\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"2RH\" data-type=\"inline-math\"></span>",
+   "text": "Осьовий переріз циліндра."
+  },
+  {
+   "big": "<span data-latex=\"\\pi R^{2}H\" data-type=\"inline-math\"></span>",
+   "text": "Об’єм циліндра."
+  },
+  {
+   "big": "<span data-latex=\"\\pi Rl\" data-type=\"inline-math\"></span>",
+   "text": "Бічна поверхня конуса."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{3}\\pi R^{2}H\" data-type=\"inline-math\"></span>",
+   "text": "Об’єм конуса."
+  }
+ ]
+}

@@ -1,0 +1,696 @@
+{
+ "number": 36,
+ "title": "Комбінаторика",
+ "intro": [
+  {
+   "title": "Правило добутку",
+   "text": "незалежні вибори множимо"
+  },
+  {
+   "title": "Перестановки",
+   "text": "<span data-latex=\"n!\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "title": "Розміщення",
+   "text": "порядок важливий"
+  },
+  {
+   "title": "Комбінації",
+   "text": "порядок не важливий"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "×",
+   "text": "правило добутку"
+  },
+  {
+   "big": "<span data-latex=\"n!\" data-type=\"inline-math\"></span>",
+   "text": "перестановки"
+  },
+  {
+   "big": "<span data-latex=\"C_{n}^{k}\" data-type=\"inline-math\"></span>",
+   "text": "комбінації"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Правило добутку",
+   "title": "Незалежні вибори множимо",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "×",
+     "title": "«І»",
+     "formula": "",
+     "text": "Вибір із <span data-latex=\"a\" data-type=\"inline-math\"></span> варіантів <b>і</b> вибір із <span data-latex=\"b\" data-type=\"inline-math\"></span> варіантів: <span data-latex=\"a \\cdot  b\" data-type=\"inline-math\"></span> способів."
+    },
+    {
+     "color": "mint",
+     "big": "+",
+     "title": "«Або»",
+     "formula": "",
+     "text": "Вибір <b>або</b> з одної групи, <b>або</b> з другої: <span data-latex=\"a + b\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "4 сорочки й 3 штанів — <span data-latex=\"4 \\cdot  3 = 12\" data-type=\"inline-math\"></span> комплектів."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Мова й секція",
+    "content": "Студент на першому курсі повинен вибрати одну з трьох іноземних мов, яку вивчатиме, та одну з п’яти спортивних секцій, що відвідуватиме. Скільки всього існує варіантів вибору студентом іноземної мови та спортивної секції?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "8"
+     },
+     {
+      "id": 2,
+      "content": "10"
+     },
+     {
+      "id": 3,
+      "content": "15"
+     },
+     {
+      "id": 4,
+      "content": "28"
+     }
+    ],
+    "points": 1,
+    "solution": "Мову вибирають трьома способами, секцію — п’ятьма, вибори незалежні: <span data-latex=\"3 \\cdot  5 = 15\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Перестановки",
+   "title": "Скільки способів упорядкувати",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"n!\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"P_{n} = n! = 1 \\cdot  2 \\cdot  \\ldots  \\cdot  n\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Значення",
+     "formula": "",
+     "text": "<span data-latex=\"3! = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"5! = 120\" data-type=\"inline-math\"></span>, <span data-latex=\"6! = 720\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Коли",
+     "formula": "",
+     "text": "Усі <span data-latex=\"n\" data-type=\"inline-math\"></span> об’єктів розставляємо в ряд — важливий лише порядок."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Чотири книжки",
+    "content": "Ірині на день народження друзі подарували чотири книжки. Вона пообіцяла якомога швидше їх прочитати. Скільки всього в Ірини є варіантів послідовності прочитання книг?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "12"
+     },
+     {
+      "id": 3,
+      "content": "24"
+     },
+     {
+      "id": 4,
+      "content": "256"
+     }
+    ],
+    "points": 1,
+    "solution": "Чотири книжки впорядковуємо всіма способами: <span data-latex=\"4! = 24\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Розміщення",
+   "title": "Вибираємо й упорядковуємо",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"A_{n}^{k}\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"A_{n}^{k} = n(n - 1)\\ldots (n - k + 1)\" data-type=\"inline-math\"></span> — <span data-latex=\"k\" data-type=\"inline-math\"></span> множників."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Коли",
+     "formula": "",
+     "text": "Порядок важливий: перше й друге місця, різні посади, різні машини."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "Голова й секретар із 8 осіб: <span data-latex=\"8 \\cdot  7 = 56\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Паркування",
+    "content": "На парковку, де вільними є десять паркомісць, заїжджають два автомобілі. Скільки всього є різних варіантів розміщення цих автомобілів на вільних паркомісцях?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "20"
+     },
+     {
+      "id": 1,
+      "content": "19"
+     },
+     {
+      "id": 2,
+      "content": "45"
+     },
+     {
+      "id": 3,
+      "content": "90"
+     },
+     {
+      "id": 4,
+      "content": "100"
+     }
+    ],
+    "points": 1,
+    "solution": "Автомобілі різні, тож порядок важливий: перший — 10 місць, другий — 9. <span data-latex=\"10 \\cdot  9 = 90\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Комбінації",
+   "title": "Порядок не важливий",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"C_{n}^{k}\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"C_{n}^{k} = \\dfrac{A_{n}^{k}}{k!}\" data-type=\"inline-math\"></span>. <span data-latex=\"C_{7}^{2} = \\dfrac{7 \\cdot  6}{2} = 21\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Коли",
+     "formula": "",
+     "text": "Порядок не важливий: команда, набір, пари рукостискань."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Перевірка",
+     "formula": "",
+     "text": "Питай себе: якщо поміняти обрані місцями — це новий варіант?"
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Кодовий замок",
+    "content": "Кодовий замок на дверях має десять кнопок із різними цифрами (див. рисунок). Щоб відчинити двері, потрібно одночасно натиснути дві кнопки, цифри на яких складають код замка. Скільки всього існує різних варіантів коду? Коди, утворені перестановкою цифр (наприклад, 1-2 і 2-1), однакові.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><div style=\"display:grid;grid-template-columns:repeat(5,64px);gap:12px;border:4px solid #1F1B4D;border-radius:14px;padding:16px;background:#fff\"><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">1</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">2</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">3</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">4</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">5</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">6</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">7</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">8</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">9</span><span style=\"width:60px;height:60px;border:3px solid #1F1B4D;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 32px Nunito Variable\">0</span></div></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "100"
+     },
+     {
+      "id": 1,
+      "content": "90"
+     },
+     {
+      "id": 2,
+      "content": "45"
+     },
+     {
+      "id": 3,
+      "content": "20"
+     },
+     {
+      "id": 4,
+      "content": "10"
+     }
+    ],
+    "points": 1,
+    "solution": "Кнопки натискають одночасно — порядок не важливий: <span data-latex=\"C_{10}^{2} = \\dfrac{10 \\cdot  9}{2} = 45\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Розклад іспитів",
+    "content": "Студенти однієї з груп під час сесії повинні скласти п’ять іспитів. Заступнику декана потрібно призначити складання цих іспитів на п’ять визначених дат. Скільки всього існує різних варіантів розкладу іспитів для цієї групи?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "25"
+     },
+     {
+      "id": 2,
+      "content": "60"
+     },
+     {
+      "id": 3,
+      "content": "120"
+     },
+     {
+      "id": 4,
+      "content": "240"
+     }
+    ],
+    "points": 1,
+    "solution": "P₅ = 5! = 120"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Гуртки",
+    "content": "На діаграмі — назви та кількість шкільних гуртків. Макар планує відвідувати два гуртки: один спортивного напряму та один гурток будь-якого іншого напряму. Скільки всього існує варіантів такого вибору гуртків у Макара?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 610 420\" width=\"610\" height=\"420\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M305 210 L305 40 A170 170 0 0 1 471 248 Z\" fill=\"#3FA9F5\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"479\" y=\"81\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">спортивні</text><text x=\"479\" y=\"107\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">4</text><path d=\"M305 210 L471 248 A170 170 0 0 1 438 316 Z\" fill=\"#9B8CF2\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"505\" y=\"293\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">STEM</text><text x=\"505\" y=\"319\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">1</text><path d=\"M305 210 L438 316 A170 170 0 0 1 305 380 Z\" fill=\"#F5B971\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"401\" y=\"386\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">музичні</text><text x=\"401\" y=\"412\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">2</text><path d=\"M305 210 L305 380 A170 170 0 0 1 139 172 Z\" fill=\"#FFD23F\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"131\" y=\"331\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">танцювальні</text><text x=\"131\" y=\"357\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">4</text><path d=\"M305 210 L139 172 A170 170 0 0 1 305 40 Z\" fill=\"#6CD4A8\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"167\" y=\"50\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">художні</text><text x=\"167\" y=\"76\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">3</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "60"
+     },
+     {
+      "id": 1,
+      "content": "16"
+     },
+     {
+      "id": 2,
+      "content": "24"
+     },
+     {
+      "id": 3,
+      "content": "96"
+     },
+     {
+      "id": 4,
+      "content": "40"
+     }
+    ],
+    "points": 1,
+    "solution": "спортивних 4, інших 1 + 2 + 4 + 3 = 10: 4 · 10 = 40"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "У кіоску є 10 видів вітальних листівок з Новим роком. Скільки всього можна утворити різних наборів листівок, кожен із яких складається з трьох листівок різних видів?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "30"
+     },
+     {
+      "id": 1,
+      "content": "90"
+     },
+     {
+      "id": 2,
+      "content": "120"
+     },
+     {
+      "id": 3,
+      "content": "240"
+     },
+     {
+      "id": 4,
+      "content": "720"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"C_{10}^{3} = \\dfrac{10 \\cdot  9 \\cdot  8}{6} = 120\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Скільки всього різних п’ятицифрових чисел можна утворити з цифр 0, 1, 3, 5, 7 (у числах цифри не повинні повторюватися)?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "5"
+     },
+     {
+      "id": 1,
+      "content": "24"
+     },
+     {
+      "id": 2,
+      "content": "25"
+     },
+     {
+      "id": 3,
+      "content": "96"
+     },
+     {
+      "id": 4,
+      "content": "120"
+     }
+    ],
+    "points": 1,
+    "solution": "першою не може бути 0: <span data-latex=\"4 \\cdot  4! = 96\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Блок соціальної реклами складається з 4 роликів: про шкідливість паління, про охорону довкілля, про правила дорожнього руху та про велосипедне місто. Ролик про шкідливість паління покажуть двічі — першим і останнім, а інші три — по одному разу. Скільки всього існує варіантів формування цього блоку?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "6"
+     },
+     {
+      "id": 1,
+      "content": "8"
+     },
+     {
+      "id": 2,
+      "content": "12"
+     },
+     {
+      "id": 3,
+      "content": "24"
+     },
+     {
+      "id": 4,
+      "content": "120"
+     }
+    ],
+    "points": 1,
+    "solution": "перший і останній ролики відомі, інші три — <span data-latex=\"3! = 6\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "У магазині є 7 видів подарункових наборів. Скільки всього існує варіантів вибору з них трьох різних наборів?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "21"
+     },
+     {
+      "id": 1,
+      "content": "35"
+     },
+     {
+      "id": 2,
+      "content": "210"
+     },
+     {
+      "id": 3,
+      "content": "343"
+     },
+     {
+      "id": 4,
+      "content": "840"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"C_{7}^{3} = 35\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "В автосалоні продають сім моделей автомобілів однієї марки, кожна — у чотирьох кольорах. Покупець обов’язково оформлює поліс страхування в одній із трьох страхових компаній. Скільки всього існує варіантів вибору моделі, кольору та страхової компанії?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "14"
+     },
+     {
+      "id": 1,
+      "content": "31"
+     },
+     {
+      "id": 2,
+      "content": "33"
+     },
+     {
+      "id": 3,
+      "content": "84"
+     },
+     {
+      "id": 4,
+      "content": "28"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"7 \\cdot  4 \\cdot  3 = 84\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "У магазині можна придбати полуницю 8 різних сортів, зокрема сорт «Альба». Марина хоче купити 2 різні сорти, один з яких обов’язково «Альба». Скільки всього існує варіантів такого вибору?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "7"
+     },
+     {
+      "id": 1,
+      "content": "28"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "56"
+     },
+     {
+      "id": 4,
+      "content": "15"
+     }
+    ],
+    "points": 1,
+    "solution": "«Альба» + один із 7 інших сортів"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Під час футбольного матчу тренер збирається замінити нападником одного із чотирьох захисників. Скільки всього варіантів такої заміни, якщо на лаві запасних два нападники?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "4"
+     },
+     {
+      "id": 2,
+      "content": "6"
+     },
+     {
+      "id": 3,
+      "content": "8"
+     },
+     {
+      "id": 4,
+      "content": "10"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"4 \\cdot  2 = 8\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Тренування",
+    "content": "Дмитро хоче придбати одну колекційну марку. В інтернет-магазині є 10 марок серії «Міста-герої», 20 марок серії «Славетна Україна» та 14 марок серії «Культурна спадщина». Скільки всього є варіантів вибору однієї марки, якщо всі марки різні?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "34"
+     },
+     {
+      "id": 1,
+      "content": "44"
+     },
+     {
+      "id": 2,
+      "content": "280"
+     },
+     {
+      "id": 3,
+      "content": "2400"
+     },
+     {
+      "id": 4,
+      "content": "2800"
+     }
+    ],
+    "points": 1,
+    "solution": "правило суми: <span data-latex=\"10 + 20 + 14 = 44\" data-type=\"inline-math\"></span>"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Відкрита відповідь",
+    "content": "У кіоску є чорний чай 8 видів (коробки по 100 г), серед них «чорна перлина». Покупець купує три коробки трьох різних видів, серед яких обов’язково «чорна перлина». Скільки всього є варіантів такого придбання?",
+    "variants": [],
+    "points": 2,
+    "solution": "«чорна перлина» + 2 з 7 інших: <span data-latex=\"C_{7}^{2}\" data-type=\"inline-math\"></span>"
+   },
+   "answer": "21"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Відкрита відповідь",
+    "content": "Колона складається з п’яти автобусів і двох супровідних автомобілів: одного на чолі колони, іншого — позаду неї. Скільки всього існує способів розташування автобусів і автомобілів у колоні?",
+    "variants": [],
+    "points": 2,
+    "solution": "автобуси <span data-latex=\"5! = 120\" data-type=\"inline-math\"></span>, автомобілі на чолі й позаду — 2 способи"
+   },
+   "answer": "240"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Відкрита відповідь",
+    "content": "В Оленки є 8 різних фотографій зі своїм зображенням та 6 різних фотографій класу. Скількома способами вона може вибрати 3 свої фотографії для сторінки в соцмережі та 2 фотографії класу для сайту школи?",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"C_{8}^{3} \\cdot  C_{6}^{2} = 56 \\cdot  15\" data-type=\"inline-math\"></span>"
+   },
+   "answer": "840"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Відкрита відповідь",
+    "content": "У магазині є 6 видів тарілок, 8 видів блюдець і 12 видів чашок. Олена купує бабусі в подарунок <b>або</b> чашку та блюдце, <b>або</b> лише тарілку. Скільки всього є способів купити такий подарунок?",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"12 \\cdot  8 + 6\" data-type=\"inline-math\"></span>"
+   },
+   "answer": "102"
+  }
+ ],
+ "summary": [
+  {
+   "big": "×",
+   "text": "Незалежні вибори множимо."
+  },
+  {
+   "big": "<span data-latex=\"n!\" data-type=\"inline-math\"></span>",
+   "text": "Перестановки."
+  },
+  {
+   "big": "<span data-latex=\"A_{n}^{k}\" data-type=\"inline-math\"></span>",
+   "text": "Порядок важливий."
+  },
+  {
+   "big": "<span data-latex=\"C_{n}^{k}\" data-type=\"inline-math\"></span>",
+   "text": "Порядок не важливий."
+  }
+ ]
+}

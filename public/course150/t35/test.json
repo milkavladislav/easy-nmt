@@ -1,0 +1,359 @@
+{
+ "title": "ДЗ 35. Статистика (НМТ 150+)",
+ "lessonNumber": 35,
+ "source": "hw-sheet",
+ "hwKey": "150-35",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Знайдіть середнє значення вибірки 3, 2, 5, 9, 3, 11, 24, 7, 16, 10.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "7"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "9"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{90}{10} = 9\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "При вивченні теми «Прогресії» учень отримав оцінки: 10; 7; 9; 7; 7; 7; 6; 7; 6; 7; 4. Знайдіть тематичну (середнє арифметичне).",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "7"
+    },
+    {
+     "id": 3,
+     "content": "8"
+    },
+    {
+     "id": 4,
+     "content": "9"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{77}{11} = 7\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "За таблицею (кількість мобільних телефонів, проданих інтернет-магазином за перші шість місяців року) укажіть медіану даної вибірки.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><table style=\"border-collapse:collapse;font-size:24px;margin:4px auto\"><tr><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\"><b>Місяць</b></td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">січ.</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">лют.</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">бер.</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">квіт.</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">трав.</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">черв.</td></tr><tr><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\"><b>Продано телефонів</b></td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">48</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">60</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">81</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">72</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">93</td><td style=\"border:2px solid #1F1B4D;padding:5px 14px;text-align:center\">48</td></tr></table></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "60"
+    },
+    {
+     "id": 1,
+     "content": "66"
+    },
+    {
+     "id": 2,
+     "content": "72"
+    },
+    {
+     "id": 3,
+     "content": "81"
+    },
+    {
+     "id": 4,
+     "content": "90"
+    }
+   ],
+   "points": 1,
+   "solution": "48, 48, <b>60, 72</b>, 81, 93: <span data-latex=\"(60 + 72) : 2 = 66\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "За тією самою таблицею укажіть середнє значення даної вибірки.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "60"
+    },
+    {
+     "id": 1,
+     "content": "66"
+    },
+    {
+     "id": 2,
+     "content": "67"
+    },
+    {
+     "id": 3,
+     "content": "85"
+    },
+    {
+     "id": 4,
+     "content": "89"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{402}{6} = 67\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "За тією самою таблицею укажіть розмах даної вибірки.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "33"
+    },
+    {
+     "id": 1,
+     "content": "40"
+    },
+    {
+     "id": 2,
+     "content": "45"
+    },
+    {
+     "id": 3,
+     "content": "48"
+    },
+    {
+     "id": 4,
+     "content": "93"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"93 - 48 = 45\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Хлопчик рибалив і зловив різні риби (див. кругову діаграму; сектор карасів — прямий кут). Визначте кількість зловлених лящів.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 460 270\" width=\"460\" height=\"270\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M230 135 L230 40 A95 95 0 0 1 325 135 Z\" fill=\"#3FA9F5\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"334\" y=\"43\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">карасі</text><text x=\"334\" y=\"69\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">90°</text><path d=\"M230 135 L325 135 A95 95 0 0 1 278 217 Z\" fill=\"#9B8CF2\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"357\" y=\"194\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">коропи</text><text x=\"357\" y=\"220\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">10</text><path d=\"M230 135 L278 217 A95 95 0 0 1 230 230 Z\" fill=\"#F5B971\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"268\" y=\"252\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">лящі</text><text x=\"268\" y=\"278\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">?</text><path d=\"M230 135 L230 230 A95 95 0 0 1 148 182 Z\" fill=\"#FFD23F\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"156\" y=\"239\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">товстолоби</text><text x=\"156\" y=\"265\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">10</text><path d=\"M230 135 L148 182 A95 95 0 0 1 230 40 Z\" fill=\"#6CD4A8\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"103\" y=\"68\" font-size=\"25\" font-style=\"normal\" font-weight=\"800\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">окуні</text><text x=\"103\" y=\"94\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">20</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "10"
+    },
+    {
+     "id": 1,
+     "content": "6"
+    },
+    {
+     "id": 2,
+     "content": "5"
+    },
+    {
+     "id": 3,
+     "content": "7"
+    },
+    {
+     "id": 4,
+     "content": "8"
+    }
+   ],
+   "points": 1,
+   "solution": "карасі — чверть, решта <span data-latex=\"20 + 10 + 10 + x\" data-type=\"inline-math\"></span> — три чверті: усього <span data-latex=\"4 \\cdot  15 = 60\" data-type=\"inline-math\"></span>, лящів <span data-latex=\"45 - 40 = 5\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "На діаграмі — кількість глядачів, які протягом доби відвідали 5 зал кінотеатру. Визначте залу кінотеатру, яку відвідало більше 35, але менше 43 глядачів.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 280\" width=\"440\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"70\" y1=\"234\" x2=\"424\" y2=\"234\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"242\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><line x1=\"70\" y1=\"198\" x2=\"424\" y2=\"198\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"206\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">10</text><line x1=\"70\" y1=\"163\" x2=\"424\" y2=\"163\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"171\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">20</text><line x1=\"70\" y1=\"127\" x2=\"424\" y2=\"127\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"135\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">30</text><line x1=\"70\" y1=\"91\" x2=\"424\" y2=\"91\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"99\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">40</text><line x1=\"70\" y1=\"56\" x2=\"424\" y2=\"56\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"64\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">50</text><line x1=\"70\" y1=\"20\" x2=\"424\" y2=\"20\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"28\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">60</text><polygon points=\"84,38 127,38 127,234 84,234\" fill=\"#F2F2F2\" stroke=\"#1E1B4B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"105\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">біла</text><polygon points=\"155,91 197,91 197,234 155,234\" fill=\"#3FD0FF\" stroke=\"#3FD0FF\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"176\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">блак.</text><polygon points=\"226,109 268,109 268,234 226,234\" fill=\"#FFF06A\" stroke=\"#FFF06A\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"247\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">жовта</text><polygon points=\"297,163 339,163 339,234 297,234\" fill=\"#7BE07B\" stroke=\"#7BE07B\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"318\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">зел.</text><polygon points=\"367,74 410,74 410,234 367,234\" fill=\"#B04BD0\" stroke=\"#B04BD0\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"389\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">фіол.</text><line x1=\"70\" y1=\"234\" x2=\"424\" y2=\"234\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"234\" x2=\"70\" y2=\"14\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"18\" y=\"127\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#1E1B4B\" font-family=\"Nunito Variable\" transform=\"rotate(-90 18 127)\">глядачів</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "біла"
+    },
+    {
+     "id": 1,
+     "content": "блакитна"
+    },
+    {
+     "id": 2,
+     "content": "жовта"
+    },
+    {
+     "id": 3,
+     "content": "зелена"
+    },
+    {
+     "id": 4,
+     "content": "фіолетова"
+    }
+   ],
+   "points": 1,
+   "solution": "40 глядачів — блакитна"
+  },
+  {
+   "type": "single",
+   "content": "За тією самою діаграмою визначте всі зали, у яких глядачів було більше, ніж у жовтій.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "біла, блакитна, зелена, фіолетова"
+    },
+    {
+     "id": 1,
+     "content": "фіолетова"
+    },
+    {
+     "id": 2,
+     "content": "біла, блакитна, фіолетова"
+    },
+    {
+     "id": 3,
+     "content": "зелена"
+    },
+    {
+     "id": 4,
+     "content": "біла, блакитна"
+    }
+   ],
+   "points": 1,
+   "solution": "більше 35: біла 55, блакитна 40, фіолетова 45"
+  },
+  {
+   "type": "single",
+   "content": "За тією самою діаграмою визначте суму глядачів, які відвідали білу і зелену зали.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "80"
+    },
+    {
+     "id": 1,
+     "content": "65"
+    },
+    {
+     "id": 2,
+     "content": "70"
+    },
+    {
+     "id": 3,
+     "content": "90"
+    },
+    {
+     "id": 4,
+     "content": "75"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"55 + 20 = 75\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "За тією самою діаграмою визначте, якому проміжку належить кількість глядачів у зеленій залі.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "[10; 15)"
+    },
+    {
+     "id": 1,
+     "content": "[15; 25)"
+    },
+    {
+     "id": 2,
+     "content": "[25; 30)"
+    },
+    {
+     "id": 3,
+     "content": "[30; 35)"
+    },
+    {
+     "id": 4,
+     "content": "[35; 40)"
+    }
+   ],
+   "points": 1,
+   "solution": "у зеленій 20 глядачів"
+  },
+  {
+   "type": "single",
+   "content": "Серед 100 учнів музичного класу провели опитування (див. діаграму). Визначте різницю між кількістю учнів, що обрали поп-музику, і кількістю учнів, що обрали класичну музику.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 280\" width=\"440\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"70\" y1=\"234\" x2=\"424\" y2=\"234\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"242\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">0</text><line x1=\"70\" y1=\"203\" x2=\"424\" y2=\"203\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"211\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">5</text><line x1=\"70\" y1=\"173\" x2=\"424\" y2=\"173\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"181\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">10</text><line x1=\"70\" y1=\"142\" x2=\"424\" y2=\"142\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"150\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">15</text><line x1=\"70\" y1=\"112\" x2=\"424\" y2=\"112\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"120\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">20</text><line x1=\"70\" y1=\"81\" x2=\"424\" y2=\"81\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"89\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">25</text><line x1=\"70\" y1=\"51\" x2=\"424\" y2=\"51\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"59\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">30</text><line x1=\"70\" y1=\"20\" x2=\"424\" y2=\"20\" stroke=\"#C9C5DD\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60\" y=\"28\" font-size=\"25\" font-style=\"normal\" font-weight=\"600\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#1E1B4B\">35</text><polygon points=\"84,81 127,81 127,234 84,234\" fill=\"#BDBDBD\" stroke=\"#BDBDBD\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"105\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">джаз</text><polygon points=\"155,51 197,51 197,234 155,234\" fill=\"#BDBDBD\" stroke=\"#BDBDBD\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"176\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">поп</text><polygon points=\"226,173 268,173 268,234 226,234\" fill=\"#BDBDBD\" stroke=\"#BDBDBD\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"247\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">рок</text><polygon points=\"297,142 339,142 339,234 297,234\" fill=\"#BDBDBD\" stroke=\"#BDBDBD\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"318\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">клас.</text><polygon points=\"367,112 410,112 410,234 367,234\" fill=\"#BDBDBD\" stroke=\"#BDBDBD\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"389\" y=\"262\" font-size=\"25\" font-style=\"normal\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">електр.</text><line x1=\"70\" y1=\"234\" x2=\"424\" y2=\"234\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"234\" x2=\"70\" y2=\"14\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"18\" y=\"127\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#1E1B4B\" font-family=\"Nunito Variable\" transform=\"rotate(-90 18 127)\">учнів</text></svg></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "5"
+    },
+    {
+     "id": 1,
+     "content": "10"
+    },
+    {
+     "id": 2,
+     "content": "15"
+    },
+    {
+     "id": 3,
+     "content": "20"
+    },
+    {
+     "id": 4,
+     "content": "25"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"30 - 15 = 15\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "На діаграмі — розподіл 900 занять у Google Meet, Zoom і Teams. Продовжте речення: «Кількість занять у Google Meet…<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:8px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 168 168\" width=\"168\" height=\"168\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><path d=\"M84 84 L84 4 A80 80 0 0 1 84 164 Z\" fill=\"#D9D9D9\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><path d=\"M84 84 L84 164 A80 80 0 0 1 16 41 Z\" fill=\"#9A9A9A\" stroke=\"#1E1B4B\" stroke-width=\"2\"/><path d=\"M84 84 L16 41 A80 80 0 0 1 84 4 Z\" fill=\"#4A4A4A\" stroke=\"#1E1B4B\" stroke-width=\"2\"/></svg><div style=\"display:flex;gap:28px;justify-content:center;font-size:24px;font-weight:700\"><span><span style=\"display:inline-block;width:26px;height:26px;border:2px solid #1F1B4D;background:#D9D9D9;vertical-align:middle;margin-right:8px\"></span>Zoom</span><span><span style=\"display:inline-block;width:26px;height:26px;border:2px solid #1F1B4D;background:#9A9A9A;vertical-align:middle;margin-right:8px\"></span>Google Meet</span><span><span style=\"display:inline-block;width:26px;height:26px;border:2px solid #1F1B4D;background:#4A4A4A;vertical-align:middle;margin-right:8px\"></span>Teams</span></div></div></div>",
+   "variants": [
+    {
+     "id": 0,
+     "content": "належить проміжку [500; 700]»"
+    },
+    {
+     "id": 1,
+     "content": "менше від 400»"
+    },
+    {
+     "id": 2,
+     "content": "менше, ніж кількість занять у Teams»"
+    },
+    {
+     "id": 3,
+     "content": "становить половину від загальної кількості»"
+    },
+    {
+     "id": 4,
+     "content": "удвічі менше від кількості занять у Zoom»"
+    }
+   ],
+   "points": 1,
+   "solution": "Google Meet — приблизно третина: <span data-latex=\"\\approx  300 &lt; 400\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  4,
+  2,
+  1,
+  2,
+  2,
+  2,
+  1,
+  2,
+  4,
+  1,
+  2,
+  1
+ ],
+ "incomplete": []
+}

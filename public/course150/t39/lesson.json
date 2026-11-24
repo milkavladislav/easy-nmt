@@ -1,0 +1,812 @@
+{
+ "number": 39,
+ "title": "Аксіоми стереометрії",
+ "intro": [
+  {
+   "title": "Аксіоми",
+   "text": "площина через три точки"
+  },
+  {
+   "title": "Паралельність",
+   "text": "через точку — одна"
+  },
+  {
+   "title": "Перпендикулярність",
+   "text": "єдиний перпендикуляр"
+  },
+  {
+   "title": "Відстані в кубі",
+   "text": "теорема Піфагора"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "∥",
+   "text": "паралельність"
+  },
+  {
+   "big": "⊥",
+   "text": "перпендикулярність"
+  },
+  {
+   "big": "÷",
+   "text": "мимобіжні прямі"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Паралельна пряма",
+   "title": "Через точку поза прямою",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "1",
+     "title": "Аксіома",
+     "formula": "",
+     "text": "Через точку поза прямою проходить <b>одна</b> пряма, паралельна даній."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Площина",
+     "formula": "",
+     "text": "Через три точки, що не лежать на одній прямій, проходить одна площина."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Мимобіжні",
+     "formula": "",
+     "text": "Не перетинаються й не паралельні — лежать у різних площинах."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Прямі через S",
+    "content": "На рисунку — чотирикутна піраміда <span data-latex=\"SABCD\" data-type=\"inline-math\"></span>. Скільки різних прямих, паралельних прямій <span data-latex=\"AB\" data-type=\"inline-math\"></span>, можна провести через точку <span data-latex=\"S\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 470 475\" width=\"470\" height=\"475\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"44\" y1=\"432\" x2=\"320\" y2=\"432\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"320\" y1=\"432\" x2=\"426\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"432\" x2=\"150\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"150\" y1=\"346\" x2=\"426\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"235\" y1=\"44\" x2=\"44\" y2=\"432\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"235\" y1=\"44\" x2=\"150\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"235\" y1=\"44\" x2=\"426\" y2=\"346\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"235\" y1=\"44\" x2=\"320\" y2=\"432\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"23\" y=\"454\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"334\" y=\"461\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"127\" y=\"364\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"450\" y=\"360\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"235\" y=\"30\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "лише одну"
+     },
+     {
+      "id": 2,
+      "content": "лише дві"
+     },
+     {
+      "id": 3,
+      "content": "лише три"
+     },
+     {
+      "id": 4,
+      "content": "більше трьох"
+     }
+    ],
+    "points": 1,
+    "solution": "Точка <span data-latex=\"S\" data-type=\"inline-math\"></span> не лежить на прямій <span data-latex=\"AB\" data-type=\"inline-math\"></span>, тож паралельна пряма через неї єдина."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Паралельна площина",
+   "title": "Через точку поза площиною",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "1",
+     "title": "Теорема",
+     "formula": "",
+     "text": "Через точку поза площиною проходить <b>одна</b> площина, паралельна даній."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Ознака",
+     "formula": "",
+     "text": "Площини паралельні, якщо дві прямі, що перетинаються, однієї паралельні другій."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Прямі",
+     "formula": "",
+     "text": "А от прямих через точку, паралельних площині, — безліч."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Площини через S",
+    "content": "На рисунку — трикутна піраміда <span data-latex=\"SABC\" data-type=\"inline-math\"></span>. Скільки різних площин, паралельних площині основи піраміди, можна провести через точку <span data-latex=\"S\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 413 471\" width=\"413\" height=\"471\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"44\" y1=\"352\" x2=\"369\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"369\" y1=\"352\" x2=\"74\" y2=\"428\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"428\" x2=\"44\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"44\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"369\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"74\" y2=\"428\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"373\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"392\" y=\"369\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"61\" y=\"458\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"162\" y=\"30\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "лише одну"
+     },
+     {
+      "id": 2,
+      "content": "лише дві"
+     },
+     {
+      "id": 3,
+      "content": "лише три"
+     },
+     {
+      "id": 4,
+      "content": "більше трьох"
+     }
+    ],
+    "points": 1,
+    "solution": "Точка <span data-latex=\"S\" data-type=\"inline-math\"></span> не лежить у площині основи — паралельна площина через неї одна."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Перпендикулярність",
+   "title": "Єдиний перпендикуляр",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "⊥",
+     "title": "До прямої",
+     "formula": "",
+     "text": "З точки поза прямою на пряму можна опустити лише один перпендикуляр."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "До площини",
+     "formula": "",
+     "text": "Пряма ⊥ площині, якщо вона ⊥ двом прямим цієї площини, що перетинаються."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Похила",
+     "formula": "",
+     "text": "Перпендикуляр коротший за будь-яку похилу з тієї ж точки."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Перпендикуляр до прямої",
+    "content": "У просторі задано пряму <span data-latex=\"a\" data-type=\"inline-math\"></span> і точку <span data-latex=\"M\" data-type=\"inline-math\"></span>, яка не належить цій прямій. Скільки всього прямих, що перетинають пряму <span data-latex=\"a\" data-type=\"inline-math\"></span>, можна провести перпендикулярно до неї через точку <span data-latex=\"M\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "одну"
+     },
+     {
+      "id": 2,
+      "content": "дві"
+     },
+     {
+      "id": 3,
+      "content": "три"
+     },
+     {
+      "id": 4,
+      "content": "безліч"
+     }
+    ],
+    "points": 1,
+    "solution": "Перпендикуляр із точки <span data-latex=\"M\" data-type=\"inline-math\"></span> на пряму <span data-latex=\"a\" data-type=\"inline-math\"></span> — єдиний."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Відстані в кубі",
+   "title": "Шукай прямий кут",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"a\\sqrt{2}\" data-type=\"inline-math\"></span>",
+     "title": "Діагональ грані",
+     "formula": "",
+     "text": "У кубі з ребром <span data-latex=\"a\" data-type=\"inline-math\"></span> діагональ грані — <span data-latex=\"a\\sqrt{2}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "<span data-latex=\"a\\sqrt{3}\" data-type=\"inline-math\"></span>",
+     "title": "Діагональ куба",
+     "formula": "",
+     "text": "Діагональ куба — <span data-latex=\"a\\sqrt{3}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "До ребра",
+     "formula": "",
+     "text": "Відстань — довжина перпендикуляра; часто це діагональ грані."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Відстань до ребра",
+    "content": "На рисунку — куб <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>, ребро якого дорівнює 1 см. Обчисліть відстань від точки <span data-latex=\"A\" data-type=\"inline-math\"></span> до прямої <span data-latex=\"B_{1}C_{1}\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 378 360\" width=\"378\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"321\" x2=\"250\" y2=\"321\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"128\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"128\" y1=\"250\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"250\" y1=\"321\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"40\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"111\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"40\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"250\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"338\" y1=\"250\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"321\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"347\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"260\" y=\"353\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"112\" y=\"278\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"360\" y=\"270\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"18\" y=\"110\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"266\" y=\"102\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"119\" y=\"28\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"356\" y=\"34\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1 см"
+     },
+     {
+      "id": 1,
+      "content": "2 см"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "3 см"
+     },
+     {
+      "id": 4,
+      "content": "1,5 см"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"B_{1}C_{1} \\perp \" data-type=\"inline-math\"></span> грані <span data-latex=\"AA_{1}B_{1}B\" data-type=\"inline-math\"></span>, тож <span data-latex=\"AB_{1} \\perp  B_{1}C_{1}\" data-type=\"inline-math\"></span>. Відстань <span data-latex=\"AB_{1} = \\sqrt{2}\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Пряма, паралельна площині",
+    "content": "Пряма <span data-latex=\"b\" data-type=\"inline-math\"></span> не має спільних точок із площиною <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>. Які з наведених тверджень є правильними?<p>I. Через пряму <span data-latex=\"b\" data-type=\"inline-math\"></span> можна провести лише одну площину, перпендикулярну до площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>II. Через пряму <span data-latex=\"b\" data-type=\"inline-math\"></span> можна провести лише одну площину, паралельну площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>III. У площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> можна провести лише одну пряму, паралельну прямій <span data-latex=\"b\" data-type=\"inline-math\"></span>.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "лише I"
+     },
+     {
+      "id": 1,
+      "content": "лише II"
+     },
+     {
+      "id": 2,
+      "content": "лише I і II"
+     },
+     {
+      "id": 3,
+      "content": "лише II і III"
+     },
+     {
+      "id": 4,
+      "content": "I, II і III"
+     }
+    ],
+    "points": 1,
+    "solution": "I — так; II — так; III — ні, таких прямих безліч"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Три твердження",
+    "content": "Які з наведених тверджень є правильними?<p>I. Через дві прямі, що перетинаються, можна провести лише одну площину.</p><p>II. Через точку, що не належить площині, можна провести безліч прямих, паралельних цій площині.</p><p>III. Якщо дві різні площини паралельні одній і тій самій прямій, то вони паралельні між собою.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "лише I"
+     },
+     {
+      "id": 1,
+      "content": "лише I і II"
+     },
+     {
+      "id": 2,
+      "content": "лише I і III"
+     },
+     {
+      "id": 3,
+      "content": "лише II і III"
+     },
+     {
+      "id": 4,
+      "content": "I, II і III"
+     }
+    ],
+    "points": 1,
+    "solution": "I — так; II — так; III — ні: площини можуть перетинатися"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Мимобіжні прямі",
+    "content": "На рисунку зображено куб <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>. Укажіть пряму, що утворює з <span data-latex=\"CD_{1}\" data-type=\"inline-math\"></span> пару мимобіжних прямих.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 378 360\" width=\"378\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"321\" x2=\"250\" y2=\"321\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"128\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"128\" y1=\"250\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"250\" y1=\"321\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"40\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"111\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"40\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"250\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"338\" y1=\"250\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"321\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"347\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"260\" y=\"353\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"112\" y=\"278\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"360\" y=\"270\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"18\" y=\"110\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"266\" y=\"102\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"119\" y=\"28\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"356\" y=\"34\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"A_{1}B\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"C_{1}D\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"CB_{1}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "AB"
+     },
+     {
+      "id": 4,
+      "content": "CD"
+     }
+    ],
+    "points": 1,
+    "solution": "AB ∥ (DCC₁), не перетинає CD₁ і не паралельна їй"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Пряма, паралельна грані",
+    "content": "На рисунку зображено куб <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>. Яка з наведених прямих паралельна площині <span data-latex=\"(AA_{1}B_{1})\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 378 360\" width=\"378\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"321\" x2=\"250\" y2=\"321\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"128\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"128\" y1=\"250\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"250\" y1=\"321\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"40\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"111\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"40\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"250\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"338\" y1=\"250\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"321\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"347\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"260\" y=\"353\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"112\" y=\"278\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"360\" y=\"270\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"18\" y=\"110\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"266\" y=\"102\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"119\" y=\"28\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"356\" y=\"34\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "BC"
+     },
+     {
+      "id": 1,
+      "content": "BD"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"C_{1}D\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"CB_{1}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"A_{1}B\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "C₁D ∥ A₁B, а A₁B лежить у площині AA₁B₁"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Площина через OB",
+    "content": "На рисунку — трикутна піраміда <span data-latex=\"SABC\" data-type=\"inline-math\"></span>, <span data-latex=\"O\" data-type=\"inline-math\"></span> — центр кола, вписаного в трикутник <span data-latex=\"ABC\" data-type=\"inline-math\"></span>. Укажіть площину, яка <b>може</b> проходити через <span data-latex=\"OB\" data-type=\"inline-math\"></span> і точку <span data-latex=\"A\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 413 471\" width=\"413\" height=\"471\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"74\" y1=\"428\" x2=\"369\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"369\" y1=\"352\" x2=\"44\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"352\" x2=\"74\" y2=\"428\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"74\" y2=\"428\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"369\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"44\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"162\" y2=\"377\" stroke=\"#1F1B4D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\"/><text x=\"60\" y=\"457\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"392\" y=\"367\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"21\" y=\"370\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"162\" y=\"30\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"162\" y=\"411\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "ASB"
+     },
+     {
+      "id": 1,
+      "content": "ASC"
+     },
+     {
+      "id": 2,
+      "content": "BSC"
+     },
+     {
+      "id": 3,
+      "content": "ASO"
+     },
+     {
+      "id": 4,
+      "content": "ABC"
+     }
+    ],
+    "points": 1,
+    "solution": "O лежить у площині ABC"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Площина SCM",
+    "content": "На рисунку — трикутна піраміда <span data-latex=\"SABC\" data-type=\"inline-math\"></span> з основою <span data-latex=\"ABC\" data-type=\"inline-math\"></span>. Точка <span data-latex=\"M\" data-type=\"inline-math\"></span> — середина ребра <span data-latex=\"AB\" data-type=\"inline-math\"></span>. Укажіть пряму, що лежить у площині <span data-latex=\"SCM\" data-type=\"inline-math\"></span>.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 413 475\" width=\"413\" height=\"475\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"50\" y1=\"432\" x2=\"369\" y2=\"356\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"369\" y1=\"356\" x2=\"44\" y2=\"356\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"356\" x2=\"50\" y2=\"432\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"44\" x2=\"50\" y2=\"432\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"44\" x2=\"369\" y2=\"356\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"44\" x2=\"44\" y2=\"356\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"44\" x2=\"209\" y2=\"394\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"356\" x2=\"209\" y2=\"394\" stroke=\"#1F1B4D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\"/><text x=\"33\" y=\"459\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"393\" y=\"371\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"21\" y=\"374\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"149\" y=\"30\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"221\" y=\"425\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "SB"
+     },
+     {
+      "id": 1,
+      "content": "AM"
+     },
+     {
+      "id": 2,
+      "content": "BC"
+     },
+     {
+      "id": 3,
+      "content": "SA"
+     },
+     {
+      "id": 4,
+      "content": "SC"
+     }
+    ],
+    "points": 1,
+    "solution": "S, C — точки площини SCM"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Ребра, паралельні AB",
+    "content": "На рисунку зображено куб <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>. Скільки всього є прямих, паралельних прямій <span data-latex=\"AB\" data-type=\"inline-math\"></span>, що містять ребра куба?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 378 360\" width=\"378\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"321\" x2=\"250\" y2=\"321\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"128\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"128\" y1=\"250\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"250\" y1=\"321\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"40\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"111\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"40\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"250\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"338\" y1=\"250\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"321\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"347\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"260\" y=\"353\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"112\" y=\"278\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"360\" y=\"270\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"18\" y=\"110\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"266\" y=\"102\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"119\" y=\"28\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"356\" y=\"34\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "лише одна"
+     },
+     {
+      "id": 2,
+      "content": "лише дві"
+     },
+     {
+      "id": 3,
+      "content": "лише три"
+     },
+     {
+      "id": 4,
+      "content": "більше як три"
+     }
+    ],
+    "points": 1,
+    "solution": "DC, A₁B₁, D₁C₁"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Грані, паралельні AB",
+    "content": "На рисунку зображено куб <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>. Скільки всього є площин, що містять грані куба, паралельних прямій <span data-latex=\"AB\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 378 360\" width=\"378\" height=\"360\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"321\" x2=\"250\" y2=\"321\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"128\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"128\" y1=\"250\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"250\" y1=\"321\" x2=\"338\" y2=\"250\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"111\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"40\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"111\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"321\" x2=\"40\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"250\" x2=\"128\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"338\" y1=\"250\" x2=\"338\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"321\" x2=\"250\" y2=\"111\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"347\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"260\" y=\"353\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"112\" y=\"278\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"360\" y=\"270\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"18\" y=\"110\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"266\" y=\"102\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"119\" y=\"28\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"356\" y=\"34\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "лише одна"
+     },
+     {
+      "id": 2,
+      "content": "лише дві"
+     },
+     {
+      "id": 3,
+      "content": "лише три"
+     },
+     {
+      "id": 4,
+      "content": "більше як три"
+     }
+    ],
+    "points": 1,
+    "solution": "(DCC₁) і (A₁B₁C₁)"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Прямі через вершину",
+    "content": "На рисунку — трикутна піраміда <span data-latex=\"SABC\" data-type=\"inline-math\"></span> з основою <span data-latex=\"ABC\" data-type=\"inline-math\"></span>. Скільки всього прямих, паралельних площині основи, можна провести через вершину <span data-latex=\"S\" data-type=\"inline-math\"></span>?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 413 471\" width=\"413\" height=\"471\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"44\" y1=\"352\" x2=\"369\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"369\" y1=\"352\" x2=\"74\" y2=\"428\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"428\" x2=\"44\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"44\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"369\" y2=\"352\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"162\" y1=\"44\" x2=\"74\" y2=\"428\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"373\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"392\" y=\"369\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"61\" y=\"458\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"162\" y=\"30\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "лише одну"
+     },
+     {
+      "id": 2,
+      "content": "лише дві"
+     },
+     {
+      "id": 3,
+      "content": "лише три"
+     },
+     {
+      "id": 4,
+      "content": "безліч"
+     }
+    ],
+    "points": 1,
+    "solution": "усі прямі через S у площині, паралельній основі"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "НМТ",
+    "title": "Прямі й грань куба",
+    "content": "На рисунку — куб <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>; <span data-latex=\"\\pi \" data-type=\"inline-math\"></span> — площина <span data-latex=\"AA_{1}B_{1}B\" data-type=\"inline-math\"></span>. До кожного початку речення (1–3) доберіть закінчення (А–Д) так, щоб утворилося правильне твердження.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 293 280\" width=\"293\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"240\" x2=\"190\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"240\" x2=\"103\" y2=\"190\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"103\" y1=\"190\" x2=\"253\" y2=\"190\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"190\" y1=\"240\" x2=\"253\" y2=\"190\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"90\" x2=\"190\" y2=\"90\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"90\" x2=\"103\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"103\" y1=\"40\" x2=\"253\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"90\" x2=\"253\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"240\" x2=\"40\" y2=\"90\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"103\" y1=\"190\" x2=\"103\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"253\" y1=\"190\" x2=\"253\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"240\" x2=\"190\" y2=\"90\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"267\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"200\" y=\"272\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"87\" y=\"218\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"275\" y=\"210\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"18\" y=\"90\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"206\" y=\"82\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"93\" y=\"28\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"270\" y=\"34\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+    "lh": "Початок речення",
+    "rh": "Закінчення речення",
+    "variants": [
+     {
+      "id": 0,
+      "content": "Пряма <span data-latex=\"CB\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "Пряма <span data-latex=\"CD_{1}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "Пряма <span data-latex=\"AC\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "паралельна площині <span data-latex=\"\\pi \" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "перпендикулярна до площини <span data-latex=\"\\pi \" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "належить площині <span data-latex=\"\\pi \" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "має з площиною <span data-latex=\"\\pi \" data-type=\"inline-math\"></span> лише дві спільні точки"
+     },
+     {
+      "id": 4,
+      "content": "утворює з площиною <span data-latex=\"\\pi \" data-type=\"inline-math\"></span> кут 45°"
+     }
+    ],
+    "points": 3,
+    "solution": "CB ⊥ (AA₁B₁); CD₁ ∥ BA₁; проєкція AC — AB, ∠CAB = 45°"
+   },
+   "answer": "1 0 4"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "connect",
+    "src": "НМТ",
+    "title": "Площини куба",
+    "content": "На рисунку — куб <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>. Установіть відповідність між початком речення (1–3) та його закінченням (А–Д).<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 349 333\" width=\"349\" height=\"333\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"294\" x2=\"230\" y2=\"294\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"294\" x2=\"120\" y2=\"230\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"120\" y1=\"230\" x2=\"310\" y2=\"230\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"230\" y1=\"294\" x2=\"310\" y2=\"230\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"104\" x2=\"230\" y2=\"104\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"104\" x2=\"120\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"104\" x2=\"310\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"294\" x2=\"40\" y2=\"104\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"230\" x2=\"120\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"310\" y1=\"230\" x2=\"310\" y2=\"40\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"294\" x2=\"230\" y2=\"104\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"22\" y=\"320\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"240\" y=\"326\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"104\" y=\"258\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"332\" y=\"250\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"18\" y=\"104\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A₁</text><text x=\"246\" y=\"96\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D₁</text><text x=\"110\" y=\"28\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B₁</text><text x=\"327\" y=\"34\" font-size=\"34\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C₁</text></svg></div>",
+    "lh": "Початок речення",
+    "rh": "Закінчення",
+    "variants": [
+     {
+      "id": 0,
+      "content": "Точка <span data-latex=\"C_{1}\" data-type=\"inline-math\"></span> симетрична точці <span data-latex=\"A_{1}\" data-type=\"inline-math\"></span> відносно площини"
+     },
+     {
+      "id": 1,
+      "content": "Пряма <span data-latex=\"AD\" data-type=\"inline-math\"></span> паралельна площині"
+     },
+     {
+      "id": 2,
+      "content": "Пряма <span data-latex=\"CC_{1}\" data-type=\"inline-math\"></span> є прямою перетину площин <span data-latex=\"(BB_{1}C_{1})\" data-type=\"inline-math\"></span> та"
+     }
+    ],
+    "variantsRight": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(AA_{1}B_{1})\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(DD_{1}C_{1})\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(A_{1}B_{1}C_{1})\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(AA_{1}D_{1})\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"(BB_{1}D_{1})\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 3,
+    "solution": "A₁C₁ ⊥ (BB₁D₁) і ділиться нею навпіл; AD ∥ A₁D₁; CC₁ — спільне ребро граней"
+   },
+   "answer": "4 2 1"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Через точку A",
+    "content": "Укажіть <b>усі</b> правильні твердження.<p>I. Через точку <span data-latex=\"A\" data-type=\"inline-math\"></span>, що не належить площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, можна провести лише одну пряму, паралельну площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>II. Через точку <span data-latex=\"A\" data-type=\"inline-math\"></span>, що не належить площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, можна провести лише одну площину, паралельну площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>III. Через точку <span data-latex=\"A\" data-type=\"inline-math\"></span>, що не належить площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, можна провести лише одну пряму, перпендикулярну до площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p><p>IV. Через точку <span data-latex=\"A\" data-type=\"inline-math\"></span>, що не належить площині <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>, можна провести лише одну площину, перпендикулярну до площини <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span>.</p>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "II"
+     },
+     {
+      "id": 1,
+      "content": "II, III"
+     },
+     {
+      "id": 2,
+      "content": "I, IV"
+     },
+     {
+      "id": 3,
+      "content": "I, III, IV"
+     },
+     {
+      "id": 4,
+      "content": "II, III, IV"
+     }
+    ],
+    "points": 1,
+    "solution": "I — ні (безліч), II — так, III — так, IV — ні (безліч)"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Сфера й площина",
+    "content": "Площина <span data-latex=\"\\beta \" data-type=\"inline-math\"></span> дотикається до сфери в точці <span data-latex=\"M\" data-type=\"inline-math\"></span> (див. рисунок). Скільки можна провести площин, кожна з яких перпендикулярна до площини <span data-latex=\"\\beta \" data-type=\"inline-math\"></span> і має зі сферою лише одну спільну точку?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 440 320\" width=\"440\" height=\"320\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"30,290 330,290 420,190 120,190\" fill=\"#FCE9B8\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"225\" cy=\"130\" r=\"100\" fill=\"#CFE8FB\" stroke=\"#1E1B4B\" stroke-width=\"4\"/><path d=\"M125 130 A100 25 0 0 0 325 130\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\"/><path d=\"M125 130 A100 25 0 0 1 325 130\" fill=\"none\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-dasharray=\"8 7\"/><circle cx=\"225\" cy=\"230\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"203\" y=\"238\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text><text x=\"400\" y=\"210\" font-size=\"32\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">β</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодної"
+     },
+     {
+      "id": 1,
+      "content": "лише одну"
+     },
+     {
+      "id": 2,
+      "content": "лише дві"
+     },
+     {
+      "id": 3,
+      "content": "лише три"
+     },
+     {
+      "id": 4,
+      "content": "безліч"
+     }
+    ],
+    "points": 1,
+    "solution": "дотичні площини в точках «екватора», паралельного β, — їх безліч"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Похила і проєкція",
+    "content": "Відрізок <span data-latex=\"OB\" data-type=\"inline-math\"></span> є проєкцією похилої <span data-latex=\"AB\" data-type=\"inline-math\"></span> на площину <span data-latex=\"\\alpha \" data-type=\"inline-math\"></span> (див. рисунок). Які з наведених тверджень є правильними?<p>I. Відрізки <span data-latex=\"AB\" data-type=\"inline-math\"></span> і <span data-latex=\"OB\" data-type=\"inline-math\"></span> перпендикулярні.</p><p>II. Відрізки <span data-latex=\"AB\" data-type=\"inline-math\"></span> і <span data-latex=\"OA\" data-type=\"inline-math\"></span> перпендикулярні.</p><p>III. Відрізки <span data-latex=\"OB\" data-type=\"inline-math\"></span> і <span data-latex=\"OA\" data-type=\"inline-math\"></span> перпендикулярні.</p><div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 280\" width=\"420\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"70,250 400,250 350,160 20,160\" fill=\"#CFE8FB\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"350\" y=\"152\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">α</text><line x1=\"290\" y1=\"30\" x2=\"150\" y2=\"210\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"210\" x2=\"290\" y2=\"200\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"290\" cy=\"30\" r=\"6\" fill=\"#1E1B4B\"/><circle cx=\"150\" cy=\"210\" r=\"6\" fill=\"#1E1B4B\"/><circle cx=\"290\" cy=\"200\" r=\"6\" fill=\"#1E1B4B\"/><text x=\"302\" y=\"30\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"122\" y=\"224\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"302\" y=\"210\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "лише I"
+     },
+     {
+      "id": 1,
+      "content": "лише II та III"
+     },
+     {
+      "id": 2,
+      "content": "лише I та II"
+     },
+     {
+      "id": 3,
+      "content": "лише III"
+     },
+     {
+      "id": 4,
+      "content": "лише II"
+     }
+    ],
+    "points": 1,
+    "solution": "AO ⊥ α, тому лише OB ⊥ OA"
+   },
+   "answer": 3
+  }
+ ],
+ "summary": [
+  {
+   "big": "1",
+   "text": "Через точку — одна паралельна пряма."
+  },
+  {
+   "big": "1",
+   "text": "Через точку — одна паралельна площина."
+  },
+  {
+   "big": "⊥",
+   "text": "Перпендикуляр єдиний."
+  },
+  {
+   "big": "<span data-latex=\"a\\sqrt{2}\" data-type=\"inline-math\"></span>",
+   "text": "Діагональ грані куба."
+  }
+ ]
+}

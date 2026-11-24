@@ -1,0 +1,338 @@
+{
+ "title": "ДЗ 31. Похідна (НМТ 150+)",
+ "lessonNumber": 31,
+ "source": "hw-sheet",
+ "hwKey": "150-31",
+ "questions": [
+  {
+   "type": "single",
+   "content": "Знайдіть похідну <span data-latex=\"f&#x27;(x)\" data-type=\"inline-math\"></span> функції <span data-latex=\"f(x) = 6x^{2} + 4\\sqrt{x} + 3\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"12x + \\dfrac{2}{\\sqrt{x}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"6x + \\dfrac{4}{\\sqrt{x}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"2x^{3} + \\dfrac{8\\sqrt{x^{3}}}{3} + 3x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"12x + \\dfrac{8}{\\sqrt{x}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"6x + 2\\sqrt{x}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"12x + 4 \\cdot  \\dfrac{1}{2\\sqrt{x}} = 12x + \\dfrac{2}{\\sqrt{x}}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть похідну <span data-latex=\"y&#x27;\" data-type=\"inline-math\"></span> функції <span data-latex=\"y = x^{7} \\operatorname{ln} x\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"7x^{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"7x^{6} \\operatorname{ln} x + x^{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"x^{6} \\operatorname{ln} x + x^{6}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"7x^{6} \\operatorname{ln} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"7x \\operatorname{ln} x + x^{6}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"(uv)&#x27; = u&#x27;v + uv&#x27;\" data-type=\"inline-math\"></span>: <span data-latex=\"7x^{6} \\operatorname{ln} x + x^{7} \\cdot  \\dfrac{1}{x} = 7x^{6} \\operatorname{ln} x + x^{6}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть значення похідної функції <span data-latex=\"f(x) = 2x^{3} - 5\" data-type=\"inline-math\"></span> у точці <span data-latex=\"x_{0} = -1\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-11\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-7\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"3\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"6\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f&#x27;(x) = 6x^{2}\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(-1) = 6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть похідну <span data-latex=\"y&#x27;\" data-type=\"inline-math\"></span> функції <span data-latex=\"y = -\\dfrac{7}{6}x^{6} + 5x^{4} - 14\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"-\\dfrac{x^{7}}{6} + x^{5} - 14x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-7x^{5} + 20x^{3} - 14\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"-7x^{5} + 20x^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-7x^{7} + 25x^{5}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"-\\dfrac{7}{36}x^{5} + \\dfrac{5}{4}x^{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"-\\dfrac{7}{6} \\cdot  6x^{5} + 5 \\cdot  4x^{3} - 0 = -7x^{5} + 20x^{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть похідну <span data-latex=\"f&#x27;(x)\" data-type=\"inline-math\"></span> функції <span data-latex=\"f(x) = 3x^{2} + \\dfrac{2}{x^{2}} + 4\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"x^{3} - \\dfrac{1}{x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"6x + \\dfrac{1}{x} + 4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"6x + \\dfrac{2}{x^{3}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"6x - \\dfrac{4}{x^{3}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"x^{3} - \\dfrac{1}{x} + 4x\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"(2x^{-2})&#x27; = -4x^{-3}\" data-type=\"inline-math\"></span>: <span data-latex=\"f&#x27;(x) = 6x - \\dfrac{4}{x^{3}}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть значення похідної функції <span data-latex=\"f(x) = 6x - 2\\operatorname{cos} x\" data-type=\"inline-math\"></span> у точці з абсцисою <span data-latex=\"x_{0} = \\dfrac{\\pi }{2}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"3\\pi  - 2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"6\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"3\\pi  + 2\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"4\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"8\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f&#x27;(x) = 6 + 2\\operatorname{sin} x\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(\\dfrac{\\pi }{2}) = 6 + 2 = 8\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть похідну <span data-latex=\"f&#x27;(x)\" data-type=\"inline-math\"></span> функції <span data-latex=\"f(x) = \\dfrac{x^{2} - 5}{3x}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{x^{2}}{6} - \\dfrac{5}{3}\\operatorname{ln}\\left|x\\right|\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{x^{2} - 5}{3x^{2}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{x^{2} + 5}{9x^{2}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{x^{2} + 5}{3x^{2}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{2x}{9}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f(x) = \\dfrac{x}{3} - \\dfrac{5}{3x}\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(x) = \\dfrac{1}{3} + \\dfrac{5}{3x^{2}} = \\dfrac{x^{2} + 5}{3x^{2}}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Укажіть похідну <span data-latex=\"f&#x27;(x)\" data-type=\"inline-math\"></span> функції <span data-latex=\"f(x) = \\dfrac{2x - 3}{x}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{3}{x^{2}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"\\dfrac{3}{x}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{4x - 3}{x^{2}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"-\\dfrac{3}{x^{2}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"2\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f(x) = 2 - \\dfrac{3}{x}\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(x) = \\dfrac{3}{x^{2}}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть похідну <span data-latex=\"f&#x27;(x)\" data-type=\"inline-math\"></span> функції <span data-latex=\"f(x) = \\operatorname{tg}\\dfrac{x}{4}\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"\\dfrac{1}{4}\\operatorname{tg} x\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"\\dfrac{\\operatorname{sin}\\dfrac{x}{4}}{\\operatorname{cos}\\dfrac{x}{4}}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"\\dfrac{1}{4\\operatorname{cos}^{2}\\dfrac{x}{4}}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"(\\operatorname{tg}u)&#x27; = \\dfrac{u&#x27;}{\\operatorname{cos}^{2} u}\" data-type=\"inline-math\"></span>, <span data-latex=\"u&#x27; = \\dfrac{1}{4}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть <span data-latex=\"f&#x27;(0{,}75)\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"f(x) = 5e^{4x - 3} - 8\" data-type=\"inline-math\"></span>.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"20e\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"20\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"10\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"7\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"5\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"f&#x27;(x) = 20e^{4x - 3}\" data-type=\"inline-math\"></span>, <span data-latex=\"f&#x27;(0{,}75) = 20e^{0} = 20\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Тіло рухається прямолінійно за законом <span data-latex=\"x(t) = t^{2} + t + 3\" data-type=\"inline-math\"></span>, де <span data-latex=\"x(t)\" data-type=\"inline-math\"></span> — координата точки (у метрах), <span data-latex=\"t\" data-type=\"inline-math\"></span> — час (у секундах). Визначте момент часу <span data-latex=\"t\" data-type=\"inline-math\"></span> (у секундах), у який швидкість точки дорівнюватиме 9 м/с.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"v(t) = x&#x27;(t) = 2t + 1 = 9\" data-type=\"inline-math\"></span> → <span data-latex=\"t = 4\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Матеріальна точка рухається прямолінійно за законом <span data-latex=\"s(t) = 2{,}5t^{2} - 15t\" data-type=\"inline-math\"></span>, <span data-latex=\"s\" data-type=\"inline-math\"></span> — шлях у метрах, <span data-latex=\"t\" data-type=\"inline-math\"></span> — час у секундах. Через який час від початку руху ця точка зупинилася?",
+   "variants": [
+    {
+     "id": 0,
+     "content": "1 с"
+    },
+    {
+     "id": 1,
+     "content": "2 с"
+    },
+    {
+     "id": 2,
+     "content": "3 с"
+    },
+    {
+     "id": 3,
+     "content": "3,5 с"
+    },
+    {
+     "id": 4,
+     "content": "4 с"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"v(t) = 5t - 15 = 0\" data-type=\"inline-math\"></span> → <span data-latex=\"t = 3\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  0,
+  1,
+  4,
+  2,
+  3,
+  4,
+  3,
+  0,
+  4,
+  1,
+  "4",
+  2
+ ],
+ "incomplete": []
+}

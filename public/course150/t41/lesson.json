@@ -1,0 +1,675 @@
+{
+ "number": 41,
+ "title": "Піраміда",
+ "intro": [
+  {
+   "title": "Правильна піраміда",
+   "text": "висота, апофема, ребро"
+  },
+  {
+   "title": "Прямокутні трикутники",
+   "text": "усередині піраміди"
+  },
+  {
+   "title": "Бічна поверхня",
+   "text": "півпериметр на апофему"
+  },
+  {
+   "title": "Об’єм",
+   "text": "<span data-latex=\"\\dfrac{1}{3}S_{\\text{осн}}H\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"SM\" data-type=\"inline-math\"></span>",
+   "text": "апофема"
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{3}SH\" data-type=\"inline-math\"></span>",
+   "text": "об’єм"
+  },
+  {
+   "big": "cos",
+   "text": "кути нахилу"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Кут бічної грані",
+   "title": "Трикутник висота — апофема",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"SM\" data-type=\"inline-math\"></span>",
+     "title": "Апофема",
+     "formula": "",
+     "text": "Висота бічної грані правильної піраміди."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Трикутник SOM",
+     "formula": "",
+     "text": "<span data-latex=\"SO\" data-type=\"inline-math\"></span> — висота, <span data-latex=\"OM\" data-type=\"inline-math\"></span> — відстань від центра до сторони, <span data-latex=\"SM\" data-type=\"inline-math\"></span> — гіпотенуза."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Кут",
+     "formula": "",
+     "text": "Кут між гранню й основою — <span data-latex=\"\\angle SMO\" data-type=\"inline-math\"></span>; <span data-latex=\"\\operatorname{cos} \\varphi  = \\dfrac{OM}{SM}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Кут бічної грані",
+    "content": "Висота правильної чотирикутної піраміди дорівнює 4 см, а її апофема — 5 см. Визначте косинус кута між площиною бічної грані піраміди і площиною основи.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 357 345\" width=\"357\" height=\"345\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"46,300 238,300 312,240 120,240\" fill=\"#CFE8FB\" fill-opacity=\"1\" stroke=\"none\"/><line x1=\"46\" y1=\"300\" x2=\"238\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"238\" y1=\"300\" x2=\"312\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"312\" y1=\"240\" x2=\"120\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"120\" y1=\"240\" x2=\"46\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"179\" y1=\"46\" x2=\"46\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"179\" y1=\"46\" x2=\"238\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"179\" y1=\"46\" x2=\"312\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"179\" y1=\"46\" x2=\"120\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"46\" y1=\"300\" x2=\"312\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"238\" y1=\"300\" x2=\"120\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"179\" y1=\"46\" x2=\"179\" y2=\"270\" stroke=\"#FF6A3D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"179\" y1=\"46\" x2=\"275\" y2=\"270\" stroke=\"#6D4AFF\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"179\" y1=\"270\" x2=\"275\" y2=\"270\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"179\" cy=\"270\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"24\" y=\"319\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"252\" y=\"329\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"336\" y=\"251\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"96\" y=\"251\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"179\" y=\"32\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"149\" y=\"280\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><text x=\"299\" y=\"284\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{3}{4}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{4}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"OM = \\sqrt{25 - 16} = 3\" data-type=\"inline-math\"></span>; <span data-latex=\"\\operatorname{cos} \\varphi  = \\dfrac{OM}{SM} = \\dfrac{3}{5}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Бічне ребро",
+   "title": "Трикутник висота — ребро",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"SA\" data-type=\"inline-math\"></span>",
+     "title": "Трикутник SOA",
+     "formula": "",
+     "text": "<span data-latex=\"SA^{2} = SO^{2} + AO^{2}\" data-type=\"inline-math\"></span>, де <span data-latex=\"AO\" data-type=\"inline-math\"></span> — радіус описаного кола основи."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Квадрат",
+     "formula": "",
+     "text": "У квадраті зі стороною <span data-latex=\"a\" data-type=\"inline-math\"></span>: <span data-latex=\"AO = \\dfrac{a\\sqrt{2}}{2}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Кут ребра",
+     "formula": "",
+     "text": "<span data-latex=\"\\operatorname{cos} \\alpha  = \\dfrac{AO}{SA}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Бічне ребро",
+    "content": "Висота правильної чотирикутної піраміди дорівнює 3 см, а сторона її основи — 12 см. Знайдіть довжину бічного ребра піраміди.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"3\\sqrt{5}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"5\\sqrt{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{9 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{15 см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"AO = \\dfrac{12\\sqrt{2}}{2} = 6\\sqrt{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"SA = \\sqrt{72 + 9} = 9\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Бічна поверхня",
+   "title": "Грані — рівні трикутники",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\dfrac{1}{2}Pm\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"S_{\\text{біч}} = \\dfrac{1}{2}P_{\\text{осн}} \\cdot  m\" data-type=\"inline-math\"></span>, <span data-latex=\"m\" data-type=\"inline-math\"></span> — апофема."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Апофема з ребра",
+     "formula": "",
+     "text": "<span data-latex=\"m = \\sqrt{b^{2} - (\\dfrac{a}{2})^{2}}\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Повна",
+     "formula": "",
+     "text": "<span data-latex=\"S_{\\text{повн}} = S_{\\text{біч}} + S_{\\text{осн}}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Трикутна піраміда",
+    "content": "Визначте площу бічної поверхні правильної трикутної піраміди, сторона основи якої дорівнює 10 см, а бічне ребро — 13 см.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 331 370\" width=\"331\" height=\"370\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"46,268 88,325 286,258\" fill=\"#CFE8FB\" fill-opacity=\"1\" stroke=\"none\"/><line x1=\"46\" y1=\"268\" x2=\"88\" y2=\"325\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"88\" y1=\"325\" x2=\"286\" y2=\"258\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"268\" x2=\"286\" y2=\"258\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"140\" y1=\"46\" x2=\"46\" y2=\"268\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"46\" x2=\"88\" y2=\"325\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"46\" x2=\"286\" y2=\"258\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"46\" x2=\"140\" y2=\"284\" stroke=\"#FF6A3D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"140\" y1=\"46\" x2=\"187\" y2=\"292\" stroke=\"#6D4AFF\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"268\" x2=\"187\" y2=\"292\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"140\" cy=\"284\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"23\" y=\"283\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"82\" y=\"361\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"310\" y=\"270\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"140\" y=\"32\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"110\" y=\"290\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text><text x=\"207\" y=\"322\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">M</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"180\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"15\\sqrt{69}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"30\\sqrt{69}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"360\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"390\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Апофема <span data-latex=\"\\sqrt{169 - 25} = 12\" data-type=\"inline-math\"></span>. <span data-latex=\"S_{\\text{біч}} = 3 \\cdot  \\dfrac{1}{2} \\cdot  10 \\cdot  12 = 180\" data-type=\"inline-math\"></span> см²."
+   },
+   "answer": 0
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Об’єм",
+   "title": "Третина призми",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>",
+     "title": "Формула",
+     "formula": "",
+     "text": "<span data-latex=\"V = \\dfrac{1}{3}S_{\\text{осн}} \\cdot  H\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Ребра й грані",
+     "formula": "",
+     "text": "<span data-latex=\"n\" data-type=\"inline-math\"></span>-кутна піраміда: <span data-latex=\"2n\" data-type=\"inline-math\"></span> ребер, <span data-latex=\"n + 1\" data-type=\"inline-math\"></span> грань."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Приклад",
+     "formula": "",
+     "text": "<span data-latex=\"S_{\\text{осн}} = 9\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 4\" data-type=\"inline-math\"></span>: <span data-latex=\"V = 12\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Об’єм",
+    "content": "Площа основи правильної чотирикутної піраміди дорівнює 36 см². Визначте об’єм цієї піраміди, якщо її висота вдвічі більша за сторону основи.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"108\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"144\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"216\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"288\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"432\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"a = 6\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"V = \\dfrac{1}{3} \\cdot  36 \\cdot  12 = 144\" data-type=\"inline-math\"></span> см³."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кількість граней",
+    "content": "Скільки всього граней у піраміди, яка має 12 ребер?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "4"
+     },
+     {
+      "id": 1,
+      "content": "6"
+     },
+     {
+      "id": 2,
+      "content": "7"
+     },
+     {
+      "id": 3,
+      "content": "12"
+     },
+     {
+      "id": 4,
+      "content": "13"
+     }
+    ],
+    "points": 1,
+    "solution": "12 ребер = 2n ⇒ n = 6: 6 бічних граней + основа = 7"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Розгортка",
+    "content": "Розгортку якого з наведених многогранників зображено на рисунку?<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 420 420\" width=\"420\" height=\"420\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"90,90 170,90 170,170 90,170\" fill=\"#CFE8FB\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"90,90 170,90 130,10\" fill=\"#FFF8E6\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"90,170 170,170 130,250\" fill=\"#FFF8E6\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"90,90 90,170 10,130\" fill=\"#FFF8E6\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"170,90 170,170 250,130\" fill=\"#FFF8E6\" stroke=\"#1E1B4B\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 102 161\" width=\"102\" height=\"161\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"137\" x2=\"35\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"150\" x2=\"90\" y2=\"137\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"137\" x2=\"90\" y2=\"137\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"12\" y1=\"12\" x2=\"35\" y2=\"25\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"25\" x2=\"90\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"12\" x2=\"90\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"137\" x2=\"12\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"150\" x2=\"35\" y2=\"25\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"137\" x2=\"90\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg></div>"
+     },
+     {
+      "id": 1,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 134 161\" width=\"134\" height=\"161\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"150\" x2=\"90\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"150\" x2=\"123\" y2=\"124\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"123\" y1=\"124\" x2=\"45\" y2=\"124\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"45\" y1=\"124\" x2=\"12\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"67\" y1=\"12\" x2=\"12\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"67\" y1=\"12\" x2=\"90\" y2=\"150\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"67\" y1=\"12\" x2=\"123\" y2=\"124\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"67\" y1=\"12\" x2=\"45\" y2=\"124\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/></svg></div>"
+     },
+     {
+      "id": 2,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 102 165\" width=\"102\" height=\"165\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"141\" x2=\"35\" y2=\"154\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"154\" x2=\"90\" y2=\"141\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"141\" x2=\"90\" y2=\"141\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"46\" y1=\"12\" x2=\"12\" y2=\"141\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"12\" x2=\"35\" y2=\"154\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"12\" x2=\"90\" y2=\"141\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg></div>"
+     },
+     {
+      "id": 3,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 126 167\" width=\"126\" height=\"167\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"12\" y1=\"155\" x2=\"82\" y2=\"155\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"155\" x2=\"115\" y2=\"129\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"129\" x2=\"45\" y2=\"129\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"45\" y1=\"129\" x2=\"12\" y2=\"155\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"12\" y1=\"38\" x2=\"82\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"38\" x2=\"115\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"12\" x2=\"45\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"12\" x2=\"12\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"155\" x2=\"12\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"155\" x2=\"82\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"129\" x2=\"115\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"129\" x2=\"45\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/></svg></div>"
+     },
+     {
+      "id": 4,
+      "content": "<div style=\"background:#fff;border-radius:8px;padding:4px;display:inline-block\"><svg class=\"geo\" viewBox=\"0 0 110 159\" width=\"110\" height=\"159\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><line x1=\"40\" y1=\"147\" x2=\"94\" y2=\"137\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"137\" x2=\"98\" y2=\"121\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"121\" x2=\"48\" y2=\"121\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"48\" y1=\"121\" x2=\"12\" y2=\"137\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"137\" x2=\"40\" y2=\"147\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"38\" x2=\"94\" y2=\"28\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"28\" x2=\"98\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"12\" x2=\"48\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"48\" y1=\"12\" x2=\"12\" y2=\"28\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"28\" x2=\"40\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"147\" x2=\"40\" y2=\"38\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"137\" x2=\"94\" y2=\"28\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"121\" x2=\"98\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"48\" y1=\"121\" x2=\"48\" y2=\"12\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"137\" x2=\"12\" y2=\"28\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg></div>"
+     }
+    ],
+    "points": 1,
+    "solution": "квадрат і 4 трикутники — чотирикутна піраміда"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кут бічного ребра",
+    "content": "Висота правильної чотирикутної піраміди дорівнює 3 см, а бічне ребро — 5 см. Визначте косинус кута між бічним ребром і площиною основи.<div style=\"background:#fff;border-radius:10px;padding:8px;margin:8px 0;max-width:340px\"><svg style=\"width:100%;height:auto\" class=\"geo\" viewBox=\"0 0 357 345\" width=\"357\" height=\"345\" xmlns=\"http://www.w3.org/2000/svg\" style=\"\"><polygon points=\"46,300 238,300 312,240 120,240\" fill=\"#CFE8FB\" fill-opacity=\"1\" stroke=\"none\"/><line x1=\"46\" y1=\"300\" x2=\"238\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"238\" y1=\"300\" x2=\"312\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"312\" y1=\"240\" x2=\"120\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"120\" y1=\"240\" x2=\"46\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"179\" y1=\"46\" x2=\"46\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"179\" y1=\"46\" x2=\"238\" y2=\"300\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"179\" y1=\"46\" x2=\"312\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"179\" y1=\"46\" x2=\"120\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"46\" y1=\"300\" x2=\"312\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"238\" y1=\"300\" x2=\"120\" y2=\"240\" stroke=\"#1E1B4B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><line x1=\"179\" y1=\"46\" x2=\"179\" y2=\"270\" stroke=\"#FF6A3D\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"8 7\"/><circle cx=\"179\" cy=\"270\" r=\"5\" fill=\"#1E1B4B\"/><text x=\"24\" y=\"319\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">A</text><text x=\"252\" y=\"329\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">B</text><text x=\"336\" y=\"251\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">C</text><text x=\"96\" y=\"251\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">D</text><text x=\"179\" y=\"32\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">S</text><text x=\"149\" y=\"280\" font-size=\"30\" font-style=\"italic\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#1E1B4B\">O</text></svg></div>",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{4}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{3}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{4}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{3}{4}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "AO = √(25 − 9) = 4; cos α = AO/SA = 4/5"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Сторона основи",
+    "content": "Апофема правильної чотирикутної піраміди дорівнює 10 см, її висота — 8 см. Знайдіть довжину сторони основи піраміди.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{12 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"6\\sqrt{3}\\text{ см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"6\\sqrt{2}\\text{ см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "OM = √(100 − 64) = 6; a = 2 · OM = 12"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Грані під кутом 60°",
+    "content": "Сторона основи правильної чотирикутної піраміди дорівнює 6 см, усі її бічні грані нахилені до площини основи під кутом 60°. Визначте площу бічної поверхні піраміди.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"72\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"24\\sqrt{3}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"48\\sqrt{3}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"72\\sqrt{3}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"144\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "S_біч = S_осн/(cos 60°) = 36/0,5 = 72"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Апофема під кутом 45°",
+    "content": "Висота правильної чотирикутної піраміди дорівнює 24, апофема утворює з площиною основи кут 45°. Визначте довжину сторони основи піраміди.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "24"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"16\\sqrt{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"24\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "48"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"48\\sqrt{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "кут 45° ⇒ OM = H = 24; a = 48"
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Апофема",
+    "content": "Сторона основи правильної чотирикутної піраміди дорівнює 6 см, а висота — 4 см. Знайдіть апофему піраміди.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\text{3 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\text{4 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\text{5 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\text{6 см}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\sqrt{52}\\text{ см}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"OM = \\dfrac{6}{2} = 3\" data-type=\"inline-math\"></span> — половина сторони. Апофема <span data-latex=\"SM = \\sqrt{3^{2} + 4^{2}} = 5\" data-type=\"inline-math\"></span> см."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Ребра піраміди",
+    "content": "Скільки ребер має трикутна піраміда?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3"
+     },
+     {
+      "id": 1,
+      "content": "4"
+     },
+     {
+      "id": 2,
+      "content": "5"
+     },
+     {
+      "id": 3,
+      "content": "6"
+     },
+     {
+      "id": 4,
+      "content": "8"
+     }
+    ],
+    "points": 1,
+    "solution": "3 ребра основи й 3 бічні: разом 6."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Правильний тетраедр",
+    "content": "Усі ребра трикутної піраміди дорівнюють 2 см. Знайдіть площу її повної поверхні.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{3}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"2\\sqrt{3}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"3\\sqrt{3}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"4\\sqrt{3}\\text{ см}^{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\text{8 см}^{2}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "Чотири рівносторонні трикутники зі стороною 2: <span data-latex=\"4 \\cdot  \\dfrac{\\sqrt{3}}{4} \\cdot  2^{2} = 4\\sqrt{3}\" data-type=\"inline-math\"></span> см²."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Об’єм піраміди",
+    "content": "Площа основи піраміди дорівнює 30 см², а висота — 5 см. Знайдіть об’єм піраміди (у см³).",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"V = \\dfrac{1}{3}S_{\\text{осн}}H = \\dfrac{1}{3} \\cdot  30 \\cdot  5 = 50\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "50"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Грані й ребра",
+    "content": "Піраміда має 10 граней. Скільки в неї ребер?",
+    "variants": [],
+    "points": 2,
+    "solution": "Основа й <span data-latex=\"n\" data-type=\"inline-math\"></span> бічних граней: <span data-latex=\"n + 1 = 10\" data-type=\"inline-math\"></span>, <span data-latex=\"n = 9\" data-type=\"inline-math\"></span>. Ребер <span data-latex=\"2n = 18\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "18"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Бічна поверхня",
+    "content": "Сторона основи правильної чотирикутної піраміди дорівнює 8 см, апофема — 5 см. Знайдіть площу бічної поверхні (у см²).",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"S_{\\text{біч}} = 4 \\cdot  \\dfrac{1}{2} \\cdot  8 \\cdot  5 = 80\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "80"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Повна поверхня",
+    "content": "Сторона основи правильної чотирикутної піраміди дорівнює 8 см, апофема — 5 см. Знайдіть площу повної поверхні (у см²).",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"S_{\\text{біч}} = 4 \\cdot  \\dfrac{1}{2} \\cdot  8 \\cdot  5 = 80\" data-type=\"inline-math\"></span>, <span data-latex=\"S_{\\text{осн}} = 64\" data-type=\"inline-math\"></span>. Разом <span data-latex=\"144\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "144"
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "short",
+    "src": "НМТ",
+    "title": "Об’єм правильної піраміди",
+    "content": "Сторона основи правильної чотирикутної піраміди дорівнює 6 см, висота — 5 см. Знайдіть об’єм піраміди (у см³).",
+    "variants": [],
+    "points": 2,
+    "solution": "<span data-latex=\"V = \\dfrac{1}{3} \\cdot  6^{2} \\cdot  5 = 60\" data-type=\"inline-math\"></span>."
+   },
+   "answer": "60"
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"SM\" data-type=\"inline-math\"></span>",
+   "text": "Апофема — висота грані."
+  },
+  {
+   "big": "<span data-latex=\"SOM\" data-type=\"inline-math\"></span>",
+   "text": "Прямокутний трикутник усередині."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{2}Pm\" data-type=\"inline-math\"></span>",
+   "text": "Бічна поверхня."
+  },
+  {
+   "big": "<span data-latex=\"\\dfrac{1}{3}SH\" data-type=\"inline-math\"></span>",
+   "text": "Об’єм."
+  }
+ ]
+}

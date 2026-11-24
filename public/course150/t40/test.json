@@ -1,0 +1,212 @@
+{
+ "title": "ДЗ 40. Призма, куб, паралелепіпед (НМТ 150+)",
+ "lessonNumber": 40,
+ "source": "hw-sheet",
+ "hwKey": "150-40",
+ "questions": [
+  {
+   "type": "single",
+   "content": "В основі прямої трикутної призми лежить прямокутний трикутник зі сторонами 3 см, 4 см, 5 см. Знайдіть площу <b>повної</b> поверхні призми, якщо її висота дорівнює 6 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "60 см²"
+    },
+    {
+     "id": 1,
+     "content": "72 см²"
+    },
+    {
+     "id": 2,
+     "content": "84 см²"
+    },
+    {
+     "id": 3,
+     "content": "36 см²"
+    },
+    {
+     "id": 4,
+     "content": "96 см²"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"S = 2 \\cdot  6 + 12 \\cdot  6 = 12 + 72 = 84\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Визначте об’єм правильної трикутної призми, бічні грані якої є квадратами, а периметр основи дорівнює 12.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"16\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "64"
+    },
+    {
+     "id": 2,
+     "content": "48"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"64\\sqrt{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "576"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a = 4 = H\" data-type=\"inline-math\"></span>: <span data-latex=\"V = \\dfrac{\\sqrt{3}}{4} \\cdot  16 \\cdot  4 = 16\\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Знайдіть площу бічної поверхні прямої призми, в основі якої лежить ромб зі стороною 5 см, а діагональ її бічної грані дорівнює 13 см.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "120 см²"
+    },
+    {
+     "id": 1,
+     "content": "260 см²"
+    },
+    {
+     "id": 2,
+     "content": "300 см²"
+    },
+    {
+     "id": 3,
+     "content": "240 см²"
+    },
+    {
+     "id": 4,
+     "content": "130 см²"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"H = \\sqrt{169 - 25} = 12\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 20 \\cdot  12 = 240\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Обчисліть об’єм правильної трикутної призми, бічні грані якої є квадратами, а площа основи дорівнює <span data-latex=\"9\\sqrt{3}\" data-type=\"inline-math\"></span> см².",
+   "variants": [
+    {
+     "id": 0,
+     "content": "<span data-latex=\"54\\sqrt{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 1,
+     "content": "<span data-latex=\"27\\sqrt{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 2,
+     "content": "<span data-latex=\"27\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 3,
+     "content": "<span data-latex=\"\\dfrac{27}{2}\\sqrt{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    },
+    {
+     "id": 4,
+     "content": "<span data-latex=\"162\\sqrt{3}\\text{ см}^{3}\" data-type=\"inline-math\"></span>"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"\\dfrac{\\sqrt{3}}{4}a^{2} = 9\\sqrt{3}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a = 6 = H\" data-type=\"inline-math\"></span>; <span data-latex=\"V = 9\\sqrt{3} \\cdot  6\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "single",
+   "content": "Периметр основи правильної трикутної призми дорівнює 12 см, а периметр її бічної грані — 20 см. Визначте площу <b>бічної</b> поверхні призми.",
+   "variants": [
+    {
+     "id": 0,
+     "content": "24 см²"
+    },
+    {
+     "id": 1,
+     "content": "60 см²"
+    },
+    {
+     "id": 2,
+     "content": "72 см²"
+    },
+    {
+     "id": 3,
+     "content": "84 см²"
+    },
+    {
+     "id": 4,
+     "content": "96 см²"
+    }
+   ],
+   "points": 1,
+   "solution": "<span data-latex=\"a = 4\" data-type=\"inline-math\"></span>, <span data-latex=\"2(4 + H) = 20\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"H = 6\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 12 \\cdot  6 = 72\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Основою прямої призми є паралелограм зі сторонами 8 і 15 та гострим кутом 60°. Висота призми дорівнює 20. Визначте площу меншого діагонального перерізу призми.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"d^{2} = 64 + 225 - 120 = 169\" data-type=\"inline-math\"></span>, <span data-latex=\"d = 13\" data-type=\"inline-math\"></span>; <span data-latex=\"13 \\cdot  20\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Основою прямої призми є ромб із гострим кутом 60°. Висота призми дорівнює <span data-latex=\"8\\sqrt{3}\" data-type=\"inline-math\"></span>, площа її більшого діагонального перерізу — <span data-latex=\"240\\sqrt{3}\" data-type=\"inline-math\"></span>. Визначте площу бічної поверхні цієї призми.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"D = 30 = a\\sqrt{3}\" data-type=\"inline-math\"></span> ⇒ <span data-latex=\"a = 10\\sqrt{3}\" data-type=\"inline-math\"></span>; <span data-latex=\"S = 40\\sqrt{3} \\cdot  8\\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Діагональним перерізом правильної чотирикутної призми є квадрат площею 64. Знайдіть об’єм цієї призми.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"d = H = 8\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 4\\sqrt{2}\" data-type=\"inline-math\"></span>; <span data-latex=\"V = 32 \\cdot  8\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Основою прямої призми є ромб із гострим кутом 60°. Площа більшого діагонального перерізу призми дорівнює <span data-latex=\"240\\sqrt{3}\" data-type=\"inline-math\"></span>. Обчисліть об’єм призми, якщо її висота дорівнює <span data-latex=\"8\\sqrt{3}\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"a = 10\\sqrt{3}\" data-type=\"inline-math\"></span>, <span data-latex=\"S_{\\text{осн}} = 150\\sqrt{3}\" data-type=\"inline-math\"></span>; <span data-latex=\"V = 150\\sqrt{3} \\cdot  8\\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Основою прямої призми є паралелограм зі сторонами 8 і 15 та гострим кутом 60°. Площа меншого діагонального перерізу призми дорівнює 260. Визначте об’єм <span data-latex=\"V\" data-type=\"inline-math\"></span> цієї призми. У відповіді запишіть значення <span data-latex=\"\\dfrac{V}{\\sqrt{3}}\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"d = 13\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 20\" data-type=\"inline-math\"></span>, <span data-latex=\"S_{\\text{осн}} = 60\\sqrt{3}\" data-type=\"inline-math\"></span>; <span data-latex=\"V = 1200\\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "Основою прямої призми є ромб із гострим кутом 60°. Площа меншого діагонального перерізу призми дорівнює <span data-latex=\"140\\sqrt{3}\" data-type=\"inline-math\"></span>. Визначте об’єм призми, якщо її висота дорівнює <span data-latex=\"7\\sqrt{3}\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "менша діагональ = стороні: <span data-latex=\"a = 20\" data-type=\"inline-math\"></span>; <span data-latex=\"V = 200\\sqrt{3} \\cdot  7\\sqrt{3}\" data-type=\"inline-math\"></span>"
+  },
+  {
+   "type": "short",
+   "content": "У прямокутній системі координат у просторі задано правильну чотирикутну призму <span data-latex=\"ABCDA_{1}B_{1}C_{1}D_{1}\" data-type=\"inline-math\"></span>. Діагоналі основи <span data-latex=\"ABCD\" data-type=\"inline-math\"></span> перетинаються в точці <span data-latex=\"M\" data-type=\"inline-math\"></span>. Висота призми вдвічі більша за сторону <span data-latex=\"AB\" data-type=\"inline-math\"></span>. Обчисліть об’єм <span data-latex=\"V\" data-type=\"inline-math\"></span> цієї призми, якщо <span data-latex=\"A(2; 3; 4)\" data-type=\"inline-math\"></span> і <span data-latex=\"M(1; 0; 2)\" data-type=\"inline-math\"></span>. У відповідь запишіть <span data-latex=\"\\dfrac{V}{\\sqrt{7}}\" data-type=\"inline-math\"></span>.",
+   "variants": [],
+   "points": 2,
+   "solution": "<span data-latex=\"AM = \\sqrt{14}\" data-type=\"inline-math\"></span>, <span data-latex=\"a = 2\\sqrt{7}\" data-type=\"inline-math\"></span>, <span data-latex=\"H = 4\\sqrt{7}\" data-type=\"inline-math\"></span>; <span data-latex=\"V = 112\\sqrt{7}\" data-type=\"inline-math\"></span>"
+  }
+ ],
+ "answers": [
+  2,
+  0,
+  3,
+  0,
+  2,
+  "260",
+  "960",
+  "256",
+  "3600",
+  "1200",
+  "4200",
+  "112"
+ ],
+ "incomplete": []
+}

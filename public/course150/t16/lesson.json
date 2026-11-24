@@ -1,0 +1,780 @@
+{
+ "number": 16,
+ "title": "Лінійні й квадратні",
+ "intro": [
+  {
+   "title": "Лінійні рівняння",
+   "text": "дужки, перенос, ділення"
+  },
+  {
+   "title": "Пропорції й дроби",
+   "text": "спільний знаменник"
+  },
+  {
+   "title": "Квадратні рівняння",
+   "text": "дискримінант і неповні рівняння"
+  },
+  {
+   "title": "Теорема Вієта",
+   "text": "сума й добуток коренів"
+  }
+ ],
+ "teasers": [
+  {
+   "big": "<span data-latex=\"ax = b\" data-type=\"inline-math\"></span>",
+   "text": "лінійне рівняння"
+  },
+  {
+   "big": "<span data-latex=\"D\" data-type=\"inline-math\"></span>",
+   "text": "дискримінант"
+  },
+  {
+   "big": "<span data-latex=\"x_{1} + x_{2}\" data-type=\"inline-math\"></span>",
+   "text": "теорема Вієта"
+  }
+ ],
+ "sections": [
+  {
+   "kind": "theory",
+   "tag": "Блок 1 · Лінійні рівняння",
+   "title": "Знайти x — це залишити його самого",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "( )",
+     "title": "Дужки",
+     "formula": "",
+     "text": "Спершу розкрий дужки: <span data-latex=\"2(x + 23) = 2x + 46\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "↔",
+     "title": "Перенос",
+     "formula": "",
+     "text": "Доданки з <span data-latex=\"x\" data-type=\"inline-math\"></span> — ліворуч, числа — праворуч. Переносячи, <b>міняй знак</b>."
+    },
+    {
+     "color": "coral",
+     "big": "÷",
+     "title": "Ділення",
+     "formula": "",
+     "text": "<span data-latex=\"ax = b\" data-type=\"inline-math\"></span>, тоді <span data-latex=\"x = \\dfrac{b}{a}\" data-type=\"inline-math\"></span> (<span data-latex=\"a \\ne  0\" data-type=\"inline-math\"></span>). Наприклад, <span data-latex=\"3x = -12\" data-type=\"inline-math\"></span>, <span data-latex=\"x = -4\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Дужки",
+    "content": "Розв’яжіть рівняння <span data-latex=\"2(x + 23) = 57 - 3x\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1,2"
+     },
+     {
+      "id": 1,
+      "content": "1,8"
+     },
+     {
+      "id": 2,
+      "content": "2"
+     },
+     {
+      "id": 3,
+      "content": "2,2"
+     },
+     {
+      "id": 4,
+      "content": "2,5"
+     }
+    ],
+    "points": 1,
+    "solution": "Розкриваємо дужки: <span data-latex=\"2x + 46 = 57 - 3x\" data-type=\"inline-math\"></span>. Переносимо: <span data-latex=\"2x + 3x = 57 - 46\" data-type=\"inline-math\"></span>, <span data-latex=\"5x = 11\" data-type=\"inline-math\"></span>, <span data-latex=\"x = 2{,}2\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 3
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 2 · Пропорції й дроби",
+   "title": "Позбуваємося знаменників",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "×",
+     "title": "Пропорція",
+     "formula": "",
+     "text": "<span data-latex=\"\\dfrac{a}{b} = \\dfrac{c}{d}\" data-type=\"inline-math\"></span>, тоді <span data-latex=\"ad = bc\" data-type=\"inline-math\"></span> — добуток крайніх дорівнює добутку середніх."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Спільний знаменник",
+     "formula": "",
+     "text": "Помнож обидві частини на найменший спільний знаменник — дроби зникнуть."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Мішане число",
+     "formula": "",
+     "text": "Спершу переведи в неправильний дріб: <span data-latex=\"1\\dfrac{2}{3} = \\dfrac{5}{3}\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Спільний знаменник",
+    "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{2x - 3}{3} = \\dfrac{x + 1}{6}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\dfrac{6}{27}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{7}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{9}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{12}{7}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "8,3"
+     }
+    ],
+    "points": 1,
+    "solution": "Множимо обидві частини на 6: <span data-latex=\"2(2x - 3) = x + 1\" data-type=\"inline-math\"></span>, <span data-latex=\"4x - 6 = x + 1\" data-type=\"inline-math\"></span>, <span data-latex=\"3x = 7\" data-type=\"inline-math\"></span>, <span data-latex=\"x = \\dfrac{7}{3}\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 3 · Квадратні рівняння",
+   "title": "<span data-latex=\"ax^{2} + bx + c = 0\" data-type=\"inline-math\"></span>",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "<span data-latex=\"D\" data-type=\"inline-math\"></span>",
+     "title": "Дискримінант",
+     "formula": "",
+     "text": "<span data-latex=\"D = b^{2} - 4ac\" data-type=\"inline-math\"></span>. <span data-latex=\"D &gt; 0\" data-type=\"inline-math\"></span> — два корені, <span data-latex=\"D = 0\" data-type=\"inline-math\"></span> — один, <span data-latex=\"D &lt; 0\" data-type=\"inline-math\"></span> — <b>коренів немає</b>."
+    },
+    {
+     "color": "mint",
+     "big": "",
+     "title": "Корені",
+     "formula": "",
+     "text": "<span data-latex=\"x = \\dfrac{-b \\pm  \\sqrt{D}}{2a}\" data-type=\"inline-math\"></span>. Спершу переносимо все в ліву частину, щоб праворуч був 0."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Неповні",
+     "formula": "",
+     "text": "<span data-latex=\"ax^{2} + bx = 0\" data-type=\"inline-math\"></span> — винеси <span data-latex=\"x\" data-type=\"inline-math\"></span>: <span data-latex=\"x(ax + b) = 0\" data-type=\"inline-math\"></span>. <span data-latex=\"ax^{2} = c\" data-type=\"inline-math\"></span> — <span data-latex=\"x = \\pm \\sqrt{\\dfrac{c}{a}}\" data-type=\"inline-math\"></span>, якщо <span data-latex=\"\\dfrac{c}{a} &gt; 0\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Квадратне рівняння",
+    "content": "Розв’яжіть рівняння <span data-latex=\"x^{2} - 10 = 5x + 14\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "3; 8"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-3; 8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"3; -8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "8"
+     }
+    ],
+    "points": 1,
+    "solution": "Переносимо все ліворуч: <span data-latex=\"x^{2} - 5x - 24 = 0\" data-type=\"inline-math\"></span>. <span data-latex=\"D = 25 + 96 = 121\" data-type=\"inline-math\"></span>, <span data-latex=\"x = \\dfrac{5 \\pm  11}{2}\" data-type=\"inline-math\"></span>: <span data-latex=\"x_{1} = -3\" data-type=\"inline-math\"></span>, <span data-latex=\"x_{2} = 8\" data-type=\"inline-math\"></span>."
+   },
+   "answer": 1
+  },
+  {
+   "kind": "theory",
+   "tag": "Блок 4 · Теорема Вієта",
+   "title": "Корені без розв’язання",
+   "cards": [
+    {
+     "color": "sun",
+     "big": "+",
+     "title": "Сума",
+     "formula": "",
+     "text": "Для <span data-latex=\"x^{2} + px + q = 0\" data-type=\"inline-math\"></span>: <span data-latex=\"x_{1} + x_{2} = -p\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "mint",
+     "big": "×",
+     "title": "Добуток",
+     "formula": "",
+     "text": "<span data-latex=\"x_{1} \\cdot  x_{2} = q\" data-type=\"inline-math\"></span>. Для <span data-latex=\"ax^{2} + bx + c = 0\" data-type=\"inline-math\"></span> — поділи спершу на <span data-latex=\"a\" data-type=\"inline-math\"></span>."
+    },
+    {
+     "color": "coral",
+     "big": "",
+     "title": "Перевір <span data-latex=\"D\" data-type=\"inline-math\"></span>",
+     "formula": "",
+     "text": "Вієта працює, лише коли корені <b>є</b>: переконайся, що <span data-latex=\"D \\ge  0\" data-type=\"inline-math\"></span>."
+    }
+   ]
+  },
+  {
+   "kind": "example",
+   "question": {
+    "type": "single",
+    "src": "",
+    "title": "Сума коренів",
+    "content": "Укажіть число, що є сумою коренів рівняння <span data-latex=\"x^{2} - 3x + 2 = 0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1"
+     },
+     {
+      "id": 1,
+      "content": "2"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "5"
+     }
+    ],
+    "points": 1,
+    "solution": "<span data-latex=\"D = 9 - 8 = 1 &gt; 0\" data-type=\"inline-math\"></span>, корені є. За теоремою Вієта сума коренів <span data-latex=\"x_{1} + x_{2} = 3\" data-type=\"inline-math\"></span> (протилежна до коефіцієнта при <span data-latex=\"x\" data-type=\"inline-math\"></span>)."
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Десятковий коефіцієнт",
+    "content": "Розв’яжіть рівняння <span data-latex=\"0{,}5x = \\dfrac{1}{4}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "2"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{1}{2}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "8"
+     },
+     {
+      "id": 3,
+      "content": "4"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"\\dfrac{1}{8}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x = 1/4 : 1/2 = 1/2"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Пропорція",
+    "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{4}{x} = \\dfrac{1}{2}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0"
+     },
+     {
+      "id": 1,
+      "content": "0,5"
+     },
+     {
+      "id": 2,
+      "content": "5"
+     },
+     {
+      "id": 3,
+      "content": "6"
+     },
+     {
+      "id": 4,
+      "content": "8"
+     }
+    ],
+    "points": 1,
+    "solution": "x = 4 · 2 = 8"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Пропорція",
+    "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{32}{2} = \\dfrac{4}{x}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0,1"
+     },
+     {
+      "id": 1,
+      "content": "0,25"
+     },
+     {
+      "id": 2,
+      "content": "0,5"
+     },
+     {
+      "id": 3,
+      "content": "0,6"
+     },
+     {
+      "id": 4,
+      "content": "0,8"
+     }
+    ],
+    "points": 1,
+    "solution": "16 = 4/x → x = 4/16 = 0,25"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Мішане число",
+    "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{2}{x} = 1\\dfrac{2}{3}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"1\\dfrac{1}{5}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"\\dfrac{5}{6}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "3"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"1\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"3\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x = 2 : 5/3 = 6/5 = 11/5"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дробовий коефіцієнт",
+    "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{x}{3} + 6 = 2(3 - 2x)\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "0"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-1{,}3\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "1,3"
+     },
+     {
+      "id": 3,
+      "content": "2,2"
+     },
+     {
+      "id": 4,
+      "content": "2,8"
+     }
+    ],
+    "points": 1,
+    "solution": "x/3 + 6 = 6 − 4x → 13x/3 = 0 → x = 0"
+   },
+   "answer": 0
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Проміжок для кореня",
+    "content": "Укажіть проміжок, якому належить корінь рівняння <span data-latex=\"\\dfrac{4}{13}x = -3\\dfrac{12}{13}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-70; -55)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-55; -10)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"(-10; -4)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"(-4; 3)\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "(3; 11)"
+     }
+    ],
+    "points": 1,
+    "solution": "x = −51/13 : 4/13 = −12,75"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Мішане число",
+    "content": "Розв’яжіть рівняння <span data-latex=\"3 - x = 2\\dfrac{1}{3}\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"1\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"\\dfrac{2}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "<span data-latex=\"5\\dfrac{1}{3}\" data-type=\"inline-math\"></span>"
+     }
+    ],
+    "points": 1,
+    "solution": "x = 3 − 21/3 = 2/3"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Дискримінант",
+    "content": "Обчисліть дискримінант квадратного рівняння <span data-latex=\"3x^{2} - 2x - 4 = 0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"\\sqrt{52}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-44\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "52"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"\\sqrt{44}\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "29"
+     }
+    ],
+    "points": 1,
+    "solution": "D = 4 + 48 = 52"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Неповне рівняння",
+    "content": "Розв’яжіть рівняння <span data-latex=\"\\dfrac{x^{2}}{2} = 32\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"-4; 4\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "4"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"-8; 8\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "32"
+     },
+     {
+      "id": 4,
+      "content": "8"
+     }
+    ],
+    "points": 1,
+    "solution": "x² = 64 → x = ±8"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Квадратне рівняння",
+    "content": "Розв’яжіть рівняння <span data-latex=\"x^{2} - 3x + 2 = -2\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "1; 2"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-1; 2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "<span data-latex=\"1; -2\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-1\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "Коренів немає"
+     }
+    ],
+    "points": 1,
+    "solution": "x² − 3x + 4 = 0, D = 9 − 16 &lt; 0 — коренів немає"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Кількість коренів",
+    "content": "Скільки всього коренів має рівняння <span data-latex=\"3x^{2} = -x\" data-type=\"inline-math\"></span>?",
+    "variants": [
+     {
+      "id": 0,
+      "content": "жодного"
+     },
+     {
+      "id": 1,
+      "content": "один"
+     },
+     {
+      "id": 2,
+      "content": "два"
+     },
+     {
+      "id": 3,
+      "content": "три"
+     },
+     {
+      "id": 4,
+      "content": "більше трьох"
+     }
+    ],
+    "points": 1,
+    "solution": "x(3x + 1) = 0 → x = 0; x = −1/3 — два корені"
+   },
+   "answer": 2
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Сума коренів",
+    "content": "Знайдіть суму коренів рівняння <span data-latex=\"5(x + 3)^{2} = 125\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "10"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-6\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "0"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-16\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "6"
+     }
+    ],
+    "points": 1,
+    "solution": "(x + 3)² = 25 → x = 2; x = −8; сума −6"
+   },
+   "answer": 1
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Більший корінь",
+    "content": "Розв’яжіть рівняння <span data-latex=\"x^{2} - 2x - 15 = 0\" data-type=\"inline-math\"></span>. У відповідь оберіть проміжок, якому належить більший корінь рівняння.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "<span data-latex=\"(-\\infty ; -2]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"(-2; 0]\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "(0; 2]"
+     },
+     {
+      "id": 3,
+      "content": "(2; 4]"
+     },
+     {
+      "id": 4,
+      "content": "(4; +∞)"
+     }
+    ],
+    "points": 1,
+    "solution": "x₁ = 5, x₂ = −3; 5 ∈ (4; +∞)"
+   },
+   "answer": 4
+  },
+  {
+   "kind": "task",
+   "question": {
+    "type": "single",
+    "src": "НМТ",
+    "title": "Добуток коренів",
+    "content": "Укажіть число, що є добутком коренів рівняння <span data-latex=\"x^{2} + 11x - 28 = 0\" data-type=\"inline-math\"></span>.",
+    "variants": [
+     {
+      "id": 0,
+      "content": "11"
+     },
+     {
+      "id": 1,
+      "content": "<span data-latex=\"-11\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 2,
+      "content": "28"
+     },
+     {
+      "id": 3,
+      "content": "<span data-latex=\"-28\" data-type=\"inline-math\"></span>"
+     },
+     {
+      "id": 4,
+      "content": "30"
+     }
+    ],
+    "points": 1,
+    "solution": "За Вієтою x₁ x₂ = −28"
+   },
+   "answer": 3
+  }
+ ],
+ "summary": [
+  {
+   "big": "<span data-latex=\"ax = b\" data-type=\"inline-math\"></span>",
+   "text": "Розкрий дужки, перенеси зі зміною знака, поділи на коефіцієнт."
+  },
+  {
+   "big": "×",
+   "text": "Пропорція: добуток крайніх дорівнює добутку середніх."
+  },
+  {
+   "big": "<span data-latex=\"D\" data-type=\"inline-math\"></span>",
+   "text": "<span data-latex=\"D = b^{2} - 4ac\" data-type=\"inline-math\"></span>; при <span data-latex=\"D &lt; 0\" data-type=\"inline-math\"></span> коренів немає."
+  },
+  {
+   "big": "<span data-latex=\"x_{1} x_{2}\" data-type=\"inline-math\"></span>",
+   "text": "Вієта: сума <span data-latex=\"-p\" data-type=\"inline-math\"></span>, добуток <span data-latex=\"q\" data-type=\"inline-math\"></span>."
+  }
+ ]
+}
