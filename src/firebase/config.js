@@ -4,7 +4,9 @@ import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBF1Vu6AlNsrzWasjhRFOtM3S8F9SnzHcs",
-  authDomain: "easy-nmt.firebaseapp.com",
+  // На сайті вхід Google іде через його ж домен (vercel.json проксіює /__/auth на firebaseapp.com):
+  // інакше Safari, телефони й встановлений застосунок гублять результат входу і повертають на сторінку входу.
+  authDomain: typeof window !== 'undefined' && window.location.hostname === 'easy-nmt.vercel.app' ? 'easy-nmt.vercel.app' : 'easy-nmt.firebaseapp.com',
   projectId: "easy-nmt",
   storageBucket: "easy-nmt.firebasestorage.app",
   messagingSenderId: "186875076363",

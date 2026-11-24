@@ -1,3 +1,7 @@
 {
-  "rewrites": [{ "source": "/((?!.*\\.).*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/__/auth/:path*", "destination": "https://easy-nmt.firebaseapp.com/__/auth/:path*" },
+    { "source": "/__/firebase/:path*", "destination": "https://easy-nmt.firebaseapp.com/__/firebase/:path*" },
+    { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
+  ]
 }
